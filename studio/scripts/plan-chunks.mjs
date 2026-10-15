@@ -5,7 +5,7 @@ import path from 'node:path';
 
 const [bundleDir, id, chunksArg] = process.argv.slice(2);
 const chunks = Math.max(1, parseInt(chunksArg || '4', 10));
-const comp = await selectComposition({serveUrl: path.resolve(bundleDir), id});
+const comp = await selectComposition({serveUrl: path.resolve(bundleDir), id, logLevel: 'error'});
 const total = comp.durationInFrames;
 const size = Math.ceil(total / chunks);
 const include = [];

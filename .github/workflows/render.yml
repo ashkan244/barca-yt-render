@@ -25,7 +25,7 @@ defaults:
 
 jobs:
   plan:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     outputs:
       matrix: ${{ steps.plan.outputs.matrix }}
     steps:
@@ -38,7 +38,7 @@ jobs:
       - run: npm ci
       - run: npx remotion bundle src/index.ts --out-dir=build
       - id: plan
-        run: echo "matrix=$(node scripts/plan-chunks.mjs build '${{ inputs.composition }}' '${{ inputs.chunks }}')" >> "$GITHUB_OUTPUT"
+        run: echo "matrix=$(node scripts/plan-chunks.mjs build '${{ inputs.composition }}' '${{ inputs.chunks }}' | tail -n 1)" >> "$GITHUB_OUTPUT"
       - uses: actions/upload-artifact@v4
         with:
           name: bundle
@@ -47,7 +47,7 @@ jobs:
 
   render:
     needs: plan
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     strategy:
       fail-fast: true
       matrix: ${{ fromJson(needs.plan.outputs.matrix) }}
@@ -79,7 +79,7 @@ jobs:
 
   concat:
     needs: render
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
