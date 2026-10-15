@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig, Easing} from 'remotion';
+import {AbsoluteFill, Audio, Sequence, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig, Easing} from 'remotion';
 import {loadFont as loadAnton} from '@remotion/google-fonts/Anton';
 import {loadFont as loadInter} from '@remotion/google-fonts/Inter';
 import {loadFont as loadMarker} from '@remotion/google-fonts/PermanentMarker';
@@ -106,6 +106,27 @@ export const Pop: React.FC<{delay?: number; children: React.ReactNode; style?: R
   const {fps} = useVideoConfig();
   const sp = spring({frame: frame - delay, fps, config: {damping: 14, mass: 0.7}});
   return <div style={{opacity: Math.min(1, sp * 1.4), transform: `scale(${0.85 + 0.15 * sp}) translateY(${(1 - sp) * 20}px)`, ...style}}>{children}</div>;
+};
+
+/** Narration: plays each voice line at its frame and shows its caption for exactly the audio length.
+ *  durations = {id: seconds} produced by tools/tts/say.mjs (durations.json). */
+export type Line = {id: string; from: number; text: string};
+export const Narration: React.FC<{dir: string; lines: Line[]; durations: Record<string, number>; volume?: number}> = ({dir, lines, durations, volume = 1}) => {
+  const {fps} = useVideoConfig();
+  return (
+    <>
+      {lines.map((l) => {
+        const secs = durations[l.id] ?? 2;
+        const len = Math.ceil(secs * fps);
+        return (
+          <Sequence key={l.id} from={l.from} durationInFrames={len + 4}>
+            <Audio src={staticFile(`audio/${dir}/${l.id}.wav`)} volume={volume} />
+            <Caption start={0} end={len + 4} text={l.text} wps={(l.text.split(' ').length / Math.max(0.5, secs)) * 1.08} />
+          </Sequence>
+        );
+      })}
+    </>
+  );
 };
 
 /** Word-by-word caption line (simulates narration subtitles). */

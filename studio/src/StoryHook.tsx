@@ -1,14 +1,20 @@
 import React from 'react';
 import {AbsoluteFill, Img, Sequence, staticFile, useCurrentFrame, interpolate, getInputProps} from 'remotion';
-import {C, DISPLAY, BODY, ChalkDefs, Grain, Halftone, Pop, clamp, kf} from './lib';
+import {C, DISPLAY, BODY, ChalkDefs, Grain, Halftone, Pop, Narration, clamp, kf} from './lib';
+import fsDur from '../public/audio/fs/durations.json';
 
-export const STORY_FRAMES = 390;
+const LINES = [
+  {id: 'fs-01', from: 112, text: 'Johan Cruyff. The man who built Barça. Twice.'},
+  {id: 'fs-02', from: 255, text: 'As he once put it: playing football is very simple. But playing simple football is the hardest thing there is.'},
+];
+
+export const STORY_FRAMES = 520;
 const SRC = staticFile('photos/cruyff/cruyff-02.jpg');
 
 /** FS hook: archival CC0 photo -> illustrated ink/duotone look, slow push-in, title + real quote. */
 export const StoryHook: React.FC = () => {
   const frame = useCurrentFrame();
-  const z = kf(frame, [[0, 1.0], [390, 1.08]]);
+  const z = kf(frame, [[0, 1.0], [520, 1.1]]);
   const halftone = Number((getInputProps() as {halftone?: number}).halftone ?? 0.18);
   const wipe = interpolate(frame, [45, 95], [0, 100], clamp); // % revealed illustrated
   const imgStyle: React.CSSProperties = {position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', transform: `scale(${z})`, transformOrigin: '58% 30%'};
@@ -43,6 +49,7 @@ export const StoryHook: React.FC = () => {
       <div style={{position: 'absolute', right: 30, bottom: 22, fontFamily: BODY, fontSize: 16, color: '#ffffff99'}}>
         Photo: Rob Mieremet / Anefo, Nationaal Archief (CC0) · Feyenoord–Barcelona, 1974
       </div>
+      <Narration dir="fs" lines={LINES} durations={fsDur as Record<string, number>} />
       <Grain opacity={Number((getInputProps() as {grain?: number}).grain ?? 0.1)} />
     </AbsoluteFill>
   );
