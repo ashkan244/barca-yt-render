@@ -1,0 +1,675 @@
+{
+ "id": "EP20-TM",
+ "code": "MN",
+ "title": "The 5-0: The Night Barça Played Perfect Football",
+ "music": "story.mp3",
+ "thumb": {
+  "kicker": "THE MATCH THAT…",
+  "title": "THE\nMANITA",
+  "accent": "MANITA",
+  "style": "number",
+  "number": "5–0"
+ },
+ "scenes": [
+  {
+   "type": "statement",
+   "text": "29 November 2010. A Monday night at the Camp Nou.",
+   "accent": "Camp Nou.",
+   "bg": "navy",
+   "lead": 0.6,
+   "sfx": [
+    {
+     "name": "crowd",
+     "at": 0.2,
+     "volume": 0.3
+    }
+   ],
+   "lines": "MN-001..MN-003"
+  },
+  {
+   "type": "list",
+   "title": "TONIGHT",
+   "items": [
+    {
+     "at": "MN-004",
+     "text": "THE CHALLENGER",
+     "sub": "José Mourinho arrives"
+    },
+    {
+     "at": "MN-004+1.4",
+     "text": "THE PLAN",
+     "sub": "how Barça took the ball away"
+    },
+    {
+     "at": "MN-005",
+     "text": "THE FIVE GOALS"
+    },
+    {
+     "at": "MN-005+1.4",
+     "text": "THE WAR THAT FOLLOWED"
+    }
+   ],
+   "lines": "MN-004..MN-005"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 1",
+   "title": "The challenger",
+   "lines": "MN-006"
+  },
+  {
+   "type": "timeline",
+   "title": "2010",
+   "events": [
+    {
+     "at": 0.3,
+     "year": "Apr 2010",
+     "text": "Mourinho's Inter knock Barça out"
+    },
+    {
+     "at": "MN-008",
+     "year": "May 2010",
+     "text": "Mourinho joins Real Madrid"
+    },
+    {
+     "at": "MN-009",
+     "year": "Nov 2010",
+     "text": "Madrid top of the league, unbeaten"
+    }
+   ],
+   "lines": "MN-007..MN-009"
+  },
+  {
+   "type": "compare",
+   "left": {
+    "title": "REAL MADRID",
+    "points": [
+     "Top of the table",
+     "Unbeaten in the league",
+     "Cristiano Ronaldo, Özil, Di María"
+    ]
+   },
+   "right": {
+    "title": "BARCELONA",
+    "points": [
+     "One point behind",
+     "Xavi, Iniesta, Busquets",
+     "Messi, Villa, Pedro"
+    ]
+   },
+   "lines": "MN-010..MN-012"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 2",
+   "title": "The plan",
+   "lines": "MN-013"
+  },
+  {
+   "type": "board",
+   "title": "KEEP IT. WIN IT BACK. KEEP IT.",
+   "tag": "ILLUSTRATION",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.2,
+     "focus": [
+      56,
+      34
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "bu",
+     "side": "barca",
+     "label": "16",
+     "path": [
+      [
+       0,
+       46,
+       34
+      ]
+     ]
+    },
+    {
+     "id": "xa",
+     "side": "barca",
+     "label": "6",
+     "path": [
+      [
+       0,
+       56,
+       26
+      ]
+     ],
+     "hi": [
+      [
+       "MN-014",
+       "MN-016",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "in",
+     "side": "barca",
+     "label": "8",
+     "path": [
+      [
+       0,
+       58,
+       44
+      ]
+     ],
+     "hi": [
+      [
+       "MN-014",
+       "MN-016",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "me",
+     "side": "barca",
+     "label": "10",
+     "path": [
+      [
+       0,
+       70,
+       34
+      ],
+      [
+       "MN-015",
+       64,
+       34
+      ]
+     ]
+    },
+    {
+     "id": "vi",
+     "side": "barca",
+     "label": "7",
+     "path": [
+      [
+       0,
+       78,
+       54
+      ]
+     ]
+    },
+    {
+     "id": "pe",
+     "side": "barca",
+     "label": "17",
+     "path": [
+      [
+       0,
+       78,
+       14
+      ]
+     ]
+    },
+    {
+     "id": "o1",
+     "side": "opp",
+     "label": "",
+     "path": [
+      [
+       0,
+       62,
+       30
+      ]
+     ]
+    },
+    {
+     "id": "o2",
+     "side": "opp",
+     "label": "",
+     "path": [
+      [
+       0,
+       62,
+       40
+      ]
+     ]
+    },
+    {
+     "id": "o3",
+     "side": "opp",
+     "label": "",
+     "path": [
+      [
+       0,
+       74,
+       24
+      ]
+     ]
+    },
+    {
+     "id": "o4",
+     "side": "opp",
+     "label": "",
+     "path": [
+      [
+       0,
+       74,
+       44
+      ]
+     ]
+    }
+   ],
+   "ball": {
+    "path": [
+     [
+      0,
+      46.5,
+      34.5
+     ],
+     [
+      "MN-014+0.5",
+      56.5,
+      26.5
+     ],
+     [
+      "MN-014+1.2",
+      58.5,
+      44.5
+     ],
+     [
+      "MN-015",
+      64.5,
+      34.5
+     ],
+     [
+      "MN-015+0.8",
+      56.5,
+      26.5
+     ]
+    ]
+   },
+   "zones": [
+    {
+     "x": 44,
+     "y": 18,
+     "w": 24,
+     "h": 32,
+     "color": "#1f5fd6",
+     "at": "MN-014",
+     "opacity": 0.18
+    }
+   ],
+   "labels": [
+    {
+     "text": "OVERLOAD THE MIDDLE",
+     "at": "MN-015",
+     "x": 56,
+     "y": 14,
+     "color": "#f2c230"
+    }
+   ],
+   "lines": "MN-014..MN-016"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 3",
+   "title": "The five goals",
+   "lines": "MN-017"
+  },
+  {
+   "type": "score",
+   "home": "BARCELONA",
+   "away": "REAL MADRID",
+   "venue": "CAMP NOU",
+   "date": "29 NOV 2010",
+   "events": [
+    {
+     "at": "MN-018+1",
+     "minute": "10",
+     "side": "home",
+     "who": "Xavi"
+    },
+    {
+     "at": "MN-019+1",
+     "minute": "18",
+     "side": "home",
+     "who": "Pedro"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "crowd",
+     "at": "MN-018+1",
+     "volume": 0.45
+    },
+    {
+     "name": "crowd",
+     "at": "MN-019+1",
+     "volume": 0.45
+    }
+   ],
+   "lines": "MN-018..MN-020"
+  },
+  {
+   "type": "statement",
+   "text": "Half-time: 2–0. It could have been more.",
+   "accent": "more.",
+   "bg": "navy",
+   "lines": "MN-021..MN-022"
+  },
+  {
+   "type": "board",
+   "title": "55' & 58' · MESSI'S TWO PASSES",
+   "tag": "ILLUSTRATION",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.45,
+     "focus": [
+      78,
+      34
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "me",
+     "side": "barca",
+     "label": "10",
+     "path": [
+      [
+       0,
+       66,
+       36
+      ]
+     ],
+     "hi": [
+      [
+       "MN-023",
+       "MN-025",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "vi",
+     "side": "barca",
+     "label": "7",
+     "path": [
+      [
+       0,
+       80,
+       44
+      ],
+      [
+       "MN-023+1",
+       92,
+       40
+      ]
+     ],
+     "hi": [
+      [
+       "MN-023+1",
+       "MN-024+1.5",
+       "#1f5fd6"
+      ]
+     ]
+    },
+    {
+     "id": "c1",
+     "side": "opp",
+     "label": "",
+     "path": [
+      [
+       0,
+       82,
+       30
+      ]
+     ]
+    },
+    {
+     "id": "c2",
+     "side": "opp",
+     "label": "",
+     "path": [
+      [
+       0,
+       82,
+       38
+      ],
+      [
+       "MN-023+1",
+       86,
+       40
+      ]
+     ]
+    },
+    {
+     "id": "c3",
+     "side": "opp",
+     "label": "",
+     "path": [
+      [
+       0,
+       74,
+       34
+      ]
+     ]
+    },
+    {
+     "id": "gk",
+     "side": "opp",
+     "label": "1",
+     "path": [
+      [
+       0,
+       103,
+       34
+      ],
+      [
+       "MN-023+1.8",
+       100,
+       37
+      ]
+     ]
+    }
+   ],
+   "ball": {
+    "path": [
+     [
+      0,
+      66.5,
+      36.5
+     ],
+     [
+      "MN-023",
+      66.5,
+      36.5
+     ],
+     [
+      "MN-023+1",
+      91.5,
+      40.5
+     ],
+     [
+      "MN-023+1.6",
+      104.5,
+      33.5
+     ]
+    ]
+   },
+   "arrows": [
+    {
+     "from": [
+      66.5,
+      36.5
+     ],
+     "to": [
+      91.5,
+      40.5
+     ],
+     "at": "MN-023",
+     "color": "#f2c230"
+    }
+   ],
+   "overlay": [
+    {
+     "text": "3–0 · 4–0",
+     "at": "MN-024+1",
+     "pos": "top"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "crowd",
+     "at": "MN-023+1.6",
+     "volume": 0.5
+    },
+    {
+     "name": "crowd",
+     "at": "MN-024+1",
+     "volume": 0.6
+    }
+   ],
+   "lines": "MN-023..MN-025"
+  },
+  {
+   "type": "score",
+   "home": "BARCELONA",
+   "away": "REAL MADRID",
+   "venue": "CAMP NOU",
+   "date": "29 NOV 2010",
+   "events": [
+    {
+     "at": 0,
+     "minute": "10",
+     "side": "home",
+     "who": "Xavi"
+    },
+    {
+     "at": 0,
+     "minute": "18",
+     "side": "home",
+     "who": "Pedro"
+    },
+    {
+     "at": 0,
+     "minute": "55",
+     "side": "home",
+     "who": "Villa"
+    },
+    {
+     "at": 0,
+     "minute": "58",
+     "side": "home",
+     "who": "Villa"
+    },
+    {
+     "at": "MN-027+1",
+     "minute": "90+1",
+     "side": "home",
+     "who": "Jeffrén"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "crowd",
+     "at": "MN-027+1",
+     "volume": 0.7
+    }
+   ],
+   "lines": "MN-026..MN-028"
+  },
+  {
+   "type": "statement",
+   "text": "✋ The manita.",
+   "accent": "manita.",
+   "small": "Five fingers, five goals.",
+   "lines": "MN-029..MN-030"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 4",
+   "title": "Why it was perfect",
+   "lines": "MN-031"
+  },
+  {
+   "type": "list",
+   "title": "THE PERFECT NIGHT",
+   "items": [
+    {
+     "at": "MN-032",
+     "text": "THE BALL",
+     "sub": "Barça had it almost all night"
+    },
+    {
+     "at": "MN-033",
+     "text": "THE PRESS",
+     "sub": "Madrid never settled"
+    },
+    {
+     "at": "MN-034",
+     "text": "THE ACADEMY",
+     "sub": "most of the team came from La Masia"
+    },
+    {
+     "at": "MN-035",
+     "text": "THE STAGE",
+     "sub": "against the man built to stop them"
+    }
+   ],
+   "lines": "MN-032..MN-035"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 5",
+   "title": "The war that followed",
+   "lines": "MN-036"
+  },
+  {
+   "type": "timeline",
+   "title": "AFTER THE MANITA",
+   "events": [
+    {
+     "at": 0.3,
+     "year": "Spring 2011",
+     "text": "Four Clásicos in 18 days"
+    },
+    {
+     "at": "MN-038",
+     "year": "May 2011",
+     "text": "Barça win La Liga"
+    },
+    {
+     "at": "MN-039",
+     "year": "28 May 2011",
+     "text": "Champions League, Wembley"
+    }
+   ],
+   "lines": "MN-037..MN-039"
+  },
+  {
+   "type": "statement",
+   "text": "For ninety minutes, football looked easy.",
+   "accent": "easy.",
+   "lines": "MN-040..MN-042"
+  },
+  {
+   "type": "question",
+   "text": "GREATEST CLÁSICO PERFORMANCE?",
+   "options": [
+    "5-0 (2010)",
+    "2-6 (2009)",
+    "0-4 (2024)"
+   ],
+   "lines": "MN-043"
+  },
+  {
+   "type": "endscreen",
+   "hold": 18,
+   "next": "THE 2-6: WHEN BARÇA BROKE MADRID →",
+   "lines": "MN-044"
+  }
+ ]
+}

@@ -1,0 +1,262 @@
+{
+ "id": "EP19-ER",
+ "code": "CY",
+ "title": "1973–74: The Season Cruyff Changed Everything",
+ "music": "story.mp3",
+ "thumb": {
+  "kicker": "BARÇA ERAS · 1973–74",
+  "title": "THE CRUYFF\nSEASON",
+  "accent": "CRUYFF",
+  "style": "photo",
+  "photo": "photos/barca74/cruyff-jumps-1974.jpg"
+ },
+ "scenes": [
+  {
+   "type": "photo",
+   "src": "photos/cruyff/cruyff-flight-barcelona-1973.jpg",
+   "move": "in",
+   "style": "bw",
+   "credit": "Photo: Anefo / Nationaal Archief (CC0) · Schiphol, August 1973",
+   "lead": 0.6,
+   "sfx": [
+    {
+     "name": "shutter",
+     "at": 0.3,
+     "volume": 0.4
+    }
+   ],
+   "lines": "CY-001..CY-003"
+  },
+  {
+   "type": "title",
+   "kicker": "BARÇA ERAS",
+   "title": "1973–74",
+   "sub": "The season Cruyff changed everything.",
+   "photo": "photos/barca74/cruyff-jumps-1974.jpg",
+   "lines": "CY-004"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 1",
+   "title": "A club in the shadows",
+   "lines": "CY-005"
+  },
+  {
+   "type": "statement",
+   "text": "1960 → 1973. Thirteen years without a league title.",
+   "accent": "Thirteen years",
+   "bg": "navy",
+   "lines": "CY-006..CY-008"
+  },
+  {
+   "type": "list",
+   "title": "WHY 1973 WAS POSSIBLE",
+   "items": [
+    {
+     "at": "CY-009",
+     "text": "THE DOOR OPENS",
+     "sub": "Spain allows foreign players again"
+    },
+    {
+     "at": "CY-010",
+     "text": "THE COACH",
+     "sub": "Rinus Michels, already at Barça"
+    },
+    {
+     "at": "CY-011",
+     "text": "THE PLAYER",
+     "sub": "Europe's best, and he wants to come"
+    }
+   ],
+   "lines": "CY-009..CY-011"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 2",
+   "title": "The transfer",
+   "lines": "CY-012"
+  },
+  {
+   "type": "photo",
+   "src": "photos/cruyff/michels-barca-schiphol-1973.jpg",
+   "move": "left",
+   "style": "bw",
+   "caption": "Rinus Michels, Barça's coach",
+   "credit": "Photo: Anefo / Nationaal Archief (CC0) · 1973",
+   "lines": "CY-013..CY-015"
+  },
+  {
+   "type": "statement",
+   "text": "A slow start. Doubts everywhere.",
+   "accent": "Doubts",
+   "bg": "navy",
+   "lines": "CY-016..CY-017"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 3",
+   "title": "The debut",
+   "lines": "CY-018"
+  },
+  {
+   "type": "statement",
+   "text": "October 1973. Cruyff finally plays.",
+   "accent": "finally plays.",
+   "lines": "CY-019..CY-021"
+  },
+  {
+   "type": "photo",
+   "src": "photos/barca74/cruyff-referee.jpg",
+   "move": "in",
+   "style": "bw",
+   "caption": "Cruyff arguing with the referee, Feyenoord–Barça, October 1974",
+   "credit": "Photo: Anefo / Nationaal Archief (CC0)",
+   "lines": "CY-022..CY-023"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 4",
+   "title": "The impossible goal",
+   "lines": "CY-024"
+  },
+  {
+   "type": "photo",
+   "src": "photos/barca74/cruyff-jumps-1974.jpg",
+   "move": "in",
+   "style": "bw",
+   "caption": "Cruyff in the air, Rotterdam, October 1974",
+   "credit": "Photo: Anefo / Nationaal Archief (CC0)",
+   "lines": "CY-025..CY-027"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 5",
+   "title": "The 0–5",
+   "lines": "CY-028"
+  },
+  {
+   "type": "score",
+   "home": "REAL MADRID",
+   "away": "BARCELONA",
+   "venue": "SANTIAGO BERNABÉU",
+   "date": "17 FEB 1974",
+   "events": [
+    {
+     "at": "CY-030",
+     "minute": "",
+     "side": "away",
+     "who": "Goal 1"
+    },
+    {
+     "at": "CY-030+0.8",
+     "minute": "",
+     "side": "away",
+     "who": "Goal 2"
+    },
+    {
+     "at": "CY-031",
+     "minute": "",
+     "side": "away",
+     "who": "Goal 3"
+    },
+    {
+     "at": "CY-031+0.8",
+     "minute": "",
+     "side": "away",
+     "who": "Goal 4"
+    },
+    {
+     "at": "CY-031+1.6",
+     "minute": "",
+     "side": "away",
+     "who": "Goal 5"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "crowd",
+     "at": "CY-031+1.6",
+     "volume": 0.5
+    }
+   ],
+   "lines": "CY-029..CY-032"
+  },
+  {
+   "type": "statement",
+   "text": "Real Madrid 0–5 Barcelona.",
+   "accent": "0–5",
+   "small": "Remembered as one of the most important results in the club's history.",
+   "lines": "CY-033..CY-034"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 6",
+   "title": "Champions",
+   "lines": "CY-035"
+  },
+  {
+   "type": "timeline",
+   "title": "1973–74",
+   "events": [
+    {
+     "at": 0.3,
+     "year": "Oct 1973",
+     "text": "Cruyff's debut"
+    },
+    {
+     "at": "CY-036",
+     "year": "Dec 1973",
+     "text": "Ballon d'Or · the impossible goal"
+    },
+    {
+     "at": "CY-037",
+     "year": "Feb 1974",
+     "text": "0–5 at the Bernabéu"
+    },
+    {
+     "at": "CY-038",
+     "year": "Spring 1974",
+     "text": "League champions"
+    }
+   ],
+   "lines": "CY-036..CY-038"
+  },
+  {
+   "type": "photo",
+   "src": "photos/barca74/barca-training-neeskens.jpg",
+   "move": "right",
+   "style": "bw",
+   "caption": "Barça training in the Netherlands, October 1974 — the following season",
+   "credit": "Photo: Anefo / Nationaal Archief (CC0)",
+   "lines": "CY-039..CY-040"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 7",
+   "title": "The seed",
+   "lines": "CY-041"
+  },
+  {
+   "type": "statement",
+   "text": "He came as a player. He would return as a teacher.",
+   "accent": "a teacher.",
+   "lines": "CY-042..CY-044"
+  },
+  {
+   "type": "question",
+   "text": "BIGGEST CLÁSICO WIN EVER?",
+   "options": [
+    "0-5 (1974)",
+    "2-6 (2009)",
+    "5-0 (2010)"
+   ],
+   "lines": "CY-045"
+  },
+  {
+   "type": "endscreen",
+   "hold": 18,
+   "next": "THE FULL STORY: JOHAN CRUYFF →",
+   "lines": "CY-046"
+  }
+ ]
+}

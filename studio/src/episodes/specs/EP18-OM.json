@@ -1,0 +1,658 @@
+{
+ "id": "EP18-OM",
+ "code": "RK",
+ "title": "Koeman, Wembley 1992: 10 Angles on One Free Kick",
+ "music": "story.mp3",
+ "thumb": {
+  "kicker": "WEMBLEY · 1992",
+  "title": "THE 112TH\nMINUTE",
+  "accent": "112TH",
+  "style": "number",
+  "number": "112'"
+ },
+ "scenes": [
+  {
+   "type": "statement",
+   "text": "20 May 1992. Wembley. Extra time.",
+   "accent": "Extra time.",
+   "bg": "navy",
+   "lead": 0.6,
+   "sfx": [
+    {
+     "name": "crowd",
+     "at": 0.2,
+     "volume": 0.3
+    }
+   ],
+   "lines": "RK-001..RK-004"
+  },
+  {
+   "type": "chapter",
+   "num": "ANGLE 1",
+   "title": "The curse",
+   "lines": "RK-005"
+  },
+  {
+   "type": "timeline",
+   "title": "BARÇA IN EUROPEAN CUP FINALS",
+   "events": [
+    {
+     "at": 0.3,
+     "year": "1961",
+     "text": "Lost 3–2 to Benfica, Bern"
+    },
+    {
+     "at": "RK-007",
+     "year": "1986",
+     "text": "Lost on penalties to Steaua, Seville"
+    },
+    {
+     "at": "RK-008",
+     "year": "1992",
+     "text": "Sampdoria, Wembley"
+    }
+   ],
+   "lines": "RK-006..RK-008"
+  },
+  {
+   "type": "chapter",
+   "num": "ANGLE 2",
+   "title": "The coach",
+   "lines": "RK-009"
+  },
+  {
+   "type": "statement",
+   "text": "“Go out there and enjoy it.”",
+   "accent": "enjoy it.",
+   "small": "Johan Cruyff's team talk, Wembley 1992 (widely reported)",
+   "lines": "RK-010..RK-012"
+  },
+  {
+   "type": "chapter",
+   "num": "ANGLE 3",
+   "title": "The orange shirts",
+   "lines": "RK-013"
+  },
+  {
+   "type": "photo",
+   "src": "photos/koeman/euro88-ireland.jpg",
+   "move": "in",
+   "style": "bw",
+   "caption": "Koeman (back row) with the Netherlands at Euro 88",
+   "credit": "Photo: Anefo / Nationaal Archief (CC0) · 18 June 1988",
+   "lines": "RK-014..RK-016"
+  },
+  {
+   "type": "chapter",
+   "num": "ANGLE 4",
+   "title": "The opponent",
+   "lines": "RK-017"
+  },
+  {
+   "type": "list",
+   "title": "SAMPDORIA 1992",
+   "items": [
+    {
+     "at": "RK-018",
+     "text": "ITALIAN CHAMPIONS",
+     "sub": "the 1991 Serie A title"
+    },
+    {
+     "at": "RK-019",
+     "text": "VIALLI & MANCINI",
+     "sub": "one of the great strike partnerships"
+    },
+    {
+     "at": "RK-020",
+     "text": "A FIRST FINAL",
+     "sub": "for them too"
+    }
+   ],
+   "lines": "RK-018..RK-020"
+  },
+  {
+   "type": "chapter",
+   "num": "ANGLE 5",
+   "title": "Extra time",
+   "lines": "RK-021"
+  },
+  {
+   "type": "statement",
+   "text": "90 minutes. 0–0.",
+   "accent": "0–0.",
+   "bg": "navy",
+   "lines": "RK-022..RK-024"
+  },
+  {
+   "type": "chapter",
+   "num": "ANGLE 6",
+   "title": "The foul",
+   "lines": "RK-025"
+  },
+  {
+   "type": "board",
+   "title": "111' · THE FREE-KICK",
+   "tag": "ILLUSTRATION",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.5,
+     "focus": [
+      86,
+      34
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "eu",
+     "side": "barca",
+     "label": "",
+     "path": [
+      [
+       0,
+       76,
+       38
+      ],
+      [
+       "RK-026",
+       80,
+       37
+      ]
+     ],
+     "hi": [
+      [
+       "RK-026",
+       "RK-027",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "op",
+     "side": "opp",
+     "label": "",
+     "path": [
+      [
+       0,
+       82,
+       40
+      ],
+      [
+       "RK-026",
+       80.5,
+       38
+      ]
+     ]
+    },
+    {
+     "id": "w1",
+     "side": "opp",
+     "label": "",
+     "path": [
+      [
+       0,
+       91,
+       31
+      ]
+     ]
+    },
+    {
+     "id": "w2",
+     "side": "opp",
+     "label": "",
+     "path": [
+      [
+       0,
+       91,
+       33
+      ]
+     ]
+    },
+    {
+     "id": "w3",
+     "side": "opp",
+     "label": "",
+     "path": [
+      [
+       0,
+       91,
+       35
+      ]
+     ]
+    },
+    {
+     "id": "w4",
+     "side": "opp",
+     "label": "",
+     "path": [
+      [
+       0,
+       91,
+       37
+      ]
+     ]
+    },
+    {
+     "id": "gk",
+     "side": "opp",
+     "label": "1",
+     "path": [
+      [
+       0,
+       103,
+       34
+      ]
+     ]
+    }
+   ],
+   "ball": {
+    "path": [
+     [
+      0,
+      76.5,
+      38.5
+     ],
+     [
+      "RK-026",
+      80.5,
+      37.5
+     ],
+     [
+      "RK-027",
+      80.5,
+      37.5
+     ]
+    ]
+   },
+   "labels": [
+    {
+     "text": "~25 METRES",
+     "at": "RK-027",
+     "x": 90,
+     "y": 46,
+     "color": "#f2c230"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "tick",
+     "at": "RK-026+0.5",
+     "volume": 0.6
+    }
+   ],
+   "lines": "RK-026..RK-028"
+  },
+  {
+   "type": "chapter",
+   "num": "ANGLE 7",
+   "title": "The touch",
+   "lines": "RK-029"
+  },
+  {
+   "type": "board",
+   "title": "THE ROUTINE",
+   "tag": "ILLUSTRATION",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.9,
+     "focus": [
+      80,
+      37
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "st",
+     "side": "barca",
+     "label": "8",
+     "path": [
+      [
+       0,
+       79.5,
+       36
+      ]
+     ],
+     "hi": [
+      [
+       "RK-030",
+       "RK-030+1.5",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "ba",
+     "side": "barca",
+     "label": "6",
+     "path": [
+      [
+       0,
+       81.5,
+       36.5
+      ]
+     ],
+     "hi": [
+      [
+       "RK-031",
+       "RK-031+1.5",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "ko",
+     "side": "barca",
+     "label": "4",
+     "path": [
+      [
+       0,
+       76,
+       39
+      ],
+      [
+       "RK-032",
+       79.5,
+       38
+      ]
+     ],
+     "hi": [
+      [
+       "RK-032",
+       "RK-033",
+       "#f2c230"
+      ]
+     ]
+    }
+   ],
+   "ball": {
+    "path": [
+     [
+      0,
+      80.5,
+      37.5
+     ],
+     [
+      "RK-030",
+      80.5,
+      37.5
+     ],
+     [
+      "RK-030+0.6",
+      81.6,
+      37.5
+     ],
+     [
+      "RK-031+0.4",
+      81,
+      37.8
+     ]
+    ]
+   },
+   "arrows": [
+    {
+     "from": [
+      80.5,
+      37.5
+     ],
+     "to": [
+      81.6,
+      37.5
+     ],
+     "at": "RK-030",
+     "color": "#ecebe4"
+    }
+   ],
+   "labels": [
+    {
+     "text": "TAP",
+     "at": "RK-030+0.5",
+     "x": 80,
+     "y": 33,
+     "color": "#ecebe4"
+    },
+    {
+     "text": "STOP",
+     "at": "RK-031+0.5",
+     "x": 83,
+     "y": 33,
+     "color": "#ecebe4"
+    }
+   ],
+   "lines": "RK-030..RK-033"
+  },
+  {
+   "type": "chapter",
+   "num": "ANGLE 8",
+   "title": "The strike",
+   "lines": "RK-034"
+  },
+  {
+   "type": "board",
+   "title": "112' · THE STRIKE",
+   "tag": "ILLUSTRATION",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.55,
+     "focus": [
+      90,
+      34
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "ko",
+     "side": "barca",
+     "label": "4",
+     "path": [
+      [
+       0,
+       79.5,
+       38
+      ]
+     ],
+     "hi": [
+      [
+       "RK-035",
+       "RK-037",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "w1",
+     "side": "opp",
+     "label": "",
+     "path": [
+      [
+       0,
+       89,
+       32
+      ]
+     ]
+    },
+    {
+     "id": "w2",
+     "side": "opp",
+     "label": "",
+     "path": [
+      [
+       0,
+       89,
+       34
+      ]
+     ]
+    },
+    {
+     "id": "w3",
+     "side": "opp",
+     "label": "",
+     "path": [
+      [
+       0,
+       89,
+       36
+      ]
+     ]
+    },
+    {
+     "id": "gk",
+     "side": "opp",
+     "label": "1",
+     "path": [
+      [
+       0,
+       103,
+       33
+      ],
+      [
+       "RK-035+0.7",
+       103.5,
+       36
+      ]
+     ]
+    }
+   ],
+   "ball": {
+    "path": [
+     [
+      0,
+      81,
+      37.8
+     ],
+     [
+      "RK-035",
+      81,
+      37.8
+     ],
+     [
+      "RK-035+0.7",
+      104.6,
+      37.6
+     ]
+    ],
+    "lift": [
+     "RK-035",
+     "RK-035+0.7"
+    ]
+   },
+   "arrows": [
+    {
+     "from": [
+      81,
+      37.8
+     ],
+     "to": [
+      104.5,
+      37.6
+     ],
+     "at": "RK-035",
+     "dur": 0.4,
+     "color": "#f2c230"
+    }
+   ],
+   "overlay": [
+    {
+     "text": "1–0",
+     "at": "RK-036",
+     "pos": "top"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "impact",
+     "at": "RK-035+0.3",
+     "volume": 0.55
+    },
+    {
+     "name": "crowd",
+     "at": "RK-035+0.6",
+     "volume": 0.7
+    }
+   ],
+   "lines": "RK-035..RK-037"
+  },
+  {
+   "type": "chapter",
+   "num": "ANGLE 9",
+   "title": "The steps",
+   "lines": "RK-038"
+  },
+  {
+   "type": "statement",
+   "text": "The first European Cup in Barça's history.",
+   "accent": "first",
+   "bg": "navy",
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 0.2,
+     "volume": 0.4
+    }
+   ],
+   "lines": "RK-039..RK-041"
+  },
+  {
+   "type": "chapter",
+   "num": "ANGLE 10",
+   "title": "What it started",
+   "lines": "RK-042"
+  },
+  {
+   "type": "list",
+   "title": "AFTER WEMBLEY",
+   "items": [
+    {
+     "at": "RK-043",
+     "text": "THE DREAM TEAM",
+     "sub": "four league titles in a row"
+    },
+    {
+     "at": "RK-044",
+     "text": "THE BELIEF",
+     "sub": "Barça could win in Europe"
+    },
+    {
+     "at": "RK-045",
+     "text": "A GUARDIOLA IN MIDFIELD",
+     "sub": "who would later coach the club"
+    },
+    {
+     "at": "RK-046",
+     "text": "KOEMAN, THE COACH",
+     "sub": "back at Barça in 2020"
+    }
+   ],
+   "lines": "RK-043..RK-046"
+  },
+  {
+   "type": "photo",
+   "src": "photos/koeman/koeman-portrait.jpg",
+   "move": "in",
+   "style": "bw",
+   "caption": "Ronald Koeman, 1983",
+   "credit": "Photo: Anefo / Nationaal Archief (CC0)",
+   "lines": "RK-047..RK-048"
+  },
+  {
+   "type": "question",
+   "text": "WHICH MOMENT NEXT?",
+   "options": [
+    "RONALDINHO AT THE BERNABÉU",
+    "MESSI VS GETAFE",
+    "PUYOL'S HEADER 2010"
+   ],
+   "lines": "RK-049"
+  },
+  {
+   "type": "endscreen",
+   "hold": 18,
+   "next": "INIESTA, 93RD MINUTE: 10 ANGLES →",
+   "lines": "RK-050"
+  }
+ ]
+}

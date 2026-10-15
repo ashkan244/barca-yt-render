@@ -78,6 +78,13 @@ jobs:
           name: ${{ inputs.composition }}-meta
           path: studio/out/meta
           retention-days: 30
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.composition }}-post
+          path: |
+            studio/out/meta
+            !studio/out/meta/audio-*
+          retention-days: 30
 
   render:
     needs: plan
@@ -137,10 +144,20 @@ jobs:
           cat part-*.txt > render-speed.txt
           ffmpeg -hide_banner -i '${{ inputs.composition }}.mp4' -af loudnorm=print_format=summary -f null - 2>&1 | tail -12 >> render-speed.txt || true
           cat render-speed.txt
+          ffprobe -v error -show_entries format=duration -of csv=p=0 '${{ inputs.composition }}.mp4' > duration.txt
+          ffmpeg -v error -y -i '${{ inputs.composition }}.mp4' -vf 'fps=1/20,scale=384:216,tile=6x8' -frames:v 1 sheet.png
       - uses: actions/upload-artifact@v4
         with:
           name: ${{ inputs.composition }}
           path: |
             studio/out/${{ inputs.composition }}.mp4
+            studio/out/render-speed.txt
+          retention-days: 30
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.composition }}-qc
+          path: |
+            studio/out/sheet.png
+            studio/out/duration.txt
             studio/out/render-speed.txt
           retention-days: 30

@@ -1,0 +1,209 @@
+{
+ "id": "EP17-BZ",
+ "code": "DS",
+ "title": "The Di Stéfano Affair: The Transfer That Started a War",
+ "music": "story.mp3",
+ "thumb": {
+  "kicker": "CLUB & MONEY",
+  "title": "THE TRANSFER\nWAR",
+  "accent": "WAR",
+  "style": "photo",
+  "photo": "photos/distefano/distefano-1959.jpg"
+ },
+ "scenes": [
+  {
+   "type": "statement",
+   "text": "One player. Two contracts. Two clubs.",
+   "accent": "Two clubs.",
+   "bg": "navy",
+   "lead": 0.6,
+   "lines": "DS-001..DS-004"
+  },
+  {
+   "type": "photo",
+   "src": "photos/distefano/distefano-1959.jpg",
+   "move": "in",
+   "style": "bw",
+   "caption": "Alfredo Di Stéfano, 1959",
+   "credit": "Photo: public domain (Wikimedia Commons)",
+   "lines": "DS-005..DS-006"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 1",
+   "title": "The pirate league",
+   "lines": "DS-007"
+  },
+  {
+   "type": "map",
+   "label": "BUENOS AIRES → BOGOTÁ",
+   "from": {
+    "name": "BUENOS AIRES",
+    "xy": [
+     760,
+     880
+    ]
+   },
+   "to": {
+    "name": "BOGOTÁ",
+    "xy": [
+     560,
+     360
+    ]
+   },
+   "lines": "DS-008..DS-010"
+  },
+  {
+   "type": "statement",
+   "text": "March 1952. Millonarios play in Madrid.",
+   "accent": "Madrid.",
+   "bg": "navy",
+   "lines": "DS-011..DS-012"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 2",
+   "title": "Two deals",
+   "lines": "DS-013"
+  },
+  {
+   "type": "compare",
+   "left": {
+    "title": "BARÇA'S DEAL",
+    "points": [
+     "Negotiated with River Plate",
+     "The club FIFA said owned him",
+     "Paid River for his rights"
+    ]
+   },
+   "right": {
+    "title": "MADRID'S DEAL",
+    "points": [
+     "Negotiated with Millonarios",
+     "The club he was actually playing for",
+     "His contract there ran to 1954"
+    ]
+   },
+   "lines": "DS-014..DS-017"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 3",
+   "title": "The solution nobody wanted",
+   "lines": "DS-018"
+  },
+  {
+   "type": "timeline",
+   "title": "SEPTEMBER–OCTOBER 1953",
+   "events": [
+    {
+     "at": 0.3,
+     "year": "15 Sep",
+     "text": "Federation: alternate seasons"
+    },
+    {
+     "at": "DS-020",
+     "year": "22 Sep",
+     "text": "Barça's president resigns"
+    },
+    {
+     "at": "DS-021",
+     "year": "23 Oct",
+     "text": "Barça give up their claim"
+    }
+   ],
+   "lines": "DS-019..DS-021"
+  },
+  {
+   "type": "compare",
+   "left": {
+    "title": "BARÇA'S VERSION",
+    "points": [
+     "We had signed the rightful owner's deal",
+     "The state and federation favoured Madrid",
+     "We were pressured to give him up"
+    ]
+   },
+   "right": {
+    "title": "MADRID'S VERSION",
+    "points": [
+     "We dealt with his actual club",
+     "Barça accepted the deal, then walked away",
+     "The decision was Barça's own"
+    ]
+   },
+   "lines": "DS-022..DS-025"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 4",
+   "title": "What followed",
+   "lines": "DS-026"
+  },
+  {
+   "type": "statement",
+   "text": "Real Madrid 5–0 Barcelona. October 1953.",
+   "accent": "5–0",
+   "bg": "navy",
+   "sfx": [
+    {
+     "name": "crowd",
+     "at": "DS-028",
+     "volume": 0.4
+    }
+   ],
+   "lines": "DS-027..DS-029"
+  },
+  {
+   "type": "photo",
+   "src": "photos/distefano/real-madrid-amsterdam-1959.jpg",
+   "move": "left",
+   "style": "bw",
+   "caption": "Real Madrid in Amsterdam, 1959 — Di Stéfano and Puskás front row",
+   "credit": "Photo: Anefo / Nationaal Archief (CC0)",
+   "lines": "DS-030..DS-032"
+  },
+  {
+   "type": "stat",
+   "value": "5",
+   "label": "European Cups in a row for Real Madrid, 1956–1960 — Di Stéfano scored in every final",
+   "source": "UEFA",
+   "lines": "DS-033..DS-034"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 5",
+   "title": "A rivalry becomes a war",
+   "lines": "DS-035"
+  },
+  {
+   "type": "statement",
+   "text": "More than football.",
+   "accent": "More than",
+   "bg": "navy",
+   "lines": "DS-036..DS-038"
+  },
+  {
+   "type": "statement",
+   "text": "Two clubs. One story. Two completely different memories.",
+   "accent": "Two completely different memories.",
+   "lines": "DS-039..DS-041"
+  },
+  {
+   "type": "question",
+   "text": "WHO HAD THE BETTER CLAIM?",
+   "options": [
+    "BARÇA (RIVER PLATE)",
+    "MADRID (MILLONARIOS)",
+    "NOBODY KNOWS"
+   ],
+   "lines": "DS-042"
+  },
+  {
+   "type": "endscreen",
+   "hold": 18,
+   "next": "KUBALA: THE REFUGEE WHO BUILT A STADIUM →",
+   "lines": "DS-043"
+  }
+ ]
+}
