@@ -5,6 +5,7 @@ import {Mark} from '../Branding';
 import type {Scene, T} from './types';
 import {resolveT, type SceneTiming} from './timeline';
 import {BoardSceneView} from './BoardScene';
+import {PhotoSceneView} from './PhotoScenes';
 
 type P = {st: SceneTiming};
 const ease = {...clamp, easing: Easing.inOut(Easing.cubic)};
@@ -372,6 +373,7 @@ export const SceneView: React.FC<P> = ({st}) => {
     case 'statement': return <Statement st={st} />;
     case 'question': return <Question st={st} />;
     case 'endscreen': return <EndScreen st={st} />;
+    case 'gallery': case 'duo': case 'collage': return <PhotoSceneView st={st} />;
     default: return <AbsoluteFill style={{background: '#300'}} />;
   }
 };

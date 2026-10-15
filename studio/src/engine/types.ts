@@ -48,7 +48,14 @@ export type Scene =
   | (BaseScene & {type: 'bars'; title?: string; unit?: string; tag?: string; bars: {label: string; value: number; highlight?: boolean}[]; note?: string})
   | (BaseScene & {type: 'statement'; text: string; accent?: string; small?: string})
   | (BaseScene & {type: 'question'; text: string; options?: string[]})
-  | (BaseScene & {type: 'endscreen'; next?: string});
+  | (BaseScene & {type: 'endscreen'; next?: string})
+  | (BaseScene & {type: 'gallery'; style?: PhotoStyle; photos: GalleryPhoto[]})
+  | (BaseScene & {type: 'duo'; title?: string; style?: PhotoStyle; left: DuoCard; right: DuoCard; at?: T; divider?: string})
+  | (BaseScene & {type: 'collage'; title?: string; style?: PhotoStyle; credit?: string; photos: {src: string; at: T; label?: string; rot?: number; style?: PhotoStyle}[]; spot?: {i: number; at: T; until?: T}[]});
+
+export type PhotoStyle = 'ink' | 'bw' | 'sepia';
+export type GalleryPhoto = {src: string; at: T; caption?: string; credit?: string; year?: string; move?: 'in' | 'out' | 'left' | 'right' | 'still'; focus?: XY; style?: PhotoStyle};
+export type DuoCard = {src: string; label: string; sub?: string; credit?: string; focus?: XY; style?: PhotoStyle};
 
 export type Thumb = {
   kicker: string; // small tag, e.g. "PLAY LIKE PEDRI"
@@ -65,5 +72,6 @@ export type EpisodeSpec = {
   title: string;
   music?: string; // public/music/<file>
   thumb?: Thumb;
+  captions?: boolean; // burned-in phrase captions (image-led formats, Shorts)
   scenes: Scene[];
 };

@@ -1,0 +1,353 @@
+{
+ "id": "EP23-AL",
+ "code": "WK",
+ "title": "Summer of 1974: Barça's Men at the World Cup",
+ "music": "hope.mp3",
+ "captions": true,
+ "thumb": {
+  "kicker": "THE ALBUM",
+  "title": "SUMMER\nOF '74",
+  "accent": "'74",
+  "style": "photo",
+  "photo": "photos/anefo/106.jpg"
+ },
+ "scenes": [
+  {
+   "type": "collage",
+   "title": "SUMMER 1974",
+   "lead": 0.6,
+   "credit": "Photos: Anefo / Nationaal Archief (CC0)",
+   "photos": [
+    {
+     "src": "photos/anefo/080.jpg",
+     "at": 0.3,
+     "label": "Barça in Tilburg, May"
+    },
+    {
+     "src": "photos/anefo/093.jpg",
+     "at": "WK-002",
+     "label": "Hiltrup, June"
+    },
+    {
+     "src": "photos/anefo/106.jpg",
+     "at": "WK-002+1",
+     "label": "Dortmund, June"
+    },
+    {
+     "src": "photos/anefo/168.jpg",
+     "at": "WK-003",
+     "label": "Munich, 7 July"
+    },
+    {
+     "src": "photos/anefo/224.jpg",
+     "at": "WK-003+1",
+     "label": "Amsterdam, 8 July"
+    },
+    {
+     "src": "photos/anefo/234.jpg",
+     "at": "WK-004",
+     "label": "To Barcelona, 18 July"
+    }
+   ],
+   "spot": [
+    {
+     "i": 2,
+     "at": "WK-005",
+     "until": "WK-005+4"
+    }
+   ],
+   "lines": "WK-001..WK-005"
+  },
+  {
+   "type": "chapter",
+   "num": "PAGE 1",
+   "title": "The champions arrive",
+   "lines": "WK-006"
+  },
+  {
+   "type": "collage",
+   "title": "MAY 1974",
+   "photos": [
+    {
+     "src": "photos/anefo/081.jpg",
+     "at": 0.3,
+     "label": "PSV v Barça, 19 May"
+    },
+    {
+     "src": "photos/anefo/082.jpg",
+     "at": "WK-008",
+     "label": "Cruyff at full speed"
+    },
+    {
+     "src": "photos/anefo/084.jpg",
+     "at": "WK-009",
+     "label": "The two Johans, Zeist"
+    },
+    {
+     "src": "photos/anefo/086.jpg",
+     "at": "WK-010",
+     "label": "Michels takes charge"
+    }
+   ],
+   "spot": [
+    {
+     "i": 2,
+     "at": "WK-009+0.5",
+     "until": "WK-010"
+    }
+   ],
+   "lines": "WK-007..WK-010"
+  },
+  {
+   "type": "chapter",
+   "num": "PAGE 2",
+   "title": "The camp",
+   "lines": "WK-011"
+  },
+  {
+   "type": "collage",
+   "title": "HILTRUP",
+   "photos": [
+    {
+     "src": "photos/anefo/094.jpg",
+     "at": 0.3,
+     "label": "Flowers on arrival"
+    },
+    {
+     "src": "photos/anefo/096.jpg",
+     "at": "WK-013",
+     "label": "Hotel window"
+    },
+    {
+     "src": "photos/anefo/121.jpg",
+     "at": "WK-013+1",
+     "label": "Cruyff and the press"
+    },
+    {
+     "src": "photos/anefo/143.jpg",
+     "at": "WK-014",
+     "label": "Neeskens"
+    },
+    {
+     "src": "photos/anefo/144.jpg",
+     "at": "WK-014+1",
+     "label": "Michels & the Cruyffs"
+    },
+    {
+     "src": "photos/anefo/166.jpg",
+     "at": "WK-015",
+     "label": "The bench, July"
+    }
+   ],
+   "lines": "WK-012..WK-015"
+  },
+  {
+   "type": "chapter",
+   "num": "PAGE 3",
+   "title": "The group",
+   "lines": "WK-016"
+  },
+  {
+   "type": "collage",
+   "title": "URUGUAY · SWEDEN · BULGARIA",
+   "photos": [
+    {
+     "src": "photos/anefo/097.jpg",
+     "at": 0.3,
+     "label": "v Uruguay 2–0"
+    },
+    {
+     "src": "photos/anefo/102.jpg",
+     "at": "WK-017+2",
+     "label": "Thanks to the crowd"
+    },
+    {
+     "src": "photos/anefo/106.jpg",
+     "at": "WK-018",
+     "label": "v Sweden 0–0"
+    },
+    {
+     "src": "photos/anefo/108.jpg",
+     "at": "WK-019+1",
+     "label": "Fans in the fountain"
+    },
+    {
+     "src": "photos/anefo/123.jpg",
+     "at": "WK-020",
+     "label": "v Bulgaria 4–1"
+    },
+    {
+     "src": "photos/anefo/127.jpg",
+     "at": "WK-020+2",
+     "label": "Krol, Jansen, Cruyff"
+    }
+   ],
+   "spot": [
+    {
+     "i": 2,
+     "at": "WK-018+1",
+     "until": "WK-019"
+    }
+   ],
+   "lines": "WK-017..WK-020"
+  },
+  {
+   "type": "chapter",
+   "num": "PAGE 4",
+   "title": "The masterclass",
+   "lines": "WK-021"
+  },
+  {
+   "type": "collage",
+   "title": "ARGENTINA · EAST GERMANY · BRAZIL",
+   "photos": [
+    {
+     "src": "photos/anefo/147.jpg",
+     "at": 0.3,
+     "label": "Cruyff scores v Argentina"
+    },
+    {
+     "src": "photos/anefo/157.jpg",
+     "at": "WK-022+2",
+     "label": "4–0"
+    },
+    {
+     "src": "photos/anefo/312.jpg",
+     "at": "WK-023",
+     "label": "v East Germany 2–0"
+    },
+    {
+     "src": "photos/anefo/164.jpg",
+     "at": "WK-024",
+     "label": "Cruyff makes it 2–0 v Brazil"
+    },
+    {
+     "src": "photos/anefo/163.jpg",
+     "at": "WK-025",
+     "label": "Neeskens down"
+    }
+   ],
+   "spot": [
+    {
+     "i": 3,
+     "at": "WK-024+1",
+     "until": "WK-025"
+    }
+   ],
+   "lines": "WK-022..WK-025"
+  },
+  {
+   "type": "chapter",
+   "num": "PAGE 5",
+   "title": "The final",
+   "lines": "WK-026"
+  },
+  {
+   "type": "collage",
+   "title": "MUNICH · 7 JULY 1974",
+   "photos": [
+    {
+     "src": "photos/anefo/203.jpg",
+     "at": 0.3,
+     "label": "Cruyff & Beckenbauer"
+    },
+    {
+     "src": "photos/anefo/167.jpg",
+     "at": "WK-028",
+     "label": "Cruyff brought down"
+    },
+    {
+     "src": "photos/anefo/168.jpg",
+     "at": "WK-028+2",
+     "label": "Neeskens: 1–0"
+    },
+    {
+     "src": "photos/anefo/178.jpg",
+     "at": "WK-029+2",
+     "label": "Arguing with the referee"
+    },
+    {
+     "src": "photos/anefo/169.jpg",
+     "at": "WK-030",
+     "label": "Full time"
+    },
+    {
+     "src": "photos/anefo/182.jpg",
+     "at": "WK-030+1.5",
+     "label": "2–1"
+    }
+   ],
+   "spot": [
+    {
+     "i": 2,
+     "at": "WK-028+3",
+     "until": "WK-029"
+    }
+   ],
+   "lines": "WK-027..WK-030"
+  },
+  {
+   "type": "chapter",
+   "num": "PAGE 6",
+   "title": "Back to Barcelona",
+   "lines": "WK-031"
+  },
+  {
+   "type": "collage",
+   "title": "AFTER THE FINAL",
+   "photos": [
+    {
+     "src": "photos/anefo/224.jpg",
+     "at": 0.3,
+     "label": "Leidseplein, 8 July"
+    },
+    {
+     "src": "photos/anefo/226.jpg",
+     "at": "WK-032+1.5",
+     "label": "Michels meets the Queen"
+    },
+    {
+     "src": "photos/anefo/234.jpg",
+     "at": "WK-033",
+     "label": "Neeskens flies to Barça"
+    },
+    {
+     "src": "photos/anefo/245.jpg",
+     "at": "WK-034",
+     "label": "Cruyff: player of the World Cup"
+    }
+   ],
+   "spot": [
+    {
+     "i": 2,
+     "at": "WK-033+0.5",
+     "until": "WK-034"
+    }
+   ],
+   "lines": "WK-032..WK-035"
+  },
+  {
+   "type": "statement",
+   "text": "They lost the final. They won the future.",
+   "accent": "won the future.",
+   "bg": "navy",
+   "lines": "WK-036"
+  },
+  {
+   "type": "question",
+   "text": "BEST TEAM NEVER TO WIN THE WORLD CUP?",
+   "options": [
+    "NETHERLANDS 1974",
+    "HUNGARY 1954",
+    "BRAZIL 1982"
+   ],
+   "lines": "WK-037"
+  },
+  {
+   "type": "endscreen",
+   "hold": 18,
+   "next": "JOHAN NEESKENS: THE OTHER JOHAN →",
+   "lines": "WK-038"
+  }
+ ]
+}

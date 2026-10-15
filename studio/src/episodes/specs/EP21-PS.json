@@ -1,0 +1,361 @@
+{
+ "id": "EP21-PS",
+ "code": "NE",
+ "title": "Johan Neeskens: The Other Johan",
+ "music": "story.mp3",
+ "captions": true,
+ "thumb": {
+  "kicker": "PHOTO STORY",
+  "title": "THE OTHER\nJOHAN",
+  "accent": "JOHAN",
+  "style": "photo",
+  "photo": "photos/anefo/168.jpg"
+ },
+ "scenes": [
+  {
+   "type": "gallery",
+   "lead": 0.6,
+   "style": "bw",
+   "photos": [
+    {
+     "src": "photos/anefo/167.jpg",
+     "at": 0,
+     "year": "7 JULY 1974",
+     "credit": "Anefo / Nationaal Archief (CC0)",
+     "focus": [
+      45,
+      55
+     ]
+    },
+    {
+     "src": "photos/anefo/168.jpg",
+     "at": "NE-003",
+     "move": "in",
+     "credit": "Anefo / Nationaal Archief (CC0)",
+     "focus": [
+      40,
+      60
+     ]
+    }
+   ],
+   "sfx": [
+    {
+     "name": "crowd",
+     "at": 0.3,
+     "volume": 0.35
+    }
+   ],
+   "lines": "NE-001..NE-004"
+  },
+  {
+   "type": "title",
+   "kicker": "PHOTO STORY",
+   "title": "THE OTHER\nJOHAN",
+   "sub": "Johan Neeskens, 1951–2024",
+   "photo": "photos/anefo/077.jpg",
+   "style": "bw",
+   "lines": "NE-005..NE-006"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 1",
+   "title": "The boy who ran",
+   "lines": "NE-007"
+  },
+  {
+   "type": "gallery",
+   "photos": [
+    {
+     "src": "photos/anefo/023.jpg",
+     "at": 0,
+     "year": "1970",
+     "caption": "Neeskens at Ajax, aged 18",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/027.jpg",
+     "at": "NE-009",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/028.jpg",
+     "at": "NE-010",
+     "caption": "Embraced by Piet Keizer, April 1971",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/031.jpg",
+     "at": "NE-011",
+     "year": "WEMBLEY 1971",
+     "caption": "European Cup final against Panathinaikos",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/032.jpg",
+     "at": "NE-012",
+     "caption": "Neeskens (left) and Cruyff (right) celebrate the second goal",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    }
+   ],
+   "lines": "NE-008..NE-012"
+  },
+  {
+   "type": "gallery",
+   "photos": [
+    {
+     "src": "photos/anefo/038.jpg",
+     "at": 0,
+     "year": "1972",
+     "caption": "Scoring against Independiente — Ajax become world club champions",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/039.jpg",
+     "at": "NE-014",
+     "caption": "Leaping over Belgium's goalkeeper, 1972",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/062.jpg",
+     "at": "NE-015",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/069.jpg",
+     "at": "NE-016",
+     "year": "1974",
+     "caption": "The penalty taker",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    }
+   ],
+   "lines": "NE-013..NE-016"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 2",
+   "title": "Summer of '74",
+   "lines": "NE-017"
+  },
+  {
+   "type": "gallery",
+   "photos": [
+    {
+     "src": "photos/anefo/084.jpg",
+     "at": 0,
+     "year": "MAY 1974",
+     "caption": "Cruyff and Neeskens at the Dutch camp",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/095.jpg",
+     "at": "NE-019",
+     "caption": "Arriving at the World Cup base in Hiltrup",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/100.jpg",
+     "at": "NE-020",
+     "caption": "Injured against Uruguay — and back on his feet",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/151.jpg",
+     "at": "NE-021",
+     "caption": "Past Argentina's goalkeeper, 4–0",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/163.jpg",
+     "at": "NE-022",
+     "caption": "Knocked out by a kick against Brazil",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    }
+   ],
+   "lines": "NE-018..NE-022"
+  },
+  {
+   "type": "gallery",
+   "photos": [
+    {
+     "src": "photos/anefo/168.jpg",
+     "at": 0,
+     "year": "THE FINAL",
+     "credit": "Anefo / Nationaal Archief (CC0)",
+     "focus": [
+      40,
+      60
+     ]
+    },
+    {
+     "src": "photos/anefo/183.jpg",
+     "at": "NE-024",
+     "caption": "The Dutch leave the pitch after the final",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/185.jpg",
+     "at": "NE-025",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/225.jpg",
+     "at": "NE-026",
+     "year": "8 JULY 1974",
+     "caption": "Cheered on the Leidseplein, Amsterdam",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    }
+   ],
+   "lines": "NE-023..NE-026"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 3",
+   "title": "Barcelona",
+   "lines": "NE-027"
+  },
+  {
+   "type": "gallery",
+   "photos": [
+    {
+     "src": "photos/anefo/227.jpg",
+     "at": 0,
+     "year": "16 JULY 1974",
+     "caption": "Neeskens marries Marianne Schiphof in Heemstede",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/234.jpg",
+     "at": "NE-029",
+     "year": "18 JULY 1974",
+     "caption": "Two days later: on the plane to Barcelona",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/238.jpg",
+     "at": "NE-030",
+     "caption": "In Barça training, October 1974",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/242.jpg",
+     "at": "NE-031",
+     "caption": "Neeskens and Cruyff in Barça colours, Rotterdam 1974",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    }
+   ],
+   "lines": "NE-028..NE-031"
+  },
+  {
+   "type": "gallery",
+   "photos": [
+    {
+     "src": "photos/anefo/261.jpg",
+     "at": 0,
+     "year": "1976",
+     "caption": "Neeskens, Michels and Cruyff",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/269.jpg",
+     "at": "NE-033",
+     "year": "1977",
+     "caption": "FC Barcelona, October 1977 — Neeskens standing, fourth from left",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/270.jpg",
+     "at": "NE-034",
+     "caption": "Against AZ'67 in the UEFA Cup",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/277.jpg",
+     "at": "NE-035",
+     "year": "1978",
+     "caption": "Cruyff, Michels and Neeskens",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    }
+   ],
+   "lines": "NE-032..NE-035"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 4",
+   "title": "The second final",
+   "lines": "NE-036"
+  },
+  {
+   "type": "gallery",
+   "photos": [
+    {
+     "src": "photos/anefo/265.jpg",
+     "at": 0,
+     "year": "1977",
+     "caption": "Krol and Neeskens with the national team",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/285.jpg",
+     "at": "NE-038",
+     "year": "MAY 1978",
+     "caption": "With coach Ernst Happel before the World Cup in Argentina",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/288.jpg",
+     "at": "NE-040",
+     "year": "1981",
+     "caption": "Back with the national team, under Kees Rijvers",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    }
+   ],
+   "lines": "NE-037..NE-040"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 5",
+   "title": "Coming home",
+   "lines": "NE-041"
+  },
+  {
+   "type": "gallery",
+   "photos": [
+    {
+     "src": "photos/anefo/263.jpg",
+     "at": 0,
+     "caption": "With Cruyff, Schiphol 1976",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/083.jpg",
+     "at": "NE-043",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/077.jpg",
+     "at": "NE-045",
+     "year": "1951 – 2024",
+     "credit": "Anefo / Nationaal Archief (CC0)",
+     "move": "in"
+    }
+   ],
+   "lines": "NE-042..NE-045"
+  },
+  {
+   "type": "question",
+   "text": "WHO SHOULD WE TELL IN PICTURES NEXT?",
+   "options": [
+    "RONALD KOEMAN",
+    "HRISTO STOICHKOV",
+    "MICHAEL LAUDRUP"
+   ],
+   "lines": "NE-046"
+  },
+  {
+   "type": "endscreen",
+   "hold": 18,
+   "next": "1973–74: THE CRUYFF SEASON →",
+   "lines": "NE-047"
+  }
+ ]
+}

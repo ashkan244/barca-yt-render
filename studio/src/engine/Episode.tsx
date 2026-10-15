@@ -1,11 +1,12 @@
 import React from 'react';
 import {AbsoluteFill, Audio, Sequence, interpolate, staticFile, useCurrentFrame} from 'remotion';
-import {ChalkDefs, Grain, Caption, clamp} from '../lib';
+import {ChalkDefs, Grain, clamp} from '../lib';
+import {LineCaption, type WordTiming} from './Captions';
 import {SceneView} from './Scenes';
 import {plan, resolveT, type Plan} from './timeline';
 import type {EpisodeSpec, NarrationLine} from './types';
 
-export type EpisodeData = {spec: EpisodeSpec; narration: NarrationLine[]; durations: Record<string, number>; captions?: boolean};
+export type EpisodeData = {spec: EpisodeSpec; narration: NarrationLine[]; durations: Record<string, number>; captions?: boolean; words?: Record<string, WordTiming[]>};
 
 const FADE = 8;
 
@@ -28,7 +29,8 @@ const Music: React.FC<{src: string; p: Plan}> = ({src, p}) => {
   return <Audio src={staticFile(src)} loop volume={volume} />;
 };
 
-export const Episode: React.FC<EpisodeData> = ({spec, narration, durations, captions}) => {
+export const Episode: React.FC<EpisodeData> = ({spec, narration, durations, captions, words}) => {
+  const showCaptions = captions ?? spec.captions ?? false;
   const p = plan(spec, narration, durations);
   const frame = useCurrentFrame();
   return (
@@ -51,7 +53,7 @@ export const Episode: React.FC<EpisodeData> = ({spec, narration, durations, capt
       {p.lines.map((l) => (
         <Sequence key={l.id} from={l.from} durationInFrames={l.len + 2}>
           <Audio src={staticFile(`audio/${spec.code}/${l.id}.wav`)} />
-          {captions && <Caption start={0} end={l.len + 2} text={l.text} wps={(l.text.split(' ').length / Math.max(0.5, l.len / 30)) * 1.08} />}
+          {showCaptions && <LineCaption line={l} words={words?.[l.id]} />}
         </Sequence>
       ))}
       {spec.music && <Music src={`music/${spec.music}`} p={p} />}

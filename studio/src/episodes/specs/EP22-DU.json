@@ -1,0 +1,281 @@
+{
+ "id": "EP22-DU",
+ "code": "MC",
+ "title": "Michels & Cruyff: The Teacher and the Student",
+ "music": "story.mp3",
+ "captions": true,
+ "thumb": {
+  "kicker": "SIDE BY SIDE",
+  "title": "TEACHER &\nSTUDENT",
+  "accent": "STUDENT",
+  "style": "photo",
+  "photo": "photos/anefo/073.jpg"
+ },
+ "scenes": [
+  {
+   "type": "duo",
+   "lead": 0.6,
+   "left": {
+    "src": "photos/anefo/302.jpg",
+    "label": "RINUS MICHELS",
+    "sub": "The teacher",
+    "credit": "Anefo (CC0)"
+   },
+   "right": {
+    "src": "photos/anefo/252.jpg",
+    "label": "JOHAN CRUYFF",
+    "sub": "The student",
+    "credit": "Anefo (CC0)"
+   },
+   "at": "MC-002",
+   "divider": "&",
+   "lines": "MC-001..MC-004"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 1",
+   "title": "Two Amsterdam boys",
+   "lines": "MC-005"
+  },
+  {
+   "type": "duo",
+   "title": "AMSTERDAM",
+   "left": {
+    "src": "photos/anefo/000.jpg",
+    "label": "MICHELS, 1954",
+    "sub": "Ajax centre-forward",
+    "credit": "Anefo (CC0)"
+   },
+   "right": {
+    "src": "photos/anefo/010.jpg",
+    "label": "CRUYFF, 1967",
+    "sub": "Ajax's new star",
+    "credit": "Anefo (CC0)"
+   },
+   "at": "MC-007",
+   "lines": "MC-006..MC-008"
+  },
+  {
+   "type": "gallery",
+   "style": "bw",
+   "photos": [
+    {
+     "src": "photos/anefo/008.jpg",
+     "at": 0,
+     "year": "1967",
+     "caption": "Ajax training — Cruyff second from right, Michels on the right",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/009.jpg",
+     "at": "MC-010",
+     "caption": "Michels and Cruyff watch Ajax's youngsters",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/013.jpg",
+     "at": "MC-011",
+     "year": "1968",
+     "caption": "Michels celebrates",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/018.jpg",
+     "at": "MC-012",
+     "year": "1969",
+     "caption": "Michels, Swart and Cruyff return from Lisbon",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    }
+   ],
+   "lines": "MC-009..MC-012"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 2",
+   "title": "Total football",
+   "lines": "MC-013"
+  },
+  {
+   "type": "duo",
+   "title": "1969 → 1971",
+   "left": {
+    "src": "photos/anefo/021.jpg",
+    "label": "1969",
+    "sub": "Off to Madrid — lost the final 4–1",
+    "credit": "Anefo (CC0)"
+   },
+   "right": {
+    "src": "photos/anefo/030.jpg",
+    "label": "1971",
+    "sub": "Champions of Europe at Wembley",
+    "credit": "Anefo (CC0)"
+   },
+   "at": "MC-016",
+   "divider": "→",
+   "lines": "MC-014..MC-017"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 3",
+   "title": "Barcelona, together",
+   "lines": "MC-018"
+  },
+  {
+   "type": "duo",
+   "title": "TO BARCELONA",
+   "left": {
+    "src": "photos/anefo/033.jpg",
+    "label": "MICHELS · 1971",
+    "sub": "Leaves Ajax for Barça",
+    "credit": "Anefo (CC0)"
+   },
+   "right": {
+    "src": "photos/anefo/053.jpg",
+    "label": "CRUYFF · 1973",
+    "sub": "Follows him",
+    "credit": "Anefo (CC0)"
+   },
+   "at": "MC-020",
+   "divider": "→",
+   "lines": "MC-019..MC-021"
+  },
+  {
+   "type": "gallery",
+   "style": "bw",
+   "photos": [
+    {
+     "src": "photos/anefo/073.jpg",
+     "at": 0,
+     "year": "MARCH 1974",
+     "caption": "Michels and Cruyff at a Dutch press conference",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/088.jpg",
+     "at": "MC-023",
+     "caption": "Before the World Cup",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/144.jpg",
+     "at": "MC-024",
+     "caption": "Michels with Johan and Danny Cruyff at the team hotel",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/212.jpg",
+     "at": "MC-025",
+     "year": "7 JULY 1974",
+     "caption": "Michels before the final in Munich",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/226.jpg",
+     "at": "MC-026",
+     "caption": "Received by Queen Juliana the next day",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    }
+   ],
+   "lines": "MC-022..MC-026"
+  },
+  {
+   "type": "gallery",
+   "style": "bw",
+   "photos": [
+    {
+     "src": "photos/anefo/261.jpg",
+     "at": 0,
+     "year": "1976",
+     "caption": "Neeskens, Michels and Cruyff with Barça",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/267.jpg",
+     "at": "MC-028",
+     "year": "1977",
+     "caption": "Michels at Barça training",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    },
+    {
+     "src": "photos/anefo/276.jpg",
+     "at": "MC-029",
+     "year": "1978",
+     "credit": "Anefo / Nationaal Archief (CC0)"
+    }
+   ],
+   "lines": "MC-027..MC-029"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 4",
+   "title": "Two roads",
+   "lines": "MC-030"
+  },
+  {
+   "type": "duo",
+   "title": "THE 1980s",
+   "left": {
+    "src": "photos/anefo/290.jpg",
+    "label": "MICHELS",
+    "sub": "Cologne, then the Dutch FA",
+    "credit": "Anefo (CC0)"
+   },
+   "right": {
+    "src": "photos/anefo/292.jpg",
+    "label": "CRUYFF",
+    "sub": "Player, then coach at Ajax",
+    "credit": "Anefo (CC0)"
+   },
+   "at": "MC-032",
+   "lines": "MC-031..MC-033"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 5",
+   "title": "1988",
+   "lines": "MC-034"
+  },
+  {
+   "type": "duo",
+   "title": "1988",
+   "left": {
+    "src": "photos/anefo/309.jpg",
+    "label": "MICHELS",
+    "sub": "European champion with the Netherlands",
+    "credit": "Anefo (CC0)"
+   },
+   "right": {
+    "src": "photos/anefo/305.jpg",
+    "label": "CRUYFF",
+    "sub": "Back to Barcelona — as coach",
+    "credit": "Anefo (CC0)"
+   },
+   "at": "MC-036",
+   "divider": "★",
+   "lines": "MC-035..MC-037"
+  },
+  {
+   "type": "statement",
+   "text": "The teacher built the idea. The student built the club.",
+   "accent": "built the club.",
+   "bg": "navy",
+   "lines": "MC-038..MC-040"
+  },
+  {
+   "type": "question",
+   "text": "WHO MATTERED MORE TO BARÇA?",
+   "options": [
+    "MICHELS",
+    "CRUYFF",
+    "YOU CAN'T SEPARATE THEM"
+   ],
+   "lines": "MC-041"
+  },
+  {
+   "type": "endscreen",
+   "hold": 18,
+   "next": "THE FULL STORY: JOHAN CRUYFF →",
+   "lines": "MC-042"
+  }
+ ]
+}
