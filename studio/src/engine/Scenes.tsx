@@ -292,17 +292,29 @@ const Bars: React.FC<P> = ({st}) => {
   );
 };
 
+// The accent is a phrase: highlight its first contiguous occurrence, ignoring case and punctuation.
+const normWord = (w: string) => w.replace(/[^\p{L}\p{N}%€£$'-]/gu, '').toLowerCase();
+export const accentRange = (words: string[], accent?: string): [number, number] => {
+  const acc = (accent ?? '').split(' ').map(normWord).filter(Boolean);
+  if (!acc.length) return [-1, -1];
+  for (let i = 0; i + acc.length <= words.length; i++) {
+    if (acc.every((a, j) => normWord(words[i + j]) === a)) return [i, i + acc.length];
+  }
+  return [-1, -1];
+};
+
 const Statement: React.FC<P> = ({st}) => {
   const s = st.scene as Extract<Scene, {type: 'statement'}>;
   const f = useCurrentFrame(); const {fps} = useVideoConfig();
   const words = s.text.split(' ');
+  const hl = accentRange(words, s.accent);
   return (
     <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center', padding: 140}}>
       <Bg kind={s.bg} />
       <div style={{fontFamily: DISPLAY, fontSize: 120, lineHeight: 1.08, color: '#fff', textAlign: 'center', position: 'relative'}}>
         {words.map((w, i) => {
           const sp = spring({frame: f - i * 3, fps, config: {damping: 16}});
-          const accent = s.accent && s.accent.split(' ').includes(w.replace(/[.,!?]/g, ''));
+          const accent = i >= hl[0] && i < hl[1];
           return <span key={i} style={{display: 'inline-block', marginRight: 26, opacity: sp, transform: `translateY(${(1 - sp) * 30}px)`, color: accent ? C.gold : '#fff'}}>{w}</span>;
         })}
         {s.small && <div style={{fontFamily: BODY, fontWeight: 600, fontSize: 36, color: C.chalkDim, marginTop: 30}}>{s.small}</div>}
