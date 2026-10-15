@@ -1,0 +1,104 @@
+# Cloud render: split a Remotion composition into frame chunks, render them in parallel
+# on GitHub-hosted runners, then concatenate into one MP4 (uploaded as an artifact).
+# Trigger manually: Actions -> "Render video" -> Run workflow.
+name: Render video
+
+on:
+  workflow_dispatch:
+    inputs:
+      composition:
+        description: Remotion composition id (e.g. TX-Hook-OneStep)
+        required: true
+        default: TX-Hook-OneStep
+      chunks:
+        description: Number of parallel render jobs
+        required: true
+        default: '4'
+      crf:
+        description: H.264 CRF (lower = higher quality)
+        required: true
+        default: '18'
+
+defaults:
+  run:
+    working-directory: studio
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: studio/package-lock.json
+      - run: npm ci
+      - run: npx remotion bundle src/index.ts --out-dir=build
+      - id: plan
+        run: echo "matrix=$(node scripts/plan-chunks.mjs build '${{ inputs.composition }}' '${{ inputs.chunks }}')" >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bundle
+          path: studio/build
+          retention-days: 1
+
+  render:
+    needs: plan
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix: ${{ fromJson(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: studio/package-lock.json
+      - run: npm ci
+      - uses: actions/download-artifact@v4
+        with:
+          name: bundle
+          path: studio/build
+      - name: Render chunk ${{ matrix.index }} (frames ${{ matrix.start }}-${{ matrix.end }})
+        run: |
+          start=$(date +%s)
+          npx remotion render build '${{ inputs.composition }}' out/part-${{ matrix.index }}.mp4 \
+            --frames=${{ matrix.start }}-${{ matrix.end }} --codec=h264 --crf=${{ inputs.crf }} --log=info
+          secs=$(( $(date +%s) - start ))
+          frames=$(( ${{ matrix.end }} - ${{ matrix.start }} + 1 ))
+          echo "chunk ${{ matrix.index }}: ${frames} frames in ${secs}s" | tee out/part-${{ matrix.index }}.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: part-${{ matrix.index }}
+          path: studio/out/part-${{ matrix.index }}.*
+          retention-days: 1
+
+  concat:
+    needs: render
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: part-*
+          path: studio/out
+          merge-multiple: true
+      - name: Concatenate chunks
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          cd out
+          ls part-*.mp4 | sort -V | sed "s/^/file '/; s/$/'/" > list.txt
+          ffmpeg -y -f concat -safe 0 -i list.txt -c copy '${{ inputs.composition }}.mp4'
+          cat part-*.txt > render-speed.txt
+          cat render-speed.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.composition }}
+          path: |
+            studio/out/${{ inputs.composition }}.mp4
+            studio/out/render-speed.txt
+          retention-days: 14
