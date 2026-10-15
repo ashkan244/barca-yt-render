@@ -1,0 +1,639 @@
+[
+ {
+  "id": "JC-001",
+  "text": "Amsterdam airport. The twenty-third of August, nineteen seventy-three.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "JC-002",
+  "text": "A twenty-six-year-old footballer sits on a plane with his wife, waiting to fly to Barcelona.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-003",
+  "text": "He is about to become the most expensive player in the world. And he is about to change a football club forever — not once, but twice.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.8
+ },
+ {
+  "id": "JC-004",
+  "text": "This is the full story of Johan Cruyff.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.6
+ },
+ {
+  "id": "JC-005",
+  "text": "The boy from next door to Ajax. The player who invented a new way to play. The coach who built Barcelona's Dream Team. And the man whose ideas still decide how Barça play tonight.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.8
+ },
+ {
+  "id": "JC-006",
+  "text": "Act one. The boy next door.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.6
+ },
+ {
+  "id": "JC-007",
+  "text": "Johan Cruyff was born in Amsterdam in April nineteen forty-seven, and grew up a few streets away from the old Ajax stadium, De Meer.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-008",
+  "text": "Ajax was not just his club. It was his neighbourhood, his playground, his second home. He would wander in, help out, watch the first team train, and play wherever there was a ball.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "JC-009",
+  "text": "His father died when Johan was still a boy. His mother found work at the club — and Ajax became, in a way, his family.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "JC-010",
+  "text": "He was skinny, not especially strong, and he hated losing. Coaches noticed something else: he didn't just play the game. He watched it. He saw where the space was going to be before anyone else did.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "JC-010a",
+  "text": "There's a story people still tell about the young Cruyff: that he practised against the kerbs of the street, playing the ball off the edge of the pavement at different angles, over and over, until he could control it from anywhere.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-010b",
+  "text": "Whether every detail is true or not, it captures something real. He learned the game by experimenting, not by being told.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "JC-011",
+  "text": "He made his debut for Ajax at seventeen.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-012",
+  "text": "A year later, a new coach arrived: Rinus Michels — strict, demanding, and full of ideas about a different kind of football.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "JC-013",
+  "text": "Together, Michels and Cruyff built a team where every player could do every job. Defenders attacked, attackers defended, and the shape of the team was always moving.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-014",
+  "text": "The world called it Total Football. And it worked. Ajax won the European Cup three years in a row.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-014a",
+  "text": "In nineteen seventy-one they beat Panathinaikos at Wembley. In nineteen seventy-two, in the final against Inter, Cruyff scored both goals. In nineteen seventy-three, they beat Juventus.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "JC-014b",
+  "text": "Three finals. Three trophies. A small club from Amsterdam had become the best team in Europe, by playing a kind of football nobody had seen before.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "JC-015",
+  "text": "Cruyff was the brain of it all — the player who told everyone else where to stand. He won his first Ballon d'Or in nineteen seventy-one.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "JC-016",
+  "text": "But by nineteen seventy-three, something had broken at Ajax. The players voted for a new captain — and it wasn't Cruyff.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "JC-017",
+  "text": "He was hurt. And in Barcelona, a man he trusted was waiting for him: Rinus Michels, who had become Barça's coach two years earlier.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "JC-017a",
+  "text": "Barcelona wanted him. Real Madrid were interested too. But Cruyff had made up his mind.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-017b",
+  "text": "He said he would never play for a club associated with the regime in Madrid. He was going to Barcelona.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "JC-018",
+  "text": "Act two. The saviour.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.6
+ },
+ {
+  "id": "JC-019",
+  "text": "The transfer was a saga. Ajax wanted him to stay, the paperwork for a move abroad dragged on, and the Dutch football authorities had to meet to sort it out.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-020",
+  "text": "When it was finally done, Barcelona had paid a fee reported at around sixty million pesetas — a world record at the time.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "JC-021",
+  "text": "It's hard to overstate what Barcelona was like in nineteen seventy-three. The club hadn't won the Spanish league in fourteen years.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-022",
+  "text": "Spain was still ruled by Franco. In Catalonia, the club was one of the few places where people could express their identity in public — and Real Madrid, in the capital, was the rival that kept winning.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "JC-023",
+  "text": "Barça didn't just need a footballer. They needed a reason to believe.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "JC-024",
+  "text": "Fourteen years. A whole generation of supporters had grown up without seeing their team win the league.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.6
+ },
+ {
+  "id": "JC-025",
+  "text": "Because of the transfer delays, he couldn't play straight away. Barça started the season badly without him.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-026",
+  "text": "Then, on the twenty-eighth of October, he made his debut against Granada. Barça won four–nil. He scored twice.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "JC-027",
+  "text": "From that day, the team was different. They stopped losing.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-028",
+  "text": "And on the seventeenth of February, nineteen seventy-four, they went to the Santiago Bernabéu.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.6
+ },
+ {
+  "id": "JC-029",
+  "text": "Real Madrid nil. Barcelona five. In Madrid.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.6
+ },
+ {
+  "id": "JC-030",
+  "text": "Barça went on to win the league — their first title in fourteen years.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "JC-031",
+  "text": "And around the same time, Cruyff's son was born. He named him Jordi — reportedly after Sant Jordi, the patron saint of Catalonia.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "JC-032",
+  "text": "For Barça supporters, it was a gesture they never forgot. The Dutchman had become one of them.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "JC-033",
+  "text": "That summer he captained the Netherlands at the World Cup in West Germany, and gave the world one of its most famous images: the Cruyff turn, a feint so simple that kids everywhere copied it the next day.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "JC-034",
+  "text": "The Dutch reached the final, and lost it to the hosts, two–one. It was the greatest team never to win the World Cup — and Cruyff would never play at another one.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "JC-034a",
+  "text": "The Dutch had taken the lead in the second minute from a penalty, before West Germany had even touched the ball. But the Germans came back, and won it with goals from Paul Breitner and Gerd Müller.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "JC-035",
+  "text": "He won his third Ballon d'Or that year. But at Barcelona, the magic of that first season proved hard to repeat.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-036",
+  "text": "Over the next four years, the team won a Copa del Rey, but not another league. In nineteen seventy-eight, he left.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "JC-036a",
+  "text": "He also refused to go to the next World Cup, in Argentina in nineteen seventy-eight. For years, people guessed at the reason.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-036b",
+  "text": "Much later, he explained that a frightening incident at his home in Barcelona the year before — an attempted kidnapping — had changed his priorities. His family came first.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "JC-037",
+  "text": "Act three. The wanderer.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.6
+ },
+ {
+  "id": "JC-038",
+  "text": "After Barcelona came the strangest years of his career.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-039",
+  "text": "He played in the United States, for Los Angeles and Washington. He came back to Spain for a short spell at Levante.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-040",
+  "text": "Then he returned home to Ajax, and won the league again — before Ajax decided he was too old and let him go.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "JC-041",
+  "text": "So he did the unthinkable. He signed for Ajax's biggest rivals, Feyenoord.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "JC-042",
+  "text": "At thirty-six, he led Feyenoord to the league and cup double. Then, in nineteen eighty-four, he retired as a player.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "JC-043",
+  "text": "Most great players stop there. Their story becomes memories, highlights, statues.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-044",
+  "text": "For Cruyff, it was half-time.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "JC-045",
+  "text": "Act four. The architect.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.6
+ },
+ {
+  "id": "JC-046",
+  "text": "In nineteen eighty-five, he took charge of Ajax — and immediately started building a team the way he believed football should be played.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-047",
+  "text": "Ajax won the Cup Winners' Cup in nineteen eighty-seven with a side full of young players he had trusted.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-048",
+  "text": "Barcelona were watching. And in nineteen eighty-eight, with the club in crisis again, they called him back.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "JC-049",
+  "text": "Fifteen years after his first flight to Barcelona, he made the same journey again. This time, he wasn't coming to play. He was coming to build.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.6
+ },
+ {
+  "id": "JC-049a",
+  "text": "He arrived at a club that was divided and demoralised. The players had recently rebelled against the president. Results were poor. Something had to change from the bottom up.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "JC-050",
+  "text": "His team was unlike anything Spain had seen. Three defenders. A diamond in midfield. Two wingers hugging the touchlines.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-051",
+  "text": "The goalkeeper was expected to play like an extra defender. The centre-back was expected to pass like a midfielder.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-052",
+  "text": "And the wingers stayed so wide that the pitch felt twice as big. The idea was simple: make the field large when you have the ball, and small when you don't.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "JC-052a",
+  "text": "He brought in players who fitted the idea: Ronald Koeman, a centre-back who could pass like a playmaker; Michael Laudrup, a Danish forward with perfect vision; and later, Hristo Stoichkov and Romário, two of the most dangerous attackers in the world.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-052b",
+  "text": "And in nineteen ninety, he promoted a nineteen-year-old from the academy to play in the most important position on the pitch: the pivot, right in front of the defence. His name was Pep Guardiola.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "JC-053",
+  "text": "He summed it up in a line that is still quoted in coaching courses around the world. Playing football is very simple — but playing simple football is the hardest thing there is.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.8
+ },
+ {
+  "id": "JC-054",
+  "text": "It took time. There were bad nights, and in some seasons, Cruyff came close to losing his job.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-055",
+  "text": "But the trophies came: the Cup Winners' Cup, then the Copa del Rey.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-056",
+  "text": "And then four league titles in a row, from nineteen ninety-one to nineteen ninety-four.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-057",
+  "text": "In between, the biggest night of all.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.6
+ },
+ {
+  "id": "JC-058",
+  "text": "The twentieth of May, nineteen ninety-two. The European Cup final, at Wembley, against Sampdoria. Barcelona had never won it.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "JC-059",
+  "text": "Ninety minutes ended goalless. Extra time. And in the hundred and eleventh minute, Barça won a free-kick.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "JC-060",
+  "text": "Ronald Koeman — a defender Cruyff had brought to the club — hit it as hard as he could.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.6
+ },
+ {
+  "id": "JC-061",
+  "text": "One–nil. Barcelona were champions of Europe for the first time in their history.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.8
+ },
+ {
+  "id": "JC-062",
+  "text": "People called that team the Dream Team. And every idea in it came from one man.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "JC-062a",
+  "text": "But even dream teams end. In nineteen ninety-four, Barça reached another European Cup final, in Athens, against Milan. They lost four–nil.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-062b",
+  "text": "It was the beginning of the end of that team. Two years later, after a run of seasons without the league title, Cruyff was dismissed.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "JC-063",
+  "text": "Act five. The legacy.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.6
+ },
+ {
+  "id": "JC-064",
+  "text": "Cruyff left the bench in nineteen ninety-six, after eight years — still the longest spell of any coach in Barça's modern history.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "JC-064a",
+  "text": "There was a personal battle too. In nineteen ninety-one, at the height of his success, he needed heart surgery. He had been a heavy smoker all his life. He quit — and later appeared in campaigns warning young people not to start.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "JC-065",
+  "text": "But he didn't really leave. He left behind a way to play: keep the ball, use the whole pitch, win it back high.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-066",
+  "text": "He left behind a way to teach it: the academy at La Masia, where every youth team learned the same ideas as the first team.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-067",
+  "text": "And he left behind people. One of the young players he promoted to the first team was a skinny midfielder from the academy called Pep Guardiola.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "JC-068",
+  "text": "Guardiola became the heartbeat of the Dream Team. Twenty years later, as a coach, he built the Barça of Xavi, Iniesta and Messi — on the foundations Cruyff had laid.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "JC-069",
+  "text": "And today, every time a Barça centre-back steps forward with the ball, every time a teenager from La Masia makes his debut, you are watching Cruyff's ideas at work.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "JC-069a",
+  "text": "His influence reached far beyond Barcelona. The Johan Cruyff Foundation has built small community pitches for children in cities around the world, so that kids can play the way he did — on the street, with friends, every day.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "JC-069b",
+  "text": "At Barça, the stadium where the women's team and the youth teams play bears his name. And outside the Camp Nou, there is a statue of him.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "JC-070",
+  "text": "Johan Cruyff died in March twenty-sixteen. He was sixty-eight.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.6
+ },
+ {
+  "id": "JC-071",
+  "text": "He arrived in Barcelona as a player, when the club needed a reason to believe. He came back as a coach, when it needed an idea.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "JC-072",
+  "text": "He gave it both.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 1.2
+ },
+ {
+  "id": "JC-073",
+  "text": "Who should get the next Full Story? Kubala, Ronaldinho, or Xavi? Tell me in the comments.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "JC-074",
+  "text": "And to see where his ideas led — on one unforgettable night in Madrid — watch this next.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ }
+]

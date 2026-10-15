@@ -2,7 +2,7 @@ import React from 'react';
 import {AbsoluteFill, Sequence, useCurrentFrame, interpolate} from 'remotion';
 import {C, DISPLAY, CHALK, BODY, Chalkboard, ChalkDefs, Grain, Pop, Narration, clamp, kf} from './lib';
 import {Board, PitchLines, Token, ChalkArrow, OffsideLine, Zone, lerp} from './board';
-import txDur from '../public/audio/tx/durations.json';
+import txDur from '../public/audio/hooktx/durations.json';
 
 // Illustrative scenario (not a real match): Barça defend the left goal (x=0).
 // Timeline is driven by the narration (tools/tts/tx-hook.json → public/audio/tx).
@@ -94,7 +94,7 @@ export const TacticsHook: React.FC = () => {
           <Pop><div style={{fontFamily: DISPLAY, fontSize: 96, color: C.chalk, textAlign: 'center', lineHeight: 1.1}}>THE TACTICS BEHIND<br /><span style={{color: C.gold}}>THE CLÁSICO</span></div></Pop>
         </AbsoluteFill>
       </Sequence>
-      <Narration dir="tx" lines={LINES} durations={txDur as Record<string, number>} />
+      <Narration dir="hooktx" lines={LINES} durations={txDur as Record<string, number>} />
       <Grain opacity={0.07} />
     </AbsoluteFill>
   );

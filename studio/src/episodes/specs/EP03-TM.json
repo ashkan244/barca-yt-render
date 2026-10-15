@@ -1,0 +1,1116 @@
+{
+ "id": "EP03-TM",
+ "code": "TM",
+ "title": "The 2-6: The Night Guardiola's Barça Broke Real Madrid",
+ "music": "story.mp3",
+ "thumb": {
+  "kicker": "BERNABÉU · 2009",
+  "title": "THE NIGHT\nIT CHANGED",
+  "accent": "CHANGED",
+  "style": "number",
+  "number": "2-6"
+ },
+ "scenes": [
+  {
+   "type": "statement",
+   "text": "2 May 2009. The Santiago Bernabéu.",
+   "accent": "Bernabéu",
+   "bg": "navy",
+   "lead": 0.8,
+   "sfx": [
+    {
+     "name": "crowd",
+     "at": 0.2,
+     "volume": 0.35
+    }
+   ],
+   "lines": "TM-001..TM-002"
+  },
+  {
+   "type": "score",
+   "home": "REAL MADRID",
+   "away": "BARCELONA",
+   "venue": "SANTIAGO BERNABÉU",
+   "date": "2 MAY 2009",
+   "events": [
+    {
+     "at": 0.4,
+     "minute": "14",
+     "side": "home",
+     "who": "Higuaín"
+    },
+    {
+     "at": 0.8,
+     "minute": "18",
+     "side": "away",
+     "who": "Henry"
+    },
+    {
+     "at": 1.2,
+     "minute": "20",
+     "side": "away",
+     "who": "Puyol"
+    },
+    {
+     "at": 1.6,
+     "minute": "35",
+     "side": "away",
+     "who": "Messi"
+    },
+    {
+     "at": 2,
+     "minute": "56",
+     "side": "home",
+     "who": "Ramos"
+    },
+    {
+     "at": 2.4,
+     "minute": "58",
+     "side": "away",
+     "who": "Henry"
+    },
+    {
+     "at": 2.8,
+     "minute": "75",
+     "side": "away",
+     "who": "Messi"
+    },
+    {
+     "at": 3.2,
+     "minute": "late",
+     "side": "away",
+     "who": "Piqué"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "impact",
+     "at": 3.3,
+     "volume": 0.5
+    }
+   ],
+   "lines": "TM-003..TM-006"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 1",
+   "title": "A club falling apart",
+   "lines": "TM-007"
+  },
+  {
+   "type": "timeline",
+   "title": "2006 → 2008",
+   "events": [
+    {
+     "at": 0.3,
+     "year": "2006",
+     "text": "Champions League winners"
+    },
+    {
+     "at": "TM-009",
+     "year": "2007",
+     "text": "Trophies dry up"
+    },
+    {
+     "at": "TM-010",
+     "year": "2008",
+     "text": "Rijkaard leaves, stars sold"
+    }
+   ],
+   "lines": "TM-008..TM-011"
+  },
+  {
+   "type": "statement",
+   "text": "A 37-year-old who had only coached Barça's B team.",
+   "accent": "B team",
+   "bg": "navy",
+   "lines": "TM-012..TM-013"
+  },
+  {
+   "type": "list",
+   "title": "GUARDIOLA'S FIRST RULES",
+   "items": [
+    {
+     "at": "TM-014",
+     "text": "WIN IT BACK FAST",
+     "sub": "press immediately after losing the ball"
+    },
+    {
+     "at": "TM-015",
+     "text": "PASS WITH A PURPOSE",
+     "sub": "possession to move the opponent, not to rest"
+    },
+    {
+     "at": "TM-016",
+     "text": "TRUST THE ACADEMY",
+     "sub": "Busquets and Pedro promoted from the B team"
+    }
+   ],
+   "lines": "TM-014..TM-018b"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 2",
+   "title": "Madrid's comeback",
+   "lines": "TM-019"
+  },
+  {
+   "type": "timeline",
+   "title": "THE TITLE RACE",
+   "events": [
+    {
+     "at": 0.3,
+     "year": "Dec",
+     "text": "Juande Ramos takes over Madrid"
+    },
+    {
+     "at": "TM-021",
+     "year": "Spring",
+     "text": "Madrid win and win"
+    },
+    {
+     "at": "TM-022",
+     "year": "May",
+     "text": "Barça +4, five games left"
+    }
+   ],
+   "lines": "TM-020..TM-023b"
+  },
+  {
+   "type": "statement",
+   "text": "Win it, and the league is open again.",
+   "accent": "open",
+   "bg": "navy",
+   "lines": "TM-024"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 3",
+   "title": "The idea",
+   "lines": "TM-025"
+  },
+  {
+   "type": "board",
+   "title": "MADRID'S SHAPE · THE GAP",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.25,
+     "focus": [
+      60,
+      34
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "rm1",
+     "side": "opp",
+     "label": "4",
+     "path": [
+      [
+       0,
+       84,
+       26
+      ]
+     ]
+    },
+    {
+     "id": "rm2",
+     "side": "opp",
+     "label": "5",
+     "path": [
+      [
+       0,
+       84,
+       42
+      ]
+     ]
+    },
+    {
+     "id": "rm3",
+     "side": "opp",
+     "label": "2",
+     "path": [
+      [
+       0,
+       82,
+       10
+      ]
+     ]
+    },
+    {
+     "id": "rm4",
+     "side": "opp",
+     "label": "3",
+     "path": [
+      [
+       0,
+       82,
+       58
+      ]
+     ]
+    },
+    {
+     "id": "rm6",
+     "side": "opp",
+     "label": "6",
+     "path": [
+      [
+       0,
+       66,
+       28
+      ],
+      [
+       "TM-027",
+       66,
+       28
+      ],
+      [
+       "TM-027+1.5",
+       60,
+       28
+      ]
+     ]
+    },
+    {
+     "id": "rm8",
+     "side": "opp",
+     "label": "8",
+     "path": [
+      [
+       0,
+       66,
+       42
+      ],
+      [
+       "TM-027",
+       66,
+       42
+      ],
+      [
+       "TM-027+1.5",
+       60,
+       42
+      ]
+     ]
+    },
+    {
+     "id": "m10",
+     "side": "barca",
+     "label": "10",
+     "path": [
+      [
+       0,
+       74,
+       58
+      ]
+     ]
+    },
+    {
+     "id": "e9",
+     "side": "barca",
+     "label": "9",
+     "path": [
+      [
+       0,
+       80,
+       34
+      ]
+     ]
+    },
+    {
+     "id": "h14",
+     "side": "barca",
+     "label": "14",
+     "path": [
+      [
+       0,
+       74,
+       10
+      ]
+     ]
+    }
+   ],
+   "zones": [
+    {
+     "x": 62,
+     "y": 22,
+     "w": 18,
+     "h": 26,
+     "color": "#f2c230",
+     "at": "TM-028",
+     "opacity": 0.22
+    }
+   ],
+   "labels": [
+    {
+     "text": "THE GAP",
+     "at": "TM-028+0.6",
+     "x": 71,
+     "y": 36,
+     "color": "#f2c230"
+    }
+   ],
+   "arrows": [
+    {
+     "from": [
+      66,
+      28
+     ],
+     "to": [
+      60,
+      28
+     ],
+     "at": "TM-027",
+     "color": "#ff4d4d"
+    },
+    {
+     "from": [
+      66,
+      42
+     ],
+     "to": [
+      60,
+      42
+     ],
+     "at": "TM-027",
+     "color": "#ff4d4d"
+    }
+   ],
+   "lines": "TM-026..TM-028"
+  },
+  {
+   "type": "board",
+   "title": "THE FALSE NINE",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.35,
+     "focus": [
+      66,
+      34
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "rm1",
+     "side": "opp",
+     "label": "4",
+     "path": [
+      [
+       0,
+       84,
+       26
+      ],
+      [
+       "TM-031",
+       84,
+       26
+      ],
+      [
+       "TM-031+1.5",
+       79,
+       29
+      ]
+     ]
+    },
+    {
+     "id": "rm2",
+     "side": "opp",
+     "label": "5",
+     "path": [
+      [
+       0,
+       84,
+       42
+      ]
+     ]
+    },
+    {
+     "id": "rm6",
+     "side": "opp",
+     "label": "6",
+     "path": [
+      [
+       0,
+       60,
+       28
+      ]
+     ]
+    },
+    {
+     "id": "rm8",
+     "side": "opp",
+     "label": "8",
+     "path": [
+      [
+       0,
+       60,
+       42
+      ]
+     ]
+    },
+    {
+     "id": "m10",
+     "side": "barca",
+     "label": "10",
+     "path": [
+      [
+       0,
+       74,
+       58
+      ],
+      [
+       "TM-030",
+       74,
+       58
+      ],
+      [
+       "TM-030+2",
+       71,
+       35
+      ]
+     ],
+     "hi": [
+      [
+       "TM-030",
+       "TM-033",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "e9",
+     "side": "barca",
+     "label": "9",
+     "path": [
+      [
+       0,
+       80,
+       34
+      ],
+      [
+       "TM-030",
+       80,
+       34
+      ],
+      [
+       "TM-030+2",
+       80,
+       58
+      ]
+     ]
+    },
+    {
+     "id": "h14",
+     "side": "barca",
+     "label": "14",
+     "path": [
+      [
+       0,
+       74,
+       10
+      ],
+      [
+       "TM-032",
+       74,
+       10
+      ],
+      [
+       "TM-032+1.5",
+       86,
+       18
+      ]
+     ]
+    }
+   ],
+   "arrows": [
+    {
+     "from": [
+      74,
+      58
+     ],
+     "to": [
+      71,
+      37
+     ],
+     "at": "TM-030",
+     "color": "#f2c230",
+     "dashed": true
+    },
+    {
+     "from": [
+      71,
+      35
+     ],
+     "to": [
+      87,
+      19
+     ],
+     "at": "TM-032+0.5",
+     "color": "#f2c230"
+    }
+   ],
+   "labels": [
+    {
+     "text": "FREE",
+     "at": "TM-030+2",
+     "x": 71,
+     "y": 27,
+     "color": "#f2c230"
+    },
+    {
+     "text": "NOBODY'S MAN",
+     "at": "TM-031+1",
+     "x": 76,
+     "y": 48,
+     "color": "#ff4d4d"
+    }
+   ],
+   "overlay": [
+    {
+     "text": "THE FALSE NINE",
+     "at": "TM-033",
+     "pos": "top"
+    }
+   ],
+   "lines": "TM-029..TM-033c"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 4",
+   "title": "The match",
+   "lines": "TM-034"
+  },
+  {
+   "type": "score",
+   "home": "REAL MADRID",
+   "away": "BARCELONA",
+   "date": "14'",
+   "events": [
+    {
+     "at": "TM-035+1",
+     "minute": "14",
+     "side": "home",
+     "who": "Higuaín"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "crowd",
+     "at": "TM-035+1",
+     "volume": 0.4
+    }
+   ],
+   "lines": "TM-035..TM-036"
+  },
+  {
+   "type": "board",
+   "title": "18' · HENRY",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.45,
+     "focus": [
+      78,
+      30
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "m10",
+     "side": "barca",
+     "label": "10",
+     "path": [
+      [
+       0,
+       70,
+       34
+      ]
+     ],
+     "hi": [
+      [
+       "TM-037",
+       "TM-038",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "h14",
+     "side": "barca",
+     "label": "14",
+     "path": [
+      [
+       0,
+       80,
+       18
+      ],
+      [
+       "TM-037+1",
+       80,
+       18
+      ],
+      [
+       "TM-037+2.5",
+       94,
+       26
+      ]
+     ]
+    },
+    {
+     "id": "rm4",
+     "side": "opp",
+     "label": "4",
+     "path": [
+      [
+       0,
+       84,
+       24
+      ],
+      [
+       "TM-037+1",
+       84,
+       24
+      ],
+      [
+       "TM-037+2.5",
+       86,
+       26
+      ]
+     ]
+    },
+    {
+     "id": "gk",
+     "side": "opp",
+     "label": "1",
+     "path": [
+      [
+       0,
+       102,
+       34
+      ]
+     ]
+    }
+   ],
+   "ball": {
+    "path": [
+     [
+      0,
+      70,
+      34
+     ],
+     [
+      "TM-037+1",
+      70,
+      34
+     ],
+     [
+      "TM-037+2.4",
+      93,
+      26
+     ],
+     [
+      "TM-038",
+      93,
+      26
+     ],
+     [
+      "TM-038+0.8",
+      105,
+      33
+     ]
+    ],
+    "lift": [
+     "TM-037+1",
+     "TM-037+2.4"
+    ]
+   },
+   "arrows": [
+    {
+     "from": [
+      70,
+      34
+     ],
+     "to": [
+      92,
+      26
+     ],
+     "at": "TM-037+1",
+     "color": "#f2c230",
+     "curve": -40
+    }
+   ],
+   "lines": "TM-037..TM-038"
+  },
+  {
+   "type": "score",
+   "home": "REAL MADRID",
+   "away": "BARCELONA",
+   "date": "20'",
+   "events": [
+    {
+     "at": 0,
+     "minute": "14",
+     "side": "home",
+     "who": "Higuaín"
+    },
+    {
+     "at": 0,
+     "minute": "18",
+     "side": "away",
+     "who": "Henry"
+    },
+    {
+     "at": "TM-039+1",
+     "minute": "20",
+     "side": "away",
+     "who": "Puyol"
+    }
+   ],
+   "lines": "TM-039..TM-040"
+  },
+  {
+   "type": "board",
+   "title": "35' · MESSI",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.3,
+     "focus": [
+      70,
+      34
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "x6",
+     "side": "barca",
+     "label": "6",
+     "path": [
+      [
+       0,
+       54,
+       30
+      ],
+      [
+       "TM-041",
+       56,
+       32
+      ]
+     ],
+     "hi": [
+      [
+       "TM-041",
+       "TM-041+2",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "ld",
+     "side": "opp",
+     "label": "24",
+     "path": [
+      [
+       0,
+       57,
+       33
+      ],
+      [
+       "TM-041+1",
+       55,
+       36
+      ]
+     ],
+     "fade": [
+      "TM-041+1",
+      "TM-041+2"
+     ]
+    },
+    {
+     "id": "m10",
+     "side": "barca",
+     "label": "10",
+     "path": [
+      [
+       0,
+       66,
+       44
+      ],
+      [
+       "TM-041+1.5",
+       66,
+       44
+      ],
+      [
+       "TM-042+1",
+       92,
+       38
+      ]
+     ]
+    },
+    {
+     "id": "gk",
+     "side": "opp",
+     "label": "1",
+     "path": [
+      [
+       0,
+       102,
+       34
+      ],
+      [
+       "TM-042+0.8",
+       99,
+       36
+      ]
+     ]
+    }
+   ],
+   "ball": {
+    "path": [
+     [
+      0,
+      57,
+      33
+     ],
+     [
+      "TM-041+1",
+      57,
+      33
+     ],
+     [
+      "TM-041+2",
+      66,
+      44
+     ],
+     [
+      "TM-042+1",
+      92,
+      38
+     ],
+     [
+      "TM-042+2",
+      105,
+      34
+     ]
+    ],
+    "lift": [
+     "TM-042+1",
+     "TM-042+2"
+    ]
+   },
+   "arrows": [
+    {
+     "from": [
+      57,
+      33
+     ],
+     "to": [
+      66,
+      43
+     ],
+     "at": "TM-041+1.6",
+     "color": "#f2c230"
+    }
+   ],
+   "overlay": [
+    {
+     "text": "3–1",
+     "at": "TM-042+2",
+     "pos": "top"
+    }
+   ],
+   "lines": "TM-041..TM-042a"
+  },
+  {
+   "type": "statement",
+   "text": "Half-time. 1–3. The Bernabéu is quiet.",
+   "accent": "quiet",
+   "bg": "navy",
+   "lines": "TM-043..TM-044a"
+  },
+  {
+   "type": "score",
+   "home": "REAL MADRID",
+   "away": "BARCELONA",
+   "venue": "SECOND HALF",
+   "events": [
+    {
+     "at": 0,
+     "minute": "14",
+     "side": "home",
+     "who": "Higuaín"
+    },
+    {
+     "at": 0,
+     "minute": "18",
+     "side": "away",
+     "who": "Henry"
+    },
+    {
+     "at": 0,
+     "minute": "20",
+     "side": "away",
+     "who": "Puyol"
+    },
+    {
+     "at": 0,
+     "minute": "35",
+     "side": "away",
+     "who": "Messi"
+    },
+    {
+     "at": 0.3,
+     "minute": "56",
+     "side": "home",
+     "who": "Ramos"
+    },
+    {
+     "at": "TM-045+0.8",
+     "minute": "58",
+     "side": "away",
+     "who": "Henry"
+    },
+    {
+     "at": "TM-046+0.6",
+     "minute": "75",
+     "side": "away",
+     "who": "Messi"
+    },
+    {
+     "at": "TM-047+1",
+     "minute": "late",
+     "side": "away",
+     "who": "Piqué"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "impact",
+     "at": "TM-045+0.8",
+     "volume": 0.35
+    },
+    {
+     "name": "impact",
+     "at": "TM-046+0.6",
+     "volume": 0.35
+    },
+    {
+     "name": "impact",
+     "at": "TM-047+1",
+     "volume": 0.45
+    }
+   ],
+   "lines": "TM-045..TM-048"
+  },
+  {
+   "type": "headline",
+   "dateline": "3 MAY 2009",
+   "headline": "2–6. THE NIGHT THE BERNABÉU WENT SILENT",
+   "deck": "Barça go seven points clear with four games left.",
+   "note": "Reconstructed for illustration — not a real newspaper front page.",
+   "lines": "TM-049"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 5",
+   "title": "What it started",
+   "lines": "TM-050"
+  },
+  {
+   "type": "timeline",
+   "title": "MAY 2009",
+   "events": [
+    {
+     "at": 0.3,
+     "year": "2 May",
+     "text": "2–6 at the Bernabéu"
+    },
+    {
+     "at": "TM-052",
+     "year": "6 May",
+     "text": "Iniesta, Stamford Bridge"
+    },
+    {
+     "at": "TM-053",
+     "year": "13 May",
+     "text": "Copa del Rey"
+    },
+    {
+     "at": "TM-054",
+     "year": "27 May",
+     "text": "Champions League, Rome"
+    }
+   ],
+   "lines": "TM-051..TM-055"
+  },
+  {
+   "type": "stat",
+   "value": "6",
+   "label": "trophies won by Guardiola's Barça in 2009 — every competition they entered",
+   "source": "FC Barcelona",
+   "lines": "TM-056..TM-056a"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 6",
+   "title": "The idea that spread",
+   "lines": "TM-057"
+  },
+  {
+   "type": "compare",
+   "left": {
+    "title": "BEFORE",
+    "points": [
+     "A striker stays between the centre-backs",
+     "Defenders know who to mark",
+     "Midfield and attack are separate lines"
+    ]
+   },
+   "right": {
+    "title": "AFTER",
+    "points": [
+     "The 'striker' drops into midfield",
+     "Defenders must choose: follow or stay",
+     "Overloads in the middle, space behind"
+    ]
+   },
+   "lines": "TM-058..TM-060b"
+  },
+  {
+   "type": "statement",
+   "text": "Space isn't found. It's created.",
+   "accent": "created",
+   "lines": "TM-061"
+  },
+  {
+   "type": "statement",
+   "text": "The best team is the one that understands the space.",
+   "accent": "space",
+   "bg": "navy",
+   "lines": "TM-062"
+  },
+  {
+   "type": "question",
+   "text": "WHAT'S THE GREATEST CLÁSICO EVER?",
+   "options": [
+    "2-6 (2009)",
+    "5-0 (2010)",
+    "0-5 (1974)"
+   ],
+   "lines": "TM-063"
+  },
+  {
+   "type": "endscreen",
+   "hold": 18,
+   "next": "INIESTA, 93RD MINUTE →",
+   "lines": "TM-064"
+  }
+ ]
+}

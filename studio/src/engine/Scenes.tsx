@@ -199,7 +199,7 @@ const Score: React.FC<P> = ({st}) => {
   return (
     <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center'}}>
       <Chalkboard />
-      <div style={{width: 1300, background: 'linear-gradient(#262626,#141414)', borderRadius: 28, border: '6px solid #444', padding: '40px 60px', boxShadow: '0 30px 80px rgba(0,0,0,.7)'}}>
+      <div style={{position: 'relative', width: 1300, background: 'linear-gradient(#262626,#141414)', borderRadius: 28, border: '6px solid #444', padding: '40px 60px', boxShadow: '0 30px 80px rgba(0,0,0,.7)'}}>
         {(s.venue || s.date) && <div style={{fontFamily: BODY, fontWeight: 800, fontSize: 32, color: C.gold, textAlign: 'center', letterSpacing: 3}}>{[s.venue, s.date].filter(Boolean).join(' · ')}</div>}
         <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 20}}>
           <div style={{fontFamily: DISPLAY, fontSize: 84, color: '#fff', width: 420}}>{s.home}</div>

@@ -1,0 +1,676 @@
+{
+ "id": "EP04-PL",
+ "code": "LY",
+ "title": "Play Like Lamine Yamal: Beat Your Defender Before the Touch",
+ "music": "chalk.mp3",
+ "thumb": {
+  "kicker": "PLAY LIKE LAMINE",
+  "title": "BEFORE\nTHE TOUCH",
+  "accent": "TOUCH",
+  "style": "board"
+ },
+ "scenes": [
+  {
+   "type": "board",
+   "title": "THE 1v1",
+   "lead": 0.6,
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.7,
+     "focus": [
+      80,
+      52
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "y",
+     "side": "barca",
+     "label": "19",
+     "path": [
+      [
+       0,
+       72,
+       60
+      ],
+      [
+       "LY-002",
+       76,
+       58
+      ],
+      [
+       "LY-002+0.6",
+       77,
+       57.5
+      ],
+      [
+       "LY-003",
+       77,
+       57.5
+      ],
+      [
+       "LY-003+1",
+       84,
+       49
+      ]
+     ],
+     "hi": [
+      [
+       "LY-001",
+       "LY-003+2",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "d",
+     "side": "opp",
+     "label": "3",
+     "path": [
+      [
+       0,
+       82,
+       56
+      ],
+      [
+       "LY-002+0.6",
+       81,
+       56.5
+      ],
+      [
+       "LY-003+0.4",
+       81.5,
+       59
+      ]
+     ]
+    }
+   ],
+   "ball": {
+    "path": [
+     [
+      0,
+      72.6,
+      60.4
+     ],
+     [
+      "LY-002",
+      76.6,
+      58.3
+     ],
+     [
+      "LY-003",
+      77.6,
+      57.8
+     ],
+     [
+      "LY-003+1",
+      84.6,
+      49.3
+     ]
+    ]
+   },
+   "labels": [
+    {
+     "text": "WEIGHT SHIFTS",
+     "at": "LY-002+0.6",
+     "x": 82,
+     "y": 66,
+     "color": "#ff4d4d"
+    }
+   ],
+   "overlay": [
+    {
+     "text": "GONE.",
+     "at": "LY-003+1",
+     "pos": "top"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": "LY-003+0.3",
+     "volume": 0.6
+    }
+   ],
+   "lines": "LY-001..LY-003"
+  },
+  {
+   "type": "list",
+   "title": "THREE SECRETS",
+   "items": [
+    {
+     "at": "LY-004+1",
+     "text": "THE APPROACH",
+     "sub": "choose the angle before you arrive"
+    },
+    {
+     "at": "LY-004+2",
+     "text": "THE BRAKE",
+     "sub": "slow down to speed up"
+    },
+    {
+     "at": "LY-004+3",
+     "text": "THE READ",
+     "sub": "let the defender's weight decide"
+    },
+    {
+     "at": "LY-005",
+     "text": "+ A 10-MINUTE DRILL"
+    }
+   ],
+   "lines": "LY-004..LY-005a"
+  },
+  {
+   "type": "timeline",
+   "title": "THE RISE",
+   "events": [
+    {
+     "at": 0.3,
+     "year": "2007",
+     "text": "Born in Esplugues de Llobregat"
+    },
+    {
+     "at": "LY-007",
+     "year": "2023",
+     "text": "First-team debut at 15"
+    },
+    {
+     "at": "LY-008",
+     "year": "2024",
+     "text": "European champion · Kopa Trophy"
+    },
+    {
+     "at": "LY-009",
+     "year": "2025",
+     "text": "Kopa again · Ballon d'Or runner-up"
+    }
+   ],
+   "lines": "LY-006..LY-010"
+  },
+  {
+   "type": "chapter",
+   "num": "SECRET 1",
+   "title": "The approach",
+   "lines": "LY-011"
+  },
+  {
+   "type": "board",
+   "title": "SECRET 1 · ANGLE OF ATTACK",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.6,
+     "focus": [
+      78,
+      50
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "y",
+     "side": "barca",
+     "label": "19",
+     "path": [
+      [
+       0,
+       68,
+       62
+      ],
+      [
+       "LY-013",
+       68,
+       62
+      ],
+      [
+       "LY-013+2",
+       76,
+       55
+      ]
+     ],
+     "hi": [
+      [
+       "LY-013",
+       "LY-015",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "d",
+     "side": "opp",
+     "label": "3",
+     "path": [
+      [
+       0,
+       80,
+       56
+      ]
+     ]
+    }
+   ],
+   "arrows": [
+    {
+     "from": [
+      68,
+      62
+     ],
+     "to": [
+      80,
+      62
+     ],
+     "at": "LY-012",
+     "color": "#ff4d4d",
+     "until": "LY-013"
+    },
+    {
+     "from": [
+      68,
+      62
+     ],
+     "to": [
+      77,
+      55
+     ],
+     "at": "LY-013",
+     "color": "#f2c230"
+    }
+   ],
+   "zones": [
+    {
+     "x": 82,
+     "y": 44,
+     "w": 10,
+     "h": 10,
+     "color": "#f2c230",
+     "at": "LY-014",
+     "opacity": 0.25
+    },
+    {
+     "x": 82,
+     "y": 58,
+     "w": 10,
+     "h": 8,
+     "color": "#1f5fd6",
+     "at": "LY-014+1",
+     "opacity": 0.25
+    }
+   ],
+   "labels": [
+    {
+     "text": "STRAIGHT = EASY TO DEFEND",
+     "at": "LY-012+0.5",
+     "until": "LY-013",
+     "x": 74,
+     "y": 68,
+     "color": "#ff4d4d"
+    },
+    {
+     "text": "INSIDE",
+     "at": "LY-014",
+     "x": 87,
+     "y": 42,
+     "color": "#f2c230"
+    },
+    {
+     "text": "OUTSIDE",
+     "at": "LY-014+1",
+     "x": 87,
+     "y": 68,
+     "color": "#ecebe4"
+    }
+   ],
+   "lines": "LY-012..LY-016c"
+  },
+  {
+   "type": "chapter",
+   "num": "SECRET 2",
+   "title": "The brake",
+   "lines": "LY-017"
+  },
+  {
+   "type": "compare",
+   "left": {
+    "title": "FULL SPEED",
+    "points": [
+     "Defender runs with you",
+     "No time to read him",
+     "Easy to show you outside"
+    ]
+   },
+   "right": {
+    "title": "BRAKE, THEN GO",
+    "points": [
+     "Defender has to stop too",
+     "His weight lands on his heels",
+     "Your first step is faster than his"
+    ]
+   },
+   "lines": "LY-018..LY-021b"
+  },
+  {
+   "type": "statement",
+   "text": "Slow down to speed up.",
+   "accent": "speed up",
+   "hold": 1,
+   "lines": "LY-022"
+  },
+  {
+   "type": "chapter",
+   "num": "SECRET 3",
+   "title": "The read",
+   "lines": "LY-023"
+  },
+  {
+   "type": "board",
+   "title": "SECRET 3 · READ THE WEIGHT",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.8,
+     "focus": [
+      80,
+      54
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "y",
+     "side": "barca",
+     "label": "19",
+     "path": [
+      [
+       0,
+       76,
+       58
+      ],
+      [
+       "LY-025+1",
+       76,
+       58
+      ],
+      [
+       "LY-025+2",
+       83,
+       50
+      ],
+      [
+       "LY-026",
+       76,
+       58
+      ],
+      [
+       "LY-026+1.5",
+       86,
+       62
+      ]
+     ]
+    },
+    {
+     "id": "d",
+     "side": "opp",
+     "label": "3",
+     "path": [
+      [
+       0,
+       80,
+       57
+      ],
+      [
+       "LY-025",
+       80.5,
+       59
+      ],
+      [
+       "LY-026",
+       80,
+       57
+      ],
+      [
+       "LY-026+0.5",
+       79.5,
+       55
+      ]
+     ]
+    }
+   ],
+   "labels": [
+    {
+     "text": "LEANS OUTSIDE → GO INSIDE",
+     "at": "LY-025",
+     "until": "LY-026",
+     "x": 80,
+     "y": 68,
+     "color": "#f2c230"
+    },
+    {
+     "text": "LEANS INSIDE → GO OUTSIDE",
+     "at": "LY-026",
+     "x": 80,
+     "y": 68,
+     "color": "#f2c230"
+    }
+   ],
+   "arrows": [
+    {
+     "from": [
+      76,
+      58
+     ],
+     "to": [
+      83,
+      50
+     ],
+     "at": "LY-025+1",
+     "color": "#f2c230",
+     "until": "LY-026"
+    },
+    {
+     "from": [
+      76,
+      58
+     ],
+     "to": [
+      86,
+      62
+     ],
+     "at": "LY-026+0.6",
+     "color": "#f2c230"
+    }
+   ],
+   "lines": "LY-024..LY-028b"
+  },
+  {
+   "type": "list",
+   "title": "THE OUTSIDE OF THE BOOT",
+   "items": [
+    {
+     "at": "LY-029",
+     "text": "PASS WITHOUT OPENING UP",
+     "sub": "the defender never sees it coming"
+    },
+    {
+     "at": "LY-030",
+     "text": "CURVE AWAY FROM THE KEEPER",
+     "sub": "crosses and shots that bend late"
+    },
+    {
+     "at": "LY-031",
+     "text": "PRACTISE BOTH WAYS",
+     "sub": "inside and outside of the same foot"
+    }
+   ],
+   "lines": "LY-029..LY-031"
+  },
+  {
+   "type": "chapter",
+   "num": "BONUS",
+   "title": "After the 1v1",
+   "lines": "LY-031a"
+  },
+  {
+   "type": "list",
+   "title": "THE NEXT SECOND",
+   "items": [
+    {
+     "at": "LY-031b",
+     "text": "THE CUT-BACK",
+     "sub": "low and back, into the space behind the runners"
+    },
+    {
+     "at": "LY-031c",
+     "text": "THE NEAR POST",
+     "sub": "hard and early, before the keeper sets"
+    },
+    {
+     "at": "LY-031d",
+     "text": "THE CURLER",
+     "sub": "open the body, bend it into the far corner"
+    }
+   ],
+   "lines": "LY-031b..LY-031e"
+  },
+  {
+   "type": "chapter",
+   "num": "THE DRILL",
+   "title": "Brake & read",
+   "lines": "LY-032"
+  },
+  {
+   "type": "board",
+   "title": "THE BRAKE-AND-READ DRILL",
+   "tag": "DRILL",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.9,
+     "focus": [
+      52,
+      34
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "g1",
+     "side": "neutral",
+     "label": "L",
+     "path": [
+      [
+       0,
+       60,
+       28
+      ]
+     ]
+    },
+    {
+     "id": "g2",
+     "side": "neutral",
+     "label": "R",
+     "path": [
+      [
+       0,
+       60,
+       40
+      ]
+     ]
+    },
+    {
+     "id": "me",
+     "side": "barca",
+     "label": "YOU",
+     "path": [
+      [
+       0,
+       42,
+       34
+      ],
+      [
+       "LY-034",
+       50,
+       34
+      ],
+      [
+       "LY-034+0.8",
+       52,
+       34
+      ],
+      [
+       "LY-035",
+       52,
+       34
+      ],
+      [
+       "LY-035+1",
+       59,
+       40
+      ]
+     ]
+    },
+    {
+     "id": "df",
+     "side": "opp",
+     "label": "D",
+     "path": [
+      [
+       0,
+       55,
+       34
+      ],
+      [
+       "LY-035",
+       55.5,
+       33
+      ],
+      [
+       "LY-035+0.6",
+       55,
+       31
+      ]
+     ]
+    }
+   ],
+   "arrows": [
+    {
+     "from": [
+      52,
+      34
+     ],
+     "to": [
+      60,
+      40
+     ],
+     "at": "LY-035+0.5",
+     "color": "#f2c230"
+    }
+   ],
+   "overlay": [
+    {
+     "text": "3 × 3 MINUTES",
+     "at": "LY-036",
+     "pos": "bottom"
+    }
+   ],
+   "lines": "LY-033..LY-037a"
+  },
+  {
+   "type": "question",
+   "text": "WHO SHOULD WE BREAK DOWN NEXT?",
+   "options": [
+    "BUSQUETS",
+    "XAVI",
+    "RAPHINHA"
+   ],
+   "lines": "LY-038"
+  },
+  {
+   "type": "endscreen",
+   "hold": 18,
+   "next": "PLAY LIKE PEDRI →",
+   "lines": "LY-039"
+  }
+ ]
+}

@@ -1,0 +1,650 @@
+{
+ "id": "EP05-FS",
+ "code": "JC",
+ "title": "The Full Story of Johan Cruyff: The Man Who Built Barça Twice",
+ "music": "story.mp3",
+ "thumb": {
+  "kicker": "THE FULL STORY",
+  "title": "HE BUILT\nBARÇA",
+  "accent": "BARÇA",
+  "style": "photo",
+  "photo": "photos/cruyff/cruyff-02.jpg"
+ },
+ "scenes": [
+  {
+   "type": "photo",
+   "src": "photos/cruyff/cruyff-flight-barcelona-1973.jpg",
+   "move": "in",
+   "credit": "Photo: Anefo / Nationaal Archief (CC0) · Schiphol, 23 August 1973",
+   "lead": 0.8,
+   "sfx": [
+    {
+     "name": "shutter",
+     "at": 0.3,
+     "volume": 0.4
+    }
+   ],
+   "lines": "JC-001..JC-003"
+  },
+  {
+   "type": "title",
+   "kicker": "THE FULL STORY",
+   "title": "JOHAN\nCRUYFF",
+   "sub": "The man who built Barça. Twice.",
+   "photo": "photos/cruyff/cruyff-02.jpg",
+   "lines": "JC-004..JC-005"
+  },
+  {
+   "type": "chapter",
+   "num": "ACT 1",
+   "title": "The boy next door",
+   "lines": "JC-006"
+  },
+  {
+   "type": "photo",
+   "src": "photos/cruyff/ajax-fog-1971.jpg",
+   "move": "left",
+   "caption": "Ajax train in the fog, Amsterdam",
+   "credit": "Photo: Anefo / Nationaal Archief (CC0) · 1971",
+   "lines": "JC-007..JC-010b"
+  },
+  {
+   "type": "timeline",
+   "title": "AJAX YEARS",
+   "events": [
+    {
+     "at": 0.3,
+     "year": "1964",
+     "text": "Ajax debut at 17"
+    },
+    {
+     "at": "JC-012",
+     "year": "1965",
+     "text": "Rinus Michels arrives"
+    },
+    {
+     "at": "JC-014",
+     "year": "1971–73",
+     "text": "Three European Cups"
+    },
+    {
+     "at": "JC-015",
+     "year": "1971",
+     "text": "First Ballon d'Or"
+    }
+   ],
+   "lines": "JC-011..JC-015"
+  },
+  {
+   "type": "photo",
+   "src": "photos/cruyff/ajax-goal-1971.jpg",
+   "move": "in",
+   "caption": "Cruyff scores for Ajax in Marseille",
+   "credit": "Photo: Anefo / Nationaal Archief (CC0) · 20 October 1971",
+   "lines": "JC-016..JC-017b"
+  },
+  {
+   "type": "chapter",
+   "num": "ACT 2",
+   "title": "The saviour",
+   "lines": "JC-018"
+  },
+  {
+   "type": "photo",
+   "src": "photos/cruyff/knvb-meeting-1973.jpg",
+   "move": "still",
+   "caption": "The Dutch football board meets over Cruyff's transfer",
+   "credit": "Photo: Anefo / Nationaal Archief (CC0) · Zeist, 16 August 1973",
+   "lines": "JC-019..JC-020"
+  },
+  {
+   "type": "photo",
+   "src": "photos/cruyff/michels-papendal-1973.jpg",
+   "move": "right",
+   "caption": "Rinus Michels with FC Barcelona",
+   "credit": "Photo: Anefo / Nationaal Archief (CC0) · August 1973",
+   "lines": "JC-021..JC-023"
+  },
+  {
+   "type": "stat",
+   "value": "14",
+   "label": "years without a league title when Cruyff arrived",
+   "source": "FC Barcelona",
+   "lines": "JC-024"
+  },
+  {
+   "type": "timeline",
+   "title": "1973–74",
+   "events": [
+    {
+     "at": 0.3,
+     "year": "Aug",
+     "text": "Signs for Barça"
+    },
+    {
+     "at": "JC-026",
+     "year": "28 Oct",
+     "text": "Debut: two goals v Granada"
+    },
+    {
+     "at": "JC-028",
+     "year": "17 Feb",
+     "text": "0–5 at the Bernabéu"
+    },
+    {
+     "at": "JC-030",
+     "year": "May",
+     "text": "League champions"
+    }
+   ],
+   "lines": "JC-025..JC-028"
+  },
+  {
+   "type": "score",
+   "home": "REAL MADRID",
+   "away": "BARCELONA",
+   "venue": "SANTIAGO BERNABÉU",
+   "date": "17 FEB 1974",
+   "events": [
+    {
+     "at": 0.5,
+     "minute": "",
+     "side": "away",
+     "who": "Asensi"
+    },
+    {
+     "at": 0.9,
+     "minute": "",
+     "side": "away",
+     "who": "Cruyff"
+    },
+    {
+     "at": 1.3,
+     "minute": "",
+     "side": "away",
+     "who": "Asensi"
+    },
+    {
+     "at": 1.7,
+     "minute": "",
+     "side": "away",
+     "who": "Juan Carlos"
+    },
+    {
+     "at": 2.1,
+     "minute": "",
+     "side": "away",
+     "who": "Sotil"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "crowd",
+     "at": 0.4,
+     "volume": 0.4
+    },
+    {
+     "name": "impact",
+     "at": 2.2,
+     "volume": 0.5
+    }
+   ],
+   "lines": "JC-029..JC-032"
+  },
+  {
+   "type": "photo",
+   "src": "photos/cruyff/cruyff-03.jpg",
+   "move": "in",
+   "caption": "Cruyff with a trophy in Barça colours",
+   "credit": "Photo: Anefo / Nationaal Archief (CC0) · 1975",
+   "lines": "JC-033"
+  },
+  {
+   "type": "photo",
+   "src": "photos/cruyff/wc1974-final.jpg",
+   "move": "still",
+   "caption": "World Cup final, Munich",
+   "credit": "Photo: Anefo / Nationaal Archief (CC0) · 7 July 1974",
+   "lines": "JC-034..JC-036b"
+  },
+  {
+   "type": "chapter",
+   "num": "ACT 3",
+   "title": "The wanderer",
+   "lines": "JC-037"
+  },
+  {
+   "type": "map",
+   "label": "1978 – 1984",
+   "from": {
+    "name": "BARCELONA",
+    "xy": [
+     880,
+     720
+    ]
+   },
+   "to": {
+    "name": "ROTTERDAM",
+    "xy": [
+     900,
+     300
+    ]
+   },
+   "extra": [
+    {
+     "name": "LOS ANGELES",
+     "xy": [
+      260,
+      520
+     ]
+    },
+    {
+     "name": "WASHINGTON",
+     "xy": [
+      520,
+      470
+     ]
+    },
+    {
+     "name": "VALENCIA",
+     "xy": [
+      800,
+      760
+     ]
+    },
+    {
+     "name": "AMSTERDAM",
+     "xy": [
+      940,
+      240
+     ]
+    }
+   ],
+   "lines": "JC-038..JC-041"
+  },
+  {
+   "type": "photo",
+   "src": "photos/cruyff/feyenoord-jump-1984.jpg",
+   "move": "in",
+   "caption": "Feyenoord v AZ, 1984",
+   "credit": "Photo: Anefo / Nationaal Archief (CC0) · 25 March 1984",
+   "lines": "JC-042"
+  },
+  {
+   "type": "photo",
+   "src": "photos/cruyff/feyenoord-farewell-1984.jpg",
+   "move": "still",
+   "caption": "Cruyff's farewell as a player",
+   "credit": "Photo: Anefo / Nationaal Archief (CC0) · 13 May 1984",
+   "lines": "JC-043..JC-044"
+  },
+  {
+   "type": "chapter",
+   "num": "ACT 4",
+   "title": "The architect",
+   "lines": "JC-045"
+  },
+  {
+   "type": "photo",
+   "src": "photos/cruyff/ajax-director-1986.jpg",
+   "move": "left",
+   "caption": "Cruyff as Ajax's technical director",
+   "credit": "Photo: Anefo / Nationaal Archief (CC0) · 1986",
+   "lines": "JC-046..JC-048"
+  },
+  {
+   "type": "photo",
+   "src": "photos/cruyff/cruyff-01.jpg",
+   "move": "in",
+   "caption": "Leaving for Barcelona — this time as coach",
+   "credit": "Photo: Rob Croes / Anefo / Nationaal Archief (CC0) · 1988",
+   "lines": "JC-049..JC-049a"
+  },
+  {
+   "type": "board",
+   "title": "CRUYFF'S 3-4-3",
+   "tag": "ILLUSTRATION",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.1,
+     "focus": [
+      52.5,
+      34
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "gk",
+     "side": "barca",
+     "label": "1",
+     "path": [
+      [
+       0,
+       12,
+       34
+      ]
+     ]
+    },
+    {
+     "id": "d1",
+     "side": "barca",
+     "label": "2",
+     "path": [
+      [
+       0,
+       30,
+       16
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "side": "barca",
+     "label": "4",
+     "path": [
+      [
+       0,
+       28,
+       34
+      ]
+     ],
+     "hi": [
+      [
+       "JC-051",
+       "JC-052",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "d3",
+     "side": "barca",
+     "label": "3",
+     "path": [
+      [
+       0,
+       30,
+       52
+      ]
+     ]
+    },
+    {
+     "id": "m1",
+     "side": "barca",
+     "label": "6",
+     "path": [
+      [
+       0,
+       44,
+       34
+      ]
+     ]
+    },
+    {
+     "id": "m2",
+     "side": "barca",
+     "label": "8",
+     "path": [
+      [
+       0,
+       54,
+       20
+      ]
+     ]
+    },
+    {
+     "id": "m3",
+     "side": "barca",
+     "label": "10",
+     "path": [
+      [
+       0,
+       54,
+       48
+      ]
+     ]
+    },
+    {
+     "id": "m4",
+     "side": "barca",
+     "label": "9",
+     "path": [
+      [
+       0,
+       66,
+       34
+      ]
+     ]
+    },
+    {
+     "id": "f1",
+     "side": "barca",
+     "label": "7",
+     "path": [
+      [
+       0,
+       78,
+       8
+      ]
+     ]
+    },
+    {
+     "id": "f2",
+     "side": "barca",
+     "label": "14",
+     "path": [
+      [
+       0,
+       82,
+       34
+      ]
+     ]
+    },
+    {
+     "id": "f3",
+     "side": "barca",
+     "label": "11",
+     "path": [
+      [
+       0,
+       78,
+       60
+      ]
+     ]
+    }
+   ],
+   "arrows": [
+    {
+     "from": [
+      44,
+      34
+     ],
+     "to": [
+      54,
+      20
+     ],
+     "at": "JC-052",
+     "color": "#f2c230"
+    },
+    {
+     "from": [
+      54,
+      20
+     ],
+     "to": [
+      78,
+      9
+     ],
+     "at": "JC-052+0.7",
+     "color": "#f2c230"
+    },
+    {
+     "from": [
+      12,
+      34
+     ],
+     "to": [
+      26,
+      34
+     ],
+     "at": "JC-051",
+     "color": "#ecebe4",
+     "dashed": true
+    }
+   ],
+   "labels": [
+    {
+     "text": "DIAMOND",
+     "at": "JC-051+1",
+     "x": 55,
+     "y": 64,
+     "color": "#f2c230"
+    },
+    {
+     "text": "WIDE",
+     "at": "JC-052+1",
+     "x": 78,
+     "y": 4,
+     "color": "#ecebe4"
+    }
+   ],
+   "lines": "JC-050..JC-052b"
+  },
+  {
+   "type": "quote",
+   "text": "Playing football is very simple, but playing simple football is the hardest thing there is.",
+   "who": "Johan Cruyff",
+   "photo": "photos/cruyff/barca-training-1977.jpg",
+   "lines": "JC-053"
+  },
+  {
+   "type": "timeline",
+   "title": "THE DREAM TEAM",
+   "events": [
+    {
+     "at": 0.3,
+     "year": "1989",
+     "text": "Cup Winners' Cup"
+    },
+    {
+     "at": "JC-055",
+     "year": "1990",
+     "text": "Copa del Rey"
+    },
+    {
+     "at": "JC-056",
+     "year": "1991–94",
+     "text": "Four leagues in a row"
+    },
+    {
+     "at": "JC-057",
+     "year": "1992",
+     "text": "European Cup, Wembley"
+    }
+   ],
+   "lines": "JC-054..JC-057"
+  },
+  {
+   "type": "statement",
+   "text": "20 May 1992. Wembley. Extra time.",
+   "accent": "Wembley",
+   "bg": "navy",
+   "sfx": [
+    {
+     "name": "crowd",
+     "at": 0.3,
+     "volume": 0.35
+    }
+   ],
+   "lines": "JC-058..JC-060"
+  },
+  {
+   "type": "score",
+   "home": "BARCELONA",
+   "away": "SAMPDORIA",
+   "venue": "WEMBLEY",
+   "date": "20 MAY 1992",
+   "events": [
+    {
+     "at": 0.4,
+     "minute": "111",
+     "side": "home",
+     "who": "Koeman"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "impact",
+     "at": 0.5,
+     "volume": 0.5
+    },
+    {
+     "name": "crowd",
+     "at": 0.6,
+     "volume": 0.5
+    }
+   ],
+   "lines": "JC-061..JC-062b"
+  },
+  {
+   "type": "chapter",
+   "num": "ACT 5",
+   "title": "The legacy",
+   "lines": "JC-063"
+  },
+  {
+   "type": "list",
+   "title": "WHAT HE LEFT BEHIND",
+   "items": [
+    {
+     "at": "JC-065",
+     "text": "A WAY TO PLAY",
+     "sub": "possession, width, pressing, positional play"
+    },
+    {
+     "at": "JC-066",
+     "text": "A WAY TO TEACH",
+     "sub": "La Masia built around the same ideas"
+    },
+    {
+     "at": "JC-067",
+     "text": "A FAMILY TREE",
+     "sub": "Guardiola, Xavi, Iniesta, Messi, today's academy"
+    }
+   ],
+   "lines": "JC-064..JC-067"
+  },
+  {
+   "type": "statement",
+   "text": "Cruyff → Guardiola → Xavi, Iniesta, Messi → today.",
+   "accent": "today",
+   "bg": "navy",
+   "lines": "JC-068..JC-069b"
+  },
+  {
+   "type": "photo",
+   "src": "photos/cruyff/cruyff-02.jpg",
+   "move": "in",
+   "credit": "Photo: Rob Mieremet / Anefo / Nationaal Archief (CC0) · 1974",
+   "lines": "JC-070..JC-072"
+  },
+  {
+   "type": "question",
+   "text": "WHO GETS THE NEXT FULL STORY?",
+   "options": [
+    "KUBALA",
+    "RONALDINHO",
+    "XAVI"
+   ],
+   "lines": "JC-073"
+  },
+  {
+   "type": "endscreen",
+   "hold": 18,
+   "next": "THE 2-6: WHERE HIS IDEAS LED →",
+   "lines": "JC-074"
+  }
+ ]
+}

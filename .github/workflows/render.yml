@@ -39,8 +39,15 @@ jobs:
             ~/.npm
             tools/tts/node_modules/@huggingface/transformers/.cache
           key: tts-${{ hashFiles('tools/tts/package-lock.json') }}
-      - name: Narration (Kokoro, local CPU)
+      - name: Restore narration audio cache
         if: ${{ inputs.code != '' }}
+        id: audiocache
+        uses: actions/cache@v4
+        with:
+          path: studio/public/audio/${{ inputs.code }}
+          key: audio-${{ inputs.code }}-${{ hashFiles(format('studio/src/episodes/narration/{0}.json', inputs.code)) }}
+      - name: Narration (Kokoro, local CPU)
+        if: ${{ inputs.code != '' && steps.audiocache.outputs.cache-hit != 'true' }}
         working-directory: tools/tts
         run: |
           npm ci --no-audit --no-fund

@@ -1,7 +1,7 @@
 import React from 'react';
 import {AbsoluteFill, Img, Sequence, staticFile, useCurrentFrame, interpolate, getInputProps} from 'remotion';
 import {C, DISPLAY, BODY, ChalkDefs, Grain, Halftone, Pop, Narration, clamp, kf} from './lib';
-import fsDur from '../public/audio/fs/durations.json';
+import fsDur from '../public/audio/hookfs/durations.json';
 
 const LINES = [
   {id: 'fs-01', from: 112, text: 'Johan Cruyff. The man who built Barça. Twice.'},
@@ -49,7 +49,7 @@ export const StoryHook: React.FC = () => {
       <div style={{position: 'absolute', right: 30, bottom: 22, fontFamily: BODY, fontSize: 16, color: '#ffffff99'}}>
         Photo: Rob Mieremet / Anefo, Nationaal Archief (CC0) · Feyenoord–Barcelona, 1974
       </div>
-      <Narration dir="fs" lines={LINES} durations={fsDur as Record<string, number>} />
+      <Narration dir="hookfs" lines={LINES} durations={fsDur as Record<string, number>} />
       <Grain opacity={Number((getInputProps() as {grain?: number}).grain ?? 0.1)} />
     </AbsoluteFill>
   );
