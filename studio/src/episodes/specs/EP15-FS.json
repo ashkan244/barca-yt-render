@@ -1,0 +1,303 @@
+{
+ "id": "EP15-FS",
+ "code": "LS",
+ "title": "The Full Story of La Masia: How a Farmhouse Changed Football",
+ "music": "hope.mp3",
+ "thumb": {
+  "kicker": "THE FULL STORY",
+  "title": "LA\nMASIA",
+  "accent": "MASIA",
+  "style": "photo",
+  "photo": "photos/masia/can-planes-1925.jpg"
+ },
+ "scenes": [
+  {
+   "type": "photo",
+   "src": "photos/masia/can-planes-1925.jpg",
+   "move": "in",
+   "style": "sepia",
+   "credit": "Can Planes, Barcelona, 1925 · public domain",
+   "lead": 0.6,
+   "lines": "LS-001..LS-003"
+  },
+  {
+   "type": "title",
+   "kicker": "THE FULL STORY",
+   "title": "LA\nMASIA",
+   "sub": "How a farmhouse changed football.",
+   "photo": "photos/masia/masia-back.jpg",
+   "lines": "LS-004..LS-005"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 1",
+   "title": "A house next to a stadium",
+   "lines": "LS-006"
+  },
+  {
+   "type": "timeline",
+   "title": "FROM FARM TO ACADEMY",
+   "events": [
+    {
+     "at": 0.3,
+     "year": "1702",
+     "text": "Can Planes farmhouse built"
+    },
+    {
+     "at": "LS-008",
+     "year": "1957",
+     "text": "Camp Nou opens next door"
+    },
+    {
+     "at": "LS-009",
+     "year": "1979",
+     "text": "Becomes the youth residence"
+    },
+    {
+     "at": "LS-011",
+     "year": "2011",
+     "text": "Academy moves to a new centre"
+    }
+   ],
+   "lines": "LS-007..LS-011"
+  },
+  {
+   "type": "photo",
+   "src": "photos/masia/masia-back.jpg",
+   "move": "left",
+   "style": "bw",
+   "caption": "La Masia, with the Camp Nou behind",
+   "credit": "Photo: Wikimedia Commons, 2011 (CC0)",
+   "lines": "LS-012..LS-013"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 2",
+   "title": "The idea",
+   "lines": "LS-014"
+  },
+  {
+   "type": "statement",
+   "text": "Every team plays the same way. From the under-8s to the first team.",
+   "accent": "the same way.",
+   "bg": "navy",
+   "lines": "LS-015..LS-017"
+  },
+  {
+   "type": "list",
+   "title": "THE LA MASIA CURRICULUM",
+   "items": [
+    {
+     "at": "LS-018",
+     "text": "THE BALL FIRST",
+     "sub": "technique before size or strength"
+    },
+    {
+     "at": "LS-019",
+     "text": "THE RONDO",
+     "sub": "every day, at every age"
+    },
+    {
+     "at": "LS-020",
+     "text": "POSITION AND SPACE",
+     "sub": "where to stand matters more than how fast you run"
+    },
+    {
+     "at": "LS-021",
+     "text": "SCHOOL, TOO",
+     "sub": "players must study as well as train"
+    }
+   ],
+   "lines": "LS-018..LS-021"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 3",
+   "title": "The first harvest",
+   "lines": "LS-022"
+  },
+  {
+   "type": "photo",
+   "src": "photos/cruyff/barca-training-1977.jpg",
+   "move": "right",
+   "style": "bw",
+   "caption": "Barça training, 1977",
+   "credit": "Photo: Anefo / Nationaal Archief (CC0)",
+   "lines": "LS-023..LS-025"
+  },
+  {
+   "type": "list",
+   "title": "THE NEXT WAVE",
+   "items": [
+    {
+     "at": "LS-026",
+     "text": "XAVI",
+     "sub": "first-team debut 1998"
+    },
+    {
+     "at": "LS-027",
+     "text": "CARLES PUYOL",
+     "sub": "debut 1999"
+    },
+    {
+     "at": "LS-028",
+     "text": "VÍCTOR VALDÉS",
+     "sub": "debut 2002"
+    },
+    {
+     "at": "LS-029",
+     "text": "ANDRÉS INIESTA",
+     "sub": "debut 2002"
+    }
+   ],
+   "lines": "LS-026..LS-029"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 4",
+   "title": "The napkin",
+   "lines": "LS-030"
+  },
+  {
+   "type": "statement",
+   "text": "14 December 2000. A contract on a paper napkin.",
+   "accent": "paper napkin.",
+   "bg": "navy",
+   "lines": "LS-031..LS-034"
+  },
+  {
+   "type": "stat",
+   "value": "13",
+   "label": "Messi's age when he arrived at Barça from Rosario, in 2000",
+   "source": "FC Barcelona",
+   "lines": "LS-035..LS-036"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 5",
+   "title": "The peak",
+   "lines": "LS-037"
+  },
+  {
+   "type": "statement",
+   "text": "2008. Guardiola takes over — and trusts the academy.",
+   "accent": "trusts the academy.",
+   "lines": "LS-038..LS-039"
+  },
+  {
+   "type": "list",
+   "title": "2010 BALLON D'OR · THE PODIUM",
+   "items": [
+    {
+     "at": "LS-040",
+     "text": "1. LIONEL MESSI",
+     "sub": "La Masia"
+    },
+    {
+     "at": "LS-040+1.2",
+     "text": "2. ANDRÉS INIESTA",
+     "sub": "La Masia"
+    },
+    {
+     "at": "LS-040+2.4",
+     "text": "3. XAVI",
+     "sub": "La Masia"
+    }
+   ],
+   "lines": "LS-040..LS-041"
+  },
+  {
+   "type": "stat",
+   "value": "11",
+   "label": "La Masia graduates on the pitch at the same time — Levante 0–4 Barça, 25 November 2012",
+   "source": "FC Barcelona",
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 0.2,
+     "volume": 0.35
+    }
+   ],
+   "lines": "LS-042..LS-043"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 6",
+   "title": "The drought",
+   "lines": "LS-044"
+  },
+  {
+   "type": "compare",
+   "left": {
+    "title": "2008–2012",
+    "points": [
+     "The academy is the team",
+     "Three of the world's top three",
+     "A style the whole world copies"
+    ],
+    "good": true
+   },
+   "right": {
+    "title": "2014–2019",
+    "points": [
+     "Huge transfer spending",
+     "Few academy debuts stick",
+     "Talented youngsters leave"
+    ],
+    "good": false
+   },
+   "lines": "LS-045..LS-047"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 7",
+   "title": "The return",
+   "lines": "LS-048"
+  },
+  {
+   "type": "list",
+   "title": "THE NEW GENERATION",
+   "items": [
+    {
+     "at": "LS-049",
+     "text": "GAVI · BALDE"
+    },
+    {
+     "at": "LS-050",
+     "text": "FERMÍN LÓPEZ · MARC CASADÓ"
+    },
+    {
+     "at": "LS-051",
+     "text": "PAU CUBARSÍ"
+    },
+    {
+     "at": "LS-052",
+     "text": "LAMINE YAMAL"
+    }
+   ],
+   "lines": "LS-049..LS-052"
+  },
+  {
+   "type": "statement",
+   "text": "It was never just a house. It was an idea.",
+   "accent": "an idea.",
+   "lines": "LS-053..LS-055"
+  },
+  {
+   "type": "question",
+   "text": "GREATEST LA MASIA GRADUATE?",
+   "options": [
+    "MESSI",
+    "INIESTA",
+    "XAVI"
+   ],
+   "lines": "LS-056"
+  },
+  {
+   "type": "endscreen",
+   "hold": 18,
+   "next": "THE FULL STORY: JOHAN CRUYFF →",
+   "lines": "LS-057"
+  }
+ ]
+}

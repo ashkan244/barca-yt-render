@@ -1,0 +1,229 @@
+{
+ "id": "EP16-WI",
+ "code": "CR",
+ "title": "What If Cruyff Had Never Come Back in 1988?",
+ "music": "story.mp3",
+ "thumb": {
+  "kicker": "WHAT IF?",
+  "title": "NO\nCRUYFF?",
+  "accent": "CRUYFF?",
+  "style": "photo",
+  "photo": "photos/cruyff/ajax-director-1986.jpg"
+ },
+ "scenes": [
+  {
+   "type": "statement",
+   "text": "28 April 1988. Hotel Hesperia, Barcelona.",
+   "accent": "Hesperia",
+   "bg": "navy",
+   "lead": 0.6,
+   "lines": "CR-001..CR-004"
+  },
+  {
+   "type": "list",
+   "title": "TONIGHT",
+   "items": [
+    {
+     "at": "CR-005",
+     "text": "THE CLUB IN 1988",
+     "sub": "real"
+    },
+    {
+     "at": "CR-005+1.4",
+     "text": "WHAT CRUYFF CHANGED",
+     "sub": "real"
+    },
+    {
+     "at": "CR-006",
+     "text": "THE WORLD WITHOUT HIM",
+     "sub": "model"
+    },
+    {
+     "at": "CR-006+1.4",
+     "text": "THE DOMINOES",
+     "sub": "model"
+    }
+   ],
+   "lines": "CR-005..CR-006"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 1",
+   "title": "The club in 1988",
+   "lines": "CR-007"
+  },
+  {
+   "type": "stat",
+   "value": "2",
+   "label": "league titles won by Barça between 1960 and 1988",
+   "source": "La Liga records",
+   "lines": "CR-008..CR-010"
+  },
+  {
+   "type": "photo",
+   "src": "photos/cruyff/ajax-director-1986.jpg",
+   "move": "in",
+   "style": "bw",
+   "caption": "Johan Cruyff as Ajax's technical director, 1986",
+   "credit": "Photo: Anefo / Nationaal Archief (CC0)",
+   "lines": "CR-011..CR-013"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 2",
+   "title": "What he changed",
+   "lines": "CR-014"
+  },
+  {
+   "type": "list",
+   "title": "THE CRUYFF REVOLUTION",
+   "items": [
+    {
+     "at": "CR-015",
+     "text": "A STYLE",
+     "sub": "possession, width, pressing, risk"
+    },
+    {
+     "at": "CR-016",
+     "text": "ONE WAY FOR EVERY TEAM",
+     "sub": "from the under-8s up"
+    },
+    {
+     "at": "CR-017",
+     "text": "THE ACADEMY TRUSTED",
+     "sub": "Guardiola promoted in 1990"
+    },
+    {
+     "at": "CR-018",
+     "text": "THE TROPHIES",
+     "sub": "4 leagues in a row · first European Cup"
+    }
+   ],
+   "lines": "CR-015..CR-018"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 3",
+   "title": "The world without him",
+   "lines": "CR-019"
+  },
+  {
+   "type": "statement",
+   "text": "MODEL · Barça hire a 'safe' coach in 1988",
+   "accent": "MODEL",
+   "small": "Assumption: a respected coach with no wider vision for the club.",
+   "lines": "CR-020..CR-022"
+  },
+  {
+   "type": "compare",
+   "left": {
+    "title": "REAL 1988–1996",
+    "points": [
+     "4 leagues in a row",
+     "European Cup 1992",
+     "A style copied for decades"
+    ],
+    "good": true
+   },
+   "right": {
+    "title": "MODEL · NO CRUYFF",
+    "points": [
+     "A few trophies, cycles of coaches",
+     "Probably no European Cup in 1992",
+     "No single identity"
+    ],
+    "good": false
+   },
+   "lines": "CR-023..CR-025"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 4",
+   "title": "The dominoes",
+   "lines": "CR-026"
+  },
+  {
+   "type": "timeline",
+   "title": "MODEL · THE DOMINOES",
+   "events": [
+    {
+     "at": 0.3,
+     "year": "1990",
+     "text": "No Guardiola promotion?"
+    },
+    {
+     "at": "CR-028",
+     "year": "1990s",
+     "text": "No one-style academy?"
+    },
+    {
+     "at": "CR-030",
+     "year": "2008",
+     "text": "No Coach Guardiola?"
+    },
+    {
+     "at": "CR-032",
+     "year": "2010s",
+     "text": "No Spain golden era?"
+    }
+   ],
+   "lines": "CR-027..CR-032"
+  },
+  {
+   "type": "statement",
+   "text": "One decision. Thirty years of football.",
+   "accent": "Thirty years",
+   "bg": "navy",
+   "lines": "CR-033..CR-034"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 5",
+   "title": "The counter-argument",
+   "lines": "CR-035"
+  },
+  {
+   "type": "list",
+   "title": "WHY IT MIGHT HAVE HAPPENED ANYWAY",
+   "items": [
+    {
+     "at": "CR-036",
+     "text": "THE TALENT WAS THERE",
+     "sub": "Xavi and Iniesta were born anyway"
+    },
+    {
+     "at": "CR-037",
+     "text": "THE IDEAS WERE IN THE AIR",
+     "sub": "Ajax, Sacchi's Milan, Michels"
+    },
+    {
+     "at": "CR-038",
+     "text": "BARÇA WOULD STILL BE RICH",
+     "sub": "money buys a lot of trophies"
+    }
+   ],
+   "lines": "CR-036..CR-038"
+  },
+  {
+   "type": "statement",
+   "text": "Which do you believe: the man, or the moment?",
+   "accent": "the man,",
+   "lines": "CR-039..CR-040"
+  },
+  {
+   "type": "question",
+   "text": "THE MAN OR THE MOMENT?",
+   "options": [
+    "CRUYFF CHANGED EVERYTHING",
+    "IT WOULD HAVE HAPPENED ANYWAY"
+   ],
+   "lines": "CR-041"
+  },
+  {
+   "type": "endscreen",
+   "hold": 18,
+   "next": "THE FULL STORY: JOHAN CRUYFF →",
+   "lines": "CR-042"
+  }
+ ]
+}

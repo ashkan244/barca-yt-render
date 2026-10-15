@@ -1,0 +1,798 @@
+{
+ "id": "EP14-TX",
+ "code": "OT",
+ "title": "Barça's Offside Trap, Explained: Genius or Gamble?",
+ "music": "chalk.mp3",
+ "thumb": {
+  "kicker": "TACTICS EXPLAINED",
+  "title": "GENIUS OR\nGAMBLE?",
+  "accent": "GAMBLE?",
+  "style": "board"
+ },
+ "scenes": [
+  {
+   "type": "stat",
+   "value": "12",
+   "label": "times Real Madrid were caught offside in the 0–4 Clásico, 26 October 2024",
+   "source": "Opta / The Analyst",
+   "lead": 0.6,
+   "sfx": [
+    {
+     "name": "impact",
+     "at": 0.5,
+     "volume": 0.4
+    }
+   ],
+   "lines": "OT-001..OT-003"
+  },
+  {
+   "type": "list",
+   "title": "TONIGHT",
+   "items": [
+    {
+     "at": "OT-004",
+     "text": "THE RULE",
+     "sub": "60 seconds on offside"
+    },
+    {
+     "at": "OT-004+1.4",
+     "text": "THE TRAP",
+     "sub": "trigger, step, freeze"
+    },
+    {
+     "at": "OT-005",
+     "text": "THE RISK",
+     "sub": "where it breaks"
+    },
+    {
+     "at": "OT-005+1.4",
+     "text": "THE ANTIDOTE",
+     "sub": "how teams fight back"
+    }
+   ],
+   "lines": "OT-004..OT-005"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 1",
+   "title": "The rule in 60 seconds",
+   "lines": "OT-006"
+  },
+  {
+   "type": "board",
+   "title": "OFFSIDE · THE MOMENT OF THE PASS",
+   "tag": "ILLUSTRATION",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.35,
+     "focus": [
+      36,
+      34
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "d1",
+     "side": "barca",
+     "label": "2",
+     "path": [
+      [
+       0,
+       44,
+       16
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "side": "barca",
+     "label": "4",
+     "path": [
+      [
+       0,
+       44,
+       28
+      ]
+     ]
+    },
+    {
+     "id": "d3",
+     "side": "barca",
+     "label": "5",
+     "path": [
+      [
+       0,
+       44,
+       40
+      ]
+     ]
+    },
+    {
+     "id": "d4",
+     "side": "barca",
+     "label": "3",
+     "path": [
+      [
+       0,
+       44,
+       52
+      ]
+     ]
+    },
+    {
+     "id": "gk",
+     "side": "barca",
+     "label": "1",
+     "path": [
+      [
+       0,
+       22,
+       34
+      ]
+     ]
+    },
+    {
+     "id": "s",
+     "side": "opp",
+     "label": "9",
+     "path": [
+      [
+       0,
+       46,
+       34
+      ],
+      [
+       "OT-008",
+       42,
+       34
+      ]
+     ],
+     "hi": [
+      [
+       "OT-008",
+       "OT-010",
+       "#ff4d4d"
+      ]
+     ]
+    },
+    {
+     "id": "p",
+     "side": "opp",
+     "label": "8",
+     "path": [
+      [
+       0,
+       62,
+       30
+      ]
+     ]
+    }
+   ],
+   "ball": {
+    "path": [
+     [
+      0,
+      62.5,
+      30.5
+     ]
+    ]
+   },
+   "offside": [
+    {
+     "x": 44,
+     "at": "OT-007+0.5",
+     "color": "#f2c230"
+    }
+   ],
+   "labels": [
+    {
+     "text": "SECOND-LAST DEFENDER",
+     "at": "OT-007+0.5",
+     "x": 44,
+     "y": 60,
+     "color": "#f2c230"
+    },
+    {
+     "text": "OFFSIDE",
+     "at": "OT-008+1",
+     "x": 40,
+     "y": 28,
+     "color": "#ff4d4d"
+    }
+   ],
+   "lines": "OT-007..OT-010"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 2",
+   "title": "The trap",
+   "lines": "OT-011"
+  },
+  {
+   "type": "board",
+   "title": "THE TRIGGER",
+   "tag": "ILLUSTRATION",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.35,
+     "focus": [
+      50,
+      34
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "d1",
+     "side": "barca",
+     "label": "2",
+     "path": [
+      [
+       0,
+       44,
+       16
+      ],
+      [
+       "OT-013",
+       44,
+       16
+      ],
+      [
+       "OT-013+1",
+       48,
+       16
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "side": "barca",
+     "label": "4",
+     "path": [
+      [
+       0,
+       44,
+       28
+      ],
+      [
+       "OT-013",
+       44,
+       28
+      ],
+      [
+       "OT-013+1",
+       48,
+       28
+      ]
+     ]
+    },
+    {
+     "id": "d3",
+     "side": "barca",
+     "label": "5",
+     "path": [
+      [
+       0,
+       44,
+       40
+      ],
+      [
+       "OT-013",
+       44,
+       40
+      ],
+      [
+       "OT-013+1",
+       48,
+       40
+      ]
+     ]
+    },
+    {
+     "id": "d4",
+     "side": "barca",
+     "label": "3",
+     "path": [
+      [
+       0,
+       44,
+       52
+      ],
+      [
+       "OT-013",
+       44,
+       52
+      ],
+      [
+       "OT-013+1",
+       48,
+       52
+      ]
+     ]
+    },
+    {
+     "id": "m",
+     "side": "barca",
+     "label": "8",
+     "path": [
+      [
+       0,
+       60,
+       28
+      ],
+      [
+       "OT-012",
+       62,
+       29
+      ]
+     ],
+     "hi": [
+      [
+       "OT-012",
+       "OT-013",
+       "#1f5fd6"
+      ]
+     ]
+    },
+    {
+     "id": "p",
+     "side": "opp",
+     "label": "8",
+     "path": [
+      [
+       0,
+       64,
+       30
+      ]
+     ],
+     "hi": [
+      [
+       "OT-012+1",
+       "OT-013+1",
+       "#ff4d4d"
+      ]
+     ]
+    },
+    {
+     "id": "s",
+     "side": "opp",
+     "label": "9",
+     "path": [
+      [
+       0,
+       46,
+       34
+      ]
+     ]
+    }
+   ],
+   "ball": {
+    "path": [
+     [
+      0,
+      64.5,
+      30.5
+     ]
+    ]
+   },
+   "arrows": [
+    {
+     "from": [
+      44,
+      22
+     ],
+     "to": [
+      48,
+      22
+     ],
+     "at": "OT-013",
+     "color": "#f2c230"
+    },
+    {
+     "from": [
+      44,
+      46
+     ],
+     "to": [
+      48,
+      46
+     ],
+     "at": "OT-013",
+     "color": "#f2c230"
+    }
+   ],
+   "offside": [
+    {
+     "x": 44,
+     "at": 0.3,
+     "until": "OT-013",
+     "color": "#ecebe4"
+    },
+    {
+     "x": 48,
+     "at": "OT-013+1",
+     "color": "#f2c230"
+    }
+   ],
+   "labels": [
+    {
+     "text": "HEAD DOWN = TRIGGER",
+     "at": "OT-012+1",
+     "x": 64,
+     "y": 22,
+     "color": "#ff4d4d"
+    },
+    {
+     "text": "STRIKER NOW OFFSIDE",
+     "at": "OT-014",
+     "x": 46,
+     "y": 62,
+     "color": "#ff4d4d"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "chalk",
+     "at": "OT-013",
+     "volume": 0.5
+    }
+   ],
+   "lines": "OT-012..OT-015"
+  },
+  {
+   "type": "compare",
+   "left": {
+    "title": "DROP BACK",
+    "points": [
+     "Feels safe",
+     "Team stretches out",
+     "Opponent gets time in midfield"
+    ]
+   },
+   "right": {
+    "title": "STEP UP",
+    "points": [
+     "Feels dangerous",
+     "Team stays compact",
+     "Strikers caught offside"
+    ]
+   },
+   "lines": "OT-016..OT-018"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 3",
+   "title": "The night it worked",
+   "lines": "OT-019"
+  },
+  {
+   "type": "score",
+   "home": "REAL MADRID",
+   "away": "BARCELONA",
+   "venue": "SANTIAGO BERNABÉU",
+   "date": "26 OCT 2024",
+   "events": [
+    {
+     "at": "OT-021",
+     "minute": "54",
+     "side": "away",
+     "who": "Lewandowski"
+    },
+    {
+     "at": "OT-021+1",
+     "minute": "56",
+     "side": "away",
+     "who": "Lewandowski"
+    },
+    {
+     "at": "OT-021+2",
+     "minute": "77",
+     "side": "away",
+     "who": "Yamal"
+    },
+    {
+     "at": "OT-021+3",
+     "minute": "84",
+     "side": "away",
+     "who": "Raphinha"
+    }
+   ],
+   "lines": "OT-020..OT-022"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 4",
+   "title": "The risk",
+   "lines": "OT-023"
+  },
+  {
+   "type": "board",
+   "title": "WHEN ONE MAN IS LATE",
+   "tag": "ILLUSTRATION",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.35,
+     "focus": [
+      44,
+      34
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "d1",
+     "side": "barca",
+     "label": "2",
+     "path": [
+      [
+       0,
+       44,
+       16
+      ],
+      [
+       "OT-024",
+       48,
+       16
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "side": "barca",
+     "label": "4",
+     "path": [
+      [
+       0,
+       44,
+       28
+      ],
+      [
+       "OT-024",
+       48,
+       28
+      ]
+     ]
+    },
+    {
+     "id": "d3",
+     "side": "barca",
+     "label": "5",
+     "path": [
+      [
+       0,
+       44,
+       40
+      ]
+     ],
+     "hi": [
+      [
+       "OT-024",
+       "OT-026",
+       "#ff4d4d"
+      ]
+     ]
+    },
+    {
+     "id": "d4",
+     "side": "barca",
+     "label": "3",
+     "path": [
+      [
+       0,
+       44,
+       52
+      ],
+      [
+       "OT-024",
+       48,
+       52
+      ]
+     ]
+    },
+    {
+     "id": "gk",
+     "side": "barca",
+     "label": "1",
+     "path": [
+      [
+       0,
+       22,
+       34
+      ],
+      [
+       "OT-025+0.5",
+       30,
+       36
+      ]
+     ]
+    },
+    {
+     "id": "s",
+     "side": "opp",
+     "label": "9",
+     "path": [
+      [
+       0,
+       46,
+       36
+      ],
+      [
+       "OT-025",
+       46,
+       36
+      ],
+      [
+       "OT-025+1.5",
+       30,
+       38
+      ]
+     ],
+     "hi": [
+      [
+       "OT-025",
+       "OT-026",
+       "#ff4d4d"
+      ]
+     ]
+    },
+    {
+     "id": "p",
+     "side": "opp",
+     "label": "8",
+     "path": [
+      [
+       0,
+       62,
+       30
+      ]
+     ]
+    }
+   ],
+   "ball": {
+    "path": [
+     [
+      0,
+      62.5,
+      30.5
+     ],
+     [
+      "OT-025",
+      62.5,
+      30.5
+     ],
+     [
+      "OT-025+1.5",
+      31,
+      38
+     ]
+    ]
+   },
+   "zones": [
+    {
+     "x": 22,
+     "y": 0,
+     "w": 22,
+     "h": 68,
+     "color": "#a50044",
+     "at": "OT-025",
+     "opacity": 0.2
+    }
+   ],
+   "offside": [
+    {
+     "x": 44,
+     "at": "OT-024+0.5",
+     "color": "#ff4d4d"
+    }
+   ],
+   "overlay": [
+    {
+     "text": "ONSIDE.",
+     "at": "OT-025+1",
+     "pos": "top",
+     "color": "#ff4d4d"
+    }
+   ],
+   "lines": "OT-024..OT-026"
+  },
+  {
+   "type": "list",
+   "title": "WHERE IT BREAKS",
+   "items": [
+    {
+     "at": "OT-027",
+     "text": "ONE DEFENDER LATE",
+     "sub": "the line is only as high as its slowest step"
+    },
+    {
+     "at": "OT-028",
+     "text": "NO PRESSURE ON THE BALL",
+     "sub": "the passer has time to pick the run"
+    },
+    {
+     "at": "OT-029",
+     "text": "A TIRED TEAM",
+     "sub": "concentration drops late in games"
+    },
+    {
+     "at": "OT-030",
+     "text": "A GOALKEEPER WHO STAYS HOME",
+     "sub": "nobody sweeping behind"
+    }
+   ],
+   "lines": "OT-027..OT-030"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 5",
+   "title": "The antidote",
+   "lines": "OT-031"
+  },
+  {
+   "type": "list",
+   "title": "HOW TEAMS FIGHT BACK",
+   "items": [
+    {
+     "at": "OT-032",
+     "text": "RUNNERS FROM DEEP",
+     "sub": "start onside, arrive at speed"
+    },
+    {
+     "at": "OT-033",
+     "text": "DRIBBLE, DON'T PASS",
+     "sub": "you can't be offside with the ball"
+    },
+    {
+     "at": "OT-034",
+     "text": "BEAT THE PRESS FIRST",
+     "sub": "no pressure = no trigger"
+    },
+    {
+     "at": "OT-035",
+     "text": "TIME THE RUN ALONG THE LINE",
+     "sub": "go sideways, then forward"
+    }
+   ],
+   "lines": "OT-032..OT-035"
+  },
+  {
+   "type": "statement",
+   "text": "A year later, at the same stadium, Madrid won 2–1.",
+   "accent": "2–1.",
+   "bg": "navy",
+   "lines": "OT-036..OT-037"
+  },
+  {
+   "type": "chapter",
+   "num": "VERDICT",
+   "title": "Genius or gamble?",
+   "lines": "OT-038"
+  },
+  {
+   "type": "statement",
+   "text": "It's both. That's why it works.",
+   "accent": "both.",
+   "lines": "OT-039..OT-041"
+  },
+  {
+   "type": "question",
+   "text": "GENIUS OR GAMBLE?",
+   "options": [
+    "GENIUS",
+    "GAMBLE",
+    "BOTH"
+   ],
+   "lines": "OT-042"
+  },
+  {
+   "type": "endscreen",
+   "hold": 18,
+   "next": "FLICK'S BARÇA: THE THREE KEYS →",
+   "lines": "OT-043"
+  }
+ ]
+}

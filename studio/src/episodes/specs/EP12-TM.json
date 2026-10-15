@@ -1,0 +1,748 @@
+{
+ "id": "EP12-TM",
+ "code": "SR",
+ "title": "The 6-1: The Comeback That Made No Sense",
+ "music": "story.mp3",
+ "thumb": {
+  "kicker": "THE MATCH THAT…",
+  "title": "6–1",
+  "accent": "6–1",
+  "style": "number",
+  "number": "6–1"
+ },
+ "scenes": [
+  {
+   "type": "statement",
+   "text": "88th minute. Barça need three goals.",
+   "accent": "three goals.",
+   "bg": "navy",
+   "lead": 0.6,
+   "sfx": [
+    {
+     "name": "tick",
+     "at": 0.3
+    },
+    {
+     "name": "tick",
+     "at": 1.3
+    },
+    {
+     "name": "tick",
+     "at": 2.3
+    }
+   ],
+   "lines": "SR-001..SR-004"
+  },
+  {
+   "type": "list",
+   "title": "TONIGHT",
+   "items": [
+    {
+     "at": "SR-005",
+     "text": "THE HUMILIATION",
+     "sub": "Paris, 14 February"
+    },
+    {
+     "at": "SR-005+1.4",
+     "text": "THE PLAN",
+     "sub": "three at the back, all in"
+    },
+    {
+     "at": "SR-006",
+     "text": "THE SEVEN MINUTES"
+    },
+    {
+     "at": "SR-006+1.4",
+     "text": "THE HANGOVER",
+     "sub": "what the miracle couldn't fix"
+    }
+   ],
+   "lines": "SR-005..SR-006"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 1",
+   "title": "The humiliation",
+   "lines": "SR-007"
+  },
+  {
+   "type": "score",
+   "home": "PSG",
+   "away": "BARCELONA",
+   "venue": "PARC DES PRINCES · FIRST LEG",
+   "date": "14 FEB 2017",
+   "events": [
+    {
+     "at": "SR-008+1",
+     "minute": "18",
+     "side": "home",
+     "who": "Di María"
+    },
+    {
+     "at": "SR-008+2",
+     "minute": "40",
+     "side": "home",
+     "who": "Draxler"
+    },
+    {
+     "at": "SR-009",
+     "minute": "55",
+     "side": "home",
+     "who": "Di María"
+    },
+    {
+     "at": "SR-009+1.5",
+     "minute": "72",
+     "side": "home",
+     "who": "Cavani"
+    }
+   ],
+   "lines": "SR-008..SR-010"
+  },
+  {
+   "type": "headline",
+   "dateline": "15 FEB 2017",
+   "headline": "THE END OF AN ERA?",
+   "deck": "After 4–0 in Paris, almost nobody gives Barça a chance.",
+   "note": "Reconstructed for illustration — not a real newspaper front page.",
+   "lines": "SR-011..SR-013"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 2",
+   "title": "The plan",
+   "lines": "SR-014"
+  },
+  {
+   "type": "board",
+   "title": "THE SECOND LEG · ALL IN",
+   "tag": "ILLUSTRATION",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.1,
+     "focus": [
+      58,
+      34
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "gk",
+     "side": "barca",
+     "label": "1",
+     "path": [
+      [
+       0,
+       22,
+       34
+      ]
+     ]
+    },
+    {
+     "id": "c1",
+     "side": "barca",
+     "label": "3",
+     "path": [
+      [
+       0,
+       40,
+       18
+      ]
+     ]
+    },
+    {
+     "id": "c2",
+     "side": "barca",
+     "label": "14",
+     "path": [
+      [
+       0,
+       38,
+       34
+      ]
+     ]
+    },
+    {
+     "id": "c3",
+     "side": "barca",
+     "label": "23",
+     "path": [
+      [
+       0,
+       40,
+       50
+      ]
+     ]
+    },
+    {
+     "id": "m1",
+     "side": "barca",
+     "label": "5",
+     "path": [
+      [
+       0,
+       52,
+       34
+      ]
+     ],
+     "hi": [
+      [
+       "SR-016",
+       "SR-017",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "m2",
+     "side": "barca",
+     "label": "8",
+     "path": [
+      [
+       0,
+       60,
+       26
+      ]
+     ]
+    },
+    {
+     "id": "w1",
+     "side": "barca",
+     "label": "20",
+     "path": [
+      [
+       0,
+       62,
+       60
+      ],
+      [
+       "SR-016",
+       70,
+       60
+      ]
+     ]
+    },
+    {
+     "id": "w2",
+     "side": "barca",
+     "label": "11",
+     "path": [
+      [
+       0,
+       66,
+       8
+      ],
+      [
+       "SR-016",
+       74,
+       8
+      ]
+     ]
+    },
+    {
+     "id": "f1",
+     "side": "barca",
+     "label": "10",
+     "path": [
+      [
+       0,
+       72,
+       40
+      ]
+     ]
+    },
+    {
+     "id": "f2",
+     "side": "barca",
+     "label": "9",
+     "path": [
+      [
+       0,
+       80,
+       32
+      ]
+     ]
+    },
+    {
+     "id": "f3",
+     "side": "barca",
+     "label": "12",
+     "path": [
+      [
+       0,
+       70,
+       20
+      ]
+     ]
+    }
+   ],
+   "zones": [
+    {
+     "x": 60,
+     "y": 0,
+     "w": 45,
+     "h": 68,
+     "color": "#a50044",
+     "at": "SR-017",
+     "opacity": 0.16
+    }
+   ],
+   "labels": [
+    {
+     "text": "THREE AT THE BACK",
+     "at": "SR-015+0.5",
+     "x": 40,
+     "y": 60,
+     "color": "#f2c230"
+    },
+    {
+     "text": "PRESS HIGH",
+     "at": "SR-017",
+     "x": 82,
+     "y": 62,
+     "color": "#f2c230"
+    }
+   ],
+   "lines": "SR-015..SR-018"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 3",
+   "title": "The perfect start",
+   "lines": "SR-019"
+  },
+  {
+   "type": "score",
+   "home": "BARCELONA",
+   "away": "PSG",
+   "venue": "CAMP NOU · SECOND LEG",
+   "date": "8 MAR 2017",
+   "events": [
+    {
+     "at": "SR-020+1",
+     "minute": "3",
+     "side": "home",
+     "who": "Suárez"
+    },
+    {
+     "at": "SR-021+1",
+     "minute": "40",
+     "side": "home",
+     "who": "Kurzawa (og)"
+    },
+    {
+     "at": "SR-022+1.5",
+     "minute": "50",
+     "side": "home",
+     "who": "Messi (pen)"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "crowd",
+     "at": "SR-020+1",
+     "volume": 0.45
+    },
+    {
+     "name": "crowd",
+     "at": "SR-021+1",
+     "volume": 0.45
+    },
+    {
+     "name": "crowd",
+     "at": "SR-022+1.5",
+     "volume": 0.5
+    }
+   ],
+   "lines": "SR-020..SR-023"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 4",
+   "title": "The goal that killed it",
+   "lines": "SR-024"
+  },
+  {
+   "type": "statement",
+   "text": "62'. Cavani. 3–1. Barça now need three more.",
+   "accent": "three more.",
+   "bg": "navy",
+   "sfx": [
+    {
+     "name": "impact",
+     "at": 0.4,
+     "volume": 0.4
+    }
+   ],
+   "lines": "SR-025..SR-028"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 5",
+   "title": "Seven minutes",
+   "lines": "SR-029"
+  },
+  {
+   "type": "score",
+   "home": "BARCELONA",
+   "away": "PSG",
+   "venue": "CAMP NOU · SECOND LEG",
+   "date": "8 MAR 2017",
+   "events": [
+    {
+     "at": 0,
+     "minute": "3",
+     "side": "home",
+     "who": "Suárez"
+    },
+    {
+     "at": 0,
+     "minute": "40",
+     "side": "home",
+     "who": "Kurzawa (og)"
+    },
+    {
+     "at": 0,
+     "minute": "50",
+     "side": "home",
+     "who": "Messi (pen)"
+    },
+    {
+     "at": 0,
+     "minute": "62",
+     "side": "away",
+     "who": "Cavani"
+    },
+    {
+     "at": "SR-030+1",
+     "minute": "88",
+     "side": "home",
+     "who": "Neymar"
+    },
+    {
+     "at": "SR-031+1.5",
+     "minute": "90+1",
+     "side": "home",
+     "who": "Neymar (pen)"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "crowd",
+     "at": "SR-030+1",
+     "volume": 0.5
+    },
+    {
+     "name": "crowd",
+     "at": "SR-031+1.5",
+     "volume": 0.6
+    }
+   ],
+   "lines": "SR-030..SR-032"
+  },
+  {
+   "type": "board",
+   "title": "90+5' · THE LAST BALL",
+   "tag": "ILLUSTRATION",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.55,
+     "focus": [
+      86,
+      34
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "ney",
+     "side": "barca",
+     "label": "11",
+     "path": [
+      [
+       0,
+       76,
+       26
+      ]
+     ],
+     "hi": [
+      [
+       "SR-033",
+       "SR-034",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "sr",
+     "side": "barca",
+     "label": "20",
+     "path": [
+      [
+       0,
+       80,
+       44
+      ],
+      [
+       "SR-034",
+       90,
+       38
+      ],
+      [
+       "SR-034+1.2",
+       98,
+       36
+      ]
+     ],
+     "hi": [
+      [
+       "SR-034",
+       "SR-036",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "ts",
+     "side": "barca",
+     "label": "1",
+     "path": [
+      [
+       0,
+       94,
+       30
+      ]
+     ]
+    },
+    {
+     "id": "s",
+     "side": "barca",
+     "label": "9",
+     "path": [
+      [
+       0,
+       96,
+       40
+      ]
+     ]
+    },
+    {
+     "id": "o1",
+     "side": "opp",
+     "label": "",
+     "path": [
+      [
+       0,
+       96,
+       34
+      ]
+     ]
+    },
+    {
+     "id": "o2",
+     "side": "opp",
+     "label": "",
+     "path": [
+      [
+       0,
+       94,
+       44
+      ]
+     ]
+    },
+    {
+     "id": "o3",
+     "side": "opp",
+     "label": "",
+     "path": [
+      [
+       0,
+       98,
+       28
+      ]
+     ]
+    },
+    {
+     "id": "gk",
+     "side": "opp",
+     "label": "1",
+     "path": [
+      [
+       0,
+       103,
+       34
+      ]
+     ]
+    }
+   ],
+   "ball": {
+    "path": [
+     [
+      0,
+      76.6,
+      26.4
+     ],
+     [
+      "SR-034",
+      76.6,
+      26.4
+     ],
+     [
+      "SR-034+1.2",
+      98.5,
+      36.5
+     ],
+     [
+      "SR-035",
+      98.5,
+      36.5
+     ],
+     [
+      "SR-035+0.5",
+      104.5,
+      35
+     ]
+    ],
+    "lift": [
+     "SR-034",
+     "SR-034+1.2"
+    ]
+   },
+   "arrows": [
+    {
+     "from": [
+      76,
+      26
+     ],
+     "to": [
+      98,
+      36
+     ],
+     "at": "SR-034",
+     "color": "#f2c230",
+     "curve": -140
+    }
+   ],
+   "labels": [
+    {
+     "text": "EVEN THE GOALKEEPER",
+     "at": "SR-033+1",
+     "x": 94,
+     "y": 22,
+     "color": "#f2c230"
+    }
+   ],
+   "overlay": [
+    {
+     "text": "6–1",
+     "at": "SR-035+0.5",
+     "pos": "top"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "crowd",
+     "at": "SR-035+0.4",
+     "volume": 0.8
+    }
+   ],
+   "lines": "SR-033..SR-036"
+  },
+  {
+   "type": "stat",
+   "value": "3",
+   "label": "goals in roughly seven minutes, from the 88th minute onwards",
+   "source": "UEFA match report",
+   "sfx": [
+    {
+     "name": "riser",
+     "at": 0.2,
+     "volume": 0.4
+    }
+   ],
+   "lines": "SR-037..SR-039"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 6",
+   "title": "Neymar's night",
+   "lines": "SR-040"
+  },
+  {
+   "type": "list",
+   "title": "NEYMAR, 88' TO 95'",
+   "items": [
+    {
+     "at": "SR-041",
+     "text": "THE FREE-KICK",
+     "sub": "4–1"
+    },
+    {
+     "at": "SR-041+1",
+     "text": "THE PENALTY",
+     "sub": "5–1"
+    },
+    {
+     "at": "SR-041+2",
+     "text": "THE ASSIST",
+     "sub": "6–1"
+    }
+   ],
+   "lines": "SR-041..SR-043"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 7",
+   "title": "The hangover",
+   "lines": "SR-044"
+  },
+  {
+   "type": "timeline",
+   "title": "AFTER THE MIRACLE",
+   "events": [
+    {
+     "at": 0.3,
+     "year": "Apr 2017",
+     "text": "Out to Juventus, 3–0 on aggregate"
+    },
+    {
+     "at": "SR-046",
+     "year": "May 2017",
+     "text": "Luis Enrique leaves"
+    },
+    {
+     "at": "SR-047",
+     "year": "Aug 2017",
+     "text": "Neymar joins… PSG"
+    }
+   ],
+   "lines": "SR-045..SR-048"
+  },
+  {
+   "type": "statement",
+   "text": "The greatest comeback. The last night of an era.",
+   "accent": "The last night",
+   "bg": "navy",
+   "lines": "SR-049..SR-051"
+  },
+  {
+   "type": "question",
+   "text": "GREATEST BARÇA COMEBACK EVER?",
+   "options": [
+    "6-1 VS PSG",
+    "4-0 VS MILAN (2013)",
+    "SOMETHING ELSE"
+   ],
+   "lines": "SR-052"
+  },
+  {
+   "type": "endscreen",
+   "hold": 18,
+   "next": "HOW BARÇA ESCAPED A €1.35BN HOLE →",
+   "lines": "SR-053"
+  }
+ ]
+}

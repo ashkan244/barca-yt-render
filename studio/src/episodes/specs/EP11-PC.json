@@ -1,0 +1,1002 @@
+{
+ "id": "EP11-PC",
+ "code": "LM",
+ "title": "Something Strange Happens When Lamine Yamal Gets the Ball",
+ "music": "chalk.mp3",
+ "thumb": {
+  "kicker": "PLAYER FILES · LAMINE YAMAL",
+  "title": "THE\nGRAVITY",
+  "accent": "GRAVITY",
+  "style": "board"
+ },
+ "scenes": [
+  {
+   "type": "board",
+   "title": "WATCH THE OTHER TEN",
+   "tag": "ILLUSTRATION",
+   "lead": 0.6,
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.3,
+     "focus": [
+      70,
+      40
+     ]
+    },
+    {
+     "at": "LM-002",
+     "zoom": 1.45,
+     "focus": [
+      74,
+      44
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "y",
+     "side": "barca",
+     "label": "19",
+     "path": [
+      [
+       0,
+       68,
+       60
+      ]
+     ],
+     "hi": [
+      [
+       "LM-001",
+       "LM-004",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "p",
+     "side": "barca",
+     "label": "8",
+     "path": [
+      [
+       0,
+       62,
+       38
+      ]
+     ]
+    },
+    {
+     "id": "l",
+     "side": "barca",
+     "label": "9",
+     "path": [
+      [
+       0,
+       86,
+       32
+      ]
+     ]
+    },
+    {
+     "id": "r",
+     "side": "barca",
+     "label": "11",
+     "path": [
+      [
+       0,
+       82,
+       14
+      ]
+     ]
+    },
+    {
+     "id": "d1",
+     "side": "opp",
+     "label": "3",
+     "path": [
+      [
+       0,
+       76,
+       58
+      ],
+      [
+       "LM-002",
+       72,
+       59
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "side": "opp",
+     "label": "6",
+     "path": [
+      [
+       0,
+       74,
+       44
+      ],
+      [
+       "LM-002",
+       71,
+       54
+      ]
+     ]
+    },
+    {
+     "id": "d3",
+     "side": "opp",
+     "label": "5",
+     "path": [
+      [
+       0,
+       92,
+       40
+      ],
+      [
+       "LM-002+0.5",
+       88,
+       47
+      ]
+     ]
+    },
+    {
+     "id": "d4",
+     "side": "opp",
+     "label": "4",
+     "path": [
+      [
+       0,
+       92,
+       28
+      ],
+      [
+       "LM-003",
+       91,
+       34
+      ]
+     ]
+    },
+    {
+     "id": "d5",
+     "side": "opp",
+     "label": "2",
+     "path": [
+      [
+       0,
+       90,
+       16
+      ],
+      [
+       "LM-003",
+       89,
+       24
+      ]
+     ]
+    }
+   ],
+   "ball": {
+    "path": [
+     [
+      0,
+      68.6,
+      60.4
+     ]
+    ]
+   },
+   "zones": [
+    {
+     "x": 78,
+     "y": 6,
+     "w": 14,
+     "h": 16,
+     "color": "#f2c230",
+     "at": "LM-003+0.5",
+     "opacity": 0.25
+    }
+   ],
+   "labels": [
+    {
+     "text": "SPACE",
+     "at": "LM-003+0.5",
+     "x": 85,
+     "y": 5,
+     "color": "#f2c230"
+    }
+   ],
+   "lines": "LM-001..LM-004"
+  },
+  {
+   "type": "list",
+   "title": "THE GRAVITY FILE",
+   "items": [
+    {
+     "at": "LM-005",
+     "text": "THE DOUBLE TEAM",
+     "sub": "why two defenders isn't enough"
+    },
+    {
+     "at": "LM-005+1.4",
+     "text": "THE FAR SIDE",
+     "sub": "who benefits"
+    },
+    {
+     "at": "LM-006",
+     "text": "THE INSIDE RUN",
+     "sub": "the partner on his shoulder"
+    },
+    {
+     "at": "LM-006+1.4",
+     "text": "THE COUNTER-PLAN",
+     "sub": "how opponents try to stop it"
+    }
+   ],
+   "lines": "LM-005..LM-006"
+  },
+  {
+   "type": "timeline",
+   "title": "THE FILE",
+   "events": [
+    {
+     "at": 0.3,
+     "year": "2007",
+     "text": "Born 13 July"
+    },
+    {
+     "at": "LM-008",
+     "year": "2023",
+     "text": "Barça debut at 15"
+    },
+    {
+     "at": "LM-009",
+     "year": "2024",
+     "text": "Euro winner · Kopa Trophy"
+    },
+    {
+     "at": "LM-010",
+     "year": "2025",
+     "text": "Kopa again · Ballon d'Or 2nd"
+    }
+   ],
+   "lines": "LM-007..LM-010"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 1",
+   "title": "The double team",
+   "lines": "LM-011"
+  },
+  {
+   "type": "board",
+   "title": "ONE DEFENDER: NOT ENOUGH",
+   "tag": "ILLUSTRATION",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.7,
+     "focus": [
+      78,
+      54
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "y",
+     "side": "barca",
+     "label": "19",
+     "path": [
+      [
+       0,
+       72,
+       60
+      ],
+      [
+       "LM-013",
+       74,
+       59
+      ],
+      [
+       "LM-013+1",
+       82,
+       54
+      ]
+     ],
+     "hi": [
+      [
+       "LM-012",
+       "LM-014",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "d1",
+     "side": "opp",
+     "label": "3",
+     "path": [
+      [
+       0,
+       78,
+       57
+      ],
+      [
+       "LM-013+0.6",
+       79,
+       59
+      ]
+     ]
+    }
+   ],
+   "ball": {
+    "path": [
+     [
+      0,
+      72.6,
+      60.4
+     ],
+     [
+      "LM-013",
+      74.6,
+      59.4
+     ],
+     [
+      "LM-013+1",
+      82.6,
+      54.4
+     ]
+    ]
+   },
+   "overlay": [
+    {
+     "text": "1v1 = TROUBLE",
+     "at": "LM-014",
+     "pos": "top"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": "LM-013+0.5",
+     "volume": 0.5
+    }
+   ],
+   "lines": "LM-012..LM-014"
+  },
+  {
+   "type": "board",
+   "title": "TWO DEFENDERS: SOMEONE IS FREE",
+   "tag": "ILLUSTRATION",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.45,
+     "focus": [
+      74,
+      50
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "y",
+     "side": "barca",
+     "label": "19",
+     "path": [
+      [
+       0,
+       72,
+       60
+      ]
+     ],
+     "hi": [
+      [
+       "LM-015",
+       "LM-017",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "k",
+     "side": "barca",
+     "label": "23",
+     "path": [
+      [
+       0,
+       60,
+       62
+      ],
+      [
+       "LM-016",
+       66,
+       63
+      ],
+      [
+       "LM-016+1.5",
+       80,
+       63
+      ]
+     ],
+     "hi": [
+      [
+       "LM-016",
+       "LM-018",
+       "#1f5fd6"
+      ]
+     ]
+    },
+    {
+     "id": "p",
+     "side": "barca",
+     "label": "8",
+     "path": [
+      [
+       0,
+       64,
+       46
+      ],
+      [
+       "LM-017",
+       72,
+       46
+      ]
+     ]
+    },
+    {
+     "id": "d1",
+     "side": "opp",
+     "label": "3",
+     "path": [
+      [
+       0,
+       76,
+       58
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "side": "opp",
+     "label": "7",
+     "path": [
+      [
+       0,
+       70,
+       52
+      ],
+      [
+       "LM-015",
+       71,
+       57
+      ]
+     ]
+    },
+    {
+     "id": "d3",
+     "side": "opp",
+     "label": "6",
+     "path": [
+      [
+       0,
+       74,
+       44
+      ],
+      [
+       "LM-017+0.5",
+       73,
+       49
+      ]
+     ]
+    }
+   ],
+   "ball": {
+    "path": [
+     [
+      0,
+      72.6,
+      60.4
+     ],
+     [
+      "LM-016+1",
+      72.6,
+      60.4
+     ],
+     [
+      "LM-016+2",
+      79.5,
+      63.5
+     ]
+    ]
+   },
+   "arrows": [
+    {
+     "from": [
+      60,
+      62
+     ],
+     "to": [
+      80,
+      63
+     ],
+     "at": "LM-016",
+     "color": "#1f5fd6",
+     "dashed": true
+    },
+    {
+     "from": [
+      64,
+      46
+     ],
+     "to": [
+      72,
+      46
+     ],
+     "at": "LM-017",
+     "color": "#1f5fd6",
+     "dashed": true
+    }
+   ],
+   "lines": "LM-015..LM-018"
+  },
+  {
+   "type": "compare",
+   "left": {
+    "title": "MARK HIM 1v1",
+    "points": [
+     "He wins the duel",
+     "Shot, cross or cut-back",
+     "Danger in the box"
+    ],
+    "good": false
+   },
+   "right": {
+    "title": "DOUBLE HIM",
+    "points": [
+     "He finds the free man",
+     "The defence shifts across",
+     "Space on the far side"
+    ],
+    "good": false
+   },
+   "lines": "LM-019..LM-020"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 2",
+   "title": "The far side",
+   "lines": "LM-021"
+  },
+  {
+   "type": "board",
+   "title": "THE SWITCH",
+   "tag": "ILLUSTRATION",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.15,
+     "focus": [
+      72,
+      34
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "y",
+     "side": "barca",
+     "label": "19",
+     "path": [
+      [
+       0,
+       74,
+       60
+      ]
+     ],
+     "hi": [
+      [
+       "LM-022",
+       "LM-023",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "w",
+     "side": "barca",
+     "label": "11",
+     "path": [
+      [
+       0,
+       80,
+       12
+      ],
+      [
+       "LM-023+1",
+       86,
+       14
+      ]
+     ],
+     "hi": [
+      [
+       "LM-023",
+       "LM-025",
+       "#1f5fd6"
+      ]
+     ]
+    },
+    {
+     "id": "n",
+     "side": "barca",
+     "label": "9",
+     "path": [
+      [
+       0,
+       88,
+       36
+      ]
+     ]
+    },
+    {
+     "id": "d1",
+     "side": "opp",
+     "label": "3",
+     "path": [
+      [
+       0,
+       78,
+       58
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "side": "opp",
+     "label": "7",
+     "path": [
+      [
+       0,
+       72,
+       54
+      ]
+     ]
+    },
+    {
+     "id": "d3",
+     "side": "opp",
+     "label": "5",
+     "path": [
+      [
+       0,
+       92,
+       44
+      ]
+     ]
+    },
+    {
+     "id": "d4",
+     "side": "opp",
+     "label": "4",
+     "path": [
+      [
+       0,
+       92,
+       32
+      ]
+     ]
+    },
+    {
+     "id": "d5",
+     "side": "opp",
+     "label": "2",
+     "path": [
+      [
+       0,
+       88,
+       22
+      ],
+      [
+       "LM-024+0.8",
+       87,
+       17
+      ]
+     ]
+    }
+   ],
+   "ball": {
+    "path": [
+     [
+      0,
+      74.6,
+      60.4
+     ],
+     [
+      "LM-023",
+      74.6,
+      60.4
+     ],
+     [
+      "LM-023+1.2",
+      85.5,
+      14.5
+     ]
+    ],
+    "lift": [
+     "LM-023",
+     "LM-023+1.2"
+    ]
+   },
+   "arrows": [
+    {
+     "from": [
+      74,
+      60
+     ],
+     "to": [
+      85.5,
+      15
+     ],
+     "at": "LM-023",
+     "color": "#f2c230",
+     "curve": -120
+    }
+   ],
+   "zones": [
+    {
+     "x": 80,
+     "y": 4,
+     "w": 16,
+     "h": 18,
+     "color": "#f2c230",
+     "at": "LM-022+0.5",
+     "opacity": 0.22
+    }
+   ],
+   "lines": "LM-022..LM-025"
+  },
+  {
+   "type": "statement",
+   "text": "Sometimes his best work happens on the other side of the pitch.",
+   "accent": "other side",
+   "lines": "LM-026..LM-027"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 3",
+   "title": "The inside run",
+   "lines": "LM-028"
+  },
+  {
+   "type": "board",
+   "title": "THE PARTNER ON HIS SHOULDER",
+   "tag": "ILLUSTRATION",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.6,
+     "focus": [
+      80,
+      48
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "y",
+     "side": "barca",
+     "label": "19",
+     "path": [
+      [
+       0,
+       76,
+       58
+      ],
+      [
+       "LM-030",
+       79,
+       52
+      ]
+     ],
+     "hi": [
+      [
+       "LM-029",
+       "LM-031",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "m",
+     "side": "barca",
+     "label": "16",
+     "path": [
+      [
+       0,
+       72,
+       42
+      ],
+      [
+       "LM-030",
+       80,
+       44
+      ],
+      [
+       "LM-030+1.5",
+       90,
+       42
+      ]
+     ],
+     "hi": [
+      [
+       "LM-030",
+       "LM-032",
+       "#1f5fd6"
+      ]
+     ]
+    },
+    {
+     "id": "d1",
+     "side": "opp",
+     "label": "3",
+     "path": [
+      [
+       0,
+       80,
+       56
+      ],
+      [
+       "LM-030",
+       81,
+       53
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "side": "opp",
+     "label": "5",
+     "path": [
+      [
+       0,
+       90,
+       46
+      ],
+      [
+       "LM-030+0.5",
+       86,
+       50
+      ]
+     ]
+    }
+   ],
+   "ball": {
+    "path": [
+     [
+      0,
+      76.6,
+      58.4
+     ],
+     [
+      "LM-030",
+      79.6,
+      52.4
+     ],
+     [
+      "LM-031",
+      79.6,
+      52.4
+     ],
+     [
+      "LM-031+0.8",
+      89.5,
+      42.5
+     ]
+    ]
+   },
+   "arrows": [
+    {
+     "from": [
+      72,
+      42
+     ],
+     "to": [
+      90,
+      42
+     ],
+     "at": "LM-030",
+     "color": "#1f5fd6",
+     "dashed": true
+    },
+    {
+     "from": [
+      79.5,
+      52
+     ],
+     "to": [
+      89.5,
+      42.5
+     ],
+     "at": "LM-031",
+     "color": "#f2c230"
+    }
+   ],
+   "labels": [
+    {
+     "text": "CENTRE-BACK PULLED OUT",
+     "at": "LM-030+1",
+     "x": 88,
+     "y": 58,
+     "color": "#ff4d4d"
+    }
+   ],
+   "lines": "LM-029..LM-032"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 4",
+   "title": "The counter-plan",
+   "lines": "LM-033"
+  },
+  {
+   "type": "list",
+   "title": "HOW TEAMS TRY TO STOP HIM",
+   "items": [
+    {
+     "at": "LM-034",
+     "text": "CUT THE SUPPLY",
+     "sub": "press the passer, not the receiver"
+    },
+    {
+     "at": "LM-035",
+     "text": "SHOW HIM OUTSIDE",
+     "sub": "block the left foot"
+    },
+    {
+     "at": "LM-036",
+     "text": "DEFEND DEEP ON THAT SIDE",
+     "sub": "no space to run into"
+    },
+    {
+     "at": "LM-037",
+     "text": "ATTACK HIS SIDE",
+     "sub": "make him defend"
+    }
+   ],
+   "lines": "LM-034..LM-037"
+  },
+  {
+   "type": "statement",
+   "text": "Every plan to stop him opens a door somewhere else.",
+   "accent": "somewhere else.",
+   "lines": "LM-038..LM-039"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 5",
+   "title": "What it means",
+   "lines": "LM-040"
+  },
+  {
+   "type": "statement",
+   "text": "He's not just a winger. He's a tactic.",
+   "accent": "a tactic.",
+   "lines": "LM-041..LM-043"
+  },
+  {
+   "type": "question",
+   "text": "WHO HAS MORE GRAVITY?",
+   "options": [
+    "LAMINE YAMAL",
+    "PRIME MESSI",
+    "PRIME NEYMAR"
+   ],
+   "lines": "LM-044"
+  },
+  {
+   "type": "endscreen",
+   "hold": 18,
+   "next": "PLAY LIKE LAMINE: BEFORE THE TOUCH →",
+   "lines": "LM-045"
+  }
+ ]
+}

@@ -1,0 +1,302 @@
+{
+ "id": "EP10-BZ",
+ "code": "BZ",
+ "title": "How Barça Escaped a €1.35 Billion Hole",
+ "music": "story.mp3",
+ "thumb": {
+  "kicker": "CLUB & MONEY",
+  "title": "€1.35BN\nHOLE",
+  "accent": "HOLE",
+  "style": "bars"
+ },
+ "scenes": [
+  {
+   "type": "statement",
+   "text": "16 August 2021. The new president opens the books.",
+   "accent": "opens the books.",
+   "bg": "navy",
+   "lead": 0.6,
+   "lines": "BZ-001..BZ-004"
+  },
+  {
+   "type": "list",
+   "title": "TONIGHT",
+   "items": [
+    {
+     "at": "BZ-005",
+     "text": "HOW THE HOLE WAS DUG"
+    },
+    {
+     "at": "BZ-005+1.4",
+     "text": "THE LEVERS",
+     "sub": "selling the future to save the present"
+    },
+    {
+     "at": "BZ-006",
+     "text": "THE STADIUM BET"
+    },
+    {
+     "at": "BZ-006+1.4",
+     "text": "THE BILL STILL TO PAY"
+    }
+   ],
+   "lines": "BZ-005..BZ-006"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 1",
+   "title": "How the hole was dug",
+   "lines": "BZ-007"
+  },
+  {
+   "type": "stat",
+   "value": "222",
+   "prefix": "€",
+   "suffix": "m",
+   "label": "Neymar's release clause, paid by Paris Saint-Germain in August 2017",
+   "source": "Widely reported",
+   "lines": "BZ-008..BZ-010"
+  },
+  {
+   "type": "bars",
+   "title": "THE BIG SIGNINGS",
+   "unit": "€m, initial fee (reported)",
+   "bars": [
+    {
+     "label": "Dembélé 2017",
+     "value": 105
+    },
+    {
+     "label": "Coutinho 2018",
+     "value": 120
+    },
+    {
+     "label": "Griezmann 2019",
+     "value": 120
+    },
+    {
+     "label": "Neymar sale",
+     "value": 222,
+     "highlight": true
+    }
+   ],
+   "note": "Reported fees, excluding add-ons",
+   "lines": "BZ-011..BZ-014"
+  },
+  {
+   "type": "compare",
+   "left": {
+    "title": "THE WAGES",
+    "points": [
+     "New contracts for the stars",
+     "Renewals with big raises",
+     "Bonuses for everything"
+    ],
+    "good": false
+   },
+   "right": {
+    "title": "THE INCOME",
+    "points": [
+     "Grew, but slower",
+     "Then the pandemic hit",
+     "Empty stadium from March 2020"
+    ],
+    "good": false
+   },
+   "lines": "BZ-015..BZ-018"
+  },
+  {
+   "type": "stat",
+   "value": "103",
+   "suffix": "%",
+   "label": "of the club's total income spent on wages, August 2021",
+   "source": "Joan Laporta, 16 Aug 2021",
+   "lines": "BZ-019..BZ-021"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 2",
+   "title": "The levers",
+   "lines": "BZ-022"
+  },
+  {
+   "type": "statement",
+   "text": "Palancas. Levers.",
+   "accent": "Levers.",
+   "small": "The word that defined Barça's summer of 2022.",
+   "lines": "BZ-023..BZ-025"
+  },
+  {
+   "type": "list",
+   "title": "THE LEVERS, 2022",
+   "items": [
+    {
+     "at": "BZ-026",
+     "text": "10% OF LA LIGA TV MONEY",
+     "sub": "for 25 years · Sixth Street · €207.5m"
+    },
+    {
+     "at": "BZ-027",
+     "text": "ANOTHER 15%",
+     "sub": "same investor · around €400m (reported)"
+    },
+    {
+     "at": "BZ-028",
+     "text": "SHARES IN BARÇA STUDIOS",
+     "sub": "nearly half the club's media arm, to several buyers"
+    }
+   ],
+   "lines": "BZ-026..BZ-029"
+  },
+  {
+   "type": "list",
+   "title": "WHAT THE LEVERS BOUGHT",
+   "items": [
+    {
+     "at": "BZ-030",
+     "text": "ROBERT LEWANDOWSKI"
+    },
+    {
+     "at": "BZ-030+1",
+     "text": "RAPHINHA"
+    },
+    {
+     "at": "BZ-030+2",
+     "text": "JULES KOUNDÉ"
+    },
+    {
+     "at": "BZ-031",
+     "text": "+ KESSIÉ, CHRISTENSEN"
+    }
+   ],
+   "lines": "BZ-030..BZ-033"
+  },
+  {
+   "type": "stat",
+   "value": "280",
+   "prefix": "€",
+   "suffix": "m",
+   "label": "Spotify deal: shirt sponsor and stadium naming rights, 2022 (reported)",
+   "source": "Widely reported",
+   "lines": "BZ-034..BZ-035"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 3",
+   "title": "The stadium bet",
+   "lines": "BZ-036"
+  },
+  {
+   "type": "timeline",
+   "title": "ESPAI BARÇA",
+   "events": [
+    {
+     "at": 0.3,
+     "year": "2022",
+     "text": "Financing agreed for the rebuild"
+    },
+    {
+     "at": "BZ-038",
+     "year": "2023",
+     "text": "Barça move to Montjuïc"
+    },
+    {
+     "at": "BZ-039",
+     "year": "Nov 2025",
+     "text": "Return to Camp Nou (partial)"
+    },
+    {
+     "at": "BZ-040",
+     "year": "Next",
+     "text": "Full capacity, new revenue"
+    }
+   ],
+   "lines": "BZ-037..BZ-040"
+  },
+  {
+   "type": "compare",
+   "left": {
+    "title": "IF THE BET WORKS",
+    "points": [
+     "Much higher matchday income",
+     "A stadium open all year",
+     "Debt paid down over time"
+    ],
+    "good": true
+   },
+   "right": {
+    "title": "IF IT DOESN'T",
+    "points": [
+     "Repayments eat the new income",
+     "Less TV money from the levers",
+     "Spending limits for years"
+    ],
+    "good": false
+   },
+   "lines": "BZ-041..BZ-042"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 4",
+   "title": "The bill",
+   "lines": "BZ-043"
+  },
+  {
+   "type": "list",
+   "title": "THE COST OF SURVIVAL",
+   "items": [
+    {
+     "at": "BZ-044",
+     "text": "25% LESS LA LIGA TV MONEY",
+     "sub": "until the late 2040s"
+    },
+    {
+     "at": "BZ-045",
+     "text": "REGISTRATION DRAMAS",
+     "sub": "players signed, then struggling to be registered"
+    },
+    {
+     "at": "BZ-046",
+     "text": "NAMES LOST",
+     "sub": "Messi, then others the club couldn't keep"
+    }
+   ],
+   "lines": "BZ-044..BZ-046"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 5",
+   "title": "The twist",
+   "lines": "BZ-047"
+  },
+  {
+   "type": "statement",
+   "text": "The cheapest players turned out to be the best.",
+   "accent": "the best.",
+   "lines": "BZ-048..BZ-050"
+  },
+  {
+   "type": "statement",
+   "text": "Survived. Not yet saved.",
+   "accent": "Not yet saved.",
+   "bg": "navy",
+   "lines": "BZ-051..BZ-054"
+  },
+  {
+   "type": "question",
+   "text": "WERE THE LEVERS WORTH IT?",
+   "options": [
+    "YES — THEY SAVED THE CLUB",
+    "NO — THEY SOLD THE FUTURE",
+    "TOO EARLY TO SAY"
+   ],
+   "lines": "BZ-055"
+  },
+  {
+   "type": "endscreen",
+   "hold": 18,
+   "next": "WHAT IF BARÇA HAD KEPT MESSI? →",
+   "lines": "BZ-056"
+  }
+ ]
+}

@@ -1,0 +1,754 @@
+{
+ "id": "EP13-PL",
+ "code": "XV",
+ "title": "Play Like Xavi: How to Never Lose the Ball",
+ "music": "chalk.mp3",
+ "thumb": {
+  "kicker": "PLAY LIKE XAVI",
+  "title": "NEVER LOSE\nTHE BALL",
+  "accent": "NEVER",
+  "style": "board"
+ },
+ "scenes": [
+  {
+   "type": "board",
+   "title": "THE RONDO",
+   "lead": 0.6,
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.9,
+     "focus": [
+      52.5,
+      34
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "x",
+     "side": "barca",
+     "label": "6",
+     "path": [
+      [
+       0,
+       52.5,
+       40
+      ]
+     ],
+     "hi": [
+      [
+       "XV-001",
+       "XV-003+2",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "a",
+     "side": "barca",
+     "label": "",
+     "path": [
+      [
+       0,
+       46,
+       34
+      ]
+     ]
+    },
+    {
+     "id": "b",
+     "side": "barca",
+     "label": "",
+     "path": [
+      [
+       0,
+       52.5,
+       28
+      ]
+     ]
+    },
+    {
+     "id": "c",
+     "side": "barca",
+     "label": "",
+     "path": [
+      [
+       0,
+       59,
+       34
+      ]
+     ]
+    },
+    {
+     "id": "d1",
+     "side": "opp",
+     "label": "",
+     "path": [
+      [
+       0,
+       51,
+       34
+      ],
+      [
+       "XV-002",
+       52,
+       37.5
+      ]
+     ]
+    },
+    {
+     "id": "d2",
+     "side": "opp",
+     "label": "",
+     "path": [
+      [
+       0,
+       55,
+       33
+      ],
+      [
+       "XV-002+0.5",
+       54.5,
+       37.5
+      ]
+     ]
+    }
+   ],
+   "ball": {
+    "path": [
+     [
+      0,
+      46.5,
+      34.5
+     ],
+     [
+      "XV-001+0.5",
+      46.5,
+      34.5
+     ],
+     [
+      "XV-001+1.2",
+      52.5,
+      40
+     ],
+     [
+      "XV-003",
+      52.5,
+      40
+     ],
+     [
+      "XV-003+0.6",
+      52.5,
+      28.5
+     ]
+    ]
+   },
+   "arrows": [
+    {
+     "from": [
+      52.5,
+      40
+     ],
+     "to": [
+      52.5,
+      28.6
+     ],
+     "at": "XV-003",
+     "color": "#f2c230"
+    }
+   ],
+   "overlay": [
+    {
+     "text": "STILL OURS.",
+     "at": "XV-003+1",
+     "pos": "top"
+    }
+   ],
+   "lines": "XV-001..XV-003"
+  },
+  {
+   "type": "list",
+   "title": "THREE HABITS",
+   "items": [
+    {
+     "at": "XV-004",
+     "text": "THE ANGLE",
+     "sub": "always be a passing option"
+    },
+    {
+     "at": "XV-004+1.2",
+     "text": "THE TURN",
+     "sub": "spin away from pressure"
+    },
+    {
+     "at": "XV-004+2.4",
+     "text": "THE PAUSE",
+     "sub": "make the defender choose first"
+    },
+    {
+     "at": "XV-005",
+     "text": "+ THE RONDO DRILL"
+    }
+   ],
+   "lines": "XV-004..XV-005"
+  },
+  {
+   "type": "timeline",
+   "title": "THE METRONOME",
+   "events": [
+    {
+     "at": 0.3,
+     "year": "1991",
+     "text": "Joins La Masia at 11"
+    },
+    {
+     "at": "XV-007",
+     "year": "1998",
+     "text": "First-team debut"
+    },
+    {
+     "at": "XV-008",
+     "year": "2008–12",
+     "text": "Euro · World Cup · Euro"
+    },
+    {
+     "at": "XV-009",
+     "year": "767",
+     "text": "games for Barça"
+    }
+   ],
+   "lines": "XV-006..XV-009"
+  },
+  {
+   "type": "chapter",
+   "num": "HABIT 1",
+   "title": "The angle",
+   "lines": "XV-010"
+  },
+  {
+   "type": "board",
+   "title": "HABIT 1 · GET OUT OF THE SHADOW",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.7,
+     "focus": [
+      52,
+      34
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "cb",
+     "side": "barca",
+     "label": "4",
+     "path": [
+      [
+       0,
+       40,
+       34
+      ]
+     ]
+    },
+    {
+     "id": "x",
+     "side": "barca",
+     "label": "6",
+     "path": [
+      [
+       0,
+       56,
+       34
+      ],
+      [
+       "XV-012",
+       56,
+       34
+      ],
+      [
+       "XV-012+1.2",
+       55,
+       27
+      ]
+     ],
+     "hi": [
+      [
+       "XV-011",
+       "XV-014",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "o",
+     "side": "opp",
+     "label": "9",
+     "path": [
+      [
+       0,
+       48,
+       34
+      ]
+     ]
+    }
+   ],
+   "ball": {
+    "path": [
+     [
+      0,
+      40.5,
+      34.5
+     ],
+     [
+      "XV-013",
+      40.5,
+      34.5
+     ],
+     [
+      "XV-013+0.8",
+      54.5,
+      27.5
+     ]
+    ]
+   },
+   "cones": [
+    {
+     "token": "o",
+     "at": "XV-011",
+     "until": "XV-012+1.2",
+     "angle": 0,
+     "width": 30,
+     "color": "#ff4d4d",
+     "length": 14
+    }
+   ],
+   "arrows": [
+    {
+     "from": [
+      40,
+      34
+     ],
+     "to": [
+      54.5,
+      27.6
+     ],
+     "at": "XV-013",
+     "color": "#f2c230"
+    }
+   ],
+   "labels": [
+    {
+     "text": "IN THE SHADOW",
+     "at": "XV-011+0.5",
+     "until": "XV-012+1",
+     "x": 56,
+     "y": 42,
+     "color": "#ff4d4d"
+    },
+    {
+     "text": "VISIBLE",
+     "at": "XV-012+1.2",
+     "x": 56,
+     "y": 22,
+     "color": "#f2c230"
+    }
+   ],
+   "lines": "XV-011..XV-014"
+  },
+  {
+   "type": "statement",
+   "text": "If they can't pass to you, you're not helping.",
+   "accent": "not helping.",
+   "lines": "XV-015..XV-016"
+  },
+  {
+   "type": "chapter",
+   "num": "HABIT 2",
+   "title": "The turn",
+   "lines": "XV-017"
+  },
+  {
+   "type": "board",
+   "title": "HABIT 2 · SPIN AWAY",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.9,
+     "focus": [
+      52,
+      34
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "x",
+     "side": "barca",
+     "label": "6",
+     "path": [
+      [
+       0,
+       52,
+       34
+      ],
+      [
+       "XV-019",
+       52,
+       34
+      ],
+      [
+       "XV-019+1",
+       55,
+       31
+      ]
+     ],
+     "hi": [
+      [
+       "XV-018",
+       "XV-020",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "o",
+     "side": "opp",
+     "label": "8",
+     "path": [
+      [
+       0,
+       55,
+       36
+      ],
+      [
+       "XV-019",
+       53.5,
+       35.5
+      ],
+      [
+       "XV-019+1",
+       52.5,
+       35.5
+      ]
+     ]
+    },
+    {
+     "id": "m",
+     "side": "barca",
+     "label": "8",
+     "path": [
+      [
+       0,
+       64,
+       24
+      ]
+     ]
+    }
+   ],
+   "ball": {
+    "path": [
+     [
+      0,
+      52.5,
+      34.5
+     ],
+     [
+      "XV-019",
+      52.5,
+      34.5
+     ],
+     [
+      "XV-019+1",
+      55.5,
+      31
+     ],
+     [
+      "XV-020",
+      55.5,
+      31
+     ],
+     [
+      "XV-020+0.8",
+      63.5,
+      24.5
+     ]
+    ]
+   },
+   "arrows": [
+    {
+     "from": [
+      52,
+      34
+     ],
+     "to": [
+      55.5,
+      31
+     ],
+     "at": "XV-019",
+     "color": "#f2c230",
+     "curve": 80
+    },
+    {
+     "from": [
+      55.5,
+      31
+     ],
+     "to": [
+      63.5,
+      24.5
+     ],
+     "at": "XV-020",
+     "color": "#f2c230"
+    }
+   ],
+   "labels": [
+    {
+     "text": "PRESSURE",
+     "at": "XV-018+0.5",
+     "x": 58,
+     "y": 40,
+     "color": "#ff4d4d"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": "XV-019+0.3",
+     "volume": 0.5
+    }
+   ],
+   "lines": "XV-018..XV-020"
+  },
+  {
+   "type": "compare",
+   "left": {
+    "title": "PANIC",
+    "points": [
+     "Kick it away",
+     "Pass back without looking",
+     "Try to outrun the defender"
+    ],
+    "good": false
+   },
+   "right": {
+    "title": "THE XAVI TURN",
+    "points": [
+     "Feel the defender first",
+     "Body between man and ball",
+     "Turn away from the pressure"
+    ],
+    "good": true
+   },
+   "lines": "XV-021..XV-023"
+  },
+  {
+   "type": "chapter",
+   "num": "HABIT 3",
+   "title": "The pause",
+   "lines": "XV-024"
+  },
+  {
+   "type": "board",
+   "title": "HABIT 3 · LET HIM CHOOSE FIRST",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.6,
+     "focus": [
+      60,
+      34
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "x",
+     "side": "barca",
+     "label": "6",
+     "path": [
+      [
+       0,
+       56,
+       34
+      ]
+     ],
+     "hi": [
+      [
+       "XV-025",
+       "XV-028",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "a",
+     "side": "barca",
+     "label": "11",
+     "path": [
+      [
+       0,
+       70,
+       22
+      ]
+     ]
+    },
+    {
+     "id": "b",
+     "side": "barca",
+     "label": "9",
+     "path": [
+      [
+       0,
+       72,
+       44
+      ]
+     ]
+    },
+    {
+     "id": "o",
+     "side": "opp",
+     "label": "4",
+     "path": [
+      [
+       0,
+       66,
+       33
+      ],
+      [
+       "XV-026+0.8",
+       67,
+       28
+      ]
+     ]
+    }
+   ],
+   "ball": {
+    "path": [
+     [
+      0,
+      56.5,
+      34.5
+     ],
+     [
+      "XV-027",
+      56.5,
+      34.5
+     ],
+     [
+      "XV-027+0.8",
+      71.5,
+      44.5
+     ]
+    ]
+   },
+   "arrows": [
+    {
+     "from": [
+      56,
+      34
+     ],
+     "to": [
+      71.5,
+      44.5
+     ],
+     "at": "XV-027",
+     "color": "#f2c230"
+    }
+   ],
+   "labels": [
+    {
+     "text": "WAIT…",
+     "at": "XV-025+1",
+     "until": "XV-026+0.8",
+     "x": 56,
+     "y": 26,
+     "color": "#f2c230"
+    },
+    {
+     "text": "HE COMMITS",
+     "at": "XV-026+0.8",
+     "x": 74,
+     "y": 28,
+     "color": "#ff4d4d"
+    }
+   ],
+   "lines": "XV-025..XV-028"
+  },
+  {
+   "type": "statement",
+   "text": "Patience is a skill.",
+   "accent": "skill.",
+   "lines": "XV-029..XV-030"
+  },
+  {
+   "type": "chapter",
+   "num": "THE DRILL",
+   "title": "The rondo",
+   "lines": "XV-031"
+  },
+  {
+   "type": "list",
+   "title": "THE RONDO · 4 v 2",
+   "items": [
+    {
+     "at": "XV-032",
+     "text": "A 10 × 10 METRE SQUARE",
+     "sub": "four outside, two defenders inside"
+    },
+    {
+     "at": "XV-033",
+     "text": "TWO TOUCHES MAX",
+     "sub": "then one touch when it gets easy"
+    },
+    {
+     "at": "XV-034",
+     "text": "LOSE IT? GO IN THE MIDDLE",
+     "sub": "the player who made the mistake swaps"
+    },
+    {
+     "at": "XV-035",
+     "text": "COUNT YOUR PASSES",
+     "sub": "beat your record every session"
+    }
+   ],
+   "lines": "XV-032..XV-036"
+  },
+  {
+   "type": "list",
+   "title": "YOUR XAVI CHECKLIST",
+   "items": [
+    {
+     "at": "XV-037",
+     "text": "GET OUT OF THE SHADOW"
+    },
+    {
+     "at": "XV-038",
+     "text": "TURN AWAY FROM PRESSURE"
+    },
+    {
+     "at": "XV-039",
+     "text": "LET THE DEFENDER CHOOSE FIRST"
+    }
+   ],
+   "lines": "XV-037..XV-040"
+  },
+  {
+   "type": "question",
+   "text": "WHO NEXT IN PLAY LIKE BARÇA?",
+   "options": [
+    "INIESTA",
+    "FRENKIE DE JONG",
+    "GAVI"
+   ],
+   "lines": "XV-041"
+  },
+  {
+   "type": "endscreen",
+   "hold": 18,
+   "next": "PLAY LIKE BUSQUETS →",
+   "lines": "XV-042"
+  }
+ ]
+}
