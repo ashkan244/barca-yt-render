@@ -40,11 +40,12 @@ export const BoardSceneView: React.FC<{st: SceneTiming}> = ({st}) => {
   for (let i = 1; i < cts.length; i++) if (cts[i] <= cts[i - 1]) cts[i] = cts[i - 1] + 1;
   const zoom = cam.length > 1 ? interpolate(f, cts, cam.map((c) => c.zoom), ease) : cam[0].zoom;
   const fx = cam.length > 1 ? interpolate(f, cts, cam.map((c) => (c.focus ?? [52.5, 34])[0]), ease) : (cam[0].focus ?? [52.5, 34])[0];
+  const fy = cam.length > 1 ? interpolate(f, cts, cam.map((c) => (c.focus ?? [52.5, 34])[1]), ease) : (cam[0].focus ?? [52.5, 34])[1];
 
   return (
     <AbsoluteFill>
       <Chalkboard />
-      <Board tilt={s.tilt ?? 26} zoom={zoom} focusX={fx}>
+      <Board tilt={s.tilt ?? 26} zoom={zoom} focusX={fx} focusY={fy}>
         <PitchLines />
         {(s.zones ?? []).map((z, i) => win(z.at, z.until) && (
           <Zone key={i} x={z.x} y={z.y} w={z.w} h={z.h} color={z.color ?? C.grana} opacity={interpolate(f - R(z.at), [0, 12], [0, z.opacity ?? 0.25], clamp)} />

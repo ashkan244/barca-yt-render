@@ -82,9 +82,9 @@ export const Zone: React.FC<{x: number; y: number; w: number; h: number; color: 
 );
 
 /** Tilted board wrapper (signature 3D chalkboard look). */
-export const Board: React.FC<{tilt?: number; zoom?: number; focusX?: number; children: React.ReactNode}> = ({tilt = 26, zoom = 1, focusX = 52.5, children}) => (
+export const Board: React.FC<{tilt?: number; zoom?: number; focusX?: number; focusY?: number; children: React.ReactNode}> = ({tilt = 26, zoom = 1, focusX = 52.5, focusY = 34, children}) => (
   <div style={{position: 'absolute', left: '50%', top: '53%', width: BW, height: BH, marginLeft: -BW / 2, marginTop: -BH / 2,
-    transform: `perspective(1800px) rotateX(${tilt}deg) scale(${0.98 * zoom}) translateX(${(52.5 - focusX) * SCALE}px)`, transformOrigin: '50% 50%'}}>
+    transform: `perspective(1800px) rotateX(${tilt}deg) scale(${0.98 * zoom}) translate(${(52.5 - focusX) * SCALE}px, ${(34 - focusY) * SCALE}px)`, transformOrigin: '50% 50%'}}>
     <svg width={BW} height={BH} style={{overflow: 'visible'}}>{children}</svg>
   </div>
 );

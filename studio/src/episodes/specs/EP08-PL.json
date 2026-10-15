@@ -1,0 +1,829 @@
+{
+ "id": "EP08-PL",
+ "code": "BQ",
+ "title": "Play Like Busquets: The Art of Doing Less",
+ "music": "chalk.mp3",
+ "thumb": {
+  "kicker": "PLAY LIKE BUSQUETS",
+  "title": "DO\nLESS",
+  "accent": "LESS",
+  "style": "board"
+ },
+ "scenes": [
+  {
+   "type": "board",
+   "title": "THE PIVOT",
+   "lead": 0.6,
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.5,
+     "focus": [
+      44,
+      34
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "b",
+     "side": "barca",
+     "label": "5",
+     "path": [
+      [
+       0,
+       40,
+       34
+      ],
+      [
+       "BQ-002+1",
+       41,
+       33
+      ]
+     ],
+     "hi": [
+      [
+       "BQ-001",
+       "BQ-003+2",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "cb1",
+     "side": "barca",
+     "label": "3",
+     "path": [
+      [
+       0,
+       28,
+       24
+      ]
+     ]
+    },
+    {
+     "id": "cb2",
+     "side": "barca",
+     "label": "4",
+     "path": [
+      [
+       0,
+       28,
+       44
+      ]
+     ]
+    },
+    {
+     "id": "m1",
+     "side": "barca",
+     "label": "8",
+     "path": [
+      [
+       0,
+       55,
+       20
+      ]
+     ]
+    },
+    {
+     "id": "m2",
+     "side": "barca",
+     "label": "6",
+     "path": [
+      [
+       0,
+       55,
+       48
+      ]
+     ]
+    },
+    {
+     "id": "p1",
+     "side": "opp",
+     "label": "9",
+     "path": [
+      [
+       0,
+       46,
+       30
+      ],
+      [
+       "BQ-002+1.5",
+       42.5,
+       32.5
+      ]
+     ]
+    },
+    {
+     "id": "p2",
+     "side": "opp",
+     "label": "10",
+     "path": [
+      [
+       0,
+       48,
+       40
+      ],
+      [
+       "BQ-002+1.5",
+       44,
+       37
+      ]
+     ]
+    }
+   ],
+   "ball": {
+    "path": [
+     [
+      0,
+      28,
+      44
+     ],
+     [
+      "BQ-002",
+      28,
+      44
+     ],
+     [
+      "BQ-002+0.8",
+      40.5,
+      34.5
+     ],
+     [
+      "BQ-003",
+      40.5,
+      34.5
+     ],
+     [
+      "BQ-003+0.8",
+      55,
+      20
+     ]
+    ]
+   },
+   "scans": [
+    {
+     "token": "b",
+     "at": "BQ-001+0.5",
+     "side": "left"
+    },
+    {
+     "token": "b",
+     "at": "BQ-001+1.6",
+     "side": "right"
+    }
+   ],
+   "arrows": [
+    {
+     "from": [
+      41,
+      34
+     ],
+     "to": [
+      54.5,
+      20.5
+     ],
+     "at": "BQ-003",
+     "color": "#f2c230"
+    }
+   ],
+   "overlay": [
+    {
+     "text": "ONE TOUCH. GONE.",
+     "at": "BQ-003+1",
+     "pos": "top"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "chalk",
+     "at": "BQ-003",
+     "volume": 0.5
+    }
+   ],
+   "lines": "BQ-001..BQ-003"
+  },
+  {
+   "type": "quote",
+   "text": "If you watch the game, you don't see Busquets. If you watch Busquets, you see the whole game.",
+   "who": "Vicente del Bosque",
+   "source": "Spain coach, 2008–2016",
+   "lines": "BQ-004..BQ-005"
+  },
+  {
+   "type": "list",
+   "title": "THREE HABITS",
+   "items": [
+    {
+     "at": "BQ-006",
+     "text": "THE SCAN",
+     "sub": "know before you receive"
+    },
+    {
+     "at": "BQ-006+1.2",
+     "text": "THE BODY",
+     "sub": "open the pitch with your hips"
+    },
+    {
+     "at": "BQ-006+2.4",
+     "text": "THE SIMPLE PASS",
+     "sub": "solve the problem, then disappear"
+    },
+    {
+     "at": "BQ-007",
+     "text": "+ A DRILL FOR EACH"
+    }
+   ],
+   "lines": "BQ-006..BQ-007"
+  },
+  {
+   "type": "timeline",
+   "title": "THE QUIET CAREER",
+   "events": [
+    {
+     "at": 0.3,
+     "year": "1988",
+     "text": "Born in Sabadell"
+    },
+    {
+     "at": "BQ-009",
+     "year": "2008",
+     "text": "First-team debut under Guardiola"
+    },
+    {
+     "at": "BQ-010",
+     "year": "2010",
+     "text": "World champion with Spain"
+    },
+    {
+     "at": "BQ-011",
+     "year": "2023",
+     "text": "Leaves Barça after 15 seasons"
+    }
+   ],
+   "lines": "BQ-008..BQ-011"
+  },
+  {
+   "type": "chapter",
+   "num": "HABIT 1",
+   "title": "The scan",
+   "lines": "BQ-012"
+  },
+  {
+   "type": "board",
+   "title": "HABIT 1 · LOOK BEFORE IT ARRIVES",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.7,
+     "focus": [
+      44,
+      34
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "b",
+     "side": "barca",
+     "label": "5",
+     "path": [
+      [
+       0,
+       42,
+       34
+      ]
+     ],
+     "hi": [
+      [
+       "BQ-013",
+       "BQ-016",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "cb",
+     "side": "barca",
+     "label": "4",
+     "path": [
+      [
+       0,
+       28,
+       42
+      ]
+     ]
+    },
+    {
+     "id": "m1",
+     "side": "barca",
+     "label": "8",
+     "path": [
+      [
+       0,
+       56,
+       22
+      ]
+     ]
+    },
+    {
+     "id": "fb",
+     "side": "barca",
+     "label": "2",
+     "path": [
+      [
+       0,
+       52,
+       58
+      ]
+     ]
+    },
+    {
+     "id": "o1",
+     "side": "opp",
+     "label": "10",
+     "path": [
+      [
+       0,
+       48,
+       30
+      ],
+      [
+       "BQ-015",
+       44.5,
+       32
+      ]
+     ]
+    },
+    {
+     "id": "o2",
+     "side": "opp",
+     "label": "8",
+     "path": [
+      [
+       0,
+       50,
+       44
+      ]
+     ]
+    }
+   ],
+   "ball": {
+    "path": [
+     [
+      0,
+      28,
+      42
+     ],
+     [
+      "BQ-015",
+      28,
+      42
+     ],
+     [
+      "BQ-015+0.9",
+      41.5,
+      34.5
+     ]
+    ]
+   },
+   "scans": [
+    {
+     "token": "b",
+     "at": "BQ-013+0.5",
+     "side": "left"
+    },
+    {
+     "token": "b",
+     "at": "BQ-013+1.6",
+     "side": "right"
+    },
+    {
+     "token": "b",
+     "at": "BQ-014+0.8",
+     "side": "left"
+    }
+   ],
+   "labels": [
+    {
+     "text": "PRESSURE FROM HERE",
+     "at": "BQ-014",
+     "x": 50,
+     "y": 26,
+     "color": "#ff4d4d"
+    },
+    {
+     "text": "FREE MAN",
+     "at": "BQ-014+1.5",
+     "x": 56,
+     "y": 16,
+     "color": "#f2c230"
+    }
+   ],
+   "lines": "BQ-013..BQ-016"
+  },
+  {
+   "type": "statement",
+   "text": "Don't be faster. Be earlier.",
+   "accent": "earlier.",
+   "lines": "BQ-017..BQ-019"
+  },
+  {
+   "type": "chapter",
+   "num": "HABIT 2",
+   "title": "The body",
+   "lines": "BQ-020"
+  },
+  {
+   "type": "board",
+   "title": "HABIT 2 · OPEN HIPS",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.7,
+     "focus": [
+      44,
+      34
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "b",
+     "side": "barca",
+     "label": "5",
+     "path": [
+      [
+       0,
+       42,
+       34
+      ]
+     ],
+     "hi": [
+      [
+       "BQ-021",
+       "BQ-024",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "cb",
+     "side": "barca",
+     "label": "4",
+     "path": [
+      [
+       0,
+       28,
+       42
+      ]
+     ]
+    },
+    {
+     "id": "m1",
+     "side": "barca",
+     "label": "8",
+     "path": [
+      [
+       0,
+       56,
+       22
+      ]
+     ]
+    },
+    {
+     "id": "m2",
+     "side": "barca",
+     "label": "6",
+     "path": [
+      [
+       0,
+       58,
+       46
+      ]
+     ]
+    },
+    {
+     "id": "o1",
+     "side": "opp",
+     "label": "10",
+     "path": [
+      [
+       0,
+       47,
+       36
+      ]
+     ]
+    }
+   ],
+   "cones": [
+    {
+     "token": "b",
+     "at": "BQ-021",
+     "until": "BQ-022",
+     "angle": 180,
+     "width": 70,
+     "color": "#ff4d4d"
+    },
+    {
+     "token": "b",
+     "at": "BQ-022+0.5",
+     "angle": 0,
+     "width": 150,
+     "color": "#f2c230",
+     "length": 24
+    }
+   ],
+   "labels": [
+    {
+     "text": "FACING BACK: ONE OPTION",
+     "at": "BQ-021+0.5",
+     "until": "BQ-022",
+     "x": 30,
+     "y": 22,
+     "color": "#ff4d4d"
+    },
+    {
+     "text": "HALF-TURNED: THE WHOLE PITCH",
+     "at": "BQ-023",
+     "x": 56,
+     "y": 12,
+     "color": "#f2c230"
+    }
+   ],
+   "lines": "BQ-021..BQ-024"
+  },
+  {
+   "type": "compare",
+   "left": {
+    "title": "CLOSED BODY",
+    "points": [
+     "Sees only the ball",
+     "Needs extra touches to turn",
+     "Easy to press from behind"
+    ]
+   },
+   "right": {
+    "title": "OPEN BODY",
+    "points": [
+     "Sees ball, pressure and pitch",
+     "Can play forward first time",
+     "Can fake one way, go the other"
+    ]
+   },
+   "lines": "BQ-025..BQ-026"
+  },
+  {
+   "type": "chapter",
+   "num": "HABIT 3",
+   "title": "The simple pass",
+   "lines": "BQ-027"
+  },
+  {
+   "type": "board",
+   "title": "HABIT 3 · SOLVE IT, THEN DISAPPEAR",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.45,
+     "focus": [
+      50,
+      34
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "b",
+     "side": "barca",
+     "label": "5",
+     "path": [
+      [
+       0,
+       42,
+       34
+      ],
+      [
+       "BQ-029+1",
+       42,
+       34
+      ],
+      [
+       "BQ-029+2.5",
+       46,
+       40
+      ]
+     ],
+     "hi": [
+      [
+       "BQ-028",
+       "BQ-030",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "cb",
+     "side": "barca",
+     "label": "4",
+     "path": [
+      [
+       0,
+       28,
+       42
+      ]
+     ]
+    },
+    {
+     "id": "m1",
+     "side": "barca",
+     "label": "8",
+     "path": [
+      [
+       0,
+       54,
+       22
+      ],
+      [
+       "BQ-029+1",
+       60,
+       20
+      ]
+     ]
+    },
+    {
+     "id": "w",
+     "side": "barca",
+     "label": "11",
+     "path": [
+      [
+       0,
+       74,
+       12
+      ]
+     ]
+    },
+    {
+     "id": "o1",
+     "side": "opp",
+     "label": "10",
+     "path": [
+      [
+       0,
+       46,
+       30
+      ]
+     ]
+    },
+    {
+     "id": "o2",
+     "side": "opp",
+     "label": "8",
+     "path": [
+      [
+       0,
+       50,
+       38
+      ]
+     ]
+    },
+    {
+     "id": "o3",
+     "side": "opp",
+     "label": "6",
+     "path": [
+      [
+       0,
+       62,
+       28
+      ]
+     ]
+    }
+   ],
+   "ball": {
+    "path": [
+     [
+      0,
+      41.5,
+      34.5
+     ],
+     [
+      "BQ-028+0.5",
+      41.5,
+      34.5
+     ],
+     [
+      "BQ-028+1.3",
+      53.5,
+      22.5
+     ],
+     [
+      "BQ-029+1",
+      59.5,
+      20.5
+     ],
+     [
+      "BQ-029+2",
+      73.5,
+      12.5
+     ]
+    ]
+   },
+   "arrows": [
+    {
+     "from": [
+      42,
+      34
+     ],
+     "to": [
+      53.5,
+      22.5
+     ],
+     "at": "BQ-028+0.5",
+     "color": "#f2c230"
+    },
+    {
+     "from": [
+      42,
+      34
+     ],
+     "to": [
+      46,
+      40
+     ],
+     "at": "BQ-029+1",
+     "dashed": true
+    }
+   ],
+   "zones": [
+    {
+     "x": 44,
+     "y": 26,
+     "w": 22,
+     "h": 16,
+     "color": "#ff4d4d",
+     "at": "BQ-028",
+     "until": "BQ-029",
+     "opacity": 0.18
+    }
+   ],
+   "lines": "BQ-028..BQ-030"
+  },
+  {
+   "type": "statement",
+   "text": "The simple pass is the hardest one to see.",
+   "accent": "hardest",
+   "lines": "BQ-031..BQ-033"
+  },
+  {
+   "type": "chapter",
+   "num": "BONUS",
+   "title": "Defending without tackling",
+   "lines": "BQ-034"
+  },
+  {
+   "type": "statement",
+   "text": "The best tackle is the one you never need to make.",
+   "accent": "never",
+   "lines": "BQ-035..BQ-037"
+  },
+  {
+   "type": "list",
+   "title": "YOUR BUSQUETS CHECKLIST",
+   "items": [
+    {
+     "at": "BQ-038",
+     "text": "SCAN TWICE",
+     "sub": "before every ball you receive"
+    },
+    {
+     "at": "BQ-039",
+     "text": "OPEN YOUR HIPS",
+     "sub": "receive on the back foot"
+    },
+    {
+     "at": "BQ-040",
+     "text": "PLAY THE PASS THAT HELPS",
+     "sub": "then move again"
+    }
+   ],
+   "lines": "BQ-038..BQ-041"
+  },
+  {
+   "type": "question",
+   "text": "WHO SHOULD WE BREAK DOWN NEXT?",
+   "options": [
+    "XAVI",
+    "PIQUÉ",
+    "FRENKIE DE JONG"
+   ],
+   "lines": "BQ-042"
+  },
+  {
+   "type": "endscreen",
+   "hold": 18,
+   "next": "PLAY LIKE PEDRI →",
+   "lines": "BQ-043"
+  }
+ ]
+}

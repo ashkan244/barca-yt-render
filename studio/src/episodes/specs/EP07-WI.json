@@ -1,0 +1,333 @@
+{
+ "id": "EP07-WI",
+ "code": "MS",
+ "title": "What If Barça Had Kept Messi in 2021? Three Scenarios",
+ "music": "story.mp3",
+ "thumb": {
+  "kicker": "WHAT IF?",
+  "title": "MESSI\nSTAYS",
+  "accent": "STAYS",
+  "style": "number",
+  "number": "2021"
+ },
+ "scenes": [
+  {
+   "type": "statement",
+   "text": "5 August 2021. Messi is leaving Barcelona.",
+   "accent": "leaving",
+   "bg": "navy",
+   "lead": 0.6,
+   "lines": "MS-001..MS-004"
+  },
+  {
+   "type": "list",
+   "title": "TONIGHT",
+   "items": [
+    {
+     "at": "MS-005",
+     "text": "WHY HE REALLY LEFT"
+    },
+    {
+     "at": "MS-006",
+     "text": "THE THREE SCENARIOS",
+     "sub": "every one labelled as a model"
+    },
+    {
+     "at": "MS-007",
+     "text": "THE TWIST",
+     "sub": "what Barça might have lost"
+    }
+   ],
+   "lines": "MS-005..MS-007"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 1",
+   "title": "Why he left",
+   "lines": "MS-008"
+  },
+  {
+   "type": "timeline",
+   "title": "THE ROAD TO AUGUST 2021",
+   "events": [
+    {
+     "at": 0.3,
+     "year": "Aug 2020",
+     "text": "The burofax: Messi asks to leave"
+    },
+    {
+     "at": "MS-010",
+     "year": "Mar 2021",
+     "text": "Joan Laporta elected president"
+    },
+    {
+     "at": "MS-011",
+     "year": "30 Jun 2021",
+     "text": "Messi's contract expires"
+    },
+    {
+     "at": "MS-012",
+     "year": "5 Aug 2021",
+     "text": "Deal collapses"
+    }
+   ],
+   "lines": "MS-009..MS-012"
+  },
+  {
+   "type": "stat",
+   "value": "110",
+   "suffix": "%",
+   "label": "of Barça's income would go on wages if Messi's new contract were registered",
+   "source": "Joan Laporta, 6 Aug 2021",
+   "lines": "MS-013..MS-015"
+  },
+  {
+   "type": "compare",
+   "left": {
+    "title": "OPTION A",
+    "points": [
+     "Accept the CVC deal: €2.7bn for the league",
+     "Barça get cash, can register Messi",
+     "But give up a share of TV income for decades"
+    ]
+   },
+   "right": {
+    "title": "OPTION B",
+    "points": [
+     "Refuse the CVC deal",
+     "No room under the wage limit",
+     "Messi cannot be registered"
+    ],
+    "good": false
+   },
+   "lines": "MS-016..MS-018"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 2",
+   "title": "The ground rules",
+   "lines": "MS-019"
+  },
+  {
+   "type": "list",
+   "title": "OUR ASSUMPTIONS",
+   "items": [
+    {
+     "at": "MS-020",
+     "text": "SAME PRESIDENT, SAME COACHES",
+     "sub": "Koeman, then Xavi from Nov 2021"
+    },
+    {
+     "at": "MS-021",
+     "text": "MESSI ON A 50% PAY CUT",
+     "sub": "as agreed in July 2021"
+    },
+    {
+     "at": "MS-022",
+     "text": "THE MONEY HAS TO COME FROM SOMEWHERE",
+     "sub": "the CVC deal, or more cuts"
+    },
+    {
+     "at": "MS-023",
+     "text": "WE DON'T INVENT NUMBERS",
+     "sub": "real stats in white, models in gold"
+    }
+   ],
+   "lines": "MS-020..MS-023"
+  },
+  {
+   "type": "bars",
+   "title": "MESSI · LA LIGA GOALS",
+   "unit": "goals",
+   "bars": [
+    {
+     "label": "2018–19",
+     "value": 36
+    },
+    {
+     "label": "2019–20",
+     "value": 25
+    },
+    {
+     "label": "2020–21",
+     "value": 30,
+     "highlight": true
+    }
+   ],
+   "note": "Real data · top scorer in La Liga all three seasons",
+   "lines": "MS-024..MS-026"
+  },
+  {
+   "type": "chapter",
+   "num": "SCENARIO 1",
+   "title": "The dream",
+   "lines": "MS-027"
+  },
+  {
+   "type": "statement",
+   "text": "MODEL · Best case",
+   "accent": "Best case",
+   "small": "Assumption: Barça sign the CVC deal and keep their young core.",
+   "lines": "MS-028..MS-030"
+  },
+  {
+   "type": "compare",
+   "left": {
+    "title": "REAL 2021–22",
+    "points": [
+     "2nd in La Liga, 13 points behind Madrid",
+     "Out in the Champions League group stage",
+     "Out of the Europa League in the quarter-finals"
+    ]
+   },
+   "right": {
+    "title": "MODEL · BEST CASE",
+    "points": [
+     "A real title race with Madrid",
+     "Through the Champions League group",
+     "A Messi farewell trophy is possible"
+    ],
+    "good": true
+   },
+   "lines": "MS-031..MS-033"
+  },
+  {
+   "type": "chapter",
+   "num": "SCENARIO 2",
+   "title": "The nightmare",
+   "lines": "MS-034"
+  },
+  {
+   "type": "statement",
+   "text": "MODEL · Worst case",
+   "accent": "Worst case",
+   "small": "Assumption: no CVC deal — Barça cut elsewhere to make room.",
+   "lines": "MS-035..MS-037"
+  },
+  {
+   "type": "list",
+   "title": "THE COST",
+   "items": [
+    {
+     "at": "MS-038",
+     "text": "A YOUNG STAR SOLD",
+     "sub": "model: to fit the wage limit"
+    },
+    {
+     "at": "MS-039",
+     "text": "NO ROOM FOR NEW SIGNINGS",
+     "sub": "no Lewandowski, no Raphinha"
+    },
+    {
+     "at": "MS-040",
+     "text": "A TEAM BUILT AROUND ONE AGEING STAR",
+     "sub": "the problem Barça were trying to escape"
+    }
+   ],
+   "lines": "MS-038..MS-040"
+  },
+  {
+   "type": "chapter",
+   "num": "SCENARIO 3",
+   "title": "The likely one",
+   "lines": "MS-041"
+  },
+  {
+   "type": "statement",
+   "text": "MODEL · Most likely",
+   "accent": "Most likely",
+   "small": "Assumption: a messy middle — Messi stays two seasons, then leaves.",
+   "lines": "MS-042..MS-045"
+  },
+  {
+   "type": "timeline",
+   "title": "MODEL · THE LIKELY PATH",
+   "events": [
+    {
+     "at": 0.3,
+     "year": "2021–22",
+     "text": "Stronger season, still no league title"
+    },
+    {
+     "at": "MS-047",
+     "year": "Dec 2022",
+     "text": "World Cup in Qatar"
+    },
+    {
+     "at": "MS-048",
+     "year": "2022–23",
+     "text": "League title — maybe with Messi"
+    },
+    {
+     "at": "MS-049",
+     "year": "2023",
+     "text": "A farewell at home"
+    }
+   ],
+   "lines": "MS-046..MS-049"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 3",
+   "title": "What really happened",
+   "lines": "MS-050"
+  },
+  {
+   "type": "stat",
+   "value": "32",
+   "label": "goals in 75 games for Paris Saint-Germain, 2021–2023",
+   "source": "Real data · all competitions",
+   "lines": "MS-051..MS-053"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 4",
+   "title": "The twist",
+   "lines": "MS-054"
+  },
+  {
+   "type": "list",
+   "title": "WHAT HIS EXIT MADE ROOM FOR",
+   "items": [
+    {
+     "at": "MS-055",
+     "text": "PEDRI & GAVI",
+     "sub": "the centre of the team"
+    },
+    {
+     "at": "MS-056",
+     "text": "LA MASIA, AGAIN",
+     "sub": "Balde, Fermín, Cubarsí, Yamal"
+    },
+    {
+     "at": "MS-057",
+     "text": "A NEW IDENTITY",
+     "sub": "a team, not one man"
+    }
+   ],
+   "lines": "MS-055..MS-057"
+  },
+  {
+   "type": "statement",
+   "text": "Some goodbyes make room for what comes next.",
+   "accent": "what comes next.",
+   "lines": "MS-058..MS-060"
+  },
+  {
+   "type": "question",
+   "text": "WHICH SCENARIO DO YOU BELIEVE?",
+   "options": [
+    "THE DREAM",
+    "THE NIGHTMARE",
+    "THE LIKELY ONE"
+   ],
+   "lines": "MS-061"
+  },
+  {
+   "type": "endscreen",
+   "hold": 18,
+   "next": "HOW BARÇA ESCAPED A €1.35BN HOLE →",
+   "lines": "MS-062"
+  }
+ ]
+}

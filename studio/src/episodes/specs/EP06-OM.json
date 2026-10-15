@@ -1,0 +1,606 @@
+{
+ "id": "EP06-OM",
+ "code": "OM",
+ "title": "Iniesta, 93rd Minute: 10 Angles on the Goal That Saved a Treble",
+ "music": "story.mp3",
+ "thumb": {
+  "kicker": "STAMFORD BRIDGE · 2009",
+  "title": "THE 93RD\nMINUTE",
+  "accent": "93RD",
+  "style": "number",
+  "number": "93'"
+ },
+ "scenes": [
+  {
+   "type": "statement",
+   "text": "6 May 2009. Stamford Bridge. 92:30 on the clock.",
+   "accent": "92:30",
+   "bg": "navy",
+   "lead": 0.6,
+   "sfx": [
+    {
+     "name": "tick",
+     "at": 0.2
+    },
+    {
+     "name": "tick",
+     "at": 1.2
+    },
+    {
+     "name": "tick",
+     "at": 2.2
+    },
+    {
+     "name": "tick",
+     "at": 3.2
+    }
+   ],
+   "lines": "OM-001..OM-004"
+  },
+  {
+   "type": "list",
+   "title": "TEN ANGLES",
+   "items": [
+    {
+     "at": "OM-005",
+     "text": "THE CONTEXT",
+     "sub": "angles 1–3"
+    },
+    {
+     "at": "OM-005+1.5",
+     "text": "THE CHAOS",
+     "sub": "angles 4–5"
+    },
+    {
+     "at": "OM-005+3",
+     "text": "THE GOAL",
+     "sub": "angles 6–8"
+    },
+    {
+     "at": "OM-006",
+     "text": "THE CONSEQUENCES",
+     "sub": "angles 9–10"
+    }
+   ],
+   "lines": "OM-005..OM-006"
+  },
+  {
+   "type": "chapter",
+   "num": "ANGLE 1",
+   "title": "The season",
+   "lines": "OM-007"
+  },
+  {
+   "type": "timeline",
+   "title": "MAY 2009",
+   "events": [
+    {
+     "at": 0.3,
+     "year": "28 Apr",
+     "text": "Barça 0–0 Chelsea"
+    },
+    {
+     "at": "OM-009",
+     "year": "2 May",
+     "text": "2–6 at the Bernabéu"
+    },
+    {
+     "at": "OM-010",
+     "year": "6 May",
+     "text": "Stamford Bridge"
+    }
+   ],
+   "lines": "OM-008..OM-010"
+  },
+  {
+   "type": "chapter",
+   "num": "ANGLE 2",
+   "title": "The first leg",
+   "lines": "OM-011"
+  },
+  {
+   "type": "score",
+   "home": "BARCELONA",
+   "away": "CHELSEA",
+   "venue": "CAMP NOU · FIRST LEG",
+   "date": "28 APR 2009",
+   "events": [],
+   "lines": "OM-012..OM-014"
+  },
+  {
+   "type": "chapter",
+   "num": "ANGLE 3",
+   "title": "The ninth minute",
+   "lines": "OM-015"
+  },
+  {
+   "type": "score",
+   "home": "CHELSEA",
+   "away": "BARCELONA",
+   "venue": "STAMFORD BRIDGE",
+   "date": "6 MAY 2009",
+   "events": [
+    {
+     "at": "OM-016+1",
+     "minute": "9",
+     "side": "home",
+     "who": "Essien"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "crowd",
+     "at": "OM-016+1",
+     "volume": 0.45
+    }
+   ],
+   "lines": "OM-016..OM-018"
+  },
+  {
+   "type": "chapter",
+   "num": "ANGLE 4",
+   "title": "The red card",
+   "lines": "OM-019"
+  },
+  {
+   "type": "statement",
+   "text": "66'. Abidal sent off. Barça down to ten.",
+   "accent": "ten.",
+   "bg": "navy",
+   "lines": "OM-020..OM-022"
+  },
+  {
+   "type": "chapter",
+   "num": "ANGLE 5",
+   "title": "The referee",
+   "lines": "OM-023"
+  },
+  {
+   "type": "list",
+   "title": "THE APPEALS",
+   "items": [
+    {
+     "at": "OM-024",
+     "text": "PENALTY APPEALS",
+     "sub": "several Chelsea claims waved away"
+    },
+    {
+     "at": "OM-025",
+     "text": "A CLEAR HANDBALL",
+     "sub": "Piqué, second half"
+    },
+    {
+     "at": "OM-026",
+     "text": "YEARS LATER",
+     "sub": "the referee admits Chelsea deserved a penalty"
+    }
+   ],
+   "lines": "OM-024..OM-027"
+  },
+  {
+   "type": "chapter",
+   "num": "ANGLE 6",
+   "title": "The pass",
+   "lines": "OM-028"
+  },
+  {
+   "type": "board",
+   "title": "90+3' · THE BUILD-UP",
+   "tag": "ILLUSTRATION",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.5,
+     "focus": [
+      86,
+      34
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "alves",
+     "side": "barca",
+     "label": "2",
+     "path": [
+      [
+       0,
+       84,
+       58
+      ]
+     ]
+    },
+    {
+     "id": "messi",
+     "side": "barca",
+     "label": "10",
+     "path": [
+      [
+       0,
+       89,
+       40
+      ]
+     ],
+     "hi": [
+      [
+       "OM-030",
+       "OM-031",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "ini",
+     "side": "barca",
+     "label": "8",
+     "path": [
+      [
+       0,
+       80,
+       32
+      ],
+      [
+       "OM-031",
+       82,
+       33
+      ]
+     ],
+     "hi": [
+      [
+       "OM-031",
+       "OM-033",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "c1",
+     "side": "opp",
+     "label": "4",
+     "path": [
+      [
+       0,
+       93,
+       38
+      ],
+      [
+       "OM-030+1",
+       91,
+       39
+      ]
+     ]
+    },
+    {
+     "id": "c2",
+     "side": "opp",
+     "label": "6",
+     "path": [
+      [
+       0,
+       92,
+       30
+      ]
+     ]
+    },
+    {
+     "id": "c3",
+     "side": "opp",
+     "label": "5",
+     "path": [
+      [
+       0,
+       96,
+       42
+      ]
+     ]
+    },
+    {
+     "id": "gk",
+     "side": "opp",
+     "label": "1",
+     "path": [
+      [
+       0,
+       103,
+       34
+      ]
+     ]
+    }
+   ],
+   "ball": {
+    "path": [
+     [
+      0,
+      84,
+      58
+     ],
+     [
+      "OM-029+1",
+      84,
+      58
+     ],
+     [
+      "OM-029+2.5",
+      92,
+      44
+     ],
+     [
+      "OM-030",
+      89,
+      41
+     ],
+     [
+      "OM-031",
+      89,
+      41
+     ],
+     [
+      "OM-031+1",
+      82,
+      33
+     ]
+    ]
+   },
+   "arrows": [
+    {
+     "from": [
+      89,
+      41
+     ],
+     "to": [
+      82.5,
+      33.5
+     ],
+     "at": "OM-031",
+     "color": "#f2c230"
+    }
+   ],
+   "lines": "OM-029..OM-031"
+  },
+  {
+   "type": "chapter",
+   "num": "ANGLE 7",
+   "title": "The strike",
+   "lines": "OM-032"
+  },
+  {
+   "type": "board",
+   "title": "90+3' · THE STRIKE",
+   "tag": "ILLUSTRATION",
+   "camera": [
+    {
+     "at": 0,
+     "zoom": 1.7,
+     "focus": [
+      90,
+      34
+     ]
+    }
+   ],
+   "tokens": [
+    {
+     "id": "ini",
+     "side": "barca",
+     "label": "8",
+     "path": [
+      [
+       0,
+       82,
+       33
+      ]
+     ],
+     "hi": [
+      [
+       "OM-033",
+       "OM-036",
+       "#f2c230"
+      ]
+     ]
+    },
+    {
+     "id": "c1",
+     "side": "opp",
+     "label": "4",
+     "path": [
+      [
+       0,
+       90,
+       38
+      ]
+     ]
+    },
+    {
+     "id": "c2",
+     "side": "opp",
+     "label": "6",
+     "path": [
+      [
+       0,
+       92,
+       30
+      ]
+     ]
+    },
+    {
+     "id": "gk",
+     "side": "opp",
+     "label": "1",
+     "path": [
+      [
+       0,
+       103,
+       34
+      ],
+      [
+       "OM-034+0.8",
+       102.5,
+       31
+      ]
+     ]
+    }
+   ],
+   "ball": {
+    "path": [
+     [
+      0,
+      82,
+      33
+     ],
+     [
+      "OM-034",
+      82,
+      33
+     ],
+     [
+      "OM-034+0.8",
+      104.5,
+      30.5
+     ]
+    ],
+    "lift": [
+     "OM-034",
+     "OM-034+0.8"
+    ]
+   },
+   "arrows": [
+    {
+     "from": [
+      82,
+      33
+     ],
+     "to": [
+      104,
+      30.5
+     ],
+     "at": "OM-034",
+     "dur": 0.5,
+     "color": "#f2c230"
+    }
+   ],
+   "labels": [
+    {
+     "text": "~ 20 METRES",
+     "at": "OM-035",
+     "x": 93,
+     "y": 24,
+     "color": "#f2c230"
+    }
+   ],
+   "overlay": [
+    {
+     "text": "1–1",
+     "at": "OM-036",
+     "pos": "top"
+    }
+   ],
+   "sfx": [
+    {
+     "name": "impact",
+     "at": "OM-034+0.4",
+     "volume": 0.5
+    },
+    {
+     "name": "crowd",
+     "at": "OM-034+0.6",
+     "volume": 0.6
+    }
+   ],
+   "lines": "OM-033..OM-036"
+  },
+  {
+   "type": "chapter",
+   "num": "ANGLE 8",
+   "title": "The touchline",
+   "lines": "OM-037"
+  },
+  {
+   "type": "statement",
+   "text": "The coach who sprinted down the touchline.",
+   "accent": "sprinted",
+   "bg": "navy",
+   "lines": "OM-038..OM-041"
+  },
+  {
+   "type": "chapter",
+   "num": "ANGLE 9",
+   "title": "The fury",
+   "lines": "OM-042"
+  },
+  {
+   "type": "list",
+   "title": "AFTER THE WHISTLE",
+   "items": [
+    {
+     "at": "OM-043",
+     "text": "CHELSEA PLAYERS CONFRONT THE REFEREE"
+    },
+    {
+     "at": "OM-044",
+     "text": "DROGBA'S OUTBURST",
+     "sub": "shouted at the cameras on his way off"
+    },
+    {
+     "at": "OM-045",
+     "text": "THREATS FOR YEARS",
+     "sub": "the referee later spoke of abuse he still received"
+    }
+   ],
+   "lines": "OM-043..OM-046"
+  },
+  {
+   "type": "chapter",
+   "num": "ANGLE 10",
+   "title": "What it changed",
+   "lines": "OM-047"
+  },
+  {
+   "type": "timeline",
+   "title": "THE TREBLE",
+   "events": [
+    {
+     "at": 0.3,
+     "year": "13 May",
+     "text": "Copa del Rey"
+    },
+    {
+     "at": "OM-049",
+     "year": "16 May",
+     "text": "League title confirmed"
+    },
+    {
+     "at": "OM-050",
+     "year": "27 May",
+     "text": "Champions League, Rome"
+    },
+    {
+     "at": "OM-051",
+     "year": "2009",
+     "text": "Six trophies out of six"
+    }
+   ],
+   "lines": "OM-048..OM-052"
+  },
+  {
+   "type": "statement",
+   "text": "A player who didn't score many goals scored the ones that mattered most.",
+   "accent": "mattered most.",
+   "lines": "OM-053..OM-055"
+  },
+  {
+   "type": "question",
+   "text": "WHICH MOMENT GETS TEN ANGLES NEXT?",
+   "options": [
+    "KOEMAN 1992",
+    "SERGI ROBERTO 6-1",
+    "MESSI 2-6"
+   ],
+   "lines": "OM-056"
+  },
+  {
+   "type": "endscreen",
+   "hold": 18,
+   "next": "THE 2-6: FOUR DAYS EARLIER →",
+   "lines": "OM-057"
+  }
+ ]
+}

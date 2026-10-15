@@ -1,0 +1,338 @@
+{
+ "id": "EP09-ER",
+ "code": "KB",
+ "title": "Kubala: The Refugee Who Built Barça a Stadium",
+ "music": "story.mp3",
+ "thumb": {
+  "kicker": "BARÇA ERAS · 1950s",
+  "title": "THE MAN WHO\nBUILT CAMP NOU",
+  "accent": "CAMP NOU",
+  "style": "photo",
+  "photo": "photos/kubala/kubala-1953.jpg"
+ },
+ "scenes": [
+  {
+   "type": "statement",
+   "text": "Les Corts, 1950. 30,000 seats. Not nearly enough.",
+   "accent": "Not nearly enough.",
+   "bg": "navy",
+   "lead": 0.6,
+   "sfx": [
+    {
+     "name": "crowd",
+     "at": 0.2,
+     "volume": 0.3
+    }
+   ],
+   "lines": "KB-001..KB-004"
+  },
+  {
+   "type": "title",
+   "kicker": "BARÇA ERAS",
+   "title": "LADISLAO\nKUBALA",
+   "sub": "The refugee who built Barça a stadium.",
+   "photo": "photos/kubala/kubala-1953.jpg",
+   "lines": "KB-005..KB-006"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 1",
+   "title": "Three countries",
+   "lines": "KB-007"
+  },
+  {
+   "type": "timeline",
+   "title": "ONE PLAYER, THREE FLAGS",
+   "events": [
+    {
+     "at": 0.3,
+     "year": "1927",
+     "text": "Born in Budapest"
+    },
+    {
+     "at": "KB-009",
+     "year": "1946",
+     "text": "Czechoslovakia"
+    },
+    {
+     "at": "KB-010",
+     "year": "1948",
+     "text": "Hungary"
+    },
+    {
+     "at": "KB-011",
+     "year": "1953",
+     "text": "Spain"
+    }
+   ],
+   "lines": "KB-008..KB-011"
+  },
+  {
+   "type": "photo",
+   "src": "photos/kubala/kubala-1953.jpg",
+   "move": "in",
+   "style": "sepia",
+   "caption": "Ladislao Kubala",
+   "credit": "Photo: Estadio magazine, 1953 (public domain)",
+   "lines": "KB-012..KB-013"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 2",
+   "title": "The escape",
+   "lines": "KB-014"
+  },
+  {
+   "type": "statement",
+   "text": "January 1949. Hungary is closing its borders.",
+   "accent": "closing",
+   "bg": "navy",
+   "lines": "KB-015..KB-018"
+  },
+  {
+   "type": "map",
+   "label": "THE ESCAPE",
+   "from": {
+    "name": "BUDAPEST",
+    "xy": [
+     1420,
+     430
+    ]
+   },
+   "to": {
+    "name": "BARCELONA",
+    "xy": [
+     520,
+     780
+    ]
+   },
+   "extra": [
+    {
+     "name": "AUSTRIA",
+     "xy": [
+      1180,
+      360
+     ]
+    },
+    {
+     "name": "ITALY",
+     "xy": [
+      960,
+      560
+     ]
+    }
+   ],
+   "lines": "KB-019..KB-020"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 3",
+   "title": "The refugee team",
+   "lines": "KB-021"
+  },
+  {
+   "type": "list",
+   "title": "HUNGARIA",
+   "items": [
+    {
+     "at": "KB-022",
+     "text": "A TEAM OF EXILES",
+     "sub": "players who had fled Eastern Europe"
+    },
+    {
+     "at": "KB-023",
+     "text": "FRIENDLIES ONLY",
+     "sub": "no official matches allowed"
+    },
+    {
+     "at": "KB-024",
+     "text": "SPAIN, 1950",
+     "sub": "the tour that changed his life"
+    }
+   ],
+   "lines": "KB-022..KB-024"
+  },
+  {
+   "type": "statement",
+   "text": "Real Madrid wanted him. Barça got him.",
+   "accent": "Barça",
+   "bg": "navy",
+   "lines": "KB-025..KB-027"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 4",
+   "title": "The five cups",
+   "lines": "KB-028"
+  },
+  {
+   "type": "stat",
+   "value": "7",
+   "label": "goals in one La Liga match — Kubala vs Sporting Gijón, February 1952. Still a league record.",
+   "source": "La Liga records",
+   "sfx": [
+    {
+     "name": "impact",
+     "at": 0.6,
+     "volume": 0.4
+    }
+   ],
+   "lines": "KB-029..KB-030"
+  },
+  {
+   "type": "list",
+   "title": "1951–52 · THE FIVE CUPS",
+   "items": [
+    {
+     "at": "KB-031",
+     "text": "LA LIGA"
+    },
+    {
+     "at": "KB-031+0.8",
+     "text": "SPANISH CUP"
+    },
+    {
+     "at": "KB-031+1.6",
+     "text": "LATIN CUP",
+     "sub": "the forerunner of the European Cup"
+    },
+    {
+     "at": "KB-032",
+     "text": "COPA EVA DUARTE"
+    },
+    {
+     "at": "KB-032+0.8",
+     "text": "COPA MARTINI ROSSI"
+    }
+   ],
+   "lines": "KB-031..KB-033"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 5",
+   "title": "The stadium",
+   "lines": "KB-034"
+  },
+  {
+   "type": "compare",
+   "left": {
+    "title": "LES CORTS",
+    "points": [
+     "Opened in 1922",
+     "Expanded again and again",
+     "Still turning fans away"
+    ],
+    "good": false
+   },
+   "right": {
+    "title": "CAMP NOU",
+    "points": [
+     "Opened 24 September 1957",
+     "The largest stadium in Europe",
+     "Built for the Kubala crowds"
+    ],
+    "good": true
+   },
+   "lines": "KB-035..KB-037"
+  },
+  {
+   "type": "statement",
+   "text": "“Kubala built the Camp Nou.”",
+   "accent": "Camp Nou.",
+   "small": "A saying every culer knows.",
+   "lines": "KB-038..KB-040"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 6",
+   "title": "The film star",
+   "lines": "KB-041"
+  },
+  {
+   "type": "photo",
+   "src": "photos/kubala/ramallets-kubala-1953.jpg",
+   "move": "left",
+   "style": "sepia",
+   "caption": "Antoni Ramallets and Kubala",
+   "credit": "Photo: Estadio magazine, 1953 (public domain)",
+   "lines": "KB-042..KB-044"
+  },
+  {
+   "type": "photo",
+   "src": "photos/kubala/kubala-robledo-1953.jpg",
+   "move": "right",
+   "style": "sepia",
+   "caption": "Kubala before an international match",
+   "credit": "Photo: Estadio magazine, 1953 (public domain)",
+   "lines": "KB-045..KB-046"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 7",
+   "title": "Di Stéfano and the rivalry",
+   "lines": "KB-047"
+  },
+  {
+   "type": "statement",
+   "text": "1953. Two clubs. One Argentine. A rivalry is born.",
+   "accent": "rivalry",
+   "bg": "navy",
+   "lines": "KB-048..KB-051"
+  },
+  {
+   "type": "chapter",
+   "num": "PART 8",
+   "title": "Legacy",
+   "lines": "KB-052"
+  },
+  {
+   "type": "timeline",
+   "title": "AFTER THE PITCH",
+   "events": [
+    {
+     "at": 0.3,
+     "year": "1961",
+     "text": "Leaves Barça as a player"
+    },
+    {
+     "at": "KB-054",
+     "year": "1969–80",
+     "text": "Coaches Spain"
+    },
+    {
+     "at": "KB-055",
+     "year": "1999",
+     "text": "Voted Barça's greatest ever"
+    },
+    {
+     "at": "KB-056",
+     "year": "2002",
+     "text": "Dies in Barcelona"
+    }
+   ],
+   "lines": "KB-053..KB-056"
+  },
+  {
+   "type": "statement",
+   "text": "He arrived with no country. He left Barça a home.",
+   "accent": "a home.",
+   "lines": "KB-057..KB-059"
+  },
+  {
+   "type": "question",
+   "text": "WHO'S BARÇA'S GREATEST EVER?",
+   "options": [
+    "KUBALA",
+    "CRUYFF",
+    "MESSI"
+   ],
+   "lines": "KB-060"
+  },
+  {
+   "type": "endscreen",
+   "hold": 18,
+   "next": "THE FULL STORY: JOHAN CRUYFF →",
+   "lines": "KB-061"
+  }
+ ]
+}

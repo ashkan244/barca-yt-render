@@ -1,0 +1,401 @@
+[
+ {
+  "id": "OM-001",
+  "text": "Stamford Bridge. The ninety-third minute. Barcelona are going out of the Champions League.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.6
+ },
+ {
+  "id": "OM-002",
+  "text": "They haven't had a single shot on target all night. And then the ball rolls to Andrés Iniesta, just outside the penalty area.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.8
+ },
+ {
+  "id": "OM-003",
+  "text": "It takes about a second for the ball to travel from his foot to the net. In this video, we're going to look at that one second from ten different angles.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "OM-004",
+  "text": "By the end, you'll never see this goal the same way again.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "OM-005",
+  "text": "Three angles on how Barça got here. Two on the chaos that surrounded the game. Three on the goal itself.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "OM-006",
+  "text": "And two on what that one shot changed — for the club, and for football.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "OM-007",
+  "text": "Angle one. The season.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.6
+ },
+ {
+  "id": "OM-008",
+  "text": "This was Pep Guardiola's first season as coach, and his team had played some of the most beautiful football Europe had ever seen.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "OM-009",
+  "text": "Just four days earlier, they had beaten Real Madrid six–two at the Bernabéu to all but win the league.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "OM-010",
+  "text": "Now they were at Stamford Bridge, one game from a Champions League final. The league, the cup and Europe were all still possible. Nobody in Spain had ever won all three in one season.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "OM-011",
+  "text": "Angle two. The first leg.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.6
+ },
+ {
+  "id": "OM-012",
+  "text": "A week earlier, at the Camp Nou, Chelsea had done something almost nobody managed against Guardiola's team. They had stopped them from playing.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "OM-013",
+  "text": "Chelsea defended deep, closed every gap, and left with a nil–nil draw.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "OM-014",
+  "text": "It meant the second leg had one simple rule. If Barça scored even once at Stamford Bridge, Chelsea would need to score twice. Away goals counted double in a tie.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "OM-015",
+  "text": "Angle three. The ninth minute.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.6
+ },
+ {
+  "id": "OM-016",
+  "text": "It took Chelsea nine minutes to score. Michael Essien met a loose ball outside the area and hit a volley that flew in off the crossbar.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "OM-017",
+  "text": "Now Barcelona needed a goal. And Chelsea, ahead and at home, could defend the way they had in the first leg.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "OM-018",
+  "text": "For the next eighty minutes, Barça had the ball — and almost nothing to show for it.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "OM-019",
+  "text": "Angle four. The red card.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.6
+ },
+ {
+  "id": "OM-020",
+  "text": "In the sixty-sixth minute, it got worse. Éric Abidal was sent off after a challenge with Nicolas Anelka outside the box. Replays suggested there was barely any contact.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "OM-021",
+  "text": "Barcelona were now a goal down, with ten men, away from home, with twenty-five minutes left.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "OM-022",
+  "text": "Their passing game, built on having more players than the opponent around the ball, suddenly had one player fewer.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "OM-023",
+  "text": "Angle five. The referee.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.6
+ },
+ {
+  "id": "OM-024",
+  "text": "This is the part Chelsea supporters will never forget. Throughout the night, the Norwegian referee, Tom Henning Øvrebø, turned down a series of Chelsea penalty appeals.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "OM-025",
+  "text": "One of the strongest was a handball by Gerard Piqué in the second half.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "OM-026",
+  "text": "Years later, Øvrebø admitted that Chelsea should have been given at least one penalty.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "OM-027",
+  "text": "It's an important angle, because it means the goal we're about to watch did not happen in a vacuum. To many people in London, Barcelona's moment of glory will always be a night of injustice. Both things can be true.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "OM-028",
+  "text": "Angle six. The pass.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.6
+ },
+ {
+  "id": "OM-029",
+  "text": "It starts with a cross from the right. Dani Alves sends the ball into the box. It's half-cleared.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "OM-030",
+  "text": "The ball bounces to Lionel Messi on the edge of the area. Three Chelsea players close in on him immediately.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "OM-031",
+  "text": "And Messi, who could have tried to shoot, does something simpler. He rolls it a few metres to his left. To Iniesta.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "OM-032",
+  "text": "Angle seven. The strike.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.6
+ },
+ {
+  "id": "OM-033",
+  "text": "Iniesta was not known as a goalscorer. He was a passer, a dribbler, the player who made everything around him easier.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "OM-034",
+  "text": "He doesn't take a touch. He hits it first time, with the outside of his right foot curling it away from the goalkeeper — high, into the top corner.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "OM-035",
+  "text": "From the edge of the area, about twenty metres out, a well-struck shot like that reaches the goal in roughly a second. Petr Čech barely has time to move.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "OM-036",
+  "text": "One–one. On aggregate, one–one. But Barcelona had scored away from home. And that meant they were going through.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "OM-037",
+  "text": "Angle eight. The touchline.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.6
+ },
+ {
+  "id": "OM-038",
+  "text": "Watch the bench in that moment and you see something that tells you everything about that team.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "OM-039",
+  "text": "Pep Guardiola, normally composed in his grey suit, sprinted down the touchline, arms in the air, with his staff and substitutes chasing behind him.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "OM-040",
+  "text": "Iniesta tore off his shirt and disappeared under a pile of teammates. Victor Valdés ran the length of the pitch to join them.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "OM-041",
+  "text": "There were still a few minutes to play. Chelsea threw everything forward. There was one more penalty appeal. Then the final whistle.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "OM-042",
+  "text": "Angle nine. The fury.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.6
+ },
+ {
+  "id": "OM-043",
+  "text": "The scenes at the final whistle were ugly. Chelsea players surrounded the referee. Michael Ballack chased him across the pitch.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "OM-044",
+  "text": "Didier Drogba, who had already been substituted, marched onto the pitch and shouted his anger straight into the television cameras.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "OM-045",
+  "text": "Øvrebø later said he received threatening messages for years afterwards. However you see the refereeing that night, no official deserves that.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "OM-046",
+  "text": "For Barcelona, though, there was only one thing that mattered. They were going to Rome.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "OM-047",
+  "text": "Angle ten. What it changed.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.6
+ },
+ {
+  "id": "OM-048",
+  "text": "Without that shot, Barça are out. No final in Rome. No treble.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "OM-049",
+  "text": "Instead, they won the Copa del Rey a week later, and confirmed the league title soon after.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "OM-050",
+  "text": "On the twenty-seventh of May, in Rome, they beat Manchester United two–nil to become champions of Europe.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "OM-051",
+  "text": "By the end of the year they had won six trophies out of six — the first team in history to do it.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "OM-052",
+  "text": "And it might never have happened without one swing of Andrés Iniesta's right foot, in the ninety-third minute, from his team's first shot on target.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "OM-053",
+  "text": "A year later, in the World Cup final in Johannesburg, Iniesta scored again — the extra-time winner that made Spain world champions for the first time.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "OM-054",
+  "text": "Iniesta was never a prolific goalscorer. But when the biggest moments came, it was so often his foot the ball fell to.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.6
+ },
+ {
+  "id": "OM-055",
+  "text": "He later called the Stamford Bridge goal one of the best memories of his life. For millions of Barça supporters, it's one of theirs too.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ },
+ {
+  "id": "OM-056",
+  "text": "Which moment should get the ten-angle treatment next? Tell me in the comments.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "OM-057",
+  "text": "And for what happened four days earlier, at the Bernabéu, watch this next.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.25
+ }
+]
