@@ -59,7 +59,7 @@ const Chapter: React.FC<P> = ({st}) => {
   return (
     <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center'}}>
       <Chalkboard />
-      <div style={{textAlign: 'center'}}>
+      <div style={{textAlign: 'center', position: 'relative'}}>
         {s.num && <Pop><div style={{fontFamily: CHALK, fontSize: 56, color: C.gold}}>{s.num}</div></Pop>}
         <Pop delay={4}><div style={{fontFamily: DISPLAY, fontSize: 132, color: C.chalk, letterSpacing: 3, padding: '0 80px'}}>{s.title.toUpperCase()}</div></Pop>
         <svg width="900" height="30" style={{display: 'block', margin: '6px auto 0'}}>
@@ -94,7 +94,7 @@ const Stat: React.FC<P> = ({st}) => {
   return (
     <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center'}}>
       <Bg kind={s.bg ?? 'navy'} />
-      <div style={{textAlign: 'center'}}>
+      <div style={{textAlign: 'center', position: 'relative'}}>
         <div style={{fontFamily: DISPLAY, fontSize: 300, lineHeight: 1, color: C.gold}}>{s.prefix ?? ''}{shown}{s.suffix ?? ''}</div>
         <Pop delay={20}><div style={{fontFamily: BODY, fontWeight: 800, fontSize: 52, color: '#fff', maxWidth: 1400, marginTop: 10}}>{s.label}</div></Pop>
         {s.source && <div style={{fontFamily: BODY, fontSize: 24, color: '#ffffff90', marginTop: 26}}>Source: {s.source}</div>}
@@ -312,7 +312,7 @@ const Question: React.FC<P> = ({st}) => {
   return (
     <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center'}}>
       <Chalkboard />
-      <div style={{textAlign: 'center', padding: '0 140px'}}>
+      <div style={{textAlign: 'center', padding: '0 140px', position: 'relative'}}>
         <Pop><Kicker>YOUR TURN</Kicker></Pop>
         <Pop delay={6}><div style={{fontFamily: DISPLAY, fontSize: 110, color: '#fff', marginTop: 24, lineHeight: 1.05}}>{s.text}</div></Pop>
         {s.options && <div style={{display: 'flex', gap: 30, justifyContent: 'center', marginTop: 50}}>

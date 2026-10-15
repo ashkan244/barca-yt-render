@@ -4,9 +4,9 @@ import {loadFont as loadAnton} from '@remotion/google-fonts/Anton';
 import {loadFont as loadInter} from '@remotion/google-fonts/Inter';
 import {loadFont as loadMarker} from '@remotion/google-fonts/PermanentMarker';
 
-export const {fontFamily: DISPLAY} = loadAnton();
-export const {fontFamily: BODY} = loadInter();
-export const {fontFamily: CHALK} = loadMarker();
+export const {fontFamily: DISPLAY} = loadAnton('normal', {weights: ['400'], subsets: ['latin', 'latin-ext']});
+export const {fontFamily: BODY} = loadInter('normal', {weights: ['400', '600', '700', '800', '900'], subsets: ['latin', 'latin-ext']});
+export const {fontFamily: CHALK} = loadMarker('normal', {weights: ['400'], subsets: ['latin']});
 
 // Brand palette: club colours as accents on a slate "chalkboard"
 export const C = {

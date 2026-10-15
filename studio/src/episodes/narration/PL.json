@@ -77,6 +77,13 @@
   "pause": 0
  },
  {
+  "id": "PL-011a",
+  "text": "And at Euro 2020, still only eighteen, he was named the Young Player of the Tournament.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0
+ },
+ {
   "id": "PL-012",
   "text": "Habit one. Scan before you receive.",
   "voice": "am_michael",
@@ -205,6 +212,13 @@
  {
   "id": "PL-025e",
   "text": "It feels silly for a week. Then it becomes automatic.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.5
+ },
+ {
+  "id": "PL-025f",
+  "text": "Some coaches use a simple test: freeze a training game at random and ask a player, without looking, where the nearest opponent is. If he knows, he was scanning.",
   "voice": "am_michael",
   "speed": 1,
   "pause": 0
@@ -371,6 +385,13 @@
   "pause": 0
  },
  {
+  "id": "PL-040e",
+  "text": "Watch Pedri for ten minutes of any match and count how often his teammates take the ball in their stride. That is this habit, working quietly.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0
+ },
+ {
   "id": "PL-041",
   "text": "Here's the drill. Four cones in a ten-metre square — four different colours.",
   "voice": "am_michael",
@@ -401,6 +422,20 @@
  {
   "id": "PL-045",
   "text": "Ten minutes, three habits, every time you train.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0
+ },
+ {
+  "id": "PL-045a",
+  "text": "Make it harder every week: shrink the square, add a second defender, or have your friend call the colour later and later.",
+  "voice": "am_michael",
+  "speed": 1,
+  "pause": 0.4
+ },
+ {
+  "id": "PL-045b",
+  "text": "The goal is not to look busy. It is to make your first look automatic, so that in a match you never have to think about it at all.",
   "voice": "am_michael",
   "speed": 1,
   "pause": 0
