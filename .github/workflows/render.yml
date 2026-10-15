@@ -1,27 +1,26 @@
-# Cloud render: split a Remotion composition into frame chunks, render them in parallel
-# on GitHub-hosted runners, then concatenate into one MP4 (uploaded as an artifact).
-# Trigger manually: Actions -> "Render video" -> Run workflow.
+# Cloud production: (optional) Kokoro narration -> registry -> bundle -> parallel chunk render -> concat
+# + thumbnail, chapters and SRT. Trigger: Actions -> "Render video" -> Run workflow.
 name: Render video
 
 on:
   workflow_dispatch:
     inputs:
       composition:
-        description: Remotion composition id (e.g. TX-Hook-OneStep)
+        description: Remotion composition id (e.g. EP01-PL)
         required: true
-        default: TX-Hook-OneStep
+        default: EP01-PL
+      code:
+        description: Narration code to synthesise first (e.g. PL). Empty = use committed audio.
+        required: false
+        default: ''
       chunks:
         description: Number of parallel render jobs
         required: true
-        default: '4'
+        default: '10'
       crf:
         description: H.264 CRF (lower = higher quality)
         required: true
-        default: '18'
-
-defaults:
-  run:
-    working-directory: studio
+        default: '20'
 
 jobs:
   plan:
@@ -33,17 +32,45 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
-          cache-dependency-path: studio/package-lock.json
-      - run: npm ci
-      - run: npx remotion bundle src/index.ts --out-dir=build
-      - id: plan
-        run: echo "matrix=$(node scripts/plan-chunks.mjs build '${{ inputs.composition }}' '${{ inputs.chunks }}' | tail -n 1)" >> "$GITHUB_OUTPUT"
+      - name: Cache Kokoro model + npm
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.npm
+            tools/tts/node_modules/@huggingface/transformers/.cache
+          key: tts-${{ hashFiles('tools/tts/package-lock.json') }}
+      - name: Narration (Kokoro, local CPU)
+        if: ${{ inputs.code != '' }}
+        working-directory: tools/tts
+        run: |
+          npm ci --no-audit --no-fund
+          node say.mjs ../../studio/src/episodes/narration/${{ inputs.code }}.json ../../studio/public/audio/${{ inputs.code }}
+      - name: Install studio
+        working-directory: studio
+        run: npm ci --no-audit --no-fund
+      - name: Registry, bundle, plan, metadata
+        id: plan
+        working-directory: studio
+        run: |
+          node scripts/gen-registry.mjs
+          npx remotion bundle src/index.ts --out-dir=build
+          echo "matrix=$(node scripts/plan-chunks.mjs build '${{ inputs.composition }}' '${{ inputs.chunks }}' | tail -n 1)" >> "$GITHUB_OUTPUT"
+          mkdir -p out/meta
+          if [ -f "src/episodes/specs/${{ inputs.composition }}.json" ]; then
+            node scripts/export-meta.mjs '${{ inputs.composition }}' out/meta
+            npx remotion still build '${{ inputs.composition }}-thumb' out/meta/${{ inputs.composition }}-thumb.png --image-format=png || true
+          fi
+          if [ -n "${{ inputs.code }}" ]; then cp -r public/audio/${{ inputs.code }} out/meta/audio-${{ inputs.code }}; fi
       - uses: actions/upload-artifact@v4
         with:
           name: bundle
           path: studio/build
           retention-days: 1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.composition }}-meta
+          path: studio/out/meta
+          retention-days: 30
 
   render:
     needs: plan
@@ -51,6 +78,9 @@ jobs:
     strategy:
       fail-fast: true
       matrix: ${{ fromJson(needs.plan.outputs.matrix) }}
+    defaults:
+      run:
+        working-directory: studio
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -58,7 +88,7 @@ jobs:
           node-version: 22
           cache: npm
           cache-dependency-path: studio/package-lock.json
-      - run: npm ci
+      - run: npm ci --no-audit --no-fund
       - uses: actions/download-artifact@v4
         with:
           name: bundle
@@ -67,7 +97,7 @@ jobs:
         run: |
           start=$(date +%s)
           npx remotion render build '${{ inputs.composition }}' out/part-${{ matrix.index }}.mp4 \
-            --frames=${{ matrix.start }}-${{ matrix.end }} --codec=h264 --crf=${{ inputs.crf }} --log=info
+            --frames=${{ matrix.start }}-${{ matrix.end }} --codec=h264 --crf=${{ inputs.crf }} --audio-codec=aac --audio-bitrate=192k --log=info
           secs=$(( $(date +%s) - start ))
           frames=$(( ${{ matrix.end }} - ${{ matrix.start }} + 1 ))
           echo "chunk ${{ matrix.index }}: ${frames} frames in ${secs}s" | tee out/part-${{ matrix.index }}.txt
@@ -80,6 +110,9 @@ jobs:
   concat:
     needs: render
     runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: studio
     steps:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
@@ -87,13 +120,14 @@ jobs:
           pattern: part-*
           path: studio/out
           merge-multiple: true
-      - name: Concatenate chunks
+      - name: Concatenate chunks + loudness report
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
           cd out
           ls part-*.mp4 | sort -V | sed "s/^/file '/; s/$/'/" > list.txt
           ffmpeg -y -f concat -safe 0 -i list.txt -c copy '${{ inputs.composition }}.mp4'
           cat part-*.txt > render-speed.txt
+          ffmpeg -hide_banner -i '${{ inputs.composition }}.mp4' -af loudnorm=print_format=summary -f null - 2>&1 | tail -12 >> render-speed.txt || true
           cat render-speed.txt
       - uses: actions/upload-artifact@v4
         with:
@@ -101,4 +135,4 @@ jobs:
           path: |
             studio/out/${{ inputs.composition }}.mp4
             studio/out/render-speed.txt
-          retention-days: 14
+          retention-days: 30

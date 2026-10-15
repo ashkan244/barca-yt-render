@@ -1,5 +1,6 @@
 node_modules/
 studio/build/
 studio/out/
+studio/.audio-tmp/
 .env
 *.log
