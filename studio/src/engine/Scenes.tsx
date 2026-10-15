@@ -266,16 +266,20 @@ const Bars: React.FC<P> = ({st}) => {
   const s = st.scene as Extract<Scene, {type: 'bars'}>;
   const f = useCurrentFrame();
   const max = Math.max(...s.bars.map((b) => b.value), 1);
+  // short units ("%", "m") ride on each value; longer ones ("goals", "€m, reported") become a subtitle
+  const unit = s.unit ?? '';
+  const inline = unit.length <= 2;
   return (
     <AbsoluteFill>
       <Bg kind={s.bg ?? 'navy'} />
       {s.title && <div style={{position: 'absolute', top: 90, width: '100%', textAlign: 'center', fontFamily: DISPLAY, fontSize: 84, color: '#fff'}}>{s.title}</div>}
+      {!inline && <div style={{position: 'absolute', top: 214, width: '100%', textAlign: 'center', fontFamily: BODY, fontWeight: 600, fontSize: 28, color: '#ffffffb0', letterSpacing: 1}}>{unit}</div>}
       <div style={{position: 'absolute', left: 160, right: 160, bottom: 170, top: 250, display: 'flex', alignItems: 'flex-end', gap: 30}}>
         {s.bars.map((b, i) => {
           const g = interpolate(f, [10 + i * 6, 50 + i * 6], [0, 1], ease);
           return (
             <div key={i} style={{flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-end', height: '100%'}}>
-              <div style={{fontFamily: DISPLAY, fontSize: 46, color: b.highlight ? C.gold : '#fff', marginBottom: 10, opacity: g}}>{Math.round(b.value * g)}{s.unit ?? ''}</div>
+              <div style={{fontFamily: DISPLAY, fontSize: 46, color: b.highlight ? C.gold : '#fff', marginBottom: 10, opacity: g}}>{Math.round(b.value * g)}{inline ? unit : ''}</div>
               <div style={{width: '100%', height: `${(b.value / max) * 82 * g}%`, background: b.highlight ? C.gold : i % 2 ? C.grana : C.blau, borderRadius: '10px 10px 0 0'}} />
               <div style={{fontFamily: BODY, fontWeight: 700, fontSize: 28, color: '#ffffffd0', marginTop: 14, textAlign: 'center'}}>{b.label}</div>
             </div>
@@ -283,7 +287,7 @@ const Bars: React.FC<P> = ({st}) => {
         })}
       </div>
       {s.note && <div style={{position: 'absolute', bottom: 70, width: '100%', textAlign: 'center', fontFamily: BODY, fontSize: 26, color: '#ffffff99'}}>{s.note}</div>}
-      <div style={{position: 'absolute', top: 44, right: 60, fontFamily: BODY, fontWeight: 700, fontSize: 22, color: '#ffffff80', letterSpacing: 2}}>MODEL</div>
+      {s.tag && <div style={{position: 'absolute', top: 44, right: 60, fontFamily: BODY, fontWeight: 700, fontSize: 22, color: '#ffffff80', letterSpacing: 2}}>{s.tag}</div>}
     </AbsoluteFill>
   );
 };

@@ -45,7 +45,7 @@ export type Scene =
   | (BaseScene & {type: 'score'; home: string; away: string; events: {at: T; minute: string; side: 'home' | 'away'; who: string}[]; venue?: string; date?: string})
   | (BaseScene & {type: 'list'; title?: string; items: {at: T; text: string; sub?: string}[]})
   | (BaseScene & {type: 'compare'; left: {title: string; points: string[]; good?: boolean}; right: {title: string; points: string[]; good?: boolean}})
-  | (BaseScene & {type: 'bars'; title?: string; unit?: string; bars: {label: string; value: number; highlight?: boolean}[]; note?: string})
+  | (BaseScene & {type: 'bars'; title?: string; unit?: string; tag?: string; bars: {label: string; value: number; highlight?: boolean}[]; note?: string})
   | (BaseScene & {type: 'statement'; text: string; accent?: string; small?: string})
   | (BaseScene & {type: 'question'; text: string; options?: string[]})
   | (BaseScene & {type: 'endscreen'; next?: string});
