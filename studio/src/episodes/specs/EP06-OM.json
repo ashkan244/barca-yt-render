@@ -2,7 +2,11 @@
  "id": "EP06-OM",
  "code": "OM",
  "title": "Iniesta, 93rd Minute: 10 Angles on the Goal That Saved a Treble",
- "music": "story.mp3",
+ "music": [
+  "km/prelude-and-action.mp3",
+  "km/heroic-age.mp3",
+  "km/inspired.mp3"
+ ],
  "thumb": {
   "kicker": "STAMFORD BRIDGE · 2009",
   "title": "THE 93RD\nMINUTE",

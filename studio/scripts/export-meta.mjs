@@ -19,14 +19,14 @@ spec.scenes.forEach((sc, i) => {
   const ids = expand(sc.lines);
   if (sc.type === 'chapter') chapters.push([cursor, sc.title]);
   else if (i === 0) chapters.push([0, 'Intro']);
-  let t = Math.round((sc.lead ?? (ids.length ? 0.3 : 0)) * FPS);
+  let t = Math.round((sc.lead ?? (ids.length ? 0.15 : 0)) * FPS);
   for (const lid of ids) {
     const l = byId.get(lid);
     const len = Math.ceil((durations[lid] ?? Math.max(1, l.text.split(/\s+/).length / 2.35)) * FPS);
     lines.push({from: cursor + t, len, text: l.text});
-    t += len + Math.round((l.pause ?? 0.25) * FPS);
+    t += len + Math.round((l.pause ?? 0.12) * FPS);
   }
-  cursor += ids.length ? t + Math.round((sc.hold ?? 0.4) * FPS) : Math.round((sc.secs ?? 3) * FPS);
+  cursor += ids.length ? t + Math.round((sc.hold ?? 0.25) * FPS) : Math.round((sc.secs ?? 3) * FPS);
 });
 const mmss = (f) => { const s = Math.floor(f / FPS); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`; };
 const ts = (f) => { const ms = Math.round((f / FPS) * 1000); const h = Math.floor(ms / 3600000), m = Math.floor((ms % 3600000) / 60000), s = Math.floor((ms % 60000) / 1000); return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')},${String(ms % 1000).padStart(3, '0')}`; };

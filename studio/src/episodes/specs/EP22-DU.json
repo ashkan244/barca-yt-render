@@ -2,7 +2,12 @@
  "id": "EP22-DU",
  "code": "MC",
  "title": "Michels & Cruyff: The Teacher and the Student",
- "music": "story.mp3",
+ "music": [
+  "km/long-road-ahead-b.mp3",
+  "km/inspired.mp3",
+  "km/overcast.mp3",
+  "km/ascending-the-vale.mp3"
+ ],
  "captions": true,
  "thumb": {
   "kicker": "SIDE BY SIDE",

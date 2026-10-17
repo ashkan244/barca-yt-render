@@ -19,9 +19,9 @@ const Bg: React.FC<{kind?: string}> = ({kind}) =>
 /** Archive photo with the channel's ink/duotone look and a gentle camera move. */
 export const ArchivePhoto: React.FC<{src: string; style?: string; move?: string; dur: number; focus?: [number, number]}> = ({src, style = 'ink', move = 'in', dur, focus = [50, 40]}) => {
   const f = useCurrentFrame();
-  const p = interpolate(f, [0, dur], [0, 1], ease);
-  const z = move === 'in' ? 1 + 0.07 * p : move === 'out' ? 1.07 - 0.07 * p : 1.04;
-  const x = move === 'left' ? 2 - 4 * p : move === 'right' ? -2 + 4 * p : 0;
+  const p = interpolate(f, [0, dur], [0, 1], clamp); // linear: the camera never stops moving
+  const z = move === 'in' ? 1.02 + 0.14 * p : move === 'out' ? 1.16 - 0.14 * p : move === 'still' ? 1.04 : 1.1;
+  const x = move === 'left' ? 4 - 8 * p : move === 'right' ? -4 + 8 * p : 0;
   const filter = style === 'ink' ? 'brightness(1.3) contrast(1.05) url(#ink)' : style === 'sepia' ? 'sepia(.55) contrast(1.05)' : 'grayscale(1) contrast(1.1)';
   return (
     <AbsoluteFill style={{overflow: 'hidden', background: '#0b1220'}}>
@@ -56,13 +56,17 @@ const Title: React.FC<P> = ({st}) => {
 const Chapter: React.FC<P> = ({st}) => {
   const s = st.scene as Extract<Scene, {type: 'chapter'}>;
   const f = useCurrentFrame();
-  const line = interpolate(f, [8, 30], [0, 1], ease);
+  const line = interpolate(f, [8, 26], [0, 1], ease);
+  const wipe = interpolate(f, [5, 17], [100, 0], ease); // title reveal, left to right
+  const slam = interpolate(f, [0, 8], [2.4, 1], {...clamp, easing: Easing.out(Easing.back(1.6))});
+  const sweep = interpolate(f, [0, 22], [-40, 140], clamp); // diagonal gold stripe crossing the frame
   return (
     <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center'}}>
       <Chalkboard />
+      <div style={{position: 'absolute', top: -200, bottom: -200, left: `${sweep}%`, width: 220, background: `linear-gradient(90deg, transparent, ${C.gold}33, transparent)`, transform: 'rotate(18deg)'}} />
       <div style={{textAlign: 'center', position: 'relative'}}>
-        {s.num && <Pop><div style={{fontFamily: CHALK, fontSize: 56, color: C.gold}}>{s.num}</div></Pop>}
-        <Pop delay={4}><div style={{fontFamily: DISPLAY, fontSize: 132, color: C.chalk, letterSpacing: 3, padding: '0 80px'}}>{s.title.toUpperCase()}</div></Pop>
+        {s.num && <div style={{fontFamily: CHALK, fontSize: 64, color: C.gold, transform: `scale(${slam})`, opacity: interpolate(f, [0, 4], [0, 1], clamp), filter: `blur(${(slam - 1) * 4}px)`}}>{s.num}</div>}
+        <div style={{fontFamily: DISPLAY, fontSize: 132, color: C.chalk, letterSpacing: 3, padding: '0 80px', clipPath: `inset(0 ${wipe}% 0 0)`}}>{s.title.toUpperCase()}</div>
         <svg width="900" height="30" style={{display: 'block', margin: '6px auto 0'}}>
           <path d={`M 20 15 Q 450 ${5 + 10 * Math.sin(3)} ${20 + 860 * line} 15`} stroke={C.gold} strokeWidth="8" fill="none" strokeLinecap="round" filter="url(#chalk)" />
         </svg>
@@ -228,10 +232,14 @@ const List: React.FC<P> = ({st}) => {
       {s.title && <div style={{position: 'absolute', top: 110, left: 140, fontFamily: DISPLAY, fontSize: 96, color: C.chalk}}>{s.title}</div>}
       <div style={{position: 'absolute', top: s.title ? 300 : 220, left: 140, right: 140}}>
         {s.items.map((it, i) => {
-          const p = interpolate(f - R(it.at), [0, 12], [0, 1], ease);
-          return f >= R(it.at) ? (
-            <div key={i} style={{display: 'flex', gap: 34, alignItems: 'center', marginBottom: 34, opacity: p, transform: `translateX(${(1 - p) * -40}px)`}}>
-              <div style={{width: 96, height: 96, borderRadius: 48, background: C.blau, border: `8px solid ${C.grana}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: DISPLAY, fontSize: 54, color: '#fff', flexShrink: 0}}>{i + 1}</div>
+          const t0 = R(it.at);
+          const p = spring({frame: f - t0, fps: 30, config: {damping: 13, stiffness: 220, mass: 0.6}});
+          const latest = s.items.every((o, j) => j <= i || R(o.at) > f); // newest visible item gets the focus
+          const ring = latest ? 1 + 0.08 * Math.max(0, Math.sin((f - t0) / 5)) * interpolate(f - t0, [0, 40], [1, 0], clamp) : 1;
+          return f >= t0 ? (
+            <div key={i} style={{display: 'flex', gap: 34, alignItems: 'center', marginBottom: 34, opacity: Math.min(1, p * 2) * (latest ? 1 : 0.55),
+              transform: `translateX(${(1 - p) * -140}px)`, filter: `blur(${Math.max(0, 1 - p) * 8}px)`}}>
+              <div style={{width: 96, height: 96, borderRadius: 48, background: latest ? C.gold : C.blau, color: latest ? '#111' : '#fff', transform: `scale(${ring})`, border: `8px solid ${C.grana}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: DISPLAY, fontSize: 54, flexShrink: 0}}>{i + 1}</div>
               <div>
                 <div style={{fontFamily: DISPLAY, fontSize: 70, color: '#fff', lineHeight: 1}}>{it.text}</div>
                 {it.sub && <div style={{fontFamily: BODY, fontWeight: 600, fontSize: 32, color: C.chalkDim, marginTop: 6}}>{it.sub}</div>}

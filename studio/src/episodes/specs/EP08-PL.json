@@ -2,7 +2,11 @@
  "id": "EP08-PL",
  "code": "BQ",
  "title": "Play Like Busquets: The Art of Doing Less",
- "music": "chalk.mp3",
+ "music": [
+  "km/investigations.mp3",
+  "km/movement-proposition.mp3",
+  "km/covert-affair.mp3"
+ ],
  "thumb": {
   "kicker": "PLAY LIKE BUSQUETS",
   "title": "DO\nLESS",

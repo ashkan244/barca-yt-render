@@ -2,7 +2,11 @@
  "id": "EP18-OM",
  "code": "RK",
  "title": "Koeman, Wembley 1992: 10 Angles on One Free Kick",
- "music": "story.mp3",
+ "music": [
+  "km/prelude-and-action.mp3",
+  "km/heroic-age.mp3",
+  "km/inspired.mp3"
+ ],
  "thumb": {
   "kicker": "WEMBLEY · 1992",
   "title": "THE 112TH\nMINUTE",

@@ -2,7 +2,12 @@
  "id": "EP12-TM",
  "code": "SR",
  "title": "The 6-1: The Comeback That Made No Sense",
- "music": "story.mp3",
+ "music": [
+  "km/prelude-and-action.mp3",
+  "km/crusade.mp3",
+  "km/heroic-age.mp3",
+  "km/volatile-reaction.mp3"
+ ],
  "thumb": {
   "kicker": "THE MATCH THAT…",
   "title": "THE\nCOMEBACK",

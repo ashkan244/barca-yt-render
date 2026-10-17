@@ -28,16 +28,16 @@ export const plan = (ep: EpisodeSpec, narration: NarrationLine[], durations: Rec
   for (const scene of ep.scenes) {
     const ids = expandLines(scene.lines, order);
     const from = cursor;
-    let t = Math.round((scene.lead ?? (ids.length ? 0.3 : 0)) * FPS);
+    let t = Math.round((scene.lead ?? (ids.length ? 0.15 : 0)) * FPS);
     const lines: LineTiming[] = [];
     for (const id of ids) {
       const l = byId.get(id);
       if (!l) throw new Error(`missing narration line ${id}`);
       const len = Math.ceil((durations[id] ?? estimate(l.text)) * FPS);
       lines.push({id, text: l.text, from: from + t, len});
-      t += len + Math.round((l.pause ?? 0.25) * FPS);
+      t += len + Math.round((l.pause ?? 0.12) * FPS);
     }
-    const dur = ids.length ? t + Math.round((scene.hold ?? 0.4) * FPS) : Math.round((scene.secs ?? 3) * FPS);
+    const dur = ids.length ? t + Math.round((scene.hold ?? 0.25) * FPS) : Math.round((scene.secs ?? 3) * FPS);
     scenes.push({scene, from, dur, lines});
     all.push(...lines);
     cursor += dur;

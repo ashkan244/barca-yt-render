@@ -2,7 +2,11 @@
  "id": "EP13-PL",
  "code": "XV",
  "title": "Play Like Xavi: How to Never Lose the Ball",
- "music": "chalk.mp3",
+ "music": [
+  "km/investigations.mp3",
+  "km/movement-proposition.mp3",
+  "km/covert-affair.mp3"
+ ],
  "thumb": {
   "kicker": "PLAY LIKE XAVI",
   "title": "NEVER LOSE\nTHE BALL",

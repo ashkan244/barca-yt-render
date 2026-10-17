@@ -30,7 +30,7 @@ const Gallery: React.FC<P> = ({st}) => {
         return (
           <Sequence key={i} from={from} durationInFrames={len}>
             <Fade first={i === 0}>
-              <ArchivePhoto src={p.src} style={p.style ?? s.style ?? 'bw'} move={p.move ?? MOVES[i % 4]} dur={len} focus={p.focus} />
+              <Punch at={len > 150 ? Math.round(len / 2) : -1}><ArchivePhoto src={p.src} style={p.style ?? s.style ?? 'bw'} move={p.move ?? MOVES[i % 4]} dur={len} focus={p.focus} /></Punch>
               {p.year && <YearTag text={p.year} />}
               {p.caption && (
                 <div style={{position: 'absolute', left: 80, top: 160, maxWidth: 900, borderLeft: `8px solid ${C.gold}`, background: 'rgba(8,14,30,.72)', padding: '14px 24px'}}>
@@ -136,3 +136,10 @@ const Collage: React.FC<P> = ({st}) => {
 
 export const PhotoSceneView: React.FC<P> = ({st}) =>
   st.scene.type === 'gallery' ? <Gallery st={st} /> : st.scene.type === 'duo' ? <Duo st={st} /> : <Collage st={st} />;
+
+/** Mid-shot reframe for long photo holds: a quick punch-in so a still image feels re-cut. */
+const Punch: React.FC<{at: number; children: React.ReactNode}> = ({at, children}) => {
+  const f = useCurrentFrame(); const {fps} = useVideoConfig();
+  const s = at < 0 || f < at ? 1 : 1 + 0.08 * spring({frame: f - at, fps, config: {damping: 16, stiffness: 200, mass: 0.6}});
+  return <AbsoluteFill style={{transform: `scale(${s})`, transformOrigin: '55% 45%'}}>{children}</AbsoluteFill>;
+};

@@ -1,0 +1,2 @@
+Music beds in this folder: Kevin MacLeod (incompetech.com), Creative Commons: By Attribution 4.0 (https://creativecommons.org/licenses/by/4.0/).
+Normalised with tools/prepare-music.sh (trim, -16 LUFS, 128 kbps). Originals kept outside the repo in ../music-src.

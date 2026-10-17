@@ -70,7 +70,7 @@ export type EpisodeSpec = {
   id: string; // e.g. EP01-PL
   code: string; // narration prefix, e.g. PL
   title: string;
-  music?: string; // public/music/<file>
+  music?: string | string[]; // public/music/<file>; a list = one track per chapter (cycled)
   thumb?: Thumb;
   captions?: boolean; // burned-in phrase captions (image-led formats, Shorts)
   scenes: Scene[];

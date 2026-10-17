@@ -2,7 +2,11 @@
  "id": "EP17-BZ",
  "code": "DS",
  "title": "The Di Stéfano Affair: The Transfer That Started a War",
- "music": "story.mp3",
+ "music": [
+  "km/investigations.mp3",
+  "km/covert-affair.mp3",
+  "km/overcast.mp3"
+ ],
  "thumb": {
   "kicker": "CLUB & MONEY",
   "title": "THE TRANSFER\nWAR",

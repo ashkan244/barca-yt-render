@@ -2,7 +2,11 @@
  "id": "EP10-BZ",
  "code": "BZ",
  "title": "How Barça Escaped a €1.35 Billion Hole",
- "music": "story.mp3",
+ "music": [
+  "km/investigations.mp3",
+  "km/covert-affair.mp3",
+  "km/overcast.mp3"
+ ],
  "thumb": {
   "kicker": "CLUB & MONEY",
   "title": "€1.35BN\nHOLE",

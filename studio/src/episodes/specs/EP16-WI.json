@@ -2,7 +2,11 @@
  "id": "EP16-WI",
  "code": "CR",
  "title": "What If Cruyff Had Never Come Back in 1988?",
- "music": "story.mp3",
+ "music": [
+  "km/covert-affair.mp3",
+  "km/overcast.mp3",
+  "km/investigations.mp3"
+ ],
  "thumb": {
   "kicker": "WHAT IF?",
   "title": "NO\nCRUYFF?",

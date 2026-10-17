@@ -2,7 +2,11 @@
  "id": "EP14-TX",
  "code": "OT",
  "title": "Barça's Offside Trap, Explained: Genius or Gamble?",
- "music": "chalk.mp3",
+ "music": [
+  "km/volatile-reaction.mp3",
+  "km/hit-the-streets.mp3",
+  "km/investigations.mp3"
+ ],
  "thumb": {
   "kicker": "TACTICS EXPLAINED",
   "title": "GENIUS OR\nGAMBLE?",

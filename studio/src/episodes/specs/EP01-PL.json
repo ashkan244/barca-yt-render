@@ -2,7 +2,11 @@
  "id": "EP01-PL",
  "code": "PL",
  "title": "Play Like Pedri: The 3 Habits Nobody Teaches",
- "music": "chalk.mp3",
+ "music": [
+  "km/investigations.mp3",
+  "km/movement-proposition.mp3",
+  "km/covert-affair.mp3"
+ ],
  "thumb": {
   "kicker": "PLAY LIKE PEDRI",
   "title": "SCAN\nBEFORE",

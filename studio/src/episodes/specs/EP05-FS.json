@@ -2,7 +2,12 @@
  "id": "EP05-FS",
  "code": "JC",
  "title": "The Full Story of Johan Cruyff: The Man Who Built Barça Twice",
- "music": "story.mp3",
+ "music": [
+  "km/ascending-the-vale.mp3",
+  "km/inspired.mp3",
+  "km/long-road-ahead-b.mp3",
+  "km/heroic-age.mp3"
+ ],
  "thumb": {
   "kicker": "THE FULL STORY",
   "title": "HE BUILT\nBARÇA",

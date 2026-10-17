@@ -2,7 +2,11 @@
  "id": "EP02-TX",
  "code": "TX",
  "title": "How Flick's Barça Actually Works (Explained on a Chalkboard)",
- "music": "chalk.mp3",
+ "music": [
+  "km/volatile-reaction.mp3",
+  "km/hit-the-streets.mp3",
+  "km/investigations.mp3"
+ ],
  "thumb": {
   "kicker": "FLICK'S BARÇA",
   "title": "THE ONE\nSTEP",

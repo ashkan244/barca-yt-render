@@ -2,7 +2,11 @@
  "id": "EP04-PL",
  "code": "LY",
  "title": "Play Like Lamine Yamal: Beat Your Defender Before the Touch",
- "music": "chalk.mp3",
+ "music": [
+  "km/investigations.mp3",
+  "km/movement-proposition.mp3",
+  "km/covert-affair.mp3"
+ ],
  "thumb": {
   "kicker": "PLAY LIKE LAMINE",
   "title": "BEFORE\nTHE TOUCH",

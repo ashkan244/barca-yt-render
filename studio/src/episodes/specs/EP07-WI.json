@@ -2,7 +2,11 @@
  "id": "EP07-WI",
  "code": "MS",
  "title": "What If Barça Had Kept Messi in 2021? Three Scenarios",
- "music": "story.mp3",
+ "music": [
+  "km/covert-affair.mp3",
+  "km/overcast.mp3",
+  "km/investigations.mp3"
+ ],
  "thumb": {
   "kicker": "WHAT IF?",
   "title": "MESSI\nSTAYS",

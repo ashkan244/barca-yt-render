@@ -2,7 +2,12 @@
  "id": "EP09-ER",
  "code": "KB",
  "title": "Kubala: The Refugee Who Built Barça a Stadium",
- "music": "story.mp3",
+ "music": [
+  "km/ascending-the-vale.mp3",
+  "km/long-road-ahead-b.mp3",
+  "km/heroic-age.mp3",
+  "km/inspired.mp3"
+ ],
  "thumb": {
   "kicker": "BARÇA ERAS · 1950s",
   "title": "HE BUILT\nCAMP NOU",

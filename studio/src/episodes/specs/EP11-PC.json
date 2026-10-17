@@ -2,7 +2,11 @@
  "id": "EP11-PC",
  "code": "LM",
  "title": "Something Strange Happens When Lamine Yamal Gets the Ball",
- "music": "chalk.mp3",
+ "music": [
+  "km/hit-the-streets.mp3",
+  "km/volatile-reaction.mp3",
+  "km/movement-proposition.mp3"
+ ],
  "thumb": {
   "kicker": "PLAYER FILES · LAMINE YAMAL",
   "title": "THE\nGRAVITY",

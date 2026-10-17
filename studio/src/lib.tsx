@@ -104,8 +104,8 @@ export const Halftone: React.FC<{opacity?: number; size?: number}> = ({opacity =
 export const Pop: React.FC<{delay?: number; children: React.ReactNode; style?: React.CSSProperties}> = ({delay = 0, children, style}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
-  const sp = spring({frame: frame - delay, fps, config: {damping: 14, mass: 0.7}});
-  return <div style={{opacity: Math.min(1, sp * 1.4), transform: `scale(${0.85 + 0.15 * sp}) translateY(${(1 - sp) * 20}px)`, ...style}}>{children}</div>;
+  const sp = spring({frame: frame - delay, fps, config: {damping: 12, stiffness: 230, mass: 0.6}});
+  return <div style={{opacity: Math.min(1, sp * 2), transform: `scale(${0.7 + 0.3 * sp}) translateY(${(1 - sp) * 26}px)`, filter: `blur(${Math.max(0, 1 - sp) * 6}px)`, ...style}}>{children}</div>;
 };
 
 /** Narration: plays each voice line at its frame and shows its caption for exactly the audio length.
