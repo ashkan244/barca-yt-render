@@ -11,26 +11,27 @@ import type {SceneTiming} from './timeline';
 // framings: scale, transform-origin (%). Origins near the centre keep edge content inside the frame.
 const FRAMINGS = [
   {s: 1.0, ox: 50, oy: 50},
-  {s: 1.07, ox: 38, oy: 42},
-  {s: 1.05, ox: 62, oy: 55},
-  {s: 1.08, ox: 50, oy: 38},
-  {s: 1.06, ox: 44, oy: 60},
+  {s: 1.16, ox: 36, oy: 40},
+  {s: 1.1, ox: 64, oy: 56},
+  {s: 1.2, ox: 50, oy: 36},
+  {s: 1.12, ox: 42, oy: 62},
 ];
 // scenes with their own camera (board) or wide layouts that must not be cropped
 const NO_RIG = new Set(['board', 'endscreen', 'title', 'gallery']);
-const GENTLE = new Set(['compare', 'bars', 'timeline', 'map', 'duo', 'collage', 'score', 'photo']);
+// wide layouts: smaller moves so edge content stays in frame
+const GENTLE = new Set(['compare', 'bars', 'timeline', 'map', 'duo', 'collage', 'photo']);
 
 export const CamRig: React.FC<{st: SceneTiming; index: number; children: React.ReactNode}> = ({st, index, children}) => {
   const f = useCurrentFrame(); const {fps} = useVideoConfig();
   if (NO_RIG.has(st.scene.type)) return <>{children}</>;
   const starts = [0, ...st.lines.slice(1).map((l) => l.from - st.from)];
   let k = 0; for (let i = 0; i < starts.length; i++) if (f >= starts[i]) k = i;
-  const amp = GENTLE.has(st.scene.type) ? 0.5 : 1;
+  const amp = GENTLE.has(st.scene.type) ? 0.45 : 1;
   const fr = (i: number) => { const F = FRAMINGS[(i + index) % FRAMINGS.length]; return {s: 1 + (F.s - 1) * amp, ox: F.ox, oy: F.oy}; };
   const cur = fr(k), prev = fr(Math.max(0, k - 1));
   const p = k === 0 ? 1 : spring({frame: f - starts[k], fps, config: {damping: 15, stiffness: 210, mass: 0.6}});
   const segEnd = k + 1 < starts.length ? starts[k + 1] : st.dur;
-  const drift = interpolate(f, [starts[k], segEnd], [0, 0.025 * amp], clamp); // slow push-in inside each shot
+  const drift = interpolate(f, [starts[k], segEnd], [0, 0.04 * amp], clamp); // slow push-in inside each shot
   const s = prev.s + (cur.s - prev.s) * p + drift;
   const ox = prev.ox + (cur.ox - prev.ox) * p, oy = prev.oy + (cur.oy - prev.oy) * p;
   return <AbsoluteFill style={{transform: `scale(${s})`, transformOrigin: `${ox}% ${oy}%`}}>{children}</AbsoluteFill>;

@@ -15,7 +15,12 @@ for (const f of fs.readdirSync(specDir).filter((x) => x.endsWith('.json')).sort(
   const narration = fs.existsSync(narrFile) ? JSON.parse(fs.readFileSync(narrFile, 'utf8')).map(({id, text, pause}) => ({id, text, pause})) : [];
   const durFile = path.join(root, 'public/audio', spec.code, 'durations.json');
   const durations = fs.existsSync(durFile) ? JSON.parse(fs.readFileSync(durFile, 'utf8')) : {};
-  out.push({spec, narration, durations});
+  // host episodes: recorded takes + per-line timing (tools/host/align.mjs), and Whisper word timings for captions
+  const hostFile = path.join(root, 'public/host', spec.code, 'host.json');
+  const host = spec.host && fs.existsSync(hostFile) ? JSON.parse(fs.readFileSync(hostFile, 'utf8')) : undefined;
+  const words = host?.words;
+  if (host) delete host.words;
+  out.push({spec, narration, durations, ...(host ? {host} : {}), ...(words ? {words} : {})});
   process.stderr.write(`${spec.id}: ${narration.length} lines, ${Object.keys(durations).length} measured\n`);
 }
 fs.writeFileSync(path.join(root, 'src/episodes/registry.generated.ts'),

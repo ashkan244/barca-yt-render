@@ -3,6 +3,8 @@ studio/build/
 studio/out/
 studio/.audio-tmp/
 studio/public/audio/*
+studio/public/host/
+studio/public/host-raw/
 !studio/public/audio/hooktx/
 !studio/public/audio/hookfs/
 .env

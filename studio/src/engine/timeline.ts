@@ -17,8 +17,14 @@ export const expandLines = (spec: string | string[] | undefined, order: string[]
   return order.slice(i, j + 1);
 };
 
+/** Recorded host takes (public/host/<CODE>/host.json, from tools/host/align.mjs). Times in seconds. */
+export type HostManifest = {
+  takes: Record<string, {file: string; start: number; end: number}>; // usable span inside the clip
+  lines: Record<string, {s: number; e: number}>; // relative to the take's start
+};
+
 /** Build absolute frame timings for every scene and narration line. */
-export const plan = (ep: EpisodeSpec, narration: NarrationLine[], durations: Record<string, number>): Plan => {
+export const plan = (ep: EpisodeSpec, narration: NarrationLine[], durations: Record<string, number>, host?: HostManifest): Plan => {
   const order = narration.map((l) => l.id);
   const byId = new Map(narration.map((l) => [l.id, l]));
   const estimate = (text: string) => Math.max(1, text.split(/\s+/).length / 2.35); // ~141 wpm fallback
@@ -28,6 +34,19 @@ export const plan = (ep: EpisodeSpec, narration: NarrationLine[], durations: Rec
   for (const scene of ep.scenes) {
     const ids = expandLines(scene.lines, order);
     const from = cursor;
+    // a recorded take decides the scene length and where each line falls
+    const take = scene.take ? host?.takes[scene.take] : undefined;
+    if (take) {
+      const lines = ids.map((id) => {
+        const h = host!.lines[id] ?? {s: 0, e: 0.5};
+        return {id, text: byId.get(id)?.text ?? '', from: from + Math.round(h.s * FPS), len: Math.max(1, Math.round((h.e - h.s) * FPS))};
+      });
+      const dur = Math.round((take.end - take.start) * FPS);
+      scenes.push({scene, from, dur, lines});
+      all.push(...lines);
+      cursor += dur;
+      continue;
+    }
     let t = Math.round((scene.lead ?? (ids.length ? 0.15 : 0)) * FPS);
     const lines: LineTiming[] = [];
     for (const id of ids) {

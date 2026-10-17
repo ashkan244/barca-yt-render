@@ -9,7 +9,7 @@ export const BRAND = {
 };
 
 /** Logo mark: a chalk "player token" with the CF monogram (same language as the tactics boards). */
-export const Mark: React.FC<{size: number}> = ({size}) => (
+export const Mark: React.FC<{size: number; brand?: 'culer' | 'radar'}> = ({size, brand = 'culer'}) => (
   <svg width={size} height={size} viewBox="0 0 200 200">
     <defs>
       <filter id="markchalk" x="-10%" y="-10%" width="120%" height="120%">
@@ -17,10 +17,10 @@ export const Mark: React.FC<{size: number}> = ({size}) => (
         <feDisplacementMap in="SourceGraphic" in2="n" scale="2.5" />
       </filter>
     </defs>
-    <circle cx="100" cy="100" r="86" fill={C.blau} />
+    <circle cx="100" cy="100" r="86" fill={brand === 'radar' ? '#0b1220' : C.blau} />
     <circle cx="100" cy="100" r="86" fill="none" stroke={C.grana} strokeWidth="16" filter="url(#markchalk)" />
     <circle cx="100" cy="100" r="66" fill="none" stroke={C.gold} strokeWidth="3" strokeDasharray="8 7" opacity="0.9" />
-    <text x="100" y="124" textAnchor="middle" fontFamily={DISPLAY} fontSize="74" fill="#fff" letterSpacing="2">CF</text>
+    <text x="100" y="124" textAnchor="middle" fontFamily={DISPLAY} fontSize="74" fill={brand === 'radar' ? C.gold : '#fff'} letterSpacing="2">{brand === 'radar' ? 'BR' : 'CF'}</text>
   </svg>
 );
 

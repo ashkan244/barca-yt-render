@@ -358,7 +358,7 @@ const EndScreen: React.FC<P> = ({st}) => {
       {[[160, 380], [1000, 380]].map(([x, y], i) => (
         <div key={i} style={{position: 'absolute', left: x, top: y, width: 760, height: 428, border: `5px dashed ${C.chalkDim}`, borderRadius: 18}} />
       ))}
-      <div style={{position: 'absolute', left: 860, top: 860}}><Mark size={200} /></div>
+      <div style={{position: 'absolute', left: 860, top: 860}}><Mark size={200} brand={s.brand} /></div>
     </AbsoluteFill>
   );
 };

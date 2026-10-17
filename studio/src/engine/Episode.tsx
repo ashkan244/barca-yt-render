@@ -4,10 +4,11 @@ import {ChalkDefs, Grain, clamp} from '../lib';
 import {LineCaption, type WordTiming} from './Captions';
 import {SceneView} from './Scenes';
 import {CamRig, Enter, Exit, Ambience, transitionFor, XF} from './Motion';
-import {plan, resolveT, type Plan} from './timeline';
+import {plan, resolveT, type Plan, type HostManifest} from './timeline';
+import {HostStage} from './Host';
 import type {EpisodeSpec, NarrationLine} from './types';
 
-export type EpisodeData = {spec: EpisodeSpec; narration: NarrationLine[]; durations: Record<string, number>; captions?: boolean; words?: Record<string, WordTiming[]>};
+export type EpisodeData = {spec: EpisodeSpec; narration: NarrationLine[]; durations: Record<string, number>; captions?: boolean; words?: Record<string, WordTiming[]>; host?: HostManifest};
 
 // distance (frames) from f to the nearest narration line (0 while speaking)
 const gapAt = (p: Plan, f: number) => {
@@ -46,9 +47,10 @@ const Music: React.FC<{tracks: string[]; p: Plan}> = ({tracks, p}) => {
   );
 };
 
-export const Episode: React.FC<EpisodeData> = ({spec, narration, durations, captions, words}) => {
+export const Episode: React.FC<EpisodeData> = ({spec, narration, durations, captions, words, host}) => {
   const showCaptions = captions ?? spec.captions ?? false;
-  const p = plan(spec, narration, durations);
+  const p = plan(spec, narration, durations, host);
+  const recorded = (take?: string) => !!(take && host?.takes[take]);
   const tracks = !spec.music ? [] : Array.isArray(spec.music) ? spec.music : [spec.music];
   return (
     <AbsoluteFill style={{background: '#0d1311'}}>
@@ -60,9 +62,13 @@ export const Episode: React.FC<EpisodeData> = ({spec, narration, durations, capt
           <Sequence key={i} from={st.from} durationInFrames={st.dur + (i < p.scenes.length - 1 ? XF : 0)}>
             <Exit kind={exit} dur={st.dur}>
               <Enter kind={enter}>
-                <CamRig st={st} index={i}>
-                  <SceneView st={st} />
-                </CamRig>
+                {spec.host ? (
+                  <HostStage code={spec.code} take={st.scene.take} host={host} scene={st.scene} dur={st.dur}>
+                    {st.scene.host === 'split' ? <SceneView st={st} /> : <CamRig st={st} index={i}><SceneView st={st} /></CamRig>}
+                  </HostStage>
+                ) : (
+                  <CamRig st={st} index={i}><SceneView st={st} /></CamRig>
+                )}
               </Enter>
             </Exit>
             {(st.scene.sfx ?? []).map((s, k) => (
@@ -76,10 +82,11 @@ export const Episode: React.FC<EpisodeData> = ({spec, narration, durations, capt
           </Sequence>
         );
       })}
-      <Ambience total={p.total} />
+      {!spec.host && <Ambience total={p.total} />}
       {p.lines.map((l) => (
         <Sequence key={l.id} from={l.from} durationInFrames={l.len + 2}>
-          <Audio src={staticFile(`audio/${spec.code}/${l.id}.wav`)} />
+          {/* TTS voice, unless this line belongs to a recorded presenter take (its audio comes with the video) */}
+          {!recorded(p.scenes.find((s) => s.lines.includes(l))?.scene.take) && <Audio src={staticFile(`audio/${spec.code}/${l.id}.wav`)} />}
           {showCaptions && <LineCaption line={l} words={words?.[l.id]} />}
         </Sequence>
       ))}
@@ -89,4 +96,4 @@ export const Episode: React.FC<EpisodeData> = ({spec, narration, durations, capt
   );
 };
 
-export const episodeFrames = (d: EpisodeData) => plan(d.spec, d.narration, d.durations).total;
+export const episodeFrames = (d: EpisodeData) => plan(d.spec, d.narration, d.durations, d.host).total;

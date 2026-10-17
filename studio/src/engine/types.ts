@@ -13,6 +13,8 @@ export type BaseScene = {
   lead?: number; // seconds before the first line (default 0.3)
   sfx?: {name: string; at: T; volume?: number}[];
   bg?: 'board' | 'slate' | 'navy' | 'paper';
+  host?: 'full' | 'split' | 'pip' | 'off'; // host episodes: how the presenter appears in this scene
+  take?: string; // host episodes: recorded clip id, e.g. HA-T03
 };
 
 export type BoardScene = BaseScene & {
@@ -48,7 +50,7 @@ export type Scene =
   | (BaseScene & {type: 'bars'; title?: string; unit?: string; tag?: string; bars: {label: string; value: number; highlight?: boolean}[]; note?: string})
   | (BaseScene & {type: 'statement'; text: string; accent?: string; small?: string})
   | (BaseScene & {type: 'question'; text: string; options?: string[]})
-  | (BaseScene & {type: 'endscreen'; next?: string})
+  | (BaseScene & {type: 'endscreen'; next?: string; brand?: 'culer' | 'radar'})
   | (BaseScene & {type: 'gallery'; style?: PhotoStyle; photos: GalleryPhoto[]})
   | (BaseScene & {type: 'duo'; title?: string; style?: PhotoStyle; left: DuoCard; right: DuoCard; at?: T; divider?: string})
   | (BaseScene & {type: 'collage'; title?: string; style?: PhotoStyle; credit?: string; photos: {src: string; at: T; label?: string; rot?: number; style?: PhotoStyle}[]; spot?: {i: number; at: T; until?: T}[]});
@@ -73,5 +75,7 @@ export type EpisodeSpec = {
   music?: string | string[]; // public/music/<file>; a list = one track per chapter (cycled)
   thumb?: Thumb;
   captions?: boolean; // burned-in phrase captions (image-led formats, Shorts)
+  host?: boolean; // presenter-led episode (own recorded video replaces TTS)
+  brand?: 'culer' | 'radar'; // channel: culer = The Culer Files (faceless), radar = Barça Radar (presenter)
   scenes: Scene[];
 };
