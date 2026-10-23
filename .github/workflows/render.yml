@@ -55,6 +55,14 @@ jobs:
       - name: Install studio
         working-directory: studio
         run: npm ci --no-audit --no-fund
+      - name: Decrypt presenter footage (encrypted in repo, key in secrets)
+        if: ${{ hashFiles('assets/host/*.enc.part*') != '' }}
+        env:
+          HOST_KEY: ${{ secrets.HOST_KEY }}
+        working-directory: .
+        run: |
+          for p in $(ls assets/host/*.enc.part000); do f=${p%.part000}; cat "$f".part* > "$f"; b=$(basename "$f" .enc); code=${b%%-*}; mkdir -p studio/public/host/$code
+            openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -pass env:HOST_KEY -in "$f" -out studio/public/host/$code/$b; done
       - name: Registry, bundle, plan, metadata
         id: plan
         working-directory: studio
@@ -68,6 +76,7 @@ jobs:
             npx remotion still build '${{ inputs.composition }}-thumb' out/meta/${{ inputs.composition }}-thumb.png --image-format=png || true
           fi
           if [ -n "${{ inputs.code }}" ]; then cp -r public/audio/${{ inputs.code }} out/meta/audio-${{ inputs.code }}; fi
+          rm -rf build/public/host build/public/host-raw   # footage never leaves the runner inside an artifact
       - uses: actions/upload-artifact@v4
         with:
           name: bundle
@@ -107,6 +116,14 @@ jobs:
         with:
           name: bundle
           path: studio/build
+      - name: Decrypt presenter footage (encrypted in repo, key in secrets)
+        if: ${{ hashFiles('assets/host/*.enc.part*') != '' }}
+        env:
+          HOST_KEY: ${{ secrets.HOST_KEY }}
+        working-directory: .
+        run: |
+          for p in $(ls assets/host/*.enc.part000); do f=${p%.part000}; cat "$f".part* > "$f"; b=$(basename "$f" .enc); code=${b%%-*}; mkdir -p studio/build/public/host/$code
+            openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -pass env:HOST_KEY -in "$f" -out studio/build/public/host/$code/$b; done
       - name: Render chunk ${{ matrix.index }} (frames ${{ matrix.start }}-${{ matrix.end }})
         run: |
           start=$(date +%s)

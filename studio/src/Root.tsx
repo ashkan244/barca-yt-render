@@ -9,6 +9,7 @@ import {EpisodeThumb} from './engine/Thumb';
 import {EPISODES} from './episodes/registry.generated';
 import {SHORT_COMPONENTS} from './shorts';
 import {SHORTS} from './shorts/data.generated';
+import {HKRadar, HK_FRAMES} from './radar/HKTitle';
 
 export const Root: React.FC = () => (
   <>
@@ -21,6 +22,7 @@ export const Root: React.FC = () => (
     {SHORTS.filter((d) => SHORT_COMPONENTS[d.id]).map((d) => (
       <Composition key={d.id} id={d.id} component={SHORT_COMPONENTS[d.id]} durationInFrames={d.total} fps={30} width={1080} height={1920} defaultProps={{d}} />
     ))}
+    <Composition id="HK-RADAR" component={HKRadar} durationInFrames={HK_FRAMES} fps={30} width={1920} height={1080} />
     <Composition id="TX-Hook-OneStep" component={TacticsHook} durationInFrames={HOOK_FRAMES} fps={30} width={1920} height={1080} />
     <Composition id="FS-Hook-Cruyff" component={StoryHook} durationInFrames={STORY_FRAMES} fps={30} width={1920} height={1080} />
     <Still id="Thumb-FS-Cruyff" component={ThumbFS} width={1280} height={720} />
