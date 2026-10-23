@@ -21,6 +21,10 @@ on:
         description: H.264 CRF (lower = higher quality)
         required: true
         default: '20'
+      prep:
+        description: "Presenter cut + matte: CODE|LINES|NAME (e.g. HK|L01-L03,L41-L46|RS3). Empty = none"
+        required: false
+        default: ''
 
 jobs:
   plan:
@@ -63,6 +67,25 @@ jobs:
         run: |
           for p in $(ls assets/host/*.enc.part000); do f=${p%.part000}; cat "$f".part* > "$f"; b=$(basename "$f" .enc); code=${b%%-*}; mkdir -p studio/public/host/$code
             openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -pass env:HOST_KEY -in "$f" -out studio/public/host/$code/$b; done
+      - name: Presenter cut + AI matte (Robust Video Matting, CPU)
+        if: ${{ inputs.prep != '' }}
+        env:
+          HOST_KEY: ${{ secrets.HOST_KEY }}
+        working-directory: .
+        run: |
+          IFS='|' read -r CODE LINES NAME <<< "${{ inputs.prep }}"
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install -q onnxruntime numpy
+          node tools/host/prep-cut.mjs "$CODE" "$LINES" "studio/public/host/$CODE/$CODE-$NAME.mp4"
+          python tools/host/matte.py "studio/public/host/$CODE/$CODE-$NAME.mp4" "studio/public/host/$CODE/$CODE-$NAME-matte.webm"
+          mkdir -p prep && tar -C studio/public/host -cf prep/prep.tar "$CODE/$CODE-$NAME.mp4" "$CODE/$CODE-$NAME-matte.webm"
+          openssl enc -aes-256-cbc -pbkdf2 -iter 200000 -salt -pass env:HOST_KEY -in prep/prep.tar -out prep/prep.tar.enc && rm prep/prep.tar
+      - uses: actions/upload-artifact@v4
+        if: ${{ inputs.prep != '' }}
+        with:
+          name: prep-enc
+          path: prep/prep.tar.enc
+          retention-days: 1
       - name: Registry, bundle, plan, metadata
         id: plan
         working-directory: studio
@@ -124,6 +147,19 @@ jobs:
         run: |
           for p in $(ls assets/host/*.enc.part000); do f=${p%.part000}; cat "$f".part* > "$f"; b=$(basename "$f" .enc); code=${b%%-*}; mkdir -p studio/build/public/host/$code
             openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -pass env:HOST_KEY -in "$f" -out studio/build/public/host/$code/$b; done
+      - uses: actions/download-artifact@v4
+        if: ${{ inputs.prep != '' }}
+        with:
+          name: prep-enc
+          path: prep
+      - name: Decrypt presenter cut + matte
+        if: ${{ inputs.prep != '' }}
+        env:
+          HOST_KEY: ${{ secrets.HOST_KEY }}
+        working-directory: .
+        run: |
+          openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -pass env:HOST_KEY -in prep/prep.tar.enc -out prep/prep.tar
+          mkdir -p studio/build/public/host && tar -C studio/build/public/host -xf prep/prep.tar && rm prep/prep.tar
       - name: Render chunk ${{ matrix.index }} (frames ${{ matrix.start }}-${{ matrix.end }})
         run: |
           start=$(date +%s)
