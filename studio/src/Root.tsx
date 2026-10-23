@@ -7,6 +7,8 @@ import {Banner, Avatar, Watermark} from './Branding';
 import {Episode, episodeFrames} from './engine/Episode';
 import {EpisodeThumb} from './engine/Thumb';
 import {EPISODES} from './episodes/registry.generated';
+import {SHORT_COMPONENTS} from './shorts';
+import {SHORTS} from './shorts/data.generated';
 
 export const Root: React.FC = () => (
   <>
@@ -15,6 +17,9 @@ export const Root: React.FC = () => (
         <Composition id={d.spec.id} component={Episode} durationInFrames={Math.max(30, episodeFrames(d))} fps={30} width={1920} height={1080} defaultProps={d} />
         {d.spec.thumb && <Still id={`${d.spec.id}-thumb`} component={EpisodeThumb} width={1280} height={720} defaultProps={{t: d.spec.thumb}} />}
       </React.Fragment>
+    ))}
+    {SHORTS.filter((d) => SHORT_COMPONENTS[d.id]).map((d) => (
+      <Composition key={d.id} id={d.id} component={SHORT_COMPONENTS[d.id]} durationInFrames={d.total} fps={30} width={1080} height={1920} defaultProps={{d}} />
     ))}
     <Composition id="TX-Hook-OneStep" component={TacticsHook} durationInFrames={HOOK_FRAMES} fps={30} width={1920} height={1080} />
     <Composition id="FS-Hook-Cruyff" component={StoryHook} durationInFrames={STORY_FRAMES} fps={30} width={1920} height={1080} />
