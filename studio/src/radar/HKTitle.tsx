@@ -362,3 +362,23 @@ export const HKRadar: React.FC = () => (
     </>}
     endScreen={<End />} />
 );
+
+/** YouTube thumbnail 1280×720 (rendered as a still). */
+export const HKThumb: React.FC = () => {
+  const {Img, staticFile} = require('remotion') as typeof import('remotion');
+  return (
+    <AbsoluteFill style={{background: `linear-gradient(120deg, ${NAVY} 0%, #1a1446 55%, ${GRANA} 100%)`}}>
+      <AbsoluteFill style={{backgroundImage: 'radial-gradient(circle at 78% 50%, #f2c23030 0%, transparent 45%)'}} />
+      <div style={{position: 'absolute', left: 40, top: 60, width: 600, height: 600, borderRadius: 34, overflow: 'hidden', border: `8px solid ${GOLD}`, transform: 'rotate(-3deg)', boxShadow: '0 30px 80px #000'}}>
+        <Img src={staticFile('host/HK/thumb-face.jpg')} style={{width: '100%', height: '100%', objectFit: 'cover', transform: 'scale(1.18)', transformOrigin: '50% 30%'}} />
+      </div>
+      <div style={{position: 'absolute', left: 690, top: 40, width: 560}}>
+        <div style={{fontFamily: DISPLAY, fontSize: 280, color: GOLD, lineHeight: 0.9, textShadow: '0 10px 0 #0008'}}>2–0</div>
+        <div style={{fontFamily: DISPLAY, fontSize: 104, color: '#fff', lineHeight: 0.95}}>CHAMPIONS</div>
+        <div style={{fontFamily: DISPLAY, fontSize: 104, color: '#fff', lineHeight: 0.95}}>v MADRID</div>
+        <div style={{marginTop: 22, display: 'inline-block', fontFamily: DISPLAY, fontSize: 52, color: '#fff', background: RED, padding: '4px 22px', borderRadius: 12, transform: 'rotate(-3deg)'}}>FIRST TIME EVER</div>
+      </div>
+      <div style={{position: 'absolute', right: 26, bottom: 22}}><Mark size={96} brand="radar" /></div>
+    </AbsoluteFill>
+  );
+};

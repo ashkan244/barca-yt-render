@@ -9,7 +9,8 @@ import {EpisodeThumb} from './engine/Thumb';
 import {EPISODES} from './episodes/registry.generated';
 import {SHORT_COMPONENTS} from './shorts';
 import {SHORTS} from './shorts/data.generated';
-import {HKRadar, HK_FRAMES} from './radar/HKTitle';
+import {HKRadar, HK_FRAMES, HKThumb} from './radar/HKTitle';
+import {HKShortCut, HK_RS1_FRAMES, HKShortStats, HK_RS2_FRAMES} from './radar/HKShorts';
 
 export const Root: React.FC = () => (
   <>
@@ -22,6 +23,9 @@ export const Root: React.FC = () => (
     {SHORTS.filter((d) => SHORT_COMPONENTS[d.id]).map((d) => (
       <Composition key={d.id} id={d.id} component={SHORT_COMPONENTS[d.id]} durationInFrames={d.total} fps={30} width={1080} height={1920} defaultProps={{d}} />
     ))}
+    <Still id="HK-RADAR-thumb" component={HKThumb} width={1280} height={720} />
+    <Composition id="HK-RS1-CUT" component={HKShortCut} durationInFrames={HK_RS1_FRAMES} fps={30} width={1080} height={1920} />
+    <Composition id="HK-RS2-STATS" component={HKShortStats} durationInFrames={HK_RS2_FRAMES} fps={30} width={1080} height={1920} />
     <Composition id="HK-RADAR" component={HKRadar} durationInFrames={HK_FRAMES} fps={30} width={1920} height={1080} />
     <Composition id="TX-Hook-OneStep" component={TacticsHook} durationInFrames={HOOK_FRAMES} fps={30} width={1920} height={1080} />
     <Composition id="FS-Hook-Cruyff" component={StoryHook} durationInFrames={STORY_FRAMES} fps={30} width={1920} height={1080} />
