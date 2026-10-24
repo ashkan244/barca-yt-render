@@ -1,4 +1,4 @@
-// "Why is it called El Clásico?" — vertical Explainer Short (1080×1920).
+// "Why is it called El Clásico?" — vertical Explainer Short (1080×1920) for Barça Radar.
 // Look: dark charcoal vignette, one flat illustration per narration beat (kits, shields, ticket card, crown, trophy,
 // archive photo), phrase captions under the visual; the picture changes every 2–4 s, keyed to the narrator's words.
 // Timeline: src/explainer/clasico.timing.json (scripts/gen-explainer.mjs) — placeholder voice or the final ElevenLabs take.
@@ -509,8 +509,8 @@ export const ClasicoExplainer: React.FC = () => {
       })}
       <Caption f={frame} />
       <div style={{position: 'absolute', left: 60, top: 150, display: 'flex', alignItems: 'center', gap: 14, opacity: 0.85}}>
-        <Mark size={58} />
-        <div style={{fontFamily: SANS, fontWeight: 900, fontSize: 26, letterSpacing: 4, color: K.ink}}>THE CULER FILES</div>
+        <Mark size={58} brand="radar" />
+        <div style={{fontFamily: SANS, fontWeight: 900, fontSize: 26, letterSpacing: 4, color: K.ink}}>BARÇA RADAR</div>
       </div>
       <Grain opacity={0.05} />
       <Audio src={staticFile('music/km/investigations.mp3')} volume={musicVol} />
