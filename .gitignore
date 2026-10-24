@@ -8,5 +8,6 @@ studio/public/host-raw/
 !studio/public/audio/hooktx/
 !studio/public/audio/hookfs/
 !studio/public/audio/shorts/
+!studio/public/audio/explainer/
 .env
 *.log
