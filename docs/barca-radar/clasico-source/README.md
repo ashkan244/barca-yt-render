@@ -47,6 +47,8 @@ These are local browser-rendered review images, not the uploaded historical refe
 | Output | Run | Commit | Status |
 |---|---|---|---|
 | Short (single-job workflow) | [40317053776](https://github.com/ashkan244/barca-yt-render/actions/runs/40317053776) | d52a6d8 | success: render, structural/decode QC step and artifact upload (artifact 12648532181, expires 2026-11-09) |
+| SHORT · LONG · CLIP-PRESS · CLIP-HIGH-LINE · CLIP-MARTIN (engine v2, parallel) | [40333096666](https://github.com/ashkan244/barca-yt-render/actions/runs/40333096666) | a527da0 | success, all QC passed: exact 30fps, full decode; SHORT 175.000s −16.02 LUFS / −2.89 dBTP; LONG 1920×1080 195.000s −16.02 LUFS / −2.87 dBTP. Artifacts expire 2026-11-25. Review images: [renders/](renders/README.md) |
+| ARCHIVE (archive split, Commons B-roll) | [40327521320](https://github.com/ashkan244/barca-yt-render/actions/runs/40327521320) | bd3f993 | success, QC passed: 1080×1920 30fps 175s, −16.03 LUFS / −2.37 dBTP; package includes CREDITS.md + licenses.tsv |
 
 The engine refactor reproduces this Short pixel-identically (18 sampled frames + cover compared at zero difference against the pre-refactor bundle).
 
