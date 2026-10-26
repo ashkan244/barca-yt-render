@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "episode": "PSG-4-2",
+  "updated": "2026-10-26",
+  "narration_policy": "user_supplied_script_fixed; no silent rewrite",
+  "planned_outputs": [
+    {
+      "id": "HO-RADAR",
+      "state": "existing_composition_to_upgrade",
+      "width": 1920,
+      "height": 1080,
+      "fps": 30
+    },
+    {
+      "id": "HO-RS1-CARRY",
+      "state": "planned_not_registered",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30
+    }
+  ],
+  "items": [
+    {
+      "id": "presenter-input",
+      "status": "downloaded_local_content_not_aligned",
+      "publish_raw": false,
+      "reference": "source-metadata.json"
+    },
+    {
+      "id": "previous-edl",
+      "status": "available_reference_only",
+      "path": "studio/src/radar/HO.edit.json",
+      "duration_s": 448.19
+    },
+    {
+      "id": "recorded-outro",
+      "status": "not_in_previous_edl_check_new_input"
+    },
+    {
+      "id": "host-encryption",
+      "status": "existing_scheme",
+      "path": "assets/host/*.enc.part*",
+      "key": "HOST_KEY via GitHub Actions secret; availability unverified; never commit value"
+    },
+    {
+      "id": "fonts",
+      "status": "installed_package_remote_font_requests_previously_blocked",
+      "families": [
+        "Anton",
+        "Inter",
+        "Permanent Marker"
+      ],
+      "action": "Verify runtime; consider licensed local files in implementation"
+    },
+    {
+      "id": "music",
+      "status": "existing_files_license_attribution_review_before_delivery",
+      "path": "studio/public/music/km",
+      "license_path": "studio/public/music/km/LICENSE.txt"
+    },
+    {
+      "id": "sfx",
+      "status": "existing_files",
+      "path": "studio/public/sfx"
+    },
+    {
+      "id": "match-evidence",
+      "status": "not_provided",
+      "action": "See evidence-register.csv; diagrams can be labelled schematic"
+    },
+    {
+      "id": "tactical-graphics",
+      "status": "existing_board_new_scenes_planned",
+      "path": "studio/src/radar/Tactics.tsx"
+    },
+    {
+      "id": "short-matte",
+      "status": "optional_not_generated",
+      "action": "Use source frame if matte quality is inadequate"
+    },
+    {
+      "id": "thumbnail-face",
+      "status": "select_from_new_input_later",
+      "publish_raw": false
+    },
+    {
+      "id": "interactive-storyboard",
+      "status": "illustrative_concept_browser_checked",
+      "path": "docs/barca-radar/psg-4-2/storyboard/index.html"
+    }
+  ]
+}

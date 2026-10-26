@@ -1,0 +1,29 @@
+{
+  "observed_on": "2026-10-26",
+  "display_name": "Barca radar clip 3",
+  "download_state": "downloaded_and_probed",
+  "duration_s": 175.0,
+  "bytes": 123482918,
+  "sha256": "8b558736590ffa4297a2b2df4aa8d007042472738cb141085cb4b9eac03a29c1",
+  "streams": [
+    {
+      "index": 0,
+      "codec_name": "hevc",
+      "codec_type": "video",
+      "width": 720,
+      "height": 720,
+      "r_frame_rate": "30/1"
+    },
+    {
+      "index": 1,
+      "codec_name": "aac",
+      "codec_type": "audio",
+      "sample_rate": "44100",
+      "channels": 2,
+      "r_frame_rate": "0/0"
+    }
+  ],
+  "content_alignment": "not_checked",
+  "coverage": "175s differs from previous 448.19s edit; do not assume complete narration",
+  "storage": "local outside checkout; Drive URL and raw media not committed"
+}

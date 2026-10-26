@@ -1,0 +1,16 @@
+evidence_id,lines,claim,status,required_support,display_rule
+E01,L01,11 consecutive wins,not_reverified,Fixture results and competition scope,Narration basis; no fabricated fixture list
+E02,L03-L04,PSG 4–2 Barça; date and player participation,not_reverified,Authoritative match report and lineups,No invented date or lineup
+E03,L08-L09,4–4–2 press and passing-lane closure,not_reverified,Several sequences in the stated game phase,Schematic ILLUSTRATION unless reconstructed from verified frames
+E04,L12-L14,Cancelo/Pedri turnovers and missed overlap,not_reverified,Exact match sequences,No invented timestamp or player coordinates
+E05,L17-L20,Central carries disrupt marking,analytical_hypothesis,Match examples including defensive response,Show schematic mechanism; not continuous tracking
+E06,L21-L22,Yamal movement and both goal sequences,not_reverified,Full build-ups of both goals,Do not label assumed coordinates as measured
+E07,L25,De Jong fully fit counterfactual,counterfactual,Availability if stated as fact,ANALYST'S ALTERNATIVE; no guaranteed different outcome
+E08,L26-L28,"Olmo injury, exit and role",not_reverified,Substitution report and examples,Minute label only once supported
+E09,L30-L31,Fermin chip and Raphinha chance,not_reverified,Match clips or reliable report,No fictional distance or shot value
+E10,L36-L38,Recovery speed; nine PSG players,not_reverified,Time-aligned clips with adequate visible area,No invented seconds or exact count
+E11,L40-L41,Clearance before third goal; weak-foot block,not_reverified,Goal footage and suitable camera angle,No invented foot/angle annotation
+E12,L43-L45,Neves coverage enables Pacho tracking,analytical_hypothesis,Several examples,Opinion clearly belongs to presenter
+E13,L46-L48,PSG 4.7 and Barça 1.2 xGOT,provider_missing,"Named provider, match, full-time scope and metric definition",Label xGOT; never substitute xG or fabricate provider
+E14,L49,Defensive errors explain outcome,presenter_conclusion,Whole argument; numbers alone are insufficient,"Conclusion graphic, not statistical proof"
+E15,OUTRO-QUESTION,Previous Betis game affected match,audience_question,Workload/selection evidence if visualized,Question only; no fabricated causal claim
