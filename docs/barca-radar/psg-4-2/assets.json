@@ -21,10 +21,16 @@
   ],
   "items": [
     {
-      "id": "presenter-input",
-      "status": "downloaded_local_content_not_aligned",
+      "id": "short-presenter-input",
+      "status": "downloaded_local_user_confirmed_short_recording_not_aligned",
       "publish_raw": false,
       "reference": "source-metadata.json"
+    },
+    {
+      "id": "long-presenter-input",
+      "status": "awaiting_separate_user_file",
+      "publish_raw": false,
+      "action": "Use script.en.md and previous HO edit as planning references; do not replace long input with short recording"
     },
     {
       "id": "previous-edl",

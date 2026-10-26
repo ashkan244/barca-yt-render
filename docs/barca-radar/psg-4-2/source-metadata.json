@@ -24,6 +24,8 @@
     }
   ],
   "content_alignment": "not_checked",
-  "coverage": "175s differs from previous 448.19s edit; do not assume complete narration",
-  "storage": "local outside checkout; Drive URL and raw media not committed"
+  "coverage": "Source for the Short, not the long video. Long presenter recording will be supplied separately. Source duration does not establish final edited duration.",
+  "storage": "local outside checkout; Drive URL and raw media not committed",
+  "role": "short_presenter_recording",
+  "role_confirmed_by": "user"
 }
