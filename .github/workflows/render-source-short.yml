@@ -44,10 +44,11 @@ jobs:
           CHROME_PATH=$(command -v google-chrome || command -v chromium || true)
           if [ -z "$CHROME_PATH" ]; then
             npx remotion browser ensure
-            npx remotion render src/index.ts CLASICO-SOURCE-SHORT out/CLASICO-SOURCE-SHORT.render.mp4 --concurrency=2 --crf=18 --codec=h264 --audio-codec=aac --audio-bitrate=192k
+            npx remotion render src/index.ts CLASICO-SOURCE-SHORT out/CLASICO-SOURCE-SHORT.render.mp4 --concurrency=2 --crf=18 --codec=h264 --pixel-format=yuv420p --color-space=bt709 --image-format=png --audio-codec=aac --audio-bitrate=192k
           else
-            npx remotion render src/index.ts CLASICO-SOURCE-SHORT out/CLASICO-SOURCE-SHORT.render.mp4 --browser-executable="$CHROME_PATH" --concurrency=2 --crf=18 --codec=h264 --audio-codec=aac --audio-bitrate=192k
+            npx remotion render src/index.ts CLASICO-SOURCE-SHORT out/CLASICO-SOURCE-SHORT.render.mp4 --browser-executable="$CHROME_PATH" --concurrency=2 --crf=18 --codec=h264 --pixel-format=yuv420p --color-space=bt709 --image-format=png --audio-codec=aac --audio-bitrate=192k
           fi
+          npx remotion still src/index.ts CLASICO-SOURCE-COVER out/CLASICO-SOURCE-COVER.png
           ffmpeg -v error -y -i out/CLASICO-SOURCE-SHORT.render.mp4 -c copy -movflags +faststart out/CLASICO-SOURCE-SHORT.mp4
       - name: QC and posting packet
         run: |
@@ -61,6 +62,7 @@ jobs:
           name: clasico-source-short-${{ github.sha }}
           path: |
             studio/out/CLASICO-SOURCE-SHORT.mp4
+            studio/out/CLASICO-SOURCE-COVER.png
             studio/out/CLASICO-SOURCE-SHORT.srt
             studio/out/quality.json
             studio/out/contact-sheet.jpg

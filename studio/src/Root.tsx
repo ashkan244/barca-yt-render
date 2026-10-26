@@ -1,5 +1,5 @@
 import React from 'react';
-import {ClasicoSourceShort, CLASICO_SOURCE_FRAMES} from './production/ClasicoSource';
+import {ClasicoSourceShort, ClasicoSourceCover, CLASICO_SOURCE_FRAMES} from './production/ClasicoSource';
 import {Composition, Still} from 'remotion';
 import {TacticsHook, HOOK_FRAMES} from './TacticsHook';
 import {StoryHook, STORY_FRAMES} from './StoryHook';
@@ -18,6 +18,7 @@ import {HORadar, HO_FRAMES, HOThumb} from './radar/HOTitle';
 
 export const Root: React.FC = () => (
   <>
+    <Still id="CLASICO-SOURCE-COVER" component={ClasicoSourceCover} width={1080} height={1920} />
     <Composition id="CLASICO-SOURCE-SHORT" component={ClasicoSourceShort} durationInFrames={CLASICO_SOURCE_FRAMES} fps={30} width={1080} height={1920} />
     {EPISODES.map((d) => (
       <React.Fragment key={d.spec.id}>

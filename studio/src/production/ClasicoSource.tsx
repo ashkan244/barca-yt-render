@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill, Audio, OffthreadVideo, interpolate, staticFile, useCurrentFrame} from 'remotion';
+import {AbsoluteFill, Audio, Img, OffthreadVideo, interpolate, staticFile, useCurrentFrame} from 'remotion';
 import {LOCAL_FONTS} from './fonts';
 import {ReviewedCaptions} from './Captions';
 import {TacticalPlate, type Player, type PlateArrow} from './TacticalPlate';
@@ -81,3 +81,11 @@ export const ClasicoSourceShort: React.FC = () => {
     <Audio src={staticFile('host/CLASICO/score.wav')} volume={(fr)=>.22*interpolate(fr,[0,60,CLASICO_SOURCE_FRAMES-75,CLASICO_SOURCE_FRAMES],[0,1,1,0],{extrapolateLeft:'clamp',extrapolateRight:'clamp'})}/>
   </AbsoluteFill>;
 };
+
+export const ClasicoSourceCover: React.FC = () => <AbsoluteFill style={{background:'#080e1b',color:'#fff',fontFamily:LOCAL_FONTS.body}}>
+  <div style={{position:'absolute',top:86,left:70,fontFamily:LOCAL_FONTS.display,fontSize:45}}>BARÇA <span style={{color:GOLD}}>RADAR</span></div>
+  <div style={{position:'absolute',top:180,left:70,color:GOLD,fontSize:26,fontWeight:800,letterSpacing:4}}>EL CLÁSICO · TACTICAL BREAKDOWN</div>
+  <div style={{position:'absolute',top:245,left:70,right:70,fontFamily:LOCAL_FONTS.display,fontSize:130,lineHeight:1.02}}>THE SPACE<br/><span style={{color:GOLD}}>BEHIND</span></div>
+  <div style={{position:'absolute',top:565,left:60}}><Plate scene={scenes[5]} f={1800}/></div>
+  <div style={{position:'absolute',left:110,top:1200,width:860,height:620,overflow:'hidden',borderRadius:26,border:'3px solid #f2c23080'}}><Img src={staticFile('host/CLASICO/cover.jpg')} style={{width:'100%',height:'100%',objectFit:'cover',objectPosition:'50% 25%'}}/></div>
+</AbsoluteFill>;

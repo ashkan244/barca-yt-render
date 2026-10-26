@@ -22,4 +22,4 @@ Fonts: Anton, Inter, Montserrat and Playfair Display under SIL Open Font License
 
 ## Cover direction
 
-Use a frame where the presenter is clearly visible with the title “THE SPACE BEHIND” and the high-line schematic. Avoid an unspoken score, historical photos or a fabricated reaction. Test readability at phone size. This is a cover direction, not a claim that a separate cover image has already been rendered.
+Use a frame where the presenter is clearly visible with the title “THE SPACE BEHIND” and the high-line schematic. Avoid an unspoken score, historical photos or a fabricated reaction. Test readability at phone size. A dedicated CLASICO-SOURCE-COVER still composition is included and the workflow exports its PNG alongside the video. Verify the actual artifact before claiming the image was delivered.

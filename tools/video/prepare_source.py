@@ -13,5 +13,6 @@ def main():
  f=f"highpass=f=75,loudnorm=I=-16:TP=-2:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true:print_format=json"
  final=cmd(['ffmpeg','-hide_banner','-y','-i',str(a.source),'-vn','-af',f,'-ar','48000','-c:a','pcm_s16le',str(a.output_dir/'voice.wav')])
  (a.output_dir/'voice-measurements.json').write_text(json.dumps({'first_pass':m,'second_pass':json.loads(re.search(r'\{\s*"input_i".*?\}',final.stderr,re.S).group(0))},indent=2))
- print('Prepared video and two-pass voice master. No cuts or time stretch applied.')
+ cmd(['ffmpeg','-v','error','-y','-ss','60','-i',str(a.source),'-frames:v','1','-q:v','2',str(a.output_dir/'cover.jpg')])
+ print('Prepared video, cover still and two-pass voice master. No cuts or time stretch applied.')
 if __name__=='__main__':main()
