@@ -29,3 +29,11 @@ The uploaded Persian historical video (96.731s, 720×1280) is a **style referenc
 The dedicated **Render source-aligned Short** workflow prepares this source, renders the registered composition, checks full decode/encoding/audio, and packages the MP4, SRT, QC sheet and posting notes. The existing encrypted HK/HO workflow is not used for this recording. Raw footage is neither committed nor uploaded as a delivery artifact.
 
 A workflow file is not a completed render. See review notes for actual run status and validation. The current rendering prepares a review candidate; uncertain spoken names require the presenter's final ear check before public posting.
+
+## Actual rendered previews
+
+These are local browser-rendered review images, not the uploaded historical reference and not proof of a completed GitHub artifact.
+
+[Cover preview](previews/cover.png) · [Selected-frame review sheet](previews/review-sheet.png)
+
+![Cover preview](previews/cover.png)
