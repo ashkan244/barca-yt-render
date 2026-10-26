@@ -1,12 +1,10 @@
 import React from 'react';
 import {AbsoluteFill, Audio, Sequence, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig, Easing} from 'remotion';
-import {loadFont as loadAnton} from '@remotion/google-fonts/Anton';
-import {loadFont as loadInter} from '@remotion/google-fonts/Inter';
-import {loadFont as loadMarker} from '@remotion/google-fonts/PermanentMarker';
+import {LOCAL_FONTS} from './production/fonts';
 
-export const {fontFamily: DISPLAY} = loadAnton('normal', {weights: ['400'], subsets: ['latin', 'latin-ext']});
-export const {fontFamily: BODY} = loadInter('normal', {weights: ['400', '600', '700', '800', '900'], subsets: ['latin', 'latin-ext']});
-export const {fontFamily: CHALK} = loadMarker('normal', {weights: ['400'], subsets: ['latin']});
+export const DISPLAY = LOCAL_FONTS.display;
+export const BODY = LOCAL_FONTS.body;
+export const CHALK = LOCAL_FONTS.marker;
 
 // Brand palette: club colours as accents on a slate "chalkboard"
 export const C = {

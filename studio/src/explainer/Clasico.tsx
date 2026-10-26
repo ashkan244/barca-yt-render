@@ -5,15 +5,14 @@
 // No club crests: generic shields in club colours. Photos: CC0 / public domain only (public/photos/*/licenses.tsv).
 import React from 'react';
 import {AbsoluteFill, Audio, Img, Sequence, interpolate, staticFile, useCurrentFrame, Easing} from 'remotion';
-import {loadFont as loadMontserrat} from '@remotion/google-fonts/Montserrat';
-import {loadFont as loadPlayfair} from '@remotion/google-fonts/PlayfairDisplay';
+import {LOCAL_FONTS} from '../production/fonts';
 import {DISPLAY, Grain, clamp} from '../lib';
 import {Mark} from '../Branding';
 import {pop, ramp, fade} from '../shorts/kit';
 import T from './clasico.timing.json';
 
-const {fontFamily: SANS} = loadMontserrat('normal', {weights: ['600', '800', '900'], subsets: ['latin', 'latin-ext']});
-const {fontFamily: SERIF} = loadPlayfair('normal', {weights: ['700', '900'], subsets: ['latin', 'latin-ext']});
+const SANS = LOCAL_FONTS.sans;
+const SERIF = LOCAL_FONTS.serif;
 
 const FPS = 30;
 const K = {bg: '#141414', ink: '#f4f1ea', dim: '#8d8a84', gold: '#d9b25f', blau: '#1d3f9a', grana: '#a3123a', paper: '#e8dcc0', paperInk: '#3a2f22', red: '#b8322a', line: '#2c2c2c'};

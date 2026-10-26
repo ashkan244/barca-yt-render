@@ -11,3 +11,9 @@ studio/public/host-raw/
 !studio/public/audio/explainer/
 .env
 *.log
+
+# Local video-production tools and caches
+__pycache__/
+.venv/
+.venvs/
+.video-cache/

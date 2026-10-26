@@ -1,0 +1,4 @@
+# Optional ASR dependencies; core media commands only need Python 3.11+ and ffmpeg.
+# PyAV 19 breaks faster-whisper 1.2.1 metadata_errors API; 16.0.1 verified here.
+faster-whisper==1.2.1
+av==16.0.1

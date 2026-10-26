@@ -1,0 +1,165 @@
+{
+  "method": "ASR comparison and contextual spelling normalization; no claim of human-ear certification",
+  "needs_human_confirmation": [
+    "Bernardo (ASR alternatives: Bernal, Bernando); not labeled on tactical board",
+    "Proper-name readings: Diomande, Espart, Gordon should be checked by the presenter before public posting"
+  ],
+  "corrections": [
+    {
+      "segment": 2,
+      "asr": "Cléon",
+      "caption": "Kylian",
+      "reason": "multi-pass spelling/word recognition correction, not a fact change"
+    },
+    {
+      "segment": 2,
+      "asr": "Billingham",
+      "caption": "Bellingham",
+      "reason": "multi-pass spelling/word recognition correction, not a fact change"
+    },
+    {
+      "segment": 3,
+      "asr": "the Amondas non -stop",
+      "caption": "Diomande's non-stop",
+      "reason": "multi-pass spelling/word recognition correction, not a fact change"
+    },
+    {
+      "segment": 3,
+      "asr": "Goular",
+      "caption": "Güler",
+      "reason": "multi-pass spelling/word recognition correction, not a fact change"
+    },
+    {
+      "segment": 4,
+      "asr": "Rudri",
+      "caption": "Rodri",
+      "reason": "multi-pass spelling/word recognition correction, not a fact change"
+    },
+    {
+      "segment": 6,
+      "asr": "set -up",
+      "caption": "setup",
+      "reason": "multi-pass spelling/word recognition correction, not a fact change"
+    },
+    {
+      "segment": 7,
+      "asr": "Diamande",
+      "caption": "Diomande",
+      "reason": "multi-pass spelling/word recognition correction, not a fact change"
+    },
+    {
+      "segment": 7,
+      "asr": "Billingham",
+      "caption": "Bellingham",
+      "reason": "multi-pass spelling/word recognition correction, not a fact change"
+    },
+    {
+      "segment": 9,
+      "asr": "allowing",
+      "caption": "space in",
+      "reason": "multi-pass spelling/word recognition correction, not a fact change"
+    },
+    {
+      "segment": 10,
+      "asr": "Diamande",
+      "caption": "Diomande",
+      "reason": "multi-pass spelling/word recognition correction, not a fact change"
+    },
+    {
+      "segment": 10,
+      "asr": "Camawinga",
+      "caption": "Camavinga",
+      "reason": "multi-pass spelling/word recognition correction, not a fact change"
+    },
+    {
+      "segment": 14,
+      "asr": "Lamy Amal.",
+      "caption": "Lamine Yamal.",
+      "reason": "multi-pass spelling/word recognition correction, not a fact change"
+    },
+    {
+      "segment": 15,
+      "asr": "Jane Hoisin",
+      "caption": "Dean Huijsen",
+      "reason": "multi-pass spelling/word recognition correction, not a fact change"
+    },
+    {
+      "segment": 15,
+      "asr": "interception",
+      "caption": "interceptions",
+      "reason": "multi-pass spelling/word recognition correction, not a fact change"
+    },
+    {
+      "segment": 16,
+      "asr": "Fermi",
+      "caption": "Fermín",
+      "reason": "multi-pass spelling/word recognition correction, not a fact change"
+    },
+    {
+      "segment": 17,
+      "asr": "Spart",
+      "caption": "Espart",
+      "reason": "multi-pass spelling/word recognition correction, not a fact change"
+    },
+    {
+      "segment": 18,
+      "asr": "Marco Corello.",
+      "caption": "Marc Cucurella.",
+      "reason": "multi-pass spelling/word recognition correction, not a fact change"
+    },
+    {
+      "segment": 20,
+      "asr": "also",
+      "caption": "although",
+      "reason": "multi-pass spelling/word recognition correction, not a fact change"
+    },
+    {
+      "segment": 24,
+      "asr": "well -rehearsed",
+      "caption": "well-rehearsed",
+      "reason": "multi-pass spelling/word recognition correction, not a fact change"
+    },
+    {
+      "segment": 25,
+      "asr": "Frankie Young",
+      "caption": "Frenkie de Jong",
+      "reason": "multi-pass spelling/word recognition correction, not a fact change"
+    },
+    {
+      "segment": 26,
+      "asr": "Danny",
+      "caption": "Dani",
+      "reason": "multi-pass spelling/word recognition correction, not a fact change"
+    },
+    {
+      "segment": 26,
+      "asr": "hand was",
+      "caption": "hands were",
+      "reason": "multi-pass spelling/word recognition correction, not a fact change"
+    },
+    {
+      "segment": 28,
+      "asr": "That",
+      "caption": "The",
+      "reason": "multi-pass spelling/word recognition correction, not a fact change"
+    },
+    {
+      "segment": 32,
+      "asr": "considered",
+      "caption": "conceded",
+      "reason": "multi-pass spelling/word recognition correction, not a fact change"
+    },
+    {
+      "segment": 33,
+      "asr": "a Lutruz sequel.",
+      "caption": "El Clásico.",
+      "reason": "multi-pass spelling/word recognition correction, not a fact change"
+    },
+    {
+      "segment": 36,
+      "asr": "Blingheim",
+      "caption": "Bellingham",
+      "reason": "multi-pass spelling/word recognition correction, not a fact change"
+    }
+  ]
+}

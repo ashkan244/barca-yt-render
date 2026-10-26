@@ -1,0 +1,70 @@
+name: Render source-aligned Short
+on:
+  workflow_dispatch:
+    inputs:
+      source_file_id:
+        description: Shared Drive source file ID (not a URL or credential)
+        required: true
+        type: string
+permissions:
+  contents: read
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    env:
+      SOURCE_SHA256: 8b558736590ffa4297a2b2df4aa8d007042472738cb141085cb4b9eac03a29c1
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: studio/package-lock.json
+      - name: Install media tools
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Verify media-tool checks
+        run: python -m unittest discover -s tools/video/tests -v
+      - name: Download and verify the original source
+        env:
+          SOURCE_FILE_ID: ${{ inputs.source_file_id }}
+        run: python tools/video/download_drive.py "$SOURCE_FILE_ID" /tmp/presenter-source.mov --sha256 "$SOURCE_SHA256"
+      - name: Prepare media without changing speech timing
+        run: |
+          python tools/video/prepare_source.py /tmp/presenter-source.mov --output-dir studio/public/host/CLASICO
+          python tools/video/make_score.py studio/public/host/CLASICO/score.wav --duration 175
+      - name: Install Studio and verify types
+        working-directory: studio
+        run: |
+          npm ci --no-audit --no-fund
+          npx tsc --noEmit
+      - name: Render vertical master
+        working-directory: studio
+        run: |
+          CHROME_PATH=$(command -v google-chrome || command -v chromium || true)
+          if [ -z "$CHROME_PATH" ]; then
+            npx remotion browser ensure
+            npx remotion render src/index.ts CLASICO-SOURCE-SHORT out/CLASICO-SOURCE-SHORT.render.mp4 --concurrency=2 --crf=18 --codec=h264 --audio-codec=aac --audio-bitrate=192k
+          else
+            npx remotion render src/index.ts CLASICO-SOURCE-SHORT out/CLASICO-SOURCE-SHORT.render.mp4 --browser-executable="$CHROME_PATH" --concurrency=2 --crf=18 --codec=h264 --audio-codec=aac --audio-bitrate=192k
+          fi
+          ffmpeg -v error -y -i out/CLASICO-SOURCE-SHORT.render.mp4 -c copy -movflags +faststart out/CLASICO-SOURCE-SHORT.mp4
+      - name: QC and posting packet
+        run: |
+          python tools/video/media.py qc studio/out/CLASICO-SOURCE-SHORT.mp4 --profile vertical --decode --loudness --output studio/out/quality.json
+          python tools/video/media.py contact-sheet studio/out/CLASICO-SOURCE-SHORT.mp4 --output studio/out/contact-sheet.jpg --interval 5
+          cp docs/barca-radar/clasico-source/CLASICO-SOURCE-SHORT.srt studio/out/
+          cp docs/barca-radar/clasico-source/posting.en.md studio/out/
+          cp docs/barca-radar/clasico-source/review-notes.fa.md studio/out/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: clasico-source-short-${{ github.sha }}
+          path: |
+            studio/out/CLASICO-SOURCE-SHORT.mp4
+            studio/out/CLASICO-SOURCE-SHORT.srt
+            studio/out/quality.json
+            studio/out/contact-sheet.jpg
+            studio/out/posting.en.md
+            studio/out/review-notes.fa.md
+          if-no-files-found: error
+          retention-days: 14
