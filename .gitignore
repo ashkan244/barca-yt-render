@@ -17,3 +17,4 @@ __pycache__/
 .venv/
 .venvs/
 .video-cache/
+studio/public/archive/

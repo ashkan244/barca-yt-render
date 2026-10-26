@@ -3,113 +3,1077 @@
   "media": "host/CLASICO",
   "docs": "docs/barca-radar/clasico-source",
   "duration": 175,
-  "source": {"sha256": "8b558736590ffa4297a2b2df4aa8d007042472738cb141085cb4b9eac03a29c1", "bytes": 123482918, "note": "Square 720×720 presenter recording; the Drive file ID is a runtime input, never committed."},
+  "source": {
+    "sha256": "8b558736590ffa4297a2b2df4aa8d007042472738cb141085cb4b9eac03a29c1",
+    "bytes": 123482918,
+    "note": "Square 720×720 presenter recording; the Drive file ID is a runtime input, never committed."
+  },
   "label": "EL CLÁSICO",
   "presenter": "MORTI",
   "opponent": "MADRID",
-  "punch": [[0, 11.84], [152.8, 160.7]],
+  "punch": [
+    [
+      0,
+      11.84
+    ],
+    [
+      152.8,
+      160.7
+    ]
+  ],
   "boards": {
     "press": {
       "players": [
-        {"id": "b1", "team": "barca", "x": 17, "y": 20},
-        {"id": "b2", "team": "barca", "x": 17, "y": 48},
-        {"id": "p", "team": "barca", "x": 38, "y": 28, "to": [27, 28], "name": "PEDRI", "focus": true},
-        {"id": "r", "team": "barca", "x": 40, "y": 47, "to": [29, 47], "name": "RODRI"},
-        {"id": "m", "team": "opp", "x": 39, "y": 14, "to": [25, 18], "name": "MBAPPÉ"},
-        {"id": "j", "team": "opp", "x": 49, "y": 37, "to": [34, 32], "name": "BELLINGHAM"},
-        {"id": "g", "team": "opp", "x": 61, "y": 50, "name": "GÜLER"}
+        {
+          "id": "b1",
+          "team": "barca",
+          "x": 17,
+          "y": 20
+        },
+        {
+          "id": "b2",
+          "team": "barca",
+          "x": 17,
+          "y": 48
+        },
+        {
+          "id": "p",
+          "team": "barca",
+          "x": 38,
+          "y": 28,
+          "to": [
+            27,
+            28
+          ],
+          "name": "PEDRI",
+          "focus": true
+        },
+        {
+          "id": "r",
+          "team": "barca",
+          "x": 40,
+          "y": 47,
+          "to": [
+            29,
+            47
+          ],
+          "name": "RODRI"
+        },
+        {
+          "id": "m",
+          "team": "opp",
+          "x": 39,
+          "y": 14,
+          "to": [
+            25,
+            18
+          ],
+          "name": "MBAPPÉ"
+        },
+        {
+          "id": "j",
+          "team": "opp",
+          "x": 49,
+          "y": 37,
+          "to": [
+            34,
+            32
+          ],
+          "name": "BELLINGHAM"
+        },
+        {
+          "id": "g",
+          "team": "opp",
+          "x": 61,
+          "y": 50,
+          "name": "GÜLER"
+        }
       ],
-      "arrows": [{"from": [38, 28], "to": [27, 28], "kind": "run"}, {"from": [49, 37], "to": [34, 32], "kind": "run"}],
-      "zone": {"x": 32, "y": 15, "w": 23, "h": 37, "label": "PRESSURE"}
+      "arrows": [
+        {
+          "from": [
+            38,
+            28
+          ],
+          "to": [
+            27,
+            28
+          ],
+          "kind": "run"
+        },
+        {
+          "from": [
+            49,
+            37
+          ],
+          "to": [
+            34,
+            32
+          ],
+          "kind": "run"
+        }
+      ],
+      "zone": {
+        "x": 32,
+        "y": 15,
+        "w": 23,
+        "h": 37,
+        "label": "PRESSURE"
+      }
     },
     "block": {
       "players": [
-        {"id": "p", "team": "barca", "x": 36, "y": 33, "name": "PEDRI", "focus": true},
-        {"id": "a", "team": "barca", "x": 58, "y": 13},
-        {"id": "b", "team": "barca", "x": 60, "y": 56},
-        {"id": "m1", "team": "opp", "x": 45, "y": 18, "name": "MBAPPÉ"},
-        {"id": "m2", "team": "opp", "x": 45, "y": 53, "name": "DIOMANDE"},
-        {"id": "j", "team": "opp", "x": 60, "y": 34, "name": "BELLINGHAM"},
-        {"id": "d", "team": "opp", "x": 70, "y": 28},
-        {"id": "d2", "team": "opp", "x": 70, "y": 43}
+        {
+          "id": "p",
+          "team": "barca",
+          "x": 36,
+          "y": 33,
+          "name": "PEDRI",
+          "focus": true
+        },
+        {
+          "id": "a",
+          "team": "barca",
+          "x": 58,
+          "y": 13
+        },
+        {
+          "id": "b",
+          "team": "barca",
+          "x": 60,
+          "y": 56
+        },
+        {
+          "id": "m1",
+          "team": "opp",
+          "x": 45,
+          "y": 18,
+          "name": "MBAPPÉ"
+        },
+        {
+          "id": "m2",
+          "team": "opp",
+          "x": 45,
+          "y": 53,
+          "name": "DIOMANDE"
+        },
+        {
+          "id": "j",
+          "team": "opp",
+          "x": 60,
+          "y": 34,
+          "name": "BELLINGHAM"
+        },
+        {
+          "id": "d",
+          "team": "opp",
+          "x": 70,
+          "y": 28
+        },
+        {
+          "id": "d2",
+          "team": "opp",
+          "x": 70,
+          "y": 43
+        }
       ],
-      "zone": {"x": 52, "y": 23, "w": 25, "h": 25, "label": "CENTRE CLOSED"}
+      "zone": {
+        "x": 52,
+        "y": 23,
+        "w": 25,
+        "h": 25,
+        "label": "CENTRE CLOSED"
+      }
     },
     "line": {
       "players": [
-        {"id": "b1", "team": "barca", "x": 47, "y": 15},
-        {"id": "b2", "team": "barca", "x": 47, "y": 30},
-        {"id": "b3", "team": "barca", "x": 47, "y": 44},
-        {"id": "b4", "team": "barca", "x": 47, "y": 57},
-        {"id": "m", "team": "opp", "x": 59, "y": 26, "to": [22, 26], "name": "MBAPPÉ", "focus": true},
-        {"id": "d", "team": "opp", "x": 66, "y": 48, "to": [37, 48], "name": "RUNNER"}
+        {
+          "id": "b1",
+          "team": "barca",
+          "x": 47,
+          "y": 15
+        },
+        {
+          "id": "b2",
+          "team": "barca",
+          "x": 47,
+          "y": 30
+        },
+        {
+          "id": "b3",
+          "team": "barca",
+          "x": 47,
+          "y": 44
+        },
+        {
+          "id": "b4",
+          "team": "barca",
+          "x": 47,
+          "y": 57
+        },
+        {
+          "id": "m",
+          "team": "opp",
+          "x": 59,
+          "y": 26,
+          "to": [
+            22,
+            26
+          ],
+          "name": "MBAPPÉ",
+          "focus": true
+        },
+        {
+          "id": "d",
+          "team": "opp",
+          "x": 66,
+          "y": 48,
+          "to": [
+            37,
+            48
+          ],
+          "name": "RUNNER"
+        }
       ],
-      "arrows": [{"from": [59, 26], "to": [22, 26], "kind": "run"}, {"from": [66, 48], "to": [37, 48], "kind": "pass"}],
-      "zone": {"x": 12, "y": 15, "w": 29, "h": 42, "label": "SPACE IN BEHIND"}
+      "arrows": [
+        {
+          "from": [
+            59,
+            26
+          ],
+          "to": [
+            22,
+            26
+          ],
+          "kind": "run"
+        },
+        {
+          "from": [
+            66,
+            48
+          ],
+          "to": [
+            37,
+            48
+          ],
+          "kind": "pass"
+        }
+      ],
+      "zone": {
+        "x": 12,
+        "y": 15,
+        "w": 29,
+        "h": 42,
+        "label": "SPACE IN BEHIND"
+      }
     },
     "wings": {
       "players": [
-        {"id": "y", "team": "barca", "x": 68, "y": 9, "name": "YAMAL", "focus": true},
-        {"id": "b1", "team": "barca", "x": 58, "y": 31},
-        {"id": "b2", "team": "barca", "x": 57, "y": 49},
-        {"id": "m1", "team": "opp", "x": 76, "y": 24},
-        {"id": "m2", "team": "opp", "x": 77, "y": 37},
-        {"id": "m3", "team": "opp", "x": 77, "y": 49},
-        {"id": "m4", "team": "opp", "x": 89, "y": 30},
-        {"id": "m5", "team": "opp", "x": 89, "y": 44}
+        {
+          "id": "y",
+          "team": "barca",
+          "x": 68,
+          "y": 9,
+          "name": "YAMAL",
+          "focus": true
+        },
+        {
+          "id": "b1",
+          "team": "barca",
+          "x": 58,
+          "y": 31
+        },
+        {
+          "id": "b2",
+          "team": "barca",
+          "x": 57,
+          "y": 49
+        },
+        {
+          "id": "m1",
+          "team": "opp",
+          "x": 76,
+          "y": 24
+        },
+        {
+          "id": "m2",
+          "team": "opp",
+          "x": 77,
+          "y": 37
+        },
+        {
+          "id": "m3",
+          "team": "opp",
+          "x": 77,
+          "y": 49
+        },
+        {
+          "id": "m4",
+          "team": "opp",
+          "x": 89,
+          "y": 30
+        },
+        {
+          "id": "m5",
+          "team": "opp",
+          "x": 89,
+          "y": 44
+        }
       ],
-      "zone": {"x": 73, "y": 23, "w": 20, "h": 29, "label": "CROWDED CENTRE"}
+      "zone": {
+        "x": 73,
+        "y": 23,
+        "w": 20,
+        "h": 29,
+        "label": "CROWDED CENTRE"
+      }
     },
     "corner": {
       "label": "A REHEARSED SET PIECE",
       "note": "The presenter mentions a rehearsed corner but supplies no player routes; show the set-piece origin without inventing the scoring sequence.",
       "players": [
-        {"id": "c", "team": "barca", "x": 101, "y": 5, "name": "CORNER", "focus": true},
-        {"id": "b1", "team": "barca", "x": 88, "y": 29},
-        {"id": "b2", "team": "barca", "x": 86, "y": 42},
-        {"id": "m1", "team": "opp", "x": 91, "y": 27},
-        {"id": "m2", "team": "opp", "x": 91, "y": 43},
-        {"id": "g", "team": "opp", "x": 101, "y": 34}
+        {
+          "id": "c",
+          "team": "barca",
+          "x": 101,
+          "y": 5,
+          "name": "CORNER",
+          "focus": true
+        },
+        {
+          "id": "b1",
+          "team": "barca",
+          "x": 88,
+          "y": 29
+        },
+        {
+          "id": "b2",
+          "team": "barca",
+          "x": 86,
+          "y": 42
+        },
+        {
+          "id": "m1",
+          "team": "opp",
+          "x": 91,
+          "y": 27
+        },
+        {
+          "id": "m2",
+          "team": "opp",
+          "x": 91,
+          "y": 43
+        },
+        {
+          "id": "g",
+          "team": "opp",
+          "x": 101,
+          "y": 34
+        }
       ],
-      "zone": {"x": 83, "y": 23, "w": 15, "h": 24, "label": "SET-PIECE AREA"}
+      "zone": {
+        "x": 83,
+        "y": 23,
+        "w": 15,
+        "h": 24,
+        "label": "SET-PIECE AREA"
+      }
     }
   },
   "scenes": [
-    {"a": 0, "b": 11.84, "title": "A TACTICAL LESSON", "sub": "EL CLÁSICO", "cards": [["THE PRESS", "THE SPACE"], ["THE DECISIONS", "THE REACTION"]]},
-    {"a": 11.84, "b": 19.26, "title": "PRESSURE ON THE BACK LINE", "sub": "MADRID WITHOUT THE BALL", "board": "press"},
-    {"a": 19.26, "b": 29.38, "title": "FORCED TO DROP DEEP", "sub": "MIDFIELD UNDER PRESSURE", "board": "press", "names": ["p", "r"]},
-    {"a": 29.38, "b": 35.7, "title": "NO TIME ON THE BALL", "sub": "THE NEXT PRESSING STEP", "board": "press", "names": ["p"]},
-    {"a": 35.7, "b": 50.66, "title": "CLOSE THE CENTRE", "sub": "MADRID IN THEIR OWN HALF", "board": "block"},
-    {"a": 50.66, "b": 61.24, "title": "SPACE BEHIND THE LINE", "sub": "THE RISK OF PLAYING HIGH", "board": "line"},
-    {"a": 61.24, "b": 68.08, "title": "ATTACK THE SPACE", "sub": "RUNNERS IN BEHIND", "board": "line"},
-    {"a": 68.08, "b": 76.3, "title": "THE WIDE TRAP", "sub": "SPACE OUTSIDE · TRAFFIC INSIDE", "board": "wings"},
-    {"a": 76.3, "b": 82.62, "title": "YAMAL SHUT OUT", "sub": "CENTRAL OPTIONS CLOSED", "board": "wings"},
-    {"a": 82.62, "b": 90.88, "title": "MIDFIELD DUELS", "sub": "INTERCEPTIONS & PRESSURE", "cards": [["HUIJSEN", "INTERCEPTIONS"], ["FERMÍN", "NO ROOM TO OPERATE"]]},
-    {"a": 90.88, "b": 98.34, "title": "AN ATTACKING SETBACK", "sub": "THE INJURY", "cards": [["ESPART", "FORCED OFF"], ["THE WIDE THREAT", "REDUCED"]]},
-    {"a": 98.34, "b": 109.72, "title": "THE FULLBACKS", "sub": "INDIVIDUAL ASSESSMENTS", "cards": [["CANCELO", "A DIFFICULT GAME"], ["BALDE", "A DECENT DISPLAY"]]},
-    {"a": 109.72, "b": 121.94, "title": "A REHEARSED CORNER", "sub": "THE SECOND-HALF RESPONSE", "board": "corner"},
-    {"a": 121.94, "b": 132.18, "title": "LIMITED OPTIONS", "sub": "THE SUBSTITUTIONS", "cards": [["DE JONG", "A DEBATED CHANGE"], ["OLMO", "INJURY LIMITS THE OPTIONS"]], "cardDelays": [2.8, 5.4]},
-    {"a": 132.18, "b": 141.68, "title": "GORDON’S CONTRIBUTION", "sub": "A POSITIVE PERFORMANCE", "cards": [["GORDON", "A FANTASTIC GAME"], ["85′", "DESERVED THE MINUTES"]], "cardDelays": [0, 3.6]},
-    {"a": 141.68, "b": 152.8, "title": "ADEYEMI COMES ON", "sub": "LOOKING FOR ANOTHER GOAL", "cards": [["GORDON", "OFF"], ["ADEYEMI", "ON"]]},
-    {"a": 152.8, "b": 160.7, "title": "THE DEFENSIVE COST", "sub": "THE GOALS CONCEDED", "cards": [["TWO GOALS", "AVOIDABLE MISTAKES"]]},
-    {"a": 160.7, "b": 175, "title": "MARTÍN’S LAST-DITCH BLOCK", "sub": "A DEFENSIVE POSITIVE", "cards": [["GERARD MARTÍN", "A STRONG SECOND HALF"], ["THE BLOCK", "DENYING BELLINGHAM"]]}
+    {
+      "a": 0,
+      "b": 11.84,
+      "title": "A TACTICAL LESSON",
+      "sub": "EL CLÁSICO",
+      "cards": [
+        [
+          "THE PRESS",
+          "THE SPACE"
+        ],
+        [
+          "THE DECISIONS",
+          "THE REACTION"
+        ]
+      ]
+    },
+    {
+      "a": 11.84,
+      "b": 19.26,
+      "title": "PRESSURE ON THE BACK LINE",
+      "sub": "MADRID WITHOUT THE BALL",
+      "board": "press"
+    },
+    {
+      "a": 19.26,
+      "b": 29.38,
+      "title": "FORCED TO DROP DEEP",
+      "sub": "MIDFIELD UNDER PRESSURE",
+      "board": "press",
+      "names": [
+        "p",
+        "r"
+      ]
+    },
+    {
+      "a": 29.38,
+      "b": 35.7,
+      "title": "NO TIME ON THE BALL",
+      "sub": "THE NEXT PRESSING STEP",
+      "board": "press",
+      "names": [
+        "p"
+      ]
+    },
+    {
+      "a": 35.7,
+      "b": 50.66,
+      "title": "CLOSE THE CENTRE",
+      "sub": "MADRID IN THEIR OWN HALF",
+      "board": "block"
+    },
+    {
+      "a": 50.66,
+      "b": 61.24,
+      "title": "SPACE BEHIND THE LINE",
+      "sub": "THE RISK OF PLAYING HIGH",
+      "board": "line"
+    },
+    {
+      "a": 61.24,
+      "b": 68.08,
+      "title": "ATTACK THE SPACE",
+      "sub": "RUNNERS IN BEHIND",
+      "board": "line"
+    },
+    {
+      "a": 68.08,
+      "b": 76.3,
+      "title": "THE WIDE TRAP",
+      "sub": "SPACE OUTSIDE · TRAFFIC INSIDE",
+      "board": "wings"
+    },
+    {
+      "a": 76.3,
+      "b": 82.62,
+      "title": "YAMAL SHUT OUT",
+      "sub": "CENTRAL OPTIONS CLOSED",
+      "board": "wings"
+    },
+    {
+      "a": 82.62,
+      "b": 90.88,
+      "title": "MIDFIELD DUELS",
+      "sub": "INTERCEPTIONS & PRESSURE",
+      "cards": [
+        [
+          "HUIJSEN",
+          "INTERCEPTIONS"
+        ],
+        [
+          "FERMÍN",
+          "NO ROOM TO OPERATE"
+        ]
+      ]
+    },
+    {
+      "a": 90.88,
+      "b": 98.34,
+      "title": "AN ATTACKING SETBACK",
+      "sub": "THE INJURY",
+      "cards": [
+        [
+          "ESPART",
+          "FORCED OFF"
+        ],
+        [
+          "THE WIDE THREAT",
+          "REDUCED"
+        ]
+      ]
+    },
+    {
+      "a": 98.34,
+      "b": 109.72,
+      "title": "THE FULLBACKS",
+      "sub": "INDIVIDUAL ASSESSMENTS",
+      "cards": [
+        [
+          "CANCELO",
+          "A DIFFICULT GAME"
+        ],
+        [
+          "BALDE",
+          "A DECENT DISPLAY"
+        ]
+      ]
+    },
+    {
+      "a": 109.72,
+      "b": 121.94,
+      "title": "A REHEARSED CORNER",
+      "sub": "THE SECOND-HALF RESPONSE",
+      "board": "corner"
+    },
+    {
+      "a": 121.94,
+      "b": 132.18,
+      "title": "LIMITED OPTIONS",
+      "sub": "THE SUBSTITUTIONS",
+      "cards": [
+        [
+          "DE JONG",
+          "A DEBATED CHANGE"
+        ],
+        [
+          "OLMO",
+          "INJURY LIMITS THE OPTIONS"
+        ]
+      ],
+      "cardDelays": [
+        2.8,
+        5.4
+      ]
+    },
+    {
+      "a": 132.18,
+      "b": 141.68,
+      "title": "GORDON’S CONTRIBUTION",
+      "sub": "A POSITIVE PERFORMANCE",
+      "cards": [
+        [
+          "GORDON",
+          "A FANTASTIC GAME"
+        ],
+        [
+          "85′",
+          "DESERVED THE MINUTES"
+        ]
+      ],
+      "cardDelays": [
+        0,
+        3.6
+      ]
+    },
+    {
+      "a": 141.68,
+      "b": 152.8,
+      "title": "ADEYEMI COMES ON",
+      "sub": "LOOKING FOR ANOTHER GOAL",
+      "cards": [
+        [
+          "GORDON",
+          "OFF"
+        ],
+        [
+          "ADEYEMI",
+          "ON"
+        ]
+      ]
+    },
+    {
+      "a": 152.8,
+      "b": 160.7,
+      "title": "THE DEFENSIVE COST",
+      "sub": "THE GOALS CONCEDED",
+      "cards": [
+        [
+          "TWO GOALS",
+          "AVOIDABLE MISTAKES"
+        ]
+      ]
+    },
+    {
+      "a": 160.7,
+      "b": 175,
+      "title": "MARTÍN’S LAST-DITCH BLOCK",
+      "sub": "A DEFENSIVE POSITIVE",
+      "cards": [
+        [
+          "GERARD MARTÍN",
+          "A STRONG SECOND HALF"
+        ],
+        [
+          "THE BLOCK",
+          "DENYING BELLINGHAM"
+        ]
+      ]
+    }
   ],
   "chapters": [
-    {"at": 0, "title": "The tactical lesson"},
-    {"at": 11.84, "title": "Madrid's press"},
-    {"at": 35.7, "title": "Closing the centre"},
-    {"at": 50.66, "title": "Space behind the high line"},
-    {"at": 68.08, "title": "The wide trap"},
-    {"at": 90.88, "title": "Injury and the fullbacks"},
-    {"at": 109.72, "title": "The rehearsed corner"},
-    {"at": 121.94, "title": "Substitutions"},
-    {"at": 152.8, "title": "The goals and Martín's block"}
+    {
+      "at": 0,
+      "title": "The tactical lesson"
+    },
+    {
+      "at": 11.84,
+      "title": "Madrid's press"
+    },
+    {
+      "at": 35.7,
+      "title": "Closing the centre"
+    },
+    {
+      "at": 50.66,
+      "title": "Space behind the high line"
+    },
+    {
+      "at": 68.08,
+      "title": "The wide trap"
+    },
+    {
+      "at": 90.88,
+      "title": "Injury and the fullbacks"
+    },
+    {
+      "at": 109.72,
+      "title": "The rehearsed corner"
+    },
+    {
+      "at": 121.94,
+      "title": "Substitutions"
+    },
+    {
+      "at": 152.8,
+      "title": "The goals and Martín's block"
+    }
   ],
-  "cover": {"kicker": "EL CLÁSICO · TACTICAL BREAKDOWN", "lines": ["THE SPACE", "BEHIND"], "board": "line"},
+  "cover": {
+    "kicker": "EL CLÁSICO · TACTICAL BREAKDOWN",
+    "lines": [
+      "THE SPACE",
+      "BEHIND"
+    ],
+    "board": "line"
+  },
   "clips": [
-    {"name": "PRESS", "a": 11.84, "b": 50.66},
-    {"name": "HIGH-LINE", "a": 50.66, "b": 82.62},
-    {"name": "MARTIN", "a": 152.8, "b": 175}
+    {
+      "name": "PRESS",
+      "a": 11.84,
+      "b": 50.66
+    },
+    {
+      "name": "HIGH-LINE",
+      "a": 50.66,
+      "b": 82.62
+    },
+    {
+      "name": "MARTIN",
+      "a": 152.8,
+      "b": 175
+    }
   ],
-  "long": {"endSeconds": 20, "endKicker": "MORE TACTICAL BREAKDOWNS · WATCH NEXT"}
+  "long": {
+    "endSeconds": 20,
+    "endKicker": "MORE TACTICAL BREAKDOWNS · WATCH NEXT"
+  },
+  "archive": {
+    "hook": {
+      "text": "A TACTICAL LESSON",
+      "until": 2.4
+    },
+    "shots": {
+      "crowd": {
+        "src": "archive/CLASICO/cn_crowd.mp4",
+        "kind": "video",
+        "grade": "none"
+      },
+      "clasico_crowd": {
+        "src": "archive/CLASICO/cn_clasico_crowd.mp4",
+        "kind": "video",
+        "grade": "none",
+        "focus": [
+          50,
+          40
+        ]
+      },
+      "fans": {
+        "src": "archive/CLASICO/cn_putellas.mp4",
+        "kind": "video",
+        "grade": "none",
+        "from": 6
+      },
+      "clasico_match": {
+        "src": "archive/CLASICO/clasico_match.jpg",
+        "grade": "none",
+        "label": "EL CLÁSICO",
+        "focus": [
+          50,
+          40
+        ]
+      },
+      "clasico_1926": {
+        "src": "archive/CLASICO/clasico_1926.jpg",
+        "grade": "bw",
+        "label": "EL CLÁSICO · 1926",
+        "focus": [
+          50,
+          45
+        ]
+      },
+      "mosaic": {
+        "src": "archive/CLASICO/clasico_mosaic.jpg",
+        "grade": "none",
+        "focus": [
+          50,
+          50
+        ]
+      },
+      "mbappe": {
+        "src": "archive/CLASICO/mbappe.jpg",
+        "label": "KYLIAN MBAPPÉ",
+        "focus": [
+          50,
+          22
+        ]
+      },
+      "bellingham": {
+        "src": "archive/CLASICO/bellingham.jpg",
+        "label": "JUDE BELLINGHAM",
+        "focus": [
+          52,
+          30
+        ]
+      },
+      "bellingham2": {
+        "src": "archive/CLASICO/bellingham2.jpg",
+        "label": "JUDE BELLINGHAM",
+        "focus": [
+          50,
+          30
+        ]
+      },
+      "mourinho": {
+        "src": "archive/CLASICO/mourinho.jpg",
+        "label": "JOSÉ MOURINHO",
+        "focus": [
+          50,
+          28
+        ]
+      },
+      "flick": {
+        "src": "archive/CLASICO/flick.jpg",
+        "label": "HANSI FLICK",
+        "focus": [
+          50,
+          35
+        ]
+      },
+      "yamal": {
+        "src": "archive/CLASICO/yamal.jpg",
+        "label": "LAMINE YAMAL",
+        "focus": [
+          45,
+          30
+        ]
+      },
+      "huijsen": {
+        "src": "archive/CLASICO/huijsen.jpg",
+        "label": "DEAN HUIJSEN",
+        "focus": [
+          50,
+          35
+        ]
+      },
+      "fermin": {
+        "src": "archive/CLASICO/fermin.jpg",
+        "label": "FERMÍN LÓPEZ",
+        "focus": [
+          50,
+          22
+        ]
+      },
+      "dejong": {
+        "src": "archive/CLASICO/dejong.jpg",
+        "label": "FRENKIE DE JONG",
+        "focus": [
+          50,
+          35
+        ]
+      },
+      "olmo": {
+        "src": "archive/CLASICO/olmo.jpg",
+        "label": "DANI OLMO",
+        "focus": [
+          50,
+          30
+        ]
+      },
+      "cancelo": {
+        "src": "archive/CLASICO/cancelo.jpg",
+        "label": "JOÃO CANCELO",
+        "focus": [
+          50,
+          22
+        ]
+      },
+      "b_press": {
+        "kind": "board",
+        "board": "press"
+      },
+      "b_block": {
+        "kind": "board",
+        "board": "block"
+      },
+      "b_line": {
+        "kind": "board",
+        "board": "line"
+      },
+      "b_wings": {
+        "kind": "board",
+        "board": "wings"
+      },
+      "b_corner": {
+        "kind": "board",
+        "board": "corner"
+      }
+    },
+    "cues": [
+      {
+        "a": 0,
+        "b": 2.4,
+        "layout": "full"
+      },
+      {
+        "a": 2.4,
+        "b": 5.2,
+        "layout": "split",
+        "shot": "clasico_crowd"
+      },
+      {
+        "a": 5.2,
+        "b": 8.0,
+        "layout": "split",
+        "shot": "clasico_match"
+      },
+      {
+        "a": 8.0,
+        "b": 11.84,
+        "layout": "full",
+        "punch": true
+      },
+      {
+        "a": 11.84,
+        "b": 13.94,
+        "layout": "card",
+        "card": [
+          "RELENTLESS",
+          "PRESSING"
+        ],
+        "cardStyle": "dark"
+      },
+      {
+        "a": 13.94,
+        "b": 16.3,
+        "layout": "split",
+        "shot": "mbappe"
+      },
+      {
+        "a": 16.3,
+        "b": 19.26,
+        "layout": "split",
+        "shot": "bellingham"
+      },
+      {
+        "a": 19.26,
+        "b": 24.18,
+        "layout": "split",
+        "shot": "b_press"
+      },
+      {
+        "a": 24.18,
+        "b": 29.38,
+        "layout": "full"
+      },
+      {
+        "a": 29.38,
+        "b": 35.7,
+        "layout": "split",
+        "shot": "b_press"
+      },
+      {
+        "a": 35.7,
+        "b": 40.6,
+        "layout": "split",
+        "shot": "mourinho"
+      },
+      {
+        "a": 40.6,
+        "b": 50.66,
+        "layout": "split",
+        "shot": "b_block"
+      },
+      {
+        "a": 50.66,
+        "b": 53.6,
+        "layout": "split",
+        "shot": "flick"
+      },
+      {
+        "a": 53.6,
+        "b": 57.0,
+        "layout": "full",
+        "punch": true
+      },
+      {
+        "a": 57.0,
+        "b": 67.64,
+        "layout": "split",
+        "shot": "b_line"
+      },
+      {
+        "a": 67.64,
+        "b": 69.4,
+        "layout": "card",
+        "card": [
+          "THE WIDE",
+          "TRAP"
+        ],
+        "cardStyle": "light"
+      },
+      {
+        "a": 69.4,
+        "b": 77.1,
+        "layout": "split",
+        "shot": "b_wings"
+      },
+      {
+        "a": 77.1,
+        "b": 82.62,
+        "layout": "split",
+        "shot": "yamal"
+      },
+      {
+        "a": 82.62,
+        "b": 87.3,
+        "layout": "split",
+        "shot": "huijsen"
+      },
+      {
+        "a": 87.3,
+        "b": 90.88,
+        "layout": "split",
+        "shot": "fermin"
+      },
+      {
+        "a": 90.88,
+        "b": 93.38,
+        "layout": "full"
+      },
+      {
+        "a": 93.38,
+        "b": 98.34,
+        "layout": "full",
+        "punch": true
+      },
+      {
+        "a": 98.34,
+        "b": 102.88,
+        "layout": "split",
+        "shot": "cancelo"
+      },
+      {
+        "a": 102.88,
+        "b": 109.72,
+        "layout": "full"
+      },
+      {
+        "a": 109.72,
+        "b": 112.48,
+        "layout": "full"
+      },
+      {
+        "a": 112.48,
+        "b": 121.94,
+        "layout": "split",
+        "shot": "b_corner"
+      },
+      {
+        "a": 121.94,
+        "b": 127.4,
+        "layout": "split",
+        "shot": "dejong"
+      },
+      {
+        "a": 127.4,
+        "b": 132.18,
+        "layout": "split",
+        "shot": "olmo"
+      },
+      {
+        "a": 132.18,
+        "b": 135.78,
+        "layout": "full"
+      },
+      {
+        "a": 135.78,
+        "b": 137.4,
+        "layout": "card",
+        "card": [
+          "85′",
+          "DESERVED"
+        ],
+        "cardStyle": "gold"
+      },
+      {
+        "a": 137.4,
+        "b": 141.68,
+        "layout": "full"
+      },
+      {
+        "a": 141.68,
+        "b": 143.2,
+        "layout": "card",
+        "card": [
+          "GORDON OFF",
+          "ADEYEMI ON"
+        ],
+        "cardStyle": "dark"
+      },
+      {
+        "a": 143.2,
+        "b": 148.46,
+        "layout": "full"
+      },
+      {
+        "a": 148.46,
+        "b": 152.8,
+        "layout": "split",
+        "shot": "fans"
+      },
+      {
+        "a": 152.8,
+        "b": 154.4,
+        "layout": "card",
+        "card": [
+          "TWO GOALS",
+          "CONCEDED"
+        ],
+        "cardStyle": "dark"
+      },
+      {
+        "a": 154.4,
+        "b": 158.04,
+        "layout": "full",
+        "punch": true
+      },
+      {
+        "a": 158.04,
+        "b": 160.7,
+        "layout": "split",
+        "shot": "clasico_1926"
+      },
+      {
+        "a": 160.7,
+        "b": 168.1,
+        "layout": "full"
+      },
+      {
+        "a": 168.1,
+        "b": 175,
+        "layout": "split",
+        "shot": "bellingham2"
+      }
+    ]
+  }
 }

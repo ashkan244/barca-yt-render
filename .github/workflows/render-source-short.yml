@@ -10,7 +10,7 @@ on:
         required: true
         default: CLASICO-SOURCE
       outputs:
-        description: Comma list of short,long,clips
+        description: Comma list of short,long,clips,archive
         required: true
         default: short,long,clips
       chunks:
@@ -40,6 +40,8 @@ jobs:
       finalize: ${{ steps.plan.outputs.finalize }}
       media: ${{ steps.plan.outputs.media }}
       key: ${{ steps.plan.outputs.key }}
+      archive: ${{ steps.arch.outputs.dir }}
+      archive_key: ${{ steps.arch.outputs.key }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -95,6 +97,34 @@ jobs:
         with:
           path: studio/public/${{ steps.plan.outputs.media }}
           key: ${{ steps.plan.outputs.key }}
+      - name: Plan archive media
+        id: arch
+        run: |
+          info=$(node studio/scripts/source-plan.mjs "$EPISODE" info)
+          manifest="$(jq -r .docs <<<"$info")/archive-manifest.json"
+          if [ -n "$(jq -r .archive <<<"$info")" ] && [ -f "$manifest" ]; then
+            echo "dir=$(jq -r .archive <<<"$info")" >> "$GITHUB_OUTPUT"
+            echo "manifest=$manifest" >> "$GITHUB_OUTPUT"
+            echo "key=radar-archive-$(sha256sum "$manifest" tools/archive/commons.py | sha256sum | cut -c1-32)" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Restore archive media
+        id: archcache
+        if: steps.arch.outputs.dir != ''
+        uses: actions/cache/restore@v4
+        with:
+          path: studio/public/${{ steps.arch.outputs.dir }}
+          key: ${{ steps.arch.outputs.key }}
+      - name: Fetch licensed archive media (Wikimedia Commons)
+        if: steps.arch.outputs.dir != '' && steps.archcache.outputs.cache-hit != 'true'
+        run: |
+          pip install -q pillow
+          python tools/archive/commons.py fetch '${{ steps.arch.outputs.manifest }}' --out 'studio/public/${{ steps.arch.outputs.dir }}' --strict
+      - name: Cache archive media
+        if: steps.arch.outputs.dir != '' && steps.archcache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: studio/public/${{ steps.arch.outputs.dir }}
+          key: ${{ steps.arch.outputs.key }}
       - name: Install Studio, verify types and spec, render stills
         working-directory: studio
         run: |
@@ -103,10 +133,11 @@ jobs:
           npx remotion browser ensure
           npx remotion still src/index.ts "$EPISODE-COVER" "out/$EPISODE-COVER.png"
           npx remotion still src/index.ts "$EPISODE-THUMB" "out/$EPISODE-THUMB.png"
+          if [ -n '${{ steps.arch.outputs.dir }}' ]; then cp 'public/${{ steps.arch.outputs.dir }}/CREDITS.md' 'public/${{ steps.arch.outputs.dir }}/licenses.tsv' out/; fi
       - uses: actions/upload-artifact@v4
         with:
           name: stills
-          path: studio/out/*.png
+          path: studio/out/*
           retention-days: 1
 
   render:
@@ -130,6 +161,12 @@ jobs:
         with:
           path: studio/public/${{ needs.prepare.outputs.media }}
           key: ${{ needs.prepare.outputs.key }}
+          fail-on-cache-miss: true
+      - uses: actions/cache/restore@v4
+        if: needs.prepare.outputs.archive != ''
+        with:
+          path: studio/public/${{ needs.prepare.outputs.archive }}
+          key: ${{ needs.prepare.outputs.archive_key }}
           fail-on-cache-miss: true
       - name: Original underscore (no external samples)
         run: |

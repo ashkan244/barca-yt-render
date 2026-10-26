@@ -49,3 +49,7 @@ These are local browser-rendered review images, not the uploaded historical refe
 | Short (single-job workflow) | [40317053776](https://github.com/ashkan244/barca-yt-render/actions/runs/40317053776) | d52a6d8 | success: render, structural/decode QC step and artifact upload (artifact 12648532181, expires 2026-11-09) |
 
 The engine refactor reproduces this Short pixel-identically (18 sampled frames + cover compared at zero difference against the pre-refactor bundle).
+
+## Archive Split version (`CLASICO-SOURCE-ARCHIVE`)
+
+Second vertical edit of the same take in the reference "archive split" format: licensed Wikimedia Commons photos/video on top (B&W grade for history, push-in, flash cuts), the presenter below, full-frame punch-ins on key lines, typographic cards and the schematic boards as B-roll. 39 cues in `clasico-source.spec.json → archive`, media listed in [archive-manifest.json](archive-manifest.json) and fetched at render time with licenses (`CREDITS.md`, `licenses.tsv` ship with the render). A person's photo is used only when the Commons file title names that person; players without such a photo (Pedri, Balde, Gerard Martín, Gordon, Adeyemi, Diomande, Güler, Camavinga, Cucurella, Espart) get the presenter, a board or a card instead. CC BY / CC BY-SA authors must be credited in the YouTube description (copy `CREDITS.md`).
