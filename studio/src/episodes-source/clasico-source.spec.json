@@ -106,5 +106,10 @@
     {"at": 152.8, "title": "The goals and Martín's block"}
   ],
   "cover": {"kicker": "EL CLÁSICO · TACTICAL BREAKDOWN", "lines": ["THE SPACE", "BEHIND"], "board": "line"},
+  "clips": [
+    {"name": "PRESS", "a": 11.84, "b": 50.66},
+    {"name": "HIGH-LINE", "a": 50.66, "b": 82.62},
+    {"name": "MARTIN", "a": 152.8, "b": 175}
+  ],
   "long": {"endSeconds": 20, "endKicker": "MORE TACTICAL BREAKDOWNS · WATCH NEXT"}
 }

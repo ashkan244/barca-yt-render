@@ -2,7 +2,7 @@
 // (src/episodes-source/<id>.spec.json) → vertical Short, 16:9 long-form, vertical cover and YouTube thumbnail.
 // Speech timing is never changed: scenes, chapters and captions all key off the source timeline.
 import React from 'react';
-import {AbsoluteFill, Audio, Img, OffthreadVideo, Easing, interpolate, staticFile, useCurrentFrame} from 'remotion';
+import {AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, Easing, interpolate, staticFile, useCurrentFrame} from 'remotion';
 import {LOCAL_FONTS} from '../fonts';
 import {ReviewedCaptions} from '../Captions';
 import {TacticalPlate, type Player, type PlateArrow} from '../TacticalPlate';
@@ -22,9 +22,12 @@ export type SourceSpec = {
   chapters: {at: number; title: string}[];
   cover: {kicker: string; lines: string[]; board?: string};
   long?: {endSeconds?: number; endKicker?: string};
+  /** Stand-alone Shorts cut from the same take; a/b must be scene boundaries so every cut lands between sentences. */
+  clips?: {name: string; a: number; b: number}[];
 };
 export type Word = {w: string; s: number; e: number};
 export type SourceEpisodeProps = {spec: SourceSpec; words: Word[]};
+export type SourceClipProps = SourceEpisodeProps & {clip: string};
 
 /** Fails the bundle early on spec mistakes that would otherwise only show up in a rendered frame. */
 export const validateSourceEpisode = (d: SourceEpisodeProps): SourceEpisodeProps => {
@@ -40,6 +43,11 @@ export const validateSourceEpisode = (d: SourceEpisodeProps): SourceEpisodeProps
   spec.chapters.forEach((c, i) => { const end = spec.chapters[i + 1]?.at ?? spec.duration; if (end - c.at < 10) err(`chapter "${c.title}" is shorter than 10s`); });
   if (spec.chapters.length < 3) err('YouTube needs at least 3 chapters');
   if (spec.cover.board && !spec.boards[spec.cover.board]) err('cover uses unknown board');
+  const bounds = spec.scenes.map((s) => s.a).concat(spec.duration);
+  spec.clips?.forEach((c) => {
+    if (![c.a, c.b].every((x) => bounds.some((y) => Math.abs(x - y) < 1e-6))) err(`clip ${c.name} must start and end on scene boundaries`);
+    if (c.b - c.a < 15 || c.b - c.a > 60) err(`clip ${c.name} should be 15–60s`);
+  });
   words.forEach((w, i) => { if (w.e < w.s || w.s < 0 || w.e > spec.duration + .05 || (i && w.s < words[i - 1].s)) err(`word ${i} "${w.w}" has invalid timing`); });
   return d;
 };
@@ -47,6 +55,8 @@ export const validateSourceEpisode = (d: SourceEpisodeProps): SourceEpisodeProps
 export const shortFrames = (spec: SourceSpec) => Math.round(spec.duration * FPS);
 export const endSeconds = (spec: SourceSpec) => spec.long?.endSeconds ?? 20;
 export const longFrames = (spec: SourceSpec) => Math.round((spec.duration + endSeconds(spec)) * FPS);
+const findClip = (spec: SourceSpec, name: string) => spec.clips!.find((c) => c.name === name)!;
+export const clipFrames = (spec: SourceSpec, name: string) => { const c = findClip(spec, name); return Math.round((c.b - c.a) * FPS); };
 
 const mix = (f: number, at: number, d = 14) => interpolate(f, [at, at + d], [0, 1], clamp);
 const sceneAt = (spec: SourceSpec, t: number) => spec.scenes.find((s) => t >= s.a && t < s.b) ?? spec.scenes[spec.scenes.length - 1];
@@ -80,8 +90,10 @@ const Presenter: React.FC<{spec: SourceSpec; t: number; style: React.CSSProperti
   </div>;
 
 // ---------------- vertical Short (1080×1920) ----------------
-export const SourceShort: React.FC<SourceEpisodeProps> = ({spec, words}) => {
-  const f = useCurrentFrame(); const t = f / FPS; const total = shortFrames(spec); const scene = sceneAt(spec, t);
+/** `window` (seconds) limits progress bar and music envelope to a clip of the take; frames stay on the source timeline. */
+export const SourceShort: React.FC<SourceEpisodeProps & {window?: [number, number]}> = ({spec, words, window}) => {
+  const f = useCurrentFrame(); const t = f / FPS; const scene = sceneAt(spec, t);
+  const [wa, wb] = window ? [Math.round(window[0] * FPS), Math.round(window[1] * FPS)] : [0, shortFrames(spec)];
   const enter = mix(f, scene.a * FPS);
   return <AbsoluteFill style={{background: '#080e1b', color: '#f5f4ef', fontFamily: LOCAL_FONTS.body}}>
     <AbsoluteFill style={{background: 'radial-gradient(ellipse at 10% 30%, #1f5fd629, transparent 55%), radial-gradient(ellipse at 95% 65%, #b3123f29, transparent 60%)'}} />
@@ -96,10 +108,16 @@ export const SourceShort: React.FC<SourceEpisodeProps> = ({spec, words}) => {
     <Presenter spec={spec} t={t} style={{left: 90, top: 940, width: 900, height: 810, borderRadius: 24}} />
     <ReviewedCaptions words={words} top={1540} width={860} />
     <div style={{position: 'absolute', bottom: 89, left: 70, right: 70, display: 'flex', justifyContent: 'space-between', color: '#a4b1c4', fontSize: 20, letterSpacing: 2}}><span>WITH {spec.presenter}</span><span>TACTICAL ANALYSIS</span></div>
-    <div style={{position: 'absolute', bottom: 68, left: 70, width: 940, height: 3, background: '#ffffff1a'}}><div style={{height: 3, width: `${f / total * 100}%`, background: GOLD}} /></div>
-    <Audio src={media(spec, 'voice.wav')} />
-    <Audio src={media(spec, 'score.wav')} volume={(fr) => .22 * interpolate(fr, [0, 60, total - 75, total], [0, 1, 1, 0], clamp)} />
+    <div style={{position: 'absolute', bottom: 68, left: 70, width: 940, height: 3, background: '#ffffff1a'}}><div style={{height: 3, width: `${(f - wa) / (wb - wa) * 100}%`, background: GOLD}} /></div>
+    <Audio src={media(spec, 'voice.wav')} volume={window ? (fr) => interpolate(fr, [wb - 6, wb], [1, 0], clamp) : undefined} />
+    <Audio src={media(spec, 'score.wav')} volume={(fr) => .22 * interpolate(fr, [wa, wa + 60, wb - 75, wb], [0, 1, 1, 0], clamp)} />
   </AbsoluteFill>;
+};
+
+/** A clip Short: the vertical layout shifted so the clip's first frame is source time `a`. */
+export const SourceClip: React.FC<SourceClipProps> = ({spec, words, clip}) => {
+  const c = findClip(spec, clip);
+  return <Sequence from={-Math.round(c.a * FPS)}><SourceShort spec={spec} words={words} window={[c.a, c.b]} /></Sequence>;
 };
 
 // ---------------- long-form (1920×1080) ----------------

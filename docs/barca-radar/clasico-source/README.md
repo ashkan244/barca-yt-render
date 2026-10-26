@@ -11,6 +11,7 @@ The uploaded Persian historical video (96.731s, 720×1280) is a **style referenc
 - Spec: [`studio/src/episodes-source/clasico-source.spec.json`](../../../studio/src/episodes-source/clasico-source.spec.json) — scenes, boards, cards, chapters, cover. Rendered by the shared engine `studio/src/production/source/SourceEpisode.tsx`.
 - `CLASICO-SOURCE-SHORT`: 1080×1920, 30fps, 5250 frames / 175s.
 - `CLASICO-SOURCE-LONG`: 1920×1080, 30fps, 5850 frames / 195s (175s analysis + 20s end screen), 9 YouTube chapters. Posting: [posting-long.en.md](posting-long.en.md).
+- Clip Shorts from the same take, cut on scene (sentence) boundaries: `CLASICO-SOURCE-CLIP-PRESS` (11.84–50.66s, Madrid's press), `CLASICO-SOURCE-CLIP-HIGH-LINE` (50.66–82.62s, high line and wide trap), `CLASICO-SOURCE-CLIP-MARTIN` (152.8–175s, the goals and Martín's block).
 - Stills: `CLASICO-SOURCE-COVER` (vertical) and `CLASICO-SOURCE-THUMB` (1280×720).
 - Same speaking rate and timeline as the original; no automatic pause/retake removal.
 - Original presenter framed below source-relevant motion plates, with semantic section changes and word-timed captions.

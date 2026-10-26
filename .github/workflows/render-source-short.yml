@@ -10,9 +10,9 @@ on:
         required: true
         default: CLASICO-SOURCE
       outputs:
-        description: Comma list of short,long
+        description: Comma list of short,long,clips
         required: true
-        default: short,long
+        default: short,long,clips
       chunks:
         description: Parallel render jobs per output
         required: true
@@ -80,7 +80,7 @@ jobs:
           RUN=$(jq -r '.inputs.source_from_run // ""' "$GITHUB_EVENT_PATH")
           if [ -z "$ID" ] && [ -n "$RUN" ]; then
             for JOB in $(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$RUN/jobs" --jq '.jobs[].id'); do
-              ID=$(gh api "repos/$GITHUB_REPOSITORY/actions/jobs/$JOB/logs" | grep -m1 -oP 'SOURCE_FILE_ID: \K[\w-]+' || true)
+              ID=$(curl -fsSL -H "Authorization: Bearer $GH_TOKEN" "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/actions/jobs/$JOB/logs" | sed 's/\x1b\[[0-9;]*m//g' | grep -m1 -oP 'SOURCE_FILE_ID: \K[\w-]+' || true)
               [ -n "$ID" ] && break
             done
           fi

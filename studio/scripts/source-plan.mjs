@@ -1,5 +1,5 @@
 // Plans a source-led episode render from its spec (src/episodes-source/<file>.spec.json).
-// node scripts/source-plan.mjs <EPISODE-ID> info|matrix|chapters [chunks] [outputs]
+// node scripts/source-plan.mjs <EPISODE-ID> info|matrix|chapters [chunks] [outputs: short,long,clips]
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -12,8 +12,10 @@ const outputs = {
   short: {comp: `${id}-SHORT`, frames: Math.round(spec.duration * FPS), profile: 'vertical'},
   long: {comp: `${id}-LONG`, frames: Math.round((spec.duration + end) * FPS), profile: 'landscape'},
 };
-const selected = outputsArg.split(',').map((s) => s.trim()).filter(Boolean).map((k) => {
-  if (!outputs[k]) throw new Error(`Unknown output ${k}`); return outputs[k];
+const clips = (spec.clips ?? []).map((c) => ({comp: `${id}-CLIP-${c.name}`, frames: Math.round((c.b - c.a) * FPS), profile: 'vertical'}));
+const selected = outputsArg.split(',').map((s) => s.trim()).filter(Boolean).flatMap((k) => {
+  if (k === 'clips') return clips;
+  if (!outputs[k]) throw new Error(`Unknown output ${k}`); return [outputs[k]];
 });
 const mmss = (t) => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, '0')}`;
 
@@ -22,8 +24,8 @@ if (cmd === 'info') {
 } else if (cmd === 'matrix') {
   const n = Math.max(1, parseInt(chunksArg, 10)); const include = [];
   for (const o of selected) {
-    const size = Math.ceil(o.frames / n);
-    for (let i = 0; i < n; i++) { const start = i * size, last = Math.min(o.frames - 1, start + size - 1); if (start <= last) include.push({comp: o.comp, index: i, start, end: last}); }
+    const k = Math.min(n, Math.ceil(o.frames / 1200)), size = Math.ceil(o.frames / k);
+    for (let i = 0; i < k; i++) { const start = i * size, last = Math.min(o.frames - 1, start + size - 1); if (start <= last) include.push({comp: o.comp, index: i, start, end: last}); }
   }
   console.log(JSON.stringify({render: {include}, finalize: {include: selected.map(({comp, profile}) => ({comp, profile}))}}));
 } else if (cmd === 'chapters') {

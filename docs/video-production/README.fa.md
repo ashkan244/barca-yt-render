@@ -38,7 +38,7 @@
 | `studio/src/episodes-source/<id>.spec.json` | مسیر رسانه، SHA-256 منبع، بخش‌ها (board یا cards)، بردهای شماتیک، فصل‌ها، کاور |
 | `studio/src/episodes-source/<id>.words.json` | کلمات بازبینی‌شده با زمان منبع |
 | `studio/src/episodes-source/index.ts` | ثبت قسمت؛ `validateSourceEpisode` خطای زمان‌بندی، board ناموجود و فصل زیر ۱۰ ثانیه را پیش از رندر می‌گیرد |
-| `studio/src/production/source/SourceEpisode.tsx` | از یک spec چهار خروجی می‌سازد: `<id>-SHORT` (۱۰۸۰×۱۹۲۰)، `<id>-LONG` (۱۹۲۰×۱۰۸۰ با فصل و end screen)، `<id>-COVER`، `<id>-THUMB` |
+| `studio/src/production/source/SourceEpisode.tsx` | از یک spec این خروجی‌ها را می‌سازد: `<id>-SHORT` (۱۰۸۰×۱۹۲۰)، `<id>-LONG` (۱۹۲۰×۱۰۸۰ با فصل و end screen)، `<id>-CLIP-<name>` (شورت‌های ۱۵ تا ۶۰ ثانیه‌ای روی مرز صحنه‌ها)، `<id>-COVER`، `<id>-THUMB` |
 
 workflow «Render source-aligned episode» ورودی را یک بار با SHA-256 تأیید و در cache خصوصی Actions نگه می‌دارد، خروجی‌ها را به‌صورت موازی و تکه‌ای (ویدیو + PCM، اتصال بدون گپ) رندر و سپس QC می‌کند و جدول QC را در Summary همان run می‌نویسد. شناسهٔ Drive از فایل رویداد خوانده و mask می‌شود تا در لاگ عمومی دیده نشود.
 

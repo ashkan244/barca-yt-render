@@ -1,5 +1,5 @@
 import React from 'react';
-import {SourceShort, SourceLong, SourceCover, SourceThumb, shortFrames, longFrames} from './production/source/SourceEpisode';
+import {SourceShort, SourceLong, SourceCover, SourceThumb, SourceClip, shortFrames, longFrames, clipFrames} from './production/source/SourceEpisode';
 import {SOURCE_EPISODES} from './episodes-source';
 import {Composition, Still} from 'remotion';
 import {TacticsHook, HOOK_FRAMES} from './TacticsHook';
@@ -25,6 +25,7 @@ export const Root: React.FC = () => (
         <Composition id={`${d.spec.id}-LONG`} component={SourceLong} durationInFrames={longFrames(d.spec)} fps={30} width={1920} height={1080} defaultProps={d} />
         <Still id={`${d.spec.id}-COVER`} component={SourceCover} width={1080} height={1920} defaultProps={d} />
         <Still id={`${d.spec.id}-THUMB`} component={SourceThumb} width={1280} height={720} defaultProps={d} />
+        {d.spec.clips?.map((c) => <Composition key={c.name} id={`${d.spec.id}-CLIP-${c.name}`} component={SourceClip} durationInFrames={clipFrames(d.spec, c.name)} fps={30} width={1080} height={1920} defaultProps={{...d, clip: c.name}} />)}
       </React.Fragment>
     ))}
     {EPISODES.map((d) => (
