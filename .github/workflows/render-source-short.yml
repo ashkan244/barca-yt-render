@@ -197,3 +197,38 @@ jobs:
           path: out
           if-no-files-found: error
           retention-days: 30
+
+  review:
+    # Commits small review images (contact sheets, cover, thumbnail) of the finished renders to this branch,
+    # so the real presenter footage in each delivery can be checked without downloading the artifact.
+    needs: [prepare, finalize]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: '*-${{ github.sha }}'
+          path: renders
+      - uses: actions/download-artifact@v4
+        with:
+          name: stills
+          path: renders/stills
+      - name: Commit review images
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          dest="$(node studio/scripts/source-plan.mjs "$EPISODE" info | jq -r .docs)/renders"
+          mkdir -p "$dest"
+          for d in renders/*-${{ github.sha }}; do
+            comp=$(basename "$d" -${{ github.sha }})
+            ffmpeg -v error -y -i "$d/contact-sheet.jpg" -vf 'scale=1600:-2' -q:v 5 "$dest/$comp-contact.jpg"
+          done
+          for f in renders/stills/*.png; do ffmpeg -v error -y -i "$f" -vf 'scale=640:-2' -q:v 4 "$dest/$(basename "$f" .png).jpg"; done
+          { echo "# Rendered review images"; echo; echo "Run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID · commit ${GITHUB_SHA::7}"; echo;
+            for f in "$dest"/*.jpg; do echo "![$(basename "$f")]($(basename "$f"))"; done; } > "$dest/README.md"
+          git config user.name github-actions[bot]; git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add "$dest"
+          git commit -m "docs: review images from render run $GITHUB_RUN_ID"
+          git pull --rebase origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME"
