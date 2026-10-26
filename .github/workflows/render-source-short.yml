@@ -67,12 +67,15 @@ jobs:
           path: studio/public/${{ steps.plan.outputs.media }}
           key: ${{ steps.plan.outputs.key }}
       - uses: actions/cache@v4
+        if: steps.media.outputs.cache-hit != 'true'
         with:
           path: ~/apt-debs
           key: ffmpeg-debs-ubuntu-24.04-${{ hashFiles('tools/video/ensure_ffmpeg.sh') }}
-      - name: Install media tools
+      - name: Install media tools (only needed to prepare an uncached source)
+        if: steps.media.outputs.cache-hit != 'true'
         run: tools/video/ensure_ffmpeg.sh
       - name: Verify media-tool checks
+        if: steps.media.outputs.cache-hit != 'true'
         run: python -m unittest discover -s tools/video/tests -v
       - name: Download, verify and prepare the original source
         if: steps.media.outputs.cache-hit != 'true'
@@ -121,6 +124,7 @@ jobs:
       - name: Fetch licensed archive media (Wikimedia Commons)
         if: steps.arch.outputs.dir != '' && steps.archcache.outputs.cache-hit != 'true'
         run: |
+          tools/video/ensure_ffmpeg.sh
           pip install -q pillow
           python tools/archive/commons.py fetch '${{ steps.arch.outputs.manifest }}' --out 'studio/public/${{ steps.arch.outputs.dir }}' --strict
       - name: Cache archive media
