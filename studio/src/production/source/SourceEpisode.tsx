@@ -64,13 +64,13 @@ const punchAt = (spec: SourceSpec, t: number) => (spec.punch ?? []).some(([a, b]
 const media = (spec: SourceSpec, file: string) => staticFile(`${spec.media}/${file}`);
 
 /** The scene's schematic board; `names` limits which labels are shown so attention stays on one relationship. */
-const Board: React.FC<{spec: SourceSpec; board: string; names?: string[]; progress: number}> = ({spec, board, names, progress}) => {
+export const BoardPlate: React.FC<{spec: SourceSpec; board: string; names?: string[]; progress: number}> = ({spec, board, names, progress}) => {
   const def = spec.boards[board];
   const players = names ? def.players.map((p) => ({...p, name: names.includes(p.id) ? p.name : undefined})) : def.players;
   return <TacticalPlate players={players} arrows={def.arrows} zone={def.zone} progress={progress} label={def.label ?? 'TACTICAL CONCEPT'} opponent={spec.opponent} />;
 };
 const sceneBoard = (spec: SourceSpec, scene: SourceScene, f: number) =>
-  <Board spec={spec} board={scene.board!} names={scene.names} progress={mix(f - scene.a * FPS, 25, 85)} />;
+  <BoardPlate spec={spec} board={scene.board!} names={scene.names} progress={mix(f - scene.a * FPS, 25, 85)} />;
 
 const Cards: React.FC<{scene: SourceScene; f: number; width: number; height: number; size?: number}> = ({scene, f, width, height, size = 54}) =>
   <div style={{width, height, display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 24}}>
@@ -193,7 +193,7 @@ export const SourceCover: React.FC<SourceEpisodeProps> = ({spec}) => <AbsoluteFi
   <div style={{position: 'absolute', top: 86, left: 70, fontFamily: LOCAL_FONTS.display, fontSize: 45}}>BARÇA <span style={{color: GOLD}}>RADAR</span></div>
   <div style={{position: 'absolute', top: 180, left: 70, color: GOLD, fontSize: 26, fontWeight: 800, letterSpacing: 4}}>{spec.cover.kicker}</div>
   <div style={{position: 'absolute', top: 245, left: 70, right: 70}}><CoverLines spec={spec} size={130} /></div>
-  {spec.cover.board && <div style={{position: 'absolute', top: 565, left: 60}}><Board spec={spec} board={spec.cover.board} progress={1} /></div>}
+  {spec.cover.board && <div style={{position: 'absolute', top: 565, left: 60}}><BoardPlate spec={spec} board={spec.cover.board} progress={1} /></div>}
   <div style={{position: 'absolute', left: 110, top: 1200, width: 860, height: 620, overflow: 'hidden', borderRadius: 26, border: '3px solid #f2c23080'}}><Img src={media(spec, 'cover.jpg')} style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 25%'}} /></div>
 </AbsoluteFill>;
 
