@@ -1,19 +1,45 @@
-name: Render source-aligned Short
+# Source-led Barça Radar episode: verified presenter source → vertical Short and/or 16:9 long-form,
+# rendered in parallel chunks (video + PCM audio per chunk, gapless concat) with delivery QC.
+# The episode is described by studio/src/episodes-source/<id>.spec.json (media dir, source SHA-256, docs).
+name: Render source-aligned episode
 on:
   workflow_dispatch:
     inputs:
-      source_file_id:
-        description: Shared Drive source file ID (not a URL or credential)
+      episode:
+        description: Source episode id from studio/src/episodes-source (e.g. CLASICO-SOURCE)
         required: true
-        type: string
+        default: CLASICO-SOURCE
+      outputs:
+        description: Comma list of short,long
+        required: true
+        default: short,long
+      chunks:
+        description: Parallel render jobs per output
+        required: true
+        default: '4'
+      source_file_id:
+        description: Shared Drive file ID. Optional once prepared media is cached for this SHA-256.
+        required: false
+        default: ''
+      source_from_run:
+        description: Optional earlier run ID whose source_file_id input should be reused (read from its log, masked here)
+        required: false
+        default: ''
 permissions:
   contents: read
+  actions: read
+env:
+  EPISODE: ${{ inputs.episode }}
+
 jobs:
-  render:
+  prepare:
     runs-on: ubuntu-24.04
-    timeout-minutes: 60
-    env:
-      SOURCE_SHA256: 8b558736590ffa4297a2b2df4aa8d007042472738cb141085cb4b9eac03a29c1
+    timeout-minutes: 30
+    outputs:
+      render: ${{ steps.plan.outputs.render }}
+      finalize: ${{ steps.plan.outputs.finalize }}
+      media: ${{ steps.plan.outputs.media }}
+      key: ${{ steps.plan.outputs.key }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -21,52 +47,153 @@ jobs:
           node-version: 22
           cache: npm
           cache-dependency-path: studio/package-lock.json
+      - name: Plan
+        id: plan
+        run: |
+          info=$(node studio/scripts/source-plan.mjs "$EPISODE" info)
+          matrix=$(node studio/scripts/source-plan.mjs "$EPISODE" matrix '${{ inputs.chunks }}' '${{ inputs.outputs }}')
+          echo "media=$(jq -r .media <<<"$info")" >> "$GITHUB_OUTPUT"
+          echo "sha=$(jq -r .sha256 <<<"$info")" >> "$GITHUB_OUTPUT"
+          echo "key=radar-media-$(jq -r .sha256 <<<"$info")-${{ hashFiles('tools/video/prepare_source.py') }}" >> "$GITHUB_OUTPUT"
+          echo "render=$(jq -c .render <<<"$matrix")" >> "$GITHUB_OUTPUT"
+          echo "finalize=$(jq -c .finalize <<<"$matrix")" >> "$GITHUB_OUTPUT"
+          echo "$info"; jq -c '.render.include | length' <<<"$matrix"
+      - name: Restore prepared media
+        id: media
+        uses: actions/cache/restore@v4
+        with:
+          path: studio/public/${{ steps.plan.outputs.media }}
+          key: ${{ steps.plan.outputs.key }}
       - name: Install media tools
         run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - name: Verify media-tool checks
         run: python -m unittest discover -s tools/video/tests -v
-      - name: Download and verify the original source
+      - name: Download, verify and prepare the original source
+        if: steps.media.outputs.cache-hit != 'true'
         env:
-          SOURCE_FILE_ID: ${{ inputs.source_file_id }}
-        run: python tools/video/download_drive.py "$SOURCE_FILE_ID" /tmp/presenter-source.mov --sha256 "$SOURCE_SHA256"
-      - name: Prepare media without changing speech timing
+          GH_TOKEN: ${{ github.token }}
+          SHA: ${{ steps.plan.outputs.sha }}
+          OUT: studio/public/${{ steps.plan.outputs.media }}
         run: |
-          python tools/video/prepare_source.py /tmp/presenter-source.mov --output-dir studio/public/host/CLASICO
-          python tools/video/make_score.py studio/public/host/CLASICO/score.wav --duration 175
-      - name: Install Studio and verify types
+          # Read inputs from the event file so the Drive ID is never printed in this public log.
+          ID=$(jq -r '.inputs.source_file_id // ""' "$GITHUB_EVENT_PATH")
+          RUN=$(jq -r '.inputs.source_from_run // ""' "$GITHUB_EVENT_PATH")
+          if [ -z "$ID" ] && [ -n "$RUN" ]; then
+            for JOB in $(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$RUN/jobs" --jq '.jobs[].id'); do
+              ID=$(gh api "repos/$GITHUB_REPOSITORY/actions/jobs/$JOB/logs" | grep -m1 -oP 'SOURCE_FILE_ID: \K[\w-]+' || true)
+              [ -n "$ID" ] && break
+            done
+          fi
+          [ -n "$ID" ] || { echo "::error::No cached media for this SHA-256; supply source_file_id or source_from_run."; exit 1; }
+          echo "::add-mask::$ID"
+          python tools/video/download_drive.py "$ID" /tmp/presenter-source --sha256 "$SHA"
+          python tools/video/prepare_source.py /tmp/presenter-source --output-dir "$OUT"
+          rm /tmp/presenter-source
+      - name: Cache prepared media (never uploaded as an artifact)
+        if: steps.media.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: studio/public/${{ steps.plan.outputs.media }}
+          key: ${{ steps.plan.outputs.key }}
+      - name: Install Studio, verify types and spec, render stills
         working-directory: studio
         run: |
           npm ci --no-audit --no-fund
           npx tsc --noEmit
-      - name: Render vertical master
-        working-directory: studio
-        run: |
-          CHROME_PATH=$(command -v google-chrome || command -v chromium || true)
-          if [ -z "$CHROME_PATH" ]; then
-            npx remotion browser ensure
-            npx remotion render src/index.ts CLASICO-SOURCE-SHORT out/CLASICO-SOURCE-SHORT.render.mp4 --concurrency=2 --crf=18 --codec=h264 --pixel-format=yuv420p --color-space=bt709 --image-format=png --audio-codec=aac --audio-bitrate=192k
-          else
-            npx remotion render src/index.ts CLASICO-SOURCE-SHORT out/CLASICO-SOURCE-SHORT.render.mp4 --browser-executable="$CHROME_PATH" --concurrency=2 --crf=18 --codec=h264 --pixel-format=yuv420p --color-space=bt709 --image-format=png --audio-codec=aac --audio-bitrate=192k
-          fi
-          npx remotion still src/index.ts CLASICO-SOURCE-COVER out/CLASICO-SOURCE-COVER.png
-          ffmpeg -v error -y -i out/CLASICO-SOURCE-SHORT.render.mp4 -c copy -movflags +faststart out/CLASICO-SOURCE-SHORT.mp4
-      - name: QC and posting packet
-        run: |
-          python tools/video/media.py qc studio/out/CLASICO-SOURCE-SHORT.mp4 --profile vertical --decode --loudness --output studio/out/quality.json
-          python tools/video/media.py contact-sheet studio/out/CLASICO-SOURCE-SHORT.mp4 --output studio/out/contact-sheet.jpg --interval 5
-          cp docs/barca-radar/clasico-source/CLASICO-SOURCE-SHORT.srt studio/out/
-          cp docs/barca-radar/clasico-source/posting.en.md studio/out/
-          cp docs/barca-radar/clasico-source/review-notes.fa.md studio/out/
+          npx remotion browser ensure
+          npx remotion still src/index.ts "$EPISODE-COVER" "out/$EPISODE-COVER.png"
+          npx remotion still src/index.ts "$EPISODE-THUMB" "out/$EPISODE-THUMB.png"
       - uses: actions/upload-artifact@v4
         with:
-          name: clasico-source-short-${{ github.sha }}
-          path: |
-            studio/out/CLASICO-SOURCE-SHORT.mp4
-            studio/out/CLASICO-SOURCE-COVER.png
-            studio/out/CLASICO-SOURCE-SHORT.srt
-            studio/out/quality.json
-            studio/out/contact-sheet.jpg
-            studio/out/posting.en.md
-            studio/out/review-notes.fa.md
+          name: stills
+          path: studio/out/*.png
+          retention-days: 1
+
+  render:
+    needs: prepare
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    strategy:
+      fail-fast: true
+      matrix: ${{ fromJson(needs.prepare.outputs.render) }}
+    defaults:
+      run:
+        working-directory: studio
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: studio/package-lock.json
+      - uses: actions/cache/restore@v4
+        with:
+          path: studio/public/${{ needs.prepare.outputs.media }}
+          key: ${{ needs.prepare.outputs.key }}
+          fail-on-cache-miss: true
+      - name: Original underscore (no external samples)
+        run: |
+          info=$(node scripts/source-plan.mjs "$EPISODE" info)
+          python ../tools/video/make_score.py "public/$(jq -r .media <<<"$info")/score.wav" --duration "$(jq -r .duration <<<"$info")"
+          python ../tools/video/make_score.py "public/$(jq -r .media <<<"$info")/score-long.wav" --duration "$(jq -r .longDuration <<<"$info")"
+      - run: npm ci --no-audit --no-fund
+      - name: Render ${{ matrix.comp }} chunk ${{ matrix.index }} (frames ${{ matrix.start }}-${{ matrix.end }})
+        run: |
+          start=$(date +%s)
+          npx remotion render src/index.ts '${{ matrix.comp }}' 'out/${{ matrix.comp }}-part-${{ matrix.index }}.mkv' \
+            --frames=${{ matrix.start }}-${{ matrix.end }} --codec=h264-mkv --audio-codec=pcm-16 --crf=18 \
+            --pixel-format=yuv420p --color-space=bt709 --image-format=png --concurrency=4 --log=info
+          echo "${{ matrix.comp }} chunk ${{ matrix.index }}: $(( ${{ matrix.end }} - ${{ matrix.start }} + 1 )) frames in $(( $(date +%s) - start ))s" | tee 'out/${{ matrix.comp }}-part-${{ matrix.index }}.txt'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: part-${{ matrix.comp }}-${{ matrix.index }}
+          path: studio/out/${{ matrix.comp }}-part-*
+          retention-days: 1
+
+  finalize:
+    needs: [prepare, render]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    strategy:
+      matrix: ${{ fromJson(needs.prepare.outputs.finalize) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: part-${{ matrix.comp }}-*
+          path: parts
+          merge-multiple: true
+      - uses: actions/download-artifact@v4
+        with:
+          name: stills
+          path: out
+      - name: Install media tools
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Concatenate chunks and encode delivery
+        run: |
+          ls parts/*.mkv | sort -V | sed "s|^|file '$PWD/|; s|$|'|" > parts/list.txt
+          ffmpeg -v error -y -f concat -safe 0 -i parts/list.txt -c copy parts/joined.mkv
+          ffmpeg -v error -y -i parts/joined.mkv -c:v copy -c:a aac -b:a 192k -ar 48000 -movflags +faststart 'out/${{ matrix.comp }}.mp4'
+          cat parts/*.txt > out/render-speed.txt
+      - name: QC and posting packet
+        run: |
+          python tools/video/media.py qc 'out/${{ matrix.comp }}.mp4' --profile '${{ matrix.profile }}' --decode --loudness --output out/quality.json
+          python tools/video/media.py contact-sheet 'out/${{ matrix.comp }}.mp4' --output out/contact-sheet.jpg --interval 5
+          docs=$(node studio/scripts/source-plan.mjs "$EPISODE" info | jq -r .docs)
+          cp "$docs"/*.srt "$docs"/posting*.md "$docs"/review-notes.fa.md out/ 2>/dev/null || true
+          node studio/scripts/source-plan.mjs "$EPISODE" chapters > out/chapters.txt
+          python - <<'EOF' | tee -a "$GITHUB_STEP_SUMMARY"
+          import json
+          q = json.load(open('out/quality.json')); v = next(s for s in q['probe']['streams'] if s['codec_type'] == 'video'); l = q.get('loudness', {})
+          print(f"### ${{ matrix.comp }}\n\n| check | value |\n|---|---|")
+          for k, x in [('passed', q['passed']), ('errors', '; '.join(q['errors']) or 'none'), ('size', f"{v['width']}x{v['height']} {v['codec_name']} {v['pix_fmt']} {v.get('avg_frame_rate')}"),
+                       ('duration', q['probe']['format']['duration']), ('full decode', q['decode_checked']), ('integrated loudness', f"{l.get('input_i')} LUFS"), ('true peak', f"{l.get('input_tp')} dBTP")]:
+              print(f'| {k} | {x} |')
+          EOF
+          cat out/render-speed.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.comp }}-${{ github.sha }}
+          path: out
           if-no-files-found: error
-          retention-days: 14
+          retention-days: 30

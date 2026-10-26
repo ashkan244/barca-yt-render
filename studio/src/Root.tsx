@@ -1,5 +1,6 @@
 import React from 'react';
-import {ClasicoSourceShort, ClasicoSourceCover, CLASICO_SOURCE_FRAMES} from './production/ClasicoSource';
+import {SourceShort, SourceLong, SourceCover, SourceThumb, shortFrames, longFrames} from './production/source/SourceEpisode';
+import {SOURCE_EPISODES} from './episodes-source';
 import {Composition, Still} from 'remotion';
 import {TacticsHook, HOOK_FRAMES} from './TacticsHook';
 import {StoryHook, STORY_FRAMES} from './StoryHook';
@@ -18,8 +19,14 @@ import {HORadar, HO_FRAMES, HOThumb} from './radar/HOTitle';
 
 export const Root: React.FC = () => (
   <>
-    <Still id="CLASICO-SOURCE-COVER" component={ClasicoSourceCover} width={1080} height={1920} />
-    <Composition id="CLASICO-SOURCE-SHORT" component={ClasicoSourceShort} durationInFrames={CLASICO_SOURCE_FRAMES} fps={30} width={1080} height={1920} />
+    {SOURCE_EPISODES.map((d) => (
+      <React.Fragment key={d.spec.id}>
+        <Composition id={`${d.spec.id}-SHORT`} component={SourceShort} durationInFrames={shortFrames(d.spec)} fps={30} width={1080} height={1920} defaultProps={d} />
+        <Composition id={`${d.spec.id}-LONG`} component={SourceLong} durationInFrames={longFrames(d.spec)} fps={30} width={1920} height={1080} defaultProps={d} />
+        <Still id={`${d.spec.id}-COVER`} component={SourceCover} width={1080} height={1920} defaultProps={d} />
+        <Still id={`${d.spec.id}-THUMB`} component={SourceThumb} width={1280} height={720} defaultProps={d} />
+      </React.Fragment>
+    ))}
     {EPISODES.map((d) => (
       <React.Fragment key={d.spec.id}>
         <Composition id={d.spec.id} component={Episode} durationInFrames={Math.max(30, episodeFrames(d))} fps={30} width={1920} height={1080} defaultProps={d} />

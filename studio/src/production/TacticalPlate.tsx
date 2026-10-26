@@ -1,9 +1,9 @@
 import React, {useId} from 'react';
 import {interpolate} from 'remotion';
 import {LOCAL_FONTS} from './fonts';
-export type Player = {id: string; x: number; y: number; team: 'barca' | 'madrid'; name?: string; to?: [number, number]; focus?: boolean};
+export type Player = {id: string; x: number; y: number; team: 'barca' | 'opp'; name?: string; to?: [number, number]; focus?: boolean};
 export type PlateArrow = {from: [number, number]; to: [number, number]; kind?: 'run' | 'pass'; color?: string};
-export const TacticalPlate: React.FC<{players: Player[]; arrows?: PlateArrow[]; zone?: {x: number; y: number; w: number; h: number; label: string}; progress?: number; label: string; ball?: [number, number]}> = ({players, arrows = [], zone, progress = 0, label, ball}) => {
+export const TacticalPlate: React.FC<{players: Player[]; arrows?: PlateArrow[]; zone?: {x: number; y: number; w: number; h: number; label: string}; progress?: number; label: string; ball?: [number, number]; opponent?: string}> = ({players, arrows = [], zone, progress = 0, label, ball, opponent = 'MADRID'}) => {
   const id = useId().replace(/:/g, ''); const p = Math.max(0, Math.min(1, progress));
   return <div style={{width: 960, height: 610, background: '#0e1c2d', border: '1px solid #ffffff22', borderRadius: 24, padding: '20px 24px'}}>
     <div style={{fontFamily: LOCAL_FONTS.body, fontSize: 22, fontWeight: 700, color: '#b6c5d5', letterSpacing: 2, marginBottom: 12}}>{label}</div>
@@ -27,6 +27,6 @@ export const TacticalPlate: React.FC<{players: Player[]; arrows?: PlateArrow[]; 
       })}
       {ball && <circle cx={ball[0] * 10} cy={ball[1] * 10} r="10" fill="#fff" stroke="#111" strokeWidth="3" />}
     </svg>
-    <div style={{display: 'flex', justifyContent: 'space-between', fontFamily: LOCAL_FONTS.body, fontSize: 18, color: '#a5b8b6', marginTop: 5}}><span>BARÇA <span style={{color: '#db4269'}}>●</span> / MADRID ○</span><span>SCHEMATIC · NOT MATCH TRACKING</span></div>
+    <div style={{display: 'flex', justifyContent: 'space-between', fontFamily: LOCAL_FONTS.body, fontSize: 18, color: '#a5b8b6', marginTop: 5}}><span>BARÇA <span style={{color: '#db4269'}}>●</span> / {opponent} ○</span><span>SCHEMATIC · NOT MATCH TRACKING</span></div>
   </div>;
 };
