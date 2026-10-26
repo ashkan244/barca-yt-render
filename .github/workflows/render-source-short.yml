@@ -66,8 +66,12 @@ jobs:
         with:
           path: studio/public/${{ steps.plan.outputs.media }}
           key: ${{ steps.plan.outputs.key }}
+      - uses: actions/cache@v4
+        with:
+          path: ~/apt-debs
+          key: ffmpeg-debs-ubuntu-24.04-${{ hashFiles('tools/video/ensure_ffmpeg.sh') }}
       - name: Install media tools
-        run: for i in 1 2 3; do timeout 240 sudo apt-get update -qq && timeout 300 sudo apt-get install -y -qq ffmpeg && break; sleep 10; done; ffmpeg -version | head -1
+        run: tools/video/ensure_ffmpeg.sh
       - name: Verify media-tool checks
         run: python -m unittest discover -s tools/video/tests -v
       - name: Download, verify and prepare the original source
@@ -205,8 +209,12 @@ jobs:
         with:
           name: stills
           path: out
+      - uses: actions/cache@v4
+        with:
+          path: ~/apt-debs
+          key: ffmpeg-debs-ubuntu-24.04-${{ hashFiles('tools/video/ensure_ffmpeg.sh') }}
       - name: Install media tools
-        run: for i in 1 2 3; do timeout 240 sudo apt-get update -qq && timeout 300 sudo apt-get install -y -qq ffmpeg && break; sleep 10; done; ffmpeg -version | head -1
+        run: tools/video/ensure_ffmpeg.sh
       - name: Concatenate chunks and encode delivery
         run: |
           # MP4 chunks keep exact 30fps timestamps; PCM chunks concatenate sample-exactly.
@@ -262,7 +270,7 @@ jobs:
           path: renders/stills
       - name: Commit review images
         run: |
-          for i in 1 2 3; do timeout 240 sudo apt-get update -qq && timeout 300 sudo apt-get install -y -qq ffmpeg && break; sleep 10; done
+          tools/video/ensure_ffmpeg.sh
           dest="$(node studio/scripts/source-plan.mjs "$EPISODE" info | jq -r .docs)/renders"
           mkdir -p "$dest"
           for d in renders/*-${{ github.sha }}; do

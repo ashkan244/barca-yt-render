@@ -118,7 +118,9 @@ def main():
         interval = max(args.interval, duration / 64)
         count = max(1, min(64, math.ceil(duration / interval)))
         columns = min(6, count); rows = math.ceil(count / columns)
-        filters = f"fps=1/{interval},scale=240:-2,drawtext=text='%{{pts\\:hms}}':x=6:y=6:fontcolor=white:box=1:boxcolor=black@0.7:fontsize=14,tile={columns}x{rows}"
+        font = next((f for f in ('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', '/usr/share/fonts/dejavu/DejaVuSans.ttf') if Path(f).exists()), None)
+        font = f"fontfile={font}:" if font else ''  # static ffmpeg builds may lack a fontconfig default
+        filters = f"fps=1/{interval},scale=240:-2,drawtext={font}text='%{{pts\\:hms}}':x=6:y=6:fontcolor=white:box=1:boxcolor=black@0.7:fontsize=14,tile={columns}x{rows}"
         args.output.parent.mkdir(parents=True, exist_ok=True)
         run(['ffmpeg', '-v', 'error', '-y', '-i', str(args.media), '-vf', filters, '-frames:v', '1', str(args.output)])
     elif args.command == 'cuts':
