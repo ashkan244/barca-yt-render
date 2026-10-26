@@ -37,3 +37,11 @@ These are local browser-rendered review images, not the uploaded historical refe
 [Cover preview](previews/cover.png) · [Selected-frame review sheet](previews/review-sheet.png)
 
 ![Cover preview](previews/cover.png)
+
+## Verified delivery
+
+[Download the GitHub output packet](https://github.com/ashkan244/barca-yt-render/actions/runs/40317053776/artifacts/12648532181) · [Successful render run](https://github.com/ashkan244/barca-yt-render/actions/runs/40317053776) · [Delivery measurements](delivery.json)
+
+The downloaded master passed full decode and structural checks: 1080×1920, 30fps, H.264/yuv420p/BT.709, 48kHz AAC, 175.019s. Measured master loudness is −16.02LUFS / −2.86dBTP. Audio matched the prepared source at three sampled windows with zero measured offset. Retained artifact expires on 2026-11-09; download it before expiration.
+
+Current status is a **rendered review candidate**. Confirmation of the spoken Bernardo/Bernal name is pending. Do not treat an unanswered clarification as approved subtitles. No social-media post was published.
