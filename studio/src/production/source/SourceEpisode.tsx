@@ -4,7 +4,7 @@
 import React from 'react';
 import {AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, Easing, interpolate, staticFile, useCurrentFrame} from 'remotion';
 import {LOCAL_FONTS} from '../fonts';
-import {ReviewedCaptions} from '../Captions';
+import {ReviewedCaptions, captionKey} from '../Captions';
 import type {Player, PlateArrow} from '../TacticalPlate';
 import {BoardPlate, Shot, Thumb, shotLibrary} from './Shot';
 export {BoardPlate} from './Shot';
@@ -30,6 +30,8 @@ export type SourceSpec = {
   clips?: {name: string; a: number; b: number}[];
   /** Photo beats: while a name or place is spoken, its shot replaces the board/cards panel (seconds on the source timeline). */
   beats?: {a: number; b: number; shot: string}[];
+  /** Extra caption emphasis; names on boards and shot labels are added automatically. */
+  captions?: {emphasis?: string[]};
 };
 export type Word = {w: string; s: number; e: number};
 export type SourceEpisodeProps = {spec: SourceSpec; words: Word[]};
@@ -63,6 +65,14 @@ export const validateSourceEpisode = (d: SourceEpisodeProps): SourceEpisodeProps
   });
   words.forEach((w, i) => { if (w.e < w.s || w.s < 0 || w.e > spec.duration + .05 || (i && w.s < words[i - 1].s)) err(`word ${i} "${w.w}" has invalid timing`); });
   return d;
+};
+
+const STOP = new Set(['EL', 'THE', 'AND', 'OF', 'CLASICO', 'STADIUM']);
+/** Names worth highlighting in captions: spec list + board player names + words of shot labels. */
+export const emphasisFor = (spec: SourceSpec): string[] => {
+  const fromBoards = Object.values(spec.boards).flatMap((b) => b.players.map((p) => p.name ?? '')).filter((n) => n && n !== 'RUNNER' && n !== 'CORNER');
+  const fromLabels = Object.values(shotLibrary(spec)).flatMap((s) => (s.label ?? '').split(/[\s·]+/));
+  return [...(spec.captions?.emphasis ?? []), ...fromBoards, ...fromLabels].filter((w) => w.length > 2 && !/^\d+$/.test(w) && !STOP.has(captionKey(w).toUpperCase()));
 };
 
 export const shortFrames = (spec: SourceSpec) => Math.round(spec.duration * FPS);
@@ -137,7 +147,7 @@ export const SourceShort: React.FC<SourceEpisodeProps & {window?: [number, numbe
     </div>
     <div style={{position: 'absolute', left: 60, top: 305, width: 960, height: 610}}><BeatPanel spec={spec} f={f} width={960} height={610} labelSize={30} /></div>
     <Presenter spec={spec} t={t} style={{left: 90, top: 940, width: 900, height: 810, borderRadius: 24}} />
-    <ReviewedCaptions words={words} top={1540} width={860} />
+    <ReviewedCaptions words={words} top={1540} width={860} emphasis={emphasisFor(spec)} />
     <div style={{position: 'absolute', bottom: 89, left: 70, right: 70, display: 'flex', justifyContent: 'space-between', color: '#a4b1c4', fontSize: 20, letterSpacing: 2}}><span>WITH {spec.presenter}</span><span>TACTICAL ANALYSIS</span></div>
     <div style={{position: 'absolute', bottom: 68, left: 70, width: 940, height: 3, background: '#ffffff1a'}}><div style={{height: 3, width: `${(f - wa) / (wb - wa) * 100}%`, background: GOLD}} /></div>
     <Audio src={media(spec, 'voice.wav')} volume={window ? (fr) => interpolate(fr, [wb - 6, wb], [1, 0], clamp) : undefined} />
@@ -206,7 +216,7 @@ export const SourceLong: React.FC<SourceEpisodeProps> = ({spec, words}) => {
         <Mark size={70} brand="radar" />
         <div><div style={{fontFamily: LOCAL_FONTS.display, fontSize: 46, lineHeight: 1}}>{spec.presenter}</div><div style={{fontWeight: 900, fontSize: 22, color: GOLD, letterSpacing: 4}}>BARÇA RADAR</div></div>
       </div>}
-      <ReviewedCaptions words={words} top={958} width={1500} frameWidth={1920} maxFontSize={50} />
+      <ReviewedCaptions words={words} top={958} width={1500} frameWidth={1920} maxFontSize={50} emphasis={emphasisFor(spec)} />
       <div style={{position: 'absolute', bottom: 22, left: 70, width: 1780, height: 4, background: '#ffffff1a'}}>
         <div style={{height: 4, width: `${f / main * 100}%`, background: GOLD}} />
         {spec.chapters.slice(1).map((c) => <div key={c.at} style={{position: 'absolute', top: -4, left: `${c.at / spec.duration * 100}%`, width: 3, height: 12, background: c.at <= t ? GOLD : '#ffffff55'}} />)}

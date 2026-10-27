@@ -12,6 +12,8 @@
 
 1. inspect + checksum → متن گفتار (ASR) → بازبینی نام‌ها با مجری.
 2. فهرست نام‌ها/مکان‌ها/سال‌های گفتار → `archive-queries.json` → workflow «Archive research» → انتخاب عکس فقط وقتی عنوان Commons نام همان شخص را دارد.
-3. `<id>.spec.json` با `archive.cues` (هر کات روی مرز کلمه) + `archive-manifest.json`.
+3. `archive-plan.json` بنویس (نام → عکس‌ها، موضوع → برد/عکس عمومی، بازه‌های تمام‌قاب و کارت‌ها؛ نمونه: `clasico-source/archive-plan.json`) و پیش‌نویس بگیر:
+   `cd studio && npm run draft:archive -- src/episodes-source/<id>.words.json ../docs/barca-radar/<id>/archive-plan.json --output /tmp/draft.json`
+   خروجی `cues` و `beats` را در `<id>.spec.json` بگذار، shotها را در `archive.shots` و `archive-manifest.json` تعریف کن، و فقط جاهای حساس را دستی اصلاح کن. هدف: B-roll ≥ ۷۵٪ زمان، شات ≤ ۳.۲ ثانیه (برد ≤ ۶).
 4. رندر workflow با `outputs=archive,clips`؛ تصاویر بازبینی در `renders/` همان پوشه commit می‌شوند.
 5. توضیحات YouTube + `CREDITS.md` (نام عکاس‌های CC BY/BY-SA).

@@ -7,7 +7,7 @@ import {LOCAL_FONTS} from '../fonts';
 import {ReviewedCaptions} from '../Captions';
 import {Grain} from '../../lib';
 import {Mark} from '../../Branding';
-import {FPS, type SourceEpisodeProps, type SourceSpec} from './SourceEpisode';
+import {FPS, emphasisFor, type SourceEpisodeProps, type SourceSpec} from './SourceEpisode';
 import {Shot, type ArchiveShot} from './Shot';
 export type {ArchiveShot} from './Shot';
 
@@ -80,7 +80,7 @@ export const ArchiveShort: React.FC<Props> = ({spec, words, window}) => {
       {split && <div style={{position: 'absolute', left: 0, top: 0, width: 1080, height: SPLIT_Y}}><Shot spec={spec} shot={ar.shots[shotId]} local={shotLocal} len={shotLen} index={shotIndex} /></div>}
       {split && <div style={{position: 'absolute', left: 0, top: SPLIT_Y - 3, width: 1080, height: 6, background: `linear-gradient(90deg, ${GOLD}, #b3123f 60%, #1f5fd6)`}} />}
       <div style={{position: 'absolute', left: 0, right: 0, top: split ? SPLIT_Y + 1080 - 330 : 1440}}>
-        <ReviewedCaptions words={words} top={0} width={900} maxFontSize={62} />
+        <ReviewedCaptions words={words} top={0} width={900} maxFontSize={62} emphasis={emphasisFor(spec)} />
       </div>
     </>}
     {hook && <div style={{position: 'absolute', left: 60, right: 60, top: 300, textAlign: 'center', opacity: interpolate(f, [4, 12], [0, 1], clamp)}}>

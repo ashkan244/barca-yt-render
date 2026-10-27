@@ -1,0 +1,21 @@
+{
+  "note": "Input for tools/archive/draft_cues.py: produces a first-draft archive.cues + beats from the reviewed word timings. Shot ids come from archive.shots in clasico-source.spec.json.",
+  "duration": 175,
+  "hook": {"text": "A TACTICAL LESSON", "until": 2.4},
+  "full": [[9.9, 11.84, true], [53.6, 57.0, true], [90.88, 97.2, true], [102.88, 106.88, false], [132.18, 135.78, false], [137.4, 141.68, false], [154.4, 158.04, true], [160.7, 164.1, false]],
+  "cards": [
+    {"a": 11.84, "b": 13.4, "lines": ["RELENTLESS", "PRESSING"]},
+    {"a": 67.64, "b": 69.4, "lines": ["THE WIDE", "TRAP"], "style": "light"},
+    {"a": 135.78, "b": 137.4, "lines": ["85′", "DESERVED"], "style": "gold"},
+    {"a": 141.68, "b": 143.2, "lines": ["GORDON OFF", "ADEYEMI ON"]},
+    {"a": 152.8, "b": 154.4, "lines": ["TWO GOALS", "CONCEDED"]}
+  ],
+  "entities": {
+    "Mbappé": ["mbappe_video", "mbappe2", "mbappe3"], "Bellingham": ["bellingham", "bellingham4", "bellingham2"],
+    "Güler": ["guler"], "Pedri": ["pedri", "pedri3"], "Mourinho": ["mourinho2"], "Flick": ["flick2", "flick", "flick3"],
+    "Yamal": ["yamal2", "yamal"], "Huijsen": ["huijsen", "huijsen2"], "Fermín": ["fermin", "fermin2"], "Cucurella": ["cucurella"],
+    "Cancelo": ["cancelo", "cancelo2"], "Jong": ["dejong"], "Olmo": ["olmo", "olmo3"], "Adeyemi": ["adeyemi"], "Clásico": ["cn_clasico_crowd", "clasico_1926"]
+  },
+  "topics": {"pressing": ["b_press"], "pressure": ["b_press"], "block": ["b_block"], "line": ["b_line"], "behind": ["b_line"], "wings": ["b_wings"], "touchline": ["b_wings"], "corner": ["corner_arc", "b_corner"], "Madrid": ["madrid_cl", "bernabeu_pano", "madrid_tifo"], "fan": ["culers_scarf"], "defeat": ["clasico_ucl"]},
+  "generic": ["clasico_match", "cn_before_clasico", "culers_stand", "cn_interior", "bernabeu_night", "culers_banner", "cn_aerial2", "clasico_mosaic"]
+}
