@@ -5,7 +5,9 @@ import React from 'react';
 import {AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, Easing, interpolate, staticFile, useCurrentFrame} from 'remotion';
 import {LOCAL_FONTS} from '../fonts';
 import {ReviewedCaptions} from '../Captions';
-import {TacticalPlate, type Player, type PlateArrow} from '../TacticalPlate';
+import type {Player, PlateArrow} from '../TacticalPlate';
+import {BoardPlate, Shot, Thumb, shotLibrary} from './Shot';
+export {BoardPlate} from './Shot';
 import {RadarBg, GRANA, BLAU} from '../../radar/RadarStory';
 import {Mark} from '../../Branding';
 
@@ -14,7 +16,9 @@ const GOLD = '#f2c230';
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 
 export type BoardDef = {label?: string; note?: string; players: Player[]; arrows?: PlateArrow[]; zone?: {x: number; y: number; w: number; h: number; label: string}};
-export type SourceScene = {a: number; b: number; title: string; sub: string; board?: string; names?: string[]; cards?: [string, string][]; cardDelays?: number[]};
+export type SourceScene = {a: number; b: number; title: string; sub: string; board?: string; names?: string[]; cards?: [string, string][]; cardDelays?: number[];
+  /** Optional photo per card row (shot id from archive.shots; must show the person the card names). */
+  cardShots?: (string | null)[]};
 export type SourceSpec = {
   id: string; media: string; docs?: string; duration: number; label: string; presenter: string; opponent: string;
   source: {sha256: string; bytes?: number; note?: string};
@@ -24,6 +28,8 @@ export type SourceSpec = {
   long?: {endSeconds?: number; endKicker?: string};
   /** Stand-alone Shorts cut from the same take; a/b must be scene boundaries so every cut lands between sentences. */
   clips?: {name: string; a: number; b: number}[];
+  /** Photo beats: while a name or place is spoken, its shot replaces the board/cards panel (seconds on the source timeline). */
+  beats?: {a: number; b: number; shot: string}[];
 };
 export type Word = {w: string; s: number; e: number};
 export type SourceEpisodeProps = {spec: SourceSpec; words: Word[]};
@@ -43,6 +49,13 @@ export const validateSourceEpisode = (d: SourceEpisodeProps): SourceEpisodeProps
   spec.chapters.forEach((c, i) => { const end = spec.chapters[i + 1]?.at ?? spec.duration; if (end - c.at < 10) err(`chapter "${c.title}" is shorter than 10s`); });
   if (spec.chapters.length < 3) err('YouTube needs at least 3 chapters');
   if (spec.cover.board && !spec.boards[spec.cover.board]) err('cover uses unknown board');
+  const lib = shotLibrary(spec);
+  spec.scenes.forEach((s, i) => s.cardShots?.forEach((id) => { if (id && !lib[id]?.src) err(`scene ${i} card uses unknown shot "${id}"`); }));
+  (spec.beats ?? []).forEach((b, i, all) => {
+    if (!lib[b.shot]) err(`beat ${i} uses unknown shot "${b.shot}"`);
+    if (b.b <= b.a || b.a < 0 || b.b > spec.duration) err(`beat ${i} has invalid timing`);
+    if (i && b.a < all[i - 1].b) err(`beat ${i} overlaps the previous beat`);
+  });
   const bounds = spec.scenes.map((s) => s.a).concat(spec.duration);
   spec.clips?.forEach((c) => {
     if (![c.a, c.b].every((x) => bounds.some((y) => Math.abs(x - y) < 1e-6))) err(`clip ${c.name} must start and end on scene boundaries`);
@@ -63,25 +76,42 @@ const sceneAt = (spec: SourceSpec, t: number) => spec.scenes.find((s) => t >= s.
 const punchAt = (spec: SourceSpec, t: number) => (spec.punch ?? []).some(([a, b]) => t >= a && t < b) ? 1.035 : 1;
 const media = (spec: SourceSpec, file: string) => staticFile(`${spec.media}/${file}`);
 
-/** The scene's schematic board; `names` limits which labels are shown so attention stays on one relationship. */
-export const BoardPlate: React.FC<{spec: SourceSpec; board: string; names?: string[]; progress: number}> = ({spec, board, names, progress}) => {
-  const def = spec.boards[board];
-  const players = names ? def.players.map((p) => ({...p, name: names.includes(p.id) ? p.name : undefined})) : def.players;
-  return <TacticalPlate players={players} arrows={def.arrows} zone={def.zone} progress={progress} label={def.label ?? 'TACTICAL CONCEPT'} opponent={spec.opponent} />;
-};
 const sceneBoard = (spec: SourceSpec, scene: SourceScene, f: number) =>
   <BoardPlate spec={spec} board={scene.board!} names={scene.names} progress={mix(f - scene.a * FPS, 25, 85)} />;
 
-const Cards: React.FC<{scene: SourceScene; f: number; width: number; height: number; size?: number}> = ({scene, f, width, height, size = 54}) =>
-  <div style={{width, height, display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 24}}>
+const Cards: React.FC<{spec: SourceSpec; scene: SourceScene; f: number; width: number; height: number; size?: number}> = ({spec, scene, f, width, height, size = 54}) => {
+  const lib = shotLibrary(spec);
+  return <div style={{width, height, display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 24}}>
     {scene.cards?.map(([a, b], i) => {
       const k = mix(f, scene.a * FPS + (scene.cardDelays?.[i] ?? i * .3) * FPS);
-      return <div key={a} style={{borderLeft: `5px solid ${i ? '#3c75db' : GOLD}`, padding: '24px 30px', background: '#101c30', borderRadius: 12, opacity: k, transform: `translateX(${(1 - k) * 20}px)`}}>
-        <div style={{fontFamily: LOCAL_FONTS.display, fontSize: size, color: i ? '#f5f4ef' : GOLD}}>{a}</div>
-        <div style={{fontSize: Math.round(size * .46), fontWeight: 700, letterSpacing: 2, marginTop: 5, color: '#b9c7d8'}}>{b}</div>
+      const photo = scene.cardShots?.[i] ? lib[scene.cardShots[i]!] : undefined;
+      return <div key={a} style={{display: 'flex', alignItems: 'center', gap: 26, borderLeft: `5px solid ${i ? '#3c75db' : GOLD}`, padding: photo ? '16px 30px 16px 18px' : '24px 30px', background: '#101c30', borderRadius: 12, opacity: k, transform: `translateX(${(1 - k) * 20}px)`}}>
+        {photo && <Thumb shot={photo} size={Math.round(size * 2.3)} />}
+        <div>
+          <div style={{fontFamily: LOCAL_FONTS.display, fontSize: size, color: i ? '#f5f4ef' : GOLD}}>{a}</div>
+          <div style={{fontSize: Math.round(size * .46), fontWeight: 700, letterSpacing: 2, marginTop: 5, color: '#b9c7d8'}}>{b}</div>
+        </div>
       </div>;
     })}
   </div>;
+};
+
+/** The active photo beat (if any) drawn into a panel of the given size, with a quick scale-in and flash. */
+const BeatPanel: React.FC<{spec: SourceSpec; f: number; width: number; height: number; labelSize: number}> = ({spec, f, width, height, labelSize}) => {
+  const t = f / FPS; const bi = (spec.beats ?? []).findIndex((b) => t >= b.a && t < b.b);
+  if (bi < 0) return null;
+  const beat = spec.beats![bi]; const local = f - Math.round(beat.a * FPS); const len = Math.round((beat.b - beat.a) * FPS);
+  const k = interpolate(local, [0, 7], [0, 1], {...clamp, easing: Easing.out(Easing.cubic)});
+  const out = interpolate(local, [len - 6, len], [1, 0], clamp);
+  return <div style={{position: 'absolute', inset: 0, width, height, borderRadius: 24, overflow: 'hidden', opacity: Math.min(k, out), transform: `scale(${0.96 + 0.04 * k})`, boxShadow: '0 22px 60px #000a', border: `3px solid ${GOLD}70`}}>
+    <Shot spec={spec} shot={shotLibrary(spec)[beat.shot]} local={local} len={len} index={bi} labelSize={labelSize} />
+    <AbsoluteFill style={{background: '#fff', opacity: interpolate(local, [0, 3], [.45, 0], clamp)}} />
+  </div>;
+};
+
+const BeatSfx: React.FC<{spec: SourceSpec; offset?: number}> = ({spec}) => <>
+  {(spec.beats ?? []).map((b, i) => <Sequence key={i} from={Math.max(0, Math.round(b.a * FPS) - 3)} durationInFrames={30}><Audio src={staticFile('sfx/whoosh.wav')} volume={.1} /></Sequence>)}
+</>;
 
 const Presenter: React.FC<{spec: SourceSpec; t: number; style: React.CSSProperties}> = ({spec, t, style}) =>
   <div style={{position: 'absolute', overflow: 'hidden', background: '#152133', border: '2px solid #ffffff28', boxShadow: '0 22px 65px #0007', ...style}}>
@@ -103,14 +133,16 @@ export const SourceShort: React.FC<SourceEpisodeProps & {window?: [number, numbe
       <div style={{fontFamily: LOCAL_FONTS.display, fontSize: scene.title.length > 25 ? 64 : 76, lineHeight: 1.04}}>{scene.title}</div>
     </div>
     <div style={{position: 'absolute', left: 60, top: 305, opacity: enter}}>
-      {scene.board ? sceneBoard(spec, scene, f) : <Cards scene={scene} f={f} width={960} height={500} />}
+      {scene.board ? sceneBoard(spec, scene, f) : <Cards spec={spec} scene={scene} f={f} width={960} height={500} />}
     </div>
+    <div style={{position: 'absolute', left: 60, top: 305, width: 960, height: 610}}><BeatPanel spec={spec} f={f} width={960} height={610} labelSize={30} /></div>
     <Presenter spec={spec} t={t} style={{left: 90, top: 940, width: 900, height: 810, borderRadius: 24}} />
     <ReviewedCaptions words={words} top={1540} width={860} />
     <div style={{position: 'absolute', bottom: 89, left: 70, right: 70, display: 'flex', justifyContent: 'space-between', color: '#a4b1c4', fontSize: 20, letterSpacing: 2}}><span>WITH {spec.presenter}</span><span>TACTICAL ANALYSIS</span></div>
     <div style={{position: 'absolute', bottom: 68, left: 70, width: 940, height: 3, background: '#ffffff1a'}}><div style={{height: 3, width: `${(f - wa) / (wb - wa) * 100}%`, background: GOLD}} /></div>
     <Audio src={media(spec, 'voice.wav')} volume={window ? (fr) => interpolate(fr, [wb - 6, wb], [1, 0], clamp) : undefined} />
     <Audio src={media(spec, 'score.wav')} volume={(fr) => .22 * interpolate(fr, [wa, wa + 60, wb - 75, wb], [0, 1, 1, 0], clamp)} />
+    <BeatSfx spec={spec} />
   </AbsoluteFill>;
 };
 
@@ -166,8 +198,9 @@ export const SourceLong: React.FC<SourceEpisodeProps> = ({spec, words}) => {
       </div>
       <div style={{position: 'absolute', left: right, top: scene.board ? 290 : 330, opacity: enter}}>
         {scene.board ? <div style={{transform: 'scale(1.08)', transformOrigin: '0 0'}}>{sceneBoard(spec, scene, f)}</div>
-          : <Cards scene={scene} f={f} width={1920 - right - 70} height={540} size={60} />}
+          : <Cards spec={spec} scene={scene} f={f} width={1920 - right - 70} height={540} size={60} />}
       </div>
+      <div style={{position: 'absolute', left: right, top: 290, width: 1920 - right - 70, height: 640}}><BeatPanel spec={spec} f={f} width={1920 - right - 70} height={640} labelSize={34} /></div>
       <Presenter spec={spec} t={t} style={{left: box.x, top: box.y, width: box.w, height: box.h, borderRadius: 26}} />
       {t < 6 && <div style={{position: 'absolute', left: box.x + 34, top: box.y + box.h - 140, opacity: mix(f, 24) * (1 - mix(f, 5.4 * FPS)), display: 'flex', alignItems: 'center', gap: 16, background: '#050914e6', padding: '12px 26px 12px 14px', borderRadius: 16, borderLeft: `8px solid ${GOLD}`}}>
         <Mark size={70} brand="radar" />
@@ -182,6 +215,7 @@ export const SourceLong: React.FC<SourceEpisodeProps> = ({spec, words}) => {
     <div style={{position: 'absolute', right: 36, top: 30, opacity: .9}}><Mark size={74} brand="radar" /></div>
     <Audio src={media(spec, 'voice.wav')} />
     <Audio src={media(spec, 'score-long.wav')} volume={musicVol} />
+    <BeatSfx spec={spec} />
   </AbsoluteFill>;
 };
 
