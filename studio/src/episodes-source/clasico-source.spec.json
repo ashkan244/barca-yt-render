@@ -474,6 +474,10 @@
           "FERMÍN",
           "NO ROOM TO OPERATE"
         ]
+      ],
+      "cardShots": [
+        "huijsen",
+        "fermin2"
       ]
     },
     {
@@ -506,6 +510,10 @@
           "BALDE",
           "A DECENT DISPLAY"
         ]
+      ],
+      "cardShots": [
+        "cancelo2",
+        null
       ]
     },
     {
@@ -533,6 +541,10 @@
       "cardDelays": [
         2.8,
         5.4
+      ],
+      "cardShots": [
+        "dejong2",
+        "olmo2"
       ]
     },
     {
@@ -569,6 +581,10 @@
           "ADEYEMI",
           "ON"
         ]
+      ],
+      "cardShots": [
+        null,
+        "adeyemi"
       ]
     },
     {
@@ -673,29 +689,29 @@
       "until": 2.4
     },
     "shots": {
-      "crowd": {
+      "cn_crowd": {
         "src": "archive/CLASICO/cn_crowd.mp4",
-        "kind": "video",
-        "grade": "none"
+        "kind": "video"
       },
-      "clasico_crowd": {
+      "cn_clasico_crowd": {
         "src": "archive/CLASICO/cn_clasico_crowd.mp4",
         "kind": "video",
-        "grade": "none",
         "focus": [
           50,
           40
         ]
       },
-      "fans": {
+      "cn_putellas": {
         "src": "archive/CLASICO/cn_putellas.mp4",
         "kind": "video",
-        "grade": "none",
         "from": 6
+      },
+      "cn_aerial": {
+        "src": "archive/CLASICO/cn_aerial.jpg",
+        "label": "CAMP NOU"
       },
       "clasico_match": {
         "src": "archive/CLASICO/clasico_match.jpg",
-        "grade": "none",
         "label": "EL CLÁSICO",
         "focus": [
           50,
@@ -704,20 +720,11 @@
       },
       "clasico_1926": {
         "src": "archive/CLASICO/clasico_1926.jpg",
-        "grade": "bw",
         "label": "EL CLÁSICO · 1926",
-        "focus": [
-          50,
-          45
-        ]
+        "grade": "bw"
       },
-      "mosaic": {
-        "src": "archive/CLASICO/clasico_mosaic.jpg",
-        "grade": "none",
-        "focus": [
-          50,
-          50
-        ]
+      "clasico_mosaic": {
+        "src": "archive/CLASICO/clasico_mosaic.jpg"
       },
       "mbappe": {
         "src": "archive/CLASICO/mbappe.jpg",
@@ -743,6 +750,10 @@
           30
         ]
       },
+      "flick": {
+        "src": "archive/CLASICO/flick.jpg",
+        "label": "HANSI FLICK"
+      },
       "mourinho": {
         "src": "archive/CLASICO/mourinho.jpg",
         "label": "JOSÉ MOURINHO",
@@ -751,29 +762,13 @@
           28
         ]
       },
-      "flick": {
-        "src": "archive/CLASICO/flick.jpg",
-        "label": "HANSI FLICK",
-        "focus": [
-          50,
-          35
-        ]
-      },
       "yamal": {
         "src": "archive/CLASICO/yamal.jpg",
-        "label": "LAMINE YAMAL",
-        "focus": [
-          45,
-          30
-        ]
+        "label": "LAMINE YAMAL"
       },
       "huijsen": {
         "src": "archive/CLASICO/huijsen.jpg",
-        "label": "DEAN HUIJSEN",
-        "focus": [
-          50,
-          35
-        ]
+        "label": "DEAN HUIJSEN"
       },
       "fermin": {
         "src": "archive/CLASICO/fermin.jpg",
@@ -785,19 +780,11 @@
       },
       "dejong": {
         "src": "archive/CLASICO/dejong.jpg",
-        "label": "FRENKIE DE JONG",
-        "focus": [
-          50,
-          35
-        ]
+        "label": "FRENKIE DE JONG"
       },
       "olmo": {
         "src": "archive/CLASICO/olmo.jpg",
-        "label": "DANI OLMO",
-        "focus": [
-          50,
-          30
-        ]
+        "label": "DANI OLMO"
       },
       "cancelo": {
         "src": "archive/CLASICO/cancelo.jpg",
@@ -806,6 +793,257 @@
           50,
           22
         ]
+      },
+      "mourinho2": {
+        "src": "archive/CLASICO/mourinho2.jpg",
+        "label": "JOSÉ MOURINHO"
+      },
+      "mourinho3": {
+        "src": "archive/CLASICO/mourinho3.jpg",
+        "label": "JOSÉ MOURINHO"
+      },
+      "flick2": {
+        "src": "archive/CLASICO/flick2.jpg",
+        "label": "HANSI FLICK"
+      },
+      "flick3": {
+        "src": "archive/CLASICO/flick3.jpg",
+        "label": "HANSI FLICK",
+        "focus": [
+          50,
+          25
+        ]
+      },
+      "bellingham3": {
+        "src": "archive/CLASICO/bellingham3.jpg",
+        "label": "JUDE BELLINGHAM",
+        "focus": [
+          50,
+          25
+        ]
+      },
+      "bellingham4": {
+        "src": "archive/CLASICO/bellingham4.jpg",
+        "label": "JUDE BELLINGHAM",
+        "focus": [
+          50,
+          22
+        ]
+      },
+      "yamal2": {
+        "src": "archive/CLASICO/yamal2.jpg",
+        "label": "LAMINE YAMAL"
+      },
+      "yamal3": {
+        "src": "archive/CLASICO/yamal3.jpg",
+        "label": "LAMINE YAMAL"
+      },
+      "yamal4": {
+        "src": "archive/CLASICO/yamal4.jpg",
+        "label": "LAMINE YAMAL",
+        "focus": [
+          50,
+          20
+        ]
+      },
+      "olmo2": {
+        "src": "archive/CLASICO/olmo2.jpg",
+        "label": "DANI OLMO",
+        "focus": [
+          50,
+          20
+        ]
+      },
+      "olmo3": {
+        "src": "archive/CLASICO/olmo3.jpg",
+        "label": "DANI OLMO"
+      },
+      "huijsen2": {
+        "src": "archive/CLASICO/huijsen2.jpg",
+        "label": "DEAN HUIJSEN",
+        "focus": [
+          50,
+          25
+        ]
+      },
+      "huijsen3": {
+        "src": "archive/CLASICO/huijsen3.jpg",
+        "label": "DEAN HUIJSEN",
+        "focus": [
+          50,
+          30
+        ]
+      },
+      "fermin2": {
+        "src": "archive/CLASICO/fermin2.jpg",
+        "label": "FERMÍN LÓPEZ",
+        "focus": [
+          50,
+          25
+        ]
+      },
+      "dejong2": {
+        "src": "archive/CLASICO/dejong2.jpg",
+        "label": "FRENKIE DE JONG"
+      },
+      "cancelo2": {
+        "src": "archive/CLASICO/cancelo2.jpg",
+        "label": "JOÃO CANCELO",
+        "focus": [
+          50,
+          20
+        ]
+      },
+      "cancelo3": {
+        "src": "archive/CLASICO/cancelo3.jpg",
+        "label": "JOÃO CANCELO",
+        "focus": [
+          50,
+          20
+        ]
+      },
+      "mbappe2": {
+        "src": "archive/CLASICO/mbappe2.jpg",
+        "label": "KYLIAN MBAPPÉ",
+        "focus": [
+          50,
+          22
+        ]
+      },
+      "mbappe3": {
+        "src": "archive/CLASICO/mbappe3.jpg",
+        "label": "KYLIAN MBAPPÉ",
+        "focus": [
+          50,
+          22
+        ]
+      },
+      "cn_interior": {
+        "src": "archive/CLASICO/cn_interior.jpg",
+        "label": "CAMP NOU"
+      },
+      "cn_aerial2": {
+        "src": "archive/CLASICO/cn_aerial2.jpg",
+        "label": "CAMP NOU"
+      },
+      "culers_scarf": {
+        "src": "archive/CLASICO/culers_scarf.jpg"
+      },
+      "cn_before_clasico": {
+        "src": "archive/CLASICO/cn_before_clasico.jpg",
+        "label": "EL CLÁSICO"
+      },
+      "culers_stand": {
+        "src": "archive/CLASICO/culers_stand.jpg"
+      },
+      "culers_banner": {
+        "src": "archive/CLASICO/culers_banner.jpg"
+      },
+      "bernabeu_night": {
+        "src": "archive/CLASICO/bernabeu_night.jpg",
+        "label": "SANTIAGO BERNABÉU"
+      },
+      "bernabeu_ext": {
+        "src": "archive/CLASICO/bernabeu_ext.jpg",
+        "label": "SANTIAGO BERNABÉU"
+      },
+      "bernabeu_pano": {
+        "src": "archive/CLASICO/bernabeu_pano.jpg",
+        "label": "SANTIAGO BERNABÉU"
+      },
+      "clasico_game": {
+        "src": "archive/CLASICO/clasico_game.jpg"
+      },
+      "clasico_ucl": {
+        "src": "archive/CLASICO/clasico_ucl.jpg",
+        "label": "EL CLÁSICO"
+      },
+      "clasico_messi": {
+        "src": "archive/CLASICO/clasico_messi.jpg"
+      },
+      "pedri": {
+        "src": "archive/CLASICO/pedri.jpg",
+        "label": "PEDRI"
+      },
+      "pedri2": {
+        "src": "archive/CLASICO/pedri2.jpg",
+        "label": "PEDRI",
+        "focus": [
+          50,
+          22
+        ]
+      },
+      "pedri3": {
+        "src": "archive/CLASICO/pedri3.jpg",
+        "label": "PEDRI",
+        "focus": [
+          50,
+          20
+        ]
+      },
+      "pedri4": {
+        "src": "archive/CLASICO/pedri4.jpg",
+        "label": "PEDRI"
+      },
+      "cucurella": {
+        "src": "archive/CLASICO/cucurella.jpg",
+        "label": "MARC CUCURELLA"
+      },
+      "cucurella2": {
+        "src": "archive/CLASICO/cucurella2.jpg",
+        "label": "MARC CUCURELLA"
+      },
+      "guler": {
+        "src": "archive/CLASICO/guler.jpg",
+        "label": "ARDA GÜLER",
+        "focus": [
+          50,
+          30
+        ]
+      },
+      "camavinga": {
+        "src": "archive/CLASICO/camavinga.jpg",
+        "label": "EDUARDO CAMAVINGA",
+        "focus": [
+          50,
+          30
+        ]
+      },
+      "adeyemi": {
+        "src": "archive/CLASICO/adeyemi.jpg",
+        "label": "KARIM ADEYEMI",
+        "focus": [
+          50,
+          25
+        ]
+      },
+      "madrid_tifo": {
+        "src": "archive/CLASICO/madrid_tifo.jpg"
+      },
+      "madrid_cl": {
+        "src": "archive/CLASICO/madrid_cl.jpg"
+      },
+      "bernabeu_video": {
+        "src": "archive/CLASICO/bernabeu_video.mp4",
+        "kind": "video"
+      },
+      "mbappe_video": {
+        "src": "archive/CLASICO/mbappe_video.mp4",
+        "kind": "video",
+        "label": "KYLIAN MBAPPÉ",
+        "focus": [
+          50,
+          30
+        ]
+      },
+      "corner_arc": {
+        "src": "archive/CLASICO/corner_arc.jpg"
+      },
+      "corner_arc2": {
+        "src": "archive/CLASICO/corner_arc2.jpg"
+      },
+      "keeper": {
+        "src": "archive/CLASICO/keeper.jpg"
       },
       "b_press": {
         "kind": "board",
@@ -836,25 +1074,41 @@
       },
       {
         "a": 2.4,
-        "b": 5.2,
-        "layout": "split",
-        "shot": "clasico_crowd"
-      },
-      {
-        "a": 5.2,
         "b": 8.0,
         "layout": "split",
-        "shot": "clasico_match"
+        "shots": [
+          "cn_clasico_crowd",
+          "culers_scarf",
+          "clasico_ucl",
+          "clasico_match"
+        ],
+        "at": [
+          2.4,
+          3.5,
+          5.6,
+          7.0
+        ]
       },
       {
         "a": 8.0,
+        "b": 9.9,
+        "layout": "split",
+        "shots": [
+          "cn_before_clasico"
+        ],
+        "at": [
+          8.0
+        ]
+      },
+      {
+        "a": 9.9,
         "b": 11.84,
         "layout": "full",
         "punch": true
       },
       {
         "a": 11.84,
-        "b": 13.94,
+        "b": 13.4,
         "layout": "card",
         "card": [
           "RELENTLESS",
@@ -863,51 +1117,103 @@
         "cardStyle": "dark"
       },
       {
-        "a": 13.94,
-        "b": 16.3,
-        "layout": "split",
-        "shot": "mbappe"
-      },
-      {
-        "a": 16.3,
+        "a": 13.4,
         "b": 19.26,
         "layout": "split",
-        "shot": "bellingham"
+        "shots": [
+          "madrid_cl",
+          "mbappe_video",
+          "bellingham",
+          "madrid_tifo"
+        ],
+        "at": [
+          13.4,
+          14.7,
+          15.9,
+          17.6
+        ]
       },
       {
         "a": 19.26,
         "b": 24.18,
         "layout": "split",
-        "shot": "b_press"
+        "shots": [
+          "b_press",
+          "guler"
+        ],
+        "at": [
+          19.26,
+          21.4
+        ]
       },
       {
         "a": 24.18,
         "b": 29.38,
-        "layout": "full"
+        "layout": "split",
+        "shots": [
+          "pedri",
+          "b_press"
+        ],
+        "at": [
+          24.18,
+          26.6
+        ]
       },
       {
         "a": 29.38,
         "b": 35.7,
         "layout": "split",
-        "shot": "b_press"
+        "shots": [
+          "b_press",
+          "pedri3"
+        ],
+        "at": [
+          29.38,
+          33.6
+        ]
       },
       {
         "a": 35.7,
         "b": 40.6,
         "layout": "split",
-        "shot": "mourinho"
+        "shots": [
+          "bernabeu_pano",
+          "mourinho2"
+        ],
+        "at": [
+          35.7,
+          38.6
+        ]
       },
       {
         "a": 40.6,
         "b": 50.66,
         "layout": "split",
-        "shot": "b_block"
+        "shots": [
+          "mbappe2",
+          "b_block",
+          "bellingham4",
+          "b_block"
+        ],
+        "at": [
+          40.6,
+          42.0,
+          44.8,
+          46.6
+        ]
       },
       {
         "a": 50.66,
         "b": 53.6,
         "layout": "split",
-        "shot": "flick"
+        "shots": [
+          "flick2",
+          "flick"
+        ],
+        "at": [
+          50.66,
+          52.1
+        ]
       },
       {
         "a": 53.6,
@@ -919,7 +1225,16 @@
         "a": 57.0,
         "b": 67.64,
         "layout": "split",
-        "shot": "b_line"
+        "shots": [
+          "bernabeu_night",
+          "b_line",
+          "mbappe3"
+        ],
+        "at": [
+          57.0,
+          59.0,
+          66.4
+        ]
       },
       {
         "a": 67.64,
@@ -935,25 +1250,53 @@
         "a": 69.4,
         "b": 77.1,
         "layout": "split",
-        "shot": "b_wings"
+        "shots": [
+          "b_wings"
+        ],
+        "at": [
+          69.4
+        ]
       },
       {
         "a": 77.1,
         "b": 82.62,
         "layout": "split",
-        "shot": "yamal"
+        "shots": [
+          "yamal2",
+          "yamal3",
+          "yamal"
+        ],
+        "at": [
+          77.1,
+          79.5,
+          81.6
+        ]
       },
       {
         "a": 82.62,
         "b": 87.3,
         "layout": "split",
-        "shot": "huijsen"
+        "shots": [
+          "huijsen",
+          "huijsen2"
+        ],
+        "at": [
+          82.62,
+          85.0
+        ]
       },
       {
         "a": 87.3,
         "b": 90.88,
         "layout": "split",
-        "shot": "fermin"
+        "shots": [
+          "fermin",
+          "fermin2"
+        ],
+        "at": [
+          87.3,
+          89.2
+        ]
       },
       {
         "a": 90.88,
@@ -962,43 +1305,103 @@
       },
       {
         "a": 93.38,
-        "b": 98.34,
+        "b": 97.2,
         "layout": "full",
         "punch": true
+      },
+      {
+        "a": 97.2,
+        "b": 98.34,
+        "layout": "split",
+        "shots": [
+          "cucurella"
+        ],
+        "at": [
+          97.2
+        ]
       },
       {
         "a": 98.34,
         "b": 102.88,
         "layout": "split",
-        "shot": "cancelo"
+        "shots": [
+          "cancelo",
+          "cancelo2"
+        ],
+        "at": [
+          98.34,
+          100.6
+        ]
       },
       {
         "a": 102.88,
-        "b": 109.72,
+        "b": 106.88,
         "layout": "full"
+      },
+      {
+        "a": 106.88,
+        "b": 109.72,
+        "layout": "split",
+        "shots": [
+          "cn_aerial2"
+        ],
+        "at": [
+          106.88
+        ]
       },
       {
         "a": 109.72,
         "b": 112.48,
-        "layout": "full"
+        "layout": "split",
+        "shots": [
+          "cn_crowd"
+        ],
+        "at": [
+          109.72
+        ]
       },
       {
         "a": 112.48,
         "b": 121.94,
         "layout": "split",
-        "shot": "b_corner"
+        "shots": [
+          "corner_arc",
+          "b_corner",
+          "corner_arc2"
+        ],
+        "at": [
+          112.48,
+          115.0,
+          118.6
+        ]
       },
       {
         "a": 121.94,
         "b": 127.4,
         "layout": "split",
-        "shot": "dejong"
+        "shots": [
+          "cn_interior",
+          "dejong"
+        ],
+        "at": [
+          121.94,
+          125.9
+        ]
       },
       {
         "a": 127.4,
         "b": 132.18,
         "layout": "split",
-        "shot": "olmo"
+        "shots": [
+          "olmo",
+          "flick3",
+          "olmo3"
+        ],
+        "at": [
+          127.4,
+          128.8,
+          130.6
+        ]
       },
       {
         "a": 132.18,
@@ -1033,13 +1436,28 @@
       {
         "a": 143.2,
         "b": 148.46,
-        "layout": "full"
+        "layout": "split",
+        "shots": [
+          "adeyemi",
+          "culers_scarf"
+        ],
+        "at": [
+          143.2,
+          146.0
+        ]
       },
       {
         "a": 148.46,
         "b": 152.8,
         "layout": "split",
-        "shot": "fans"
+        "shots": [
+          "flick",
+          "cn_putellas"
+        ],
+        "at": [
+          148.46,
+          150.6
+        ]
       },
       {
         "a": 152.8,
@@ -1061,19 +1479,156 @@
         "a": 158.04,
         "b": 160.7,
         "layout": "split",
-        "shot": "clasico_1926"
+        "shots": [
+          "clasico_1926"
+        ],
+        "at": [
+          158.04
+        ]
       },
       {
         "a": 160.7,
-        "b": 168.1,
+        "b": 164.1,
         "layout": "full"
+      },
+      {
+        "a": 164.1,
+        "b": 168.1,
+        "layout": "split",
+        "shots": [
+          "culers_banner"
+        ],
+        "at": [
+          164.1
+        ]
       },
       {
         "a": 168.1,
         "b": 175,
         "layout": "split",
-        "shot": "bellingham2"
+        "shots": [
+          "cn_before_clasico",
+          "bellingham2",
+          "clasico_mosaic"
+        ],
+        "at": [
+          168.1,
+          171.6,
+          173.6
+        ]
       }
     ]
-  }
+  },
+  "beats": [
+    {
+      "a": 2.4,
+      "b": 4.6,
+      "shot": "cn_clasico_crowd"
+    },
+    {
+      "a": 5.6,
+      "b": 7.6,
+      "shot": "clasico_ucl"
+    },
+    {
+      "a": 14.7,
+      "b": 16.0,
+      "shot": "mbappe_video"
+    },
+    {
+      "a": 16.0,
+      "b": 17.6,
+      "shot": "bellingham"
+    },
+    {
+      "a": 21.4,
+      "b": 23.0,
+      "shot": "guler"
+    },
+    {
+      "a": 24.18,
+      "b": 25.9,
+      "shot": "pedri"
+    },
+    {
+      "a": 33.6,
+      "b": 35.4,
+      "shot": "pedri3"
+    },
+    {
+      "a": 38.6,
+      "b": 40.4,
+      "shot": "mourinho2"
+    },
+    {
+      "a": 41.3,
+      "b": 42.9,
+      "shot": "mbappe2"
+    },
+    {
+      "a": 44.8,
+      "b": 46.4,
+      "shot": "bellingham4"
+    },
+    {
+      "a": 50.66,
+      "b": 53.4,
+      "shot": "flick"
+    },
+    {
+      "a": 66.4,
+      "b": 67.9,
+      "shot": "mbappe3"
+    },
+    {
+      "a": 77.1,
+      "b": 79.6,
+      "shot": "yamal2"
+    },
+    {
+      "a": 81.5,
+      "b": 82.6,
+      "shot": "yamal"
+    },
+    {
+      "a": 97.2,
+      "b": 98.3,
+      "shot": "cucurella"
+    },
+    {
+      "a": 109.72,
+      "b": 112.4,
+      "shot": "cn_crowd"
+    },
+    {
+      "a": 113.4,
+      "b": 115.4,
+      "shot": "corner_arc"
+    },
+    {
+      "a": 121.94,
+      "b": 124.6,
+      "shot": "cn_interior"
+    },
+    {
+      "a": 148.5,
+      "b": 150.4,
+      "shot": "flick"
+    },
+    {
+      "a": 150.6,
+      "b": 152.7,
+      "shot": "cn_putellas"
+    },
+    {
+      "a": 158.04,
+      "b": 160.6,
+      "shot": "clasico_1926"
+    },
+    {
+      "a": 171.6,
+      "b": 173.8,
+      "shot": "bellingham2"
+    }
+  ]
 }

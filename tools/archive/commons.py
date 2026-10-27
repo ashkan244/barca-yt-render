@@ -138,7 +138,7 @@ def cmd_fetch(args):
             download(d['url'], raw)
             target = args.out / f"{item['id']}.mp4"
             trim = ['-ss', str(item['from']), '-t', str(item['seconds'])] if 'from' in item else []
-            subprocess.run(['ffmpeg', '-v', 'error', '-y', *trim, '-i', str(raw), '-an', '-vf', 'scale=-2:min(1080\\,ih),fps=30,setsar=1',
+            subprocess.run(['ffmpeg', '-v', 'error', '-y', *trim, '-i', str(raw), '-an', '-vf', "scale='if(gt(iw,ih),-2,min(1080,iw))':'if(gt(iw,ih),min(1080,ih),-2)',fps=30,setsar=1",
                             '-c:v', 'libx264', '-preset', 'medium', '-crf', '18', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', str(target)], check=True)
             raw.unlink()
         else:

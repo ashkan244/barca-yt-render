@@ -1,5 +1,5 @@
 {
- "note": "Wikimedia Commons media for CLASICO-SOURCE-ARCHIVE. Fetched at render time by tools/archive/commons.py into studio/public/archive/CLASICO (cached, not committed). A person's photo is used only when the Commons title names that person.",
+ "note": "Wikimedia Commons media for the CLASICO-SOURCE edits (archive split, photo beats, card photos). Fetched at render time by tools/archive/commons.py into studio/public/archive/CLASICO (cached, not committed). A person's photo is used only when the Commons title names that person; generic shots carry no name label.",
  "items": [
   {
    "id": "cn_crowd",
@@ -72,6 +72,194 @@
   {
    "id": "cancelo",
    "title": "File:João Cancelo (cropped).jpg"
+  },
+  {
+   "id": "mourinho2",
+   "title": "File:José Mourinho - Жозе Моуринью (21731147823).jpg"
+  },
+  {
+   "id": "mourinho3",
+   "title": "File:José Mourinho - Жозе Моуринью (22165398889).jpg"
+  },
+  {
+   "id": "flick2",
+   "title": "File:Hans-Dieter Flick, Germany national football team (02).jpg"
+  },
+  {
+   "id": "flick3",
+   "title": "File:2022 Hansi Flick (cropped).jpg"
+  },
+  {
+   "id": "bellingham3",
+   "title": "File:25th Laureus World Sports Awards - Red Carpet - Jude Bellingham - 240422 190551-2 (cropped2).jpg"
+  },
+  {
+   "id": "bellingham4",
+   "title": "File:25th Laureus World Sports Awards - Red Carpet - Jude Bellingham - 240422 190551-2 (cropped).jpg"
+  },
+  {
+   "id": "yamal2",
+   "title": "File:Lamine Yamal France v Spain 7.24.26-187.jpg"
+  },
+  {
+   "id": "yamal3",
+   "title": "File:Lamine Yamal France v Spain 7.24.26-059.jpg"
+  },
+  {
+   "id": "yamal4",
+   "title": "File:Lamine Yamal France v Spain 7.24.26-162.jpg"
+  },
+  {
+   "id": "olmo2",
+   "title": "File:Dani Olmo France v Spain 7.24.26-176.jpg"
+  },
+  {
+   "id": "olmo3",
+   "title": "File:Dani Olmo France v Spain 7.24.26-065.jpg"
+  },
+  {
+   "id": "huijsen2",
+   "title": "File:Dean Huijsen 2024.jpg"
+  },
+  {
+   "id": "huijsen3",
+   "title": "File:Dean Huijsen 00-03-28.69.png"
+  },
+  {
+   "id": "fermin2",
+   "title": "File:Fermín López (cropped).jpg"
+  },
+  {
+   "id": "dejong2",
+   "title": "File:Frenkie De Jong (2025) (cropped).png"
+  },
+  {
+   "id": "cancelo2",
+   "title": "File:João Cancelo (2).jpg"
+  },
+  {
+   "id": "cancelo3",
+   "title": "File:João Cancelo (3).jpg"
+  },
+  {
+   "id": "mbappe2",
+   "title": "File:Kylian Mbappe at Real Madrid's game versus Juventus Turin on 22 October 2025.jpeg"
+  },
+  {
+   "id": "mbappe3",
+   "title": "File:Kylian Mbappe at Real Madrid's game versus Juventus Turin on 22 October 2025 (2).jpeg"
+  },
+  {
+   "id": "cn_interior",
+   "title": "File:2014. Camp Nou. Més que un club. Barcelona B40.jpg"
+  },
+  {
+   "id": "cn_aerial2",
+   "title": "File:Camp Nou aerial (cropped).jpg"
+  },
+  {
+   "id": "culers_scarf",
+   "title": "File:FC Barcelona Supporters.JPG"
+  },
+  {
+   "id": "cn_before_clasico",
+   "title": "File:Camp nou before F.C. Barcelona - Real Madrid league match of 2012.JPG"
+  },
+  {
+   "id": "culers_stand",
+   "title": "File:BARÇA CAMPIÓ DE LLIGA 09-10 FCB - VAL - 4614355845.jpg"
+  },
+  {
+   "id": "culers_banner",
+   "title": "File:BARÇA CAMPIÓ DE LLIGA 09-10 FCB - VAL - 4614969798.jpg"
+  },
+  {
+   "id": "bernabeu_night",
+   "title": "File:Estadio Santiago Bernabéu Madrid.jpg"
+  },
+  {
+   "id": "bernabeu_ext",
+   "title": "File:Santiago Bernabéu Stadium in 2017 before the 2023 reconstruction.jpg"
+  },
+  {
+   "id": "bernabeu_pano",
+   "title": "File:Santiagobernabeupanoramav45.JPG"
+  },
+  {
+   "id": "clasico_game",
+   "title": "File:El Clásico game.jpg"
+  },
+  {
+   "id": "clasico_ucl",
+   "title": "File:RMDvsBAR UCL SF 1.jpg"
+  },
+  {
+   "id": "clasico_messi",
+   "title": "File:Lass Messi.jpg"
+  },
+  {
+   "id": "pedri",
+   "title": "File:Pedri Argentina v Spain 19 July 2026-164.jpg"
+  },
+  {
+   "id": "pedri2",
+   "title": "File:Pedri Argentina v Spain 19 July 2026-197 (cropped).jpg"
+  },
+  {
+   "id": "pedri3",
+   "title": "File:Pedri.jpg"
+  },
+  {
+   "id": "pedri4",
+   "title": "File:Pedri Argentina v Spain 19 July 2026-221.jpg"
+  },
+  {
+   "id": "cucurella",
+   "title": "File:Marc Cucurella France v Spain 7.24.26-239.jpg"
+  },
+  {
+   "id": "cucurella2",
+   "title": "File:Marc Cucurella France v Spain 7.24.26-189.jpg"
+  },
+  {
+   "id": "guler",
+   "title": "File:Arda Güler Fenerbahçe Forması İle lig kupası maçında.jpg"
+  },
+  {
+   "id": "camavinga",
+   "title": "File:Eduardo Camavinga, in Rennes, after his victory in Coupe de France, April 28th, 2019.png"
+  },
+  {
+   "id": "adeyemi",
+   "title": "File:Karim Adeyemi (Red Bull Salzburg, 01.12.2020).jpg"
+  },
+  {
+   "id": "madrid_tifo",
+   "title": "File:Bernabeu en un Madrid-Atleti.JPG"
+  },
+  {
+   "id": "madrid_cl",
+   "title": "File:Santiago Bernabéu Stadium, Real Madrid - Borussia Dortmund, 2013 - 08.jpg"
+  },
+  {
+   "id": "bernabeu_video",
+   "title": "File:2010-11-10 Santiago Bernabéu 03.webm"
+  },
+  {
+   "id": "mbappe_video",
+   "title": "File:Kylian Mbappe at Real Madrid's UEFA Champions League game versus Juventus Turin on 22 October 2025 (video).webm"
+  },
+  {
+   "id": "corner_arc",
+   "title": "File:Place for football corner kick 20180604.jpg"
+  },
+  {
+   "id": "corner_arc2",
+   "title": "File:Place for football corner kick.jpg"
+  },
+  {
+   "id": "keeper",
+   "title": "File:Soccer goalkeeper.jpg"
   }
  ]
 }
