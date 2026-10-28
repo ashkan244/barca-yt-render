@@ -15,8 +15,12 @@ export const FPS = 30;
 const GOLD = '#f2c230';
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 
-export type BoardDef = {label?: string; note?: string; players: Player[]; arrows?: PlateArrow[]; zone?: {x: number; y: number; w: number; h: number; label: string}};
-export type SourceScene = {a: number; b: number; title: string; sub: string; board?: string; names?: string[]; cards?: [string, string][]; cardDelays?: number[];
+export type BoardDef = {label?: string; note?: string; players: Player[]; arrows?: PlateArrow[]; zone?: {x: number; y: number; w: number; h: number; label: string};
+  /** viewBox [x, y, w, h] in pitch units ×10 used in readable mode, e.g. the half where the action is. */
+  camera?: [number, number, number, number]};
+export type SourceScene = {a: number; b: number; title: string; sub: string; board?: string; names?: string[];
+  /** Source seconds on which the move, the arrow and the opened space start (staged board motion). */
+  cues?: {moveAt?: number; arrowAt?: number; spaceAt?: number}; cards?: [string, string][]; cardDelays?: number[];
   /** Optional photo per card row (shot id from archive.shots; must show the person the card names). */
   cardShots?: (string | null)[]};
 export type SourceSpec = {
@@ -87,8 +91,11 @@ const sceneAt = (spec: SourceSpec, t: number) => spec.scenes.find((s) => t >= s.
 const punchAt = (spec: SourceSpec, t: number) => (spec.punch ?? []).some(([a, b]) => t >= a && t < b) ? 1.035 : 1;
 const media = (spec: SourceSpec, file: string) => staticFile(`${spec.media}/${file}`);
 
-const sceneBoard = (spec: SourceSpec, scene: SourceScene, f: number) =>
-  <BoardPlate spec={spec} board={scene.board!} names={scene.names} progress={mix(f - scene.a * FPS, 25, 85)} />;
+const sceneBoard = (spec: SourceSpec, scene: SourceScene, f: number, readable = false, height?: number) => {
+  const at = (k: 'moveAt' | 'arrowAt' | 'spaceAt') => (scene.cues?.[k] ?? scene.a + .8) * FPS;
+  const stage = scene.cues ? {move: mix(f, at('moveAt'), 40), arrow: mix(f, at('arrowAt'), 28), space: mix(f, at('spaceAt'), 18)} : undefined;
+  return <BoardPlate spec={spec} board={scene.board!} names={scene.names} progress={mix(f - scene.a * FPS, 25, 85)} readable={readable} height={height} stage={stage} />;
+};
 
 const Cards: React.FC<{spec: SourceSpec; scene: SourceScene; f: number; width: number; height: number; size?: number}> = ({spec, scene, f, width, height, size = 54}) => {
   const lib = shotLibrary(spec);
@@ -144,7 +151,7 @@ export const SourceShort: React.FC<SourceEpisodeProps & {window?: [number, numbe
       <div style={{fontFamily: LOCAL_FONTS.display, fontSize: scene.title.length > 25 ? 64 : 76, lineHeight: 1.04}}>{scene.title}</div>
     </div>
     <div style={{position: 'absolute', left: 60, top: 305, opacity: enter}}>
-      {scene.board ? sceneBoard(spec, scene, f) : <Cards spec={spec} scene={scene} f={f} width={960} height={500} />}
+      {scene.board ? sceneBoard(spec, scene, f, true) : <Cards spec={spec} scene={scene} f={f} width={960} height={500} />}
     </div>
     <div style={{position: 'absolute', left: 60, top: 305, width: 960, height: 610}}><BeatPanel spec={spec} f={f} width={960} height={610} labelSize={30} /></div>
     <Presenter spec={spec} t={t} style={{left: 90, top: 940, width: 900, height: 810, borderRadius: 24}} />
@@ -208,7 +215,7 @@ export const SourceLong: React.FC<SourceEpisodeProps> = ({spec, words, pages}) =
         <div style={{fontFamily: LOCAL_FONTS.display, fontSize: scene.title.length > 22 ? 62 : 74, lineHeight: 1.04}}>{scene.title}</div>
       </div>
       <div style={{position: 'absolute', left: right, top: scene.board ? 290 : 330, opacity: enter}}>
-        {scene.board ? <div style={{transform: 'scale(1.08)', transformOrigin: '0 0'}}>{sceneBoard(spec, scene, f)}</div>
+        {scene.board ? <div style={{transform: 'scale(1.08)', transformOrigin: '0 0'}}>{sceneBoard(spec, scene, f, true, 600)}</div>
           : <Cards spec={spec} scene={scene} f={f} width={1920 - right - 70} height={540} size={60} />}
       </div>
       <div style={{position: 'absolute', left: right, top: 290, width: 1920 - right - 70, height: 640}}><BeatPanel spec={spec} f={f} width={1920 - right - 70} height={640} labelSize={34} /></div>
