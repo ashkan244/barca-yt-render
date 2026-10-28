@@ -12,16 +12,21 @@ const GOLD = '#f2c230';
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 
 /** A person's photo carries `label` only when the Commons file title names that person. Generic shots have no label. */
-export type ArchiveShot = {src?: string; board?: string; kind?: 'image' | 'video' | 'board'; grade?: 'bw' | 'warm' | 'none'; label?: string; focus?: [number, number]; from?: number; zoom?: 'in' | 'out'};
+export type ArchiveShot = {src?: string; board?: string; names?: string[]; kind?: 'image' | 'video' | 'board'; grade?: 'bw' | 'warm' | 'none'; label?: string; focus?: [number, number]; from?: number; zoom?: 'in' | 'out'};
 
 export const shotLibrary = (spec: SourceSpec): Record<string, ArchiveShot> =>
   (spec as SourceSpec & {archive?: {shots?: Record<string, ArchiveShot>}}).archive?.shots ?? {};
 
-/** The scene's schematic board; `names` limits which labels are shown so attention stays on one relationship. */
-export const BoardPlate: React.FC<{spec: SourceSpec; board: string; names?: string[]; progress: number}> = ({spec, board, names, progress}) => {
+/** The scene's schematic board; `names` limits which labels are shown so attention stays on one relationship.
+ *  `readable` (phone scale) enlarges labels and zooms to the board's `camera`; `stage` runs player moves,
+ *  arrows and the highlighted space on their own spoken cues instead of one shared ramp. */
+export const BoardPlate: React.FC<{spec: SourceSpec; board: string; names?: string[]; progress: number; readable?: boolean; height?: number;
+  stage?: {move: number; arrow: number; space: number}}> = ({spec, board, names, progress, readable = false, height, stage}) => {
   const def = spec.boards[board];
   const players = names ? def.players.map((p) => ({...p, name: names.includes(p.id) ? p.name : undefined})) : def.players;
-  return <TacticalPlate players={players} arrows={def.arrows} zone={def.zone} progress={progress} label={def.label ?? 'TACTICAL CONCEPT'} opponent={spec.opponent} />;
+  return <TacticalPlate players={players} arrows={def.arrows} zone={def.zone} progress={progress} label={def.label ?? 'TACTICAL CONCEPT'} opponent={spec.opponent}
+    readable={readable} height={height} camera={readable ? def.camera : undefined}
+    movementProgress={stage?.move} arrowProgress={stage?.arrow} zoneProgress={stage?.space} />;
 };
 
 const gradeFilter = (g: ArchiveShot['grade']) =>
@@ -30,7 +35,7 @@ const gradeFilter = (g: ArchiveShot['grade']) =>
 /** One shot filling its parent box: slow push (Ken Burns), grade, vignette and an optional label. */
 export const Shot: React.FC<{spec: SourceSpec; shot: ArchiveShot; local: number; len: number; index: number; labelSize?: number}> = ({spec, shot, local, len, index, labelSize = 30}) => {
   if (shot.kind === 'board') return <AbsoluteFill style={{background: 'radial-gradient(ellipse at 50% 40%, #12305a, #07102a 70%)', alignItems: 'center', justifyContent: 'center'}}>
-    <div style={{transform: 'scale(1.08)'}}><BoardPlate spec={spec} board={shot.board!} progress={interpolate(local, [6, 50], [0, 1], {...clamp, easing: Easing.inOut(Easing.cubic)})} /></div>
+    <div style={{transform: 'scale(1.08)'}}><BoardPlate spec={spec} board={shot.board!} names={shot.names} readable height={720} progress={interpolate(local, [6, 50], [0, 1], {...clamp, easing: Easing.inOut(Easing.cubic)})} /></div>
   </AbsoluteFill>;
   const k = interpolate(local, [0, Math.max(1, len)], [0, 1], clamp);
   const zoomIn = shot.zoom ? shot.zoom === 'in' : index % 2 === 0;

@@ -126,7 +126,13 @@
         "w": 23,
         "h": 37,
         "label": "PRESSURE"
-      }
+      },
+      "camera": [
+        0,
+        0,
+        850,
+        680
+      ]
     },
     "block": {
       "players": [
@@ -190,7 +196,13 @@
         "w": 25,
         "h": 25,
         "label": "CENTRE CLOSED"
-      }
+      },
+      "camera": [
+        0,
+        0,
+        850,
+        680
+      ]
     },
     "line": {
       "players": [
@@ -272,7 +284,13 @@
         "w": 29,
         "h": 42,
         "label": "SPACE IN BEHIND"
-      }
+      },
+      "camera": [
+        0,
+        0,
+        850,
+        680
+      ]
     },
     "wings": {
       "players": [
@@ -333,7 +351,13 @@
         "w": 20,
         "h": 29,
         "label": "CROWDED CENTRE"
-      }
+      },
+      "camera": [
+        400,
+        0,
+        650,
+        680
+      ]
     },
     "corner": {
       "label": "A REHEARSED SET PIECE",
@@ -384,7 +408,13 @@
         "w": 15,
         "h": 24,
         "label": "SET-PIECE AREA"
-      }
+      },
+      "camera": [
+        600,
+        0,
+        450,
+        680
+      ]
     }
   },
   "scenes": [
@@ -409,7 +439,16 @@
       "b": 19.26,
       "title": "PRESSURE ON THE BACK LINE",
       "sub": "MADRID WITHOUT THE BALL",
-      "board": "press"
+      "board": "press",
+      "cues": {
+        "moveAt": 12.64,
+        "arrowAt": 17.1,
+        "spaceAt": 14.24
+      },
+      "names": [
+        "m",
+        "j"
+      ]
     },
     {
       "a": 19.26,
@@ -420,7 +459,12 @@
       "names": [
         "p",
         "r"
-      ]
+      ],
+      "cues": {
+        "moveAt": 20.66,
+        "arrowAt": 23.76,
+        "spaceAt": 22.5
+      }
     },
     {
       "a": 29.38,
@@ -430,42 +474,90 @@
       "board": "press",
       "names": [
         "p"
-      ]
+      ],
+      "cues": {
+        "moveAt": 32.98,
+        "arrowAt": 35.04,
+        "spaceAt": 31.78
+      }
     },
     {
       "a": 35.7,
       "b": 50.66,
       "title": "CLOSE THE CENTRE",
       "sub": "MADRID IN THEIR OWN HALF",
-      "board": "block"
+      "board": "block",
+      "cues": {
+        "moveAt": 41.08,
+        "arrowAt": 42.58,
+        "spaceAt": 49.44
+      },
+      "names": [
+        "p",
+        "j"
+      ]
     },
     {
       "a": 50.66,
       "b": 61.24,
       "title": "SPACE BEHIND THE LINE",
       "sub": "THE RISK OF PLAYING HIGH",
-      "board": "line"
+      "board": "line",
+      "cues": {
+        "moveAt": 51.46,
+        "arrowAt": 53.96,
+        "spaceAt": 59.8
+      },
+      "names": [
+        "m",
+        "d"
+      ]
     },
     {
       "a": 61.24,
       "b": 68.08,
       "title": "ATTACK THE SPACE",
       "sub": "RUNNERS IN BEHIND",
-      "board": "line"
+      "board": "line",
+      "cues": {
+        "moveAt": 63.88,
+        "arrowAt": 63.88,
+        "spaceAt": 63.64
+      },
+      "names": [
+        "m",
+        "d"
+      ]
     },
     {
       "a": 68.08,
       "b": 76.3,
       "title": "THE WIDE TRAP",
       "sub": "SPACE OUTSIDE · TRAFFIC INSIDE",
-      "board": "wings"
+      "board": "wings",
+      "cues": {
+        "moveAt": 68.88,
+        "arrowAt": 73.68,
+        "spaceAt": 72.86
+      },
+      "names": [
+        "y"
+      ]
     },
     {
       "a": 76.3,
       "b": 82.62,
       "title": "YAMAL SHUT OUT",
       "sub": "CENTRAL OPTIONS CLOSED",
-      "board": "wings"
+      "board": "wings",
+      "cues": {
+        "moveAt": 77.1,
+        "arrowAt": 78.0,
+        "spaceAt": 78.7
+      },
+      "names": [
+        "y"
+      ]
     },
     {
       "a": 82.62,
@@ -528,7 +620,15 @@
       "b": 121.94,
       "title": "A REHEARSED CORNER",
       "sub": "THE SECOND-HALF RESPONSE",
-      "board": "corner"
+      "board": "corner",
+      "cues": {
+        "moveAt": 110.52,
+        "arrowAt": 111.42,
+        "spaceAt": 114.32
+      },
+      "names": [
+        "c"
+      ]
     },
     {
       "a": 121.94,
@@ -1054,23 +1154,41 @@
       },
       "b_press": {
         "kind": "board",
-        "board": "press"
+        "board": "press",
+        "names": [
+          "m",
+          "j"
+        ]
       },
       "b_block": {
         "kind": "board",
-        "board": "block"
+        "board": "block",
+        "names": [
+          "p",
+          "j"
+        ]
       },
       "b_line": {
         "kind": "board",
-        "board": "line"
+        "board": "line",
+        "names": [
+          "m",
+          "d"
+        ]
       },
       "b_wings": {
         "kind": "board",
-        "board": "wings"
+        "board": "wings",
+        "names": [
+          "y"
+        ]
       },
       "b_corner": {
         "kind": "board",
-        "board": "corner"
+        "board": "corner",
+        "names": [
+          "c"
+        ]
       }
     },
     "cues": [
