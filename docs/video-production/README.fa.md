@@ -61,3 +61,7 @@ npm run test:media
 [راهنمای عکس‌های تازه، منابع و مدل‌های تصویری](photographic-production.fa.md) و [وضعیت پیاده‌سازی](implementation-2026-10-28.fa.md) ادامهٔ اجرایی بازبینی‌اند. مسیر تولید در مخزن `barca-yt-render` نگهداری می‌شود؛ sync مخزن قدیمی اکنون پیش‌فرض dry-run، انتخابی و بدون بازنویسی است. manifest قسمت، صفحات مشترک کپشن/SRT، اعتبار عکس و بررسی preview/release اضافه شده‌اند.
 
 [تحویل واقعی دو نمونهٔ۲۷ثانیه‌ای در GitHub و بررسی فایل‌های دانلودشده](photo-demo-delivery.fa.md).
+
+## توسعهٔ زبان تصویری و اتصال ابزارها
+
+[بررسی Skill و MCP برای تنوع محتوا و کیفیت تصویر](creative-integrations-2026-10-28.fa.md) و [ارزیابی Canva و Higgsfield](canva-higgsfield-evaluation.fa.md) شامل منابع رسمی، وضعیت اتصال، دو Skill اختصاصی و قاب آزمایشی سه‌بعدی هستند.
