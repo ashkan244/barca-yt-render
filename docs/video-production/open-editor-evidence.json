@@ -1,0 +1,80 @@
+{
+  "checkedOn": "2026-10-28",
+  "openreel": {
+    "sourceCommitRead": "367d7e90b61b5181f9861b852bb8b9d7a7d2954a",
+    "hostedUrl": "https://app.openreel.video/",
+    "hostedCommit": "not_verified",
+    "projectCreated": true,
+    "mediaPoolImport": true,
+    "fixture": "2s generated original graphic and220Hz tone; no presenter source",
+    "canvasCount": 1,
+    "pageErrors": [],
+    "timelineEditing": "not_tested",
+    "saveReopen": "not_tested",
+    "videoExport": "not_tested",
+    "mcpConnection": "not_connected",
+    "screenshot": "previews/openreel-import-ui.png"
+  },
+  "motionity": {
+    "sourceCommitRead": "5843fa14c2fabc72d1bcabf442acf6062ce71387",
+    "localBrowserLoaded": true,
+    "createdLayers": 2,
+    "pngProduced": true,
+    "method": "Playwright with app functions and original text/shape fixture; no external media",
+    "visualReview": "PNG output exists but position/crop did not meet visual acceptance in this automated fixture; coordinate/state integration not isolated. Not a production-ready template or a proven general app defect.",
+    "videoExport": "not_tested",
+    "mcpConnection": "not_connected",
+    "screenshot": "previews/motionity-ui-study.png",
+    "png": "previews/motionity-export-diagnostic.png"
+  },
+  "mlt": {
+    "scope": "MLT avformat/luma engine smoke, not GUI or full editor acceptance",
+    "sourceSha256": "58457396158743e9ef21c3da832bda5439d98318aed60e06ec59b75adb50e2ce",
+    "sha256": "922339cb0068f06996b12125906f158661ac35aca0361e50fde1b90d9dfdde13",
+    "profile": "landscape",
+    "frames": 165,
+    "durationSeconds": 5.504,
+    "renderSeconds": 6.455,
+    "decodeChecked": true,
+    "qcPassed": true,
+    "bytes": 2796770,
+    "video": {
+      "width": 1920,
+      "height": 1080,
+      "avg_frame_rate": "30/1",
+      "pix_fmt": "yuv420p",
+      "color_space": "bt709",
+      "codec_name": "h264"
+    },
+    "audio": {
+      "codec_name": "aac",
+      "sample_rate": "48000",
+      "channels": 2
+    },
+    "measuredLoudness": {
+      "input_i": "-36.35",
+      "input_tp": "-28.54",
+      "input_lra": "0.90",
+      "input_thresh": "-46.79"
+    },
+    "script": "tools/video/experiments/mlt_cut_smoke.py",
+    "localOutput": "studio/out/open-editor-study/MLT-CUT-STUDY.mp4",
+    "sourceDelivery": "docs/video-production/photo-demo-delivery.json",
+    "credits": "docs/video-production/photo-credits.md",
+    "cloudRun": "not_dispatched_for_this_study"
+  },
+  "limitations": [
+    {
+      "path": "Qt-based MLT still/text prototype",
+      "result": "not_accepted",
+      "reason": "qimage/qtblend/dynamictext require display/Xvfb; offscreen alone insufficient. Initial profile mismatch was rejected by QC. OS apt installation unavailable; no successful Qt render claimed."
+    },
+    {
+      "path": "browser automation setup",
+      "result": "fixture_and_selectors_adjusted",
+      "reason": "Initial direct-canvas fixture and button selector failures were not treated as app feature failures; final confirmed scope is recorded separately."
+    }
+  ],
+  "externalPaidProvidersUsed": false,
+  "presenterMediaUploaded": false
+}

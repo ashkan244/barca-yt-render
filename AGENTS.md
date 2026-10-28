@@ -1,6 +1,6 @@
 # Barça Radar production work
 
-For video tasks, read `docs/video-production/README.fa.md` and the active episode packet before editing. The reusable workflow is `.agents/skills/video-production/SKILL.md`.
+For resumed research/production, start at `CLOUD_GUIDE.fa.md` and `docs/video-production/continuation-state.json`. For video tasks, then read `docs/video-production/README.fa.md` and the active episode packet before editing. The reusable workflow is `.agents/skills/video-production/SKILL.md`.
 
 - Existing cloud tasks are isolated. Use existing checkouts; do not create a worktree unless the user requests one.
 - The latest user direction selects the content. For `CLASICO-SOURCE-SHORT`, the 175s presenter recording is authoritative. Historical and PSG scripts from the conversation are separate material and must not be inserted into that edit.

@@ -24,3 +24,5 @@ Use alongside `video-production`, `AGENTS.md` and the active episode packet. Rea
 9. Record tool/provider/model/version, source inputs, artifact location, rights, approved budget where applicable, and exact status: proposed, researched, connected, prototype-rendered or delivery-verified. Respect the user's existing authorization; do not label a repository document as an active Skill/MCP connection.
 
 Deliver a visual brief, genre-specific style frames, a source-timed shot table, a justified tool choice, and evidence from the actual prototype. Keep research and decisions in GitHub when authorized. Social publication is separate.
+
+For open-source timeline/compositing tools, read `docs/video-production/open-source-editors-2026-10-28.fa.md` and its evidence. An editor UI, MCP source module or headless JSON runner does not prove full video export. For continuation use `CLOUD_GUIDE.fa.md` and the state ledger.

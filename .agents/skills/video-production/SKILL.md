@@ -5,7 +5,7 @@ description: Produce source-aligned Barça Radar videos with reproducible intake
 
 # Source-aligned video production
 
-Read `docs/video-production/README.fa.md`, `AGENTS.md` and the selected episode packet. User instructions override earlier plans. Use the existing isolated checkout; no worktree unless requested.
+Start resumed work with `CLOUD_GUIDE.fa.md` and `docs/video-production/continuation-state.json`. Read `docs/video-production/README.fa.md`, `AGENTS.md` and the selected episode packet. User instructions override earlier plans. Use the existing isolated checkout; no worktree unless requested.
 
 1. Inspect the input using `tools/video/media.py inspect`, with an explicit role. Probe orientation/fps/audio and extract a timecoded contact sheet. The filename and duration do not establish subject or completeness.
 2. Transcribe the actual presenter source and compare with any supplied script. If they differ, clarify which governs while completing independent work. Never splice the wrong screenplay into an unrelated performance. Once answered, retain that choice in episode docs.
