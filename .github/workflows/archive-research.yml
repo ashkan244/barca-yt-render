@@ -1,0 +1,28 @@
+# Searches Wikimedia Commons for freely licensed archive media listed in an archive-queries.json and commits
+# labelled contact sheets + candidates.json next to it, so shots can be picked (with licenses) for an episode.
+name: Archive research
+on:
+  push:
+    paths: ['docs/barca-radar/**/archive-queries.json']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  search:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q pillow
+      - name: Search Commons
+        run: |
+          for q in $(git ls-files 'docs/barca-radar/**/archive-queries.json'); do
+            python tools/archive/commons.py search "$q" --out "$(dirname "$q")/archive-candidates"
+          done
+      - name: Commit results
+        run: |
+          git config user.name github-actions[bot]; git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add docs/barca-radar
+          git diff --cached --quiet && exit 0
+          git commit -m "docs: archive candidates from run $GITHUB_RUN_ID"
+          git pull --rebase origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME"

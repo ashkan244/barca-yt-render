@@ -14,10 +14,9 @@
     "durationSeconds": 175,
     "topic": "Source-recorded tactical El Clasico commentary; not the historical or PSG screenplay",
     "review": {
-      "transcript": "pending",
-      "unresolved": [
-        "Bernardo vs Bernal around source second 29"
-      ]
+      "transcript": "approved",
+      "unresolved": [],
+      "approval": "Presenter confirmed Bernardo, Diomande, Espart, Gordon on 2026-10-26; Public posting approved."
     },
     "longVideoStatus": "awaiting_actual_presenter_source",
     "historicalReferenceRole": "style reference only; no media or soundtrack reuse assumed"
@@ -54,7 +53,8 @@
       "status": "implemented",
       "pages": 108,
       "entrypoint": "tools/video/episode.py",
-      "releaseGate": "pending transcript/unresolved name"
+      "releaseGate": "passes (approved review)",
+      "usedBy": "all source-episode formats (SHORT, LONG, CLIP, ARCHIVE, ADAPTIVE)"
     },
     {
       "id": "photo-catalog",
@@ -114,6 +114,44 @@
       "status": "skill-written-provider-not-connected",
       "entrypoint": ".agents/skills/football-data-story/SKILL.md",
       "publicationDataRights": "not_cleared_by_StatsBomb_open_data_agreement"
+    },
+    {
+      "id": "source-episode-engine",
+      "status": "implemented-and-rendered",
+      "entrypoint": "studio/src/production/source/SourceEpisode.tsx",
+      "spec": "studio/src/episodes-source/clasico-source.spec.json",
+      "outputs": "SHORT, LONG (16:9, chapters, end screen), CLIP-*, ARCHIVE, COVER, THUMB; extraOutputs: adaptive",
+      "evidence": "docs/barca-radar/clasico-source/README.md#delivered-renders"
+    },
+    {
+      "id": "archive-split-format",
+      "status": "implemented-and-rendered (v3); photo-dense v4 implemented, not yet rendered",
+      "entrypoint": "studio/src/production/source/ArchiveShort.tsx",
+      "coverage": "B-roll 77% of runtime, 56 shots, 22 photo beats in SHORT/LONG"
+    },
+    {
+      "id": "commons-archive-pipeline",
+      "status": "implemented-and-used-in-actions",
+      "entrypoint": "tools/archive/commons.py",
+      "research": ".github/workflows/archive-research.yml",
+      "rule": "person photo only when the Commons title names that person; licenses.tsv + CREDITS.md ship with renders"
+    },
+    {
+      "id": "auto-archive-draft",
+      "status": "implemented-and-tested",
+      "entrypoint": "tools/archive/draft_cues.py",
+      "example": "docs/barca-radar/clasico-source/archive-plan.json"
+    },
+    {
+      "id": "kinetic-captions",
+      "status": "implemented",
+      "entrypoint": "studio/src/production/Captions.tsx"
+    },
+    {
+      "id": "parallel-render-workflow",
+      "status": "implemented-and-rendered",
+      "entrypoint": ".github/workflows/render-source-short.yml",
+      "notes": "chunked MP4 + separate WAV, cached source by SHA-256, preview/release gate, delivery.json per output, review images committed to the branch"
     }
   ],
   "externalProviderConnectionsEstablishedByThisResearch": [],
@@ -243,5 +281,6 @@
       ]
     }
   ],
-  "updateRule": "After meaningful work update this file and the relevant evidence/report. A source file, UI, MCP config, dispatch or process ID alone is not a verified delivery."
+  "updateRule": "After meaningful work update this file and the relevant evidence/report. A source file, UI, MCP config, dispatch or process ID alone is not a verified delivery.",
+  "workflowRule": "One canonical branch: main. Every agent (Claude, GPT/Codex) starts from the latest main, works on a short-lived branch and merges back; record user decisions in this file and CLOUD_GUIDE.fa.md."
 }

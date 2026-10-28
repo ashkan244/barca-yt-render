@@ -60,7 +60,7 @@ export const ClasicoSourceShort: React.FC = () => {
       <OffthreadVideo src={staticFile(episode.media.video)} muted style={{width:'100%',height:'100%',objectFit:'cover',objectPosition:'50% 36%',transform:`scale(${punch})`,filter:'contrast(1.025) saturate(0.98)'}} />
       <div style={{position:'absolute',inset:0,background:'linear-gradient(transparent 62%, #080e1b99 100%)',pointerEvents:'none'}} />
     </div>
-    <ReviewedCaptions pages={captionDocument.pages} top={1540} width={860}/>
+    <ReviewedCaptions pages={captionDocument.pages} top={1540} width={860} minFontSize={54}/>
     <div style={{position:'absolute',bottom:89,left:70,right:70,display:'flex',justifyContent:'space-between',color:'#a4b1c4',fontSize:20,letterSpacing:2}}><span>WITH MORTI</span><span>TACTICAL ANALYSIS</span></div>
     <div style={{position:'absolute',bottom:68,left:70,width:940,height:3,background:'#ffffff1a'}}><div style={{height:3,width:`${f/CLASICO_SOURCE_FRAMES*100}%`,background:GOLD}}/></div>
     <Audio src={staticFile(episode.media.voice)}/>

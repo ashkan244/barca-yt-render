@@ -9,7 +9,8 @@
 - اجرای بررسی‌شدهٔ فعلی، شورت۱۷۵ثانیه‌ایِ تحلیل تاکتیکی ال‌کلاسیکو با مجری است؛ فایل بلند جداگانه خواهد رسید. فایل مربع720×720 به‌خاطر نسبت تصویر یا مدت، «بخشی از ویدیوی بلند» فرض نشود.
 - ویدیوی تاریخی فارسیِ96.731ثانیه‌ای مرجع سبک است؛ فوتیج و موسیقی آن برای کپی در خروجی مجاز فرض نشده‌اند.
 - تحقیق، تصمیم، کد و شواهد قابل بازبینی روی همین GitHub نگهداری شوند. آماده‌سازی و رندر GitHub با انتشار در شبکهٔ اجتماعی فرق دارد.
-- سؤال بی‌پاسخ، تأیید نیست. نام Bernardo/Bernal حوالی ثانیه۲۹ِ منبع هنوز unresolved است؛ می‌توان preview و توسعهٔ مستقل را ادامه داد، ولی release این قسمت با وضعیت فعلی رد می‌شود.
+- سؤال بی‌پاسخ، تأیید نیست. نام‌های Bernardo، Diomande، Espart و Gordon در **۲۶ اکتبر توسط خود مجری تأیید شدند** و انتشار Public مجاز شد؛ review در manifest اکنون approved است و release gate پاس می‌شود.
+- **یک شاخهٔ مرجع:** همهٔ عامل‌ها (Claude، GPT/Codex) از آخرین `main` شروع می‌کنند، روی شاخهٔ کوتاه کار و به `main` برمی‌گردانند. تصمیم‌های کاربر در همین فایل و continuation-state ثبت شوند تا دو خط موازی دوباره ساخته نشود.
 
 ## ۲. مخزن و مرجع کد
 
@@ -52,6 +53,23 @@
 | ادیتور متن‌باز | سورس/راهنمای چند پروژه بررسی؛ OpenReel تا ساخت پروژه و import در media pool؛ Motionity تا تولید PNG با اشکال کراپِ fixture؛ MLT تا کلیپ decodeشده آزموده شده‌اند | همهٔ برنامه‌ها، MCPها، import/export پروژه و رندرهای بلند تأیید نشده‌اند |
 | Canva/Higgsfield/Figma/Runway/Exa/Tavily/ElevenLabs | مسیرهای رسمی/مستندات بررسی شده‌اند | در جلسهٔ بعد یا فعلی لزوماً tool فعال و account متصل ندارند |
 | API دادهٔ فوتبال | گزینه‌ها و محدودیت‌های پوشش/مجوز بررسی شده‌اند | دادهٔ زندهٔ مورد نیاز قسمت یا مجوز تجاری آماده نیست |
+
+## ۴-ب. موتور یکپارچهٔ قسمت‌های مجری‌محور (ادغام ۲۸ اکتبر)
+
+دو خط کار (Claude روی شاخه و GPT روی main) در ۲۸ اکتبر ادغام شدند. ساختار فعلی:
+
+| بخش | فایل | توضیح |
+|---|---|---|
+| تعریف قسمت (طراحی) | `studio/src/episodes-source/<id>.spec.json` | صحنه‌ها، بردها، فصل‌ها، کلیپ‌ها، قالب آرشیوی (`archive.shots/cues`)، photo beats، عکس کارت‌ها |
+| تعریف قسمت (منبع و بازبینی) | `<id>.manifest.json` + `tools/video/episode.py` | hash/مدت/رسانه، review gate، صفحه‌های کپشن مشترک با SRT |
+| موتور | `studio/src/production/source/` | `SourceEpisode` (SHORT، LONG، CLIP، COVER، THUMB)، `ArchiveShort` (ARCHIVE)، `Shot` (عکس/ویدیو/برد) |
+| قالب تطبیقی GPT | `production/AdaptiveSource.tsx` | خروجی اضافه `adaptive` در workflow |
+| کپشن | `production/Captions.tsx` | یک کامپوننت: صفحه‌های مشترک SRT + برجسته‌سازی نام‌ها |
+| برد تاکتیکی | `production/TacticalPlate.tsx` | حالت readable، دوربین/zoom، حرکت مرحله‌ای (مهره/فلش/ناحیه) |
+| آرشیو | `tools/archive/commons.py`، `archive-research.yml` | جست‌وجو و دریافت Commons با مجوز؛ `draft_cues.py` پیش‌نویس خودکار کات‌ها |
+| رندر | `render-source-short.yml` | `outputs=short,long,clips,archive,adaptive`، `mode=preview|release`، رندر موازی، delivery.json برای هر خروجی |
+
+ارتقاهای بعدی ترتیب‌دار در [visual-roadmap](docs/video-production/visual-roadmap.fa.md).
 
 ## ۵. تحویل‌های قابل پیگیری؛ commit و artifact را مخلوط نکن
 

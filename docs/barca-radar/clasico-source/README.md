@@ -8,7 +8,11 @@ The uploaded Persian historical video (96.731s, 720×1280) is a **style referenc
 
 ## Implementation
 
-- Composition: `CLASICO-SOURCE-SHORT`, 1080×1920, 30fps, 5250 frames / 175s.
+- Spec: [`studio/src/episodes-source/clasico-source.spec.json`](../../../studio/src/episodes-source/clasico-source.spec.json) — scenes, boards, cards, chapters, cover. Rendered by the shared engine `studio/src/production/source/SourceEpisode.tsx`.
+- `CLASICO-SOURCE-SHORT`: 1080×1920, 30fps, 5250 frames / 175s.
+- `CLASICO-SOURCE-LONG`: 1920×1080, 30fps, 5850 frames / 195s (175s analysis + 20s end screen), 9 YouTube chapters. Posting: [posting-long.en.md](posting-long.en.md).
+- Clip Shorts from the same take, cut on scene (sentence) boundaries: `CLASICO-SOURCE-CLIP-PRESS` (11.84–50.66s, Madrid's press), `CLASICO-SOURCE-CLIP-HIGH-LINE` (50.66–82.62s, high line and wide trap), `CLASICO-SOURCE-CLIP-MARTIN` (152.8–175s, the goals and Martín's block).
+- Stills: `CLASICO-SOURCE-COVER` (vertical) and `CLASICO-SOURCE-THUMB` (1280×720).
 - Same speaking rate and timeline as the original; no automatic pause/retake removal.
 - Original presenter framed below source-relevant motion plates, with semantic section changes and word-timed captions.
 - Original schematic tactical illustrations, not measured match tracking. No invented date, result, xG or player-route measurements.
@@ -26,7 +30,7 @@ The uploaded Persian historical video (96.731s, 720×1280) is a **style referenc
 
 ## Rendering
 
-The dedicated **Render source-aligned Short** workflow prepares this source, renders the registered composition, checks full decode/encoding/audio, and packages the MP4, SRT, QC sheet and posting notes. The existing encrypted HK/HO workflow is not used for this recording. Raw footage is neither committed nor uploaded as a delivery artifact.
+The **Render source-aligned episode** workflow (`render-source-short.yml`) prepares this source once (cached by SHA-256), renders the Short and the long version in parallel chunks, checks full decode/encoding/audio, and packages the MP4, SRT, QC sheet and posting notes. The existing encrypted HK/HO workflow is not used for this recording. Raw footage is neither committed nor uploaded as a delivery artifact.
 
 A workflow file is not a completed render. See review notes for actual run status and validation. The current rendering prepares a review candidate; uncertain spoken names require the presenter's final ear check before public posting.
 
@@ -44,8 +48,22 @@ These are local browser-rendered review images, not the uploaded historical refe
 
 The downloaded master passed full decode and structural checks: 1080×1920, 30fps, H.264/yuv420p/BT.709, 48kHz AAC, 175.019s. Measured master loudness is −16.02LUFS / −2.86dBTP. Audio matched the prepared source at three sampled windows with zero measured offset. Retained artifact expires on 2026-11-09; download it before expiration.
 
-Current status is a **rendered review candidate**. Confirmation of the spoken Bernardo/Bernal name is pending. Do not treat an unanswered clarification as approved subtitles. No social-media post was published.
+The presenter confirmed the spoken names (Bernardo, Diomande, Espart, Gordon) on 2026-10-26 and approved Public posting; the manifest review is `approved`. No social-media post has been published from this repository.
 
 ## Development after that delivery
 
-The current manifest adds shared 108-page captions/SRT and verified player identity photographs; `CLASICO-SOURCE-ADAPTIVE` changes the presenter/board/photo layout. See [implementation status](../../video-production/implementation-2026-10-28.fa.md). The previously linked 175s artifact and delivery measurements describe commit `d52a6d8`, not this changed code or SRT. Do not present the historical artifact as an adaptive-layout render. Modern player photos are from September 2025 international football and do not show this El Clásico. Transcript uncertainty still blocks release; preview remains supported.
+The current manifest adds shared 108-page captions/SRT and verified player identity photographs; `CLASICO-SOURCE-ADAPTIVE` changes the presenter/board/photo layout. See [implementation status](../../video-production/implementation-2026-10-28.fa.md). The previously linked 175s artifact and delivery measurements describe commit `d52a6d8`, not this changed code or SRT. Do not present the historical artifact as an adaptive-layout render. Modern player photos are from September 2025 international football and do not show this El Clásico. The release gate (`episode.py --mode release`) now passes with the approved review.
+
+## Delivered renders
+
+| Output | Run | Commit | Status |
+|---|---|---|---|
+| Short (single-job workflow) | [40317053776](https://github.com/ashkan244/barca-yt-render/actions/runs/40317053776) | d52a6d8 | success: render, structural/decode QC step and artifact upload (artifact 12648532181, expires 2026-11-09) |
+| SHORT · LONG · CLIP-PRESS · CLIP-HIGH-LINE · CLIP-MARTIN (engine v2, parallel) | [40333096666](https://github.com/ashkan244/barca-yt-render/actions/runs/40333096666) | a527da0 | success, all QC passed: exact 30fps, full decode; SHORT 175.000s −16.02 LUFS / −2.89 dBTP; LONG 1920×1080 195.000s −16.02 LUFS / −2.87 dBTP. Artifacts expire 2026-11-25. Review images: [renders/](renders/README.md) |
+| ARCHIVE (archive split, Commons B-roll) | [40327521320](https://github.com/ashkan244/barca-yt-render/actions/runs/40327521320) | bd3f993 | success, QC passed: 1080×1920 30fps 175s, −16.03 LUFS / −2.37 dBTP; package includes CREDITS.md + licenses.tsv |
+
+The engine refactor reproduces this Short pixel-identically (18 sampled frames + cover compared at zero difference against the pre-refactor bundle).
+
+## Archive Split version (`CLASICO-SOURCE-ARCHIVE`)
+
+Second vertical edit of the same take in the reference "archive split" format: licensed Wikimedia Commons photos/video on top (B&W grade for history, push-in, flash cuts), the presenter below, full-frame punch-ins on key lines, typographic cards and the schematic boards as B-roll. 39 cues in `clasico-source.spec.json → archive`, media listed in [archive-manifest.json](archive-manifest.json) and fetched at render time with licenses (`CREDITS.md`, `licenses.tsv` ship with the render). A person's photo is used only when the Commons file title names that person; players without such a photo (Pedri, Balde, Gerard Martín, Gordon, Adeyemi, Diomande, Güler, Camavinga, Cucurella, Espart) get the presenter, a board or a card instead. CC BY / CC BY-SA authors must be credited in the YouTube description (copy `CREDITS.md`).

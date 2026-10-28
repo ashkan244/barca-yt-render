@@ -1,28 +1,54 @@
-name: Render source-aligned Short
+# Source-led Barça Radar episode: verified presenter source → vertical Short and/or 16:9 long-form,
+# rendered in parallel chunks (MP4 video + separate PCM audio per chunk, exact concat) with delivery QC.
+# The episode is described by studio/src/episodes-source/<id>.spec.json (media dir, source SHA-256, docs).
+name: Render source-aligned episode
 on:
   workflow_dispatch:
     inputs:
-      source_file_id:
-        description: Shared Drive source file ID (not a URL or credential)
+      episode:
+        description: Source episode id from studio/src/episodes-source (e.g. CLASICO-SOURCE)
         required: true
-        type: string
+        default: CLASICO-SOURCE
+      outputs:
+        description: Comma list of short,long,clips,archive (+ extra outputs listed in the spec, e.g. adaptive)
+        required: true
+        default: short,long,clips
       mode:
-        description: Preview permits pending review; release requires cleared transcript and assets
+        description: preview renders with pending review; release requires an approved transcript and verified photos
         required: true
         default: preview
         type: choice
         options: [preview, release]
-      composition:
-        description: Layout
-        default: CLASICO-SOURCE-ADAPTIVE
-        type: choice
-        options: [CLASICO-SOURCE-ADAPTIVE, CLASICO-SOURCE-SHORT]
+      chunks:
+        description: Parallel render jobs per output
+        required: true
+        default: '4'
+      source_file_id:
+        description: Shared Drive file ID. Optional once prepared media is cached for this SHA-256.
+        required: false
+        default: ''
+      source_from_run:
+        description: Optional earlier run ID whose source_file_id input should be reused (read from its log, masked here)
+        required: false
+        default: ''
 permissions:
   contents: read
+  actions: read
+env:
+  EPISODE: ${{ inputs.episode }}
+  MODE: ${{ inputs.mode }}
+
 jobs:
-  render:
+  prepare:
     runs-on: ubuntu-24.04
-    timeout-minutes: 60
+    timeout-minutes: 30
+    outputs:
+      render: ${{ steps.plan.outputs.render }}
+      finalize: ${{ steps.plan.outputs.finalize }}
+      media: ${{ steps.plan.outputs.media }}
+      key: ${{ steps.plan.outputs.key }}
+      archive: ${{ steps.arch.outputs.dir }}
+      archive_key: ${{ steps.arch.outputs.key }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -30,92 +56,265 @@ jobs:
           node-version: 22
           cache: npm
           cache-dependency-path: studio/package-lock.json
-      - name: Install media tools
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Plan
+        id: plan
+        run: |
+          info=$(node studio/scripts/source-plan.mjs "$EPISODE" info)
+          matrix=$(node studio/scripts/source-plan.mjs "$EPISODE" matrix '${{ inputs.chunks }}' '${{ inputs.outputs }}')
+          echo "media=$(jq -r .media <<<"$info")" >> "$GITHUB_OUTPUT"
+          echo "sha=$(jq -r .sha256 <<<"$info")" >> "$GITHUB_OUTPUT"
+          echo "key=radar-media-$(jq -r .sha256 <<<"$info")-${{ hashFiles('tools/video/prepare_source.py') }}" >> "$GITHUB_OUTPUT"
+          echo "render=$(jq -c .render <<<"$matrix")" >> "$GITHUB_OUTPUT"
+          echo "finalize=$(jq -c .finalize <<<"$matrix")" >> "$GITHUB_OUTPUT"
+          echo "$info"; jq -c '.render.include | length' <<<"$matrix"
+      - name: Restore prepared media
+        id: media
+        uses: actions/cache/restore@v4
+        with:
+          path: studio/public/${{ steps.plan.outputs.media }}
+          key: ${{ steps.plan.outputs.key }}
+      - uses: actions/cache@v4
+        if: steps.media.outputs.cache-hit != 'true'
+        with:
+          path: ~/apt-debs
+          key: ffmpeg-debs-ubuntu-24.04-${{ hashFiles('tools/video/ensure_ffmpeg.sh') }}
+      - name: Install media tools (only needed to prepare an uncached source)
+        if: steps.media.outputs.cache-hit != 'true'
+        run: tools/video/ensure_ffmpeg.sh
       - name: Verify media-tool checks
+        if: steps.media.outputs.cache-hit != 'true'
         run: python -m unittest discover -s tools/video/tests -v
-      - name: Verify episode and build shared captions
-        id: episode
+      - name: Download, verify and prepare the original source
+        if: steps.media.outputs.cache-hit != 'true'
         env:
-          MODE: ${{ inputs.mode }}
+          GH_TOKEN: ${{ github.token }}
+          SHA: ${{ steps.plan.outputs.sha }}
+          OUT: studio/public/${{ steps.plan.outputs.media }}
         run: |
-          python tools/video/episode.py studio/src/episodes-source/clasico-source.manifest.json --mode "$MODE" --build-captions
-          python - <<'PYCODE'
-          import json,os
-          from pathlib import Path
-          m=json.loads(Path('studio/src/episodes-source/clasico-source.manifest.json').read_text())
-          with open(os.environ['GITHUB_OUTPUT'],'a') as f: f.write(f"sha256={m['source']['sha256']}\nduration={m['duration']}\n")
-          PYCODE
-      - name: Download and verify the original source
-        env:
-          SOURCE_FILE_ID: ${{ inputs.source_file_id }}
-          SOURCE_SHA256: ${{ steps.episode.outputs.sha256 }}
-        run: python tools/video/download_drive.py "$SOURCE_FILE_ID" /tmp/presenter-source.mov --sha256 "$SOURCE_SHA256"
-      - name: Prepare media without changing speech timing
-        env:
-          DURATION: ${{ steps.episode.outputs.duration }}
+          # Read inputs from the event file so the Drive ID is never printed in this public log.
+          ID=$(jq -r '.inputs.source_file_id // ""' "$GITHUB_EVENT_PATH")
+          RUN=$(jq -r '.inputs.source_from_run // ""' "$GITHUB_EVENT_PATH")
+          if [ -z "$ID" ] && [ -n "$RUN" ]; then
+            for JOB in $(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$RUN/jobs" --jq '.jobs[].id'); do
+              ID=$(curl -fsSL -H "Authorization: Bearer $GH_TOKEN" "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/actions/jobs/$JOB/logs" | sed 's/\x1b\[[0-9;]*m//g' | grep -m1 -oP 'SOURCE_FILE_ID: \K[\w-]+' || true)
+              [ -n "$ID" ] && break
+            done
+          fi
+          [ -n "$ID" ] || { echo "::error::No cached media for this SHA-256; supply source_file_id or source_from_run."; exit 1; }
+          echo "::add-mask::$ID"
+          python tools/video/download_drive.py "$ID" /tmp/presenter-source --sha256 "$SHA"
+          python tools/video/prepare_source.py /tmp/presenter-source --output-dir "$OUT"
+          rm /tmp/presenter-source
+      - name: Cache prepared media (never uploaded as an artifact)
+        if: steps.media.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: studio/public/${{ steps.plan.outputs.media }}
+          key: ${{ steps.plan.outputs.key }}
+      - name: Review gate and shared caption pages (episode manifest)
         run: |
-          python tools/video/prepare_source.py /tmp/presenter-source.mov --output-dir studio/public/host/CLASICO
-          python tools/video/make_score.py studio/public/host/CLASICO/score.wav --duration "$DURATION"
-          python tools/video/episode.py studio/src/episodes-source/clasico-source.manifest.json --check-media
-      - name: Install Studio and verify types
+          manifest=$(node studio/scripts/source-plan.mjs "$EPISODE" info | jq -r '.manifest // empty')
+          if [ -n "$manifest" ]; then python tools/video/episode.py "$manifest" --mode "$MODE" --build-captions; else
+            [ "$MODE" = preview ] || { echo "::error::release needs an episode manifest with an approved review"; exit 1; }; fi
+      - name: Plan archive media
+        id: arch
+        run: |
+          info=$(node studio/scripts/source-plan.mjs "$EPISODE" info)
+          manifest="$(jq -r .docs <<<"$info")/archive-manifest.json"
+          if [ -n "$(jq -r .archive <<<"$info")" ] && [ -f "$manifest" ]; then
+            echo "dir=$(jq -r .archive <<<"$info")" >> "$GITHUB_OUTPUT"
+            echo "manifest=$manifest" >> "$GITHUB_OUTPUT"
+            echo "key=radar-archive-$(sha256sum "$manifest" tools/archive/commons.py | sha256sum | cut -c1-32)" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Restore archive media
+        id: archcache
+        if: steps.arch.outputs.dir != ''
+        uses: actions/cache/restore@v4
+        with:
+          path: studio/public/${{ steps.arch.outputs.dir }}
+          key: ${{ steps.arch.outputs.key }}
+      - name: Fetch licensed archive media (Wikimedia Commons)
+        if: steps.arch.outputs.dir != '' && steps.archcache.outputs.cache-hit != 'true'
+        run: |
+          tools/video/ensure_ffmpeg.sh
+          pip install -q pillow
+          python tools/archive/commons.py fetch '${{ steps.arch.outputs.manifest }}' --out 'studio/public/${{ steps.arch.outputs.dir }}' --strict
+      - name: Cache archive media
+        if: steps.arch.outputs.dir != '' && steps.archcache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: studio/public/${{ steps.arch.outputs.dir }}
+          key: ${{ steps.arch.outputs.key }}
+      - name: Install Studio, verify types and spec, render stills
         working-directory: studio
         run: |
           npm ci --no-audit --no-fund
           npx tsc --noEmit
-      - name: Render vertical master
-        working-directory: studio
-        env:
-          COMPOSITION: ${{ inputs.composition }}
-        run: |
-          CHROME_PATH=$(command -v google-chrome || command -v chromium || true)
-          if [ -z "$CHROME_PATH" ]; then
-            npx remotion browser ensure
-            npx remotion render src/index.ts "$COMPOSITION" out/CLASICO-SOURCE-SHORT.render.mp4 --concurrency=2 --crf=18 --codec=h264 --pixel-format=yuv420p --color-space=bt709 --image-format=png --audio-codec=aac --audio-bitrate=192k
-          else
-            npx remotion render src/index.ts "$COMPOSITION" out/CLASICO-SOURCE-SHORT.render.mp4 --browser-executable="$CHROME_PATH" --concurrency=2 --crf=18 --codec=h264 --pixel-format=yuv420p --color-space=bt709 --image-format=png --audio-codec=aac --audio-bitrate=192k
-          fi
-          npx remotion still src/index.ts CLASICO-SOURCE-COVER out/CLASICO-SOURCE-COVER.png
-          ffmpeg -v error -y -i out/CLASICO-SOURCE-SHORT.render.mp4 -c copy -movflags +faststart out/CLASICO-SOURCE-SHORT.mp4
-      - name: QC and posting packet
-        env:
-          COMPOSITION: ${{ inputs.composition }}
-          MODE: ${{ inputs.mode }}
-        run: |
-          python tools/video/media.py qc studio/out/CLASICO-SOURCE-SHORT.mp4 --profile vertical --decode --loudness --output studio/out/quality.json
-          python tools/video/media.py contact-sheet studio/out/CLASICO-SOURCE-SHORT.mp4 --output studio/out/contact-sheet.jpg --interval 5
-          cp docs/barca-radar/clasico-source/CLASICO-SOURCE-SHORT.srt studio/out/
-          cp docs/barca-radar/clasico-source/posting.en.md studio/out/
-          python - <<'PYCODE'
-          import hashlib,json,os,sys
-          sys.path.insert(0,"tools/video")
-          from photos import credits
-          from pathlib import Path
-          m=json.loads(Path('studio/src/episodes-source/clasico-source.manifest.json').read_text())
-          catalog=json.loads(Path('studio/src/production/photo-catalog.json').read_text())
-          attribution=credits(catalog,m['photoAssets'])
-          Path('studio/out/photo-credits.md').write_text(attribution)
-          with Path('studio/out/posting.en.md').open('a') as f: f.write('\n\n'+attribution)
-          qc=json.loads(Path('studio/out/quality.json').read_text())
-          output=Path('studio/out/CLASICO-SOURCE-SHORT.mp4')
-          with output.open('rb') as f: checksum=hashlib.file_digest(f,'sha256').hexdigest()
-          run=f"https://github.com/{os.environ['GITHUB_REPOSITORY']}/actions/runs/{os.environ['GITHUB_RUN_ID']}"
-          delivery=dict(composition=os.environ['COMPOSITION'],mode=os.environ['MODE'],renderCommit=os.environ['GITHUB_SHA'],runUrl=run,sha256=checksum,bytes=output.stat().st_size,sourceSha256=m['source']['sha256'],sourceDuration=m['duration'],review=m['review'],photoAssets=m['photoAssets'],qcPassed=qc['passed'],measuredLoudness=qc['loudness'])
-          Path('studio/out/delivery.json').write_text(json.dumps(delivery,ensure_ascii=False,indent=2)+'\n')
-          Path('studio/out/review-notes.fa.md').write_text('Render review packet: '+run+'\n\nComposition: '+os.environ['COMPOSITION']+'; mode: '+os.environ['MODE']+'\n\nTranscript review: '+json.dumps(m['review'],ensure_ascii=False)+'\n\nSee delivery.json for this exact output. Player photographs are identity illustrations from September 2025, not images of the match. No social-media post has been published.\n')
-          PYCODE
+          npx remotion browser ensure
+          npx remotion still src/index.ts "$EPISODE-COVER" "out/$EPISODE-COVER.png"
+          npx remotion still src/index.ts "$EPISODE-THUMB" "out/$EPISODE-THUMB.png"
+          if [ -n '${{ steps.arch.outputs.dir }}' ]; then cp 'public/${{ steps.arch.outputs.dir }}/CREDITS.md' 'public/${{ steps.arch.outputs.dir }}/licenses.tsv' out/; fi
       - uses: actions/upload-artifact@v4
         with:
-          name: clasico-source-short-${{ github.sha }}
-          path: |
-            studio/out/CLASICO-SOURCE-SHORT.mp4
-            studio/out/CLASICO-SOURCE-COVER.png
-            studio/out/CLASICO-SOURCE-SHORT.srt
-            studio/out/quality.json
-            studio/out/contact-sheet.jpg
-            studio/out/posting.en.md
-            studio/out/review-notes.fa.md
-            studio/out/photo-credits.md
-            studio/out/delivery.json
+          name: stills
+          path: studio/out/*
+          retention-days: 1
+
+  render:
+    needs: prepare
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    strategy:
+      fail-fast: true
+      matrix: ${{ fromJson(needs.prepare.outputs.render) }}
+    defaults:
+      run:
+        working-directory: studio
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: studio/package-lock.json
+      - uses: actions/cache/restore@v4
+        with:
+          path: studio/public/${{ needs.prepare.outputs.media }}
+          key: ${{ needs.prepare.outputs.key }}
+          fail-on-cache-miss: true
+      - uses: actions/cache/restore@v4
+        if: needs.prepare.outputs.archive != ''
+        with:
+          path: studio/public/${{ needs.prepare.outputs.archive }}
+          key: ${{ needs.prepare.outputs.archive_key }}
+          fail-on-cache-miss: true
+      - name: Original underscore (no external samples)
+        run: |
+          info=$(node scripts/source-plan.mjs "$EPISODE" info)
+          python ../tools/video/make_score.py "public/$(jq -r .media <<<"$info")/score.wav" --duration "$(jq -r .duration <<<"$info")"
+          python ../tools/video/make_score.py "public/$(jq -r .media <<<"$info")/score-long.wav" --duration "$(jq -r .longDuration <<<"$info")"
+      - run: npm ci --no-audit --no-fund
+      - name: Render ${{ matrix.comp }} chunk ${{ matrix.index }} (frames ${{ matrix.start }}-${{ matrix.end }})
+        run: |
+          start=$(date +%s)
+          npx remotion render src/index.ts '${{ matrix.comp }}' 'out/${{ matrix.comp }}-part-${{ matrix.index }}.mp4' \
+            --frames=${{ matrix.start }}-${{ matrix.end }} --codec=h264 --separate-audio-to='out/${{ matrix.comp }}-part-${{ matrix.index }}.wav' --crf=18 \
+            --pixel-format=yuv420p --color-space=bt709 --image-format=png --concurrency=4 --log=info
+          echo "${{ matrix.comp }} chunk ${{ matrix.index }}: $(( ${{ matrix.end }} - ${{ matrix.start }} + 1 )) frames in $(( $(date +%s) - start ))s" | tee 'out/${{ matrix.comp }}-part-${{ matrix.index }}.txt'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: part-${{ matrix.comp }}-${{ matrix.index }}
+          path: studio/out/${{ matrix.comp }}-part-*
+          retention-days: 1
+
+  finalize:
+    needs: [prepare, render]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJson(needs.prepare.outputs.finalize) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: part-${{ matrix.comp }}-*
+          path: parts
+          merge-multiple: true
+      - uses: actions/download-artifact@v4
+        with:
+          name: stills
+          path: out
+      - uses: actions/cache@v4
+        with:
+          path: ~/apt-debs
+          key: ffmpeg-debs-ubuntu-24.04-${{ hashFiles('tools/video/ensure_ffmpeg.sh') }}
+      - name: Install media tools
+        run: tools/video/ensure_ffmpeg.sh
+      - name: Concatenate chunks and encode delivery
+        run: |
+          # MP4 chunks keep exact 30fps timestamps; PCM chunks concatenate sample-exactly.
+          ls parts/*.mp4 | sort -V | sed "s|^|file '$PWD/|; s|$|'|" > parts/video.txt
+          ls parts/*.wav | sort -V | sed "s|^|file '$PWD/|; s|$|'|" > parts/audio.txt
+          ffmpeg -v error -y -f concat -safe 0 -i parts/video.txt -c copy parts/video.mp4
+          ffmpeg -v error -y -f concat -safe 0 -i parts/audio.txt -c copy parts/audio.wav
+          ffmpeg -v error -y -i parts/video.mp4 -i parts/audio.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -ar 48000 -movflags +faststart 'out/${{ matrix.comp }}.mp4'
+          cat parts/*.txt > out/render-speed.txt
+      - name: QC and posting packet
+        run: |
+          qc=0; python tools/video/media.py qc 'out/${{ matrix.comp }}.mp4' --profile '${{ matrix.profile }}' --decode --loudness --output out/quality.json || qc=$?
+          python tools/video/media.py contact-sheet 'out/${{ matrix.comp }}.mp4' --output out/contact-sheet.jpg --interval 5
+          docs=$(node studio/scripts/source-plan.mjs "$EPISODE" info | jq -r .docs)
+          cp "$docs"/*.srt "$docs"/posting*.md "$docs"/review-notes.fa.md out/ 2>/dev/null || true
+          node studio/scripts/source-plan.mjs "$EPISODE" chapters > out/chapters.txt
+          manifest=$(node studio/scripts/source-plan.mjs "$EPISODE" info | jq -r '.manifest // empty')
+          COMP='${{ matrix.comp }}' MANIFEST="$manifest" python - <<'PYCODE'
+          import hashlib, json, os, sys
+          from pathlib import Path
+          sys.path.insert(0, 'tools/video')
+          comp = os.environ['COMP']; out = Path(f'out/{comp}.mp4'); m = json.loads(Path(os.environ['MANIFEST']).read_text()) if os.environ['MANIFEST'] else {}
+          if m.get('photoAssets'):
+              from photos import credits
+              Path('out/photo-credits.md').write_text(credits(json.loads(Path('studio/src/production/photo-catalog.json').read_text()), m['photoAssets']))
+          qc = json.loads(Path('out/quality.json').read_text())
+          with out.open('rb') as f: digest = hashlib.file_digest(f, 'sha256').hexdigest()
+          delivery = {'composition': comp, 'mode': os.environ['MODE'], 'renderCommit': os.environ['GITHUB_SHA'],
+                      'runUrl': f"{os.environ['GITHUB_SERVER_URL']}/{os.environ['GITHUB_REPOSITORY']}/actions/runs/{os.environ['GITHUB_RUN_ID']}",
+                      'sha256': digest, 'bytes': out.stat().st_size, 'sourceSha256': m.get('source', {}).get('sha256'), 'review': m.get('review'),
+                      'qcPassed': qc['passed'], 'qcErrors': qc['errors'], 'loudness': qc.get('loudness')}
+          Path('out/delivery.json').write_text(json.dumps(delivery, ensure_ascii=False, indent=2) + '\n')
+          PYCODE
+          python - <<'EOF' | tee -a "$GITHUB_STEP_SUMMARY"
+          import json
+          q = json.load(open('out/quality.json')); v = next(s for s in q['probe']['streams'] if s['codec_type'] == 'video'); l = q.get('loudness') or {}
+          print(f"### ${{ matrix.comp }}\n\n| check | value |\n|---|---|")
+          for k, x in [('passed', q['passed']), ('errors', '; '.join(q['errors']) or 'none'), ('size', f"{v['width']}x{v['height']} {v['codec_name']} {v['pix_fmt']} {v.get('avg_frame_rate')}"),
+                       ('duration', q['probe']['format']['duration']), ('full decode', q['decode_checked']), ('integrated loudness', f"{l.get('input_i')} LUFS"), ('true peak', f"{l.get('input_tp')} dBTP")]:
+              print(f'| {k} | {x} |')
+          EOF
+          cat out/render-speed.txt
+          [ "$qc" = 0 ] || { echo "::error::QC failed: $(jq -r '.errors | join("; ")' out/quality.json)"; exit "$qc"; }
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: ${{ matrix.comp }}-${{ github.sha }}
+          path: out
           if-no-files-found: error
-          retention-days: 14
+          retention-days: 30
+
+  review:
+    # Commits small review images (contact sheets, cover, thumbnail) of the finished renders to this branch,
+    # so the real presenter footage in each delivery can be checked without downloading the artifact.
+    needs: [prepare, finalize]
+    if: ${{ !cancelled() && needs.prepare.result == 'success' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: '*-${{ github.sha }}'
+          path: renders
+      - uses: actions/download-artifact@v4
+        with:
+          name: stills
+          path: renders/stills
+      - name: Commit review images
+        run: |
+          tools/video/ensure_ffmpeg.sh
+          dest="$(node studio/scripts/source-plan.mjs "$EPISODE" info | jq -r .docs)/renders"
+          mkdir -p "$dest"
+          for d in renders/*-${{ github.sha }}; do
+            [ -f "$d/contact-sheet.jpg" ] || continue
+            comp=$(basename "$d" -${{ github.sha }})
+            ffmpeg -v error -y -i "$d/contact-sheet.jpg" -vf 'scale=1600:-2' -q:v 5 "$dest/$comp-contact.jpg"
+          done
+          for f in renders/stills/*.png; do ffmpeg -v error -y -i "$f" -vf 'scale=640:-2' -q:v 4 "$dest/$(basename "$f" .png).jpg"; done
+          { echo "# Rendered review images"; echo; echo "Run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID · commit ${GITHUB_SHA::7}"; echo;
+            for f in "$dest"/*.jpg; do echo "![$(basename "$f")]($(basename "$f"))"; done; } > "$dest/README.md"
+          git config user.name github-actions[bot]; git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add "$dest"
+          git commit -m "docs: review images from render run $GITHUB_RUN_ID"
+          git pull --rebase origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME"

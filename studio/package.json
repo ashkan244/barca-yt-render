@@ -7,6 +7,8 @@
     "typecheck": "tsc --noEmit",
     "test:media": "python3 -m unittest discover -s ../tools/video/tests -v",
     "qc:frames": "node ../tools/video/qc_frames.mjs",
+    "plan:source": "node scripts/source-plan.mjs",
+    "draft:archive": "python3 ../tools/archive/draft_cues.py",
     "render:source": "remotion render src/index.ts CLASICO-SOURCE-SHORT out/CLASICO-SOURCE-SHORT.mp4 --codec=h264 --pixel-format=yuv420p --color-space=bt709 --image-format=png --concurrency=2 --crf=18 --audio-codec=aac --audio-bitrate=192k",
     "photos:verify": "python3 ../tools/video/photos.py verify --release",
     "captions:build": "python3 ../tools/video/episode.py src/episodes-source/clasico-source.manifest.json --mode preview --build-captions",

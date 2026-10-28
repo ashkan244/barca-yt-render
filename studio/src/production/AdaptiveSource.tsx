@@ -23,7 +23,7 @@ export const AdaptiveSource: React.FC = () => {
    <OffthreadVideo src={staticFile(episode.media.video)} muted style={{width:'100%',height:'100%',objectFit:'cover',objectPosition:'50% 30%'}}/>
   </div>
   {!supporting&&scene.cards&&<div style={{position:'absolute',left:65,right:65,top:1430,display:'flex',gap:18}}>{scene.cards.map(([title],i)=><div key={title} style={{padding:'12px 20px',borderLeft:'4px solid #f2c230',background:'#101c30',fontFamily:LOCAL_FONTS.display,fontSize:36,opacity:interpolate(frame,[scene.a*episode.fps+(scene.cardDelays?.[i]??i*.3)*episode.fps,scene.a*episode.fps+(scene.cardDelays?.[i]??i*.3)*episode.fps+8],[0,1],{extrapolateLeft:'clamp',extrapolateRight:'clamp'})}}>{title}</div>)}</div>}
-  <ReviewedCaptions pages={captionDocument.pages} top={1580} width={870}/>
+  <ReviewedCaptions pages={captionDocument.pages} top={1580} width={870} minFontSize={54}/>
   <div style={{position:'absolute',left:70,right:70,bottom:88,fontSize:22,color:'#b3c1d1',letterSpacing:2}}>WITH MORTI · BARÇA RADAR</div>
   <Audio src={staticFile(episode.media.voice)}/><Audio src={staticFile(episode.media.score)} volume={.22}/>
  </AbsoluteFill>;

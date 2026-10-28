@@ -1,7 +1,10 @@
 import React from 'react';
+import {SourceShort, SourceLong, SourceCover, SourceThumb, SourceClip, shortFrames, longFrames, clipFrames} from './production/source/SourceEpisode';
+import {SOURCE_EPISODES} from './episodes-source';
+import {ArchiveShort} from './production/source/ArchiveShort';
 import {AdaptiveSource} from './production/AdaptiveSource';
 import {VisualModelsDemo, VISUAL_DEMO_FRAMES} from './production/VisualModelsDemo';
-import {ClasicoSourceShort, ClasicoSourceCover, CLASICO_SOURCE_FRAMES} from './production/ClasicoSource';
+import {CLASICO_SOURCE_FRAMES} from './production/ClasicoSource';
 import {Composition, Still} from 'remotion';
 import {TacticsHook, HOOK_FRAMES} from './TacticsHook';
 import {StoryHook, STORY_FRAMES} from './StoryHook';
@@ -20,11 +23,19 @@ import {HORadar, HO_FRAMES, HOThumb} from './radar/HOTitle';
 
 export const Root: React.FC = () => (
   <>
+    {SOURCE_EPISODES.map((d) => (
+      <React.Fragment key={d.spec.id}>
+        <Composition id={`${d.spec.id}-SHORT`} component={SourceShort} durationInFrames={shortFrames(d.spec)} fps={30} width={1080} height={1920} defaultProps={d} />
+        <Composition id={`${d.spec.id}-LONG`} component={SourceLong} durationInFrames={longFrames(d.spec)} fps={30} width={1920} height={1080} defaultProps={d} />
+        <Still id={`${d.spec.id}-COVER`} component={SourceCover} width={1080} height={1920} defaultProps={d} />
+        <Still id={`${d.spec.id}-THUMB`} component={SourceThumb} width={1280} height={720} defaultProps={d} />
+        {'archive' in d.spec && <Composition id={`${d.spec.id}-ARCHIVE`} component={ArchiveShort} durationInFrames={shortFrames(d.spec)} fps={30} width={1080} height={1920} defaultProps={d} />}
+        {d.spec.clips?.map((c) => <Composition key={c.name} id={`${d.spec.id}-CLIP-${c.name}`} component={SourceClip} durationInFrames={clipFrames(d.spec, c.name)} fps={30} width={1080} height={1920} defaultProps={{...d, clip: c.name}} />)}
+      </React.Fragment>
+    ))}
     <Composition id="CLASICO-SOURCE-ADAPTIVE" component={AdaptiveSource} durationInFrames={CLASICO_SOURCE_FRAMES} fps={30} width={1080} height={1920}/>
     <Composition id="PHOTO-MODELS-DEMO" component={VisualModelsDemo} durationInFrames={VISUAL_DEMO_FRAMES} fps={30} width={1920} height={1080}/>
     <Composition id="PHOTO-MODELS-DEMO-VERTICAL" component={VisualModelsDemo} durationInFrames={VISUAL_DEMO_FRAMES} fps={30} width={1080} height={1920}/>
-    <Still id="CLASICO-SOURCE-COVER" component={ClasicoSourceCover} width={1080} height={1920} />
-    <Composition id="CLASICO-SOURCE-SHORT" component={ClasicoSourceShort} durationInFrames={CLASICO_SOURCE_FRAMES} fps={30} width={1080} height={1920} />
     {EPISODES.map((d) => (
       <React.Fragment key={d.spec.id}>
         <Composition id={d.spec.id} component={Episode} durationInFrames={Math.max(30, episodeFrames(d))} fps={30} width={1920} height={1080} defaultProps={d} />

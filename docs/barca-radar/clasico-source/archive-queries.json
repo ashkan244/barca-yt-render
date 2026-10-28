@@ -1,0 +1,30 @@
+{
+  "note": "Round 2 for the dense Clásico edits. Person photos are used only when the Commons title names that person; generic football shots carry no name label and never stand in for a named player.",
+  "queries": [
+    {"id": "camavinga", "q": "Eduardo Camavinga"},
+    {"id": "cucurella", "q": "Marc Cucurella"},
+    {"id": "guler", "q": "Arda Güler"},
+    {"id": "gordon", "q": "Anthony Gordon footballer"},
+    {"id": "adeyemi", "q": "Karim Adeyemi"},
+    {"id": "balde", "q": "Alejandro Balde Barcelona"},
+    {"id": "pedri", "q": "Pedri González footballer"},
+    {"id": "gerard-martin", "q": "Gerard Martín Barcelona"},
+    {"id": "barca-players", "q": "FC Barcelona players 2025"},
+    {"id": "madrid-players", "q": "Real Madrid players 2025"},
+    {"id": "madrid-fans", "q": "Real Madrid supporters Bernabéu"},
+    {"id": "bernabeu-night", "q": "Santiago Bernabéu stadium night"},
+    {"id": "barca-fans", "q": "FC Barcelona fans celebration"},
+    {"id": "corner-kick", "q": "corner kick football"},
+    {"id": "pressing", "q": "football pressing tackle duel"},
+    {"id": "defensive-line", "q": "football defenders offside line"},
+    {"id": "substitution", "q": "football substitution board fourth official"},
+    {"id": "injury", "q": "football player injured physio"},
+    {"id": "goal-celebration", "q": "football goal celebration"},
+    {"id": "goalkeeper", "q": "football goalkeeper save"},
+    {"id": "block", "q": "football defender blocks shot"},
+    {"id": "tactics-board", "q": "football tactics board coach"},
+    {"id": "stadium-video", "q": "football stadium crowd", "kind": "video"},
+    {"id": "match-video", "q": "football match", "kind": "video"},
+    {"id": "bernabeu-video", "q": "Santiago Bernabéu", "kind": "video"}
+  ]
+}
