@@ -1,0 +1,71 @@
+{
+  "verifiedOn": "2026-10-28",
+  "runId": 40611256947,
+  "runUrl": "https://github.com/ashkan244/barca-yt-render/actions/runs/40611256947",
+  "renderCommit": "e56b6a7fe1025a0a88ce1bede56ce5ab2db3cf3c",
+  "purpose": "Visual-model demonstrations; not the 175s adaptive presenter master; no social publication",
+  "outputs": [
+    {
+      "composition": "PHOTO-MODELS-DEMO",
+      "artifactId": 12783556764,
+      "artifactUrl": "https://github.com/ashkan244/barca-yt-render/actions/runs/40611256947/artifacts/12783556764",
+      "expiresOn": "2026-11-27",
+      "sha256": "58457396158743e9ef21c3da832bda5439d98318aed60e06ec59b75adb50e2ce",
+      "bytes": 20046206,
+      "durationSeconds": 27.008,
+      "qcPassed": true,
+      "fullDecodeChecked": true,
+      "video": {
+        "width": 1920,
+        "height": 1080,
+        "nb_frames": "810",
+        "codec_name": "h264",
+        "pix_fmt": "yuv420p",
+        "avg_frame_rate": "30/1",
+        "color_space": "bt709"
+      },
+      "audio": {
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2
+      },
+      "measuredLoudness": {
+        "input_i": "-36.83",
+        "input_tp": "-28.46",
+        "input_lra": "5.00",
+        "input_thresh": "-47.18"
+      }
+    },
+    {
+      "composition": "PHOTO-MODELS-DEMO-VERTICAL",
+      "artifactId": 12782738369,
+      "artifactUrl": "https://github.com/ashkan244/barca-yt-render/actions/runs/40611256947/artifacts/12782738369",
+      "expiresOn": "2026-11-27",
+      "sha256": "fbcaddf3e504c9859ac7eb40ad508ffef11e5858cebea8687b661633166afe0a",
+      "bytes": 24676642,
+      "durationSeconds": 27.008,
+      "qcPassed": true,
+      "fullDecodeChecked": true,
+      "video": {
+        "width": 1080,
+        "height": 1920,
+        "nb_frames": "810",
+        "codec_name": "h264",
+        "pix_fmt": "yuv420p",
+        "avg_frame_rate": "30/1",
+        "color_space": "bt709"
+      },
+      "audio": {
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2
+      },
+      "measuredLoudness": {
+        "input_i": "-36.83",
+        "input_tp": "-28.46",
+        "input_lra": "5.00",
+        "input_thresh": "-47.18"
+      }
+    }
+  ]
+}
