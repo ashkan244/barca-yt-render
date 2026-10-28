@@ -1,0 +1,286 @@
+{
+  "schemaVersion": 1,
+  "updatedOn": "2026-10-28",
+  "purpose": "Resume research and production with actual evidence; visual quality and content diversity first.",
+  "startHere": "CLOUD_GUIDE.fa.md",
+  "canonicalRepository": "ashkan244/barca-yt-render",
+  "planningRepository": "ashkan244/barca-yt",
+  "reviewedProductionBaseCommit": "7876987e33cdb19de42c393faf62b1cfea4e7049",
+  "authoritativeContent": {
+    "episodeId": "CLASICO-SOURCE-SHORT",
+    "manifest": "studio/src/episodes-source/clasico-source.manifest.json",
+    "sourceRole": "short",
+    "sourceSha256": "8b558736590ffa4297a2b2df4aa8d007042472738cb141085cb4b9eac03a29c1",
+    "durationSeconds": 175,
+    "topic": "Source-recorded tactical El Clasico commentary; not the historical or PSG screenplay",
+    "review": {
+      "transcript": "approved",
+      "unresolved": [],
+      "approval": "Presenter confirmed Bernardo, Diomande, Espart, Gordon on 2026-10-26; Public posting approved."
+    },
+    "longVideoStatus": "awaiting_actual_presenter_source",
+    "historicalReferenceRole": "style reference only; no media or soundtrack reuse assumed"
+  },
+  "resumeReading": [
+    "AGENTS.md",
+    "CLOUD_GUIDE.fa.md",
+    "docs/video-production/README.fa.md",
+    "docs/barca-radar/clasico-source/README.md",
+    ".agents/skills/video-production/SKILL.md",
+    ".agents/skills/barca-visual-direction/SKILL.md"
+  ],
+  "capabilities": [
+    {
+      "id": "source-intake-and-qc",
+      "status": "implemented-and-previously-tested",
+      "entrypoint": "tools/video/README.md"
+    },
+    {
+      "id": "source-short-v1",
+      "status": "rendered-review-candidate",
+      "evidence": "docs/barca-radar/clasico-source/delivery.json",
+      "renderCommit": "d52a6d8af5319aed89aef03532f93020f7923e78",
+      "artifactExpiresOn": "2026-11-09"
+    },
+    {
+      "id": "adaptive-source-layout",
+      "status": "implemented-frames-and-short-clip-reviewed",
+      "evidence": "docs/video-production/implementation-2026-10-28.fa.md",
+      "full175sMaster": "not_recorded_for_this_layout"
+    },
+    {
+      "id": "shared-captions",
+      "status": "implemented",
+      "pages": 108,
+      "entrypoint": "tools/video/episode.py",
+      "releaseGate": "passes (approved review)",
+      "usedBy": "all source-episode formats (SHORT, LONG, CLIP, ARCHIVE, ADAPTIVE)"
+    },
+    {
+      "id": "photo-catalog",
+      "status": "curated-assets-verified",
+      "catalog": "studio/src/production/photo-catalog.json",
+      "assetCount": 5,
+      "liveFeed": "not_connected"
+    },
+    {
+      "id": "photo-models-demo",
+      "status": "github-artifacts-downloaded-and-verified",
+      "evidence": "docs/video-production/photo-demo-delivery.json",
+      "renderCommit": "e56b6a7fe1025a0a88ce1bede56ce5ab2db3cf3c",
+      "artifactExpiresOn": "2026-11-27"
+    },
+    {
+      "id": "blender-tactical-lab",
+      "status": "single-still-rendered-and-reviewed",
+      "evidence": "docs/video-production/tactical-lab-3d-proof.json",
+      "animationAndMcp": "not_tested"
+    },
+    {
+      "id": "open-source-editors",
+      "status": "research-and-bounded-probes",
+      "report": "docs/video-production/open-source-editors-2026-10-28.fa.md",
+      "evidence": "docs/video-production/open-editor-evidence.json"
+    },
+    {
+      "id": "openreel",
+      "status": "source-reviewed-browser-project-and-media-pool-import-tested",
+      "timelineAndExportAndMcp": "not_tested"
+    },
+    {
+      "id": "motionity",
+      "status": "png-produced-visual-acceptance-not-met",
+      "next": "Isolate editor coordinate/state contract using proper UI before evaluating production suitability."
+    },
+    {
+      "id": "mlt-native-cut",
+      "status": "native-video-smoke-rendered-and-decoded",
+      "evidence": "docs/video-production/open-editor-evidence.json",
+      "entrypoint": "tools/video/experiments/mlt_cut_smoke.py",
+      "guiAndQtFilters": "not_verified; Qt prototype blocked by display dependency"
+    },
+    {
+      "id": "canva-higgsfield",
+      "status": "official-paths-researched-not-connected",
+      "report": "docs/video-production/canva-higgsfield-evaluation.fa.md"
+    },
+    {
+      "id": "other-creative-mcp",
+      "status": "researched-not-connected",
+      "report": "docs/video-production/creative-integrations-2026-10-28.fa.md"
+    },
+    {
+      "id": "football-data-story",
+      "status": "skill-written-provider-not-connected",
+      "entrypoint": ".agents/skills/football-data-story/SKILL.md",
+      "publicationDataRights": "not_cleared_by_StatsBomb_open_data_agreement"
+    },
+    {
+      "id": "source-episode-engine",
+      "status": "implemented-and-rendered",
+      "entrypoint": "studio/src/production/source/SourceEpisode.tsx",
+      "spec": "studio/src/episodes-source/clasico-source.spec.json",
+      "outputs": "SHORT, LONG (16:9, chapters, end screen), CLIP-*, ARCHIVE, COVER, THUMB; extraOutputs: adaptive",
+      "evidence": "docs/barca-radar/clasico-source/README.md#delivered-renders"
+    },
+    {
+      "id": "archive-split-format",
+      "status": "implemented-and-rendered (v3); photo-dense v4 implemented, not yet rendered",
+      "entrypoint": "studio/src/production/source/ArchiveShort.tsx",
+      "coverage": "B-roll 77% of runtime, 56 shots, 22 photo beats in SHORT/LONG"
+    },
+    {
+      "id": "commons-archive-pipeline",
+      "status": "implemented-and-used-in-actions",
+      "entrypoint": "tools/archive/commons.py",
+      "research": ".github/workflows/archive-research.yml",
+      "rule": "person photo only when the Commons title names that person; licenses.tsv + CREDITS.md ship with renders"
+    },
+    {
+      "id": "auto-archive-draft",
+      "status": "implemented-and-tested",
+      "entrypoint": "tools/archive/draft_cues.py",
+      "example": "docs/barca-radar/clasico-source/archive-plan.json"
+    },
+    {
+      "id": "kinetic-captions",
+      "status": "implemented",
+      "entrypoint": "studio/src/production/Captions.tsx"
+    },
+    {
+      "id": "parallel-render-workflow",
+      "status": "implemented-and-rendered",
+      "entrypoint": ".github/workflows/render-source-short.yml",
+      "notes": "chunked MP4 + separate WAV, cached source by SHA-256, preview/release gate, delivery.json per output, review images committed to the branch"
+    }
+  ],
+  "externalProviderConnectionsEstablishedByThisResearch": [],
+  "nextWork": [
+    {
+      "id": "A01",
+      "goal": "Fresh adaptive source preview/master",
+      "preconditions": [
+        "verified runtime source",
+        "review representative frames/transition"
+      ],
+      "acceptance": [
+        "source timeline preserved",
+        "current captions and photo credits packaged",
+        "exact Actions artifact downloaded and QC recorded"
+      ],
+      "releasePrecondition": "Resolve actual transcript uncertainty; preview can proceed independently."
+    },
+    {
+      "id": "A02",
+      "goal": "Distinct visual systems for analysis/documentary/player dossier",
+      "preconditions": [
+        "selected content question",
+        "three style frames per selected family"
+      ],
+      "acceptance": [
+        "clear focal hierarchy at phone scale",
+        "relevant evidence",
+        "independent portrait composition"
+      ]
+    },
+    {
+      "id": "A03",
+      "goal": "Map-and-archive documentary prototype",
+      "preconditions": [
+        "relevant sourced geography/history",
+        "licensed archive"
+      ],
+      "acceptance": [
+        "source/date/attribution visible",
+        "actual short render reviewed",
+        "no insertion into unrelated presenter source"
+      ]
+    },
+    {
+      "id": "A04",
+      "goal": "OpenReel timeline/save/relink/export acceptance after initial import probe",
+      "preconditions": [
+        "fixed app/source version",
+        "small original fixture",
+        "matching target timebase"
+      ],
+      "acceptance": [
+        "real timeline edit",
+        "save/reopen/relink",
+        "actual exported file decoded",
+        "audio and cut boundaries checked",
+        "only then test MCP"
+      ]
+    },
+    {
+      "id": "A05",
+      "goal": "WeftCut agent timeline/Motif prototype",
+      "preconditions": [
+        "compatible running desktop app/native dependencies",
+        "legitimate local client bridge"
+      ],
+      "acceptance": [
+        "MCP tool capability read from live app",
+        "one reversible edit",
+        "Motif seek/export agreement",
+        "reviewed output"
+      ]
+    },
+    {
+      "id": "A06",
+      "goal": "Natron/Friction or animated Blender shot chosen for a concrete visual need",
+      "preconditions": [
+        "working renderer/dependencies",
+        "selected short shot"
+      ],
+      "acceptance": [
+        "actual asset render",
+        "alpha/color/fps accepted by Remotion",
+        "real render time recorded"
+      ]
+    },
+    {
+      "id": "A07",
+      "goal": "Canva design bundle / Higgsfield or Runway visual sample",
+      "preconditions": [
+        "selected provider and compatible client",
+        "account authorization and applicable usage budget",
+        "AE environment only if chosen workflow requires it"
+      ],
+      "acceptance": [
+        "supported tool scope confirmed",
+        "same brief/reference for comparison",
+        "actual output and cost reviewed",
+        "source presenter speech preserved"
+      ]
+    },
+    {
+      "id": "A08",
+      "goal": "Licensed player/data dossier",
+      "preconditions": [
+        "provider coverage",
+        "commercial/publication terms",
+        "metric definitions"
+      ],
+      "acceptance": [
+        "frozen provenance-backed dataset",
+        "comparable scales/periods",
+        "no fabricated tracking or missing-as-zero"
+      ]
+    },
+    {
+      "id": "A09",
+      "goal": "Long-form actual-source intake",
+      "preconditions": [
+        "user supplies actual long video"
+      ],
+      "acceptance": [
+        "explicit source role/hash/duration",
+        "source transcript",
+        "independent shot map and episode manifest"
+      ]
+    }
+  ],
+  "updateRule": "After meaningful work update this file and the relevant evidence/report. A source file, UI, MCP config, dispatch or process ID alone is not a verified delivery.",
+  "workflowRule": "One canonical branch: main. Every agent (Claude, GPT/Codex) starts from the latest main, works on a short-lived branch and merges back; record user decisions in this file and CLOUD_GUIDE.fa.md."
+}

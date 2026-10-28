@@ -4,7 +4,7 @@
 import React from 'react';
 import {AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, Easing, interpolate, staticFile, useCurrentFrame} from 'remotion';
 import {LOCAL_FONTS} from '../fonts';
-import {ReviewedCaptions, captionKey} from '../Captions';
+import {ReviewedCaptions, captionKey, type CaptionPage} from '../Captions';
 import type {Player, PlateArrow} from '../TacticalPlate';
 import {BoardPlate, Shot, Thumb, shotLibrary} from './Shot';
 export {BoardPlate} from './Shot';
@@ -20,7 +20,7 @@ export type SourceScene = {a: number; b: number; title: string; sub: string; boa
   /** Optional photo per card row (shot id from archive.shots; must show the person the card names). */
   cardShots?: (string | null)[]};
 export type SourceSpec = {
-  id: string; media: string; docs?: string; duration: number; label: string; presenter: string; opponent: string;
+  id: string; media: string; docs?: string; manifest?: string; extraOutputs?: Record<string, {comp: string; profile: string}>; duration: number; label: string; presenter: string; opponent: string;
   source: {sha256: string; bytes?: number; note?: string};
   punch?: [number, number][]; boards: Record<string, BoardDef>; scenes: SourceScene[];
   chapters: {at: number; title: string}[];
@@ -34,7 +34,8 @@ export type SourceSpec = {
   captions?: {emphasis?: string[]};
 };
 export type Word = {w: string; s: number; e: number};
-export type SourceEpisodeProps = {spec: SourceSpec; words: Word[]};
+/** `pages`: reviewed caption pages from tools/video/episode.py (same pages as the SRT); falls back to `words` paging. */
+export type SourceEpisodeProps = {spec: SourceSpec; words: Word[]; pages?: CaptionPage[]};
 export type SourceClipProps = SourceEpisodeProps & {clip: string};
 
 /** Fails the bundle early on spec mistakes that would otherwise only show up in a rendered frame. */
@@ -131,7 +132,7 @@ const Presenter: React.FC<{spec: SourceSpec; t: number; style: React.CSSProperti
 
 // ---------------- vertical Short (1080×1920) ----------------
 /** `window` (seconds) limits progress bar and music envelope to a clip of the take; frames stay on the source timeline. */
-export const SourceShort: React.FC<SourceEpisodeProps & {window?: [number, number]}> = ({spec, words, window}) => {
+export const SourceShort: React.FC<SourceEpisodeProps & {window?: [number, number]}> = ({spec, words, pages, window}) => {
   const f = useCurrentFrame(); const t = f / FPS; const scene = sceneAt(spec, t);
   const [wa, wb] = window ? [Math.round(window[0] * FPS), Math.round(window[1] * FPS)] : [0, shortFrames(spec)];
   const enter = mix(f, scene.a * FPS);
@@ -147,7 +148,7 @@ export const SourceShort: React.FC<SourceEpisodeProps & {window?: [number, numbe
     </div>
     <div style={{position: 'absolute', left: 60, top: 305, width: 960, height: 610}}><BeatPanel spec={spec} f={f} width={960} height={610} labelSize={30} /></div>
     <Presenter spec={spec} t={t} style={{left: 90, top: 940, width: 900, height: 810, borderRadius: 24}} />
-    <ReviewedCaptions words={words} top={1540} width={860} emphasis={emphasisFor(spec)} />
+    <ReviewedCaptions pages={pages} words={words} top={1540} width={860} minFontSize={54} emphasis={emphasisFor(spec)} />
     <div style={{position: 'absolute', bottom: 89, left: 70, right: 70, display: 'flex', justifyContent: 'space-between', color: '#a4b1c4', fontSize: 20, letterSpacing: 2}}><span>WITH {spec.presenter}</span><span>TACTICAL ANALYSIS</span></div>
     <div style={{position: 'absolute', bottom: 68, left: 70, width: 940, height: 3, background: '#ffffff1a'}}><div style={{height: 3, width: `${(f - wa) / (wb - wa) * 100}%`, background: GOLD}} /></div>
     <Audio src={media(spec, 'voice.wav')} volume={window ? (fr) => interpolate(fr, [wb - 6, wb], [1, 0], clamp) : undefined} />
@@ -157,9 +158,9 @@ export const SourceShort: React.FC<SourceEpisodeProps & {window?: [number, numbe
 };
 
 /** A clip Short: the vertical layout shifted so the clip's first frame is source time `a`. */
-export const SourceClip: React.FC<SourceClipProps> = ({spec, words, clip}) => {
+export const SourceClip: React.FC<SourceClipProps> = ({spec, words, pages, clip}) => {
   const c = findClip(spec, clip);
-  return <Sequence from={-Math.round(c.a * FPS)}><SourceShort spec={spec} words={words} window={[c.a, c.b]} /></Sequence>;
+  return <Sequence from={-Math.round(c.a * FPS)}><SourceShort spec={spec} words={words} pages={pages} window={[c.a, c.b]} /></Sequence>;
 };
 
 // ---------------- long-form (1920×1080) ----------------
@@ -182,7 +183,7 @@ const EndScreen: React.FC<{spec: SourceSpec; f: number}> = ({spec, f}) =>
     <div style={{position: 'absolute', left: 860, top: 820, transform: `scale(${interpolate(f, [18, 24, 29], [0, 1.08, 1], {...clamp, easing: Easing.out(Easing.cubic)})})`}}><Mark size={200} brand="radar" /></div>
   </AbsoluteFill>;
 
-export const SourceLong: React.FC<SourceEpisodeProps> = ({spec, words}) => {
+export const SourceLong: React.FC<SourceEpisodeProps> = ({spec, words, pages}) => {
   const f = useCurrentFrame(); const t = f / FPS; const main = shortFrames(spec); const total = longFrames(spec);
   const si = spec.scenes.indexOf(sceneAt(spec, t)); const scene = spec.scenes[si]; const prev = spec.scenes[Math.max(0, si - 1)];
   const enter = mix(f, scene.a * FPS);
@@ -216,7 +217,7 @@ export const SourceLong: React.FC<SourceEpisodeProps> = ({spec, words}) => {
         <Mark size={70} brand="radar" />
         <div><div style={{fontFamily: LOCAL_FONTS.display, fontSize: 46, lineHeight: 1}}>{spec.presenter}</div><div style={{fontWeight: 900, fontSize: 22, color: GOLD, letterSpacing: 4}}>BARÇA RADAR</div></div>
       </div>}
-      <ReviewedCaptions words={words} top={958} width={1500} frameWidth={1920} maxFontSize={50} emphasis={emphasisFor(spec)} />
+      <ReviewedCaptions pages={pages} words={words} top={958} width={1500} frameWidth={1920} maxFontSize={50} emphasis={emphasisFor(spec)} />
       <div style={{position: 'absolute', bottom: 22, left: 70, width: 1780, height: 4, background: '#ffffff1a'}}>
         <div style={{height: 4, width: `${f / main * 100}%`, background: GOLD}} />
         {spec.chapters.slice(1).map((c) => <div key={c.at} style={{position: 'absolute', top: -4, left: `${c.at / spec.duration * 100}%`, width: 3, height: 12, background: c.at <= t ? GOLD : '#ffffff55'}} />)}

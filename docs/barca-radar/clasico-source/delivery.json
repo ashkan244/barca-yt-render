@@ -1,0 +1,52 @@
+{
+  "status": "rendered_review_candidate",
+  "cloud_render_verified": true,
+  "run_id": 40317053776,
+  "render_commit": "d52a6d8af5319aed89aef03532f93020f7923e78",
+  "run_url": "https://github.com/ashkan244/barca-yt-render/actions/runs/40317053776",
+  "artifact_id": 12648532181,
+  "artifact_url": "https://github.com/ashkan244/barca-yt-render/actions/runs/40317053776/artifacts/12648532181",
+  "artifact_expires_utc": "2026-11-09T12:04:10Z",
+  "source_sha256": "8b558736590ffa4297a2b2df4aa8d007042472738cb141085cb4b9eac03a29c1",
+  "video_sha256": "d88fa614bab284b6d07e6cda5ae322fac7f9600f4443bee5ac9c5615b534d43f",
+  "video_bytes": 59199148,
+  "duration_s": 175.019,
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "video_codec": "h264",
+  "pixel_format": "yuv420p",
+  "color_space": "bt709",
+  "audio_codec": "aac",
+  "audio_sample_rate": 48000,
+  "decode_checked": true,
+  "qc_passed": true,
+  "measured_integrated_lufs": -16.02,
+  "measured_true_peak_dbtp": -2.86,
+  "audio_alignment": {
+    "checks": [
+      {
+        "window_start_s": 5,
+        "offset_ms": 0.0,
+        "correlation": 0.9982
+      },
+      {
+        "window_start_s": 80,
+        "offset_ms": 0.0,
+        "correlation": 0.9989
+      },
+      {
+        "window_start_s": 165,
+        "offset_ms": 0.0,
+        "correlation": 0.9988
+      }
+    ],
+    "note": "Audio waveform comparison against prepared source at three windows; not a certification of every visual lip-sync frame."
+  },
+  "review_remaining": [
+    "Confirm Bernardo vs Bernal around source second 29; current captions use Bernardo.",
+    "No human-ear certification of every caption; source-derived spelling review notes retained."
+  ],
+  "publishing_status": "not_posted_to_social_media",
+  "artifact_note": "The artifact includes review notes as of render commit d52a6d8. This delivery.json and the latest repository review-notes are the authoritative post-render report."
+}

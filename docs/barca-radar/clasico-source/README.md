@@ -42,6 +42,18 @@ These are local browser-rendered review images, not the uploaded historical refe
 
 ![Cover preview](previews/cover.png)
 
+## Verified delivery
+
+[Download the GitHub output packet](https://github.com/ashkan244/barca-yt-render/actions/runs/40317053776/artifacts/12648532181) · [Successful render run](https://github.com/ashkan244/barca-yt-render/actions/runs/40317053776) · [Delivery measurements](delivery.json)
+
+The downloaded master passed full decode and structural checks: 1080×1920, 30fps, H.264/yuv420p/BT.709, 48kHz AAC, 175.019s. Measured master loudness is −16.02LUFS / −2.86dBTP. Audio matched the prepared source at three sampled windows with zero measured offset. Retained artifact expires on 2026-11-09; download it before expiration.
+
+The presenter confirmed the spoken names (Bernardo, Diomande, Espart, Gordon) on 2026-10-26 and approved Public posting; the manifest review is `approved`. No social-media post has been published from this repository.
+
+## Development after that delivery
+
+The current manifest adds shared 108-page captions/SRT and verified player identity photographs; `CLASICO-SOURCE-ADAPTIVE` changes the presenter/board/photo layout. See [implementation status](../../video-production/implementation-2026-10-28.fa.md). The previously linked 175s artifact and delivery measurements describe commit `d52a6d8`, not this changed code or SRT. Do not present the historical artifact as an adaptive-layout render. Modern player photos are from September 2025 international football and do not show this El Clásico. The release gate (`episode.py --mode release`) now passes with the approved review.
+
 ## Delivered renders
 
 | Output | Run | Commit | Status |

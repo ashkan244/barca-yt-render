@@ -1,0 +1,286 @@
+{
+  "as_of": "2026-10-28",
+  "note": "Read-only disk/spec inventory, not a list of completed videos; file presence does not verify content or rights.",
+  "episodes": [
+    {
+      "repository": "barca-yt",
+      "id": "EP01-PL",
+      "title": "Play Like Pedri: The 3 Habits Nobody Teaches",
+      "code": "PL",
+      "scene_count": 23,
+      "narration_lines": 65,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    },
+    {
+      "repository": "barca-yt",
+      "id": "EP02-TX",
+      "title": "How Flick's Barça Actually Works (Explained on a Chalkboard)",
+      "code": "TX",
+      "scene_count": 24,
+      "narration_lines": 59,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    },
+    {
+      "repository": "barca-yt",
+      "id": "EP03-TM",
+      "title": "The 2-6: The Night Guardiola's Barça Broke Real Madrid",
+      "code": "TM",
+      "scene_count": 29,
+      "narration_lines": 79,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    },
+    {
+      "repository": "barca-yt",
+      "id": "EP04-PL",
+      "title": "Play Like Lamine Yamal: Beat Your Defender Before the Touch",
+      "code": "LY",
+      "scene_count": 17,
+      "narration_lines": 53,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    },
+    {
+      "repository": "barca-yt",
+      "id": "EP05-FS",
+      "title": "The Full Story of Johan Cruyff: The Man Who Built Barça Twice",
+      "code": "JC",
+      "scene_count": 32,
+      "narration_lines": 91,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    },
+    {
+      "repository": "barca-yt-render",
+      "id": "EP01-PL",
+      "title": "Play Like Pedri: The 3 Habits Nobody Teaches",
+      "code": "PL",
+      "scene_count": 23,
+      "narration_lines": 65,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    },
+    {
+      "repository": "barca-yt-render",
+      "id": "EP02-TX",
+      "title": "How Flick's Barça Actually Works (Explained on a Chalkboard)",
+      "code": "TX",
+      "scene_count": 24,
+      "narration_lines": 59,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    },
+    {
+      "repository": "barca-yt-render",
+      "id": "EP03-TM",
+      "title": "The 2-6: The Night Guardiola's Barça Broke Real Madrid",
+      "code": "TM",
+      "scene_count": 29,
+      "narration_lines": 79,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    },
+    {
+      "repository": "barca-yt-render",
+      "id": "EP04-PL",
+      "title": "Play Like Lamine Yamal: Beat Your Defender Before the Touch",
+      "code": "LY",
+      "scene_count": 17,
+      "narration_lines": 53,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    },
+    {
+      "repository": "barca-yt-render",
+      "id": "EP05-FS",
+      "title": "The Full Story of Johan Cruyff: The Man Who Built Barça Twice",
+      "code": "JC",
+      "scene_count": 32,
+      "narration_lines": 91,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    },
+    {
+      "repository": "barca-yt-render",
+      "id": "EP06-OM",
+      "title": "Iniesta, 93rd Minute: 10 Angles on the Goal That Saved a Treble",
+      "code": "OM",
+      "scene_count": 25,
+      "narration_lines": 57,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    },
+    {
+      "repository": "barca-yt-render",
+      "id": "EP07-WI",
+      "title": "What If Barça Had Kept Messi in 2021? Three Scenarios",
+      "code": "MS",
+      "scene_count": 25,
+      "narration_lines": 62,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    },
+    {
+      "repository": "barca-yt-render",
+      "id": "EP08-PL",
+      "title": "Play Like Busquets: The Art of Doing Less",
+      "code": "BQ",
+      "scene_count": 18,
+      "narration_lines": 43,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    },
+    {
+      "repository": "barca-yt-render",
+      "id": "EP09-ER",
+      "title": "Kubala: The Refugee Who Built Barça a Stadium",
+      "code": "KB",
+      "scene_count": 27,
+      "narration_lines": 61,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    },
+    {
+      "repository": "barca-yt-render",
+      "id": "EP10-BZ",
+      "title": "How Barça Escaped a €1.35 Billion Hole",
+      "code": "BZ",
+      "scene_count": 22,
+      "narration_lines": 56,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    },
+    {
+      "repository": "barca-yt-render",
+      "id": "EP11-PC",
+      "title": "Something Strange Happens When Lamine Yamal Gets the Ball",
+      "code": "LM",
+      "scene_count": 19,
+      "narration_lines": 45,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    },
+    {
+      "repository": "barca-yt-render",
+      "id": "EP12-TM",
+      "title": "The 6-1: The Comeback That Made No Sense",
+      "code": "SR",
+      "scene_count": 22,
+      "narration_lines": 53,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    },
+    {
+      "repository": "barca-yt-render",
+      "id": "EP13-PL",
+      "title": "Play Like Xavi: How to Never Lose the Ball",
+      "code": "XV",
+      "scene_count": 17,
+      "narration_lines": 42,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    },
+    {
+      "repository": "barca-yt-render",
+      "id": "EP14-TX",
+      "title": "Barça's Offside Trap, Explained: Genius or Gamble?",
+      "code": "OT",
+      "scene_count": 19,
+      "narration_lines": 43,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    },
+    {
+      "repository": "barca-yt-render",
+      "id": "EP15-FS",
+      "title": "The Full Story of La Masia: How a Farmhouse Changed Football",
+      "code": "LS",
+      "scene_count": 25,
+      "narration_lines": 57,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    },
+    {
+      "repository": "barca-yt-render",
+      "id": "EP16-WI",
+      "title": "What If Cruyff Had Never Come Back in 1988?",
+      "code": "CR",
+      "scene_count": 18,
+      "narration_lines": 42,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    },
+    {
+      "repository": "barca-yt-render",
+      "id": "EP17-BZ",
+      "title": "The Di Stéfano Affair: The Transfer That Started a War",
+      "code": "DS",
+      "scene_count": 19,
+      "narration_lines": 43,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    },
+    {
+      "repository": "barca-yt-render",
+      "id": "EP18-OM",
+      "title": "Koeman, Wembley 1992: 10 Angles on One Free Kick",
+      "code": "RK",
+      "scene_count": 24,
+      "narration_lines": 50,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    },
+    {
+      "repository": "barca-yt-render",
+      "id": "EP19-ER",
+      "title": "1973–74: The Season Cruyff Changed Everything",
+      "code": "CY",
+      "scene_count": 23,
+      "narration_lines": 46,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    },
+    {
+      "repository": "barca-yt-render",
+      "id": "EP20-TM",
+      "title": "The 5-0: The Night Barça Played Perfect Football",
+      "code": "MN",
+      "scene_count": 20,
+      "narration_lines": 44,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    },
+    {
+      "repository": "barca-yt-render",
+      "id": "EP21-PS",
+      "title": "Johan Neeskens: The Other Johan",
+      "code": "NE",
+      "scene_count": 17,
+      "narration_lines": 47,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    },
+    {
+      "repository": "barca-yt-render",
+      "id": "EP22-DU",
+      "title": "Michels & Cruyff: The Teacher and the Student",
+      "code": "MC",
+      "scene_count": 17,
+      "narration_lines": 42,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    },
+    {
+      "repository": "barca-yt-render",
+      "id": "EP23-AL",
+      "title": "Summer of 1974: Barça's Men at the World Cup",
+      "code": "WK",
+      "scene_count": 16,
+      "narration_lines": 38,
+      "local_expected_line_wavs_found": 0,
+      "readiness": "definition_present_not_release_verification"
+    }
+  ]
+}

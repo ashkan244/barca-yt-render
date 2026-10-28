@@ -52,7 +52,7 @@ const Card: React.FC<{lines: string[]; style?: ArchiveCue['cardStyle']; local: n
   </AbsoluteFill>;
 };
 
-export const ArchiveShort: React.FC<Props> = ({spec, words, window}) => {
+export const ArchiveShort: React.FC<Props> = ({spec, words, pages, window}) => {
   const f = useCurrentFrame(); const t = f / FPS; const ar = archive(spec);
   const ci = Math.max(0, ar.cues.findIndex((c) => t >= c.a && t < c.b)); const cue = ar.cues[ci] ?? ar.cues[ar.cues.length - 1];
   const local = f - Math.round(cue.a * FPS);
@@ -80,7 +80,7 @@ export const ArchiveShort: React.FC<Props> = ({spec, words, window}) => {
       {split && <div style={{position: 'absolute', left: 0, top: 0, width: 1080, height: SPLIT_Y}}><Shot spec={spec} shot={ar.shots[shotId]} local={shotLocal} len={shotLen} index={shotIndex} /></div>}
       {split && <div style={{position: 'absolute', left: 0, top: SPLIT_Y - 3, width: 1080, height: 6, background: `linear-gradient(90deg, ${GOLD}, #b3123f 60%, #1f5fd6)`}} />}
       <div style={{position: 'absolute', left: 0, right: 0, top: split ? SPLIT_Y + 1080 - 330 : 1440}}>
-        <ReviewedCaptions words={words} top={0} width={900} maxFontSize={62} emphasis={emphasisFor(spec)} />
+        <ReviewedCaptions pages={pages} words={words} top={0} width={900} maxFontSize={62} minFontSize={50} emphasis={emphasisFor(spec)} />
       </div>
     </>}
     {hook && <div style={{position: 'absolute', left: 60, right: 60, top: 300, textAlign: 'center', opacity: interpolate(f, [4, 12], [0, 1], clamp)}}>

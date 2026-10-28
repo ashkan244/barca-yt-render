@@ -10,9 +10,15 @@ on:
         required: true
         default: CLASICO-SOURCE
       outputs:
-        description: Comma list of short,long,clips,archive
+        description: Comma list of short,long,clips,archive (+ extra outputs listed in the spec, e.g. adaptive)
         required: true
         default: short,long,clips
+      mode:
+        description: preview renders with pending review; release requires an approved transcript and verified photos
+        required: true
+        default: preview
+        type: choice
+        options: [preview, release]
       chunks:
         description: Parallel render jobs per output
         required: true
@@ -30,6 +36,7 @@ permissions:
   actions: read
 env:
   EPISODE: ${{ inputs.episode }}
+  MODE: ${{ inputs.mode }}
 
 jobs:
   prepare:
@@ -104,6 +111,11 @@ jobs:
         with:
           path: studio/public/${{ steps.plan.outputs.media }}
           key: ${{ steps.plan.outputs.key }}
+      - name: Review gate and shared caption pages (episode manifest)
+        run: |
+          manifest=$(node studio/scripts/source-plan.mjs "$EPISODE" info | jq -r '.manifest // empty')
+          if [ -n "$manifest" ]; then python tools/video/episode.py "$manifest" --mode "$MODE" --build-captions; else
+            [ "$MODE" = preview ] || { echo "::error::release needs an episode manifest with an approved review"; exit 1; }; fi
       - name: Plan archive media
         id: arch
         run: |
@@ -235,6 +247,23 @@ jobs:
           docs=$(node studio/scripts/source-plan.mjs "$EPISODE" info | jq -r .docs)
           cp "$docs"/*.srt "$docs"/posting*.md "$docs"/review-notes.fa.md out/ 2>/dev/null || true
           node studio/scripts/source-plan.mjs "$EPISODE" chapters > out/chapters.txt
+          manifest=$(node studio/scripts/source-plan.mjs "$EPISODE" info | jq -r '.manifest // empty')
+          COMP='${{ matrix.comp }}' MANIFEST="$manifest" python - <<'PYCODE'
+          import hashlib, json, os, sys
+          from pathlib import Path
+          sys.path.insert(0, 'tools/video')
+          comp = os.environ['COMP']; out = Path(f'out/{comp}.mp4'); m = json.loads(Path(os.environ['MANIFEST']).read_text()) if os.environ['MANIFEST'] else {}
+          if m.get('photoAssets'):
+              from photos import credits
+              Path('out/photo-credits.md').write_text(credits(json.loads(Path('studio/src/production/photo-catalog.json').read_text()), m['photoAssets']))
+          qc = json.loads(Path('out/quality.json').read_text())
+          with out.open('rb') as f: digest = hashlib.file_digest(f, 'sha256').hexdigest()
+          delivery = {'composition': comp, 'mode': os.environ['MODE'], 'renderCommit': os.environ['GITHUB_SHA'],
+                      'runUrl': f"{os.environ['GITHUB_SERVER_URL']}/{os.environ['GITHUB_REPOSITORY']}/actions/runs/{os.environ['GITHUB_RUN_ID']}",
+                      'sha256': digest, 'bytes': out.stat().st_size, 'sourceSha256': m.get('source', {}).get('sha256'), 'review': m.get('review'),
+                      'qcPassed': qc['passed'], 'qcErrors': qc['errors'], 'loudness': qc.get('loudness')}
+          Path('out/delivery.json').write_text(json.dumps(delivery, ensure_ascii=False, indent=2) + '\n')
+          PYCODE
           python - <<'EOF' | tee -a "$GITHUB_STEP_SUMMARY"
           import json
           q = json.load(open('out/quality.json')); v = next(s for s in q['probe']['streams'] if s['codec_type'] == 'video'); l = q.get('loudness') or {}

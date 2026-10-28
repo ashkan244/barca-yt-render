@@ -39,3 +39,17 @@ python -m unittest discover -s tools/video/tests -v
 ```
 
 Actual-source integration checks are recorded per episode. Unit checks do not establish that a full render happened.
+
+## Episode and photo preflight
+
+`episode.py` checks the source identity, complete scene coverage, cue bounds, declared photo IDs and review state. `--build-captions` writes one page definition for both burned captions and SRT; protected names stay on one page. Preview permits documented transcript uncertainty; release rejects it. `--check-media` verifies that prepared runtime assets exist and have the expected duration. The source file itself is hash-checked when `--source` is supplied, and the download workflow independently verifies its hash.
+
+`photos.py search --query '"Pedri" "2026"' --output /tmp/candidates.json` discovers live Commons metadata, without downloading or approving images. Check capture date (`DateTimeOriginal`) rather than upload time. `commons --title 'File:Pedri.jpg' --output /tmp/photo.json` retrieves a specific record. `verify --release` checks curated files and policy; `credits --release --output /tmp/credits.md` exports attribution. `--used ID` can repeat to restrict verification/credits to an episode. See the [photo guide](../../docs/video-production/photographic-production.fa.md) before curating.
+
+From `studio/`: `npm run captions:build`, `npm run photos:verify`, `npm run test:production`, `npm run render:adaptive`. Bundle from **studio**, e.g. `npx remotion bundle src/index.ts --out-dir=build`, so local public assets/fonts are included. Then use `npm run qc:frames -- COMPOSITION 0,360,900 /tmp/frames`. Building from the repository root can omit Studio public assets. The photographic demo needs its ignored score generated first: `python ../tools/video/make_score.py public/audio/production-demo/score.wav --duration 27`.
+
+## Optional visual experiments
+
+`experiments/pitch_3d.py` runs inside Blender4.3+ and creates one original schematic PNG, not a tracked match or animated master. Use `blender --background --factory-startup --python-exit-code 1 --threads 4 --python tools/video/experiments/pitch_3d.py -- --output /tmp/pitch.png --samples 48` from the repository root. The current cloud has Blender4.3.2; the experiment does not install Blender or an MCP addon. Denoising is disabled because this build has no OpenImageDenoise. See the [visual-integration report](../../docs/video-production/creative-integrations-2026-10-28.fa.md) and [Canva/Higgsfield assessment](../../docs/video-production/canva-higgsfield-evaluation.fa.md).
+
+`experiments/mlt_cut_smoke.py` optionally tests the native MLT avformat/luma path using two excerpts of a matching-ratio30fps fixture with audio and duration>=24s. It renders165frames, checks full decode/encoding and writes a study record. Example from the root: `python tools/video/experiments/mlt_cut_smoke.py --source /path/PHOTO-MODELS-DEMO.mp4 --output studio/out/mlt-study.mp4 --credits docs/video-production/photo-credits.md`. Use a new output path. `melt` is required; the experiment does not install MLT or use Qt-only effects. This is an engine smoke, not a Kdenlive project exporter or proof of a new visual format.

@@ -12,6 +12,8 @@ const outputs = {
   short: {comp: `${id}-SHORT`, frames: Math.round(spec.duration * FPS), profile: 'vertical'},
   long: {comp: `${id}-LONG`, frames: Math.round((spec.duration + end) * FPS), profile: 'landscape'},
   archive: {comp: `${id}-ARCHIVE`, frames: Math.round(spec.duration * FPS), profile: 'vertical'},
+  // Episode-specific compositions on the same source timeline (e.g. adaptive layout).
+  ...Object.fromEntries(Object.entries(spec.extraOutputs ?? {}).map(([k, o]) => [k, {comp: o.comp, frames: Math.round(spec.duration * FPS), profile: o.profile}])),
 };
 const clips = (spec.clips ?? []).map((c) => ({comp: `${id}-CLIP-${c.name}`, frames: Math.round((c.b - c.a) * FPS), profile: 'vertical'}));
 const selected = outputsArg.split(',').map((s) => s.trim()).filter(Boolean).flatMap((k) => {
@@ -21,7 +23,7 @@ const selected = outputsArg.split(',').map((s) => s.trim()).filter(Boolean).flat
 const mmss = (t) => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, '0')}`;
 
 if (cmd === 'info') {
-  console.log(JSON.stringify({media: spec.media, docs: spec.docs, archive: spec.archive ? (spec.archive.media ?? spec.media).replace('host/', 'archive/') : '', sha256: spec.source.sha256, duration: spec.duration, longDuration: spec.duration + end}));
+  console.log(JSON.stringify({media: spec.media, docs: spec.docs, manifest: spec.manifest ?? '', archive: spec.archive ? (spec.archive.media ?? spec.media).replace('host/', 'archive/') : '', sha256: spec.source.sha256, duration: spec.duration, longDuration: spec.duration + end}));
 } else if (cmd === 'matrix') {
   const n = Math.max(1, parseInt(chunksArg, 10)); const include = [];
   for (const o of selected) {

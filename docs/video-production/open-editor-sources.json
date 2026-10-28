@@ -1,0 +1,407 @@
+{
+  "researchedOn": "2026-10-28",
+  "method": "GitHub public metadata, primary README/license/docs; source checkout inspection for three editors; bounded browser/native probes",
+  "repositories": [
+    {
+      "requestedRepo": "Augani/openreel-video",
+      "repo": "Augani/openreel-video",
+      "url": "https://github.com/Augani/openreel-video",
+      "branch": "main",
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-17T07:17:20Z",
+      "bytesOnGitHub": 27093,
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/Augani/openreel-video/main/README.md",
+        "bytes": 7570,
+        "sha256": "3c0f6e40b85b2dfcaef7f8427e7e723acd9621655a70258c15e7eb4addf805f9",
+        "kind": "retrieved source, not proof of feature execution"
+      },
+      "LICENSE": {
+        "url": "https://raw.githubusercontent.com/Augani/openreel-video/main/LICENSE",
+        "bytes": 1091,
+        "sha256": "aba370832aa9192b4b41ce4ecf5b2795f55f141b5e5f17b74243b1ed3a02576d",
+        "kind": "retrieved source, not proof of feature execution"
+      },
+      "package.json": {
+        "url": "https://raw.githubusercontent.com/Augani/openreel-video/main/package.json",
+        "bytes": 1883,
+        "sha256": "1d5a1c48d59935f8841df89fb287707f4a93cc206a2c6b42554046d1c73b4f81",
+        "kind": "retrieved source, not proof of feature execution"
+      },
+      "sourceCommitRead": "367d7e90b61b5181f9861b852bb8b9d7a7d2954a"
+    },
+    {
+      "requestedRepo": "OpenCut-app/OpenCut",
+      "repo": "OpenCut-app/OpenCut",
+      "url": "https://github.com/OpenCut-app/OpenCut",
+      "branch": "main",
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-09-24T09:24:44Z",
+      "bytesOnGitHub": 28243,
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/OpenCut-app/OpenCut/main/README.md",
+        "bytes": 2661,
+        "sha256": "95ccfeb63ebca77afdde080e2923b5f29b680db6b42a9be8b9098ea7ba25c050",
+        "kind": "retrieved source, not proof of feature execution"
+      },
+      "LICENSE": {
+        "url": "https://raw.githubusercontent.com/OpenCut-app/OpenCut/main/LICENSE",
+        "bytes": 1060,
+        "sha256": "05ab02fd3151198e3c0a698a3b7abfa6149c7bec26230f47c80c4dc5b6dc263f",
+        "kind": "retrieved source, not proof of feature execution"
+      },
+      "package.json": {
+        "url": "https://raw.githubusercontent.com/OpenCut-app/OpenCut/main/package.json",
+        "error": "HTTP Error 404: Not Found",
+        "kind": "retrieved source, not proof of feature execution"
+      }
+    },
+    {
+      "requestedRepo": "alyssaxuu/motionity",
+      "repo": "alyssaxuu/motionity",
+      "url": "https://github.com/alyssaxuu/motionity",
+      "branch": "main",
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2022-09-12T02:06:50Z",
+      "bytesOnGitHub": 48031,
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/alyssaxuu/motionity/main/README.md",
+        "bytes": 1727,
+        "sha256": "d3895c3eac7360e545873fc2ebd2d9d55462ed3bbeefddd483da1cd762ff1ac7",
+        "kind": "retrieved source, not proof of feature execution"
+      },
+      "LICENSE": {
+        "url": "https://raw.githubusercontent.com/alyssaxuu/motionity/main/LICENSE",
+        "bytes": 1065,
+        "sha256": "f1be5e18191d8360eea775e469c2583fc8541b26b3117e7eac254778ffc2fb01",
+        "kind": "retrieved source, not proof of feature execution"
+      },
+      "package.json": {
+        "url": "https://raw.githubusercontent.com/alyssaxuu/motionity/main/package.json",
+        "error": "HTTP Error 404: Not Found",
+        "kind": "retrieved source, not proof of feature execution"
+      },
+      "sourceCommitRead": "5843fa14c2fabc72d1bcabf442acf6062ce71387"
+    },
+    {
+      "requestedRepo": "friction2d/friction",
+      "repo": "friction2d/friction",
+      "url": "https://github.com/friction2d/friction",
+      "branch": "main",
+      "license": "GPL-3.0",
+      "archived": false,
+      "pushedAt": "2026-10-16T12:13:06Z",
+      "bytesOnGitHub": 113327,
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/friction2d/friction/main/README.md",
+        "bytes": 3183,
+        "sha256": "725721b31c7b7bf9317800a0af8b38f93ec50edb6d2b02969aeb1c9a53775053",
+        "kind": "retrieved source, not proof of feature execution"
+      },
+      "LICENSE": {
+        "url": "https://raw.githubusercontent.com/friction2d/friction/main/LICENSE",
+        "error": "HTTP Error 404: Not Found",
+        "kind": "retrieved source, not proof of feature execution"
+      },
+      "package.json": {
+        "url": "https://raw.githubusercontent.com/friction2d/friction/main/package.json",
+        "error": "HTTP Error 404: Not Found",
+        "kind": "retrieved source, not proof of feature execution"
+      }
+    },
+    {
+      "requestedRepo": "NatronGitHub/Natron",
+      "repo": "NatronGitHub/Natron",
+      "url": "https://github.com/NatronGitHub/Natron",
+      "branch": "RB-2.6",
+      "license": "GPL-2.0",
+      "archived": false,
+      "pushedAt": "2026-07-24T09:49:49Z",
+      "bytesOnGitHub": 152661,
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/NatronGitHub/Natron/RB-2.6/README.md",
+        "bytes": 11053,
+        "sha256": "570d2b4d9344c60e2e907d5020795b85d7a5d9975c0466c25e94d1a7c54feb87",
+        "kind": "retrieved source, not proof of feature execution"
+      },
+      "LICENSE": {
+        "url": "https://raw.githubusercontent.com/NatronGitHub/Natron/RB-2.6/LICENSE",
+        "error": "HTTP Error 404: Not Found",
+        "kind": "retrieved source, not proof of feature execution"
+      },
+      "package.json": {
+        "url": "https://raw.githubusercontent.com/NatronGitHub/Natron/RB-2.6/package.json",
+        "error": "HTTP Error 404: Not Found",
+        "kind": "retrieved source, not proof of feature execution"
+      }
+    },
+    {
+      "requestedRepo": "KDE/kdenlive",
+      "repo": "KDE/kdenlive",
+      "url": "https://github.com/KDE/kdenlive",
+      "branch": "master",
+      "license": "GPL-3.0",
+      "archived": false,
+      "pushedAt": "2026-10-28T08:01:32Z",
+      "bytesOnGitHub": 5167252,
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/KDE/kdenlive/master/README.md",
+        "bytes": 2720,
+        "sha256": "86f55bc195dc5ff81d82f52d1c4b10a17c411e6fc43a629be0c2a74708084f36",
+        "kind": "retrieved source, not proof of feature execution"
+      },
+      "LICENSE": {
+        "url": "https://raw.githubusercontent.com/KDE/kdenlive/master/LICENSE",
+        "error": "HTTP Error 404: Not Found",
+        "kind": "retrieved source, not proof of feature execution"
+      },
+      "package.json": {
+        "url": "https://raw.githubusercontent.com/KDE/kdenlive/master/package.json",
+        "error": "HTTP Error 404: Not Found",
+        "kind": "retrieved source, not proof of feature execution"
+      }
+    },
+    {
+      "requestedRepo": "olive-editor/olive",
+      "repo": "olive-editor/olive",
+      "url": "https://github.com/olive-editor/olive",
+      "branch": "master",
+      "license": "GPL-3.0",
+      "archived": false,
+      "pushedAt": "2024-12-05T10:34:17Z",
+      "bytesOnGitHub": 30609,
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/olive-editor/olive/master/README.md",
+        "bytes": 1759,
+        "sha256": "c442e0ba47badcd822b9ad2d7bd0123189eee3778c0393de1122a9333dfa078f",
+        "kind": "retrieved source, not proof of feature execution"
+      },
+      "LICENSE": {
+        "url": "https://raw.githubusercontent.com/olive-editor/olive/master/LICENSE",
+        "bytes": 35149,
+        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+        "kind": "retrieved source, not proof of feature execution"
+      },
+      "package.json": {
+        "url": "https://raw.githubusercontent.com/olive-editor/olive/master/package.json",
+        "error": "HTTP Error 404: Not Found",
+        "kind": "retrieved source, not proof of feature execution"
+      }
+    },
+    {
+      "requestedRepo": "mltframework/shotcut",
+      "repo": "mltframework/shotcut",
+      "url": "https://github.com/mltframework/shotcut",
+      "branch": "master",
+      "license": "GPL-3.0",
+      "archived": false,
+      "pushedAt": "2026-10-27T17:15:26Z",
+      "bytesOnGitHub": 161307,
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/mltframework/shotcut/master/README.md",
+        "bytes": 2838,
+        "sha256": "2a38840fc2fafa928b9b8cfa4082581b1a1a699b920e5b9168a23c62bd6a9df8",
+        "kind": "retrieved source, not proof of feature execution"
+      },
+      "LICENSE": {
+        "url": "https://raw.githubusercontent.com/mltframework/shotcut/master/LICENSE",
+        "error": "HTTP Error 404: Not Found",
+        "kind": "retrieved source, not proof of feature execution"
+      },
+      "package.json": {
+        "url": "https://raw.githubusercontent.com/mltframework/shotcut/master/package.json",
+        "error": "HTTP Error 404: Not Found",
+        "kind": "retrieved source, not proof of feature execution"
+      }
+    },
+    {
+      "requestedRepo": "WeftCut/WeftCut",
+      "repo": "WeftCut/WeftCut",
+      "url": "https://github.com/WeftCut/WeftCut",
+      "branch": "main",
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-10-28T09:04:20Z",
+      "bytesOnGitHub": 52903,
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/WeftCut/WeftCut/main/README.md",
+        "bytes": 16292,
+        "sha256": "dd25258d7eb11896b3f338afac9ea3012c73298f60c10670e4fc764378f62209",
+        "kind": "retrieved source, not proof of feature execution"
+      },
+      "LICENSE": {
+        "url": "https://raw.githubusercontent.com/WeftCut/WeftCut/main/LICENSE",
+        "bytes": 1067,
+        "sha256": "a7f49bedf362d84e9fb5b3523bae049c0a871af5f84f2b6e61748c6f704b667f",
+        "kind": "retrieved source, not proof of feature execution"
+      },
+      "package.json": {
+        "url": "https://raw.githubusercontent.com/WeftCut/WeftCut/main/package.json",
+        "bytes": 1254,
+        "sha256": "aee7d8c020dea3a7f6167ff84f35a2dfc5d5bb26c967b3887ab2b3ea0b6b63f3",
+        "kind": "retrieved source, not proof of feature execution"
+      },
+      "sourceCommitRead": "61a910c9e3d2efc0cfa404d04c842d4fa42b64ff"
+    },
+    {
+      "requestedRepo": "AcademySoftwareFoundation/OpenTimelineIO",
+      "repo": "AcademySoftwareFoundation/OpenTimelineIO",
+      "url": "https://github.com/AcademySoftwareFoundation/OpenTimelineIO",
+      "branch": "main",
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushedAt": "2026-10-28T06:20:19Z",
+      "bytesOnGitHub": 25182,
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/AcademySoftwareFoundation/OpenTimelineIO/main/README.md",
+        "bytes": 9396,
+        "sha256": "fc636466b740c636d6ceb488e00d2b5a95f8fdb5c46de142b2a227fda928aeca",
+        "kind": "retrieved source, not proof of feature execution"
+      },
+      "LICENSE": {
+        "url": "https://raw.githubusercontent.com/AcademySoftwareFoundation/OpenTimelineIO/main/LICENSE",
+        "error": "HTTP Error 404: Not Found",
+        "kind": "retrieved source, not proof of feature execution"
+      },
+      "package.json": {
+        "url": "https://raw.githubusercontent.com/AcademySoftwareFoundation/OpenTimelineIO/main/package.json",
+        "error": "HTTP Error 404: Not Found",
+        "kind": "retrieved source, not proof of feature execution"
+      }
+    },
+    {
+      "requestedRepo": "redotvideo/revideo",
+      "repo": "midrender/revideo",
+      "url": "https://github.com/midrender/revideo",
+      "branch": "main",
+      "license": "MIT",
+      "archived": false,
+      "pushedAt": "2026-07-15T22:43:55Z",
+      "bytesOnGitHub": 22463,
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/midrender/revideo/main/README.md",
+        "bytes": 3685,
+        "sha256": "583e1dcb418fd2cd5d13b5d90dcde1be52f3ba86e32220d07bfeac8852b0a0b8",
+        "kind": "retrieved source, not proof of feature execution"
+      },
+      "LICENSE": {
+        "url": "https://raw.githubusercontent.com/midrender/revideo/main/LICENSE",
+        "bytes": 1070,
+        "sha256": "b3f12201916c5d478263cd210cf17f3d0c007d03bd574e0b77cac6307953068e",
+        "kind": "retrieved source, not proof of feature execution"
+      },
+      "package.json": {
+        "url": "https://raw.githubusercontent.com/midrender/revideo/main/package.json",
+        "bytes": 2534,
+        "sha256": "97ef35a3fa3cc90cd1562b442731763ecba65c384c402cc4521e6a651427d5b9",
+        "kind": "retrieved source, not proof of feature execution"
+      }
+    }
+  ],
+  "documents": {
+    "natron-rendering": {
+      "url": "https://natron.readthedocs.io/en/rb-2.5/guide/compositing-projects-render.html",
+      "resolvedUrl": "https://natron.readthedocs.io/en/rb-2.5/guide/compositing-projects-render.html",
+      "status": 200,
+      "bytes": 11130,
+      "sha256": "07a58e3c93f711c1a6e12ca6641a8d744fb515ea0dc140bce143aea51d3e4a27",
+      "localFile": "natron-rendering.txt"
+    },
+    "natron-cli": {
+      "url": "https://natron.readthedocs.io/en/rb-2.5/guide/getstarted-environment-renderer.html",
+      "error": "HTTP Error 404: Not Found"
+    },
+    "natron-python": {
+      "url": "https://natron.readthedocs.io/en/rb-2.5/devel/PythonReference/NatronEngine/index.html",
+      "resolvedUrl": "https://natron.readthedocs.io/en/rb-2.5/devel/PythonReference/NatronEngine/index.html",
+      "status": 200,
+      "bytes": 11861,
+      "sha256": "fbff4a964690a981282cb84789471eb8d72bfdefbc5dd1c5ca5be0498c40e618",
+      "localFile": "natron-python.txt"
+    },
+    "friction-docs": {
+      "url": "https://friction.graphics/documentation/",
+      "resolvedUrl": "https://friction.graphics/documentation/",
+      "status": 200,
+      "bytes": 10693,
+      "sha256": "c87311aa7aeeb263db2a5426cedaf74759d3f9ee3e3cb836ab8f1c8992bd5480",
+      "localFile": "friction-docs.txt"
+    },
+    "kdenlive-interchange": {
+      "url": "https://docs.kdenlive.org/en/project_and_asset_management/file_management/project_files.html",
+      "resolvedUrl": "https://docs.kdenlive.org/en/project_and_asset_management/file_management/project_files.html",
+      "status": 200,
+      "bytes": 16380,
+      "sha256": "4fdaf06e7b8113d157fc07f3f108cf9a7f946e5ad5e949ee22b40ad2538b7cd2",
+      "localFile": "kdenlive-interchange.txt"
+    },
+    "kdenlive-render": {
+      "url": "https://docs.kdenlive.org/en/exporting/render.html",
+      "resolvedUrl": "https://docs.kdenlive.org/en/exporting/render.html",
+      "status": 200,
+      "bytes": 47437,
+      "sha256": "679608ce98645f919af504b1bc658953fb103ca8c64aedb3234d19b8e3c90dd7",
+      "localFile": "kdenlive-render.txt"
+    },
+    "mlt-xml": {
+      "url": "https://www.mltframework.org/docs/mltxml/",
+      "resolvedUrl": "https://www.mltframework.org/docs/mltxml/",
+      "status": 200,
+      "bytes": 30858,
+      "sha256": "5e3f9696fd2e25eeb2ef480c470f46457106bb689b23b5025f7e827b577ef368",
+      "localFile": "mlt-xml.txt"
+    },
+    "mlt-melt": {
+      "url": "https://www.mltframework.org/docs/melt/",
+      "resolvedUrl": "https://www.mltframework.org/docs/melt/",
+      "status": 200,
+      "bytes": 25230,
+      "sha256": "b9bba1def6c192c7ef7e941e11da3862c623509a07404cb764d0786ed26a08a8",
+      "localFile": "mlt-melt.txt"
+    },
+    "opentimelineio": {
+      "url": "https://opentimelineio.readthedocs.io/en/latest/tutorials/otio-file-format-specification.html",
+      "resolvedUrl": "https://opentimelineio.readthedocs.io/en/latest/tutorials/otio-file-format-specification.html",
+      "status": 200,
+      "bytes": 45793,
+      "sha256": "1a308e15fe575d89481c3713812bc02cc8d574ef516b01141f2731de227389a1",
+      "localFile": "opentimelineio.txt"
+    },
+    "opencut-classic": {
+      "url": "https://raw.githubusercontent.com/OpenCut-app/opencut-classic/main/README.md",
+      "resolvedUrl": "https://raw.githubusercontent.com/OpenCut-app/opencut-classic/main/README.md",
+      "status": 200,
+      "bytes": 4909,
+      "sha256": "2907b0a13d894d4e851068f230be0b790ed9889aa9f2b84192b802c2d955ef12",
+      "localFile": "opencut-classic.txt"
+    },
+    "friction-effects": {
+      "url": "https://friction.graphics/documentation/effects.html",
+      "status": 200,
+      "sha256": "675a68def80099b2eb2a7ae7979cfe6c59392e4f5b29ae13cf299b24cec35c9b",
+      "bytes": 8666
+    },
+    "friction-animation_techniques": {
+      "url": "https://friction.graphics/documentation/animation_techniques.html",
+      "status": 200,
+      "sha256": "c513a7af8d750e2f5dee6640d9416976ff535a27bd46063e04d9c18744a601a7",
+      "bytes": 21967
+    },
+    "friction-expressions": {
+      "url": "https://friction.graphics/documentation/expressions.html",
+      "status": 200,
+      "sha256": "903c79d268b35fad473ef8e107f7ce2f13aaa32a5b303cad3b6f60dfc66253a0",
+      "bytes": 43203
+    },
+    "friction-export": {
+      "url": "https://friction.graphics/documentation/export.html",
+      "status": 200,
+      "sha256": "055ab2751284c09704945f8b4fe64318842c76835e4085f5de52ad8489f03aed",
+      "bytes": 13466
+    }
+  },
+  "ambiguity": "User has not identified the exact remembered repository; OpenReel and Motionity are closest candidates, not a confirmed identity."
+}

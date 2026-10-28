@@ -1,15 +1,19 @@
-# barca-yt-render
+# Barça Radar — production and rendering
 
-Render-only mirror of a Remotion project (motion graphics for an unofficial FC Barcelona fan channel).
-Rendering runs on GitHub Actions: **Actions → Render video → Run workflow**.
+**برای ادامه با Claude، Codex یا Cloud، از [راهنمای اصلی](CLOUD_GUIDE.fa.md) شروع کنید.** وضعیت اجراها و کارهای بعدی در [continuation-state.json](docs/video-production/continuation-state.json) ثبت می‌شود.
 
-Photos in `studio/public/photos` are CC0 (Nationaal Archief / Anefo via Wikimedia Commons); see each folder's `licenses.tsv`.
-Not affiliated with FC Barcelona.
+This repository is the canonical production codebase for an unofficial FC Barcelona fan channel. It includes Remotion compositions, source-aligned media tools, licensed photographic assets, research and GitHub rendering workflows. It is not affiliated with FC Barcelona.
 
-## Barça Radar production planning
+- [Cloud continuation and operational guide](CLOUD_GUIDE.fa.md)
+- [Video research, formats and tooling](docs/video-production/README.fa.md)
+- [Active source-aligned El Clásico Short](docs/barca-radar/clasico-source/README.md)
+- [Verified horizontal/vertical photo demos](docs/video-production/photo-demo-delivery.fa.md)
+- [Creative Skills and MCP research](docs/video-production/creative-integrations-2026-10-28.fa.md)
+- [Canva and Higgsfield assessment](docs/video-production/canva-higgsfield-evaluation.fa.md)
+- [Open-source editor investigation](docs/video-production/open-source-editors-2026-10-28.fa.md)
 
-The PSG 4–2 analysis and companion Short have a versioned [production packet](docs/barca-radar/psg-4-2/README.md): narration, shot list, visual research, storyboard, asset/evidence registers, and GitHub render handoff. The packet records planning status separately from rendered deliverables.
+The active presenter edit follows the actual175s El Clásico recording. The [PSG packet](docs/barca-radar/psg-4-2/README.md) and historical script are separate planning material. A recorded review candidate is not automatically approved for posting; consult the active episode's review state and exact render commit.
 
-## Reusable video production
+Photographs have per-file rights, including CC0 and CC BY4.0. See [photo credits](docs/video-production/photo-credits.md) and the production photo catalog; older folder TSVs are not the complete current catalog. Raw presenter media, local models, credentials and output movies stay out of Git.
 
-See the [production research and tooling guide](docs/video-production/README.fa.md), the [source-aligned El Clásico Short](docs/barca-radar/clasico-source/README.md), and the reusable workflow in `.agents/skills/video-production/SKILL.md`. The active Short uses the actual presenter recording; the historical and PSG scripts are separate material.
+GitHub rendering uses the workflow appropriate to the deliverable: `render-source-short.yml` for source-aligned presenter output, `render-visual-models.yml` for the photographic studies. Read actual inputs and runtime-media requirements before dispatching. Push/dispatch alone is not a verified delivery.

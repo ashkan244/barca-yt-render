@@ -2,6 +2,13 @@
   "id": "CLASICO-SOURCE",
   "media": "host/CLASICO",
   "docs": "docs/barca-radar/clasico-source",
+  "manifest": "studio/src/episodes-source/clasico-source.manifest.json",
+  "extraOutputs": {
+    "adaptive": {
+      "comp": "CLASICO-SOURCE-ADAPTIVE",
+      "profile": "vertical"
+    }
+  },
   "duration": 175,
   "source": {
     "sha256": "8b558736590ffa4297a2b2df4aa8d007042472738cb141085cb4b9eac03a29c1",

@@ -1,0 +1,481 @@
+{
+  "researchedOn": "2026-10-28",
+  "method": "Public primary documentation and repository README/skill inspection; no account generations or MCP connection established.",
+  "repositoryCommitsObserved": {
+    "remotion-dev/skills": "30d4553ecd46fbc5212fd0ff006ae43af522158b",
+    "figma/mcp-server-guide": "056adaf7564d3dc5fa2e1c7828bbec925d5fa6bb",
+    "runwayml/runway-mcp-plugin": "f56e77a713796c0667f266aa4b183f1e226230ea"
+  },
+  "sources": {
+    "remotion-skills": {
+      "url": "https://raw.githubusercontent.com/remotion-dev/skills/main/README.md",
+      "resolvedUrl": "https://raw.githubusercontent.com/remotion-dev/skills/main/README.md",
+      "status": 200,
+      "bytes": 2893,
+      "sha256": "aefb2c5438ef70ed050af4ef1e450ecea7aef66d11390761032c349fd9666450",
+      "localFile": "remotion-skills.md"
+    },
+    "remotion-three": {
+      "url": "https://www.remotion.dev/docs/three",
+      "resolvedUrl": "https://www.remotion.dev/docs/three",
+      "status": 200,
+      "bytes": 76877,
+      "sha256": "b929cde8956a6024aa308307141be21f3b751f00d62491956e1fa5ce6b8bd92e",
+      "localFile": "remotion-three.html"
+    },
+    "figma-mcp": {
+      "url": "https://raw.githubusercontent.com/figma/mcp-server-guide/main/README.md",
+      "resolvedUrl": "https://raw.githubusercontent.com/figma/mcp-server-guide/main/README.md",
+      "status": 200,
+      "bytes": 18025,
+      "sha256": "83c01782db56e60fc29842ab7ccb469f2732564faa9f0120b7bdbe463e1729d7",
+      "localFile": "figma-mcp.md"
+    },
+    "blender-mcp": {
+      "url": "https://raw.githubusercontent.com/ahujasid/blender-mcp/main/README.md",
+      "resolvedUrl": "https://raw.githubusercontent.com/ahujasid/blender-mcp/main/README.md",
+      "status": 200,
+      "bytes": 36497,
+      "sha256": "830ab551160234b92ab1a81796d96540f4839db6abc82615be546d6184fa7226",
+      "localFile": "blender-mcp.md",
+      "reviewNote": "Third party, renamed package mcp-for-blender; addon/Python bridge not installed in this investigation."
+    },
+    "manim": {
+      "url": "https://raw.githubusercontent.com/ManimCommunity/manim/main/README.md",
+      "resolvedUrl": "https://raw.githubusercontent.com/ManimCommunity/manim/main/README.md",
+      "status": 200,
+      "bytes": 8378,
+      "sha256": "41cac8aeb33a726c1b0a70d10233ee06d9cd73c6df0bace8145637d75c5fc283",
+      "localFile": "manim.md"
+    },
+    "motion-canvas": {
+      "url": "https://raw.githubusercontent.com/motion-canvas/motion-canvas/main/README.md",
+      "resolvedUrl": "https://raw.githubusercontent.com/motion-canvas/motion-canvas/main/README.md",
+      "status": 200,
+      "bytes": 5266,
+      "sha256": "9895daa20be79849a312b5cb5b9ed36db2d1a6dfe9731b5e53a67b222abe9cd9",
+      "localFile": "motion-canvas.md"
+    },
+    "elevenlabs-mcp": {
+      "url": "https://raw.githubusercontent.com/elevenlabs/elevenlabs-mcp/main/README.md",
+      "resolvedUrl": "https://raw.githubusercontent.com/elevenlabs/elevenlabs-mcp/main/README.md",
+      "status": 200,
+      "bytes": 8081,
+      "sha256": "d0bad08d7b1a5e0ae9d40c872d5be2dfde9b0a2037f7ea2184249b3fc014b4fb",
+      "localFile": "elevenlabs-mcp.md",
+      "reviewNote": "Legacy local server README declares deprecated; do not recommend as the default new setup."
+    },
+    "tavily-mcp": {
+      "url": "https://raw.githubusercontent.com/tavily-ai/tavily-mcp/main/README.md",
+      "resolvedUrl": "https://raw.githubusercontent.com/tavily-ai/tavily-mcp/main/README.md",
+      "status": 200,
+      "bytes": 8727,
+      "sha256": "86143098cdbe88129a577bc63048ee9764b3c05e8e13ea1d95cd74e22cd28927",
+      "localFile": "tavily-mcp.md"
+    },
+    "exa-mcp": {
+      "url": "https://raw.githubusercontent.com/exa-labs/exa-mcp-server/main/README.md",
+      "resolvedUrl": "https://raw.githubusercontent.com/exa-labs/exa-mcp-server/main/README.md",
+      "status": 200,
+      "bytes": 8061,
+      "sha256": "2c7f54a27c598451c7e44d69eb18007885f53765bf40d3be384ac13d2d1a845d",
+      "localFile": "exa-mcp.md"
+    },
+    "statsbomb-open": {
+      "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/README.md",
+      "resolvedUrl": "https://raw.githubusercontent.com/statsbomb/open-data/master/README.md",
+      "status": 200,
+      "bytes": 1753,
+      "sha256": "98a757466c4d931dba4b6c4290c55c2fe74e4550d7455bbe05fd884dc831aff3",
+      "localFile": "statsbomb-open.md"
+    },
+    "football-data": {
+      "url": "https://www.football-data.org/documentation/quickstart",
+      "resolvedUrl": "https://www.football-data.org/documentation/quickstart",
+      "status": 200,
+      "bytes": 753192,
+      "sha256": "8901ea2cb2d4440452885e945efb2c0f691fb0927f4b7215a5e5935b452b70ad",
+      "localFile": "football-data.html"
+    },
+    "runway-api": {
+      "url": "https://docs.dev.runwayml.com/",
+      "resolvedUrl": "https://docs.dev.runwayml.com/",
+      "status": 200,
+      "bytes": 75130,
+      "sha256": "5af519c3ff6191aa39b8e30baeef1a36554f442760edb31e815d145b1793f44a",
+      "localFile": "runway-api.html"
+    },
+    "fal-docs": {
+      "url": "https://docs.fal.ai/",
+      "resolvedUrl": "https://fal.ai/docs/documentation",
+      "status": 200,
+      "bytes": 536690,
+      "sha256": "75d9330390e2e0c599de694f1f08a650a3a839a0817d057380fc770db45547aa",
+      "localFile": "fal-docs.html"
+    },
+    "maplibre": {
+      "url": "https://raw.githubusercontent.com/maplibre/maplibre-gl-js/main/README.md",
+      "resolvedUrl": "https://raw.githubusercontent.com/maplibre/maplibre-gl-js/main/README.md",
+      "status": 200,
+      "bytes": 13392,
+      "sha256": "f293e4b84fcabba75a923fe54ff861b6bd4e7f2cddaf09082bcee97f57c0847b",
+      "localFile": "maplibre.md"
+    },
+    "playwright-mcp": {
+      "url": "https://raw.githubusercontent.com/microsoft/playwright-mcp/main/README.md",
+      "resolvedUrl": "https://raw.githubusercontent.com/microsoft/playwright-mcp/main/README.md",
+      "status": 200,
+      "bytes": 66837,
+      "sha256": "b33aa71a13d655e96e6b736d0c9de1e5ddea52f205916ca20b876387ff830e87",
+      "localFile": "playwright-mcp.md"
+    },
+    "runway-mcp": {
+      "url": "https://raw.githubusercontent.com/runwayml/runway-mcp-plugin/main/README.md",
+      "resolvedUrl": "https://raw.githubusercontent.com/runwayml/runway-mcp-plugin/main/README.md",
+      "status": 200,
+      "bytes": 3586,
+      "sha256": "b98dd136a7290a29cef0fc6c31a0b276bc14c902f7472d831cfb43620c69d3d9",
+      "localFile": "runway-mcp.md"
+    },
+    "eleven-hosted": {
+      "url": "https://elevenlabs.io/docs/agents-platform/operate/hosted-mcp",
+      "resolvedUrl": "https://elevenlabs.io/docs/eleven-agents/operate/hosted-mcp",
+      "status": 200,
+      "bytes": 279533,
+      "sha256": "fb9ae2a57018a1ac393c77bfa1e6c7c4a40ceabedecabf7510a6cf86ad042c3e",
+      "localFile": "eleven-hosted.html",
+      "reviewNote": "Hosted docs list agent management and TTS. Full SFX/music/dubbing tool parity not established."
+    },
+    "fal-llms": {
+      "url": "https://docs.fal.ai/llms.txt",
+      "resolvedUrl": "https://fal.ai/docs/llms.txt",
+      "status": 200,
+      "bytes": 42103,
+      "sha256": "3a5e7903d28d35ba28061053806e8c1ef41c6c91934f429be7bfe9261161127a",
+      "localFile": "fal-llms.html",
+      "reviewNote": "Documentation index reviewed; no official fal MCP was verified in this investigation."
+    },
+    "runway-llms": {
+      "url": "https://docs.dev.runwayml.com/llms.txt",
+      "resolvedUrl": "https://docs.dev.runwayml.com/llms.txt",
+      "status": 200,
+      "bytes": 3351,
+      "sha256": "2625d2604568ba5bd78210d860634875cc1b567419dc59d911c400d69a4cb405",
+      "localFile": "runway-llms.html"
+    },
+    "statsbomb-license": {
+      "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/LICENSE.pdf",
+      "resolvedUrl": "https://raw.githubusercontent.com/statsbomb/open-data/master/LICENSE.pdf",
+      "status": 200,
+      "bytes": 165130,
+      "sha256": "a5462e69aeb71a39268b760b110c5c2190a2e0cee3015ba976f66bd71f6c2bb4",
+      "localFile": "statsbomb-license.md",
+      "reviewNote": "PDF read via pdftotext; section 1.2.2 prohibits commercial exploitation of data or derived analysis."
+    },
+    "figma-tools": {
+      "url": "https://developers.figma.com/docs/figma-mcp-server/tools-and-prompts/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "reviewNote": "403 in this environment; official repository guide read instead."
+    },
+    "blender-cli": {
+      "url": "https://docs.blender.org/manual/en/latest/advanced/command_line/render.html",
+      "resolvedUrl": "https://docs.blender.org/manual/en/latest/advanced/command_line/render.html",
+      "status": 200,
+      "bytes": 466510,
+      "sha256": "bf232b7c39cfd3b8466702d03182eea5c13a271358a4ca34760116ca8a183594",
+      "localFile": "blender-cli.html"
+    },
+    "remotion-skill": {
+      "url": "https://raw.githubusercontent.com/remotion-dev/skills/main/skills/remotion/SKILL.md",
+      "error": "HTTP Error 404: Not Found",
+      "reviewNote": "Old guessed path returned404; correct remotion-best-practices and remotion-maps paths were then read."
+    },
+    "remotion-best-practices": {
+      "url": "https://raw.githubusercontent.com/remotion-dev/skills/main/skills/remotion-best-practices/SKILL.md",
+      "resolvedUrl": "https://raw.githubusercontent.com/remotion-dev/skills/main/skills/remotion-best-practices/SKILL.md",
+      "status": 200,
+      "bytes": 4215,
+      "sha256": "b4cfddd463ca44b6127aac813c5f8330f5fe2587f516af5ddfdb0fda453cf8eb",
+      "localFile": "remotion-best-practices.md"
+    },
+    "remotion-maps-skill": {
+      "url": "https://raw.githubusercontent.com/remotion-dev/skills/main/skills/remotion-maps/SKILL.md",
+      "resolvedUrl": "https://raw.githubusercontent.com/remotion-dev/skills/main/skills/remotion-maps/SKILL.md",
+      "status": 200,
+      "bytes": 1030,
+      "sha256": "19b8b3b18bbddfd494ecac5c602c261b661344520cea1989f16d73c61c2335ad",
+      "localFile": "remotion-maps-skill.md"
+    },
+    "runway-media-skill": {
+      "url": "https://raw.githubusercontent.com/runwayml/runway-mcp-plugin/main/skills/runway-media/SKILL.md",
+      "resolvedUrl": "https://raw.githubusercontent.com/runwayml/runway-mcp-plugin/main/skills/runway-media/SKILL.md",
+      "status": 200,
+      "bytes": 2984,
+      "sha256": "6f3bcf9f47d1d7ec9228a4a65dd7fb9f055e9aa1d9200c786714375180574789",
+      "localFile": "runway-media-skill.md"
+    },
+    "runway-workflows-skill": {
+      "url": "https://raw.githubusercontent.com/runwayml/runway-mcp-plugin/main/skills/runway-workflows/SKILL.md",
+      "resolvedUrl": "https://raw.githubusercontent.com/runwayml/runway-mcp-plugin/main/skills/runway-workflows/SKILL.md",
+      "status": 200,
+      "bytes": 1748,
+      "sha256": "fc22dde239907db0423a2debe1e66dca9d4a7fba0933bee6ea31b781a0a2d682",
+      "localFile": "runway-workflows-skill.md"
+    },
+    "eleven-skills": {
+      "url": "https://raw.githubusercontent.com/elevenlabs/skills/main/README.md",
+      "resolvedUrl": "https://raw.githubusercontent.com/elevenlabs/skills/main/README.md",
+      "status": 200,
+      "bytes": 3722,
+      "sha256": "1ed0ebf79e1e7464936201673feda01d2ad03d91d59cac00009296a80b524902",
+      "localFile": "eleven-skills.md"
+    },
+    "statsbomb-competitions": {
+      "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/competitions.json",
+      "resolvedUrl": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/competitions.json",
+      "status": 200,
+      "bytes": 34887,
+      "sha256": "e6cd42f5d8956d6aa30fb917ce8d4c3b3df1879a93f02f8feba820930a6971fa",
+      "localFile": "statsbomb-competitions.md",
+      "reviewNote": "80 competition-season entries at retrieval; selected historical coverage, not a live La Liga feed."
+    },
+    "football-data-terms": {
+      "url": "https://www.football-data.org/terms",
+      "error": "HTTP Error 404: Not Found",
+      "reviewNote": "404; no commercial/publication rights inferred."
+    },
+    "sportmonks-docs": {
+      "url": "https://docs.sportmonks.com/football",
+      "resolvedUrl": "https://docs.sportmonks.com/v3",
+      "status": 200,
+      "bytes": 7046,
+      "sha256": "e6d461d1f99402765c2658018a4f301fb0f8584d9add64bdc245d6e805732885",
+      "localFile": "sportmonks-docs.html"
+    },
+    "api-football-docs": {
+      "url": "https://www.api-football.com/documentation-v3",
+      "resolvedUrl": "https://www.api-football.com/documentation-v3",
+      "status": 200,
+      "bytes": 5661,
+      "sha256": "a1d705c91c3f2b8847658453e3844404d54d3a5a4191d200e3e08b68b312ffa2",
+      "localFile": "api-football-docs.html",
+      "reviewNote": "HTML documentation shell read; authenticated endpoint/coverage/contract not verified."
+    },
+    "eleven-sfx-skill": {
+      "url": "https://raw.githubusercontent.com/elevenlabs/skills/main/sound-effects/SKILL.md",
+      "resolvedUrl": "https://raw.githubusercontent.com/elevenlabs/skills/main/sound-effects/SKILL.md",
+      "status": 200,
+      "bytes": 4229,
+      "sha256": "f032efd853426b15568a3e1f135f9c6ad8dd983e8c4f265aad58675d78e72ae3",
+      "localFile": "eleven-sfx-skill.md"
+    },
+    "figma-canvas-skill": {
+      "url": "https://raw.githubusercontent.com/figma/mcp-server-guide/main/skills/figma/SKILL.md",
+      "error": "HTTP Error 404: Not Found",
+      "reviewNote": "Guessed path returned404; not an installed or recommended specific skill."
+    },
+    "canva-connect": {
+      "url": "https://www.canva.dev/docs/connect/",
+      "resolvedUrl": "https://www.canva.dev/docs/apps/rest-apis/",
+      "status": 200,
+      "bytes": 56557,
+      "sha256": "db7d4eb1a2fcbd24428534fb62f1e2edd0836d3572b01cd6477b89334856bfa9",
+      "localFile": "canva-connect.html"
+    },
+    "canva-mcp-candidate": {
+      "url": "https://www.canva.dev/docs/connect/canva-mcp-server/",
+      "error": "HTTP Error 404: Not Found",
+      "reviewNote": "Guessed path returned404; official MCP confirmed by canva.dev agents and canva-sdks/canva-skills."
+    },
+    "canva-mcp-guide": {
+      "url": "https://www.canva.com/help/mcp-server/",
+      "error": "HTTP Error 404: Not Found",
+      "reviewNote": "Guessed path returned404; official sources used instead."
+    },
+    "canva-llms": {
+      "url": "https://www.canva.dev/llms.txt",
+      "resolvedUrl": "https://www.canva.dev/docs/llms.txt",
+      "status": 200,
+      "bytes": 1779,
+      "sha256": "28540a15145a3065dea805ef6f57b1d8935d604b88359180800ca0a31e9e0cd9",
+      "localFile": "canva-llms.html"
+    },
+    "higgsfield-docs": {
+      "url": "https://docs.higgsfield.ai/",
+      "resolvedUrl": "https://docs.higgsfield.ai/docs",
+      "status": 200,
+      "bytes": 176491,
+      "sha256": "84c0bdbd5e0b28747f1ac0e81b94b3a9e298d56942daa03be49699b8a726a871",
+      "localFile": "higgsfield-docs.html"
+    },
+    "higgsfield-llms": {
+      "url": "https://docs.higgsfield.ai/llms.txt",
+      "error": "HTTP Error 404: Not Found",
+      "reviewNote": "Root index404; /docs/llms.txt worked."
+    },
+    "higgsfield-home": {
+      "url": "https://higgsfield.ai/",
+      "resolvedUrl": "https://higgsfield.ai/",
+      "status": 200,
+      "bytes": 562164,
+      "sha256": "26bc379879669746c788be0c95d8de27d138ce1ccc31b0b98820ad670274a318",
+      "localFile": "higgsfield-home.html"
+    },
+    "higgsfield-api": {
+      "url": "https://higgsfield.ai/api",
+      "resolvedUrl": "https://open.higgsfield.ai/explore",
+      "status": 200,
+      "bytes": 577512,
+      "sha256": "03cff57b2da439d01e608430dc6f3249afe94369b32739b932c3d80caf21a82a",
+      "localFile": "higgsfield-api.html"
+    },
+    "canva-agents": {
+      "url": "https://www.canva.dev/agents/",
+      "resolvedUrl": "https://www.canva.dev/agents/",
+      "status": 200,
+      "bytes": 53378,
+      "sha256": "ab900d7e0b981301b3cbc7f20820a196d1fdeeca72f52687366a82146d09c378",
+      "localFile": "canva-agents.html"
+    },
+    "canva-dev-mcp": {
+      "url": "https://www.canva.dev/docs/apps/dev-mcp-server.md",
+      "resolvedUrl": "https://www.canva.dev/docs/apps/dev-mcp-server.md",
+      "status": 200,
+      "bytes": 6065,
+      "sha256": "44d154b8e767a209e6a01fcead2e3012d372ed433b917e0c505db80cf6a0d679",
+      "localFile": "canva-dev-mcp.html"
+    },
+    "canva-skills": {
+      "url": "https://raw.githubusercontent.com/canva-sdks/canva-skills/main/README.md",
+      "resolvedUrl": "https://raw.githubusercontent.com/canva-sdks/canva-skills/main/README.md",
+      "status": 200,
+      "bytes": 10056,
+      "sha256": "f75b1ffae586be70c41b392dafa77ba1c0c2d9960b661aeb2c646a8f712ac195",
+      "localFile": "canva-skills.md"
+    },
+    "higgsfield-mcp": {
+      "url": "https://higgsfield.ai/mcp",
+      "resolvedUrl": "https://higgsfield.ai/mcp",
+      "status": 200,
+      "bytes": 847055,
+      "sha256": "8d3e230a77d97a14aceecb02cff45110668596765938ee00185b1e7bf76ea8e4",
+      "localFile": "higgsfield-mcp.html",
+      "reviewNote": "Official page lists https://mcp.higgsfield.ai/mcp; no authenticated tools or model entitlements tested."
+    },
+    "higgsfield-mcp-chatgpt": {
+      "url": "https://higgsfield.ai/mcp?tab=chatgpt",
+      "resolvedUrl": "https://higgsfield.ai/mcp?tab=chatgpt",
+      "status": 200,
+      "bytes": 847055,
+      "sha256": "693e1306cb9b0daf961a41b231cb2990123b933f4ad9b701378b3d209bf3659a",
+      "localFile": "higgsfield-mcp-chatgpt.html"
+    },
+    "higgsfield-docs-index": {
+      "url": "https://docs.higgsfield.ai/docs/llms.txt",
+      "resolvedUrl": "https://docs.higgsfield.ai/docs/llms.txt",
+      "status": 200,
+      "bytes": 4945,
+      "sha256": "bc8e7b726f1e30c7e3b1be5955692353a6534333271d54b32a1351630c7facf2",
+      "localFile": "higgsfield-docs-index.html"
+    },
+    "higgsfield-sdk": {
+      "url": "https://raw.githubusercontent.com/higgsfield-ai/higgsfield-client/main/README.md",
+      "resolvedUrl": "https://raw.githubusercontent.com/higgsfield-ai/higgsfield-client/main/README.md",
+      "status": 200,
+      "bytes": 11204,
+      "sha256": "0dd49fa83e644eff9c0df20cdcc7b4530465f776383c2445bfe0977fc8b9c07b",
+      "localFile": "higgsfield-sdk.md"
+    },
+    "canva-ai-connector": {
+      "url": "https://www.canva.com/help/mcp-agent-setup/",
+      "resolvedUrl": "https://www.canva.com/help/mcp-agent-setup/",
+      "status": 200,
+      "bytes": 8377,
+      "sha256": "3a88bf11ad88955230151872e1a15ec5395164cbd4d4122ec49148d13e610bb2",
+      "localFile": "canva-ai-connector.html",
+      "reviewNote": "HTTP 200 returned Unsupported client, not the requested guide; capability claims use official canva.dev and canva-sdks repository instead."
+    },
+    "canva-design-feedback-skill": {
+      "url": "https://raw.githubusercontent.com/canva-sdks/canva-skills/main/plugins/canva/skills/get-design-feedback/SKILL.md",
+      "resolvedUrl": "https://raw.githubusercontent.com/canva-sdks/canva-skills/main/plugins/canva/skills/get-design-feedback/SKILL.md",
+      "status": 200,
+      "bytes": 4735,
+      "sha256": "e18303be61308ad6dc8e05c4735b7254873f42ab9c6bc6c37b9cec339119be7b",
+      "localFile": "canva-design-feedback-skill.md"
+    },
+    "canva-brand-skill": {
+      "url": "https://raw.githubusercontent.com/canva-sdks/canva-skills/main/plugins/canva/skills/brand-check/SKILL.md",
+      "resolvedUrl": "https://raw.githubusercontent.com/canva-sdks/canva-skills/main/plugins/canva/skills/brand-check/SKILL.md",
+      "status": 200,
+      "bytes": 5147,
+      "sha256": "b292189744392db22b9e72481056a0db94781bd64892480abe2ce50c76efbb73",
+      "localFile": "canva-brand-skill.md"
+    },
+    "higgsfield-vox": {
+      "url": "https://higgsfield.ai/mcp/vox-mixed-media",
+      "resolvedUrl": "https://higgsfield.ai/mcp/vox-mixed-media",
+      "status": 200,
+      "bytes": 152228,
+      "sha256": "54ea45145d6972008c0502790499d9b2958672b1160ba91db479d768875635b4",
+      "localFile": "higgsfield-vox.html",
+      "reviewNote": "Official public overview read; exact account tools/workflow not tested."
+    },
+    "higgsfield-paper": {
+      "url": "https://higgsfield.ai/mcp/paper-collage",
+      "resolvedUrl": "https://higgsfield.ai/mcp/paper-collage",
+      "status": 200,
+      "bytes": 288916,
+      "sha256": "38835d45d6f99b5570556cf9b9167e6a3e587e423ef8c95d5611a53d4562fc3c",
+      "localFile": "higgsfield-paper.html",
+      "reviewNote": "Public example explicitly uses After Effects; style existence does not establish runnable local tooling."
+    },
+    "higgsfield-composer": {
+      "url": "https://higgsfield.ai/mcp/shot-composer",
+      "resolvedUrl": "https://higgsfield.ai/mcp/shot-composer",
+      "status": 200,
+      "bytes": 293183,
+      "sha256": "9c3f9e644d8d2a3c31b51ed630129ed8485972251d44b741853b0605f47cb62f",
+      "localFile": "higgsfield-composer.html",
+      "reviewNote": "Public workflow explicitly requires After Effects; not an AE integration in this cloud."
+    },
+    "higgsfield-illustration": {
+      "url": "https://higgsfield.ai/mcp/illustration-animation",
+      "resolvedUrl": "https://higgsfield.ai/mcp/illustration-animation",
+      "status": 200,
+      "bytes": 297155,
+      "sha256": "c204b842af4eb663787ef4e0adc2df9a9b5c606d71409ea24f0213b0128d2015",
+      "localFile": "higgsfield-illustration.html",
+      "reviewNote": "Public example explicitly uses After Effects."
+    },
+    "higgsfield-katana": {
+      "url": "https://higgsfield.ai/mcp/katana",
+      "resolvedUrl": "https://higgsfield.ai/mcp/katana",
+      "status": 200,
+      "bytes": 150657,
+      "sha256": "18a9259fe96a2b86b758713f3c789779178250e7bac8c6a7c3e226669d10d43d",
+      "localFile": "higgsfield-katana.html"
+    },
+    "higgsfield-diorama": {
+      "url": "https://higgsfield.ai/mcp/faceless-paper-diorama",
+      "resolvedUrl": "https://higgsfield.ai/mcp/faceless-paper-diorama",
+      "status": 200,
+      "bytes": 173272,
+      "sha256": "414501f6b3bb4f37aabd53cef3d0d858040bebd85a5afa7cbee8c4c49574bb00",
+      "localFile": "higgsfield-diorama.html"
+    },
+    "canva-mcp-registration": {
+      "url": "https://raw.githubusercontent.com/canva-sdks/canva-skills/main/plugins/canva/.mcp.json",
+      "status": 200,
+      "bytes": 110,
+      "sha256": "3714284bf5987457d5902125e681db814ad8b874cbadd20e6adfaae24746e635",
+      "localFile": "canva-mcp-registration.md"
+    },
+    "canva-resize-skill": {
+      "url": "https://raw.githubusercontent.com/canva-sdks/canva-skills/main/plugins/canva/skills/resize-for-social-media/SKILL.md",
+      "status": 200,
+      "bytes": 5896,
+      "sha256": "bb36807630daf3ba7c2a27e83de64b329e03ce68457da874c36c5022ceff7094",
+      "localFile": "canva-export-skill.md"
+    }
+  }
+}
