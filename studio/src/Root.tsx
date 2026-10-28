@@ -1,4 +1,6 @@
 import React from 'react';
+import {AdaptiveSource} from './production/AdaptiveSource';
+import {VisualModelsDemo, VISUAL_DEMO_FRAMES} from './production/VisualModelsDemo';
 import {ClasicoSourceShort, ClasicoSourceCover, CLASICO_SOURCE_FRAMES} from './production/ClasicoSource';
 import {Composition, Still} from 'remotion';
 import {TacticsHook, HOOK_FRAMES} from './TacticsHook';
@@ -18,6 +20,9 @@ import {HORadar, HO_FRAMES, HOThumb} from './radar/HOTitle';
 
 export const Root: React.FC = () => (
   <>
+    <Composition id="CLASICO-SOURCE-ADAPTIVE" component={AdaptiveSource} durationInFrames={CLASICO_SOURCE_FRAMES} fps={30} width={1080} height={1920}/>
+    <Composition id="PHOTO-MODELS-DEMO" component={VisualModelsDemo} durationInFrames={VISUAL_DEMO_FRAMES} fps={30} width={1920} height={1080}/>
+    <Composition id="PHOTO-MODELS-DEMO-VERTICAL" component={VisualModelsDemo} durationInFrames={VISUAL_DEMO_FRAMES} fps={30} width={1080} height={1920}/>
     <Still id="CLASICO-SOURCE-COVER" component={ClasicoSourceCover} width={1080} height={1920} />
     <Composition id="CLASICO-SOURCE-SHORT" component={ClasicoSourceShort} durationInFrames={CLASICO_SOURCE_FRAMES} fps={30} width={1080} height={1920} />
     {EPISODES.map((d) => (

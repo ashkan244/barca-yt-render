@@ -1,4 +1,6 @@
 import React from 'react';
+import {PhotoMotion} from '../production/PhotoMotion';
+import {formatCounter} from '../production/numbers.mjs';
 import {AbsoluteFill, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig, Easing} from 'remotion';
 import {C, DISPLAY, BODY, CHALK, Chalkboard, Halftone, Pop, clamp} from '../lib';
 import {Mark} from '../Branding';
@@ -93,9 +95,7 @@ const Photo: React.FC<P> = ({st}) => {
 const Stat: React.FC<P> = ({st}) => {
   const s = st.scene as Extract<Scene, {type: 'stat'}>;
   const f = useCurrentFrame();
-  const num = Number(s.value.replace(/[^\d.]/g, ''));
-  const isNum = !Number.isNaN(num) && /\d/.test(s.value);
-  const shown = isNum ? Math.round(interpolate(f, [6, 40], [0, num], ease)).toLocaleString('en-US') : s.value;
+  const shown = formatCounter(s.value, interpolate(f, [6,40], [0,1], ease));
   return (
     <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center'}}>
       <Bg kind={s.bg ?? 'navy'} />
@@ -288,7 +288,7 @@ const Bars: React.FC<P> = ({st}) => {
           const g = interpolate(f, [10 + i * 6, 50 + i * 6], [0, 1], ease);
           return (
             <div key={i} style={{flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-end', height: '100%'}}>
-              <div style={{fontFamily: DISPLAY, fontSize: 46, color: b.highlight ? C.gold : '#fff', marginBottom: 10, opacity: g}}>{Math.round(b.value * g)}{inline ? unit : ''}</div>
+              <div style={{fontFamily: DISPLAY, fontSize: 46, color: b.highlight ? C.gold : '#fff', marginBottom: 10, opacity: g}}>{formatCounter(b.value,g)}{inline ? unit : ''}</div>
               <div style={{width: '100%', height: `${(b.value / max) * 82 * g}%`, background: b.highlight ? C.gold : i % 2 ? C.grana : C.blau, borderRadius: '10px 10px 0 0'}} />
               <div style={{fontFamily: BODY, fontWeight: 700, fontSize: 28, color: '#ffffffd0', marginTop: 14, textAlign: 'center'}}>{b.label}</div>
             </div>
@@ -369,6 +369,7 @@ export const SceneView: React.FC<P> = ({st}) => {
     case 'title': return <Title st={st} />;
     case 'chapter': return <Chapter st={st} />;
     case 'photo': return <Photo st={st} />;
+    case 'assetPhoto': return <PhotoMotion id={st.scene.assetId} duration={st.dur} treatment={st.scene.treatment} fit={st.scene.fit}/>;
     case 'stat': return <Stat st={st} />;
     case 'quote': return <Quote st={st} />;
     case 'headline': return <Headline st={st} />;

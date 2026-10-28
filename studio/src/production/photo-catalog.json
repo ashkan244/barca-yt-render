@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "id": "cruyff-airport-1988",
+      "src": "photos/cruyff/cruyff-01.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Vertrek_Johan_Cruijff_van_Schiphol_naar_Barcelona,_Bestanddeelnr_934-1806.jpg",
+      "creator": "Rob Croes / Anefo",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "rightsStatus": "verified",
+      "verifiedOn": "2026-10-28",
+      "date": "1988-02-01",
+      "caption": "Vertrek Johan Cruijff van Schiphol naar Barcelona",
+      "width": 1280,
+      "height": 852,
+      "sha256": "3ff1b12e34111ca590d194cfcd347e9426ddf6bb8b8f86f57b87275b34b5bb7c",
+      "focus": [
+        46,
+        39
+      ],
+      "restrictions": "",
+      "modifications": "Existing resized archival JPEG; presentation may crop, pan and apply monochrome treatment.",
+      "subjects": [
+        "Cruyff"
+      ],
+      "usageNote": "Archive context only. Do not present this photograph as footage/evidence of a modern match.",
+      "displayName": "JOHAN CRUYFF"
+    },
+    {
+      "id": "michels-airport-1973",
+      "src": "photos/cruyff/michels-barca-schiphol-1973.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Trainer_Rinus_Michels_met_elftal_Barcelona_op_Schiphol,_(negnr_23)_Gallego_me%E2%80%A6,_Bestanddeelnr_926-5845.jpg",
+      "creator": "Hans Peters for Anefo",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "rightsStatus": "verified",
+      "verifiedOn": "2026-10-28",
+      "date": "1973-08-01",
+      "caption": "Trainer Rinus Michels met elftal Barcelona op Schiphol, (neg.nr. 23) Gallego met Spaanse krant met artikel over Cruijff",
+      "width": 1920,
+      "height": 1269,
+      "sha256": "e19ed3a870d0da66741e61782a46ef814556bd37082e7715f0dbfcde9805bacc",
+      "focus": [
+        26,
+        40
+      ],
+      "restrictions": "",
+      "modifications": "Existing resized archival JPEG; presentation may crop, pan and apply monochrome treatment.",
+      "subjects": [
+        "Michels",
+        "Barcelona"
+      ],
+      "usageNote": "Barcelona group at Schiphol, 1973, with a newspaper about Cruyff. The catalog title is not a claim that the foreground newspaper holder is Michels. Archive context only; not evidence of a modern match.",
+      "displayName": "BARCELONA · SCHIPHOL 1973"
+    },
+    {
+      "id": "madrid-amsterdam-1959",
+      "src": "photos/distefano/real-madrid-amsterdam-1959.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Amsterdam_tegen_Real_Madrid_1-4_in_het_Olympisch_Stadion_te_Amsterdam,_Bestanddeelnr_910-4817.jpg",
+      "creator": "Wim van Rossem for Anefo",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "rightsStatus": "verified",
+      "verifiedOn": "2026-10-28",
+      "date": "1959-06-30",
+      "caption": "Amsterdam tegen Real Madrid 1-4 in het Olympisch Stadion te Amsterdam",
+      "width": 1920,
+      "height": 1578,
+      "sha256": "f8c0186db1d5bc3b1a9041471dfe1d7bf657d019feadc2069b467f6993269b40",
+      "focus": [
+        50,
+        44
+      ],
+      "restrictions": "",
+      "modifications": "Existing resized archival JPEG; presentation may crop, pan and apply monochrome treatment.",
+      "subjects": [
+        "Real Madrid",
+        "1959"
+      ],
+      "usageNote": "Archive context only. Do not present this photograph as footage/evidence of a modern match.",
+      "displayName": "REAL MADRID · 1959"
+    },
+    {
+      "id": "yamal-2025",
+      "src": "photos/curated/yamal-2025.jpg",
+      "displayName": "LAMINE YAMAL",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lamine_Yamal_in_2025.jpg",
+      "creator": "Biso",
+      "license": "CC-BY-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "rightsStatus": "verified",
+      "verifiedOn": "2026-10-28",
+      "date": "2025-09-04",
+      "caption": "LAMINE YAMAL, photographed in September 2025",
+      "width": 2228,
+      "height": 3403,
+      "sha256": "d62ef48a7e9c2ab615b8cfc64a92c0275af1745e231169d7029246dc1e467e45",
+      "focus": [
+        65,
+        23
+      ],
+      "restrictions": "",
+      "modifications": "Displayed with editorial crop, resizing and a gentle pan/zoom; original image retained.",
+      "subjects": [
+        "LAMINE YAMAL"
+      ],
+      "usageNote": "Player identity/reference image, from 2025 international football. Not an image of the El Clasico being discussed."
+    },
+    {
+      "id": "pedri-2025",
+      "src": "photos/curated/pedri-2025.jpg",
+      "displayName": "PEDRI",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Pedri.jpg",
+      "creator": "Biso",
+      "license": "CC-BY-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "rightsStatus": "verified",
+      "verifiedOn": "2026-10-28",
+      "date": "2025-09-04",
+      "caption": "PEDRI, photographed in September 2025",
+      "width": 1227,
+      "height": 1788,
+      "sha256": "66fda6419cc658ad41f3f660d53d5a3b389897079dbf4fb631ae9ce3e5079a58",
+      "focus": [
+        50,
+        28
+      ],
+      "restrictions": "",
+      "modifications": "Displayed with editorial crop, resizing and a gentle pan/zoom; original image retained.",
+      "subjects": [
+        "PEDRI"
+      ],
+      "usageNote": "Player identity/reference image, from 2025 international football. Not an image of the El Clasico being discussed."
+    }
+  ]
+}

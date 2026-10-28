@@ -17,3 +17,5 @@ __pycache__/
 .venv/
 .venvs/
 .video-cache/
+
+.cache/

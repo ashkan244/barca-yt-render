@@ -45,3 +45,7 @@ These are local browser-rendered review images, not the uploaded historical refe
 The downloaded master passed full decode and structural checks: 1080×1920, 30fps, H.264/yuv420p/BT.709, 48kHz AAC, 175.019s. Measured master loudness is −16.02LUFS / −2.86dBTP. Audio matched the prepared source at three sampled windows with zero measured offset. Retained artifact expires on 2026-11-09; download it before expiration.
 
 Current status is a **rendered review candidate**. Confirmation of the spoken Bernardo/Bernal name is pending. Do not treat an unanswered clarification as approved subtitles. No social-media post was published.
+
+## Development after that delivery
+
+The current manifest adds shared 108-page captions/SRT and verified player identity photographs; `CLASICO-SOURCE-ADAPTIVE` changes the presenter/board/photo layout. See [implementation status](../../video-production/implementation-2026-10-28.fa.md). The previously linked 175s artifact and delivery measurements describe commit `d52a6d8`, not this changed code or SRT. Do not present the historical artifact as an adaptive-layout render. Modern player photos are from September 2025 international football and do not show this El Clásico. Transcript uncertainty still blocks release; preview remains supported.

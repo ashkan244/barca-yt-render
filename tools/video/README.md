@@ -39,3 +39,11 @@ python -m unittest discover -s tools/video/tests -v
 ```
 
 Actual-source integration checks are recorded per episode. Unit checks do not establish that a full render happened.
+
+## Episode and photo preflight
+
+`episode.py` checks the source identity, complete scene coverage, cue bounds, declared photo IDs and review state. `--build-captions` writes one page definition for both burned captions and SRT; protected names stay on one page. Preview permits documented transcript uncertainty; release rejects it. `--check-media` verifies that prepared runtime assets exist and have the expected duration. The source file itself is hash-checked when `--source` is supplied, and the download workflow independently verifies its hash.
+
+`photos.py search --query '"Pedri" "2026"' --output /tmp/candidates.json` discovers live Commons metadata, without downloading or approving images. Check capture date (`DateTimeOriginal`) rather than upload time. `commons --title 'File:Pedri.jpg' --output /tmp/photo.json` retrieves a specific record. `verify --release` checks curated files and policy; `credits --release --output /tmp/credits.md` exports attribution. `--used ID` can repeat to restrict verification/credits to an episode. See the [photo guide](../../docs/video-production/photographic-production.fa.md) before curating.
+
+From `studio/`: `npm run captions:build`, `npm run photos:verify`, `npm run test:production`, `npm run render:adaptive`. Bundle from **studio**, e.g. `npx remotion bundle src/index.ts --out-dir=build`, so local public assets/fonts are included. Then use `npm run qc:frames -- COMPOSITION 0,360,900 /tmp/frames`. Building from the repository root can omit Studio public assets. The photographic demo needs its ignored score generated first: `python ../tools/video/make_score.py public/audio/production-demo/score.wav --duration 27`.

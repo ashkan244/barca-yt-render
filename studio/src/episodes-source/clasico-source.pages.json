@@ -1,0 +1,3353 @@
+{
+  "episode": "CLASICO-SOURCE-SHORT",
+  "pages": [
+    {
+      "s": 0.0,
+      "e": 2.08,
+      "text": "Losing El Clásico is always",
+      "tokens": [
+        {
+          "w": "Losing",
+          "s": 0.0,
+          "e": 0.68,
+          "alignment": "source_word"
+        },
+        {
+          "w": "El",
+          "s": 0.68,
+          "e": 1.0,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Clásico",
+          "s": 1.0,
+          "e": 1.4,
+          "alignment": "source_word"
+        },
+        {
+          "w": "is",
+          "s": 1.4,
+          "e": 1.66,
+          "alignment": "source_word"
+        },
+        {
+          "w": "always",
+          "s": 1.66,
+          "e": 2.08,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 2.08,
+      "e": 3.58,
+      "text": "tough to swallow as a",
+      "tokens": [
+        {
+          "w": "tough",
+          "s": 2.08,
+          "e": 2.38,
+          "alignment": "source_word"
+        },
+        {
+          "w": "to",
+          "s": 2.38,
+          "e": 2.66,
+          "alignment": "source_word"
+        },
+        {
+          "w": "swallow",
+          "s": 2.66,
+          "e": 3.04,
+          "alignment": "source_word"
+        },
+        {
+          "w": "as",
+          "s": 3.04,
+          "e": 3.34,
+          "alignment": "source_word"
+        },
+        {
+          "w": "a",
+          "s": 3.34,
+          "e": 3.58,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 3.58,
+      "e": 4.1,
+      "text": "Barça fan.",
+      "tokens": [
+        {
+          "w": "Barça",
+          "s": 3.58,
+          "e": 3.8,
+          "alignment": "source_word"
+        },
+        {
+          "w": "fan.",
+          "s": 3.8,
+          "e": 4.1,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 4.78,
+      "e": 6.96,
+      "text": "But yesterday's defeat was a",
+      "tokens": [
+        {
+          "w": "But",
+          "s": 4.78,
+          "e": 4.96,
+          "alignment": "source_word"
+        },
+        {
+          "w": "yesterday's",
+          "s": 4.96,
+          "e": 5.74,
+          "alignment": "source_word"
+        },
+        {
+          "w": "defeat",
+          "s": 5.74,
+          "e": 6.1,
+          "alignment": "source_word"
+        },
+        {
+          "w": "was",
+          "s": 6.1,
+          "e": 6.74,
+          "alignment": "source_word"
+        },
+        {
+          "w": "a",
+          "s": 6.74,
+          "e": 6.96,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 6.96,
+      "e": 8.48,
+      "text": "tactical lesson that we need",
+      "tokens": [
+        {
+          "w": "tactical",
+          "s": 6.96,
+          "e": 7.32,
+          "alignment": "source_word"
+        },
+        {
+          "w": "lesson",
+          "s": 7.32,
+          "e": 7.72,
+          "alignment": "source_word"
+        },
+        {
+          "w": "that",
+          "s": 7.72,
+          "e": 8.12,
+          "alignment": "source_word"
+        },
+        {
+          "w": "we",
+          "s": 8.12,
+          "e": 8.3,
+          "alignment": "source_word"
+        },
+        {
+          "w": "need",
+          "s": 8.3,
+          "e": 8.48,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 8.48,
+      "e": 9.96,
+      "text": "to break down right now.",
+      "tokens": [
+        {
+          "w": "to",
+          "s": 8.48,
+          "e": 8.66,
+          "alignment": "source_word"
+        },
+        {
+          "w": "break",
+          "s": 8.66,
+          "e": 8.98,
+          "alignment": "source_word"
+        },
+        {
+          "w": "down",
+          "s": 8.98,
+          "e": 9.3,
+          "alignment": "source_word"
+        },
+        {
+          "w": "right",
+          "s": 9.3,
+          "e": 9.58,
+          "alignment": "source_word"
+        },
+        {
+          "w": "now.",
+          "s": 9.58,
+          "e": 9.96,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 10.06,
+      "e": 11.78,
+      "text": "Let's get straight into it.",
+      "tokens": [
+        {
+          "w": "Let's",
+          "s": 10.06,
+          "e": 10.36,
+          "alignment": "source_word"
+        },
+        {
+          "w": "get",
+          "s": 10.36,
+          "e": 10.58,
+          "alignment": "source_word"
+        },
+        {
+          "w": "straight",
+          "s": 10.58,
+          "e": 11.04,
+          "alignment": "source_word"
+        },
+        {
+          "w": "into",
+          "s": 11.04,
+          "e": 11.42,
+          "alignment": "source_word"
+        },
+        {
+          "w": "it.",
+          "s": 11.42,
+          "e": 11.78,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 11.78,
+      "e": 13.3,
+      "text": "The pressing from Madrid was",
+      "tokens": [
+        {
+          "w": "The",
+          "s": 11.78,
+          "e": 12.02,
+          "alignment": "source_word"
+        },
+        {
+          "w": "pressing",
+          "s": 12.02,
+          "e": 12.36,
+          "alignment": "source_word"
+        },
+        {
+          "w": "from",
+          "s": 12.36,
+          "e": 12.74,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Madrid",
+          "s": 12.74,
+          "e": 13.02,
+          "alignment": "source_word"
+        },
+        {
+          "w": "was",
+          "s": 13.02,
+          "e": 13.3,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 13.3,
+      "e": 13.94,
+      "text": "relentless.",
+      "tokens": [
+        {
+          "w": "relentless.",
+          "s": 13.3,
+          "e": 13.94,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 14.56,
+      "e": 16.34,
+      "text": "Kylian Mbappé and Jude Bellingham",
+      "tokens": [
+        {
+          "w": "Kylian",
+          "s": 14.56,
+          "e": 14.8,
+          "alignment": "aligned_correction"
+        },
+        {
+          "w": "Mbappé",
+          "s": 14.8,
+          "e": 15.36,
+          "alignment": "source_word"
+        },
+        {
+          "w": "and",
+          "s": 15.36,
+          "e": 15.78,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Jude",
+          "s": 15.78,
+          "e": 15.96,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Bellingham",
+          "s": 15.96,
+          "e": 16.34,
+          "alignment": "aligned_correction"
+        }
+      ]
+    },
+    {
+      "s": 16.34,
+      "e": 18.08,
+      "text": "put intense pressure on our",
+      "tokens": [
+        {
+          "w": "put",
+          "s": 16.34,
+          "e": 16.64,
+          "alignment": "source_word"
+        },
+        {
+          "w": "intense",
+          "s": 16.64,
+          "e": 17.1,
+          "alignment": "source_word"
+        },
+        {
+          "w": "pressure",
+          "s": 17.1,
+          "e": 17.52,
+          "alignment": "source_word"
+        },
+        {
+          "w": "on",
+          "s": 17.52,
+          "e": 17.78,
+          "alignment": "source_word"
+        },
+        {
+          "w": "our",
+          "s": 17.78,
+          "e": 18.08,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 18.08,
+      "e": 18.66,
+      "text": "backline.",
+      "tokens": [
+        {
+          "w": "backline.",
+          "s": 18.08,
+          "e": 18.66,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 19.3,
+      "e": 21.0,
+      "text": "And with Diomande's non-stop running",
+      "tokens": [
+        {
+          "w": "And",
+          "s": 19.3,
+          "e": 19.38,
+          "alignment": "source_word"
+        },
+        {
+          "w": "with",
+          "s": 19.38,
+          "e": 19.6,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Diomande's",
+          "s": 19.6,
+          "e": 20.13,
+          "alignment": "aligned_correction"
+        },
+        {
+          "w": "non-stop",
+          "s": 20.13,
+          "e": 20.66,
+          "alignment": "aligned_correction"
+        },
+        {
+          "w": "running",
+          "s": 20.66,
+          "e": 21.0,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 21.0,
+      "e": 22.5,
+      "text": "and Arda Güler covering the",
+      "tokens": [
+        {
+          "w": "and",
+          "s": 21.0,
+          "e": 21.26,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Arda",
+          "s": 21.26,
+          "e": 21.56,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Güler",
+          "s": 21.56,
+          "e": 21.82,
+          "alignment": "aligned_correction"
+        },
+        {
+          "w": "covering",
+          "s": 21.82,
+          "e": 22.28,
+          "alignment": "source_word"
+        },
+        {
+          "w": "the",
+          "s": 22.28,
+          "e": 22.5,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 22.5,
+      "e": 22.94,
+      "text": "spaces,",
+      "tokens": [
+        {
+          "w": "spaces,",
+          "s": 22.5,
+          "e": 22.94,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 23.54,
+      "e": 25.38,
+      "text": "they forced Pedri and Rodri",
+      "tokens": [
+        {
+          "w": "they",
+          "s": 23.54,
+          "e": 23.76,
+          "alignment": "source_word"
+        },
+        {
+          "w": "forced",
+          "s": 23.76,
+          "e": 24.18,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Pedri",
+          "s": 24.18,
+          "e": 24.6,
+          "alignment": "source_word"
+        },
+        {
+          "w": "and",
+          "s": 24.6,
+          "e": 25.12,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Rodri",
+          "s": 25.12,
+          "e": 25.38,
+          "alignment": "aligned_correction"
+        }
+      ]
+    },
+    {
+      "s": 25.38,
+      "e": 27.56,
+      "text": "to drop way too deep",
+      "tokens": [
+        {
+          "w": "to",
+          "s": 25.38,
+          "e": 25.6,
+          "alignment": "source_word"
+        },
+        {
+          "w": "drop",
+          "s": 25.6,
+          "e": 25.96,
+          "alignment": "source_word"
+        },
+        {
+          "w": "way",
+          "s": 25.96,
+          "e": 26.3,
+          "alignment": "source_word"
+        },
+        {
+          "w": "too",
+          "s": 26.3,
+          "e": 27.16,
+          "alignment": "source_word"
+        },
+        {
+          "w": "deep",
+          "s": 27.16,
+          "e": 27.56,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 27.56,
+      "e": 28.7,
+      "text": "just to get a touch.",
+      "tokens": [
+        {
+          "w": "just",
+          "s": 27.56,
+          "e": 27.86,
+          "alignment": "source_word"
+        },
+        {
+          "w": "to",
+          "s": 27.86,
+          "e": 28.04,
+          "alignment": "source_word"
+        },
+        {
+          "w": "get",
+          "s": 28.04,
+          "e": 28.2,
+          "alignment": "source_word"
+        },
+        {
+          "w": "a",
+          "s": 28.2,
+          "e": 28.44,
+          "alignment": "source_word"
+        },
+        {
+          "w": "touch.",
+          "s": 28.44,
+          "e": 28.7,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 29.38,
+      "e": 31.1,
+      "text": "And even then, Bernardo",
+      "tokens": [
+        {
+          "w": "And",
+          "s": 29.38,
+          "e": 29.54,
+          "alignment": "source_word"
+        },
+        {
+          "w": "even",
+          "s": 29.54,
+          "e": 29.88,
+          "alignment": "source_word"
+        },
+        {
+          "w": "then,",
+          "s": 29.88,
+          "e": 30.4,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Bernardo",
+          "s": 30.6,
+          "e": 31.1,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 31.1,
+      "e": 32.98,
+      "text": "only had to take one",
+      "tokens": [
+        {
+          "w": "only",
+          "s": 31.1,
+          "e": 31.84,
+          "alignment": "source_word"
+        },
+        {
+          "w": "had",
+          "s": 31.84,
+          "e": 32.2,
+          "alignment": "source_word"
+        },
+        {
+          "w": "to",
+          "s": 32.2,
+          "e": 32.4,
+          "alignment": "source_word"
+        },
+        {
+          "w": "take",
+          "s": 32.4,
+          "e": 32.72,
+          "alignment": "source_word"
+        },
+        {
+          "w": "one",
+          "s": 32.72,
+          "e": 32.98,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 32.98,
+      "e": 34.5,
+      "text": "step to put Pedri under",
+      "tokens": [
+        {
+          "w": "step",
+          "s": 32.98,
+          "e": 33.26,
+          "alignment": "source_word"
+        },
+        {
+          "w": "to",
+          "s": 33.26,
+          "e": 33.52,
+          "alignment": "source_word"
+        },
+        {
+          "w": "put",
+          "s": 33.52,
+          "e": 33.74,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Pedri",
+          "s": 33.74,
+          "e": 34.18,
+          "alignment": "source_word"
+        },
+        {
+          "w": "under",
+          "s": 34.18,
+          "e": 34.5,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 34.5,
+      "e": 35.56,
+      "text": "immediate pressure.",
+      "tokens": [
+        {
+          "w": "immediate",
+          "s": 34.5,
+          "e": 35.04,
+          "alignment": "source_word"
+        },
+        {
+          "w": "pressure.",
+          "s": 35.04,
+          "e": 35.56,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 35.68,
+      "e": 37.64,
+      "text": "When Madrid dropped into their",
+      "tokens": [
+        {
+          "w": "When",
+          "s": 35.68,
+          "e": 35.82,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Madrid",
+          "s": 35.82,
+          "e": 36.28,
+          "alignment": "source_word"
+        },
+        {
+          "w": "dropped",
+          "s": 36.28,
+          "e": 36.88,
+          "alignment": "source_word"
+        },
+        {
+          "w": "into",
+          "s": 36.88,
+          "e": 37.3,
+          "alignment": "source_word"
+        },
+        {
+          "w": "their",
+          "s": 37.3,
+          "e": 37.64,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 37.64,
+      "e": 39.48,
+      "text": "own half, Mourinho got his",
+      "tokens": [
+        {
+          "w": "own",
+          "s": 37.64,
+          "e": 37.94,
+          "alignment": "source_word"
+        },
+        {
+          "w": "half,",
+          "s": 37.94,
+          "e": 38.34,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Mourinho",
+          "s": 38.72,
+          "e": 38.9,
+          "alignment": "source_word"
+        },
+        {
+          "w": "got",
+          "s": 38.9,
+          "e": 39.22,
+          "alignment": "source_word"
+        },
+        {
+          "w": "his",
+          "s": 39.22,
+          "e": 39.48,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 39.48,
+      "e": 40.6,
+      "text": "setup spot on.",
+      "tokens": [
+        {
+          "w": "setup",
+          "s": 39.48,
+          "e": 39.9,
+          "alignment": "aligned_correction"
+        },
+        {
+          "w": "spot",
+          "s": 39.9,
+          "e": 40.22,
+          "alignment": "source_word"
+        },
+        {
+          "w": "on.",
+          "s": 40.22,
+          "e": 40.6,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 40.6,
+      "e": 42.58,
+      "text": "He kept Mbappé and Diomande",
+      "tokens": [
+        {
+          "w": "He",
+          "s": 40.6,
+          "e": 41.08,
+          "alignment": "source_word"
+        },
+        {
+          "w": "kept",
+          "s": 41.08,
+          "e": 41.38,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Mbappé",
+          "s": 41.38,
+          "e": 41.82,
+          "alignment": "source_word"
+        },
+        {
+          "w": "and",
+          "s": 41.82,
+          "e": 42.08,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Diomande",
+          "s": 42.08,
+          "e": 42.58,
+          "alignment": "aligned_correction"
+        }
+      ]
+    },
+    {
+      "s": 42.58,
+      "e": 44.42,
+      "text": "high up the pitch, while",
+      "tokens": [
+        {
+          "w": "high",
+          "s": 42.58,
+          "e": 42.96,
+          "alignment": "source_word"
+        },
+        {
+          "w": "up",
+          "s": 42.96,
+          "e": 43.3,
+          "alignment": "source_word"
+        },
+        {
+          "w": "the",
+          "s": 43.3,
+          "e": 43.52,
+          "alignment": "source_word"
+        },
+        {
+          "w": "pitch,",
+          "s": 43.52,
+          "e": 43.78,
+          "alignment": "source_word"
+        },
+        {
+          "w": "while",
+          "s": 44.1,
+          "e": 44.42,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 44.42,
+      "e": 46.08,
+      "text": "placing Bellingham perfectly",
+      "tokens": [
+        {
+          "w": "placing",
+          "s": 44.42,
+          "e": 44.9,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Bellingham",
+          "s": 44.9,
+          "e": 45.44,
+          "alignment": "aligned_correction"
+        },
+        {
+          "w": "perfectly",
+          "s": 45.44,
+          "e": 46.08,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 46.08,
+      "e": 48.2,
+      "text": "in line with their pivot",
+      "tokens": [
+        {
+          "w": "in",
+          "s": 46.08,
+          "e": 46.72,
+          "alignment": "source_word"
+        },
+        {
+          "w": "line",
+          "s": 46.72,
+          "e": 47.04,
+          "alignment": "source_word"
+        },
+        {
+          "w": "with",
+          "s": 47.04,
+          "e": 47.62,
+          "alignment": "source_word"
+        },
+        {
+          "w": "their",
+          "s": 47.62,
+          "e": 47.86,
+          "alignment": "source_word"
+        },
+        {
+          "w": "pivot",
+          "s": 47.86,
+          "e": 48.2,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 48.2,
+      "e": 49.84,
+      "text": "to block all central",
+      "tokens": [
+        {
+          "w": "to",
+          "s": 48.2,
+          "e": 48.66,
+          "alignment": "source_word"
+        },
+        {
+          "w": "block",
+          "s": 48.66,
+          "e": 49.06,
+          "alignment": "source_word"
+        },
+        {
+          "w": "all",
+          "s": 49.06,
+          "e": 49.44,
+          "alignment": "source_word"
+        },
+        {
+          "w": "central",
+          "s": 49.44,
+          "e": 49.84,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 49.84,
+      "e": 50.42,
+      "text": "spaces.",
+      "tokens": [
+        {
+          "w": "spaces.",
+          "s": 49.84,
+          "e": 50.42,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 50.9,
+      "e": 52.66,
+      "text": "But honestly, Hansi Flick's",
+      "tokens": [
+        {
+          "w": "But",
+          "s": 50.9,
+          "e": 51.04,
+          "alignment": "source_word"
+        },
+        {
+          "w": "honestly,",
+          "s": 51.04,
+          "e": 51.64,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Hansi",
+          "s": 51.94,
+          "e": 52.22,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Flick's",
+          "s": 52.22,
+          "e": 52.66,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 52.66,
+      "e": 54.76,
+      "text": "stubbornness with his high defensive",
+      "tokens": [
+        {
+          "w": "stubbornness",
+          "s": 52.66,
+          "e": 53.46,
+          "alignment": "source_word"
+        },
+        {
+          "w": "with",
+          "s": 53.46,
+          "e": 53.72,
+          "alignment": "source_word"
+        },
+        {
+          "w": "his",
+          "s": 53.72,
+          "e": 53.96,
+          "alignment": "source_word"
+        },
+        {
+          "w": "high",
+          "s": 53.96,
+          "e": 54.28,
+          "alignment": "source_word"
+        },
+        {
+          "w": "defensive",
+          "s": 54.28,
+          "e": 54.76,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 54.76,
+      "e": 56.62,
+      "text": "line really cost us.",
+      "tokens": [
+        {
+          "w": "line",
+          "s": 54.76,
+          "e": 55.36,
+          "alignment": "source_word"
+        },
+        {
+          "w": "really",
+          "s": 55.36,
+          "e": 55.92,
+          "alignment": "source_word"
+        },
+        {
+          "w": "cost",
+          "s": 55.92,
+          "e": 56.14,
+          "alignment": "source_word"
+        },
+        {
+          "w": "us.",
+          "s": 56.14,
+          "e": 56.62,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 57.0,
+      "e": 58.78,
+      "text": "Against this Madrid team, it",
+      "tokens": [
+        {
+          "w": "Against",
+          "s": 57.0,
+          "e": 57.3,
+          "alignment": "source_word"
+        },
+        {
+          "w": "this",
+          "s": 57.3,
+          "e": 57.7,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Madrid",
+          "s": 57.7,
+          "e": 58.0,
+          "alignment": "source_word"
+        },
+        {
+          "w": "team,",
+          "s": 58.0,
+          "e": 58.34,
+          "alignment": "source_word"
+        },
+        {
+          "w": "it",
+          "s": 58.68,
+          "e": 58.78,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 58.78,
+      "e": 60.14,
+      "text": "gave them endless space in",
+      "tokens": [
+        {
+          "w": "gave",
+          "s": 58.78,
+          "e": 59.08,
+          "alignment": "source_word"
+        },
+        {
+          "w": "them",
+          "s": 59.08,
+          "e": 59.28,
+          "alignment": "source_word"
+        },
+        {
+          "w": "endless",
+          "s": 59.28,
+          "e": 59.8,
+          "alignment": "source_word"
+        },
+        {
+          "w": "space",
+          "s": 59.8,
+          "e": 59.97,
+          "alignment": "aligned_correction"
+        },
+        {
+          "w": "in",
+          "s": 59.97,
+          "e": 60.14,
+          "alignment": "aligned_correction"
+        }
+      ]
+    },
+    {
+      "s": 60.14,
+      "e": 60.7,
+      "text": "behind.",
+      "tokens": [
+        {
+          "w": "behind.",
+          "s": 60.14,
+          "e": 60.7,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 61.28,
+      "e": 63.48,
+      "text": "Both Diomande and Camavinga",
+      "tokens": [
+        {
+          "w": "Both",
+          "s": 61.28,
+          "e": 61.54,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Diomande",
+          "s": 61.54,
+          "e": 62.3,
+          "alignment": "aligned_correction"
+        },
+        {
+          "w": "and",
+          "s": 62.3,
+          "e": 62.84,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Camavinga",
+          "s": 62.84,
+          "e": 63.48,
+          "alignment": "aligned_correction"
+        }
+      ]
+    },
+    {
+      "s": 63.48,
+      "e": 65.5,
+      "text": "easily exploited that high line",
+      "tokens": [
+        {
+          "w": "easily",
+          "s": 63.48,
+          "e": 63.88,
+          "alignment": "source_word"
+        },
+        {
+          "w": "exploited",
+          "s": 63.88,
+          "e": 64.52,
+          "alignment": "source_word"
+        },
+        {
+          "w": "that",
+          "s": 64.52,
+          "e": 64.8,
+          "alignment": "source_word"
+        },
+        {
+          "w": "high",
+          "s": 64.8,
+          "e": 65.16,
+          "alignment": "source_word"
+        },
+        {
+          "w": "line",
+          "s": 65.16,
+          "e": 65.5,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 65.5,
+      "e": 67.06,
+      "text": "to set up goals for",
+      "tokens": [
+        {
+          "w": "to",
+          "s": 65.5,
+          "e": 65.96,
+          "alignment": "source_word"
+        },
+        {
+          "w": "set",
+          "s": 65.96,
+          "e": 66.28,
+          "alignment": "source_word"
+        },
+        {
+          "w": "up",
+          "s": 66.28,
+          "e": 66.52,
+          "alignment": "source_word"
+        },
+        {
+          "w": "goals",
+          "s": 66.52,
+          "e": 66.8,
+          "alignment": "source_word"
+        },
+        {
+          "w": "for",
+          "s": 66.8,
+          "e": 67.06,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 67.06,
+      "e": 67.64,
+      "text": "Mbappé.",
+      "tokens": [
+        {
+          "w": "Mbappé.",
+          "s": 67.06,
+          "e": 67.64,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 67.64,
+      "e": 69.52,
+      "text": "Madrid also set a very",
+      "tokens": [
+        {
+          "w": "Madrid",
+          "s": 67.64,
+          "e": 68.38,
+          "alignment": "source_word"
+        },
+        {
+          "w": "also",
+          "s": 68.38,
+          "e": 68.78,
+          "alignment": "source_word"
+        },
+        {
+          "w": "set",
+          "s": 68.78,
+          "e": 69.06,
+          "alignment": "source_word"
+        },
+        {
+          "w": "a",
+          "s": 69.06,
+          "e": 69.32,
+          "alignment": "source_word"
+        },
+        {
+          "w": "very",
+          "s": 69.32,
+          "e": 69.52,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 69.52,
+      "e": 70.86,
+      "text": "clear trap on the wings.",
+      "tokens": [
+        {
+          "w": "clear",
+          "s": 69.52,
+          "e": 69.82,
+          "alignment": "source_word"
+        },
+        {
+          "w": "trap",
+          "s": 69.82,
+          "e": 70.24,
+          "alignment": "source_word"
+        },
+        {
+          "w": "on",
+          "s": 70.24,
+          "e": 70.46,
+          "alignment": "source_word"
+        },
+        {
+          "w": "the",
+          "s": 70.46,
+          "e": 70.6,
+          "alignment": "source_word"
+        },
+        {
+          "w": "wings.",
+          "s": 70.6,
+          "e": 70.86,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 71.18,
+      "e": 72.68,
+      "text": "They gave our wingers all",
+      "tokens": [
+        {
+          "w": "They",
+          "s": 71.18,
+          "e": 71.3,
+          "alignment": "source_word"
+        },
+        {
+          "w": "gave",
+          "s": 71.3,
+          "e": 71.62,
+          "alignment": "source_word"
+        },
+        {
+          "w": "our",
+          "s": 71.62,
+          "e": 71.92,
+          "alignment": "source_word"
+        },
+        {
+          "w": "wingers",
+          "s": 71.92,
+          "e": 72.3,
+          "alignment": "source_word"
+        },
+        {
+          "w": "all",
+          "s": 72.3,
+          "e": 72.68,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 72.68,
+      "e": 74.06,
+      "text": "the space near the touchline",
+      "tokens": [
+        {
+          "w": "the",
+          "s": 72.68,
+          "e": 72.86,
+          "alignment": "source_word"
+        },
+        {
+          "w": "space",
+          "s": 72.86,
+          "e": 73.16,
+          "alignment": "source_word"
+        },
+        {
+          "w": "near",
+          "s": 73.16,
+          "e": 73.4,
+          "alignment": "source_word"
+        },
+        {
+          "w": "the",
+          "s": 73.4,
+          "e": 73.68,
+          "alignment": "source_word"
+        },
+        {
+          "w": "touchline",
+          "s": 73.68,
+          "e": 74.06,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 74.06,
+      "e": 75.8,
+      "text": "but completely packed the central",
+      "tokens": [
+        {
+          "w": "but",
+          "s": 74.06,
+          "e": 74.26,
+          "alignment": "source_word"
+        },
+        {
+          "w": "completely",
+          "s": 74.26,
+          "e": 74.86,
+          "alignment": "source_word"
+        },
+        {
+          "w": "packed",
+          "s": 74.86,
+          "e": 75.22,
+          "alignment": "source_word"
+        },
+        {
+          "w": "the",
+          "s": 75.22,
+          "e": 75.48,
+          "alignment": "source_word"
+        },
+        {
+          "w": "central",
+          "s": 75.48,
+          "e": 75.8,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 75.8,
+      "e": 76.36,
+      "text": "areas.",
+      "tokens": [
+        {
+          "w": "areas.",
+          "s": 75.8,
+          "e": 76.36,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 77.1,
+      "e": 78.58,
+      "text": "Just that one tactical move",
+      "tokens": [
+        {
+          "w": "Just",
+          "s": 77.1,
+          "e": 77.26,
+          "alignment": "source_word"
+        },
+        {
+          "w": "that",
+          "s": 77.26,
+          "e": 77.5,
+          "alignment": "source_word"
+        },
+        {
+          "w": "one",
+          "s": 77.5,
+          "e": 77.7,
+          "alignment": "source_word"
+        },
+        {
+          "w": "tactical",
+          "s": 77.7,
+          "e": 78.06,
+          "alignment": "source_word"
+        },
+        {
+          "w": "move",
+          "s": 78.06,
+          "e": 78.58,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 78.94,
+      "e": 79.64,
+      "text": "completely",
+      "tokens": [
+        {
+          "w": "completely",
+          "s": 78.94,
+          "e": 79.64,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 79.64,
+      "e": 81.34,
+      "text": "neutralized",
+      "tokens": [
+        {
+          "w": "neutralized",
+          "s": 79.64,
+          "e": 81.34,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 81.34,
+      "e": 82.2,
+      "text": "Lamine Yamal.",
+      "tokens": [
+        {
+          "w": "Lamine",
+          "s": 81.34,
+          "e": 81.77,
+          "alignment": "aligned_correction"
+        },
+        {
+          "w": "Yamal.",
+          "s": 81.77,
+          "e": 82.2,
+          "alignment": "aligned_correction"
+        }
+      ]
+    },
+    {
+      "s": 82.62,
+      "e": 83.92,
+      "text": "In the middle, Dean Huijsen",
+      "tokens": [
+        {
+          "w": "In",
+          "s": 82.62,
+          "e": 82.74,
+          "alignment": "source_word"
+        },
+        {
+          "w": "the",
+          "s": 82.74,
+          "e": 82.9,
+          "alignment": "source_word"
+        },
+        {
+          "w": "middle,",
+          "s": 82.9,
+          "e": 83.14,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Dean",
+          "s": 83.42,
+          "e": 83.67,
+          "alignment": "aligned_correction"
+        },
+        {
+          "w": "Huijsen",
+          "s": 83.67,
+          "e": 83.92,
+          "alignment": "aligned_correction"
+        }
+      ]
+    },
+    {
+      "s": 83.92,
+      "e": 85.42,
+      "text": "was super aggressive with his",
+      "tokens": [
+        {
+          "w": "was",
+          "s": 83.92,
+          "e": 84.22,
+          "alignment": "source_word"
+        },
+        {
+          "w": "super",
+          "s": 84.22,
+          "e": 84.54,
+          "alignment": "source_word"
+        },
+        {
+          "w": "aggressive",
+          "s": 84.54,
+          "e": 84.94,
+          "alignment": "source_word"
+        },
+        {
+          "w": "with",
+          "s": 84.94,
+          "e": 85.2,
+          "alignment": "source_word"
+        },
+        {
+          "w": "his",
+          "s": 85.2,
+          "e": 85.42,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 85.42,
+      "e": 87.3,
+      "text": "interceptions and completely crushed",
+      "tokens": [
+        {
+          "w": "interceptions",
+          "s": 85.42,
+          "e": 86.06,
+          "alignment": "aligned_correction"
+        },
+        {
+          "w": "and",
+          "s": 86.06,
+          "e": 86.4,
+          "alignment": "source_word"
+        },
+        {
+          "w": "completely",
+          "s": 86.4,
+          "e": 86.88,
+          "alignment": "source_word"
+        },
+        {
+          "w": "crushed",
+          "s": 86.88,
+          "e": 87.3,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 87.3,
+      "e": 87.96,
+      "text": "Fermín López,",
+      "tokens": [
+        {
+          "w": "Fermín",
+          "s": 87.3,
+          "e": 87.66,
+          "alignment": "aligned_correction"
+        },
+        {
+          "w": "López,",
+          "s": 87.66,
+          "e": 87.96,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 88.4,
+      "e": 90.06,
+      "text": "giving him no room to",
+      "tokens": [
+        {
+          "w": "giving",
+          "s": 88.4,
+          "e": 88.66,
+          "alignment": "source_word"
+        },
+        {
+          "w": "him",
+          "s": 88.66,
+          "e": 89.0,
+          "alignment": "source_word"
+        },
+        {
+          "w": "no",
+          "s": 89.0,
+          "e": 89.6,
+          "alignment": "source_word"
+        },
+        {
+          "w": "room",
+          "s": 89.6,
+          "e": 89.86,
+          "alignment": "source_word"
+        },
+        {
+          "w": "to",
+          "s": 89.86,
+          "e": 90.06,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 90.06,
+      "e": 90.5,
+      "text": "operate.",
+      "tokens": [
+        {
+          "w": "operate.",
+          "s": 90.06,
+          "e": 90.5,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 90.88,
+      "e": 92.38,
+      "text": "We also really suffered when",
+      "tokens": [
+        {
+          "w": "We",
+          "s": 90.88,
+          "e": 91.02,
+          "alignment": "source_word"
+        },
+        {
+          "w": "also",
+          "s": 91.02,
+          "e": 91.36,
+          "alignment": "source_word"
+        },
+        {
+          "w": "really",
+          "s": 91.36,
+          "e": 91.72,
+          "alignment": "source_word"
+        },
+        {
+          "w": "suffered",
+          "s": 91.72,
+          "e": 92.04,
+          "alignment": "source_word"
+        },
+        {
+          "w": "when",
+          "s": 92.04,
+          "e": 92.38,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 92.38,
+      "e": 93.38,
+      "text": "Espart got injured.",
+      "tokens": [
+        {
+          "w": "Espart",
+          "s": 92.38,
+          "e": 92.62,
+          "alignment": "aligned_correction"
+        },
+        {
+          "w": "got",
+          "s": 92.62,
+          "e": 92.94,
+          "alignment": "source_word"
+        },
+        {
+          "w": "injured.",
+          "s": 92.94,
+          "e": 93.38,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 93.38,
+      "e": 95.4,
+      "text": "His injury completely killed",
+      "tokens": [
+        {
+          "w": "His",
+          "s": 93.38,
+          "e": 93.84,
+          "alignment": "source_word"
+        },
+        {
+          "w": "injury",
+          "s": 93.84,
+          "e": 94.26,
+          "alignment": "source_word"
+        },
+        {
+          "w": "completely",
+          "s": 94.26,
+          "e": 94.96,
+          "alignment": "source_word"
+        },
+        {
+          "w": "killed",
+          "s": 94.96,
+          "e": 95.4,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 95.4,
+      "e": 97.4,
+      "text": "our attacking threat against Marc",
+      "tokens": [
+        {
+          "w": "our",
+          "s": 95.4,
+          "e": 95.68,
+          "alignment": "source_word"
+        },
+        {
+          "w": "attacking",
+          "s": 95.68,
+          "e": 96.14,
+          "alignment": "source_word"
+        },
+        {
+          "w": "threat",
+          "s": 96.14,
+          "e": 96.56,
+          "alignment": "source_word"
+        },
+        {
+          "w": "against",
+          "s": 96.56,
+          "e": 96.98,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Marc",
+          "s": 96.98,
+          "e": 97.4,
+          "alignment": "aligned_correction"
+        }
+      ]
+    },
+    {
+      "s": 97.4,
+      "e": 97.82,
+      "text": "Cucurella.",
+      "tokens": [
+        {
+          "w": "Cucurella.",
+          "s": 97.4,
+          "e": 97.82,
+          "alignment": "aligned_correction"
+        }
+      ]
+    },
+    {
+      "s": 98.38,
+      "e": 100.08,
+      "text": "João Cancelo had a really",
+      "tokens": [
+        {
+          "w": "João",
+          "s": 98.38,
+          "e": 98.62,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Cancelo",
+          "s": 98.62,
+          "e": 99.14,
+          "alignment": "source_word"
+        },
+        {
+          "w": "had",
+          "s": 99.14,
+          "e": 99.64,
+          "alignment": "source_word"
+        },
+        {
+          "w": "a",
+          "s": 99.64,
+          "e": 99.84,
+          "alignment": "source_word"
+        },
+        {
+          "w": "really",
+          "s": 99.84,
+          "e": 100.08,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 100.08,
+      "e": 101.62,
+      "text": "poor game operating near the",
+      "tokens": [
+        {
+          "w": "poor",
+          "s": 100.08,
+          "e": 100.36,
+          "alignment": "source_word"
+        },
+        {
+          "w": "game",
+          "s": 100.36,
+          "e": 100.58,
+          "alignment": "source_word"
+        },
+        {
+          "w": "operating",
+          "s": 100.58,
+          "e": 101.04,
+          "alignment": "source_word"
+        },
+        {
+          "w": "near",
+          "s": 101.04,
+          "e": 101.38,
+          "alignment": "source_word"
+        },
+        {
+          "w": "the",
+          "s": 101.38,
+          "e": 101.62,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 101.62,
+      "e": 102.16,
+      "text": "touchline.",
+      "tokens": [
+        {
+          "w": "touchline.",
+          "s": 101.62,
+          "e": 102.16,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 102.88,
+      "e": 104.58,
+      "text": "And although Alejandro Balde",
+      "tokens": [
+        {
+          "w": "And",
+          "s": 102.88,
+          "e": 102.98,
+          "alignment": "source_word"
+        },
+        {
+          "w": "although",
+          "s": 102.98,
+          "e": 103.34,
+          "alignment": "aligned_correction"
+        },
+        {
+          "w": "Alejandro",
+          "s": 103.34,
+          "e": 103.98,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Balde",
+          "s": 103.98,
+          "e": 104.58,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 104.58,
+      "e": 106.52,
+      "text": "played a decent game,",
+      "tokens": [
+        {
+          "w": "played",
+          "s": 104.58,
+          "e": 105.5,
+          "alignment": "source_word"
+        },
+        {
+          "w": "a",
+          "s": 105.5,
+          "e": 105.82,
+          "alignment": "source_word"
+        },
+        {
+          "w": "decent",
+          "s": 105.82,
+          "e": 106.08,
+          "alignment": "source_word"
+        },
+        {
+          "w": "game,",
+          "s": 106.08,
+          "e": 106.52,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 106.88,
+      "e": 108.46,
+      "text": "it just wasn't enough to",
+      "tokens": [
+        {
+          "w": "it",
+          "s": 106.88,
+          "e": 107.14,
+          "alignment": "source_word"
+        },
+        {
+          "w": "just",
+          "s": 107.14,
+          "e": 107.44,
+          "alignment": "source_word"
+        },
+        {
+          "w": "wasn't",
+          "s": 107.44,
+          "e": 107.86,
+          "alignment": "source_word"
+        },
+        {
+          "w": "enough",
+          "s": 107.86,
+          "e": 108.24,
+          "alignment": "source_word"
+        },
+        {
+          "w": "to",
+          "s": 108.24,
+          "e": 108.46,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 108.46,
+      "e": 109.48,
+      "text": "fix the situation.",
+      "tokens": [
+        {
+          "w": "fix",
+          "s": 108.46,
+          "e": 108.68,
+          "alignment": "source_word"
+        },
+        {
+          "w": "the",
+          "s": 108.68,
+          "e": 108.9,
+          "alignment": "source_word"
+        },
+        {
+          "w": "situation.",
+          "s": 108.9,
+          "e": 109.48,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 109.72,
+      "e": 111.08,
+      "text": "Now the second half actually",
+      "tokens": [
+        {
+          "w": "Now",
+          "s": 109.72,
+          "e": 109.9,
+          "alignment": "source_word"
+        },
+        {
+          "w": "the",
+          "s": 109.9,
+          "e": 110.16,
+          "alignment": "source_word"
+        },
+        {
+          "w": "second",
+          "s": 110.16,
+          "e": 110.44,
+          "alignment": "source_word"
+        },
+        {
+          "w": "half",
+          "s": 110.44,
+          "e": 110.62,
+          "alignment": "source_word"
+        },
+        {
+          "w": "actually",
+          "s": 110.62,
+          "e": 111.08,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 111.08,
+      "e": 112.3,
+      "text": "started well for us.",
+      "tokens": [
+        {
+          "w": "started",
+          "s": 111.08,
+          "e": 111.52,
+          "alignment": "source_word"
+        },
+        {
+          "w": "well",
+          "s": 111.52,
+          "e": 111.84,
+          "alignment": "source_word"
+        },
+        {
+          "w": "for",
+          "s": 111.84,
+          "e": 112.06,
+          "alignment": "source_word"
+        },
+        {
+          "w": "us.",
+          "s": 112.06,
+          "e": 112.3,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 112.48,
+      "e": 113.78,
+      "text": "We scored a great goal",
+      "tokens": [
+        {
+          "w": "We",
+          "s": 112.48,
+          "e": 112.6,
+          "alignment": "source_word"
+        },
+        {
+          "w": "scored",
+          "s": 112.6,
+          "e": 112.96,
+          "alignment": "source_word"
+        },
+        {
+          "w": "a",
+          "s": 112.96,
+          "e": 113.2,
+          "alignment": "source_word"
+        },
+        {
+          "w": "great",
+          "s": 113.2,
+          "e": 113.48,
+          "alignment": "source_word"
+        },
+        {
+          "w": "goal",
+          "s": 113.48,
+          "e": 113.78,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 113.78,
+      "e": 114.58,
+      "text": "from a corner.",
+      "tokens": [
+        {
+          "w": "from",
+          "s": 113.78,
+          "e": 114.08,
+          "alignment": "source_word"
+        },
+        {
+          "w": "a",
+          "s": 114.08,
+          "e": 114.32,
+          "alignment": "source_word"
+        },
+        {
+          "w": "corner.",
+          "s": 114.32,
+          "e": 114.58,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 114.9,
+      "e": 116.2,
+      "text": "Yes, we usually played them",
+      "tokens": [
+        {
+          "w": "Yes,",
+          "s": 114.9,
+          "e": 115.1,
+          "alignment": "source_word"
+        },
+        {
+          "w": "we",
+          "s": 115.16,
+          "e": 115.34,
+          "alignment": "source_word"
+        },
+        {
+          "w": "usually",
+          "s": 115.34,
+          "e": 115.64,
+          "alignment": "source_word"
+        },
+        {
+          "w": "played",
+          "s": 115.64,
+          "e": 116.0,
+          "alignment": "source_word"
+        },
+        {
+          "w": "them",
+          "s": 116.0,
+          "e": 116.2,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 116.2,
+      "e": 118.22,
+      "text": "short, but this time you",
+      "tokens": [
+        {
+          "w": "short,",
+          "s": 116.2,
+          "e": 116.54,
+          "alignment": "source_word"
+        },
+        {
+          "w": "but",
+          "s": 116.84,
+          "e": 117.1,
+          "alignment": "source_word"
+        },
+        {
+          "w": "this",
+          "s": 117.1,
+          "e": 117.34,
+          "alignment": "source_word"
+        },
+        {
+          "w": "time",
+          "s": 117.34,
+          "e": 117.68,
+          "alignment": "source_word"
+        },
+        {
+          "w": "you",
+          "s": 117.68,
+          "e": 118.22,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 118.22,
+      "e": 119.94,
+      "text": "could clearly see a",
+      "tokens": [
+        {
+          "w": "could",
+          "s": 118.22,
+          "e": 118.5,
+          "alignment": "source_word"
+        },
+        {
+          "w": "clearly",
+          "s": 118.5,
+          "e": 119.0,
+          "alignment": "source_word"
+        },
+        {
+          "w": "see",
+          "s": 119.0,
+          "e": 119.56,
+          "alignment": "source_word"
+        },
+        {
+          "w": "a",
+          "s": 119.56,
+          "e": 119.94,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 119.94,
+      "e": 121.8,
+      "text": "well-rehearsed plan behind it.",
+      "tokens": [
+        {
+          "w": "well-rehearsed",
+          "s": 119.94,
+          "e": 120.68,
+          "alignment": "aligned_correction"
+        },
+        {
+          "w": "plan",
+          "s": 120.68,
+          "e": 120.96,
+          "alignment": "source_word"
+        },
+        {
+          "w": "behind",
+          "s": 120.96,
+          "e": 121.5,
+          "alignment": "source_word"
+        },
+        {
+          "w": "it.",
+          "s": 121.5,
+          "e": 121.8,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 121.8,
+      "e": 123.42,
+      "text": "As for the substitutions,",
+      "tokens": [
+        {
+          "w": "As",
+          "s": 121.8,
+          "e": 122.1,
+          "alignment": "source_word"
+        },
+        {
+          "w": "for",
+          "s": 122.1,
+          "e": 122.4,
+          "alignment": "source_word"
+        },
+        {
+          "w": "the",
+          "s": 122.4,
+          "e": 122.62,
+          "alignment": "source_word"
+        },
+        {
+          "w": "substitutions,",
+          "s": 122.62,
+          "e": 123.42,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 123.8,
+      "e": 125.22,
+      "text": "personally I wasn't a fan",
+      "tokens": [
+        {
+          "w": "personally",
+          "s": 123.8,
+          "e": 124.28,
+          "alignment": "source_word"
+        },
+        {
+          "w": "I",
+          "s": 124.28,
+          "e": 124.62,
+          "alignment": "source_word"
+        },
+        {
+          "w": "wasn't",
+          "s": 124.62,
+          "e": 124.88,
+          "alignment": "source_word"
+        },
+        {
+          "w": "a",
+          "s": 124.88,
+          "e": 125.12,
+          "alignment": "source_word"
+        },
+        {
+          "w": "fan",
+          "s": 125.12,
+          "e": 125.22,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 125.22,
+      "e": 126.34,
+      "text": "of bringing Frenkie de Jong",
+      "tokens": [
+        {
+          "w": "of",
+          "s": 125.22,
+          "e": 125.4,
+          "alignment": "source_word"
+        },
+        {
+          "w": "bringing",
+          "s": 125.4,
+          "e": 125.66,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Frenkie",
+          "s": 125.66,
+          "e": 125.887,
+          "alignment": "aligned_correction"
+        },
+        {
+          "w": "de",
+          "s": 125.887,
+          "e": 126.113,
+          "alignment": "aligned_correction"
+        },
+        {
+          "w": "Jong",
+          "s": 126.113,
+          "e": 126.34,
+          "alignment": "aligned_correction"
+        }
+      ]
+    },
+    {
+      "s": 126.34,
+      "e": 127.96,
+      "text": "on, but with Dani Olmo",
+      "tokens": [
+        {
+          "w": "on,",
+          "s": 126.34,
+          "e": 126.78,
+          "alignment": "source_word"
+        },
+        {
+          "w": "but",
+          "s": 126.98,
+          "e": 127.2,
+          "alignment": "source_word"
+        },
+        {
+          "w": "with",
+          "s": 127.2,
+          "e": 127.4,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Dani",
+          "s": 127.4,
+          "e": 127.72,
+          "alignment": "aligned_correction"
+        },
+        {
+          "w": "Olmo",
+          "s": 127.72,
+          "e": 127.96,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 127.96,
+      "e": 129.79,
+      "text": "injured, Flick's hands",
+      "tokens": [
+        {
+          "w": "injured,",
+          "s": 127.96,
+          "e": 128.58,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Flick's",
+          "s": 128.9,
+          "e": 129.28,
+          "alignment": "source_word"
+        },
+        {
+          "w": "hands",
+          "s": 129.28,
+          "e": 129.79,
+          "alignment": "aligned_correction"
+        }
+      ]
+    },
+    {
+      "s": 129.79,
+      "e": 131.56,
+      "text": "were completely tied.",
+      "tokens": [
+        {
+          "w": "were",
+          "s": 129.79,
+          "e": 130.3,
+          "alignment": "aligned_correction"
+        },
+        {
+          "w": "completely",
+          "s": 130.3,
+          "e": 131.06,
+          "alignment": "source_word"
+        },
+        {
+          "w": "tied.",
+          "s": 131.06,
+          "e": 131.56,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 132.44,
+      "e": 133.44,
+      "text": "On a positive note,",
+      "tokens": [
+        {
+          "w": "On",
+          "s": 132.44,
+          "e": 132.56,
+          "alignment": "source_word"
+        },
+        {
+          "w": "a",
+          "s": 132.56,
+          "e": 132.76,
+          "alignment": "source_word"
+        },
+        {
+          "w": "positive",
+          "s": 132.76,
+          "e": 133.02,
+          "alignment": "source_word"
+        },
+        {
+          "w": "note,",
+          "s": 133.02,
+          "e": 133.44,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 133.86,
+      "e": 135.52,
+      "text": "Gordon played a fantastic game.",
+      "tokens": [
+        {
+          "w": "Gordon",
+          "s": 133.86,
+          "e": 134.16,
+          "alignment": "source_word"
+        },
+        {
+          "w": "played",
+          "s": 134.16,
+          "e": 134.5,
+          "alignment": "source_word"
+        },
+        {
+          "w": "a",
+          "s": 134.5,
+          "e": 134.72,
+          "alignment": "source_word"
+        },
+        {
+          "w": "fantastic",
+          "s": 134.72,
+          "e": 135.14,
+          "alignment": "source_word"
+        },
+        {
+          "w": "game.",
+          "s": 135.14,
+          "e": 135.52,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 135.78,
+      "e": 137.34,
+      "text": "The fact that he stayed",
+      "tokens": [
+        {
+          "w": "The",
+          "s": 135.78,
+          "e": 135.94,
+          "alignment": "aligned_correction"
+        },
+        {
+          "w": "fact",
+          "s": 135.94,
+          "e": 136.22,
+          "alignment": "source_word"
+        },
+        {
+          "w": "that",
+          "s": 136.22,
+          "e": 136.44,
+          "alignment": "source_word"
+        },
+        {
+          "w": "he",
+          "s": 136.44,
+          "e": 136.8,
+          "alignment": "source_word"
+        },
+        {
+          "w": "stayed",
+          "s": 136.8,
+          "e": 137.34,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 137.34,
+      "e": 139.5,
+      "text": "on until the 85th",
+      "tokens": [
+        {
+          "w": "on",
+          "s": 137.34,
+          "e": 137.8,
+          "alignment": "source_word"
+        },
+        {
+          "w": "until",
+          "s": 137.8,
+          "e": 138.56,
+          "alignment": "source_word"
+        },
+        {
+          "w": "the",
+          "s": 138.56,
+          "e": 138.86,
+          "alignment": "source_word"
+        },
+        {
+          "w": "85th",
+          "s": 138.86,
+          "e": 139.5,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 139.5,
+      "e": 141.18,
+      "text": "minute was totally deserved.",
+      "tokens": [
+        {
+          "w": "minute",
+          "s": 139.5,
+          "e": 139.82,
+          "alignment": "source_word"
+        },
+        {
+          "w": "was",
+          "s": 139.82,
+          "e": 140.14,
+          "alignment": "source_word"
+        },
+        {
+          "w": "totally",
+          "s": 140.14,
+          "e": 140.56,
+          "alignment": "source_word"
+        },
+        {
+          "w": "deserved.",
+          "s": 140.56,
+          "e": 141.18,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 141.74,
+      "e": 143.58,
+      "text": "Bringing Karim Adeyemi on for",
+      "tokens": [
+        {
+          "w": "Bringing",
+          "s": 141.74,
+          "e": 142.02,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Karim",
+          "s": 142.02,
+          "e": 142.5,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Adeyemi",
+          "s": 142.5,
+          "e": 142.88,
+          "alignment": "source_word"
+        },
+        {
+          "w": "on",
+          "s": 142.88,
+          "e": 143.26,
+          "alignment": "source_word"
+        },
+        {
+          "w": "for",
+          "s": 143.26,
+          "e": 143.58,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 143.58,
+      "e": 144.88,
+      "text": "him made sense.",
+      "tokens": [
+        {
+          "w": "him",
+          "s": 143.58,
+          "e": 143.88,
+          "alignment": "source_word"
+        },
+        {
+          "w": "made",
+          "s": 143.88,
+          "e": 144.38,
+          "alignment": "source_word"
+        },
+        {
+          "w": "sense.",
+          "s": 144.38,
+          "e": 144.88,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 145.1,
+      "e": 146.94,
+      "text": "Adeyemi has had some",
+      "tokens": [
+        {
+          "w": "Adeyemi",
+          "s": 145.1,
+          "e": 145.5,
+          "alignment": "source_word"
+        },
+        {
+          "w": "has",
+          "s": 145.5,
+          "e": 145.84,
+          "alignment": "source_word"
+        },
+        {
+          "w": "had",
+          "s": 145.84,
+          "e": 146.38,
+          "alignment": "source_word"
+        },
+        {
+          "w": "some",
+          "s": 146.38,
+          "e": 146.94,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 146.94,
+      "e": 148.46,
+      "text": "great games for us.",
+      "tokens": [
+        {
+          "w": "great",
+          "s": 146.94,
+          "e": 147.4,
+          "alignment": "source_word"
+        },
+        {
+          "w": "games",
+          "s": 147.4,
+          "e": 147.86,
+          "alignment": "source_word"
+        },
+        {
+          "w": "for",
+          "s": 147.86,
+          "e": 148.14,
+          "alignment": "source_word"
+        },
+        {
+          "w": "us.",
+          "s": 148.14,
+          "e": 148.46,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 148.46,
+      "e": 150.36,
+      "text": "And Flick just wanted to",
+      "tokens": [
+        {
+          "w": "And",
+          "s": 148.46,
+          "e": 148.92,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Flick",
+          "s": 148.92,
+          "e": 149.24,
+          "alignment": "source_word"
+        },
+        {
+          "w": "just",
+          "s": 149.24,
+          "e": 149.78,
+          "alignment": "source_word"
+        },
+        {
+          "w": "wanted",
+          "s": 149.78,
+          "e": 150.12,
+          "alignment": "source_word"
+        },
+        {
+          "w": "to",
+          "s": 150.12,
+          "e": 150.36,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 150.36,
+      "e": 152.56,
+      "text": "boost our chances of scoring.",
+      "tokens": [
+        {
+          "w": "boost",
+          "s": 150.36,
+          "e": 150.78,
+          "alignment": "source_word"
+        },
+        {
+          "w": "our",
+          "s": 150.78,
+          "e": 151.12,
+          "alignment": "source_word"
+        },
+        {
+          "w": "chances",
+          "s": 151.12,
+          "e": 151.54,
+          "alignment": "source_word"
+        },
+        {
+          "w": "of",
+          "s": 151.54,
+          "e": 151.92,
+          "alignment": "source_word"
+        },
+        {
+          "w": "scoring.",
+          "s": 151.92,
+          "e": 152.56,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 153.04,
+      "e": 153.92,
+      "text": "But in the end,",
+      "tokens": [
+        {
+          "w": "But",
+          "s": 153.04,
+          "e": 153.2,
+          "alignment": "source_word"
+        },
+        {
+          "w": "in",
+          "s": 153.2,
+          "e": 153.36,
+          "alignment": "source_word"
+        },
+        {
+          "w": "the",
+          "s": 153.36,
+          "e": 153.5,
+          "alignment": "source_word"
+        },
+        {
+          "w": "end,",
+          "s": 153.5,
+          "e": 153.92,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 154.6,
+      "e": 156.0,
+      "text": "the two goals we conceded",
+      "tokens": [
+        {
+          "w": "the",
+          "s": 154.6,
+          "e": 154.72,
+          "alignment": "source_word"
+        },
+        {
+          "w": "two",
+          "s": 154.72,
+          "e": 155.0,
+          "alignment": "source_word"
+        },
+        {
+          "w": "goals",
+          "s": 155.0,
+          "e": 155.3,
+          "alignment": "source_word"
+        },
+        {
+          "w": "we",
+          "s": 155.3,
+          "e": 155.52,
+          "alignment": "source_word"
+        },
+        {
+          "w": "conceded",
+          "s": 155.52,
+          "e": 156.0,
+          "alignment": "aligned_correction"
+        }
+      ]
+    },
+    {
+      "s": 156.0,
+      "e": 157.22,
+      "text": "were just childish.",
+      "tokens": [
+        {
+          "w": "were",
+          "s": 156.0,
+          "e": 156.32,
+          "alignment": "source_word"
+        },
+        {
+          "w": "just",
+          "s": 156.32,
+          "e": 156.6,
+          "alignment": "source_word"
+        },
+        {
+          "w": "childish.",
+          "s": 156.6,
+          "e": 157.22,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 158.04,
+      "e": 159.34,
+      "text": "You can't defend like that",
+      "tokens": [
+        {
+          "w": "You",
+          "s": 158.04,
+          "e": 158.18,
+          "alignment": "source_word"
+        },
+        {
+          "w": "can't",
+          "s": 158.18,
+          "e": 158.54,
+          "alignment": "source_word"
+        },
+        {
+          "w": "defend",
+          "s": 158.54,
+          "e": 158.78,
+          "alignment": "source_word"
+        },
+        {
+          "w": "like",
+          "s": 158.78,
+          "e": 159.04,
+          "alignment": "source_word"
+        },
+        {
+          "w": "that",
+          "s": 159.04,
+          "e": 159.34,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 159.34,
+      "e": 160.26,
+      "text": "in El Clásico.",
+      "tokens": [
+        {
+          "w": "in",
+          "s": 159.34,
+          "e": 159.46,
+          "alignment": "source_word"
+        },
+        {
+          "w": "El",
+          "s": 159.46,
+          "e": 159.86,
+          "alignment": "aligned_correction"
+        },
+        {
+          "w": "Clásico.",
+          "s": 159.86,
+          "e": 160.26,
+          "alignment": "aligned_correction"
+        }
+      ]
+    },
+    {
+      "s": 160.72,
+      "e": 162.36,
+      "text": "The only real standout at",
+      "tokens": [
+        {
+          "w": "The",
+          "s": 160.72,
+          "e": 160.86,
+          "alignment": "source_word"
+        },
+        {
+          "w": "only",
+          "s": 160.86,
+          "e": 161.16,
+          "alignment": "source_word"
+        },
+        {
+          "w": "real",
+          "s": 161.16,
+          "e": 161.56,
+          "alignment": "source_word"
+        },
+        {
+          "w": "standout",
+          "s": 161.56,
+          "e": 162.04,
+          "alignment": "source_word"
+        },
+        {
+          "w": "at",
+          "s": 162.04,
+          "e": 162.36,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 162.36,
+      "e": 164.02,
+      "text": "the back was Gerard Martín.",
+      "tokens": [
+        {
+          "w": "the",
+          "s": 162.36,
+          "e": 162.56,
+          "alignment": "source_word"
+        },
+        {
+          "w": "back",
+          "s": 162.56,
+          "e": 162.78,
+          "alignment": "source_word"
+        },
+        {
+          "w": "was",
+          "s": 162.78,
+          "e": 163.2,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Gerard",
+          "s": 163.2,
+          "e": 163.6,
+          "alignment": "source_word"
+        },
+        {
+          "w": "Martín.",
+          "s": 163.6,
+          "e": 164.02,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 164.16,
+      "e": 165.38,
+      "text": "Unlike his first half,",
+      "tokens": [
+        {
+          "w": "Unlike",
+          "s": 164.16,
+          "e": 164.46,
+          "alignment": "source_word"
+        },
+        {
+          "w": "his",
+          "s": 164.46,
+          "e": 164.72,
+          "alignment": "source_word"
+        },
+        {
+          "w": "first",
+          "s": 164.72,
+          "e": 165.08,
+          "alignment": "source_word"
+        },
+        {
+          "w": "half,",
+          "s": 165.08,
+          "e": 165.38,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 165.94,
+      "e": 167.24,
+      "text": "he was excellent in the",
+      "tokens": [
+        {
+          "w": "he",
+          "s": 165.94,
+          "e": 166.16,
+          "alignment": "source_word"
+        },
+        {
+          "w": "was",
+          "s": 166.16,
+          "e": 166.4,
+          "alignment": "source_word"
+        },
+        {
+          "w": "excellent",
+          "s": 166.4,
+          "e": 166.8,
+          "alignment": "source_word"
+        },
+        {
+          "w": "in",
+          "s": 166.8,
+          "e": 167.08,
+          "alignment": "source_word"
+        },
+        {
+          "w": "the",
+          "s": 167.08,
+          "e": 167.24,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 167.24,
+      "e": 167.9,
+      "text": "second half.",
+      "tokens": [
+        {
+          "w": "second",
+          "s": 167.24,
+          "e": 167.52,
+          "alignment": "source_word"
+        },
+        {
+          "w": "half.",
+          "s": 167.52,
+          "e": 167.9,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 168.1,
+      "e": 169.58,
+      "text": "And he made an absolutely",
+      "tokens": [
+        {
+          "w": "And",
+          "s": 168.1,
+          "e": 168.28,
+          "alignment": "source_word"
+        },
+        {
+          "w": "he",
+          "s": 168.28,
+          "e": 168.44,
+          "alignment": "source_word"
+        },
+        {
+          "w": "made",
+          "s": 168.44,
+          "e": 168.74,
+          "alignment": "source_word"
+        },
+        {
+          "w": "an",
+          "s": 168.74,
+          "e": 168.94,
+          "alignment": "source_word"
+        },
+        {
+          "w": "absolutely",
+          "s": 168.94,
+          "e": 169.58,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 169.58,
+      "e": 171.78,
+      "text": "unbelievable block to deny",
+      "tokens": [
+        {
+          "w": "unbelievable",
+          "s": 169.58,
+          "e": 170.36,
+          "alignment": "source_word"
+        },
+        {
+          "w": "block",
+          "s": 170.36,
+          "e": 170.84,
+          "alignment": "source_word"
+        },
+        {
+          "w": "to",
+          "s": 170.84,
+          "e": 171.3,
+          "alignment": "source_word"
+        },
+        {
+          "w": "deny",
+          "s": 171.3,
+          "e": 171.78,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 171.78,
+      "e": 173.92,
+      "text": "Bellingham what was a",
+      "tokens": [
+        {
+          "w": "Bellingham",
+          "s": 171.78,
+          "e": 172.56,
+          "alignment": "aligned_correction"
+        },
+        {
+          "w": "what",
+          "s": 172.56,
+          "e": 173.24,
+          "alignment": "source_word"
+        },
+        {
+          "w": "was",
+          "s": 173.24,
+          "e": 173.58,
+          "alignment": "source_word"
+        },
+        {
+          "w": "a",
+          "s": 173.58,
+          "e": 173.92,
+          "alignment": "source_word"
+        }
+      ]
+    },
+    {
+      "s": 173.92,
+      "e": 174.66,
+      "text": "guaranteed goal.",
+      "tokens": [
+        {
+          "w": "guaranteed",
+          "s": 173.92,
+          "e": 174.3,
+          "alignment": "source_word"
+        },
+        {
+          "w": "goal.",
+          "s": 174.3,
+          "e": 174.66,
+          "alignment": "source_word"
+        }
+      ]
+    }
+  ]
+}

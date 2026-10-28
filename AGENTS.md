@@ -12,3 +12,7 @@ For video tasks, read `docs/video-production/README.fa.md` and the active episod
 - Verify a representative rendered sequence, transitions, actual captions, final audio, encoding and artifact. Do not equate type checks, a PID or an Actions dispatch with a completed delivery.
 - Publishing to YouTube/social media is separate from preparing a video. Execute GitHub renders when authorized; record real run status and URL. If credentials cannot dispatch a workflow, report that operation precisely without claiming success or extracting another identity.
 - Keep production research and decisions in the repository. Separate what was implemented, tested, proposed, blocked and deferred.
+- `barca-yt-render` is canonical for production code. The other repo's sync is an explicit additive import; do not restore destructive mirroring.
+- Read `docs/video-production/photographic-production.fa.md` for current images and rights. A search result is pending; verify the actual photo, capture date and primary source before cataloging. A player identity image from another game is not match evidence.
+- Edit the episode manifest for source scenes/media/cues/photo IDs. Generate caption pages and SRT together using `episode.py --build-captions`; do not independently repartition them. Pending names block release, while preview remains possible.
+- Historical `delivery.json` and old Actions artifacts describe their exact render commit. New source, captions, photos or layout require new render evidence; do not relabel old measurements as new results.

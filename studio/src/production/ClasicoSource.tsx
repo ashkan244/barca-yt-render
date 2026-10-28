@@ -1,35 +1,18 @@
 import React from 'react';
-import {AbsoluteFill, Audio, Img, OffthreadVideo, interpolate, staticFile, useCurrentFrame} from 'remotion';
+import {AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, interpolate, staticFile, useCurrentFrame} from 'remotion';
 import {LOCAL_FONTS} from './fonts';
+import {PhotoMotion} from './PhotoMotion';
 import {ReviewedCaptions} from './Captions';
 import {TacticalPlate, type Player, type PlateArrow} from './TacticalPlate';
-import transcript from '../episodes-source/clasico-source.words.json';
-const FPS = 30;
-export const CLASICO_SOURCE_FRAMES = 175 * FPS;
+import episode from '../episodes-source/clasico-source.manifest.json';
+import captionDocument from '../episodes-source/clasico-source.pages.json';
+const FPS = episode.fps;
+export const CLASICO_SOURCE_FRAMES = Math.round(episode.duration * FPS);
 const GOLD = '#f2c230';
 const mix = (f: number, at: number, d = 14) => interpolate(f, [at, at + d], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-type Scene = {a: number; b: number; title: string; sub: string; mode: 'press' | 'block' | 'line' | 'wings' | 'corner' | 'cards'; cards?: [string, string][]; cardDelays?: number[]};
-const scenes: Scene[] = [
-  {a: 0, b: 11.84, title: 'A TACTICAL LESSON', sub: 'EL CLÁSICO', mode: 'cards', cards: [['THE PRESS', 'THE SPACE'], ['THE DECISIONS', 'THE REACTION']]},
-  {a: 11.84, b: 19.26, title: 'PRESSURE ON THE BACK LINE', sub: 'MADRID WITHOUT THE BALL', mode: 'press'},
-  {a: 19.26, b: 29.38, title: 'FORCED TO DROP DEEP', sub: 'MIDFIELD UNDER PRESSURE', mode: 'press'},
-  {a: 29.38, b: 35.7, title: 'NO TIME ON THE BALL', sub: 'THE NEXT PRESSING STEP', mode: 'press'},
-  {a: 35.7, b: 50.66, title: 'CLOSE THE CENTRE', sub: 'MADRID IN THEIR OWN HALF', mode: 'block'},
-  {a: 50.66, b: 61.24, title: 'SPACE BEHIND THE LINE', sub: 'THE RISK OF PLAYING HIGH', mode: 'line'},
-  {a: 61.24, b: 68.08, title: 'ATTACK THE SPACE', sub: 'RUNNERS IN BEHIND', mode: 'line'},
-  {a: 68.08, b: 76.3, title: 'THE WIDE TRAP', sub: 'SPACE OUTSIDE · TRAFFIC INSIDE', mode: 'wings'},
-  {a: 76.3, b: 82.62, title: 'YAMAL SHUT OUT', sub: 'CENTRAL OPTIONS CLOSED', mode: 'wings'},
-  {a: 82.62, b: 90.88, title: 'MIDFIELD DUELS', sub: 'INTERCEPTIONS & PRESSURE', mode: 'cards', cards: [['HUIJSEN', 'INTERCEPTIONS'], ['FERMÍN', 'NO ROOM TO OPERATE']]},
-  {a: 90.88, b: 98.34, title: 'AN ATTACKING SETBACK', sub: 'THE INJURY', mode: 'cards', cards: [['ESPART', 'FORCED OFF'], ['THE WIDE THREAT', 'REDUCED']]},
-  {a: 98.34, b: 109.72, title: 'THE FULLBACKS', sub: 'INDIVIDUAL ASSESSMENTS', mode: 'cards', cards: [['CANCELO', 'A DIFFICULT GAME'], ['BALDE', 'A DECENT DISPLAY']]},
-  {a: 109.72, b: 121.94, title: 'A REHEARSED CORNER', sub: 'THE SECOND-HALF RESPONSE', mode: 'corner'},
-  {a: 121.94, b: 132.18, title: 'LIMITED OPTIONS', sub: 'THE SUBSTITUTIONS', mode: 'cards', cards: [['DE JONG', 'A DEBATED CHANGE'], ['OLMO', 'INJURY LIMITS THE OPTIONS']], cardDelays: [2.8, 5.4]},
-  {a: 132.18, b: 141.68, title: 'GORDON’S CONTRIBUTION', sub: 'A POSITIVE PERFORMANCE', mode: 'cards', cards: [['GORDON', 'A FANTASTIC GAME'], ['85′', 'DESERVED THE MINUTES']], cardDelays: [0, 3.6]},
-  {a: 141.68, b: 152.8, title: 'ADEYEMI COMES ON', sub: 'LOOKING FOR ANOTHER GOAL', mode: 'cards', cards: [['GORDON', 'OFF'], ['ADEYEMI', 'ON']]},
-  {a: 152.8, b: 160.7, title: 'THE DEFENSIVE COST', sub: 'THE GOALS CONCEDED', mode: 'cards', cards: [['TWO GOALS', 'AVOIDABLE MISTAKES']]},
-  {a: 160.7, b: 175, title: 'MARTÍN’S LAST-DITCH BLOCK', sub: 'A DEFENSIVE POSITIVE', mode: 'cards', cards: [['GERARD MARTÍN', 'A STRONG SECOND HALF'], ['THE BLOCK', 'DENYING BELLINGHAM']]},
-];
-const Plate: React.FC<{scene: Scene; f: number}> = ({scene, f}) => {
+export type Scene = {a: number; b: number; title: string; sub: string; mode: 'press' | 'block' | 'line' | 'wings' | 'corner' | 'cards'; cards?: string[][]; cardDelays?: number[]; layout?: string; photoId?: string; cues?: {moveAt?: number; arrowAt?: number; spaceAt?: number}};
+export const scenes = episode.scenes as Scene[];
+export const SourcePlate: React.FC<{scene: Scene; f: number; readable?: boolean}> = ({scene, f, readable=false}) => {
   const local = f - scene.a * FPS; const p = mix(local, 25, 85);
   let players: Player[] = []; let arrows: PlateArrow[] = []; let zone: {x: number; y: number; w: number; h: number; label: string} | undefined;
   if (scene.mode === 'press') {
@@ -52,11 +35,14 @@ const Plate: React.FC<{scene: Scene; f: number}> = ({scene, f}) => {
     zone={x:83,y:23,w:15,h:24,label:'SET-PIECE AREA'};
   }
   if (scene.mode === 'press' && scene.a >= 19.2) players = players.map((player) => ({...player, name: player.id === 'p' ? 'PEDRI' : player.id === 'r' && scene.a < 29 ? 'RODRI' : undefined}));
-  return <TacticalPlate players={players} arrows={arrows} zone={zone} progress={p} label={scene.mode === 'corner' ? 'A REHEARSED SET PIECE' : 'TACTICAL CONCEPT'} />;
+  if(readable){const ids=scene.mode==='press'?(scene.a<19.2?['m','j']:scene.a<29?['p','r']:['p']):scene.mode==='block'?['p','j']:scene.mode==='line'?['m','d']:scene.mode==='wings'?['y']:['c'];players=players.map(player=>({...player,name:ids.includes(player.id)?player.name:undefined}));}
+  const cue=(name:'moveAt'|'arrowAt'|'spaceAt')=>scene.cues?.[name]??(scene.a+.8);
+  return <TacticalPlate readable={readable} height={readable?850:610} camera={readable?(scene.mode==='wings'?[400,0,650,680]:scene.mode==='corner'?[600,0,450,680]:[0,0,850,680]):undefined} movementProgress={readable?mix(f,cue('moveAt')*FPS,40):p} arrowProgress={readable?mix(f,cue('arrowAt')*FPS,28):p} zoneProgress={readable?mix(f,cue('spaceAt')*FPS,18):p} players={players} arrows={arrows} zone={zone} progress={p} label={scene.mode === 'corner' ? 'A REHEARSED SET PIECE' : 'TACTICAL CONCEPT'} />;
 };
 export const ClasicoSourceShort: React.FC = () => {
   const f = useCurrentFrame(); const t = f / FPS; const scene = scenes.find((s) => t >= s.a && t < s.b) ?? scenes[scenes.length - 1];
-  const enter = mix(f, scene.a * FPS); const isBoard = scene.mode !== 'cards';
+  const photo=scene.layout==='photo'&&scene.photoId;
+  const enter = scene.a===0?1:mix(f, scene.a * FPS); const isBoard = scene.mode !== 'cards';
   const punch = (t < 11.84 || (t >= 152.8 && t < 160.7)) ? 1.035 : 1;
   return <AbsoluteFill style={{background:'#080e1b',color:'#f5f4ef',fontFamily:LOCAL_FONTS.body}}>
     <AbsoluteFill style={{background:'radial-gradient(ellipse at 10% 30%, #1f5fd629, transparent 55%), radial-gradient(ellipse at 95% 65%, #b3123f29, transparent 60%)'}} />
@@ -66,19 +52,19 @@ export const ClasicoSourceShort: React.FC = () => {
       <div style={{fontFamily:LOCAL_FONTS.display,fontSize:scene.title.length>25?64:76,lineHeight:1.04}}>{scene.title}</div>
     </div>
     <div style={{position:'absolute',left:60,top:305,opacity:enter}}>
-      {isBoard ? <Plate scene={scene} f={f}/> : <div style={{width:960,height:500,display:'flex',flexDirection:'column',justifyContent:'center',gap:24}}>
+      {photo ? <div style={{position:'relative',width:960,height:610,overflow:'hidden',borderRadius:24}}><Sequence layout="none" from={Math.round(scene.a*FPS)} durationInFrames={Math.round((scene.b-scene.a)*FPS)}><PhotoMotion id={photo} duration={Math.round((scene.b-scene.a)*FPS)} fit="cover"/></Sequence></div> : isBoard ? <SourcePlate scene={scene} f={f}/> : <div style={{width:960,height:500,display:'flex',flexDirection:'column',justifyContent:'center',gap:24}}>
         {scene.cards?.map(([a,b],i)=><div key={a} style={{borderLeft:`5px solid ${i? '#3c75db':GOLD}`,padding:'24px 30px',background:'#101c30',borderRadius:12,opacity:mix(f,scene.a*FPS+(scene.cardDelays?.[i] ?? i*.3)*FPS),transform:`translateX(${(1-mix(f,scene.a*FPS+(scene.cardDelays?.[i] ?? i*.3)*FPS))*20}px)`}}><div style={{fontFamily:LOCAL_FONTS.display,fontSize:54,color:i?'#f5f4ef':GOLD}}>{a}</div><div style={{fontSize:25,fontWeight:700,letterSpacing:2,marginTop:5,color:'#b9c7d8'}}>{b}</div></div>)}
       </div>}
     </div>
     <div style={{position:'absolute',left:90,top:940,width:900,height:810,borderRadius:24,overflow:'hidden',background:'#152133',border:'2px solid #ffffff28',boxShadow:'0 22px 65px #0007'}}>
-      <OffthreadVideo src={staticFile('host/CLASICO/presenter.mp4')} muted style={{width:'100%',height:'100%',objectFit:'cover',objectPosition:'50% 36%',transform:`scale(${punch})`,filter:'contrast(1.025) saturate(0.98)'}} />
+      <OffthreadVideo src={staticFile(episode.media.video)} muted style={{width:'100%',height:'100%',objectFit:'cover',objectPosition:'50% 36%',transform:`scale(${punch})`,filter:'contrast(1.025) saturate(0.98)'}} />
       <div style={{position:'absolute',inset:0,background:'linear-gradient(transparent 62%, #080e1b99 100%)',pointerEvents:'none'}} />
     </div>
-    <ReviewedCaptions words={transcript.words} top={1540} width={860}/>
+    <ReviewedCaptions pages={captionDocument.pages} top={1540} width={860}/>
     <div style={{position:'absolute',bottom:89,left:70,right:70,display:'flex',justifyContent:'space-between',color:'#a4b1c4',fontSize:20,letterSpacing:2}}><span>WITH MORTI</span><span>TACTICAL ANALYSIS</span></div>
     <div style={{position:'absolute',bottom:68,left:70,width:940,height:3,background:'#ffffff1a'}}><div style={{height:3,width:`${f/CLASICO_SOURCE_FRAMES*100}%`,background:GOLD}}/></div>
-    <Audio src={staticFile('host/CLASICO/voice.wav')}/>
-    <Audio src={staticFile('host/CLASICO/score.wav')} volume={(fr)=>.22*interpolate(fr,[0,60,CLASICO_SOURCE_FRAMES-75,CLASICO_SOURCE_FRAMES],[0,1,1,0],{extrapolateLeft:'clamp',extrapolateRight:'clamp'})}/>
+    <Audio src={staticFile(episode.media.voice)}/>
+    <Audio src={staticFile(episode.media.score)} volume={(fr)=>.22*interpolate(fr,[0,60,CLASICO_SOURCE_FRAMES-75,CLASICO_SOURCE_FRAMES],[0,1,1,0],{extrapolateLeft:'clamp',extrapolateRight:'clamp'})}/>
   </AbsoluteFill>;
 };
 
@@ -86,6 +72,6 @@ export const ClasicoSourceCover: React.FC = () => <AbsoluteFill style={{backgrou
   <div style={{position:'absolute',top:86,left:70,fontFamily:LOCAL_FONTS.display,fontSize:45}}>BARÇA <span style={{color:GOLD}}>RADAR</span></div>
   <div style={{position:'absolute',top:180,left:70,color:GOLD,fontSize:26,fontWeight:800,letterSpacing:4}}>EL CLÁSICO · TACTICAL BREAKDOWN</div>
   <div style={{position:'absolute',top:245,left:70,right:70,fontFamily:LOCAL_FONTS.display,fontSize:130,lineHeight:1.02}}>THE SPACE<br/><span style={{color:GOLD}}>BEHIND</span></div>
-  <div style={{position:'absolute',top:565,left:60}}><Plate scene={scenes[5]} f={1800}/></div>
-  <div style={{position:'absolute',left:110,top:1200,width:860,height:620,overflow:'hidden',borderRadius:26,border:'3px solid #f2c23080'}}><Img src={staticFile('host/CLASICO/cover.jpg')} style={{width:'100%',height:'100%',objectFit:'cover',objectPosition:'50% 25%'}}/></div>
+  <div style={{position:'absolute',top:565,left:60}}><SourcePlate scene={scenes[5]} f={1800}/></div>
+  <div style={{position:'absolute',left:110,top:1200,width:860,height:620,overflow:'hidden',borderRadius:26,border:'3px solid #f2c23080'}}><Img src={staticFile(episode.media.cover)} style={{width:'100%',height:'100%',objectFit:'cover',objectPosition:'50% 25%'}}/></div>
 </AbsoluteFill>;

@@ -1,0 +1,62 @@
+name: Render photographic models
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  demo:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    strategy:
+      fail-fast: true
+      matrix:
+        include:
+          - composition: PHOTO-MODELS-DEMO
+            profile: landscape
+          - composition: PHOTO-MODELS-DEMO-VERTICAL
+            profile: vertical
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: studio/package-lock.json
+      - name: Install FFmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Verify photographic assets and tools
+        run: |
+          python -m unittest discover -s tools/video/tests -v
+          node --test tools/video/tests/numbers.test.mjs
+          python tools/video/photos.py verify --release
+          python tools/video/photos.py credits --release --output studio/out/photo-credits.md
+          python tools/video/make_score.py studio/public/audio/production-demo/score.wav --duration 27
+      - name: Install and typecheck
+        working-directory: studio
+        run: npm ci --no-audit --no-fund && npm run typecheck
+      - name: Render design study
+        working-directory: studio
+        env:
+          COMPOSITION: ${{ matrix.composition }}
+        run: |
+          CHROME_PATH=$(command -v google-chrome || command -v chromium || true)
+          BROWSER_ARGS=()
+          if [ -n "$CHROME_PATH" ]; then BROWSER_ARGS=(--browser-executable="$CHROME_PATH"); else npx remotion browser ensure; fi
+          npx remotion render src/index.ts "$COMPOSITION" "out/$COMPOSITION.mp4" "${BROWSER_ARGS[@]}" --concurrency=2 --codec=h264 --crf=18 --pixel-format=yuv420p --color-space=bt709 --image-format=png --audio-codec=aac
+      - name: Validate exact rendered output
+        env:
+          COMPOSITION: ${{ matrix.composition }}
+          PROFILE: ${{ matrix.profile }}
+        run: |
+          python tools/video/media.py qc "studio/out/$COMPOSITION.mp4" --profile "$PROFILE" --decode --loudness --output "studio/out/$COMPOSITION-quality.json"
+          python tools/video/media.py contact-sheet "studio/out/$COMPOSITION.mp4" --interval 3 --output "studio/out/$COMPOSITION-sheet.jpg"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.composition }}-${{ github.sha }}
+          path: |
+            studio/out/${{ matrix.composition }}.mp4
+            studio/out/${{ matrix.composition }}-quality.json
+            studio/out/${{ matrix.composition }}-sheet.jpg
+            studio/out/photo-credits.md
+          if-no-files-found: error
+          retention-days: 30

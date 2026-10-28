@@ -1,0 +1,340 @@
+{
+  "schemaVersion": 1,
+  "id": "CLASICO-SOURCE-SHORT",
+  "duration": 175,
+  "fps": 30,
+  "source": {
+    "role": "short",
+    "sha256": "8b558736590ffa4297a2b2df4aa8d007042472738cb141085cb4b9eac03a29c1"
+  },
+  "media": {
+    "video": "host/CLASICO/presenter.mp4",
+    "voice": "host/CLASICO/voice.wav",
+    "score": "host/CLASICO/score.wav",
+    "cover": "host/CLASICO/cover.jpg"
+  },
+  "wordsFile": "studio/src/episodes-source/clasico-source.words.json",
+  "captionsFile": "studio/src/episodes-source/clasico-source.pages.json",
+  "srtFile": "docs/barca-radar/clasico-source/CLASICO-SOURCE-SHORT.srt",
+  "protectedPhrases": [
+    "El Clásico",
+    "Jude Bellingham",
+    "Kylian Mbappé",
+    "Lamine Yamal",
+    "Frenkie de Jong",
+    "Dani Olmo",
+    "Gerard Martín",
+    "Dean Huijsen",
+    "João Cancelo",
+    "Arda Güler",
+    "Fermín López",
+    "Alejandro Balde",
+    "Karim Adeyemi"
+  ],
+  "review": {
+    "transcript": "pending",
+    "unresolved": [
+      "Bernardo vs Bernal around source second 29"
+    ]
+  },
+  "photoAssets": [
+    "pedri-2025",
+    "yamal-2025"
+  ],
+  "scenes": [
+    {
+      "a": 0,
+      "b": 11.84,
+      "title": "A TACTICAL LESSON",
+      "sub": "EL CLÁSICO",
+      "mode": "cards",
+      "cards": [
+        [
+          "THE PRESS",
+          "THE SPACE"
+        ],
+        [
+          "THE DECISIONS",
+          "THE REACTION"
+        ]
+      ],
+      "layout": "presenter",
+      "cues": {}
+    },
+    {
+      "a": 11.84,
+      "b": 19.26,
+      "title": "PRESSURE ON THE BACK LINE",
+      "sub": "MADRID WITHOUT THE BALL",
+      "mode": "press",
+      "layout": "board",
+      "cues": {
+        "moveAt": 12.64,
+        "arrowAt": 17.1,
+        "spaceAt": 14.24
+      }
+    },
+    {
+      "a": 19.26,
+      "b": 29.38,
+      "title": "FORCED TO DROP DEEP",
+      "sub": "MIDFIELD UNDER PRESSURE",
+      "mode": "press",
+      "layout": "board",
+      "cues": {
+        "moveAt": 20.66,
+        "arrowAt": 23.76,
+        "spaceAt": 22.5
+      }
+    },
+    {
+      "a": 29.38,
+      "b": 35.7,
+      "title": "NO TIME ON THE BALL",
+      "sub": "THE NEXT PRESSING STEP",
+      "mode": "press",
+      "layout": "photo",
+      "cues": {
+        "moveAt": 32.98,
+        "arrowAt": 35.04,
+        "spaceAt": 31.78
+      },
+      "photoId": "pedri-2025"
+    },
+    {
+      "a": 35.7,
+      "b": 50.66,
+      "title": "CLOSE THE CENTRE",
+      "sub": "MADRID IN THEIR OWN HALF",
+      "mode": "block",
+      "layout": "board",
+      "cues": {
+        "moveAt": 41.08,
+        "arrowAt": 42.58,
+        "spaceAt": 49.44
+      }
+    },
+    {
+      "a": 50.66,
+      "b": 61.24,
+      "title": "SPACE BEHIND THE LINE",
+      "sub": "THE RISK OF PLAYING HIGH",
+      "mode": "line",
+      "layout": "board",
+      "cues": {
+        "moveAt": 51.46,
+        "arrowAt": 53.96,
+        "spaceAt": 59.8
+      }
+    },
+    {
+      "a": 61.24,
+      "b": 68.08,
+      "title": "ATTACK THE SPACE",
+      "sub": "RUNNERS IN BEHIND",
+      "mode": "line",
+      "layout": "board",
+      "cues": {
+        "moveAt": 63.88,
+        "arrowAt": 63.88,
+        "spaceAt": 63.64
+      }
+    },
+    {
+      "a": 68.08,
+      "b": 76.3,
+      "title": "THE WIDE TRAP",
+      "sub": "SPACE OUTSIDE · TRAFFIC INSIDE",
+      "mode": "wings",
+      "layout": "board",
+      "cues": {
+        "moveAt": 68.88,
+        "arrowAt": 73.68,
+        "spaceAt": 72.86
+      }
+    },
+    {
+      "a": 76.3,
+      "b": 82.62,
+      "title": "YAMAL SHUT OUT",
+      "sub": "CENTRAL OPTIONS CLOSED",
+      "mode": "wings",
+      "layout": "photo",
+      "cues": {
+        "moveAt": 77.1,
+        "arrowAt": 78.0,
+        "spaceAt": 78.7
+      },
+      "photoId": "yamal-2025"
+    },
+    {
+      "a": 82.62,
+      "b": 90.88,
+      "title": "MIDFIELD DUELS",
+      "sub": "INTERCEPTIONS & PRESSURE",
+      "mode": "cards",
+      "cards": [
+        [
+          "HUIJSEN",
+          "INTERCEPTIONS"
+        ],
+        [
+          "FERMÍN",
+          "NO ROOM TO OPERATE"
+        ]
+      ],
+      "layout": "presenter",
+      "cues": {}
+    },
+    {
+      "a": 90.88,
+      "b": 98.34,
+      "title": "AN ATTACKING SETBACK",
+      "sub": "THE INJURY",
+      "mode": "cards",
+      "cards": [
+        [
+          "ESPART",
+          "INJURY SETBACK"
+        ],
+        [
+          "THE WIDE THREAT",
+          "REDUCED"
+        ]
+      ],
+      "layout": "presenter",
+      "cues": {}
+    },
+    {
+      "a": 98.34,
+      "b": 109.72,
+      "title": "THE FULLBACKS",
+      "sub": "INDIVIDUAL ASSESSMENTS",
+      "mode": "cards",
+      "cards": [
+        [
+          "CANCELO",
+          "A DIFFICULT GAME"
+        ],
+        [
+          "BALDE",
+          "A DECENT DISPLAY"
+        ]
+      ],
+      "layout": "presenter",
+      "cues": {}
+    },
+    {
+      "a": 109.72,
+      "b": 121.94,
+      "title": "A REHEARSED CORNER",
+      "sub": "THE SECOND-HALF RESPONSE",
+      "mode": "corner",
+      "layout": "board",
+      "cues": {
+        "moveAt": 110.52,
+        "arrowAt": 111.42,
+        "spaceAt": 114.32
+      }
+    },
+    {
+      "a": 121.94,
+      "b": 132.18,
+      "title": "LIMITED OPTIONS",
+      "sub": "THE SUBSTITUTIONS",
+      "mode": "cards",
+      "cards": [
+        [
+          "DE JONG",
+          "A DEBATED CHANGE"
+        ],
+        [
+          "OLMO",
+          "INJURY LIMITS THE OPTIONS"
+        ]
+      ],
+      "cardDelays": [
+        2.8,
+        5.4
+      ],
+      "layout": "presenter",
+      "cues": {}
+    },
+    {
+      "a": 132.18,
+      "b": 141.68,
+      "title": "GORDON’S CONTRIBUTION",
+      "sub": "A POSITIVE PERFORMANCE",
+      "mode": "cards",
+      "cards": [
+        [
+          "GORDON",
+          "A FANTASTIC GAME"
+        ],
+        [
+          "85′",
+          "DESERVED THE MINUTES"
+        ]
+      ],
+      "cardDelays": [
+        0,
+        3.6
+      ],
+      "layout": "presenter",
+      "cues": {}
+    },
+    {
+      "a": 141.68,
+      "b": 152.8,
+      "title": "ADEYEMI COMES ON",
+      "sub": "LOOKING FOR ANOTHER GOAL",
+      "mode": "cards",
+      "cards": [
+        [
+          "GORDON",
+          "OFF"
+        ],
+        [
+          "ADEYEMI",
+          "ON"
+        ]
+      ],
+      "layout": "presenter",
+      "cues": {}
+    },
+    {
+      "a": 152.8,
+      "b": 160.7,
+      "title": "THE DEFENSIVE COST",
+      "sub": "THE GOALS CONCEDED",
+      "mode": "cards",
+      "cards": [
+        [
+          "TWO GOALS",
+          "AVOIDABLE MISTAKES"
+        ]
+      ],
+      "layout": "presenter",
+      "cues": {}
+    },
+    {
+      "a": 160.7,
+      "b": 175,
+      "title": "MARTÍN’S LAST-DITCH BLOCK",
+      "sub": "A DEFENSIVE POSITIVE",
+      "mode": "cards",
+      "cards": [
+        [
+          "GERARD MARTÍN",
+          "A STRONG SECOND HALF"
+        ],
+        [
+          "THE BLOCK",
+          "DENYING BELLINGHAM"
+        ]
+      ],
+      "layout": "presenter",
+      "cues": {}
+    }
+  ]
+}

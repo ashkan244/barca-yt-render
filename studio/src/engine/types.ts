@@ -38,6 +38,7 @@ export type Scene =
   | BoardScene
   | (BaseScene & {type: 'title'; kicker?: string; title: string; sub?: string; photo?: string; style?: 'ink' | 'bw'})
   | (BaseScene & {type: 'chapter'; num?: string; title: string})
+  | (BaseScene & {type: 'assetPhoto'; assetId: string; treatment?: 'natural' | 'mono' | 'dossier'; fit?: 'cover' | 'contain'})
   | (BaseScene & {type: 'photo'; src: string; caption?: string; credit?: string; style?: 'ink' | 'bw' | 'sepia'; move?: 'in' | 'out' | 'left' | 'right' | 'still'; focus?: XY})
   | (BaseScene & {type: 'stat'; value: string; label: string; source?: string; prefix?: string; suffix?: string})
   | (BaseScene & {type: 'quote'; text: string; who: string; source?: string; photo?: string})
