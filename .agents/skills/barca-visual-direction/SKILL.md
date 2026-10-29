@@ -26,3 +26,7 @@ Use alongside `video-production`, `AGENTS.md` and the active episode packet. Rea
 Deliver a visual brief, genre-specific style frames, a source-timed shot table, a justified tool choice, and evidence from the actual prototype. Keep research and decisions in GitHub when authorized. Social publication is separate.
 
 For open-source timeline/compositing tools, read `docs/video-production/open-source-editors-2026-10-28.fa.md` and its evidence. An editor UI, MCP source module or headless JSON runner does not prove full video export. For continuation use `CLOUD_GUIDE.fa.md` and the state ledger.
+
+## New format experiments
+
+Read `docs/video-production/visual-models-blueprint-2026-10-29.fa.md` and use `visual-experiment-template.json`. Keep a protected explanation interval so photo/name beats do not hide causal cues. Compare the same source interval in two layouts or pacing treatments before expanding. Decision Lab has two rendered silent prototypes under `studio/src/experiments/`; it is not integrated presenter content. Distinguish identity, event evidence, archive, schematic and illustration in asset metadata and on-screen labels. Gate meaning, focus, phone readability, timing, evidence and delivery separately; do not average away a content/timing failure.

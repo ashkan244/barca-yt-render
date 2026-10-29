@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "status": "template-not-an-approved-episode",
+  "id": "REPLACE_WITH_EXPERIMENT_ID",
+  "question": "What will the viewer understand that the presenter alone does not show?",
+  "family": "decision-lab | chain-reaction | archive-atlas | photo-evidence | player-dossier | other",
+  "authoritativeSource": {
+    "role": "source-recording | independent-design-study",
+    "manifest": null,
+    "inFrame": null,
+    "outFrameExclusive": null,
+    "fps": 30,
+    "speechChanges": "none unless explicitly part of a separately authorized edit"
+  },
+  "claims": [],
+  "assumptions": [],
+  "styleFrames": ["opening", "explanation", "takeaway"],
+  "shots": [
+    {
+      "spokenPhrase": null,
+      "purpose": "setup | cause | consequence | evidence | interpretation",
+      "dominantSubject": null,
+      "layout": "presenter | board | evidence | comparison",
+      "assetIds": [],
+      "assetRole": "event-evidence | identity | archive | schematic | illustration",
+      "sourceInFrame": null,
+      "sourceOutFrameExclusive": null,
+      "assetTrimInFrame": 0,
+      "protectedExplanationFrames": [],
+      "cues": [],
+      "holdReason": null,
+      "captionPolicy": "shared-pages-preserve-speech"
+    }
+  ],
+  "tools": [{"name": null, "version": null, "connectionStatus": "not-selected", "whyNeeded": null, "fallback": null}],
+  "outputs": ["landscape", "portrait"],
+  "review": {
+    "meaning": "not-reviewed",
+    "focus": "not-reviewed",
+    "phoneReadability": "not-reviewed",
+    "timingAndAudio": "not-reviewed",
+    "evidenceAndRights": "not-reviewed",
+    "delivery": "not-reviewed"
+  },
+  "evidence": {
+    "renderCommit": null,
+    "inputDigests": {},
+    "runUrl": null,
+    "artifactSha256": null,
+    "renderSeconds": null,
+    "providerCostIncludingRejectedAttempts": null,
+    "remainingIssues": [],
+    "decision": "not-tested"
+  }
+}

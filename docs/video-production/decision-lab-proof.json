@@ -1,0 +1,66 @@
+{
+  "checkedOn": "2026-10-29",
+  "reviewedProductionCommit": "431dbc2",
+  "kind": "isolated silent visual prototype; not source episode or delivery master",
+  "entrypoint": "studio/src/experiments/index.tsx",
+  "outputs": [
+    {
+      "composition": "DECISION-LAB-STUDY",
+      "runtimeOutput": "studio/out/decision-lab-study/DECISION-LAB-STUDY.mp4",
+      "sha256": "a49575ea1a5a98c9af7571bb59ba6cdf2a8d842dfe83f15cc9732a86395bb831",
+      "bytes": 342242,
+      "width": 1920,
+      "height": 1080,
+      "frames": 480,
+      "fps": 30,
+      "duration": 16,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "colorSpace": "bt709",
+      "fullDecode": "passed",
+      "audio": "none by design; visual timing study only",
+      "framesForReview": [
+        "docs/video-production/previews/final-upgrade-2026-10-29/decision-lab-study-2.jpg",
+        "docs/video-production/previews/final-upgrade-2026-10-29/decision-lab-study-7.jpg",
+        "docs/video-production/previews/final-upgrade-2026-10-29/decision-lab-study-11.jpg",
+        "docs/video-production/previews/final-upgrade-2026-10-29/decision-lab-study-15.jpg"
+      ]
+    },
+    {
+      "composition": "DECISION-LAB-STUDY-VERTICAL",
+      "runtimeOutput": "studio/out/decision-lab-study/DECISION-LAB-STUDY-VERTICAL.mp4",
+      "sha256": "814f4f5af293c426c06767b51b4f0b0bcb41d85cdb22a0553a1f8ac0853372db",
+      "bytes": 359989,
+      "width": 1080,
+      "height": 1920,
+      "frames": 480,
+      "fps": 30,
+      "duration": 16,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "colorSpace": "bt709",
+      "fullDecode": "passed",
+      "audio": "none by design; visual timing study only",
+      "framesForReview": [
+        "docs/video-production/previews/final-upgrade-2026-10-29/decision-lab-study-vertical-2.jpg",
+        "docs/video-production/previews/final-upgrade-2026-10-29/decision-lab-study-vertical-7.jpg",
+        "docs/video-production/previews/final-upgrade-2026-10-29/decision-lab-study-vertical-11.jpg",
+        "docs/video-production/previews/final-upgrade-2026-10-29/decision-lab-study-vertical-15.jpg"
+      ]
+    }
+  ],
+  "sourceFiles": {
+    "studio/src/experiments/DecisionLab.tsx": "010d951937ff64987ef05ec57abdc27f0288f57c2d99a3d6dd845b33dfb7c394",
+    "studio/src/experiments/index.tsx": "a4ee5a4337a51d9a61104185e56f708f52313e0de4490fda6d3e58b8f00aea6d"
+  },
+  "renderer": "Remotion4.0.535; local Chromium; no new runtime dependency",
+  "visualReview": "Representative source-extracted frames at2,7,11,15s reviewed; caption/pill overflow corrected before final renders.",
+  "animatedPreview": {
+    "path": "docs/video-production/previews/final-upgrade-2026-10-29/decision-lab-preview.gif",
+    "sha256": "272ea5ccfd0ce8f0ea967ea9b014c39007109977de813aca59898995ef7bbc17",
+    "width": 640,
+    "fps": 10,
+    "role": "reduced preview derived from decoded landscape MP4"
+  },
+  "phoneReview": "360px portrait frame opened: hierarchy/relationship visible, secondary text small; sequential A/B is recommended for next mobile test."
+}

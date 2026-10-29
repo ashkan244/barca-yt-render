@@ -1,0 +1,416 @@
+{
+  "researchedOn": "2026-10-29",
+  "scope": "Design and tooling research for Barca Radar final upgrade; primary sources only; runtime tool capabilities must be checked when connected.",
+  "repositories": [
+    {
+      "repository": "airbnb/lottie-web",
+      "url": "https://github.com/airbnb/lottie-web",
+      "commit": "bede03d25d232826e0c9dca1733d542d8a7754fb",
+      "pushedAt": "2025-09-01T09:01:31Z",
+      "archived": false,
+      "license": "MIT",
+      "checkedOn": "2026-10-29",
+      "inspection": "repository metadata, README and available root license; not installed or executed",
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/airbnb/lottie-web/blob/bede03d25d232826e0c9dca1733d542d8a7754fb/README.md",
+          "sha256": "c65c2b4ebb100e75b9145d1822019cc5d1d9679a2646b84db266a8719d7696f9"
+        },
+        {
+          "path": "LICENSE.md",
+          "url": "https://github.com/airbnb/lottie-web/blob/bede03d25d232826e0c9dca1733d542d8a7754fb/LICENSE.md",
+          "sha256": "9d8d4d8b4bb99572ee8b51025a30b8493d949798cac465c6c15b1b29420bcb06"
+        }
+      ]
+    },
+    {
+      "repository": "danielgatis/rembg",
+      "url": "https://github.com/danielgatis/rembg",
+      "commit": "c5b48b0417a0254df7d461efa14573597f369a83",
+      "pushedAt": "2026-10-21T21:17:51Z",
+      "archived": false,
+      "license": "MIT",
+      "checkedOn": "2026-10-29",
+      "inspection": "repository metadata, README and available root license; not installed or executed",
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/danielgatis/rembg/blob/c5b48b0417a0254df7d461efa14573597f369a83/README.md",
+          "sha256": "8455c52c60130199ab61858d359f2d25440dd95772844e2b3a037e490b31179d"
+        },
+        {
+          "path": "LICENSE.txt",
+          "url": "https://github.com/danielgatis/rembg/blob/c5b48b0417a0254df7d461efa14573597f369a83/LICENSE.txt",
+          "sha256": "90a3215072968fd304669c5389f04f1274a587abdd0507d99dead0f5511f8999"
+        }
+      ],
+      "reviewNote": "Pinned README says BRIA RMBG2 is default and commercial model use needs a paid agreement. MIT code license does not license all weights; linked HF model request was 401."
+    },
+    {
+      "repository": "domlysz/BlenderGIS",
+      "url": "https://github.com/domlysz/BlenderGIS",
+      "commit": "2add45ffec547f419cc77563a7fe976fd6c8f0c4",
+      "pushedAt": "2025-12-20T18:19:10Z",
+      "archived": false,
+      "license": "GPL-3.0",
+      "checkedOn": "2026-10-29",
+      "inspection": "repository metadata, README and available root license; not installed or executed",
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/domlysz/BlenderGIS/blob/2add45ffec547f419cc77563a7fe976fd6c8f0c4/README.md",
+          "sha256": "f553070a1432a7f1702b85dd9720e1a2316294eaecc4cdb8123a02b798e50dc6"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/domlysz/BlenderGIS/blob/2add45ffec547f419cc77563a7fe976fd6c8f0c4/LICENSE",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        }
+      ]
+    },
+    {
+      "repository": "facebookresearch/sam2",
+      "url": "https://github.com/facebookresearch/sam2",
+      "commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+      "pushedAt": "2026-05-30T02:29:40Z",
+      "archived": false,
+      "license": "Apache-2.0",
+      "checkedOn": "2026-10-29",
+      "inspection": "repository metadata, README and available root license; not installed or executed",
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/facebookresearch/sam2/blob/2b90b9f5ceec907a1c18123530e92e794ad901a4/README.md",
+          "sha256": "eea69ee1042fb30933c5ca5019fbf0f6f9366cec5e792109281b5023a4f1589c"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/facebookresearch/sam2/blob/2b90b9f5ceec907a1c18123530e92e794ad901a4/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "reviewNote": "README explicitly covers SAM2 model checkpoints, demo and training code under Apache2 with third-party exceptions. No inference or GPU benchmark run."
+    },
+    {
+      "repository": "glideapps/quicktype",
+      "url": "https://github.com/glideapps/quicktype",
+      "commit": "c39af7d303b025280e2668a1b2d29913093593c9",
+      "pushedAt": "2026-10-27T08:53:28Z",
+      "archived": false,
+      "license": "Apache-2.0",
+      "checkedOn": "2026-10-29",
+      "inspection": "repository metadata, README and available root license; not installed or executed",
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/glideapps/quicktype/blob/c39af7d303b025280e2668a1b2d29913093593c9/README.md",
+          "sha256": "d70f62d965a0072285baf3ec72972b366a3b2c6a0227cd9858d6ef55ad5522d3"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/glideapps/quicktype/blob/c39af7d303b025280e2668a1b2d29913093593c9/LICENSE",
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+        }
+      ],
+      "reviewNote": "Potential schema/type helper only, not renderer or installed dependency."
+    },
+    {
+      "repository": "manimCommunity/manim",
+      "url": "https://github.com/ManimCommunity/manim",
+      "commit": "16ea443e2a5f1d79db0a721161411ce916d6e733",
+      "pushedAt": "2026-10-27T20:46:53Z",
+      "archived": false,
+      "license": "MIT",
+      "checkedOn": "2026-10-29",
+      "inspection": "repository metadata, README and available root license; not installed or executed",
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/manimCommunity/manim/blob/16ea443e2a5f1d79db0a721161411ce916d6e733/README.md",
+          "sha256": "41cac8aeb33a726c1b0a70d10233ee06d9cd73c6df0bace8145637d75c5fc283"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/manimCommunity/manim/blob/16ea443e2a5f1d79db0a721161411ce916d6e733/LICENSE",
+          "sha256": "c6a922fc1cfaed7ac0f87aa1dc77ebf5a3c8d1ccc5ab01da33153f0d013bf019"
+        }
+      ]
+    },
+    {
+      "repository": "maplibre/maplibre-gl-js",
+      "url": "https://github.com/maplibre/maplibre-gl-js",
+      "commit": "4b6b84185dc6a33494b2820d4bbacf1da72fd49a",
+      "pushedAt": "2026-10-28T08:25:01Z",
+      "archived": false,
+      "license": "NOASSERTION",
+      "checkedOn": "2026-10-29",
+      "inspection": "repository metadata, README and available root license; not installed or executed",
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/maplibre/maplibre-gl-js/blob/4b6b84185dc6a33494b2820d4bbacf1da72fd49a/README.md",
+          "sha256": "f293e4b84fcabba75a923fe54ff861b6bd4e7f2cddaf09082bcee97f57c0847b"
+        },
+        {
+          "path": "LICENSE.txt",
+          "url": "https://github.com/maplibre/maplibre-gl-js/blob/4b6b84185dc6a33494b2820d4bbacf1da72fd49a/LICENSE.txt",
+          "sha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2"
+        }
+      ],
+      "reviewNote": "GitHub license metadata NOASSERTION; LICENSE.txt inspected: BSD-3-Clause terms including inherited notices. Tile/data/service rights separate."
+    },
+    {
+      "repository": "microsoft/markitdown",
+      "url": "https://github.com/microsoft/markitdown",
+      "commit": "7482c092d9c0074a89803c9fdb63a969e7fe17fc",
+      "pushedAt": "2026-10-28T15:33:14Z",
+      "archived": false,
+      "license": "MIT",
+      "checkedOn": "2026-10-29",
+      "inspection": "repository metadata, README and available root license; not installed or executed",
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/microsoft/markitdown/blob/7482c092d9c0074a89803c9fdb63a969e7fe17fc/README.md",
+          "sha256": "cd5ba48d320fedd4f5f2845a97968491b557d39d8afe264eb423d5c6906adf09"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/microsoft/markitdown/blob/7482c092d9c0074a89803c9fdb63a969e7fe17fc/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ]
+    },
+    {
+      "repository": "motion-canvas/motion-canvas",
+      "url": "https://github.com/motion-canvas/motion-canvas",
+      "commit": "7b91435c301d530351dcf5ebb91dd139c002e405",
+      "pushedAt": "2026-07-02T20:01:32Z",
+      "archived": false,
+      "license": "MIT",
+      "checkedOn": "2026-10-29",
+      "inspection": "repository metadata, README and available root license; not installed or executed",
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/motion-canvas/motion-canvas/blob/7b91435c301d530351dcf5ebb91dd139c002e405/README.md",
+          "sha256": "9895daa20be79849a312b5cb5b9ed36db2d1a6dfe9731b5e53a67b222abe9cd9"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/motion-canvas/motion-canvas/blob/7b91435c301d530351dcf5ebb91dd139c002e405/LICENSE",
+          "sha256": "b3f12201916c5d478263cd210cf17f3d0c007d03bd574e0b77cac6307953068e"
+        }
+      ]
+    },
+    {
+      "repository": "opencv/opencv",
+      "url": "https://github.com/opencv/opencv",
+      "commit": "e52dcc25160d9cc7f2fff3c453e20a067d230895",
+      "pushedAt": "2026-10-28T18:36:30Z",
+      "archived": false,
+      "license": "Apache-2.0",
+      "checkedOn": "2026-10-29",
+      "inspection": "repository metadata, README and available root license; not installed or executed",
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/opencv/opencv/blob/e52dcc25160d9cc7f2fff3c453e20a067d230895/README.md",
+          "sha256": "a894f3aaef865eaf82c1fddcc92da631ec5b1ca13503403964caef4f8bec0807"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/opencv/opencv/blob/e52dcc25160d9cc7f2fff3c453e20a067d230895/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "repository": "rive-app/rive-runtime",
+      "url": "https://github.com/rive-app/rive-runtime",
+      "commit": "5ef2c1378d744a12444fe094d33ed4640028606f",
+      "pushedAt": "2026-10-28T23:55:43Z",
+      "archived": false,
+      "license": "MIT",
+      "checkedOn": "2026-10-29",
+      "inspection": "repository metadata, README and available root license; not installed or executed",
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/rive-app/rive-runtime/blob/5ef2c1378d744a12444fe094d33ed4640028606f/README.md",
+          "sha256": "92f386293082315f0c102b285ae23ed1a7dfac87ac4fa704aaf74c526ae2e5b3"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/rive-app/rive-runtime/blob/5ef2c1378d744a12444fe094d33ed4640028606f/LICENSE",
+          "sha256": "fa43eb0d7fbf66f9504182d92dd097311278bb80111a5bf1403c366d6a403144"
+        }
+      ],
+      "reviewNote": "Runtime is MIT; separate editor/account/export entitlement was not tested."
+    },
+    {
+      "repository": "theatre-js/theatre",
+      "url": "https://github.com/theatre-js/theatre",
+      "commit": "6ea82b938ea49609489f6377ded693ccc6ee8f5b",
+      "pushedAt": "2024-08-14T13:20:18Z",
+      "archived": false,
+      "license": "Apache-2.0",
+      "checkedOn": "2026-10-29",
+      "inspection": "repository metadata, README and available root license; not installed or executed",
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/theatre-js/theatre/blob/6ea82b938ea49609489f6377ded693ccc6ee8f5b/README.md",
+          "sha256": "a5b6be8fec45220609f12ca629884dbb6567bd545cd4ad849d90ad49fdc564f2"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/theatre-js/theatre/blob/6ea82b938ea49609489f6377ded693ccc6ee8f5b/LICENSE",
+          "sha256": "32a36fa187169c24228aaf6889371e7ffb4273d327ef37e340994e7ca157879b"
+        }
+      ],
+      "reviewNote": "README says development temporarily moved to a private repository; observed public last push is 2024-08-14. Do not claim current private release quality."
+    },
+    {
+      "repository": "visgl/deck.gl",
+      "url": "https://github.com/visgl/deck.gl",
+      "commit": "1fed840488e578603c4723427102cb7c2f98621b",
+      "pushedAt": "2026-10-28T23:00:02Z",
+      "archived": false,
+      "license": "MIT",
+      "checkedOn": "2026-10-29",
+      "inspection": "repository metadata, README and available root license; not installed or executed",
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/visgl/deck.gl/blob/1fed840488e578603c4723427102cb7c2f98621b/README.md",
+          "sha256": "4d392d6787f920f1181751dba014f520f021e4da40b0eb325d8f00a4c78524df"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/visgl/deck.gl/blob/1fed840488e578603c4723427102cb7c2f98621b/LICENSE",
+          "sha256": "e499a2c2ba3b9faabe91fdfddf43e329439263264b7148e5548d0ec605cce9f2"
+        }
+      ]
+    }
+  ],
+  "webSources": [
+    {
+      "id": "remotion-maps",
+      "url": "https://www.remotion.dev/docs/mapbox",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "remotion-lottie",
+      "url": "https://www.remotion.dev/docs/lottie",
+      "finalUrl": "https://www.remotion.dev/docs/lottie",
+      "status": 200,
+      "bytes": 64211,
+      "sha256": "e512221d2fdfc626c0ef13ce5cf6eae82dd71f8a55953221a248c810b26421eb"
+    },
+    {
+      "id": "remotion-three",
+      "url": "https://www.remotion.dev/docs/three",
+      "finalUrl": "https://www.remotion.dev/docs/three",
+      "status": 200,
+      "bytes": 76877,
+      "sha256": "668b8bde82104347c9badfb6b78ece0f058b86ad49ae9d036255e02be6fef8a0"
+    },
+    {
+      "id": "canva-mcp",
+      "url": "https://www.canva.dev/docs/connect/mcp-server/",
+      "finalUrl": "https://www.canva.dev/docs/apps/dev-mcp-server/",
+      "status": 200,
+      "bytes": 90111,
+      "sha256": "be0fce93462e7028626e873ba4d65a6d50ea3f4f1ae865e3ab14239d9e74d338"
+    },
+    {
+      "id": "higgsfield-mcp",
+      "url": "https://higgsfield.ai/mcp",
+      "finalUrl": "https://higgsfield.ai/mcp",
+      "status": 200,
+      "bytes": 870633,
+      "sha256": "b0375b5972f3f71041d6e8469787d301ee106bccadcb518259abf02992c596eb"
+    },
+    {
+      "id": "rive-licensing",
+      "url": "https://rive.app/docs/runtimes/licensing",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "osm-tiles",
+      "url": "https://operations.osmfoundation.org/policies/tiles/",
+      "finalUrl": "https://operations.osmfoundation.org/policies/tiles/",
+      "status": 200,
+      "bytes": 18698,
+      "sha256": "04908a9e2faf70ad3090b3b2db43de100f3ad61243c578413b67fb57ba6b6912"
+    },
+    {
+      "id": "natural-earth",
+      "url": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "error": "HTTP Error 406: Not Acceptable"
+    },
+    {
+      "id": "canva-design-help",
+      "url": "https://www.canva.com/help/mcp-server/",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "higgsfield-paper",
+      "url": "https://higgsfield.ai/mcp/paper-collage",
+      "finalUrl": "https://higgsfield.ai/mcp/paper-collage",
+      "status": 200,
+      "bytes": 312494,
+      "sha256": "4198025901adfe0bae2f48d26c9869053307365fcf2733e1b3167a2f0fa5bfea"
+    },
+    {
+      "id": "naturalearth-readme",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/README.md",
+      "finalUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/README.md",
+      "status": 200,
+      "bytes": 4692,
+      "sha256": "28b7c031e45c88d7ce20b7782373aaac378f459e9460001dadc8cfd824c3173b"
+    },
+    {
+      "id": "rive-runtime-docs",
+      "url": "https://rive.app/docs/runtimes",
+      "finalUrl": "https://rive.app/docs/runtimes/getting-started",
+      "status": 200,
+      "bytes": 233898,
+      "sha256": "54369dd843a9453fae27fbee0f8039eb1db40bce1bb5e9575ad324a3a0de5948"
+    },
+    {
+      "id": "bria-model",
+      "url": "https://huggingface.co/briaai/RMBG-2.0/raw/main/README.md",
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    {
+      "id": "motioncanvas-export",
+      "url": "https://motioncanvas.io/docs/rendering",
+      "finalUrl": "https://motioncanvas.io/docs/rendering/",
+      "status": 200,
+      "bytes": 34822,
+      "sha256": "f34ef9ee7e372ba40ec9ed1436b8875da5675558a90050850ea7c241f49fca3e"
+    },
+    {
+      "id": "remotion-map-guide",
+      "url": "https://www.remotion.dev/docs/point-of-interest",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "limitations": [
+    "No new external MCP/account connected, no paid calls, no new model downloaded.",
+    "404/406/401 pages are not read sources; alternate successfully fetched sources are listed separately.",
+    "Canva connect MCP URL redirected to Dev MCP docs; not evidence of Design MCP capabilities.",
+    "Higgsfield Paper Collage explicitly requires After Effects on the same computer.",
+    "Natural Earth README was read; terms website returned 406.",
+    "No full third-party promotional videos were viewed or benchmarked in this research."
+  ],
+  "priorResearch": [
+    "creative-integrations-2026-10-28.fa.md",
+    "canva-higgsfield-evaluation.fa.md",
+    "open-source-editors-2026-10-28.fa.md",
+    "photographic-production.fa.md"
+  ]
+}

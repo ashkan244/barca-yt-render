@@ -1,5 +1,7 @@
 # Barça Radar — production and rendering
 
+**بازبینی و ایده‌های ارتقا — ۲۹ اکتبر:** [یافته‌های موتور](docs/video-production/final-upgrade-review-2026-10-29.fa.md) · [۱۲ مدل و ابزارهای کمکی](docs/video-production/visual-models-blueprint-2026-10-29.fa.md) · [نمونهٔ واقعی Decision Lab](docs/video-production/decision-lab-study.fa.md)
+
 **برای ادامه با Claude، Codex یا Cloud، از [راهنمای اصلی](CLOUD_GUIDE.fa.md) شروع کنید.** وضعیت اجراها و کارهای بعدی در [continuation-state.json](docs/video-production/continuation-state.json) ثبت می‌شود.
 
 This repository is the canonical production codebase for an unofficial FC Barcelona fan channel. It includes Remotion compositions, source-aligned media tools, licensed photographic assets, research and GitHub rendering workflows. It is not affiliated with FC Barcelona.

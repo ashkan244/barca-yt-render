@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-10-28",
+  "updatedOn": "2026-10-29",
   "purpose": "Resume research and production with actual evidence; visual quality and content diversity first.",
   "startHere": "CLOUD_GUIDE.fa.md",
   "canonicalRepository": "ashkan244/barca-yt-render",
   "planningRepository": "ashkan244/barca-yt",
-  "reviewedProductionBaseCommit": "7876987e33cdb19de42c393faf62b1cfea4e7049",
+  "reviewedProductionBaseCommit": "431dbc2230b49b44870a7d46bed3f4dd856105c7",
   "authoritativeContent": {
     "episodeId": "CLASICO-SOURCE-SHORT",
     "manifest": "studio/src/episodes-source/clasico-source.manifest.json",
@@ -19,7 +19,8 @@
       "approval": "Presenter confirmed Bernardo, Diomande, Espart, Gordon on 2026-10-26; Public posting approved."
     },
     "longVideoStatus": "awaiting_actual_presenter_source",
-    "historicalReferenceRole": "style reference only; no media or soundtrack reuse assumed"
+    "historicalReferenceRole": "style reference only; no media or soundtrack reuse assumed",
+    "derivedLandscapeStatus": "195s composition from the existing 175s short source including 20s end screen; not the separately awaited long recording"
   },
   "resumeReading": [
     "AGENTS.md",
@@ -27,7 +28,9 @@
     "docs/video-production/README.fa.md",
     "docs/barca-radar/clasico-source/README.md",
     ".agents/skills/video-production/SKILL.md",
-    ".agents/skills/barca-visual-direction/SKILL.md"
+    ".agents/skills/barca-visual-direction/SKILL.md",
+    "docs/video-production/final-upgrade-review-2026-10-29.fa.md",
+    "docs/video-production/visual-models-blueprint-2026-10-29.fa.md"
   ],
   "capabilities": [
     {
@@ -117,7 +120,7 @@
     },
     {
       "id": "source-episode-engine",
-      "status": "implemented-and-rendered",
+      "status": "v5 implemented; earlier v2 delivery recorded; current selected frames reviewed, no full v5 master verified here",
       "entrypoint": "studio/src/production/source/SourceEpisode.tsx",
       "spec": "studio/src/episodes-source/clasico-source.spec.json",
       "outputs": "SHORT, LONG (16:9, chapters, end screen), CLIP-*, ARCHIVE, COVER, THUMB; extraOutputs: adaptive",
@@ -127,7 +130,13 @@
       "id": "archive-split-format",
       "status": "implemented-and-rendered (v3); photo-dense v4 implemented, not yet rendered",
       "entrypoint": "studio/src/production/source/ArchiveShort.tsx",
-      "coverage": "B-roll 77% of runtime, 56 shots, 22 photo beats in SHORT/LONG"
+      "coverage": "Current spec: images92s + video7.26s + boards34.7s; split76.55%, actual photo/video56.72%; 56 split shots, 22 photo beats",
+      "limitations": [
+        "global video clock needs local shot sequence",
+        "archive boards lack source-staged cues",
+        "captions hidden during 5 cards (8.06s)",
+        "archive media not fully verified in this checkout"
+      ]
     },
     {
       "id": "commons-archive-pipeline",
@@ -151,11 +160,66 @@
       "id": "parallel-render-workflow",
       "status": "implemented-and-rendered",
       "entrypoint": ".github/workflows/render-source-short.yml",
-      "notes": "chunked MP4 + separate WAV, cached source by SHA-256, preview/release gate, delivery.json per output, review images committed to the branch"
+      "notes": "chunked MP4 + separate WAV, cached source by SHA-256, preview/release gate, delivery.json per output, review images committed to the branch",
+      "openFindings": [
+        "clip SRT not rebased",
+        "prepared caption files not transferred between jobs",
+        "archive rights/provenance not covered by unified release gate"
+      ]
+    },
+    {
+      "id": "decision-lab-study",
+      "status": "two-silent-local-prototypes-rendered-and-decoded",
+      "entrypoint": "studio/src/experiments/index.tsx",
+      "report": "docs/video-production/decision-lab-study.fa.md",
+      "evidence": "docs/video-production/decision-lab-proof.json",
+      "limitations": "16s original schematic in each ratio; no presenter/audio integration, no new Actions delivery or audience test"
     }
   ],
   "externalProviderConnectionsEstablishedByThisResearch": [],
   "nextWork": [
+    {
+      "id": "B01",
+      "goal": "Fix output time maps: local B-roll video time and per-clip SRT/posting",
+      "status": "open-review-finding",
+      "acceptance": [
+        "4s timecode fixture starts correctly at late timeline cues",
+        "random seek and chunk agreement",
+        "all 3 clip SRTs start locally and end within output"
+      ]
+    },
+    {
+      "id": "B02",
+      "goal": "Unify archive provenance and prepared caption transfer",
+      "status": "open-review-finding",
+      "acceptance": [
+        "used assets have role/date/license/hash/review",
+        "render/finalize consume identical prepared pages",
+        "delivery records input digests"
+      ]
+    },
+    {
+      "id": "B03",
+      "goal": "Source-aligned 20–30s visual revision",
+      "status": "proposed",
+      "acceptance": [
+        "photo beats do not obscure explanatory cues",
+        "true camera zoom and readable labels at phone size",
+        "archive/source/adaptive use intentional staged-motion contract",
+        "card caption policy preserves access to speech"
+      ]
+    },
+    {
+      "id": "B04",
+      "goal": "Develop Decision Lab and one distinct editorial family",
+      "status": "decision-lab-prototype-rendered; source integration and second family proposed",
+      "acceptance": [
+        "approved relevant content and source timing",
+        "three style frames and actual short clip per family",
+        "independent portrait layout",
+        "meaning/focus/legibility/timing/evidence/delivery rubric"
+      ]
+    },
     {
       "id": "A01",
       "goal": "Fresh adaptive source preview/master",
@@ -168,7 +232,7 @@
         "current captions and photo credits packaged",
         "exact Actions artifact downloaded and QC recorded"
       ],
-      "releasePrecondition": "Resolve actual transcript uncertainty; preview can proceed independently."
+      "releasePrecondition": "Transcript approval is recorded and current preflight passes. Resolve output time-map, packet and archive provenance findings before a fresh production master."
     },
     {
       "id": "A02",
@@ -282,5 +346,8 @@
     }
   ],
   "updateRule": "After meaningful work update this file and the relevant evidence/report. A source file, UI, MCP config, dispatch or process ID alone is not a verified delivery.",
-  "workflowRule": "One canonical branch: main. Every agent (Claude, GPT/Codex) starts from the latest main, works on a short-lived branch and merges back; record user decisions in this file and CLOUD_GUIDE.fa.md."
+  "workflowRule": "One canonical branch: main. Every agent (Claude, GPT/Codex) starts from the latest main, works on a short-lived branch and merges back; record user decisions in this file and CLOUD_GUIDE.fa.md.",
+  "latestReview": "docs/video-production/final-upgrade-review-2026-10-29.fa.md",
+  "visualBlueprint": "docs/video-production/visual-models-blueprint-2026-10-29.fa.md",
+  "reviewRule": "B01–B03 take priority before a new production master. Additional tools follow a selected visual need; do not force 75% B-roll or cuts every3.2s across genres."
 }

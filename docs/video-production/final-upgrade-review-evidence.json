@@ -1,0 +1,254 @@
+{
+  "checkedOn": "2026-10-29",
+  "reviewedProductionCommit": "431dbc2230b49b44870a7d46bed3f4dd856105c7",
+  "previousReviewedCommit": "46ec47ddb97449a3a2c82ac4ada88f639958adc4",
+  "planningRepoCommit": "81d6cf79144651b81f9f7101318ff640798bb8b3",
+  "checks": {
+    "typecheck": "passed",
+    "productionTests": {
+      "python": 22,
+      "node": 3,
+      "result": "passed"
+    },
+    "releasePreflightWithRuntimeMedia": "passed; approved source manifest",
+    "captionPagesEqualRegenerated": true,
+    "sharedPages": 108,
+    "specManifestSourceHashAndDurationAgree": true,
+    "productionBundle": "rebuilt from reviewed HEAD before current frame probes"
+  },
+  "currentFramesReviewed": [
+    "docs/video-production/previews/final-upgrade-2026-10-29/current-short-20.jpg",
+    "docs/video-production/previews/final-upgrade-2026-10-29/current-short-70.jpg",
+    "docs/video-production/previews/final-upgrade-2026-10-29/current-long-20.jpg",
+    "docs/video-production/previews/final-upgrade-2026-10-29/current-archive-70.jpg"
+  ],
+  "frameProbeLimit": "ARCHIVE frame450 failed because runtime mbappe_video.mp4 was absent; compositor requested source-video time15 despite cue start14.7. Archive frame2100 succeeded. No full current episode render/download.",
+  "archiveTimeByRole": {
+    "image": {
+      "seconds": 92.0,
+      "percent": 52.57,
+      "shotCount": 44
+    },
+    "video": {
+      "seconds": 7.26,
+      "percent": 4.15,
+      "shotCount": 4
+    },
+    "board": {
+      "seconds": 34.7,
+      "percent": 19.83,
+      "shotCount": 8
+    },
+    "full": {
+      "seconds": 32.98,
+      "percent": 18.85,
+      "shotCount": 10
+    },
+    "card": {
+      "seconds": 8.06,
+      "percent": 4.61,
+      "shotCount": 5
+    }
+  },
+  "cueStartsInsidePhotoBeats": [
+    {
+      "sceneStart": 11.84,
+      "cue": "arrowAt",
+      "sourceTime": 17.1,
+      "photoBeat": {
+        "a": 16.0,
+        "b": 17.6,
+        "shot": "bellingham"
+      }
+    },
+    {
+      "sceneStart": 19.26,
+      "cue": "spaceAt",
+      "sourceTime": 22.5,
+      "photoBeat": {
+        "a": 21.4,
+        "b": 23.0,
+        "shot": "guler"
+      }
+    },
+    {
+      "sceneStart": 29.38,
+      "cue": "arrowAt",
+      "sourceTime": 35.04,
+      "photoBeat": {
+        "a": 33.6,
+        "b": 35.4,
+        "shot": "pedri3"
+      }
+    },
+    {
+      "sceneStart": 35.7,
+      "cue": "arrowAt",
+      "sourceTime": 42.58,
+      "photoBeat": {
+        "a": 41.3,
+        "b": 42.9,
+        "shot": "mbappe2"
+      }
+    },
+    {
+      "sceneStart": 50.66,
+      "cue": "moveAt",
+      "sourceTime": 51.46,
+      "photoBeat": {
+        "a": 50.66,
+        "b": 53.4,
+        "shot": "flick"
+      }
+    },
+    {
+      "sceneStart": 76.3,
+      "cue": "moveAt",
+      "sourceTime": 77.1,
+      "photoBeat": {
+        "a": 77.1,
+        "b": 79.6,
+        "shot": "yamal2"
+      }
+    },
+    {
+      "sceneStart": 76.3,
+      "cue": "arrowAt",
+      "sourceTime": 78.0,
+      "photoBeat": {
+        "a": 77.1,
+        "b": 79.6,
+        "shot": "yamal2"
+      }
+    },
+    {
+      "sceneStart": 76.3,
+      "cue": "spaceAt",
+      "sourceTime": 78.7,
+      "photoBeat": {
+        "a": 77.1,
+        "b": 79.6,
+        "shot": "yamal2"
+      }
+    },
+    {
+      "sceneStart": 109.72,
+      "cue": "moveAt",
+      "sourceTime": 110.52,
+      "photoBeat": {
+        "a": 109.72,
+        "b": 112.4,
+        "shot": "cn_crowd"
+      }
+    },
+    {
+      "sceneStart": 109.72,
+      "cue": "arrowAt",
+      "sourceTime": 111.42,
+      "photoBeat": {
+        "a": 109.72,
+        "b": 112.4,
+        "shot": "cn_crowd"
+      }
+    },
+    {
+      "sceneStart": 109.72,
+      "cue": "spaceAt",
+      "sourceTime": 114.32,
+      "photoBeat": {
+        "a": 113.4,
+        "b": 115.4,
+        "shot": "corner_arc"
+      }
+    }
+  ],
+  "clipPackets": {
+    "finding": "Workflow copies full episode SRT and chapters into all outputs; no clip-specific shift/trim in finalize.",
+    "sourceSrtEndSeconds": 174.66,
+    "clips": [
+      {
+        "name": "PRESS",
+        "a": 11.84,
+        "b": 50.66
+      },
+      {
+        "name": "HIGH-LINE",
+        "a": 50.66,
+        "b": 82.62
+      },
+      {
+        "name": "MARTIN",
+        "a": 152.8,
+        "b": 175
+      }
+    ]
+  },
+  "observedWorkflowRuns": [
+    {
+      "id": 40579296179,
+      "head_sha": "244be29b63be656f268c03aedb0df4c09b6e76fd",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "created_at": "2026-10-27T20:34:43Z",
+      "html_url": "https://github.com/ashkan244/barca-yt-render/actions/runs/40579296179"
+    },
+    {
+      "id": 40333096666,
+      "head_sha": "a527da01bb4fedfddc77bb3325ce183d06eaac12",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-26T13:43:30Z",
+      "html_url": "https://github.com/ashkan244/barca-yt-render/actions/runs/40333096666"
+    },
+    {
+      "id": 40331598069,
+      "head_sha": "566bae0590b44dfce904c6f1233d580c202b86f9",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-10-26T13:33:22Z",
+      "html_url": "https://github.com/ashkan244/barca-yt-render/actions/runs/40331598069"
+    },
+    {
+      "id": 40327521320,
+      "head_sha": "bd3f99340d4c52779b9a47e85d231acd16e2987d",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-26T13:04:45Z",
+      "html_url": "https://github.com/ashkan244/barca-yt-render/actions/runs/40327521320"
+    },
+    {
+      "id": 40326725483,
+      "head_sha": "bd3f99340d4c52779b9a47e85d231acd16e2987d",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-10-26T12:58:49Z",
+      "html_url": "https://github.com/ashkan244/barca-yt-render/actions/runs/40326725483"
+    },
+    {
+      "id": 40326095459,
+      "head_sha": "18a0cafcaf9d8f0aa591e37049e391524911de58",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-10-26T12:54:01Z",
+      "html_url": "https://github.com/ashkan244/barca-yt-render/actions/runs/40326095459"
+    },
+    {
+      "id": 40325472407,
+      "head_sha": "45dd91cd6bf880b733546af903d4dd5001a4595b",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-10-26T12:49:13Z",
+      "html_url": "https://github.com/ashkan244/barca-yt-render/actions/runs/40325472407"
+    },
+    {
+      "id": 40324066105,
+      "head_sha": "39bb3873b6e59097b0c79bd9a58f949ae092075d",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "created_at": "2026-10-26T12:38:15Z",
+      "html_url": "https://github.com/ashkan244/barca-yt-render/actions/runs/40324066105"
+    }
+  ],
+  "remainingProductionFindings": "See final-upgrade-review-2026-10-29.fa.md; this evidence does not mark them fixed.",
+  "independentNewPrototype": "docs/video-production/decision-lab-proof.json"
+}
