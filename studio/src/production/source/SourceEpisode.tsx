@@ -8,6 +8,7 @@ import {ReviewedCaptions, captionKey, type CaptionPage} from '../Captions';
 import type {Player, PlateArrow} from '../TacticalPlate';
 import {BoardPlate, Shot, Thumb, shotLibrary} from './Shot';
 export {BoardPlate} from './Shot';
+import {TRANSITIONS, TransitionIn, TransitionOverlay, type TransitionName} from '../motion';
 import {RadarBg, GRANA, BLAU} from '../../radar/RadarStory';
 import {Mark} from '../../Branding';
 
@@ -32,8 +33,9 @@ export type SourceSpec = {
   long?: {endSeconds?: number; endKicker?: string};
   /** Stand-alone Shorts cut from the same take; a/b must be scene boundaries so every cut lands between sentences. */
   clips?: {name: string; a: number; b: number}[];
-  /** Photo beats: while a name or place is spoken, its shot replaces the board/cards panel (seconds on the source timeline). */
-  beats?: {a: number; b: number; shot: string}[];
+  /** Photo beats: while a name or place is spoken, its shot replaces the board/cards panel (seconds on the source timeline).
+   *  `transition` = how it enters (default zoom). Beats are silent unless `sfx` names a sound (no whoosh per photo). */
+  beats?: {a: number; b: number; shot: string; transition?: TransitionName; sfx?: string}[];
   /** Extra caption emphasis; names on boards and shot labels are added automatically. */
   captions?: {emphasis?: string[]};
 };
@@ -62,6 +64,7 @@ export const validateSourceEpisode = (d: SourceEpisodeProps): SourceEpisodeProps
     if (!lib[b.shot]) err(`beat ${i} uses unknown shot "${b.shot}"`);
     if (b.b <= b.a || b.a < 0 || b.b > spec.duration) err(`beat ${i} has invalid timing`);
     if (i && b.a < all[i - 1].b) err(`beat ${i} overlaps the previous beat`);
+    if (b.transition && !TRANSITIONS[b.transition]) err(`beat ${i} has unknown transition "${b.transition}"`);
   });
   const bounds = spec.scenes.map((s) => s.a).concat(spec.duration);
   spec.clips?.forEach((c) => {
@@ -114,21 +117,22 @@ const Cards: React.FC<{spec: SourceSpec; scene: SourceScene; f: number; width: n
   </div>;
 };
 
-/** The active photo beat (if any) drawn into a panel of the given size, with a quick scale-in and flash. */
+/** The active photo beat (if any) drawn into a panel of the given size, entering with its transition (default zoom). */
 const BeatPanel: React.FC<{spec: SourceSpec; f: number; width: number; height: number; labelSize: number}> = ({spec, f, width, height, labelSize}) => {
   const t = f / FPS; const bi = (spec.beats ?? []).findIndex((b) => t >= b.a && t < b.b);
   if (bi < 0) return null;
   const beat = spec.beats![bi]; const local = f - Math.round(beat.a * FPS); const len = Math.round((beat.b - beat.a) * FPS);
   const k = interpolate(local, [0, 7], [0, 1], {...clamp, easing: Easing.out(Easing.cubic)});
   const out = interpolate(local, [len - 6, len], [1, 0], clamp);
+  const tr = beat.transition ?? 'zoom';
   return <div style={{position: 'absolute', inset: 0, width, height, borderRadius: 24, overflow: 'hidden', opacity: Math.min(k, out), transform: `scale(${0.96 + 0.04 * k})`, boxShadow: '0 22px 60px #000a', border: `3px solid ${GOLD}70`}}>
-    <Shot spec={spec} shot={shotLibrary(spec)[beat.shot]} local={local} len={len} index={bi} labelSize={labelSize} />
-    <AbsoluteFill style={{background: '#fff', opacity: interpolate(local, [0, 3], [.45, 0], clamp)}} />
+    <TransitionIn name={tr} local={local} seed={bi}><Shot spec={spec} shot={shotLibrary(spec)[beat.shot]} local={local} len={len} index={bi} labelSize={labelSize} /></TransitionIn>
+    <TransitionOverlay name={tr} local={local} seed={bi} />
   </div>;
 };
 
 const BeatSfx: React.FC<{spec: SourceSpec; offset?: number}> = ({spec}) => <>
-  {(spec.beats ?? []).map((b, i) => <Sequence key={i} from={Math.max(0, Math.round(b.a * FPS) - 3)} durationInFrames={30}><Audio src={staticFile('sfx/whoosh.wav')} volume={.1} /></Sequence>)}
+  {(spec.beats ?? []).map((b, i) => b.sfx ? <Sequence key={i} from={Math.max(0, Math.round(b.a * FPS) - 3)} durationInFrames={30}><Audio src={staticFile(`sfx/${b.sfx}.wav`)} volume={.1} /></Sequence> : null)}
 </>;
 
 const Presenter: React.FC<{spec: SourceSpec; t: number; style: React.CSSProperties}> = ({spec, t, style}) =>

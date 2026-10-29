@@ -6,13 +6,18 @@ import {LOCAL_FONTS} from '../fonts';
 import {Grain} from '../../lib';
 import {TacticalPlate} from '../TacticalPlate';
 import type {SourceSpec} from './SourceEpisode';
+import {Callout, Handheld, Parallax, type ShotMotion} from '../motion';
 
 const FPS = 30;
 const GOLD = '#f2c230';
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 
 /** A person's photo carries `label` only when the Commons file title names that person. Generic shots have no label. */
-export type ArchiveShot = {src?: string; board?: string; names?: string[]; kind?: 'image' | 'video' | 'board'; grade?: 'bw' | 'warm' | 'none'; label?: string; focus?: [number, number]; from?: number; zoom?: 'in' | 'out'};
+export type ArchiveShot = {src?: string; board?: string; names?: string[]; kind?: 'image' | 'video' | 'board'; grade?: 'bw' | 'warm' | 'none'; label?: string; focus?: [number, number]; from?: number; zoom?: 'in' | 'out';
+  /** Camera inside the frame (default `push`). `parallax` only for photos with a clear subject in front of a background. */
+  motion?: ShotMotion;
+  /** Hand-drawn ring + tag on the detail the sentence is about (% of the frame); drawn from `at` frames into the shot. */
+  callout?: {x: number; y: number; r?: number; label?: string; at?: number}};
 
 export const shotLibrary = (spec: SourceSpec): Record<string, ArchiveShot> =>
   (spec as SourceSpec & {archive?: {shots?: Record<string, ArchiveShot>}}).archive?.shots ?? {};
@@ -38,18 +43,22 @@ export const Shot: React.FC<{spec: SourceSpec; shot: ArchiveShot; local: number;
     <div style={{transform: 'scale(1.08)'}}><BoardPlate spec={spec} board={shot.board!} names={shot.names} readable height={720} progress={interpolate(local, [6, 50], [0, 1], {...clamp, easing: Easing.inOut(Easing.cubic)})} /></div>
   </AbsoluteFill>;
   const k = interpolate(local, [0, Math.max(1, len)], [0, 1], clamp);
+  const motion = shot.motion ?? 'push';
   const zoomIn = shot.zoom ? shot.zoom === 'in' : index % 2 === 0;
-  const scale = zoomIn ? 1.04 + 0.08 * k : 1.12 - 0.08 * k;
+  const scale = motion === 'still' ? 1.04 : zoomIn ? 1.04 + 0.08 * k : 1.12 - 0.08 * k;
   const [fx, fy] = shot.focus ?? [50, 45];
-  const drift = (index % 2 ? -1 : 1) * 14 * k;
+  const drift = motion === 'still' ? 0 : (index % 2 ? -1 : 1) * 14 * k;
   const style: React.CSSProperties = {width: '100%', height: '100%', objectFit: 'cover', objectPosition: `${fx}% ${fy}%`, transform: `scale(${scale}) translateX(${drift}px)`, transformOrigin: `${fx}% ${fy}%`, filter: gradeFilter(shot.grade)};
   const labelIn = interpolate(local, [4, 12], [0, 1], {...clamp, easing: Easing.out(Easing.cubic)});
+  const media = shot.kind === 'video'
+    ? <OffthreadVideo src={staticFile(shot.src!)} muted startFrom={Math.round((shot.from ?? 0) * FPS)} style={style} />
+    : motion === 'parallax' ? <Parallax src={shot.src!} local={local} len={len} focus={[fx, fy]} filter={gradeFilter(shot.grade)} dir={index % 2 ? -1 : 1} />
+    : <Img src={staticFile(shot.src!)} style={style} />;
   return <AbsoluteFill style={{overflow: 'hidden', background: '#000'}}>
-    {shot.kind === 'video'
-      ? <OffthreadVideo src={staticFile(shot.src!)} muted startFrom={Math.round((shot.from ?? 0) * FPS)} style={style} />
-      : <Img src={staticFile(shot.src!)} style={style} />}
+    {motion === 'handheld' ? <Handheld frame={local} seed={index + 3}>{media}</Handheld> : media}
     <AbsoluteFill style={{background: 'radial-gradient(ellipse at 50% 45%, transparent 55%, #000a 100%)'}} />
     {shot.grade === 'bw' && <Grain opacity={0.16} />}
+    {shot.callout && <Callout local={local - (shot.callout.at ?? 10)} x={shot.callout.x} y={shot.callout.y} r={shot.callout.r} label={shot.callout.label} />}
     {shot.label && <div style={{position: 'absolute', left: labelSize * 1.3, bottom: labelSize * 1.1, opacity: labelIn, transform: `translateX(${(1 - labelIn) * -24}px)`, display: 'flex', alignItems: 'center', gap: 12}}>
       <div style={{width: 6, height: labelSize * 1.25, background: GOLD}} />
       <div style={{fontFamily: LOCAL_FONTS.body, fontWeight: 800, fontSize: labelSize, letterSpacing: 3, color: '#fff', textShadow: '0 2px 10px #000'}}>{shot.label}</div>

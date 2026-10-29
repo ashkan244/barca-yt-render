@@ -72,6 +72,10 @@
 | برد تاکتیکی | `production/TacticalPlate.tsx` | حالت readable، دوربین/zoom، حرکت مرحله‌ای (مهره/فلش/ناحیه) |
 | آرشیو | `tools/archive/commons.py`، `archive-research.yml` | جست‌وجو و دریافت Commons با مجوز؛ `draft_cues.py` پیش‌نویس خودکار کات‌ها |
 | رندر | `render-source-short.yml` | `outputs=short,long,clips,archive,adaptive`، `mode=preview|release`، رندر موازی، delivery.json برای هر خروجی |
+| موشن (v6) | `studio/src/production/motion/` | کتابخانهٔ حرکت: ۱۰ ترنزیشن با نقش صوتی، دوربین شات (`push`/`parallax`/`handheld`)، callout، کارت کینتیک (`slam`/`pop`/`type`/`count`)، stamp، lower third، نور فیلم؛ مرجع تصویری: کامپوزیشن `MOTION-LIBRARY` |
+| تدوینگر هوشمند | `tools/ai/motion_director.py`، `ai-motion-plan.yml` | Claude (Opus) از روی متن، کات‌ها و عکس‌ها لایهٔ موشن را پیشنهاد می‌دهد → `<id>.motion.json` برای بازبینی → `--apply`؛ نیازمند secret `ANTHROPIC_API_KEY` (هنوز اضافه نشده، اجرای واقعی تست نشده) |
+
+**موشن:** واژگان و قواعد در اسکیل [`barca-motion`](.agents/skills/barca-motion/SKILL.md) است (Claude Code آن را از `.claude/skills` که به `.agents/skills` لینک شده می‌خواند). قاعدهٔ صدا طبق طرح GPT: فقط شروع جمله، حرکت رابطه و نتیجه صدا دارند؛ عکس‌های داخل یک جمله و photo beat ها بی‌صدا هستند. پیش‌نمایش سریع بدون رندر ویدیو: `cd studio && npm run stills -- <پوشه> <COMPOSITION-ID> <فریم‌ها>`.
 
 ارتقاهای بعدی با ترتیب بازبینی‌شده در [گزارش۲۹اکتبر](docs/video-production/final-upgrade-review-2026-10-29.fa.md) و [طرح مدل‌ها](docs/video-production/visual-models-blueprint-2026-10-29.fa.md)؛ [visual-roadmap](docs/video-production/visual-roadmap.fa.md) سابقهٔ نسخه‌ها را نگه می‌دارد.
 

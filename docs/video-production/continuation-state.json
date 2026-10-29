@@ -29,6 +29,7 @@
     "docs/barca-radar/clasico-source/README.md",
     ".agents/skills/video-production/SKILL.md",
     ".agents/skills/barca-visual-direction/SKILL.md",
+    ".agents/skills/barca-motion/SKILL.md",
     "docs/video-production/final-upgrade-review-2026-10-29.fa.md",
     "docs/video-production/visual-models-blueprint-2026-10-29.fa.md"
   ],
@@ -174,6 +175,23 @@
       "report": "docs/video-production/decision-lab-study.fa.md",
       "evidence": "docs/video-production/decision-lab-proof.json",
       "limitations": "16s original schematic in each ratio; no presenter/audio integration, no new Actions delivery or audience test"
+    },
+    {
+      "id": "motion-library",
+      "status": "implemented-typechecked-stills-reviewed",
+      "entrypoint": "studio/src/production/motion/index.ts",
+      "skill": ".agents/skills/barca-motion/SKILL.md",
+      "reference": "composition MOTION-LIBRARY",
+      "usedBy": "ArchiveShort (cue transitions, card motion, shake, hook), Shot (motion, callout), SourceEpisode beats",
+      "videoRender": "not_rendered_yet (user asked for engine-only work)"
+    },
+    {
+      "id": "ai-motion-director",
+      "status": "implemented-dry-run-and-unit-tested; live API call not tested",
+      "entrypoint": "tools/ai/motion_director.py",
+      "workflow": ".github/workflows/ai-motion-plan.yml",
+      "model": "claude-opus-5-5",
+      "needs": "ANTHROPIC_API_KEY repository secret"
     }
   ],
   "externalProviderConnectionsEstablishedByThisResearch": [],
