@@ -1,0 +1,58 @@
+# Claude proposes the motion layer (transitions, card motion, shot camera, callouts) for an episode spec and commits
+# <id>.motion.json for review. With apply=true it also merges the plan into the spec. Needs the ANTHROPIC_API_KEY secret.
+# Photos are taken from the render workflow's archive cache when present; without them the plan skips callouts.
+name: AI motion plan
+on:
+  workflow_dispatch:
+    inputs:
+      episode: {description: Source episode id from studio/src/episodes-source (e.g. CLASICO-SOURCE), default: CLASICO-SOURCE}
+      effort: {description: low | medium | high | xhigh | max, default: high}
+      images: {description: Photo shots shown to the model, default: '12'}
+      apply: {description: Merge the plan into the spec, type: boolean, default: false}
+permissions:
+  contents: write
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      EPISODE: ${{ inputs.episode }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check API key
+        env: {KEY: '${{ secrets.ANTHROPIC_API_KEY }}'}
+        run: '[ -n "$KEY" ] || { echo "::error::Add the ANTHROPIC_API_KEY repository secret first."; exit 1; }'
+      - name: Plan archive media
+        id: arch
+        run: |
+          info=$(node studio/scripts/source-plan.mjs "$EPISODE" info)
+          manifest="$(jq -r .docs <<<"$info")/archive-manifest.json"
+          if [ -n "$(jq -r .archive <<<"$info")" ] && [ -f "$manifest" ]; then
+            echo "dir=$(jq -r .archive <<<"$info")" >> "$GITHUB_OUTPUT"
+            echo "key=radar-archive-$(sha256sum "$manifest" tools/archive/commons.py | sha256sum | cut -c1-32)" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Restore archive photos (render cache)
+        if: steps.arch.outputs.dir != ''
+        uses: actions/cache/restore@v4
+        with:
+          path: studio/public/${{ steps.arch.outputs.dir }}
+          key: ${{ steps.arch.outputs.key }}
+      - run: pip install -q anthropic pillow
+      - name: Ask Claude for the motion plan
+        env: {ANTHROPIC_API_KEY: '${{ secrets.ANTHROPIC_API_KEY }}'}
+        run: |
+          spec=$(grep -l "\"id\": *\"$EPISODE\"" studio/src/episodes-source/*.spec.json | head -1)
+          [ -n "$spec" ] || { echo "::error::No spec with id $EPISODE"; exit 1; }
+          python tools/ai/motion_director.py "$spec" --effort '${{ inputs.effort }}' --images '${{ inputs.images }}' | tee -a "$GITHUB_STEP_SUMMARY"
+          if [ '${{ inputs.apply }}' = true ]; then python tools/ai/motion_director.py "$spec" --apply "${spec%.spec.json}.motion.json"; fi
+      - name: Typecheck the spec
+        if: inputs.apply
+        working-directory: studio
+        run: npm ci --no-audit --no-fund && npx tsc --noEmit
+      - name: Commit plan
+        run: |
+          git config user.name github-actions[bot]; git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add studio/src/episodes-source
+          git diff --cached --quiet && exit 0
+          git commit -m "motion: Claude plan for $EPISODE (run $GITHUB_RUN_ID)"
+          git pull --rebase origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME"
