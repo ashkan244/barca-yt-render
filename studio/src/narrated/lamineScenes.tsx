@@ -86,7 +86,7 @@ const WINNERS: [string, string, number][] = [
 
 export const LWinners: React.FC<SceneProps> = ({ frames }) => {
   const frame = useCurrentFrame();
-  const step = Math.max(6, Math.round((frames * 0.55) / WINNERS.length));
+  const step = Math.max(5, Math.round((frames * 0.3) / WINNERS.length));
   return (
     <AbsoluteFill>
       <DarkBg glow="#2a3350" />
@@ -127,7 +127,7 @@ const PODIUM = [
 
 export const LBallon: React.FC<SceneProps> = ({ frames }) => {
   const frame = useCurrentFrame();
-  const note = interpolate(frame, [frames * 0.72, frames * 0.72 + 10], [0, 1], clamp);
+  const note = interpolate(frame, [frames * 0.68, frames * 0.68 + 10], [0, 1], clamp);
   return (
     <AbsoluteFill>
       <DarkBg glow="#3d3216" />
@@ -161,7 +161,7 @@ export const LBallon: React.FC<SceneProps> = ({ frames }) => {
           );
         })}
       </div>
-      <div style={{ position: 'absolute', top: 1385, left: 0, right: 0, display: 'flex', justifyContent: 'center', opacity: note, transform: `translateY(${(1 - note) * 20}px)` }}>
+      <div style={{ position: 'absolute', top: 330, left: 0, right: 0, display: 'flex', justifyContent: 'center', opacity: note, transform: `translateY(${(1 - note) * 20}px)` }}>
         <div style={{ padding: '6px 26px', borderRadius: 30, background: 'rgba(0,0,0,0.6)', border: `2px solid ${C.gold}`, fontFamily: BODY, fontWeight: 800, fontSize: 38, color: C.gold }}>2025: RUNNER-UP</div>
       </div>
     </AbsoluteFill>
