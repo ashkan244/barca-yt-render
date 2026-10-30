@@ -1,0 +1,22 @@
+{
+  "note": "Commons searches for the narrated 'Why Barça and Madrid hate each other' short (CLASICO-RIVALRY). Pushing this file runs .github/workflows/archive-research.yml; results land in archive-candidates/. Topics the archive library already covers (Franco, Sunyol, Cruyff, Di Stéfano, Figo, senyera, aerials, newsreels) are not repeated.",
+  "queries": [
+    {"id": "primo-de-rivera", "q": "Miguel Primo de Rivera"},
+    {"id": "les-corts", "q": "Camp de Les Corts Barcelona"},
+    {"id": "gamper", "q": "Joan Gamper"},
+    {"id": "barca-early", "q": "FC Barcelona team 1903"},
+    {"id": "madrid-early", "q": "Madrid Foot-ball Club 1902"},
+    {"id": "chamartin", "q": "Estadio Chamartín Madrid"},
+    {"id": "bernabeu-person", "q": "Santiago Bernabéu Yeste"},
+    {"id": "di-stefano-madrid", "q": "Di Stéfano Real Madrid 1950s"},
+    {"id": "messi", "q": "Lionel Messi FC Barcelona"},
+    {"id": "cristiano", "q": "Cristiano Ronaldo Real Madrid"},
+    {"id": "figo-madrid", "q": "Luís Figo Real Madrid"},
+    {"id": "ronaldinho", "q": "Ronaldinho FC Barcelona"},
+    {"id": "catalan-flag", "q": "Senyera estelada balcony Barcelona"},
+    {"id": "diada", "q": "Diada Nacional de Catalunya manifestació"},
+    {"id": "franco-video", "q": "Francisco Franco", "kind": "video"},
+    {"id": "barcelona-1920s-video", "q": "Barcelona 1920s", "kind": "video"},
+    {"id": "camp-nou-crowd-video", "q": "Camp Nou supporters", "kind": "video"}
+  ]
+}
