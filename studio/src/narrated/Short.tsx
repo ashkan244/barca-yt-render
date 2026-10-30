@@ -7,9 +7,9 @@ import { Grain, RadarMark } from './kit';
 import { VISUALS } from './visuals';
 
 export type Word = { w: string; start: number; end: number };
-export type SceneData = { visual: string; text: string; start: number; end: number; words: Word[] };
+export type SceneData = { visual: string; text: string; start: number; end: number; words: Word[]; audio?: string };
 export type ShortData = { id: string; engine: string; audio: string | null; duration: number; scenes: SceneData[] };
-export type ShortProps = { data: ShortData; music?: string };
+export type ShortProps = { data: ShortData; music?: string; kokoro?: string };
 
 const TAIL = 1.8; // seconds held after the last word
 const XFADE = 7; // frames a new visual fades in over the old one
@@ -148,6 +148,9 @@ export const Short: React.FC<ShortProps> = ({ data, music }) => {
       ))}
       <Sequence from={2} durationInFrames={45}><Audio src={staticFile('sfx/impact.wav')} volume={0.35} /></Sequence>
       {data.audio ? <Audio src={staticFile(data.audio)} /> : null}
+      {data.scenes.map((s, i) => s.audio ? (
+        <Sequence key={`a${i}`} from={Math.round(s.start * FPS)} name={`voice ${i}`}><Audio src={staticFile(s.audio)} /></Sequence>
+      ) : null)}
       {music ? <Audio src={staticFile(music)} volume={musicVol} loop /> : null}
     </AbsoluteFill>
   );

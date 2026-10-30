@@ -58,7 +58,7 @@ export const LKopa: React.FC<SceneProps> = ({ frames }) => {
           <div style={{ marginTop: 18, textAlign: 'center', fontFamily: BODY, fontWeight: 800, fontSize: 40, letterSpacing: 4, color: 'rgba(255,255,255,0.8)' }}>BEST YOUNG PLAYER</div>
         </div>
       </Center>
-      <div style={{ position: 'absolute', top: 1080, left: 0, right: 0, display: 'flex', justifyContent: 'center', gap: 26 }}>
+      <div style={{ position: 'absolute', top: 1040, left: 0, right: 0, display: 'flex', justifyContent: 'center', gap: 26 }}>
         {years.map((y, i) => {
           const p = spring({ frame: frame - 10 - i * step, fps: 30, config: { damping: 12 } });
           return (
@@ -70,7 +70,7 @@ export const LKopa: React.FC<SceneProps> = ({ frames }) => {
           );
         })}
       </div>
-      <div style={{ position: 'absolute', top: 1215, left: 0, right: 0, textAlign: 'center', opacity: interpolate(frame, [10 + 3 * step, 22 + 3 * step], [0, 1], clamp) }}>
+      <div style={{ position: 'absolute', top: 1232, left: 0, right: 0, textAlign: 'center', opacity: interpolate(frame, [10 + 3 * step, 22 + 3 * step], [0, 1], clamp) }}>
         <Gold size={120}>×3 IN A ROW</Gold>
       </div>
     </AbsoluteFill>
