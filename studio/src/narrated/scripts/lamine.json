@@ -1,0 +1,28 @@
+{
+  "id": "lamine",
+  "title": "Lamine Yamal just did what no footballer had done",
+  "model": "eleven_v3",
+  "voices": [
+    {"name": "Josh (teacher for kids)", "id": "nzFihrBIvB34imQBuxub"},
+    {"name": "George", "id": "JBFqnCBsd6RMkjVDRZzb"}
+  ],
+  "music": "music/km/inspired.mp3",
+  "sources": [
+    "Ballon d'Or 2026, Palladium Theatre London, 26 Oct 2026: Kane 1st, Mbappé 2nd, Yamal 3rd; Kopa Trophy to Yamal for the 3rd year running, first player ever to win it three times (beIN Sports 26 Oct 2026; Yahoo Sports 27 Oct 2026)",
+    "Kopa winners: 2018 Mbappé, 2019 de Ligt, 2021 Pedri, 2022 Gavi, 2023 Bellingham, 2024-2026 Yamal (beIN Sports)",
+    "Born 13 Jul 2007; Moroccan father, Equatorial Guinean mother; grew up in Rocafonda, Mataró (postcode 08304, his '304' celebration); La Masia 2014; debut 29 Apr 2023 v Real Betis aged 15y 9m 16d; Euro 2024 winner; 2026 World Cup winner (1-0 a.e.t. v Argentina, 19 Jul 2026), youngest to win both; No. 10 since Jul 2025; Ballon d'Or runner-up 2025 (Wikipedia: Lamine Yamal; Yahoo Sports)",
+    "Laporta: 'I am convinced that Lamine will end up winning the Ballon d'Or' (Yahoo Sports, 27 Oct 2026)"
+  ],
+  "scenes": [
+    {"visual": "l-hook", "text": "He's nineteen, and he's just done something no footballer had ever done."},
+    {"visual": "l-kopa", "text": "Lamine Yamal has won the Kopa Trophy for the third year in a row: the award for the best young player in the world."},
+    {"visual": "l-winners", "text": "Before him, Mbappé, Pedri, Gavi and Bellingham each won it once. Nobody had ever won it three times."},
+    {"visual": "l-ballon", "text": "At the 2026 Ballon d'Or in London, he finished third, behind Harry Kane and Kylian Mbappé. A year earlier, he was second.", "say": "At the twenty twenty-six Ballon d'Or in London, he finished third, behind Harry Kane and Kylian Mbappé. A year earlier, he was second."},
+    {"visual": "l-roots", "text": "His father is from Morocco, his mother from Equatorial Guinea, and he grew up in Rocafonda, in Mataró. That's his 304 celebration: the end of the neighbourhood's postcode.", "say": "His father is from Morocco, his mother from Equatorial Guinea, and he grew up in Rocafonda, in Mataró. That's his three-zero-four celebration: the end of the neighbourhood's postcode."},
+    {"visual": "l-masia", "text": "He joined La Masia, Barça's academy, in 2014, when he was still a little kid.", "say": "He joined La Masia, Barça's academy, in twenty fourteen, when he was still a little kid."},
+    {"visual": "l-debut", "text": "He made his first-team debut at just fifteen years, nine months and sixteen days old."},
+    {"visual": "l-trophies", "text": "With Spain, he won Euro 2024 and the 2026 World Cup: the youngest player ever to win both.", "say": "With Spain, he won Euro twenty twenty-four and the twenty twenty-six World Cup: the youngest player ever to win both."},
+    {"visual": "l-ten", "text": "Now he wears Barça's number ten, the shirt that once belonged to Messi."},
+    {"visual": "l-outro", "text": "Joan Laporta says he's convinced Lamine will win the Ballon d'Or one day. Do you agree? Tell us in the comments."}
+  ]
+}

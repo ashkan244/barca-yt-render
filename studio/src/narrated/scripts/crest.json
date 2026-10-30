@@ -1,0 +1,31 @@
+{
+  "id": "crest",
+  "title": "What every part of the Barça crest means",
+  "model": "eleven_v3",
+  "voices": [
+    {"name": "Josh (teacher for kids)", "id": "nzFihrBIvB34imQBuxub"},
+    {"name": "George", "id": "JBFqnCBsd6RMkjVDRZzb"}
+  ],
+  "music": "music/km/heroic-age.mp3",
+  "sources": [
+    "Cross of Saint George / Sant Jordi, patron saint of Catalonia; Sant Jordi's Day 23 April (roses and books)",
+    "Senyera: arms of the Counts of Barcelona / Crown of Aragon",
+    "Joan Gamper founded FC Barcelona on 29 Nov 1899; FC Basel colours is one popular theory of the blaugrana origin (hedged in the script)",
+    "Crest design chosen in a 1910 competition, won by Carles Comamala (medical student, Barça player)"
+  ],
+  "scenes": [
+    {"visual": "hook", "text": "You've seen this crest a thousand times. But do you know what every piece of it means?"},
+    {"visual": "crest-tl", "text": "Top left: a red cross on a white field."},
+    {"visual": "england", "text": "People often ask why Barça put England's flag on their badge. It has nothing to do with England."},
+    {"visual": "stjordi", "text": "It's the Cross of Saint George, Sant Jordi in Catalan: the patron saint of Catalonia, the knight who slays the dragon in the legend."},
+    {"visual": "roses", "text": "Every April 23rd, on Sant Jordi's Day, people in Barcelona give each other roses and books."},
+    {"visual": "crest-tr", "text": "Top right: red stripes on gold."},
+    {"visual": "senyera", "text": "That's the Senyera, the flag of Catalonia. It goes back to the Counts of Barcelona and the medieval Crown of Aragon."},
+    {"visual": "armband", "text": "That's why Barça captains wear its colours on the armband, and why the stands are full of it."},
+    {"visual": "crest-bottom", "text": "At the bottom: blue and garnet stripes. Blaugrana."},
+    {"visual": "gamper", "text": "Joan Gamper, a Swiss footballer, founded the club in 1899. One popular story says he took the colours from his old club, FC Basel.", "say": "Joan Gamper, a Swiss footballer, founded the club in eighteen ninety-nine. One popular story says he took the colours from his old club, FC Basel."},
+    {"visual": "ball", "text": "And right in the middle, an old leather ball, because it all started with a love of the game."},
+    {"visual": "comamala", "text": "The design was chosen in a 1910 competition. The winner was Carles Comamala, a medical student who also played for Barça.", "say": "The design was chosen in a nineteen-ten competition. The winner was Carles Comamala, a medical student who also played for Barça."},
+    {"visual": "outro", "text": "So next time you see it, remember: a saint, a homeland, a club, and a ball. Visca Barça!"}
+  ]
+}

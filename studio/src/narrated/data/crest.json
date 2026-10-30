@@ -1,0 +1,1208 @@
+{
+ "id": "crest",
+ "key": "preview",
+ "engine": "preview",
+ "audio": null,
+ "duration": 80.462,
+ "scenes": [
+  {
+   "visual": "hook",
+   "text": "You've seen this crest a thousand times. But do you know what every piece of it means?",
+   "start": 0.3,
+   "end": 5.412,
+   "words": [
+    {
+     "w": "You've",
+     "start": 0.3,
+     "end": 0.648
+    },
+    {
+     "w": "seen",
+     "start": 0.706,
+     "end": 0.938
+    },
+    {
+     "w": "this",
+     "start": 0.996,
+     "end": 1.228
+    },
+    {
+     "w": "crest",
+     "start": 1.286,
+     "end": 1.576
+    },
+    {
+     "w": "a",
+     "start": 1.634,
+     "end": 1.692
+    },
+    {
+     "w": "thousand",
+     "start": 1.75,
+     "end": 2.214
+    },
+    {
+     "w": "times.",
+     "start": 2.272,
+     "end": 2.682
+    },
+    {
+     "w": "But",
+     "start": 2.74,
+     "end": 2.914
+    },
+    {
+     "w": "do",
+     "start": 2.972,
+     "end": 3.088
+    },
+    {
+     "w": "you",
+     "start": 3.146,
+     "end": 3.32
+    },
+    {
+     "w": "know",
+     "start": 3.378,
+     "end": 3.61
+    },
+    {
+     "w": "what",
+     "start": 3.668,
+     "end": 3.9
+    },
+    {
+     "w": "every",
+     "start": 3.958,
+     "end": 4.248
+    },
+    {
+     "w": "piece",
+     "start": 4.306,
+     "end": 4.596
+    },
+    {
+     "w": "of",
+     "start": 4.654,
+     "end": 4.77
+    },
+    {
+     "w": "it",
+     "start": 4.828,
+     "end": 4.944
+    },
+    {
+     "w": "means?",
+     "start": 5.002,
+     "end": 5.412
+    }
+   ]
+  },
+  {
+   "visual": "crest-tl",
+   "text": "Top left: a red cross on a white field.",
+   "start": 6.112,
+   "end": 8.498,
+   "words": [
+    {
+     "w": "Top",
+     "start": 6.112,
+     "end": 6.286
+    },
+    {
+     "w": "left:",
+     "start": 6.344,
+     "end": 6.696
+    },
+    {
+     "w": "a",
+     "start": 6.754,
+     "end": 6.812
+    },
+    {
+     "w": "red",
+     "start": 6.87,
+     "end": 7.044
+    },
+    {
+     "w": "cross",
+     "start": 7.102,
+     "end": 7.392
+    },
+    {
+     "w": "on",
+     "start": 7.45,
+     "end": 7.566
+    },
+    {
+     "w": "a",
+     "start": 7.624,
+     "end": 7.682
+    },
+    {
+     "w": "white",
+     "start": 7.74,
+     "end": 8.03
+    },
+    {
+     "w": "field.",
+     "start": 8.088,
+     "end": 8.498
+    }
+   ]
+  },
+  {
+   "visual": "england",
+   "text": "People often ask why Barça put England's flag on their badge. It has nothing to do with England.",
+   "start": 9.198,
+   "end": 14.89,
+   "words": [
+    {
+     "w": "People",
+     "start": 9.198,
+     "end": 9.546
+    },
+    {
+     "w": "often",
+     "start": 9.604,
+     "end": 9.894
+    },
+    {
+     "w": "ask",
+     "start": 9.952,
+     "end": 10.126
+    },
+    {
+     "w": "why",
+     "start": 10.184,
+     "end": 10.358
+    },
+    {
+     "w": "Barça",
+     "start": 10.416,
+     "end": 10.706
+    },
+    {
+     "w": "put",
+     "start": 10.764,
+     "end": 10.938
+    },
+    {
+     "w": "England's",
+     "start": 10.996,
+     "end": 11.518
+    },
+    {
+     "w": "flag",
+     "start": 11.576,
+     "end": 11.808
+    },
+    {
+     "w": "on",
+     "start": 11.866,
+     "end": 11.982
+    },
+    {
+     "w": "their",
+     "start": 12.04,
+     "end": 12.33
+    },
+    {
+     "w": "badge.",
+     "start": 12.388,
+     "end": 12.798
+    },
+    {
+     "w": "It",
+     "start": 12.856,
+     "end": 12.972
+    },
+    {
+     "w": "has",
+     "start": 13.03,
+     "end": 13.204
+    },
+    {
+     "w": "nothing",
+     "start": 13.262,
+     "end": 13.668
+    },
+    {
+     "w": "to",
+     "start": 13.726,
+     "end": 13.842
+    },
+    {
+     "w": "do",
+     "start": 13.9,
+     "end": 14.016
+    },
+    {
+     "w": "with",
+     "start": 14.074,
+     "end": 14.306
+    },
+    {
+     "w": "England.",
+     "start": 14.364,
+     "end": 14.89
+    }
+   ]
+  },
+  {
+   "visual": "stjordi",
+   "text": "It's the Cross of Saint George, Sant Jordi in Catalan: the patron saint of Catalonia, the knight who slays the dragon in the legend.",
+   "start": 15.59,
+   "end": 23.494,
+   "words": [
+    {
+     "w": "It's",
+     "start": 15.59,
+     "end": 15.822
+    },
+    {
+     "w": "the",
+     "start": 15.88,
+     "end": 16.054
+    },
+    {
+     "w": "Cross",
+     "start": 16.112,
+     "end": 16.402
+    },
+    {
+     "w": "of",
+     "start": 16.46,
+     "end": 16.576
+    },
+    {
+     "w": "Saint",
+     "start": 16.634,
+     "end": 16.924
+    },
+    {
+     "w": "George,",
+     "start": 16.982,
+     "end": 17.45
+    },
+    {
+     "w": "Sant",
+     "start": 17.508,
+     "end": 17.74
+    },
+    {
+     "w": "Jordi",
+     "start": 17.798,
+     "end": 18.088
+    },
+    {
+     "w": "in",
+     "start": 18.146,
+     "end": 18.262
+    },
+    {
+     "w": "Catalan:",
+     "start": 18.32,
+     "end": 18.846
+    },
+    {
+     "w": "the",
+     "start": 18.904,
+     "end": 19.078
+    },
+    {
+     "w": "patron",
+     "start": 19.136,
+     "end": 19.484
+    },
+    {
+     "w": "saint",
+     "start": 19.542,
+     "end": 19.832
+    },
+    {
+     "w": "of",
+     "start": 19.89,
+     "end": 20.006
+    },
+    {
+     "w": "Catalonia,",
+     "start": 20.064,
+     "end": 20.706
+    },
+    {
+     "w": "the",
+     "start": 20.764,
+     "end": 20.938
+    },
+    {
+     "w": "knight",
+     "start": 20.996,
+     "end": 21.344
+    },
+    {
+     "w": "who",
+     "start": 21.402,
+     "end": 21.576
+    },
+    {
+     "w": "slays",
+     "start": 21.634,
+     "end": 21.924
+    },
+    {
+     "w": "the",
+     "start": 21.982,
+     "end": 22.156
+    },
+    {
+     "w": "dragon",
+     "start": 22.214,
+     "end": 22.562
+    },
+    {
+     "w": "in",
+     "start": 22.62,
+     "end": 22.736
+    },
+    {
+     "w": "the",
+     "start": 22.794,
+     "end": 22.968
+    },
+    {
+     "w": "legend.",
+     "start": 23.026,
+     "end": 23.494
+    }
+   ]
+  },
+  {
+   "visual": "roses",
+   "text": "Every April 23rd, on Sant Jordi's Day, people in Barcelona give each other roses and books.",
+   "start": 24.194,
+   "end": 29.658,
+   "words": [
+    {
+     "w": "Every",
+     "start": 24.194,
+     "end": 24.484
+    },
+    {
+     "w": "April",
+     "start": 24.542,
+     "end": 24.832
+    },
+    {
+     "w": "23rd,",
+     "start": 24.89,
+     "end": 25.242
+    },
+    {
+     "w": "on",
+     "start": 25.3,
+     "end": 25.416
+    },
+    {
+     "w": "Sant",
+     "start": 25.474,
+     "end": 25.706
+    },
+    {
+     "w": "Jordi's",
+     "start": 25.764,
+     "end": 26.17
+    },
+    {
+     "w": "Day,",
+     "start": 26.228,
+     "end": 26.522
+    },
+    {
+     "w": "people",
+     "start": 26.58,
+     "end": 26.928
+    },
+    {
+     "w": "in",
+     "start": 26.986,
+     "end": 27.102
+    },
+    {
+     "w": "Barcelona",
+     "start": 27.16,
+     "end": 27.682
+    },
+    {
+     "w": "give",
+     "start": 27.74,
+     "end": 27.972
+    },
+    {
+     "w": "each",
+     "start": 28.03,
+     "end": 28.262
+    },
+    {
+     "w": "other",
+     "start": 28.32,
+     "end": 28.61
+    },
+    {
+     "w": "roses",
+     "start": 28.668,
+     "end": 28.958
+    },
+    {
+     "w": "and",
+     "start": 29.016,
+     "end": 29.19
+    },
+    {
+     "w": "books.",
+     "start": 29.248,
+     "end": 29.658
+    }
+   ]
+  },
+  {
+   "visual": "crest-tr",
+   "text": "Top right: red stripes on gold.",
+   "start": 30.358,
+   "end": 32.28,
+   "words": [
+    {
+     "w": "Top",
+     "start": 30.358,
+     "end": 30.532
+    },
+    {
+     "w": "right:",
+     "start": 30.59,
+     "end": 31.0
+    },
+    {
+     "w": "red",
+     "start": 31.058,
+     "end": 31.232
+    },
+    {
+     "w": "stripes",
+     "start": 31.29,
+     "end": 31.696
+    },
+    {
+     "w": "on",
+     "start": 31.754,
+     "end": 31.87
+    },
+    {
+     "w": "gold.",
+     "start": 31.928,
+     "end": 32.28
+    }
+   ]
+  },
+  {
+   "visual": "senyera",
+   "text": "That's the Senyera, the flag of Catalonia. It goes back to the Counts of Barcelona and the medieval Crown of Aragon.",
+   "start": 32.98,
+   "end": 39.894,
+   "words": [
+    {
+     "w": "That's",
+     "start": 32.98,
+     "end": 33.328
+    },
+    {
+     "w": "the",
+     "start": 33.386,
+     "end": 33.56
+    },
+    {
+     "w": "Senyera,",
+     "start": 33.618,
+     "end": 34.144
+    },
+    {
+     "w": "the",
+     "start": 34.202,
+     "end": 34.376
+    },
+    {
+     "w": "flag",
+     "start": 34.434,
+     "end": 34.666
+    },
+    {
+     "w": "of",
+     "start": 34.724,
+     "end": 34.84
+    },
+    {
+     "w": "Catalonia.",
+     "start": 34.898,
+     "end": 35.54
+    },
+    {
+     "w": "It",
+     "start": 35.598,
+     "end": 35.714
+    },
+    {
+     "w": "goes",
+     "start": 35.772,
+     "end": 36.004
+    },
+    {
+     "w": "back",
+     "start": 36.062,
+     "end": 36.294
+    },
+    {
+     "w": "to",
+     "start": 36.352,
+     "end": 36.468
+    },
+    {
+     "w": "the",
+     "start": 36.526,
+     "end": 36.7
+    },
+    {
+     "w": "Counts",
+     "start": 36.758,
+     "end": 37.106
+    },
+    {
+     "w": "of",
+     "start": 37.164,
+     "end": 37.28
+    },
+    {
+     "w": "Barcelona",
+     "start": 37.338,
+     "end": 37.86
+    },
+    {
+     "w": "and",
+     "start": 37.918,
+     "end": 38.092
+    },
+    {
+     "w": "the",
+     "start": 38.15,
+     "end": 38.324
+    },
+    {
+     "w": "medieval",
+     "start": 38.382,
+     "end": 38.846
+    },
+    {
+     "w": "Crown",
+     "start": 38.904,
+     "end": 39.194
+    },
+    {
+     "w": "of",
+     "start": 39.252,
+     "end": 39.368
+    },
+    {
+     "w": "Aragon.",
+     "start": 39.426,
+     "end": 39.894
+    }
+   ]
+  },
+  {
+   "visual": "armband",
+   "text": "That's why Barça captains wear its colours on the armband, and why the stands are full of it.",
+   "start": 40.594,
+   "end": 46.112,
+   "words": [
+    {
+     "w": "That's",
+     "start": 40.594,
+     "end": 40.942
+    },
+    {
+     "w": "why",
+     "start": 41.0,
+     "end": 41.174
+    },
+    {
+     "w": "Barça",
+     "start": 41.232,
+     "end": 41.522
+    },
+    {
+     "w": "captains",
+     "start": 41.58,
+     "end": 42.044
+    },
+    {
+     "w": "wear",
+     "start": 42.102,
+     "end": 42.334
+    },
+    {
+     "w": "its",
+     "start": 42.392,
+     "end": 42.566
+    },
+    {
+     "w": "colours",
+     "start": 42.624,
+     "end": 43.03
+    },
+    {
+     "w": "on",
+     "start": 43.088,
+     "end": 43.204
+    },
+    {
+     "w": "the",
+     "start": 43.262,
+     "end": 43.436
+    },
+    {
+     "w": "armband,",
+     "start": 43.494,
+     "end": 44.02
+    },
+    {
+     "w": "and",
+     "start": 44.078,
+     "end": 44.252
+    },
+    {
+     "w": "why",
+     "start": 44.31,
+     "end": 44.484
+    },
+    {
+     "w": "the",
+     "start": 44.542,
+     "end": 44.716
+    },
+    {
+     "w": "stands",
+     "start": 44.774,
+     "end": 45.122
+    },
+    {
+     "w": "are",
+     "start": 45.18,
+     "end": 45.354
+    },
+    {
+     "w": "full",
+     "start": 45.412,
+     "end": 45.644
+    },
+    {
+     "w": "of",
+     "start": 45.702,
+     "end": 45.818
+    },
+    {
+     "w": "it.",
+     "start": 45.876,
+     "end": 46.112
+    }
+   ]
+  },
+  {
+   "visual": "crest-bottom",
+   "text": "At the bottom: blue and garnet stripes. Blaugrana.",
+   "start": 46.812,
+   "end": 49.898,
+   "words": [
+    {
+     "w": "At",
+     "start": 46.812,
+     "end": 46.928
+    },
+    {
+     "w": "the",
+     "start": 46.986,
+     "end": 47.16
+    },
+    {
+     "w": "bottom:",
+     "start": 47.218,
+     "end": 47.686
+    },
+    {
+     "w": "blue",
+     "start": 47.744,
+     "end": 47.976
+    },
+    {
+     "w": "and",
+     "start": 48.034,
+     "end": 48.208
+    },
+    {
+     "w": "garnet",
+     "start": 48.266,
+     "end": 48.614
+    },
+    {
+     "w": "stripes.",
+     "start": 48.672,
+     "end": 49.198
+    },
+    {
+     "w": "Blaugrana.",
+     "start": 49.256,
+     "end": 49.898
+    }
+   ]
+  },
+  {
+   "visual": "gamper",
+   "text": "Joan Gamper, a Swiss footballer, founded the club in 1899. One popular story says he took the colours from his old club, FC Basel.",
+   "start": 50.598,
+   "end": 59.376,
+   "words": [
+    {
+     "w": "Joan",
+     "start": 50.598,
+     "end": 50.942
+    },
+    {
+     "w": "Gamper,",
+     "start": 50.942,
+     "end": 51.459
+    },
+    {
+     "w": "a",
+     "start": 51.459,
+     "end": 51.545
+    },
+    {
+     "w": "Swiss",
+     "start": 51.545,
+     "end": 51.975
+    },
+    {
+     "w": "footballer,",
+     "start": 51.975,
+     "end": 52.836
+    },
+    {
+     "w": "founded",
+     "start": 52.836,
+     "end": 53.438
+    },
+    {
+     "w": "the",
+     "start": 53.438,
+     "end": 53.696
+    },
+    {
+     "w": "club",
+     "start": 53.696,
+     "end": 54.04
+    },
+    {
+     "w": "in",
+     "start": 54.04,
+     "end": 54.212
+    },
+    {
+     "w": "1899.",
+     "start": 54.212,
+     "end": 54.557
+    },
+    {
+     "w": "One",
+     "start": 54.557,
+     "end": 54.815
+    },
+    {
+     "w": "popular",
+     "start": 54.815,
+     "end": 55.417
+    },
+    {
+     "w": "story",
+     "start": 55.417,
+     "end": 55.848
+    },
+    {
+     "w": "says",
+     "start": 55.848,
+     "end": 56.192
+    },
+    {
+     "w": "he",
+     "start": 56.192,
+     "end": 56.364
+    },
+    {
+     "w": "took",
+     "start": 56.364,
+     "end": 56.708
+    },
+    {
+     "w": "the",
+     "start": 56.708,
+     "end": 56.966
+    },
+    {
+     "w": "colours",
+     "start": 56.966,
+     "end": 57.569
+    },
+    {
+     "w": "from",
+     "start": 57.569,
+     "end": 57.913
+    },
+    {
+     "w": "his",
+     "start": 57.913,
+     "end": 58.171
+    },
+    {
+     "w": "old",
+     "start": 58.171,
+     "end": 58.429
+    },
+    {
+     "w": "club,",
+     "start": 58.429,
+     "end": 58.774
+    },
+    {
+     "w": "FC",
+     "start": 58.774,
+     "end": 58.946
+    },
+    {
+     "w": "Basel.",
+     "start": 58.946,
+     "end": 59.376
+    }
+   ]
+  },
+  {
+   "visual": "ball",
+   "text": "And right in the middle, an old leather ball, because it all started with a love of the game.",
+   "start": 60.076,
+   "end": 65.656,
+   "words": [
+    {
+     "w": "And",
+     "start": 60.076,
+     "end": 60.25
+    },
+    {
+     "w": "right",
+     "start": 60.308,
+     "end": 60.598
+    },
+    {
+     "w": "in",
+     "start": 60.656,
+     "end": 60.772
+    },
+    {
+     "w": "the",
+     "start": 60.83,
+     "end": 61.004
+    },
+    {
+     "w": "middle,",
+     "start": 61.062,
+     "end": 61.53
+    },
+    {
+     "w": "an",
+     "start": 61.588,
+     "end": 61.704
+    },
+    {
+     "w": "old",
+     "start": 61.762,
+     "end": 61.936
+    },
+    {
+     "w": "leather",
+     "start": 61.994,
+     "end": 62.4
+    },
+    {
+     "w": "ball,",
+     "start": 62.458,
+     "end": 62.81
+    },
+    {
+     "w": "because",
+     "start": 62.868,
+     "end": 63.274
+    },
+    {
+     "w": "it",
+     "start": 63.332,
+     "end": 63.448
+    },
+    {
+     "w": "all",
+     "start": 63.506,
+     "end": 63.68
+    },
+    {
+     "w": "started",
+     "start": 63.738,
+     "end": 64.144
+    },
+    {
+     "w": "with",
+     "start": 64.202,
+     "end": 64.434
+    },
+    {
+     "w": "a",
+     "start": 64.492,
+     "end": 64.55
+    },
+    {
+     "w": "love",
+     "start": 64.608,
+     "end": 64.84
+    },
+    {
+     "w": "of",
+     "start": 64.898,
+     "end": 65.014
+    },
+    {
+     "w": "the",
+     "start": 65.072,
+     "end": 65.246
+    },
+    {
+     "w": "game.",
+     "start": 65.304,
+     "end": 65.656
+    }
+   ]
+  },
+  {
+   "visual": "comamala",
+   "text": "The design was chosen in a 1910 competition. The winner was Carles Comamala, a medical student who also played for Barça.",
+   "start": 66.356,
+   "end": 74.024,
+   "words": [
+    {
+     "w": "The",
+     "start": 66.356,
+     "end": 66.591
+    },
+    {
+     "w": "design",
+     "start": 66.591,
+     "end": 67.06
+    },
+    {
+     "w": "was",
+     "start": 67.06,
+     "end": 67.295
+    },
+    {
+     "w": "chosen",
+     "start": 67.295,
+     "end": 67.764
+    },
+    {
+     "w": "in",
+     "start": 67.764,
+     "end": 67.921
+    },
+    {
+     "w": "a",
+     "start": 67.921,
+     "end": 67.999
+    },
+    {
+     "w": "1910",
+     "start": 67.999,
+     "end": 68.312
+    },
+    {
+     "w": "competition.",
+     "start": 68.312,
+     "end": 69.173
+    },
+    {
+     "w": "The",
+     "start": 69.173,
+     "end": 69.408
+    },
+    {
+     "w": "winner",
+     "start": 69.408,
+     "end": 69.877
+    },
+    {
+     "w": "was",
+     "start": 69.877,
+     "end": 70.112
+    },
+    {
+     "w": "Carles",
+     "start": 70.112,
+     "end": 70.581
+    },
+    {
+     "w": "Comamala,",
+     "start": 70.581,
+     "end": 71.207
+    },
+    {
+     "w": "a",
+     "start": 71.207,
+     "end": 71.285
+    },
+    {
+     "w": "medical",
+     "start": 71.285,
+     "end": 71.833
+    },
+    {
+     "w": "student",
+     "start": 71.833,
+     "end": 72.381
+    },
+    {
+     "w": "who",
+     "start": 72.381,
+     "end": 72.616
+    },
+    {
+     "w": "also",
+     "start": 72.616,
+     "end": 72.929
+    },
+    {
+     "w": "played",
+     "start": 72.929,
+     "end": 73.398
+    },
+    {
+     "w": "for",
+     "start": 73.398,
+     "end": 73.633
+    },
+    {
+     "w": "Barça.",
+     "start": 73.633,
+     "end": 74.024
+    }
+   ]
+  },
+  {
+   "visual": "outro",
+   "text": "So next time you see it, remember: a saint, a homeland, a club, and a ball. Visca Barça!",
+   "start": 74.724,
+   "end": 80.262,
+   "words": [
+    {
+     "w": "So",
+     "start": 74.724,
+     "end": 74.84
+    },
+    {
+     "w": "next",
+     "start": 74.898,
+     "end": 75.13
+    },
+    {
+     "w": "time",
+     "start": 75.188,
+     "end": 75.42
+    },
+    {
+     "w": "you",
+     "start": 75.478,
+     "end": 75.652
+    },
+    {
+     "w": "see",
+     "start": 75.71,
+     "end": 75.884
+    },
+    {
+     "w": "it,",
+     "start": 75.942,
+     "end": 76.178
+    },
+    {
+     "w": "remember:",
+     "start": 76.236,
+     "end": 76.82
+    },
+    {
+     "w": "a",
+     "start": 76.878,
+     "end": 76.936
+    },
+    {
+     "w": "saint,",
+     "start": 76.994,
+     "end": 77.404
+    },
+    {
+     "w": "a",
+     "start": 77.462,
+     "end": 77.52
+    },
+    {
+     "w": "homeland,",
+     "start": 77.578,
+     "end": 78.162
+    },
+    {
+     "w": "a",
+     "start": 78.22,
+     "end": 78.278
+    },
+    {
+     "w": "club,",
+     "start": 78.336,
+     "end": 78.688
+    },
+    {
+     "w": "and",
+     "start": 78.746,
+     "end": 78.92
+    },
+    {
+     "w": "a",
+     "start": 78.978,
+     "end": 79.036
+    },
+    {
+     "w": "ball.",
+     "start": 79.094,
+     "end": 79.446
+    },
+    {
+     "w": "Visca",
+     "start": 79.504,
+     "end": 79.794
+    },
+    {
+     "w": "Barça!",
+     "start": 79.852,
+     "end": 80.262
+    }
+   ]
+  }
+ ]
+}

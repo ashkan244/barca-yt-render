@@ -21,9 +21,11 @@ import {HKShortCut, HK_RS1_FRAMES, HKShortStats, HK_RS2_FRAMES} from './radar/HK
 import {HKShortPro, HK_RS3_FRAMES} from './radar/HKShortPro';
 import {ClasicoExplainer, CLASICO_FRAMES} from './explainer/Clasico';
 import {HORadar, HO_FRAMES, HOThumb} from './radar/HOTitle';
+import {NarratedShorts} from './narrated';
 
 export const Root: React.FC = () => (
   <>
+    <NarratedShorts />
     {SOURCE_EPISODES.map((d) => (
       <React.Fragment key={d.spec.id}>
         <Composition id={`${d.spec.id}-SHORT`} component={SourceShort} durationInFrames={shortFrames(d.spec)} fps={30} width={1080} height={1920} defaultProps={d} />

@@ -1,0 +1,1019 @@
+{
+ "id": "lamine",
+ "key": "preview",
+ "engine": "preview",
+ "audio": null,
+ "duration": 71.374,
+ "scenes": [
+  {
+   "visual": "l-hook",
+   "text": "He's nineteen, and he's just done something no footballer had ever done.",
+   "start": 0.3,
+   "end": 4.6,
+   "words": [
+    {
+     "w": "He's",
+     "start": 0.3,
+     "end": 0.532
+    },
+    {
+     "w": "nineteen,",
+     "start": 0.59,
+     "end": 1.174
+    },
+    {
+     "w": "and",
+     "start": 1.232,
+     "end": 1.406
+    },
+    {
+     "w": "he's",
+     "start": 1.464,
+     "end": 1.696
+    },
+    {
+     "w": "just",
+     "start": 1.754,
+     "end": 1.986
+    },
+    {
+     "w": "done",
+     "start": 2.044,
+     "end": 2.276
+    },
+    {
+     "w": "something",
+     "start": 2.334,
+     "end": 2.856
+    },
+    {
+     "w": "no",
+     "start": 2.914,
+     "end": 3.03
+    },
+    {
+     "w": "footballer",
+     "start": 3.088,
+     "end": 3.668
+    },
+    {
+     "w": "had",
+     "start": 3.726,
+     "end": 3.9
+    },
+    {
+     "w": "ever",
+     "start": 3.958,
+     "end": 4.19
+    },
+    {
+     "w": "done.",
+     "start": 4.248,
+     "end": 4.6
+    }
+   ]
+  },
+  {
+   "visual": "l-kopa",
+   "text": "Lamine Yamal has won the Kopa Trophy for the third year in a row: the award for the best young player in the world.",
+   "start": 5.3,
+   "end": 12.094,
+   "words": [
+    {
+     "w": "Lamine",
+     "start": 5.3,
+     "end": 5.648
+    },
+    {
+     "w": "Yamal",
+     "start": 5.706,
+     "end": 5.996
+    },
+    {
+     "w": "has",
+     "start": 6.054,
+     "end": 6.228
+    },
+    {
+     "w": "won",
+     "start": 6.286,
+     "end": 6.46
+    },
+    {
+     "w": "the",
+     "start": 6.518,
+     "end": 6.692
+    },
+    {
+     "w": "Kopa",
+     "start": 6.75,
+     "end": 6.982
+    },
+    {
+     "w": "Trophy",
+     "start": 7.04,
+     "end": 7.388
+    },
+    {
+     "w": "for",
+     "start": 7.446,
+     "end": 7.62
+    },
+    {
+     "w": "the",
+     "start": 7.678,
+     "end": 7.852
+    },
+    {
+     "w": "third",
+     "start": 7.91,
+     "end": 8.2
+    },
+    {
+     "w": "year",
+     "start": 8.258,
+     "end": 8.49
+    },
+    {
+     "w": "in",
+     "start": 8.548,
+     "end": 8.664
+    },
+    {
+     "w": "a",
+     "start": 8.722,
+     "end": 8.78
+    },
+    {
+     "w": "row:",
+     "start": 8.838,
+     "end": 9.132
+    },
+    {
+     "w": "the",
+     "start": 9.19,
+     "end": 9.364
+    },
+    {
+     "w": "award",
+     "start": 9.422,
+     "end": 9.712
+    },
+    {
+     "w": "for",
+     "start": 9.77,
+     "end": 9.944
+    },
+    {
+     "w": "the",
+     "start": 10.002,
+     "end": 10.176
+    },
+    {
+     "w": "best",
+     "start": 10.234,
+     "end": 10.466
+    },
+    {
+     "w": "young",
+     "start": 10.524,
+     "end": 10.814
+    },
+    {
+     "w": "player",
+     "start": 10.872,
+     "end": 11.22
+    },
+    {
+     "w": "in",
+     "start": 11.278,
+     "end": 11.394
+    },
+    {
+     "w": "the",
+     "start": 11.452,
+     "end": 11.626
+    },
+    {
+     "w": "world.",
+     "start": 11.684,
+     "end": 12.094
+    }
+   ]
+  },
+  {
+   "visual": "l-winners",
+   "text": "Before him, Mbappé, Pedri, Gavi and Bellingham each won it once. Nobody had ever won it three times.",
+   "start": 12.794,
+   "end": 18.904,
+   "words": [
+    {
+     "w": "Before",
+     "start": 12.794,
+     "end": 13.142
+    },
+    {
+     "w": "him,",
+     "start": 13.2,
+     "end": 13.494
+    },
+    {
+     "w": "Mbappé,",
+     "start": 13.552,
+     "end": 14.02
+    },
+    {
+     "w": "Pedri,",
+     "start": 14.078,
+     "end": 14.488
+    },
+    {
+     "w": "Gavi",
+     "start": 14.546,
+     "end": 14.778
+    },
+    {
+     "w": "and",
+     "start": 14.836,
+     "end": 15.01
+    },
+    {
+     "w": "Bellingham",
+     "start": 15.068,
+     "end": 15.648
+    },
+    {
+     "w": "each",
+     "start": 15.706,
+     "end": 15.938
+    },
+    {
+     "w": "won",
+     "start": 15.996,
+     "end": 16.17
+    },
+    {
+     "w": "it",
+     "start": 16.228,
+     "end": 16.344
+    },
+    {
+     "w": "once.",
+     "start": 16.402,
+     "end": 16.754
+    },
+    {
+     "w": "Nobody",
+     "start": 16.812,
+     "end": 17.16
+    },
+    {
+     "w": "had",
+     "start": 17.218,
+     "end": 17.392
+    },
+    {
+     "w": "ever",
+     "start": 17.45,
+     "end": 17.682
+    },
+    {
+     "w": "won",
+     "start": 17.74,
+     "end": 17.914
+    },
+    {
+     "w": "it",
+     "start": 17.972,
+     "end": 18.088
+    },
+    {
+     "w": "three",
+     "start": 18.146,
+     "end": 18.436
+    },
+    {
+     "w": "times.",
+     "start": 18.494,
+     "end": 18.904
+    }
+   ]
+  },
+  {
+   "visual": "l-ballon",
+   "text": "At the 2026 Ballon d'Or in London, he finished third, behind Harry Kane and Kylian Mbappé. A year earlier, he was second.",
+   "start": 19.604,
+   "end": 27.686,
+   "words": [
+    {
+     "w": "At",
+     "start": 19.604,
+     "end": 19.776
+    },
+    {
+     "w": "the",
+     "start": 19.776,
+     "end": 20.034
+    },
+    {
+     "w": "2026",
+     "start": 20.034,
+     "end": 20.378
+    },
+    {
+     "w": "Ballon",
+     "start": 20.378,
+     "end": 20.894
+    },
+    {
+     "w": "d'Or",
+     "start": 20.894,
+     "end": 21.152
+    },
+    {
+     "w": "in",
+     "start": 21.152,
+     "end": 21.324
+    },
+    {
+     "w": "London,",
+     "start": 21.324,
+     "end": 21.839
+    },
+    {
+     "w": "he",
+     "start": 21.839,
+     "end": 22.011
+    },
+    {
+     "w": "finished",
+     "start": 22.011,
+     "end": 22.699
+    },
+    {
+     "w": "third,",
+     "start": 22.699,
+     "end": 23.129
+    },
+    {
+     "w": "behind",
+     "start": 23.129,
+     "end": 23.645
+    },
+    {
+     "w": "Harry",
+     "start": 23.645,
+     "end": 24.075
+    },
+    {
+     "w": "Kane",
+     "start": 24.075,
+     "end": 24.419
+    },
+    {
+     "w": "and",
+     "start": 24.419,
+     "end": 24.677
+    },
+    {
+     "w": "Kylian",
+     "start": 24.677,
+     "end": 25.193
+    },
+    {
+     "w": "Mbappé.",
+     "start": 25.193,
+     "end": 25.708
+    },
+    {
+     "w": "A",
+     "start": 25.708,
+     "end": 25.794
+    },
+    {
+     "w": "year",
+     "start": 25.794,
+     "end": 26.138
+    },
+    {
+     "w": "earlier,",
+     "start": 26.138,
+     "end": 26.74
+    },
+    {
+     "w": "he",
+     "start": 26.74,
+     "end": 26.912
+    },
+    {
+     "w": "was",
+     "start": 26.912,
+     "end": 27.17
+    },
+    {
+     "w": "second.",
+     "start": 27.17,
+     "end": 27.686
+    }
+   ]
+  },
+  {
+   "visual": "l-roots",
+   "text": "His father is from Morocco, his mother from Equatorial Guinea, and he grew up in Rocafonda, in Mataró. That's his 304 celebration: the end of the neighbourhood's postcode.",
+   "start": 28.386,
+   "end": 39.372,
+   "words": [
+    {
+     "w": "His",
+     "start": 28.386,
+     "end": 28.628
+    },
+    {
+     "w": "father",
+     "start": 28.628,
+     "end": 29.113
+    },
+    {
+     "w": "is",
+     "start": 29.113,
+     "end": 29.275
+    },
+    {
+     "w": "from",
+     "start": 29.275,
+     "end": 29.598
+    },
+    {
+     "w": "Morocco,",
+     "start": 29.598,
+     "end": 30.163
+    },
+    {
+     "w": "his",
+     "start": 30.163,
+     "end": 30.405
+    },
+    {
+     "w": "mother",
+     "start": 30.405,
+     "end": 30.89
+    },
+    {
+     "w": "from",
+     "start": 30.89,
+     "end": 31.213
+    },
+    {
+     "w": "Equatorial",
+     "start": 31.213,
+     "end": 32.021
+    },
+    {
+     "w": "Guinea,",
+     "start": 32.021,
+     "end": 32.506
+    },
+    {
+     "w": "and",
+     "start": 32.506,
+     "end": 32.748
+    },
+    {
+     "w": "he",
+     "start": 32.748,
+     "end": 32.91
+    },
+    {
+     "w": "grew",
+     "start": 32.91,
+     "end": 33.233
+    },
+    {
+     "w": "up",
+     "start": 33.233,
+     "end": 33.394
+    },
+    {
+     "w": "in",
+     "start": 33.394,
+     "end": 33.556
+    },
+    {
+     "w": "Rocafonda,",
+     "start": 33.556,
+     "end": 34.283
+    },
+    {
+     "w": "in",
+     "start": 34.283,
+     "end": 34.444
+    },
+    {
+     "w": "Mataró.",
+     "start": 34.444,
+     "end": 34.929
+    },
+    {
+     "w": "That's",
+     "start": 34.929,
+     "end": 35.333
+    },
+    {
+     "w": "his",
+     "start": 35.333,
+     "end": 35.575
+    },
+    {
+     "w": "304",
+     "start": 35.575,
+     "end": 35.818
+    },
+    {
+     "w": "celebration:",
+     "start": 35.818,
+     "end": 36.706
+    },
+    {
+     "w": "the",
+     "start": 36.706,
+     "end": 36.949
+    },
+    {
+     "w": "end",
+     "start": 36.949,
+     "end": 37.191
+    },
+    {
+     "w": "of",
+     "start": 37.191,
+     "end": 37.353
+    },
+    {
+     "w": "the",
+     "start": 37.353,
+     "end": 37.595
+    },
+    {
+     "w": "neighbourhood's",
+     "start": 37.595,
+     "end": 38.726
+    },
+    {
+     "w": "postcode.",
+     "start": 38.726,
+     "end": 39.372
+    }
+   ]
+  },
+  {
+   "visual": "l-masia",
+   "text": "He joined La Masia, Barça's academy, in 2014, when he was still a little kid.",
+   "start": 40.072,
+   "end": 45.424,
+   "words": [
+    {
+     "w": "He",
+     "start": 40.072,
+     "end": 40.257
+    },
+    {
+     "w": "joined",
+     "start": 40.257,
+     "end": 40.81
+    },
+    {
+     "w": "La",
+     "start": 40.81,
+     "end": 40.995
+    },
+    {
+     "w": "Masia,",
+     "start": 40.995,
+     "end": 41.456
+    },
+    {
+     "w": "Barça's",
+     "start": 41.456,
+     "end": 42.01
+    },
+    {
+     "w": "academy,",
+     "start": 42.01,
+     "end": 42.656
+    },
+    {
+     "w": "in",
+     "start": 42.656,
+     "end": 42.84
+    },
+    {
+     "w": "2014,",
+     "start": 42.84,
+     "end": 43.209
+    },
+    {
+     "w": "when",
+     "start": 43.209,
+     "end": 43.578
+    },
+    {
+     "w": "he",
+     "start": 43.578,
+     "end": 43.763
+    },
+    {
+     "w": "was",
+     "start": 43.763,
+     "end": 44.04
+    },
+    {
+     "w": "still",
+     "start": 44.04,
+     "end": 44.501
+    },
+    {
+     "w": "a",
+     "start": 44.501,
+     "end": 44.594
+    },
+    {
+     "w": "little",
+     "start": 44.594,
+     "end": 45.147
+    },
+    {
+     "w": "kid.",
+     "start": 45.147,
+     "end": 45.424
+    }
+   ]
+  },
+  {
+   "visual": "l-debut",
+   "text": "He made his first-team debut at just fifteen years, nine months and sixteen days old.",
+   "start": 46.124,
+   "end": 51.178,
+   "words": [
+    {
+     "w": "He",
+     "start": 46.124,
+     "end": 46.24
+    },
+    {
+     "w": "made",
+     "start": 46.298,
+     "end": 46.53
+    },
+    {
+     "w": "his",
+     "start": 46.588,
+     "end": 46.762
+    },
+    {
+     "w": "first-team",
+     "start": 46.82,
+     "end": 47.4
+    },
+    {
+     "w": "debut",
+     "start": 47.458,
+     "end": 47.748
+    },
+    {
+     "w": "at",
+     "start": 47.806,
+     "end": 47.922
+    },
+    {
+     "w": "just",
+     "start": 47.98,
+     "end": 48.212
+    },
+    {
+     "w": "fifteen",
+     "start": 48.27,
+     "end": 48.676
+    },
+    {
+     "w": "years,",
+     "start": 48.734,
+     "end": 49.144
+    },
+    {
+     "w": "nine",
+     "start": 49.202,
+     "end": 49.434
+    },
+    {
+     "w": "months",
+     "start": 49.492,
+     "end": 49.84
+    },
+    {
+     "w": "and",
+     "start": 49.898,
+     "end": 50.072
+    },
+    {
+     "w": "sixteen",
+     "start": 50.13,
+     "end": 50.536
+    },
+    {
+     "w": "days",
+     "start": 50.594,
+     "end": 50.826
+    },
+    {
+     "w": "old.",
+     "start": 50.884,
+     "end": 51.178
+    }
+   ]
+  },
+  {
+   "visual": "l-trophies",
+   "text": "With Spain, he won Euro 2024 and the 2026 World Cup: the youngest player ever to win both.",
+   "start": 51.878,
+   "end": 58.85,
+   "words": [
+    {
+     "w": "With",
+     "start": 51.878,
+     "end": 52.276
+    },
+    {
+     "w": "Spain,",
+     "start": 52.276,
+     "end": 52.774
+    },
+    {
+     "w": "he",
+     "start": 52.774,
+     "end": 52.974
+    },
+    {
+     "w": "won",
+     "start": 52.974,
+     "end": 53.272
+    },
+    {
+     "w": "Euro",
+     "start": 53.272,
+     "end": 53.671
+    },
+    {
+     "w": "2024",
+     "start": 53.671,
+     "end": 54.069
+    },
+    {
+     "w": "and",
+     "start": 54.069,
+     "end": 54.368
+    },
+    {
+     "w": "the",
+     "start": 54.368,
+     "end": 54.667
+    },
+    {
+     "w": "2026",
+     "start": 54.667,
+     "end": 55.065
+    },
+    {
+     "w": "World",
+     "start": 55.065,
+     "end": 55.563
+    },
+    {
+     "w": "Cup:",
+     "start": 55.563,
+     "end": 55.862
+    },
+    {
+     "w": "the",
+     "start": 55.862,
+     "end": 56.161
+    },
+    {
+     "w": "youngest",
+     "start": 56.161,
+     "end": 56.958
+    },
+    {
+     "w": "player",
+     "start": 56.958,
+     "end": 57.555
+    },
+    {
+     "w": "ever",
+     "start": 57.555,
+     "end": 57.954
+    },
+    {
+     "w": "to",
+     "start": 57.954,
+     "end": 58.153
+    },
+    {
+     "w": "win",
+     "start": 58.153,
+     "end": 58.452
+    },
+    {
+     "w": "both.",
+     "start": 58.452,
+     "end": 58.85
+    }
+   ]
+  },
+  {
+   "visual": "l-ten",
+   "text": "Now he wears Barça's number ten, the shirt that once belonged to Messi.",
+   "start": 59.55,
+   "end": 63.792,
+   "words": [
+    {
+     "w": "Now",
+     "start": 59.55,
+     "end": 59.724
+    },
+    {
+     "w": "he",
+     "start": 59.782,
+     "end": 59.898
+    },
+    {
+     "w": "wears",
+     "start": 59.956,
+     "end": 60.246
+    },
+    {
+     "w": "Barça's",
+     "start": 60.304,
+     "end": 60.71
+    },
+    {
+     "w": "number",
+     "start": 60.768,
+     "end": 61.116
+    },
+    {
+     "w": "ten,",
+     "start": 61.174,
+     "end": 61.468
+    },
+    {
+     "w": "the",
+     "start": 61.526,
+     "end": 61.7
+    },
+    {
+     "w": "shirt",
+     "start": 61.758,
+     "end": 62.048
+    },
+    {
+     "w": "that",
+     "start": 62.106,
+     "end": 62.338
+    },
+    {
+     "w": "once",
+     "start": 62.396,
+     "end": 62.628
+    },
+    {
+     "w": "belonged",
+     "start": 62.686,
+     "end": 63.15
+    },
+    {
+     "w": "to",
+     "start": 63.208,
+     "end": 63.324
+    },
+    {
+     "w": "Messi.",
+     "start": 63.382,
+     "end": 63.792
+    }
+   ]
+  },
+  {
+   "visual": "l-outro",
+   "text": "Joan Laporta says he's convinced Lamine will win the Ballon d'Or one day. Do you agree? Tell us in the comments.",
+   "start": 64.492,
+   "end": 71.174,
+   "words": [
+    {
+     "w": "Joan",
+     "start": 64.492,
+     "end": 64.724
+    },
+    {
+     "w": "Laporta",
+     "start": 64.782,
+     "end": 65.188
+    },
+    {
+     "w": "says",
+     "start": 65.246,
+     "end": 65.478
+    },
+    {
+     "w": "he's",
+     "start": 65.536,
+     "end": 65.768
+    },
+    {
+     "w": "convinced",
+     "start": 65.826,
+     "end": 66.348
+    },
+    {
+     "w": "Lamine",
+     "start": 66.406,
+     "end": 66.754
+    },
+    {
+     "w": "will",
+     "start": 66.812,
+     "end": 67.044
+    },
+    {
+     "w": "win",
+     "start": 67.102,
+     "end": 67.276
+    },
+    {
+     "w": "the",
+     "start": 67.334,
+     "end": 67.508
+    },
+    {
+     "w": "Ballon",
+     "start": 67.566,
+     "end": 67.914
+    },
+    {
+     "w": "d'Or",
+     "start": 67.972,
+     "end": 68.204
+    },
+    {
+     "w": "one",
+     "start": 68.262,
+     "end": 68.436
+    },
+    {
+     "w": "day.",
+     "start": 68.494,
+     "end": 68.788
+    },
+    {
+     "w": "Do",
+     "start": 68.846,
+     "end": 68.962
+    },
+    {
+     "w": "you",
+     "start": 69.02,
+     "end": 69.194
+    },
+    {
+     "w": "agree?",
+     "start": 69.252,
+     "end": 69.662
+    },
+    {
+     "w": "Tell",
+     "start": 69.72,
+     "end": 69.952
+    },
+    {
+     "w": "us",
+     "start": 70.01,
+     "end": 70.126
+    },
+    {
+     "w": "in",
+     "start": 70.184,
+     "end": 70.3
+    },
+    {
+     "w": "the",
+     "start": 70.358,
+     "end": 70.532
+    },
+    {
+     "w": "comments.",
+     "start": 70.59,
+     "end": 71.174
+    }
+   ]
+  }
+ ]
+}
