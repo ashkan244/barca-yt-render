@@ -1,0 +1,322 @@
+{
+ "schemaVersion": 1,
+ "id": "DREAM88-SOURCE",
+ "duration": 155.9,
+ "fps": 30,
+ "source": {
+  "role": "long",
+  "sha256": "5eab18b5a344c4a7da86c6b62e56d0382fa6ac540d6f8ce364651922978c818c"
+ },
+ "media": {
+  "video": "host/DREAM88/presenter.mp4",
+  "voice": "host/DREAM88/voice.wav",
+  "score": "host/DREAM88/score.wav",
+  "cover": "host/DREAM88/cover.jpg"
+ },
+ "wordsFile": "studio/src/episodes-source/dream88-source.words.json",
+ "captionsFile": "studio/src/episodes-source/dream88-source.pages.json",
+ "srtFile": "docs/barca-radar/dream88-source/DREAM88-SOURCE.srt",
+ "protectedPhrases": [
+  "Johan Cruyff",
+  "Ronald Koeman",
+  "Rinus Michels",
+  "Marco van Basten",
+  "European Cup",
+  "Soviet Union",
+  "Dream Team"
+ ],
+ "review": {
+  "transcript": "pending",
+  "unresolved": [
+   "Presenter ear check of the 11 script-based ASR corrections (caption-corrections.json)"
+  ]
+ },
+ "photoAssets": [],
+ "scenes": [
+  {
+   "a": 0.0,
+   "b": 8.52,
+   "title": "WHERE THE DREAM TEAM BEGAN",
+   "sub": "BARÇA HISTORY · 1988",
+   "mode": "cards",
+   "cards": [
+    [
+     "1988",
+     "ONE YEAR"
+    ],
+    [
+     "THE NETHERLANDS",
+     "MOSTLY"
+    ]
+   ],
+   "layout": "presenter",
+   "cues": {}
+  },
+  {
+   "a": 8.52,
+   "b": 18.74,
+   "title": "THE 1988 ALBUM",
+   "sub": "MONTH BY MONTH",
+   "mode": "cards",
+   "cards": [
+    [
+     "EVERY PHOTO",
+     "TAKEN IN 1988"
+    ],
+    [
+     "THE PIECES",
+     "ONE BY ONE"
+    ]
+   ],
+   "layout": "presenter",
+   "cues": {}
+  },
+  {
+   "a": 18.74,
+   "b": 32.26,
+   "title": "CRUYFF LEAVES AJAX",
+   "sub": "JANUARY 1988 · AMSTERDAM",
+   "mode": "cards",
+   "cards": [
+    [
+     "JANUARY",
+     "CRUYFF OUT AT AJAX"
+    ],
+    [
+     "THE PLAYERS",
+     "IN SHOCK"
+    ]
+   ],
+   "layout": "presenter",
+   "cues": {}
+  },
+  {
+   "a": 32.26,
+   "b": 44.12,
+   "title": "WHO IS IN CHARGE?",
+   "sub": "AJAX · THE BOARD VS THE COACH",
+   "mode": "cards",
+   "cards": [
+    [
+     "1987",
+     "CUP WINNERS' CUP WITH AJAX"
+    ],
+    [
+     "COACH VS BOARD",
+     "NO AGREEMENT"
+    ]
+   ],
+   "layout": "presenter",
+   "cues": {}
+  },
+  {
+   "a": 44.12,
+   "b": 56.26,
+   "title": "MUTINY AT THE HESPERIA",
+   "sub": "APRIL 1988 · BARCELONA",
+   "mode": "cards",
+   "cards": [
+    [
+     "APRIL",
+     "THE SQUAD AGAINST THE PRESIDENT"
+    ],
+    [
+     "HOTEL HESPERIA",
+     "'RESIGN'"
+    ]
+   ],
+   "layout": "presenter",
+   "cues": {}
+  },
+  {
+   "a": 56.26,
+   "b": 61.46,
+   "title": "THE CALL",
+   "sub": "BARÇA'S PRESIDENT · CRUYFF",
+   "mode": "cards",
+   "cards": [
+    [
+     "THE PRESIDENT",
+     "NEEDS A SOLUTION"
+    ],
+    [
+     "THE CALL",
+     "JOHAN CRUYFF"
+    ]
+   ],
+   "layout": "presenter",
+   "cues": {}
+  },
+  {
+   "a": 61.46,
+   "b": 76.7,
+   "title": "A HUGE RISK",
+   "sub": "WHAT CRUYFF WANTED",
+   "mode": "cards",
+   "cards": [
+    [
+     "3 YEARS",
+     "AS A COACH"
+    ],
+    [
+     "THE DEAL",
+     "CONTROL OF THE FOOTBALL"
+    ]
+   ],
+   "layout": "presenter",
+   "cues": {}
+  },
+  {
+   "a": 76.7,
+   "b": 88.74,
+   "title": "KOEMAN & CRUYFF",
+   "sub": "MAY 1988 · EINDHOVEN · BARCELONA",
+   "mode": "cards",
+   "cards": [
+    [
+     "RONALD KOEMAN",
+     "EUROPEAN CUP WITH PSV"
+    ],
+    [
+     "JOHAN CRUYFF",
+     "BARÇA'S NEW COACH"
+    ]
+   ],
+   "layout": "presenter",
+   "cues": {}
+  },
+  {
+   "a": 88.74,
+   "b": 100.0,
+   "title": "PENALTIES AGAINST BENFICA",
+   "sub": "EUROPEAN CUP FINAL · 25 MAY 1988",
+   "mode": "cards",
+   "cards": [
+    [
+     "PSV 0–0 BENFICA",
+     "6–5 ON PENALTIES"
+    ],
+    [
+     "FIRST DUTCH WINNER",
+     "SINCE AJAX 1973"
+    ]
+   ],
+   "layout": "presenter",
+   "cues": {}
+  },
+  {
+   "a": 100.0,
+   "b": 108.82,
+   "title": "CHAMPIONS OF EUROPE",
+   "sub": "JUNE 1988 · WEST GERMANY",
+   "mode": "cards",
+   "cards": [
+    [
+     "RINUS MICHELS",
+     "CRUYFF'S OLD TEACHER"
+    ],
+    [
+     "BARÇA COACH",
+     "1971–75 · 1976–78"
+    ]
+   ],
+   "layout": "presenter",
+   "cues": {}
+  },
+  {
+   "a": 108.82,
+   "b": 117.08,
+   "title": "THE PIECES",
+   "sub": "THE NETHERLANDS · EURO 88",
+   "mode": "cards",
+   "cards": [
+    [
+     "DEFENCE",
+     "RONALD KOEMAN"
+    ],
+    [
+     "ATTACK",
+     "MARCO VAN BASTEN"
+    ]
+   ],
+   "layout": "presenter",
+   "cues": {}
+  },
+  {
+   "a": 117.08,
+   "b": 131.82,
+   "title": "THE VOLLEY",
+   "sub": "FINAL · NETHERLANDS 2–0 SOVIET UNION",
+   "mode": "cards",
+   "cards": [
+    [
+     "MUNICH",
+     "25 JUNE 1988"
+    ],
+    [
+     "VAN BASTEN",
+     "THE IMPOSSIBLE ANGLE"
+    ]
+   ],
+   "layout": "presenter",
+   "cues": {}
+  },
+  {
+   "a": 131.82,
+   "b": 140.26,
+   "title": "WHAT 1988 GAVE BARÇA",
+   "sub": "THE DREAM TEAM'S FIRST PIECES",
+   "mode": "cards",
+   "cards": [
+    [
+     "A FREE COACH",
+     "JOHAN CRUYFF"
+    ],
+    [
+     "TOTAL CONTROL",
+     "OF THE FOOTBALL"
+    ]
+   ],
+   "layout": "presenter",
+   "cues": {}
+  },
+  {
+   "a": 140.26,
+   "b": 149.62,
+   "title": "WEMBLEY, 1992",
+   "sub": "FOUR YEARS LATER",
+   "mode": "cards",
+   "cards": [
+    [
+     "1989",
+     "KOEMAN JOINS CRUYFF"
+    ],
+    [
+     "1992",
+     "BARÇA'S FIRST EUROPEAN CUP"
+    ]
+   ],
+   "layout": "presenter",
+   "cues": {}
+  },
+  {
+   "a": 149.62,
+   "b": 155.9,
+   "title": "YOUR TURN",
+   "sub": "BARÇA'S MOST IMPORTANT YEAR?",
+   "mode": "cards",
+   "cards": [
+    [
+     "WHICH YEAR?",
+     "MATTERED MOST"
+    ],
+    [
+     "COMMENTS",
+     "TELL US BELOW"
+    ]
+   ],
+   "layout": "presenter",
+   "cues": {}
+  }
+ ]
+}

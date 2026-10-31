@@ -1,0 +1,76 @@
+{
+ "episode": "DREAM88-SOURCE",
+ "asr": "faster-whisper 1.2.1, Systran/faster-whisper-small.en, word_timestamps, vad_filter",
+ "policy": "A word is changed only where the presenter read the supplied script and the heard word is a near-homophone of the script word; timing is kept from the heard span. Pending the presenter's ear check.",
+ "corrections": [
+  {
+   "at": 22.86,
+   "heard": "pulls",
+   "caption": "falls",
+   "reason": "ASR \"pulls\"; script \"falls out with the club's board\""
+  },
+  {
+   "at": 30.88,
+   "heard": "has known him.",
+   "caption": "has no team.",
+   "reason": "ASR \"has known him\"; script \"has no team\""
+  },
+  {
+   "at": 47.12,
+   "heard": "failing",
+   "caption": "falling",
+   "reason": "ASR \"failing\"; script \"falling apart\""
+  },
+  {
+   "at": 77.96,
+   "heard": "center back",
+   "caption": "centre-back",
+   "reason": "spelling (ASR \"center back\"); script \"centre-back\""
+  },
+  {
+   "at": 91.66,
+   "heard": "Mefica.",
+   "caption": "Benfica.",
+   "reason": "ASR \"Mefica\"; script and the 1988 final (PSV v Benfica)"
+  },
+  {
+   "at": 97.18,
+   "heard": "final in Ajax",
+   "caption": "Feyenoord and Ajax",
+   "reason": "ASR \"final in Ajax\"; script \"since Feyenoord and Ajax in the early seventies\""
+  },
+  {
+   "at": 103.62,
+   "heard": "Reinis",
+   "caption": "Rinus",
+   "reason": "ASR \"Reinis\"; script \"Rinus Michels\""
+  },
+  {
+   "at": 108.82,
+   "heard": "In the first,",
+   "caption": "In defence:",
+   "reason": "ASR \"In the first,\"; script \"In defence: Ronald Koeman\""
+  },
+  {
+   "at": 122.4,
+   "heard": "qualities",
+   "caption": "volleys",
+   "reason": "ASR \"qualities\"; script \"one of the greatest volleys in history\""
+  },
+  {
+   "at": 137.24,
+   "heard": "sprayed",
+   "caption": "desperate",
+   "reason": "ASR \"sprayed\"; script \"a club desperate enough\""
+  },
+  {
+   "at": 145.82,
+   "heard": "who discovered",
+   "caption": "would score",
+   "reason": "ASR \"who discovered\"; script \"would score the goal\""
+  }
+ ],
+ "unresolved": [
+  "All corrections above need one listen by the presenter before release (names: Benfica, Feyenoord, Rinus Michels; phrases: \"has no team\", \"In defence\", \"desperate enough\", \"would score\")."
+ ]
+}

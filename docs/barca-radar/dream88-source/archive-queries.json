@@ -1,0 +1,25 @@
+{
+  "note": "DREAM88-SOURCE (1988, the year the Dream Team was assembled). Prefer Nationaal Archief / Anefo photos dated 1987-1988 (CC0/CC BY-SA). A person's photo is used only when the Commons title names that person; generic shots never stand in for a named player.",
+  "queries": [
+    {"id": "cruyff-ajax", "q": "Johan Cruijff trainer Ajax 1987"},
+    {"id": "cruyff-1988", "q": "Johan Cruijff 1988"},
+    {"id": "cruyff-barcelona", "q": "Johan Cruijff Barcelona trainer"},
+    {"id": "ajax-1987", "q": "Ajax Europa Cup II 1987"},
+    {"id": "nunez", "q": "Josep Lluís Núñez"},
+    {"id": "hesperia", "q": "Hotel Hesperia Barcelona"},
+    {"id": "camp-nou-old", "q": "Camp Nou 1982"},
+    {"id": "koeman-psv", "q": "Ronald Koeman PSV"},
+    {"id": "psv-1988", "q": "PSV Europa Cup I 1988"},
+    {"id": "psv-huldiging", "q": "huldiging PSV 1988"},
+    {"id": "michels-1988", "q": "Rinus Michels 1988"},
+    {"id": "vanbasten-1988", "q": "Marco van Basten 1988"},
+    {"id": "ek-1988", "q": "Nederlands elftal Europees kampioen 1988"},
+    {"id": "ek-huldiging", "q": "huldiging Nederlands elftal 1988"},
+    {"id": "koeman-barca", "q": "Ronald Koeman Barcelona"},
+    {"id": "wembley-1992", "q": "Wembley 1992 European Cup final"},
+    {"id": "stuttgart", "q": "Neckarstadion Stuttgart 1980s"},
+    {"id": "munich", "q": "Olympiastadion München"},
+    {"id": "eindhoven", "q": "Philips Stadion Eindhoven"},
+    {"id": "barca-video", "q": "Camp Nou", "kind": "video"}
+  ]
+}

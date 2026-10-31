@@ -1,0 +1,10 @@
+{
+  "note": "Round 2: Koeman in 1988 and the PSV-Benfica European Cup final (Stuttgart, 25 May 1988).",
+  "queries": [
+    {"id": "koeman-1988", "q": "Ronald Koeman 1988"},
+    {"id": "psv-benfica", "q": "PSV Benfica Europa Cup finale 1988"},
+    {"id": "psv-huldiging-1988", "q": "huldiging PSV Europa Cup I Eindhoven"},
+    {"id": "cruyff-barca-1988", "q": "Johan Cruijff Barcelona 1988"},
+    {"id": "ek-finale", "q": "EK finale Nederland Sovjet-Unie 1988"}
+  ]
+}

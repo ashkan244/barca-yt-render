@@ -3,6 +3,7 @@
 // Speech timing is never changed: scenes, chapters and captions all key off the source timeline.
 import React from 'react';
 import {AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, Easing, interpolate, staticFile, useCurrentFrame} from 'remotion';
+import {fitText} from '@remotion/layout-utils';
 import {LOCAL_FONTS} from '../fonts';
 import {ReviewedCaptions, captionKey, type CaptionPage} from '../Captions';
 import type {Player, PlateArrow} from '../TacticalPlate';
@@ -30,12 +31,16 @@ export type SourceSpec = {
   punch?: [number, number][]; boards: Record<string, BoardDef>; scenes: SourceScene[];
   chapters: {at: number; title: string}[];
   cover: {kicker: string; lines: string[]; board?: string};
+  /** Format line under the Short and on the thumbnail (defaults: TACTICAL ANALYSIS / TACTICAL BREAKDOWN). */
+  strap?: string; thumbStrap?: string;
   long?: {endSeconds?: number; endKicker?: string};
   /** Stand-alone Shorts cut from the same take; a/b must be scene boundaries so every cut lands between sentences. */
   clips?: {name: string; a: number; b: number}[];
   /** Photo beats: while a name or place is spoken, its shot replaces the board/cards panel (seconds on the source timeline).
    *  `transition` = how it enters (default zoom). Beats are silent unless `sfx` names a sound (no whoosh per photo). */
-  beats?: {a: number; b: number; shot: string; transition?: TransitionName; sfx?: string}[];
+  beats?: {a: number; b: number; shot: string; transition?: TransitionName; sfx?: string;
+    /** Long-form only: the shot fills the whole 16:9 frame (archive footage, a decisive moment); the Short keeps the panel. */
+    full?: boolean}[];
   /** Extra caption emphasis; names on boards and shot labels are added automatically. */
   captions?: {emphasis?: string[]};
 };
@@ -118,9 +123,9 @@ const Cards: React.FC<{spec: SourceSpec; scene: SourceScene; f: number; width: n
 };
 
 /** The active photo beat (if any) drawn into a panel of the given size, entering with its transition (default zoom). */
-const BeatPanel: React.FC<{spec: SourceSpec; f: number; width: number; height: number; labelSize: number}> = ({spec, f, width, height, labelSize}) => {
+const BeatPanel: React.FC<{spec: SourceSpec; f: number; width: number; height: number; labelSize: number; skipFull?: boolean}> = ({spec, f, width, height, labelSize, skipFull}) => {
   const t = f / FPS; const bi = (spec.beats ?? []).findIndex((b) => t >= b.a && t < b.b);
-  if (bi < 0) return null;
+  if (bi < 0 || (skipFull && spec.beats![bi].full)) return null;
   const beat = spec.beats![bi]; const local = f - Math.round(beat.a * FPS); const len = Math.round((beat.b - beat.a) * FPS);
   const k = interpolate(local, [0, 7], [0, 1], {...clamp, easing: Easing.out(Easing.cubic)});
   const out = interpolate(local, [len - 6, len], [1, 0], clamp);
@@ -129,6 +134,20 @@ const BeatPanel: React.FC<{spec: SourceSpec; f: number; width: number; height: n
     <TransitionIn name={tr} local={local} seed={bi}><Shot spec={spec} shot={shotLibrary(spec)[beat.shot]} local={local} len={len} index={bi} labelSize={labelSize} /></TransitionIn>
     <TransitionOverlay name={tr} local={local} seed={bi} />
   </div>;
+};
+
+/** Long-form full-frame beat: the shot covers presenter and panels; captions stay on top. */
+const FullBeat: React.FC<{spec: SourceSpec; f: number}> = ({spec, f}) => {
+  const t = f / FPS; const bi = (spec.beats ?? []).findIndex((b) => b.full && t >= b.a && t < b.b);
+  if (bi < 0) return null;
+  const beat = spec.beats![bi]; const local = f - Math.round(beat.a * FPS); const len = Math.round((beat.b - beat.a) * FPS);
+  const out = interpolate(local, [len - 6, len], [1, 0], clamp);
+  const tr = beat.transition ?? 'flash';
+  return <AbsoluteFill style={{opacity: out}}>
+    <TransitionIn name={tr} local={local} seed={bi}><Shot spec={spec} shot={shotLibrary(spec)[beat.shot]} local={local} len={len} index={bi} labelSize={40} /></TransitionIn>
+    <TransitionOverlay name={tr} local={local} seed={bi} />
+    <AbsoluteFill style={{background: 'linear-gradient(transparent 70%, #050914cc 100%)'}} />
+  </AbsoluteFill>;
 };
 
 const BeatSfx: React.FC<{spec: SourceSpec; offset?: number}> = ({spec}) => <>
@@ -160,7 +179,7 @@ export const SourceShort: React.FC<SourceEpisodeProps & {window?: [number, numbe
     <div style={{position: 'absolute', left: 60, top: 305, width: 960, height: 610}}><BeatPanel spec={spec} f={f} width={960} height={610} labelSize={30} /></div>
     <Presenter spec={spec} t={t} style={{left: 90, top: 940, width: 900, height: 810, borderRadius: 24}} />
     <ReviewedCaptions pages={pages} words={words} top={1540} width={860} minFontSize={54} emphasis={emphasisFor(spec)} />
-    <div style={{position: 'absolute', bottom: 89, left: 70, right: 70, display: 'flex', justifyContent: 'space-between', color: '#a4b1c4', fontSize: 20, letterSpacing: 2}}><span>WITH {spec.presenter}</span><span>TACTICAL ANALYSIS</span></div>
+    <div style={{position: 'absolute', bottom: 89, left: 70, right: 70, display: 'flex', justifyContent: 'space-between', color: '#a4b1c4', fontSize: 20, letterSpacing: 2}}><span>WITH {spec.presenter}</span><span>{spec.strap ?? 'TACTICAL ANALYSIS'}</span></div>
     <div style={{position: 'absolute', bottom: 68, left: 70, width: 940, height: 3, background: '#ffffff1a'}}><div style={{height: 3, width: `${(f - wa) / (wb - wa) * 100}%`, background: GOLD}} /></div>
     <Audio src={media(spec, 'voice.wav')} volume={window ? (fr) => interpolate(fr, [wb - 6, wb], [1, 0], clamp) : undefined} />
     <Audio src={media(spec, 'score.wav')} volume={(fr) => .22 * interpolate(fr, [wa, wa + 60, wb - 75, wb], [0, 1, 1, 0], clamp)} />
@@ -222,12 +241,13 @@ export const SourceLong: React.FC<SourceEpisodeProps> = ({spec, words, pages}) =
         {scene.board ? <div style={{transform: 'scale(1.08)', transformOrigin: '0 0'}}>{sceneBoard(spec, scene, f, true, 600)}</div>
           : <Cards spec={spec} scene={scene} f={f} width={1920 - right - 70} height={540} size={60} />}
       </div>
-      <div style={{position: 'absolute', left: right, top: 290, width: 1920 - right - 70, height: 640}}><BeatPanel spec={spec} f={f} width={1920 - right - 70} height={640} labelSize={34} /></div>
+      <div style={{position: 'absolute', left: right, top: 290, width: 1920 - right - 70, height: 640}}><BeatPanel spec={spec} f={f} width={1920 - right - 70} height={640} labelSize={34} skipFull /></div>
       <Presenter spec={spec} t={t} style={{left: box.x, top: box.y, width: box.w, height: box.h, borderRadius: 26}} />
       {t < 6 && <div style={{position: 'absolute', left: box.x + 34, top: box.y + box.h - 140, opacity: mix(f, 24) * (1 - mix(f, 5.4 * FPS)), display: 'flex', alignItems: 'center', gap: 16, background: '#050914e6', padding: '12px 26px 12px 14px', borderRadius: 16, borderLeft: `8px solid ${GOLD}`}}>
         <Mark size={70} brand="radar" />
         <div><div style={{fontFamily: LOCAL_FONTS.display, fontSize: 46, lineHeight: 1}}>{spec.presenter}</div><div style={{fontWeight: 900, fontSize: 22, color: GOLD, letterSpacing: 4}}>BARÇA RADAR</div></div>
       </div>}
+      <FullBeat spec={spec} f={f} />
       <ReviewedCaptions pages={pages} words={words} top={958} width={1500} frameWidth={1920} maxFontSize={50} emphasis={emphasisFor(spec)} />
       <div style={{position: 'absolute', bottom: 22, left: 70, width: 1780, height: 4, background: '#ffffff1a'}}>
         <div style={{height: 4, width: `${f / main * 100}%`, background: GOLD}} />
@@ -242,13 +262,15 @@ export const SourceLong: React.FC<SourceEpisodeProps> = ({spec, words, pages}) =
 };
 
 // ---------------- stills ----------------
-const CoverLines: React.FC<{spec: SourceSpec; size: number}> = ({spec, size}) =>
-  <>{spec.cover.lines.map((l, i) => <div key={l} style={{fontFamily: LOCAL_FONTS.display, fontSize: size, lineHeight: 1.02, color: i === spec.cover.lines.length - 1 ? GOLD : '#fff'}}>{l}</div>)}</>;
+/** Each line keeps `size` unless it is wider than `width`; then it shrinks to fit (no wrapping or cut-off titles). */
+const CoverLines: React.FC<{spec: SourceSpec; size: number; width: number}> = ({spec, size, width}) =>
+  <>{spec.cover.lines.map((l, i) => <div key={l} style={{fontFamily: LOCAL_FONTS.display, fontSize: Math.min(size, Math.floor(fitText({text: l, withinWidth: width, fontFamily: LOCAL_FONTS.display}).fontSize)),
+    lineHeight: 1.02, whiteSpace: 'nowrap', color: i === spec.cover.lines.length - 1 ? GOLD : '#fff'}}>{l}</div>)}</>;
 
 export const SourceCover: React.FC<SourceEpisodeProps> = ({spec}) => <AbsoluteFill style={{background: '#080e1b', color: '#fff', fontFamily: LOCAL_FONTS.body}}>
   <div style={{position: 'absolute', top: 86, left: 70, fontFamily: LOCAL_FONTS.display, fontSize: 45}}>BARÇA <span style={{color: GOLD}}>RADAR</span></div>
   <div style={{position: 'absolute', top: 180, left: 70, color: GOLD, fontSize: 26, fontWeight: 800, letterSpacing: 4}}>{spec.cover.kicker}</div>
-  <div style={{position: 'absolute', top: 245, left: 70, right: 70}}><CoverLines spec={spec} size={130} /></div>
+  <div style={{position: 'absolute', top: 245, left: 70, right: 70}}><CoverLines spec={spec} size={130} width={940} /></div>
   {spec.cover.board && <div style={{position: 'absolute', top: 565, left: 60}}><BoardPlate spec={spec} board={spec.cover.board} progress={1} /></div>}
   <div style={{position: 'absolute', left: 110, top: 1200, width: 860, height: 620, overflow: 'hidden', borderRadius: 26, border: '3px solid #f2c23080'}}><Img src={media(spec, 'cover.jpg')} style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 25%'}} /></div>
 </AbsoluteFill>;
@@ -261,8 +283,8 @@ export const SourceThumb: React.FC<SourceEpisodeProps> = ({spec}) => <AbsoluteFi
   </div>
   <div style={{position: 'absolute', left: 670, top: 60, width: 580}}>
     <div style={{display: 'inline-block', fontFamily: LOCAL_FONTS.display, fontSize: 44, color: '#000', background: GOLD, padding: '2px 18px', borderRadius: 10}}>{spec.label}</div>
-    <div style={{marginTop: 18, textShadow: '0 8px 0 #0008'}}><CoverLines spec={spec} size={150} /></div>
-    <div style={{marginTop: 18, fontWeight: 900, fontSize: 30, letterSpacing: 4, color: '#dfe7f3'}}>TACTICAL BREAKDOWN</div>
+    <div style={{marginTop: 18, textShadow: '0 8px 0 #0008'}}><CoverLines spec={spec} size={150} width={580} /></div>
+    <div style={{marginTop: 18, fontWeight: 900, fontSize: 30, letterSpacing: 4, color: '#dfe7f3'}}>{spec.thumbStrap ?? 'TACTICAL BREAKDOWN'}</div>
   </div>
   <div style={{position: 'absolute', right: 26, bottom: 22}}><Mark size={96} brand="radar" /></div>
 </AbsoluteFill>;

@@ -1,0 +1,988 @@
+{
+ "id": "DREAM88-SOURCE",
+ "media": "host/DREAM88",
+ "docs": "docs/barca-radar/dream88-source",
+ "manifest": "studio/src/episodes-source/dream88-source.manifest.json",
+ "duration": 155.9,
+ "label": "BARÇA HISTORY · 1988",
+ "presenter": "MORTI",
+ "opponent": "",
+ "strap": "BARÇA HISTORY · 1988",
+ "thumbStrap": "CRUYFF · KOEMAN · VAN BASTEN",
+ "source": {
+  "sha256": "5eab18b5a344c4a7da86c6b62e56d0382fa6ac540d6f8ce364651922978c818c",
+  "bytes": 115557985,
+  "note": "Clip 4.mp4 (presenter, stream-copied, bit-identical decode) + Clip for 2_06_.mp4 as video track 2 (insert-1)."
+ },
+ "punch": [
+  [
+   27.56,
+   32.26
+  ],
+  [
+   61.46,
+   63.88
+  ],
+  [
+   117.08,
+   120.22
+  ],
+  [
+   149.62,
+   155.9
+  ]
+ ],
+ "boards": {},
+ "scenes": [
+  {
+   "a": 0.0,
+   "b": 8.52,
+   "title": "WHERE THE DREAM TEAM BEGAN",
+   "sub": "BARÇA HISTORY · 1988",
+   "cards": [
+    [
+     "1988",
+     "ONE YEAR"
+    ],
+    [
+     "THE NETHERLANDS",
+     "MOSTLY"
+    ]
+   ]
+  },
+  {
+   "a": 8.52,
+   "b": 18.74,
+   "title": "THE 1988 ALBUM",
+   "sub": "MONTH BY MONTH",
+   "cards": [
+    [
+     "EVERY PHOTO",
+     "TAKEN IN 1988"
+    ],
+    [
+     "THE PIECES",
+     "ONE BY ONE"
+    ]
+   ]
+  },
+  {
+   "a": 18.74,
+   "b": 32.26,
+   "title": "CRUYFF LEAVES AJAX",
+   "sub": "JANUARY 1988 · AMSTERDAM",
+   "cards": [
+    [
+     "JANUARY",
+     "CRUYFF OUT AT AJAX"
+    ],
+    [
+     "THE PLAYERS",
+     "IN SHOCK"
+    ]
+   ]
+  },
+  {
+   "a": 32.26,
+   "b": 44.12,
+   "title": "WHO IS IN CHARGE?",
+   "sub": "AJAX · THE BOARD VS THE COACH",
+   "cards": [
+    [
+     "1987",
+     "CUP WINNERS' CUP WITH AJAX"
+    ],
+    [
+     "COACH VS BOARD",
+     "NO AGREEMENT"
+    ]
+   ]
+  },
+  {
+   "a": 44.12,
+   "b": 56.26,
+   "title": "MUTINY AT THE HESPERIA",
+   "sub": "APRIL 1988 · BARCELONA",
+   "cards": [
+    [
+     "APRIL",
+     "THE SQUAD AGAINST THE PRESIDENT"
+    ],
+    [
+     "HOTEL HESPERIA",
+     "'RESIGN'"
+    ]
+   ]
+  },
+  {
+   "a": 56.26,
+   "b": 61.46,
+   "title": "THE CALL",
+   "sub": "BARÇA'S PRESIDENT · CRUYFF",
+   "cards": [
+    [
+     "THE PRESIDENT",
+     "NEEDS A SOLUTION"
+    ],
+    [
+     "THE CALL",
+     "JOHAN CRUYFF"
+    ]
+   ]
+  },
+  {
+   "a": 61.46,
+   "b": 76.7,
+   "title": "A HUGE RISK",
+   "sub": "WHAT CRUYFF WANTED",
+   "cards": [
+    [
+     "3 YEARS",
+     "AS A COACH"
+    ],
+    [
+     "THE DEAL",
+     "CONTROL OF THE FOOTBALL"
+    ]
+   ]
+  },
+  {
+   "a": 76.7,
+   "b": 88.74,
+   "title": "KOEMAN & CRUYFF",
+   "sub": "MAY 1988 · EINDHOVEN · BARCELONA",
+   "cards": [
+    [
+     "RONALD KOEMAN",
+     "EUROPEAN CUP WITH PSV"
+    ],
+    [
+     "JOHAN CRUYFF",
+     "BARÇA'S NEW COACH"
+    ]
+   ]
+  },
+  {
+   "a": 88.74,
+   "b": 100.0,
+   "title": "PENALTIES AGAINST BENFICA",
+   "sub": "EUROPEAN CUP FINAL · 25 MAY 1988",
+   "cards": [
+    [
+     "PSV 0–0 BENFICA",
+     "6–5 ON PENALTIES"
+    ],
+    [
+     "FIRST DUTCH WINNER",
+     "SINCE AJAX 1973"
+    ]
+   ]
+  },
+  {
+   "a": 100.0,
+   "b": 108.82,
+   "title": "CHAMPIONS OF EUROPE",
+   "sub": "JUNE 1988 · WEST GERMANY",
+   "cards": [
+    [
+     "RINUS MICHELS",
+     "CRUYFF'S OLD TEACHER"
+    ],
+    [
+     "BARÇA COACH",
+     "1971–75 · 1976–78"
+    ]
+   ]
+  },
+  {
+   "a": 108.82,
+   "b": 117.08,
+   "title": "THE PIECES",
+   "sub": "THE NETHERLANDS · EURO 88",
+   "cards": [
+    [
+     "DEFENCE",
+     "RONALD KOEMAN"
+    ],
+    [
+     "ATTACK",
+     "MARCO VAN BASTEN"
+    ]
+   ]
+  },
+  {
+   "a": 117.08,
+   "b": 131.82,
+   "title": "THE VOLLEY",
+   "sub": "FINAL · NETHERLANDS 2–0 SOVIET UNION",
+   "cards": [
+    [
+     "MUNICH",
+     "25 JUNE 1988"
+    ],
+    [
+     "VAN BASTEN",
+     "THE IMPOSSIBLE ANGLE"
+    ]
+   ]
+  },
+  {
+   "a": 131.82,
+   "b": 140.26,
+   "title": "WHAT 1988 GAVE BARÇA",
+   "sub": "THE DREAM TEAM'S FIRST PIECES",
+   "cards": [
+    [
+     "A FREE COACH",
+     "JOHAN CRUYFF"
+    ],
+    [
+     "TOTAL CONTROL",
+     "OF THE FOOTBALL"
+    ]
+   ]
+  },
+  {
+   "a": 140.26,
+   "b": 149.62,
+   "title": "WEMBLEY, 1992",
+   "sub": "FOUR YEARS LATER",
+   "cards": [
+    [
+     "1989",
+     "KOEMAN JOINS CRUYFF"
+    ],
+    [
+     "1992",
+     "BARÇA'S FIRST EUROPEAN CUP"
+    ]
+   ]
+  },
+  {
+   "a": 149.62,
+   "b": 155.9,
+   "title": "YOUR TURN",
+   "sub": "BARÇA'S MOST IMPORTANT YEAR?",
+   "cards": [
+    [
+     "WHICH YEAR?",
+     "MATTERED MOST"
+    ],
+    [
+     "COMMENTS",
+     "TELL US BELOW"
+    ]
+   ]
+  }
+ ],
+ "chapters": [
+  {
+   "at": 0,
+   "title": "1988: the album"
+  },
+  {
+   "at": 18.74,
+   "title": "January: Cruyff leaves Ajax"
+  },
+  {
+   "at": 44.12,
+   "title": "April: Barcelona in crisis"
+  },
+  {
+   "at": 76.7,
+   "title": "May: Koeman and Cruyff"
+  },
+  {
+   "at": 100.0,
+   "title": "June: Euro 88"
+  },
+  {
+   "at": 131.82,
+   "title": "What 1988 gave Barça"
+  }
+ ],
+ "cover": {
+  "kicker": "BARÇA HISTORY · 1988",
+  "lines": [
+   "THE YEAR",
+   "THAT BUILT",
+   "THE DREAM TEAM"
+  ]
+ },
+ "long": {
+  "endSeconds": 20,
+  "endKicker": "MORE BARÇA HISTORY · WATCH NEXT"
+ },
+ "captions": {
+  "emphasis": [
+   "Cruyff",
+   "Koeman",
+   "Michels",
+   "Basten",
+   "Ajax",
+   "PSV",
+   "Benfica",
+   "Feyenoord",
+   "Hesperia"
+  ]
+ },
+ "beats": [
+  {
+   "a": 6.42,
+   "b": 8.4,
+   "shot": "parade_canal"
+  },
+  {
+   "a": 10.84,
+   "b": 14.3,
+   "shot": "parade_crowd"
+  },
+  {
+   "a": 20.08,
+   "b": 22.7,
+   "shot": "cruyff_1988"
+  },
+  {
+   "a": 22.86,
+   "b": 25.3,
+   "shot": "ajax_conflict_chair"
+  },
+  {
+   "a": 25.42,
+   "b": 28.2,
+   "shot": "ajax_conflict_player"
+  },
+  {
+   "a": 38.68,
+   "b": 43.4,
+   "shot": "ajax_conflict_trainers"
+  },
+  {
+   "a": 59.34,
+   "b": 61.4,
+   "shot": "cruyff_to_barcelona"
+  },
+  {
+   "a": 63.88,
+   "b": 69.6,
+   "shot": "cruyff_to_barcelona2"
+  },
+  {
+   "a": 77.14,
+   "b": 79.8,
+   "shot": "koeman_psv_training"
+  },
+  {
+   "a": 79.88,
+   "b": 81.7,
+   "shot": "psv_cup_hiddink"
+  },
+  {
+   "a": 81.72,
+   "b": 84.0,
+   "shot": "koeman_1988"
+  },
+  {
+   "a": 85.64,
+   "b": 88.7,
+   "shot": "cruyff_1988"
+  },
+  {
+   "a": 88.74,
+   "b": 92.9,
+   "shot": "psv_cup_arrival"
+  },
+  {
+   "a": 93.14,
+   "b": 99.0,
+   "shot": "psv_bernabeu_semi"
+  },
+  {
+   "a": 100.54,
+   "b": 103.2,
+   "shot": "parade_gullit_cup"
+  },
+  {
+   "a": 103.3,
+   "b": 107.4,
+   "shot": "michels_1988"
+  },
+  {
+   "a": 108.82,
+   "b": 110.9,
+   "shot": "ireland_lineup"
+  },
+  {
+   "a": 110.96,
+   "b": 116.0,
+   "shot": "vanbasten_england"
+  },
+  {
+   "a": 117.08,
+   "b": 120.1,
+   "shot": "gullit_lifts_vanbasten"
+  },
+  {
+   "a": 126.0,
+   "b": 129.2,
+   "shot": "volley",
+   "full": true,
+   "transition": "flash",
+   "sfx": "crowd"
+  },
+  {
+   "a": 129.3,
+   "b": 131.7,
+   "shot": "parade_michels"
+  },
+  {
+   "a": 134.26,
+   "b": 136.8,
+   "shot": "cruyff_to_barcelona"
+  },
+  {
+   "a": 140.26,
+   "b": 144.3,
+   "shot": "koeman_1988"
+  }
+ ],
+ "archive": {
+  "style": "documentary",
+  "hook": {
+   "text": "THE DREAM TEAM\nWAS BORN IN 1988",
+   "until": 3.08,
+   "motion": "slam"
+  },
+  "cta": {
+   "at": 151.6,
+   "text": "WHICH YEAR? COMMENT ↓"
+  },
+  "shots": {
+   "cruyff_1988": {
+    "src": "archive/DREAM88/cruyff_1988.jpg",
+    "label": "JOHAN CRUYFF · 1988",
+    "focus": [
+     50,
+     30
+    ],
+    "grade": "bw"
+   },
+   "cruyff_to_barcelona": {
+    "src": "archive/DREAM88/cruyff_to_barcelona.jpg",
+    "label": "CRUYFF · SCHIPHOL, 1988",
+    "focus": [
+     52,
+     32
+    ],
+    "grade": "bw"
+   },
+   "cruyff_to_barcelona2": {
+    "src": "archive/DREAM88/cruyff_to_barcelona2.jpg",
+    "label": "JOHAN CRUYFF · 1988",
+    "focus": [
+     35,
+     42
+    ],
+    "grade": "bw"
+   },
+   "ajax_conflict_chair": {
+    "src": "archive/DREAM88/ajax_conflict_chair.jpg",
+    "label": "AJAX · 5 JANUARY 1988",
+    "focus": [
+     32,
+     40
+    ],
+    "grade": "bw"
+   },
+   "ajax_conflict_player": {
+    "src": "archive/DREAM88/ajax_conflict_player.jpg",
+    "label": "AJAX · 5 JANUARY 1988",
+    "focus": [
+     42,
+     38
+    ],
+    "grade": "bw"
+   },
+   "ajax_conflict_trainers": {
+    "src": "archive/DREAM88/ajax_conflict_trainers.jpg",
+    "label": "AJAX · 5 JANUARY 1988",
+    "focus": [
+     56,
+     40
+    ],
+    "grade": "bw"
+   },
+   "koeman_1988": {
+    "src": "archive/DREAM88/koeman_1988.jpg",
+    "label": "RONALD KOEMAN · 1988",
+    "focus": [
+     58,
+     22
+    ],
+    "grade": "bw"
+   },
+   "koeman_psv_training": {
+    "src": "archive/DREAM88/koeman_psv_training.jpg",
+    "label": "KOEMAN · PSV TRAINING, APRIL 1988",
+    "focus": [
+     62,
+     58
+    ],
+    "grade": "bw"
+   },
+   "psv_cup_hiddink": {
+    "src": "archive/DREAM88/psv_cup_hiddink.jpg",
+    "label": "PSV · EUROPEAN CUP, MAY 1988",
+    "focus": [
+     58,
+     34
+    ],
+    "grade": "bw"
+   },
+   "psv_cup_arrival": {
+    "src": "archive/DREAM88/psv_cup_arrival.jpg",
+    "label": "PSV · EINDHOVEN, 26 MAY 1988",
+    "focus": [
+     48,
+     62
+    ],
+    "grade": "bw"
+   },
+   "psv_bernabeu_semi": {
+    "src": "archive/DREAM88/psv_bernabeu_semi.jpg",
+    "label": "PSV · SEMI-FINAL, BERNABÉU",
+    "focus": [
+     50,
+     40
+    ],
+    "grade": "bw"
+   },
+   "michels_1988": {
+    "src": "archive/DREAM88/michels_1988.jpg",
+    "label": "RINUS MICHELS · 1988",
+    "focus": [
+     50,
+     30
+    ],
+    "grade": "bw"
+   },
+   "michels_euro_bench": {
+    "src": "archive/DREAM88/michels_euro_bench.jpg",
+    "label": "RINUS MICHELS · EURO 88",
+    "focus": [
+     70,
+     42
+    ],
+    "grade": "bw"
+   },
+   "ireland_lineup": {
+    "src": "archive/DREAM88/ireland_lineup.jpg",
+    "label": "NETHERLANDS · EURO 88",
+    "focus": [
+     55,
+     45
+    ],
+    "grade": "bw"
+   },
+   "vanbasten_england": {
+    "src": "archive/DREAM88/vanbasten_england.jpg",
+    "label": "MARCO VAN BASTEN · EURO 88",
+    "focus": [
+     76,
+     42
+    ],
+    "grade": "bw"
+   },
+   "gullit_lifts_vanbasten": {
+    "src": "archive/DREAM88/gullit_lifts_vanbasten.jpg",
+    "label": "GULLIT & VAN BASTEN · 1988",
+    "focus": [
+     57,
+     45
+    ],
+    "grade": "bw"
+   },
+   "volley": {
+    "src": "host/DREAM88/insert-1.mp4",
+    "kind": "video",
+    "label": "VAN BASTEN · EURO 88 FINAL",
+    "focus": [
+     55,
+     50
+    ],
+    "motion": "still",
+    "grade": "none"
+   },
+   "parade_michels": {
+    "src": "archive/DREAM88/parade_michels.jpg",
+    "label": "AMSTERDAM · 26 JUNE 1988",
+    "focus": [
+     45,
+     22
+    ],
+    "grade": "bw"
+   },
+   "parade_gullit_cup": {
+    "src": "archive/DREAM88/parade_gullit_cup.jpg",
+    "label": "AMSTERDAM · 26 JUNE 1988",
+    "focus": [
+     55,
+     28
+    ],
+    "grade": "bw"
+   },
+   "parade_canal": {
+    "src": "archive/DREAM88/parade_canal.jpg",
+    "focus": [
+     50,
+     55
+    ],
+    "grade": "bw"
+   },
+   "parade_crowd": {
+    "src": "archive/DREAM88/parade_crowd.jpg",
+    "focus": [
+     50,
+     50
+    ],
+    "grade": "bw"
+   }
+  },
+  "cues": [
+   {
+    "a": 0.0,
+    "b": 3.08,
+    "layout": "full"
+   },
+   {
+    "a": 3.08,
+    "b": 8.52,
+    "layout": "split",
+    "shots": [
+     "parade_crowd",
+     "parade_canal"
+    ],
+    "at": [
+     3.08,
+     6.42
+    ]
+   },
+   {
+    "a": 8.52,
+    "b": 10.84,
+    "layout": "card",
+    "card": [
+     "THE 1988",
+     "ALBUM"
+    ],
+    "cardStyle": "dark"
+   },
+   {
+    "a": 10.84,
+    "b": 18.74,
+    "layout": "split",
+    "shots": [
+     "ireland_lineup",
+     "psv_cup_arrival",
+     "michels_1988"
+    ],
+    "at": [
+     10.84,
+     13.58,
+     16.0
+    ]
+   },
+   {
+    "a": 18.74,
+    "b": 20.08,
+    "layout": "card",
+    "card": [
+     "JANUARY"
+    ],
+    "cardStyle": "gold",
+    "cardMotion": "slam"
+   },
+   {
+    "a": 20.08,
+    "b": 27.56,
+    "layout": "split",
+    "shots": [
+     "cruyff_1988",
+     "ajax_conflict_chair",
+     "ajax_conflict_player"
+    ],
+    "at": [
+     20.08,
+     22.86,
+     25.42
+    ]
+   },
+   {
+    "a": 27.56,
+    "b": 32.26,
+    "layout": "full",
+    "punch": true
+   },
+   {
+    "a": 32.26,
+    "b": 38.68,
+    "layout": "split",
+    "shots": [
+     "ajax_conflict_trainers"
+    ]
+   },
+   {
+    "a": 38.68,
+    "b": 44.12,
+    "layout": "full"
+   },
+   {
+    "a": 44.12,
+    "b": 48.72,
+    "layout": "card",
+    "card": [
+     "MEANWHILE,",
+     "IN BARCELONA"
+    ],
+    "cardStyle": "dark"
+   },
+   {
+    "a": 48.72,
+    "b": 51.52,
+    "layout": "card",
+    "card": [
+     "APRIL"
+    ],
+    "cardStyle": "gold",
+    "cardMotion": "slam"
+   },
+   {
+    "a": 51.52,
+    "b": 56.26,
+    "layout": "card",
+    "card": [
+     "HOTEL",
+     "HESPERIA"
+    ],
+    "cardStyle": "light",
+    "stamp": "RESIGN!"
+   },
+   {
+    "a": 56.26,
+    "b": 59.34,
+    "layout": "full"
+   },
+   {
+    "a": 59.34,
+    "b": 63.88,
+    "layout": "split",
+    "shots": [
+     "cruyff_to_barcelona"
+    ],
+    "transition": "whip"
+   },
+   {
+    "a": 63.88,
+    "b": 66.58,
+    "layout": "card",
+    "card": [
+     "3",
+     "YEARS AS A COACH"
+    ],
+    "cardStyle": "dark",
+    "cardMotion": "count"
+   },
+   {
+    "a": 66.58,
+    "b": 70.68,
+    "layout": "split",
+    "shots": [
+     "cruyff_to_barcelona2"
+    ]
+   },
+   {
+    "a": 70.68,
+    "b": 76.7,
+    "layout": "card",
+    "card": [
+     "CONTROL OF",
+     "THE FOOTBALL"
+    ],
+    "cardStyle": "dark",
+    "cardMotion": "slam"
+   },
+   {
+    "a": 76.7,
+    "b": 77.96,
+    "layout": "card",
+    "card": [
+     "MAY"
+    ],
+    "cardStyle": "gold",
+    "cardMotion": "slam"
+   },
+   {
+    "a": 77.96,
+    "b": 84.0,
+    "layout": "split",
+    "shots": [
+     "koeman_psv_training",
+     "psv_cup_hiddink",
+     "koeman_1988"
+    ],
+    "at": [
+     77.96,
+     79.88,
+     81.72
+    ]
+   },
+   {
+    "a": 84.0,
+    "b": 88.74,
+    "layout": "split",
+    "shots": [
+     "cruyff_1988"
+    ],
+    "transition": "whip"
+   },
+   {
+    "a": 88.74,
+    "b": 93.14,
+    "layout": "split",
+    "shots": [
+     "psv_cup_arrival"
+    ]
+   },
+   {
+    "a": 93.14,
+    "b": 100.0,
+    "layout": "card",
+    "card": [
+     "FIRST DUTCH",
+     "EUROPEAN CUP",
+     "SINCE 1973"
+    ],
+    "cardStyle": "light"
+   },
+   {
+    "a": 100.0,
+    "b": 101.42,
+    "layout": "card",
+    "card": [
+     "JUNE"
+    ],
+    "cardStyle": "gold",
+    "cardMotion": "slam"
+   },
+   {
+    "a": 101.42,
+    "b": 108.82,
+    "layout": "split",
+    "shots": [
+     "parade_gullit_cup",
+     "michels_1988",
+     "michels_euro_bench"
+    ],
+    "at": [
+     101.42,
+     103.3,
+     106.0
+    ]
+   },
+   {
+    "a": 108.82,
+    "b": 117.08,
+    "layout": "split",
+    "shots": [
+     "ireland_lineup",
+     "vanbasten_england",
+     "gullit_lifts_vanbasten"
+    ],
+    "at": [
+     108.82,
+     110.96,
+     113.56
+    ]
+   },
+   {
+    "a": 117.08,
+    "b": 126.0,
+    "layout": "full",
+    "punch": true
+   },
+   {
+    "a": 126.0,
+    "b": 129.2,
+    "layout": "split",
+    "shots": [
+     "volley"
+    ],
+    "transition": "flash",
+    "sfx": "crowd"
+   },
+   {
+    "a": 129.2,
+    "b": 131.82,
+    "layout": "split",
+    "shots": [
+     "parade_michels"
+    ]
+   },
+   {
+    "a": 131.82,
+    "b": 134.26,
+    "layout": "card",
+    "card": [
+     "WHAT 1988",
+     "GAVE BARÇA"
+    ],
+    "cardStyle": "dark"
+   },
+   {
+    "a": 134.26,
+    "b": 136.88,
+    "layout": "split",
+    "shots": [
+     "cruyff_to_barcelona"
+    ]
+   },
+   {
+    "a": 136.88,
+    "b": 140.26,
+    "layout": "card",
+    "card": [
+     "TOTAL",
+     "CONTROL"
+    ],
+    "cardStyle": "dark",
+    "cardMotion": "slam"
+   },
+   {
+    "a": 140.26,
+    "b": 144.42,
+    "layout": "split",
+    "shots": [
+     "koeman_1988"
+    ]
+   },
+   {
+    "a": 144.42,
+    "b": 149.62,
+    "layout": "card",
+    "card": [
+     "1992",
+     "WEMBLEY"
+    ],
+    "cardStyle": "dark",
+    "cardMotion": "slam",
+    "stamp": "FIRST EUROPEAN CUP"
+   },
+   {
+    "a": 149.62,
+    "b": 155.9,
+    "layout": "full",
+    "punch": true
+   }
+  ]
+ }
+}

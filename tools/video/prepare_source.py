@@ -13,6 +13,13 @@ def main():
  f=f"highpass=f=75,loudnorm=I=-16:TP=-2:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true:print_format=json"
  final=cmd(['ffmpeg','-hide_banner','-y','-i',str(a.source),'-vn','-af',f,'-ar','48000','-c:a','pcm_s16le',str(a.output_dir/'voice.wav')])
  (a.output_dir/'voice-measurements.json').write_text(json.dumps({'first_pass':m,'second_pass':json.loads(re.search(r'\{\s*"input_i".*?\}',final.stderr,re.S).group(0))},indent=2))
- cmd(['ffmpeg','-v','error','-y','-ss','60','-i',str(a.source),'-frames:v','1','-q:v','2',str(a.output_dir/'cover.jpg')])
- print('Prepared video, cover still and two-pass voice master. No cuts or time stretch applied.')
+ # the presenter track explicitly: with several video tracks ffmpeg would otherwise pick the largest one
+ cmd(['ffmpeg','-v','error','-y','-ss','60','-i',str(a.source),'-map','0:v:0','-frames:v','1','-q:v','2',str(a.output_dir/'cover.jpg')])
+ # extra video tracks (v:1, v:2…) are inserts that travel inside the same verified source, e.g. archive B-roll
+ # the presenter edit cuts to; they become insert-1.mp4… and play muted as archive shots.
+ tracks=cmd(['ffprobe','-v','error','-select_streams','v','-show_entries','stream=index:stream_disposition=attached_pic','-of','csv=p=0',str(a.source)]).stdout.split()
+ count=sum(1 for t in tracks if not t.endswith(',1'))  # cover art (attached_pic) is not a video track
+ for k in range(1,count):
+  cmd(['ffmpeg','-v','error','-y','-i',str(a.source),'-map',f'0:v:{k}','-an','-vf','fps=30,setsar=1','-c:v','libx264','-preset','fast','-crf','17','-pix_fmt','yuv420p','-movflags','+faststart',str(a.output_dir/f'insert-{k}.mp4')])
+ print(f'Prepared video, cover still, two-pass voice master and {count-1} insert(s). No cuts or time stretch applied.')
 if __name__=='__main__':main()
