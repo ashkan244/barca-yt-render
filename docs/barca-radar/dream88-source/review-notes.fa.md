@@ -22,5 +22,12 @@
 
 1. **گوش مجری** برای ۱۱ اصلاح (Benfica، Feyenoord، Rinus Michels، «has no team»، «In defence»، «desperate»، «would score» …). تا آن زمان `review.transcript = pending` و رندر preview است.
 2. فوتیج والی: حق پخش تلویزیونی؛ بی‌صدا و کوتاه استفاده شده ولی Content ID ممکن است claim کند (راه جایگزین در posting-long).
-3. رندر GitHub و QC فایل خروجی هنوز انجام نشده؛ این یادداشت پس از run به‌روز می‌شود.
+3. ~~رندر GitHub~~ انجام شد (پایین).
 4. خروجی‌های SHORT و CLIP برای این قسمت درخواست نشده‌اند؛ spec بدون clips است.
+
+## رندر و انتشار (۱ نوامبر ۲۰۲۶)
+
+- رندر: [run 41252107502](https://github.com/ashkan244/barca-yt-render/actions/runs/41252107502)، commit `920798f` (= کد `044446d` + فقط تصاویر نامزد آرشیو)، mode=preview، خروجی‌ها long + archive، همه‌ی jobها success.
+- LONG: 1920×1080، 30fps، 175.9s، QC پاس (full decode، بدون خطا)، −16.04 LUFS / −3.80 dBTP، SHA-256 `0bb453819c1774f5a8298698c71df6a8509c9f3e29d32b0f5a58ec70c5881407`. فایل دانلودشده با contact sheet بازبینی شد (والی تمام‌صفحه در 2:05، end screen از 2:35).
+- **انتشار Public در یوتیوب** به تصمیم صریح کاربر (مالک کانال)، پیش از گوش‌دادن مجری به ۱۱ اصلاح: https://youtu.be/BjVkti3wpKk — عنوان، توضیحات با ۶ فصل و کردیت CC BY-SA، تامبنیل DREAM88-SOURCE-THUMB، زیرنویس انگلیسی از SRT، تگ‌ها، Sports، English، Not made for kids، Altered content: No، end screen (Best for viewer + Subscribe + «The Night Barça Won the League»؛ کانال playlist ندارد). بررسی اولیه‌ی یوتیوب: Copyright و Community Guidelines بدون مشکل.
+- نسخه‌ی عمودی ARCHIVE رندر و QC شده ولی آپلود نشده است.
