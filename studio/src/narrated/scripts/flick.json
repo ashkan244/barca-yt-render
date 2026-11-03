@@ -1,0 +1,58 @@
+{
+  "id": "flick",
+  "title": "One Hundred Wins in 131 Games",
+  "model": "kokoro",
+  "voices": [
+    {
+      "name": "Michael",
+      "id": "am_michael"
+    }
+  ],
+  "music": "music/km/volatile-reaction.mp3",
+  "sources": [
+    "FC Barcelona, 'Hansi Flick: Record-breaking 100 wins', 31 October 2026: https://www.fcbarcelona.com/en/football/first-team/news/4601449/hansi-flick-record-breaking-100-wins",
+    "FC Barcelona, 'FC Barcelona 6-1 Alavés: That's more like it!', 31 October 2026: https://www.fcbarcelona.com/en/football/first-team/news/4602177/fc-barcelona-6-1-alaves-thats-more-like-it"
+  ],
+  "scenes": [
+    {
+      "visual": "f-century",
+      "text": "One hundred wins for Barça. Hansi Flick reached the mark in just one hundred and thirty-one games."
+    },
+    {
+      "visual": "f-pace",
+      "text": "Only Luis Enrique got there faster: one hundred and twenty-six."
+    },
+    {
+      "visual": "f-score",
+      "text": "Flick's century arrived Saturday, in a six-one win over Alavés."
+    },
+    {
+      "visual": "f-response",
+      "text": "It followed back-to-back defeats to Paris Saint-Germain and Real Madrid."
+    },
+    {
+      "visual": "f-goals",
+      "text": "Barcelona scored four before half-time, then added two more after the break."
+    },
+    {
+      "visual": "f-move",
+      "text": "The opener was a team move: fifteen passes, involving nine players."
+    },
+    {
+      "visual": "f-fermin",
+      "text": "Fermín López scored once and assisted twice."
+    },
+    {
+      "visual": "f-debut",
+      "text": "With six players unavailable, including four defenders, Brian Fariñas debuted at right-back."
+    },
+    {
+      "visual": "f-rate",
+      "text": "His win rate: seventy-six point three three percent, the highest in club history."
+    },
+    {
+      "visual": "f-outro",
+      "text": "A hundred wins in one hundred and thirty-one games. What comes next?"
+    }
+  ]
+}

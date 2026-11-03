@@ -1,0 +1,658 @@
+{
+  "id": "flick",
+  "engine": "preview",
+  "audio": null,
+  "duration": 48.255,
+  "scenes": [
+    {
+      "visual": "f-century",
+      "text": "One hundred wins for Barça. Hansi Flick reached the mark in just one hundred and thirty-one games.",
+      "start": 0.3,
+      "end": 6.42,
+      "words": [
+        {
+          "w": "One",
+          "start": 0.38,
+          "end": 0.604
+        },
+        {
+          "w": "hundred",
+          "start": 0.628,
+          "end": 1.075
+        },
+        {
+          "w": "wins",
+          "start": 1.125,
+          "end": 1.404
+        },
+        {
+          "w": "for",
+          "start": 1.435,
+          "end": 1.659
+        },
+        {
+          "w": "Barça.",
+          "start": 1.684,
+          "end": 2.019
+        },
+        {
+          "w": "Hansi",
+          "start": 2.056,
+          "end": 2.391
+        },
+        {
+          "w": "Flick",
+          "start": 2.429,
+          "end": 2.764
+        },
+        {
+          "w": "reached",
+          "start": 2.801,
+          "end": 3.248
+        },
+        {
+          "w": "the",
+          "start": 3.298,
+          "end": 3.521
+        },
+        {
+          "w": "mark",
+          "start": 3.546,
+          "end": 3.826
+        },
+        {
+          "w": "in",
+          "start": 3.857,
+          "end": 4.024
+        },
+        {
+          "w": "just",
+          "start": 4.043,
+          "end": 4.322
+        },
+        {
+          "w": "one",
+          "start": 4.353,
+          "end": 4.577
+        },
+        {
+          "w": "hundred",
+          "start": 4.602,
+          "end": 5.049
+        },
+        {
+          "w": "and",
+          "start": 5.098,
+          "end": 5.322
+        },
+        {
+          "w": "thirty-one",
+          "start": 5.347,
+          "end": 5.905
+        },
+        {
+          "w": "games.",
+          "start": 5.968,
+          "end": 6.303
+        }
+      ]
+    },
+    {
+      "visual": "f-pace",
+      "text": "Only Luis Enrique got there faster: one hundred and twenty-six.",
+      "start": 6.74,
+      "end": 10.672,
+      "words": [
+        {
+          "w": "Only",
+          "start": 6.82,
+          "end": 7.098
+        },
+        {
+          "w": "Luis",
+          "start": 7.129,
+          "end": 7.408
+        },
+        {
+          "w": "Enrique",
+          "start": 7.438,
+          "end": 7.884
+        },
+        {
+          "w": "got",
+          "start": 7.933,
+          "end": 8.156
+        },
+        {
+          "w": "there",
+          "start": 8.181,
+          "end": 8.515
+        },
+        {
+          "w": "faster:",
+          "start": 8.552,
+          "end": 8.941
+        },
+        {
+          "w": "one",
+          "start": 8.985,
+          "end": 9.207
+        },
+        {
+          "w": "hundred",
+          "start": 9.232,
+          "end": 9.677
+        },
+        {
+          "w": "and",
+          "start": 9.727,
+          "end": 9.949
+        },
+        {
+          "w": "twenty-six.",
+          "start": 9.974,
+          "end": 10.531
+        }
+      ]
+    },
+    {
+      "visual": "f-score",
+      "text": "Flick's century arrived Saturday, in a six-one win over Alavés.",
+      "start": 10.992,
+      "end": 14.863,
+      "words": [
+        {
+          "w": "Flick's",
+          "start": 11.072,
+          "end": 11.462
+        },
+        {
+          "w": "century",
+          "start": 11.505,
+          "end": 11.951
+        },
+        {
+          "w": "arrived",
+          "start": 12,
+          "end": 12.445
+        },
+        {
+          "w": "Saturday,",
+          "start": 12.495,
+          "end": 12.996
+        },
+        {
+          "w": "in",
+          "start": 13.051,
+          "end": 13.218
+        },
+        {
+          "w": "a",
+          "start": 13.237,
+          "end": 13.348
+        },
+        {
+          "w": "six-one",
+          "start": 13.36,
+          "end": 13.75
+        },
+        {
+          "w": "win",
+          "start": 13.793,
+          "end": 14.016
+        },
+        {
+          "w": "over",
+          "start": 14.04,
+          "end": 14.319
+        },
+        {
+          "w": "Alavés.",
+          "start": 14.35,
+          "end": 14.739
+        }
+      ]
+    },
+    {
+      "visual": "f-response",
+      "text": "It followed back-to-back defeats to Paris Saint-Germain and Real Madrid.",
+      "start": 15.183,
+      "end": 19.615,
+      "words": [
+        {
+          "w": "It",
+          "start": 15.263,
+          "end": 15.43
+        },
+        {
+          "w": "followed",
+          "start": 15.448,
+          "end": 15.95
+        },
+        {
+          "w": "back-to-back",
+          "start": 16.006,
+          "end": 16.619
+        },
+        {
+          "w": "defeats",
+          "start": 16.687,
+          "end": 17.132
+        },
+        {
+          "w": "to",
+          "start": 17.182,
+          "end": 17.349
+        },
+        {
+          "w": "Paris",
+          "start": 17.368,
+          "end": 17.702
+        },
+        {
+          "w": "Saint-Germain",
+          "start": 17.739,
+          "end": 18.464
+        },
+        {
+          "w": "and",
+          "start": 18.544,
+          "end": 18.767
+        },
+        {
+          "w": "Real",
+          "start": 18.792,
+          "end": 19.071
+        },
+        {
+          "w": "Madrid.",
+          "start": 19.102,
+          "end": 19.492
+        }
+      ]
+    },
+    {
+      "visual": "f-goals",
+      "text": "Barcelona scored four before half-time, then added two more after the break.",
+      "start": 19.935,
+      "end": 24.68,
+      "words": [
+        {
+          "w": "Barcelona",
+          "start": 20.015,
+          "end": 20.573
+        },
+        {
+          "w": "scored",
+          "start": 20.635,
+          "end": 21.025
+        },
+        {
+          "w": "four",
+          "start": 21.068,
+          "end": 21.347
+        },
+        {
+          "w": "before",
+          "start": 21.378,
+          "end": 21.768
+        },
+        {
+          "w": "half-time,",
+          "start": 21.812,
+          "end": 22.314
+        },
+        {
+          "w": "then",
+          "start": 22.369,
+          "end": 22.648
+        },
+        {
+          "w": "added",
+          "start": 22.679,
+          "end": 23.014
+        },
+        {
+          "w": "two",
+          "start": 23.051,
+          "end": 23.274
+        },
+        {
+          "w": "more",
+          "start": 23.299,
+          "end": 23.578
+        },
+        {
+          "w": "after",
+          "start": 23.609,
+          "end": 23.943
+        },
+        {
+          "w": "the",
+          "start": 23.98,
+          "end": 24.203
+        },
+        {
+          "w": "break.",
+          "start": 24.228,
+          "end": 24.563
+        }
+      ]
+    },
+    {
+      "visual": "f-move",
+      "text": "The opener was a team move: fifteen passes, involving nine players.",
+      "start": 25,
+      "end": 29.183,
+      "words": [
+        {
+          "w": "The",
+          "start": 25.08,
+          "end": 25.303
+        },
+        {
+          "w": "opener",
+          "start": 25.328,
+          "end": 25.717
+        },
+        {
+          "w": "was",
+          "start": 25.761,
+          "end": 25.984
+        },
+        {
+          "w": "a",
+          "start": 26.008,
+          "end": 26.12
+        },
+        {
+          "w": "team",
+          "start": 26.132,
+          "end": 26.411
+        },
+        {
+          "w": "move:",
+          "start": 26.441,
+          "end": 26.72
+        },
+        {
+          "w": "fifteen",
+          "start": 26.751,
+          "end": 27.196
+        },
+        {
+          "w": "passes,",
+          "start": 27.246,
+          "end": 27.636
+        },
+        {
+          "w": "involving",
+          "start": 27.679,
+          "end": 28.236
+        },
+        {
+          "w": "nine",
+          "start": 28.298,
+          "end": 28.576
+        },
+        {
+          "w": "players.",
+          "start": 28.607,
+          "end": 29.053
+        }
+      ]
+    },
+    {
+      "visual": "f-fermin",
+      "text": "Fermín López scored once and assisted twice.",
+      "start": 29.503,
+      "end": 32.373,
+      "words": [
+        {
+          "w": "Fermín",
+          "start": 29.583,
+          "end": 29.971
+        },
+        {
+          "w": "López",
+          "start": 30.014,
+          "end": 30.346
+        },
+        {
+          "w": "scored",
+          "start": 30.383,
+          "end": 30.771
+        },
+        {
+          "w": "once",
+          "start": 30.814,
+          "end": 31.091
+        },
+        {
+          "w": "and",
+          "start": 31.122,
+          "end": 31.344
+        },
+        {
+          "w": "assisted",
+          "start": 31.369,
+          "end": 31.868
+        },
+        {
+          "w": "twice.",
+          "start": 31.923,
+          "end": 32.256
+        }
+      ]
+    },
+    {
+      "visual": "f-debut",
+      "text": "With six players unavailable, including four defenders, Brian Fariñas debuted at right-back.",
+      "start": 32.693,
+      "end": 38.375,
+      "words": [
+        {
+          "w": "With",
+          "start": 32.773,
+          "end": 33.052
+        },
+        {
+          "w": "six",
+          "start": 33.083,
+          "end": 33.306
+        },
+        {
+          "w": "players",
+          "start": 33.331,
+          "end": 33.778
+        },
+        {
+          "w": "unavailable,",
+          "start": 33.827,
+          "end": 34.498
+        },
+        {
+          "w": "including",
+          "start": 34.572,
+          "end": 35.13
+        },
+        {
+          "w": "four",
+          "start": 35.192,
+          "end": 35.472
+        },
+        {
+          "w": "defenders,",
+          "start": 35.503,
+          "end": 36.061
+        },
+        {
+          "w": "Brian",
+          "start": 36.123,
+          "end": 36.458
+        },
+        {
+          "w": "Fariñas",
+          "start": 36.496,
+          "end": 36.942
+        },
+        {
+          "w": "debuted",
+          "start": 36.992,
+          "end": 37.439
+        },
+        {
+          "w": "at",
+          "start": 37.488,
+          "end": 37.656
+        },
+        {
+          "w": "right-back.",
+          "start": 37.674,
+          "end": 38.233
+        }
+      ]
+    },
+    {
+      "visual": "f-rate",
+      "text": "His win rate: seventy-six point three three percent, the highest in club history.",
+      "start": 38.695,
+      "end": 43.69,
+      "words": [
+        {
+          "w": "His",
+          "start": 38.775,
+          "end": 38.998
+        },
+        {
+          "w": "win",
+          "start": 39.023,
+          "end": 39.246
+        },
+        {
+          "w": "rate:",
+          "start": 39.271,
+          "end": 39.55
+        },
+        {
+          "w": "seventy-six",
+          "start": 39.581,
+          "end": 40.195
+        },
+        {
+          "w": "point",
+          "start": 40.263,
+          "end": 40.597
+        },
+        {
+          "w": "three",
+          "start": 40.635,
+          "end": 40.969
+        },
+        {
+          "w": "three",
+          "start": 41.007,
+          "end": 41.341
+        },
+        {
+          "w": "percent,",
+          "start": 41.378,
+          "end": 41.825
+        },
+        {
+          "w": "the",
+          "start": 41.874,
+          "end": 42.098
+        },
+        {
+          "w": "highest",
+          "start": 42.122,
+          "end": 42.569
+        },
+        {
+          "w": "in",
+          "start": 42.618,
+          "end": 42.786
+        },
+        {
+          "w": "club",
+          "start": 42.804,
+          "end": 43.083
+        },
+        {
+          "w": "history.",
+          "start": 43.114,
+          "end": 43.56
+        }
+      ]
+    },
+    {
+      "visual": "f-outro",
+      "text": "A hundred wins in one hundred and thirty-one games. What comes next?",
+      "start": 44.01,
+      "end": 48.255,
+      "words": [
+        {
+          "w": "A",
+          "start": 44.09,
+          "end": 44.201
+        },
+        {
+          "w": "hundred",
+          "start": 44.214,
+          "end": 44.659
+        },
+        {
+          "w": "wins",
+          "start": 44.709,
+          "end": 44.987
+        },
+        {
+          "w": "in",
+          "start": 45.018,
+          "end": 45.186
+        },
+        {
+          "w": "one",
+          "start": 45.204,
+          "end": 45.427
+        },
+        {
+          "w": "hundred",
+          "start": 45.452,
+          "end": 45.897
+        },
+        {
+          "w": "and",
+          "start": 45.947,
+          "end": 46.17
+        },
+        {
+          "w": "thirty-one",
+          "start": 46.194,
+          "end": 46.751
+        },
+        {
+          "w": "games.",
+          "start": 46.813,
+          "end": 47.148
+        },
+        {
+          "w": "What",
+          "start": 47.185,
+          "end": 47.463
+        },
+        {
+          "w": "comes",
+          "start": 47.494,
+          "end": 47.828
+        },
+        {
+          "w": "next?",
+          "start": 47.866,
+          "end": 48.144
+        }
+      ]
+    }
+  ]
+}
