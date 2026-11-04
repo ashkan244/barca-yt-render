@@ -10,9 +10,9 @@
   "strap": "THE STORY BEHIND THE CREST",
   "thumbStrap": "BARÇA · HISTORY · IDENTITY",
   "source": {
-    "sha256": "c3e67e031ccd514848f15427f29c7909303252b4c49a1e0055de6229ee015bd3",
-    "bytes": 155163794,
-    "note": "225-second trim of IMG_8911.MOV; presenter recording, original preserved locally; private runtime input only."
+    "sha256": "24bf046fd9d56011ff8d82c141043c4459fdc356424948f08170f57cab058f7a",
+    "bytes": 25018761,
+    "note": "225-second H.264 transcode of the trimmed IMG_8911.MOV presenter recording; original preserved locally; runtime input only."
   },
   "punch": [
     [
