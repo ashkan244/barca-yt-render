@@ -7,8 +7,12 @@ import clasicoPages from './clasico-source.pages.json';
 import dream88Spec from './dream88-source.spec.json';
 import dream88Words from './dream88-source.words.json';
 import dream88Pages from './dream88-source.pages.json';
+import crestHistorySpec from './crest-history-long.spec.json';
+import crestHistoryWords from './crest-history-long.words.json';
+import crestHistoryPages from './crest-history-long.pages.json';
 
 export const SOURCE_EPISODES: SourceEpisodeProps[] = [
   {spec: clasicoSpec as unknown as SourceSpec, words: clasicoWords.words, pages: clasicoPages.pages},
   {spec: dream88Spec as unknown as SourceSpec, words: dream88Words.words, pages: dream88Pages.pages},
+  {spec: crestHistorySpec as unknown as SourceSpec, words: crestHistoryWords.words, pages: crestHistoryPages.pages},
 ].map(validateSourceEpisode).map((d) => { validateArchive(d.spec); return d; });

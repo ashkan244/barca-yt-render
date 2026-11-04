@@ -1,0 +1,3481 @@
+{
+  "episode": "CREST-HISTORY-LONG",
+  "basis": "Small.en ASR on supplied presenter source. Timings retained. Script-backed spelling normalizations; remaining uncertain speech is listed in manifest for ear review.",
+  "human_ear_certified": false,
+  "words": [
+    {
+      "w": "Have",
+      "s": 0.0,
+      "e": 0.46,
+      "alignment": "source_word"
+    },
+    {
+      "w": "you",
+      "s": 0.46,
+      "e": 0.64,
+      "alignment": "source_word"
+    },
+    {
+      "w": "ever",
+      "s": 0.64,
+      "e": 0.82,
+      "alignment": "source_word"
+    },
+    {
+      "w": "wondered",
+      "s": 0.82,
+      "e": 1.12,
+      "alignment": "source_word"
+    },
+    {
+      "w": "why",
+      "s": 1.12,
+      "e": 1.46,
+      "alignment": "source_word"
+    },
+    {
+      "w": "FC",
+      "s": 1.46,
+      "e": 1.74,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Barcelona's",
+      "s": 1.74,
+      "e": 2.42,
+      "alignment": "source_word"
+    },
+    {
+      "w": "crest",
+      "s": 2.42,
+      "e": 2.54,
+      "alignment": "source_word"
+    },
+    {
+      "w": "looks",
+      "s": 2.54,
+      "e": 2.9,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 2.9,
+      "e": 3.12,
+      "alignment": "source_word"
+    },
+    {
+      "w": "way",
+      "s": 3.12,
+      "e": 3.32,
+      "alignment": "source_word"
+    },
+    {
+      "w": "it",
+      "s": 3.32,
+      "e": 3.44,
+      "alignment": "source_word"
+    },
+    {
+      "w": "does?",
+      "s": 3.44,
+      "e": 3.76,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Why",
+      "s": 4.16,
+      "e": 4.32,
+      "alignment": "source_word"
+    },
+    {
+      "w": "does",
+      "s": 4.32,
+      "e": 4.48,
+      "alignment": "source_word"
+    },
+    {
+      "w": "it",
+      "s": 4.48,
+      "e": 4.62,
+      "alignment": "source_word"
+    },
+    {
+      "w": "contain",
+      "s": 4.62,
+      "e": 5.02,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 5.02,
+      "e": 5.22,
+      "alignment": "source_word"
+    },
+    {
+      "w": "red",
+      "s": 5.22,
+      "e": 5.4,
+      "alignment": "source_word"
+    },
+    {
+      "w": "and",
+      "s": 5.4,
+      "e": 5.56,
+      "alignment": "source_word"
+    },
+    {
+      "w": "yellow",
+      "s": 5.56,
+      "e": 5.82,
+      "alignment": "source_word"
+    },
+    {
+      "w": "stripes",
+      "s": 5.82,
+      "e": 6.2,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 6.2,
+      "e": 6.44,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Catalonia?",
+      "s": 6.44,
+      "e": 6.84,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Why",
+      "s": 7.9,
+      "e": 8.24,
+      "alignment": "source_word"
+    },
+    {
+      "w": "is",
+      "s": 8.24,
+      "e": 8.48,
+      "alignment": "source_word"
+    },
+    {
+      "w": "there",
+      "s": 8.48,
+      "e": 8.78,
+      "alignment": "source_word"
+    },
+    {
+      "w": "a",
+      "s": 8.78,
+      "e": 9.04,
+      "alignment": "source_word"
+    },
+    {
+      "w": "cross",
+      "s": 9.04,
+      "e": 9.4,
+      "alignment": "source_word"
+    },
+    {
+      "w": "that",
+      "s": 9.4,
+      "e": 10.28,
+      "alignment": "source_word"
+    },
+    {
+      "w": "looks",
+      "s": 10.28,
+      "e": 10.56,
+      "alignment": "source_word"
+    },
+    {
+      "w": "almost",
+      "s": 10.56,
+      "e": 11.02,
+      "alignment": "source_word"
+    },
+    {
+      "w": "identical",
+      "s": 11.02,
+      "e": 11.46,
+      "alignment": "source_word"
+    },
+    {
+      "w": "to",
+      "s": 11.46,
+      "e": 11.88,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 11.88,
+      "e": 12.18,
+      "alignment": "source_word"
+    },
+    {
+      "w": "flag",
+      "s": 12.18,
+      "e": 12.22,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 12.22,
+      "e": 12.48,
+      "alignment": "source_word"
+    },
+    {
+      "w": "England?",
+      "s": 12.48,
+      "e": 12.84,
+      "alignment": "source_word"
+    },
+    {
+      "w": "And",
+      "s": 13.1,
+      "e": 13.28,
+      "alignment": "source_word"
+    },
+    {
+      "w": "what",
+      "s": 13.28,
+      "e": 13.5,
+      "alignment": "source_word"
+    },
+    {
+      "w": "does",
+      "s": 13.5,
+      "e": 13.76,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 13.76,
+      "e": 13.92,
+      "alignment": "source_word"
+    },
+    {
+      "w": "ancient",
+      "s": 13.92,
+      "e": 14.36,
+      "alignment": "source_word"
+    },
+    {
+      "w": "kingdom",
+      "s": 14.36,
+      "e": 14.88,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 14.88,
+      "e": 15.16,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Aragon",
+      "s": 15.16,
+      "e": 15.78,
+      "alignment": "source_word"
+    },
+    {
+      "w": "have",
+      "s": 15.78,
+      "e": 16.38,
+      "alignment": "source_word"
+    },
+    {
+      "w": "to",
+      "s": 16.38,
+      "e": 16.54,
+      "alignment": "source_word"
+    },
+    {
+      "w": "do",
+      "s": 16.54,
+      "e": 16.68,
+      "alignment": "source_word"
+    },
+    {
+      "w": "with",
+      "s": 16.68,
+      "e": 16.86,
+      "alignment": "source_word"
+    },
+    {
+      "w": "one",
+      "s": 16.86,
+      "e": 17.04,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 17.04,
+      "e": 17.32,
+      "alignment": "source_word"
+    },
+    {
+      "w": "football's",
+      "s": 17.32,
+      "e": 18.08,
+      "alignment": "source_word"
+    },
+    {
+      "w": "most",
+      "s": 18.08,
+      "e": 18.38,
+      "alignment": "source_word"
+    },
+    {
+      "w": "recognizable",
+      "s": 18.38,
+      "e": 19.02,
+      "alignment": "source_word"
+    },
+    {
+      "w": "symbols?",
+      "s": 19.02,
+      "e": 19.64,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Well,",
+      "s": 20.48,
+      "e": 20.72,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 21.14,
+      "e": 21.24,
+      "alignment": "source_word"
+    },
+    {
+      "w": "story",
+      "s": 21.24,
+      "e": 21.6,
+      "alignment": "source_word"
+    },
+    {
+      "w": "behind",
+      "s": 21.6,
+      "e": 22.1,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Barcelona's",
+      "s": 22.1,
+      "e": 22.76,
+      "alignment": "source_word"
+    },
+    {
+      "w": "badge",
+      "s": 22.76,
+      "e": 23.04,
+      "alignment": "source_word"
+    },
+    {
+      "w": "goes",
+      "s": 23.04,
+      "e": 23.46,
+      "alignment": "source_word"
+    },
+    {
+      "w": "much",
+      "s": 23.46,
+      "e": 23.82,
+      "alignment": "source_word"
+    },
+    {
+      "w": "further",
+      "s": 23.82,
+      "e": 24.22,
+      "alignment": "source_word"
+    },
+    {
+      "w": "back",
+      "s": 24.22,
+      "e": 24.76,
+      "alignment": "source_word"
+    },
+    {
+      "w": "than",
+      "s": 24.76,
+      "e": 25.08,
+      "alignment": "source_word"
+    },
+    {
+      "w": "football",
+      "s": 25.08,
+      "e": 25.4,
+      "alignment": "source_word"
+    },
+    {
+      "w": "itself.",
+      "s": 25.4,
+      "e": 25.9,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Let's",
+      "s": 26.22,
+      "e": 26.5,
+      "alignment": "source_word"
+    },
+    {
+      "w": "start",
+      "s": 26.5,
+      "e": 26.86,
+      "alignment": "source_word"
+    },
+    {
+      "w": "with",
+      "s": 26.86,
+      "e": 27.04,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 27.04,
+      "e": 27.22,
+      "alignment": "source_word"
+    },
+    {
+      "w": "red",
+      "s": 27.22,
+      "e": 27.4,
+      "alignment": "source_word"
+    },
+    {
+      "w": "and",
+      "s": 27.4,
+      "e": 27.6,
+      "alignment": "source_word"
+    },
+    {
+      "w": "yellow",
+      "s": 27.6,
+      "e": 27.86,
+      "alignment": "source_word"
+    },
+    {
+      "w": "stripes",
+      "s": 27.86,
+      "e": 28.32,
+      "alignment": "source_word"
+    },
+    {
+      "w": "at",
+      "s": 28.32,
+      "e": 28.56,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 28.56,
+      "e": 28.68,
+      "alignment": "source_word"
+    },
+    {
+      "w": "top",
+      "s": 28.68,
+      "e": 28.86,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 28.86,
+      "e": 29.04,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 29.04,
+      "e": 29.18,
+      "alignment": "source_word"
+    },
+    {
+      "w": "crest.",
+      "s": 29.18,
+      "e": 29.46,
+      "alignment": "source_word"
+    },
+    {
+      "w": "These",
+      "s": 30.0,
+      "e": 30.7,
+      "alignment": "source_word"
+    },
+    {
+      "w": "stripes",
+      "s": 30.7,
+      "e": 31.24,
+      "alignment": "source_word"
+    },
+    {
+      "w": "represent",
+      "s": 31.24,
+      "e": 32.36,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 32.36,
+      "e": 32.62,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Senyera,",
+      "s": 32.62,
+      "e": 33.1,
+      "alignment": "source_word_spelling"
+    },
+    {
+      "w": "the",
+      "s": 33.46,
+      "e": 33.56,
+      "alignment": "source_word"
+    },
+    {
+      "w": "traditional",
+      "s": 33.56,
+      "e": 34.0,
+      "alignment": "source_word"
+    },
+    {
+      "w": "flag",
+      "s": 34.0,
+      "e": 34.32,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 34.32,
+      "e": 34.54,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Catalonia.",
+      "s": 34.54,
+      "e": 34.9,
+      "alignment": "source_word"
+    },
+    {
+      "w": "It",
+      "s": 35.38,
+      "e": 35.48,
+      "alignment": "source_word"
+    },
+    {
+      "w": "consists",
+      "s": 35.48,
+      "e": 35.92,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 35.92,
+      "e": 36.42,
+      "alignment": "source_word"
+    },
+    {
+      "w": "four",
+      "s": 36.42,
+      "e": 36.58,
+      "alignment": "source_word"
+    },
+    {
+      "w": "red",
+      "s": 36.58,
+      "e": 36.82,
+      "alignment": "source_word"
+    },
+    {
+      "w": "stripes",
+      "s": 36.82,
+      "e": 37.26,
+      "alignment": "source_word"
+    },
+    {
+      "w": "and",
+      "s": 37.26,
+      "e": 37.96,
+      "alignment": "source_word"
+    },
+    {
+      "w": "a",
+      "s": 37.96,
+      "e": 38.08,
+      "alignment": "source_word"
+    },
+    {
+      "w": "golden",
+      "s": 38.08,
+      "e": 38.34,
+      "alignment": "source_word"
+    },
+    {
+      "w": "background",
+      "s": 38.34,
+      "e": 38.86,
+      "alignment": "source_word"
+    },
+    {
+      "w": "and",
+      "s": 38.86,
+      "e": 39.22,
+      "alignment": "source_word"
+    },
+    {
+      "w": "is",
+      "s": 39.22,
+      "e": 39.34,
+      "alignment": "source_word"
+    },
+    {
+      "w": "one",
+      "s": 39.34,
+      "e": 39.58,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 39.58,
+      "e": 39.76,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 39.76,
+      "e": 39.92,
+      "alignment": "source_word"
+    },
+    {
+      "w": "oldest",
+      "s": 39.92,
+      "e": 40.4,
+      "alignment": "source_word"
+    },
+    {
+      "w": "and",
+      "s": 40.4,
+      "e": 40.7,
+      "alignment": "source_word"
+    },
+    {
+      "w": "most",
+      "s": 40.7,
+      "e": 40.94,
+      "alignment": "source_word"
+    },
+    {
+      "w": "recognizable",
+      "s": 40.94,
+      "e": 41.58,
+      "alignment": "source_word"
+    },
+    {
+      "w": "symbols",
+      "s": 41.58,
+      "e": 42.16,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 42.16,
+      "e": 42.74,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Catalan",
+      "s": 42.74,
+      "e": 43.12,
+      "alignment": "source_word"
+    },
+    {
+      "w": "identity.",
+      "s": 43.12,
+      "e": 44.04,
+      "alignment": "source_word"
+    },
+    {
+      "w": "But",
+      "s": 44.64,
+      "e": 45.0,
+      "alignment": "source_word"
+    },
+    {
+      "w": "its",
+      "s": 45.0,
+      "e": 45.26,
+      "alignment": "source_word"
+    },
+    {
+      "w": "history",
+      "s": 45.26,
+      "e": 45.68,
+      "alignment": "source_word"
+    },
+    {
+      "w": "goes",
+      "s": 45.68,
+      "e": 46.0,
+      "alignment": "source_word"
+    },
+    {
+      "w": "even",
+      "s": 46.0,
+      "e": 46.36,
+      "alignment": "source_word"
+    },
+    {
+      "w": "further",
+      "s": 46.36,
+      "e": 46.68,
+      "alignment": "source_word"
+    },
+    {
+      "w": "back.",
+      "s": 46.68,
+      "e": 47.14,
+      "alignment": "source_word"
+    },
+    {
+      "w": "The",
+      "s": 47.4,
+      "e": 47.5,
+      "alignment": "source_word"
+    },
+    {
+      "w": "four",
+      "s": 47.5,
+      "e": 47.76,
+      "alignment": "source_word"
+    },
+    {
+      "w": "red",
+      "s": 47.76,
+      "e": 47.96,
+      "alignment": "source_word"
+    },
+    {
+      "w": "stripes",
+      "s": 47.96,
+      "e": 48.38,
+      "alignment": "source_word"
+    },
+    {
+      "w": "are",
+      "s": 48.38,
+      "e": 48.74,
+      "alignment": "source_word"
+    },
+    {
+      "w": "historically",
+      "s": 48.74,
+      "e": 49.24,
+      "alignment": "source_word"
+    },
+    {
+      "w": "associated",
+      "s": 49.24,
+      "e": 49.82,
+      "alignment": "source_word"
+    },
+    {
+      "w": "with",
+      "s": 49.82,
+      "e": 50.18,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 50.18,
+      "e": 50.28,
+      "alignment": "source_word"
+    },
+    {
+      "w": "House",
+      "s": 50.28,
+      "e": 50.5,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 50.5,
+      "e": 50.68,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Barcelona",
+      "s": 50.68,
+      "e": 51.16,
+      "alignment": "source_word"
+    },
+    {
+      "w": "and",
+      "s": 51.16,
+      "e": 51.46,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 51.46,
+      "e": 51.58,
+      "alignment": "source_word"
+    },
+    {
+      "w": "wider",
+      "s": 51.58,
+      "e": 52.0,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Crown",
+      "s": 52.0,
+      "e": 52.5,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 52.5,
+      "e": 52.7,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Aragon,",
+      "s": 52.7,
+      "e": 53.14,
+      "alignment": "source_word"
+    },
+    {
+      "w": "a",
+      "s": 53.56,
+      "e": 53.74,
+      "alignment": "source_word"
+    },
+    {
+      "w": "medieval",
+      "s": 53.74,
+      "e": 54.06,
+      "alignment": "source_word"
+    },
+    {
+      "w": "political",
+      "s": 54.06,
+      "e": 54.62,
+      "alignment": "source_word"
+    },
+    {
+      "w": "union",
+      "s": 54.62,
+      "e": 55.06,
+      "alignment": "source_word"
+    },
+    {
+      "w": "that",
+      "s": 55.06,
+      "e": 55.34,
+      "alignment": "source_word"
+    },
+    {
+      "w": "became",
+      "s": 55.34,
+      "e": 55.74,
+      "alignment": "source_word"
+    },
+    {
+      "w": "one",
+      "s": 55.74,
+      "e": 56.18,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 56.18,
+      "e": 56.3,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 56.3,
+      "e": 56.4,
+      "alignment": "source_word"
+    },
+    {
+      "w": "most",
+      "s": 56.4,
+      "e": 56.7,
+      "alignment": "source_word"
+    },
+    {
+      "w": "influential",
+      "s": 56.7,
+      "e": 57.3,
+      "alignment": "source_word"
+    },
+    {
+      "w": "powers",
+      "s": 57.3,
+      "e": 57.9,
+      "alignment": "source_word"
+    },
+    {
+      "w": "in",
+      "s": 57.9,
+      "e": 58.18,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 58.18,
+      "e": 58.32,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Western",
+      "s": 58.32,
+      "e": 58.62,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Mediterranean.",
+      "s": 58.62,
+      "e": 59.16,
+      "alignment": "source_word"
+    },
+    {
+      "w": "The",
+      "s": 59.16,
+      "e": 59.78,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Crown",
+      "s": 59.78,
+      "e": 60.1,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 60.1,
+      "e": 60.28,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Aragon",
+      "s": 60.28,
+      "e": 60.66,
+      "alignment": "source_word"
+    },
+    {
+      "w": "was",
+      "s": 60.66,
+      "e": 60.88,
+      "alignment": "source_word"
+    },
+    {
+      "w": "not",
+      "s": 60.88,
+      "e": 61.12,
+      "alignment": "source_word"
+    },
+    {
+      "w": "simply",
+      "s": 61.12,
+      "e": 61.56,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 61.56,
+      "e": 61.74,
+      "alignment": "source_word"
+    },
+    {
+      "w": "modern",
+      "s": 61.74,
+      "e": 62.02,
+      "alignment": "source_word"
+    },
+    {
+      "w": "region",
+      "s": 62.02,
+      "e": 62.36,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 62.36,
+      "e": 62.5,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Aragon.",
+      "s": 62.5,
+      "e": 62.92,
+      "alignment": "source_word"
+    },
+    {
+      "w": "It",
+      "s": 63.2,
+      "e": 63.32,
+      "alignment": "source_word"
+    },
+    {
+      "w": "was",
+      "s": 63.32,
+      "e": 63.48,
+      "alignment": "source_word"
+    },
+    {
+      "w": "a",
+      "s": 63.48,
+      "e": 63.64,
+      "alignment": "source_word"
+    },
+    {
+      "w": "composite",
+      "s": 63.64,
+      "e": 63.98,
+      "alignment": "source_word"
+    },
+    {
+      "w": "monarchy",
+      "s": 63.98,
+      "e": 64.48,
+      "alignment": "source_word"
+    },
+    {
+      "w": "whose",
+      "s": 64.48,
+      "e": 65.1,
+      "alignment": "source_word"
+    },
+    {
+      "w": "territories",
+      "s": 65.1,
+      "e": 65.56,
+      "alignment": "source_word"
+    },
+    {
+      "w": "included",
+      "s": 65.56,
+      "e": 66.12,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Aragon,",
+      "s": 66.12,
+      "e": 66.72,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Catalonia,",
+      "s": 66.92,
+      "e": 67.38,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Valencia",
+      "s": 67.6,
+      "e": 67.98,
+      "alignment": "source_word"
+    },
+    {
+      "w": "and",
+      "s": 67.98,
+      "e": 68.44,
+      "alignment": "source_word"
+    },
+    {
+      "w": "different",
+      "s": 68.44,
+      "e": 69.0,
+      "alignment": "source_word"
+    },
+    {
+      "w": "periods",
+      "s": 69.0,
+      "e": 69.48,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 69.48,
+      "e": 69.8,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 69.8,
+      "e": 69.92,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Mediterranean",
+      "s": 69.92,
+      "e": 70.46,
+      "alignment": "source_word"
+    },
+    {
+      "w": "land.",
+      "s": 70.46,
+      "e": 71.08,
+      "alignment": "source_word"
+    },
+    {
+      "w": "This",
+      "s": 71.22,
+      "e": 71.38,
+      "alignment": "source_word"
+    },
+    {
+      "w": "is",
+      "s": 71.38,
+      "e": 71.56,
+      "alignment": "source_word"
+    },
+    {
+      "w": "why",
+      "s": 71.56,
+      "e": 71.86,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 71.86,
+      "e": 72.04,
+      "alignment": "source_word"
+    },
+    {
+      "w": "same",
+      "s": 72.04,
+      "e": 72.32,
+      "alignment": "source_word"
+    },
+    {
+      "w": "four",
+      "s": 72.32,
+      "e": 72.58,
+      "alignment": "source_word"
+    },
+    {
+      "w": "-striped,",
+      "s": 72.58,
+      "e": 73.18,
+      "alignment": "source_word"
+    },
+    {
+      "w": "heraldic",
+      "s": 73.18,
+      "e": 73.56,
+      "alignment": "source_word"
+    },
+    {
+      "w": "design",
+      "s": 73.56,
+      "e": 73.94,
+      "alignment": "source_word"
+    },
+    {
+      "w": "appears",
+      "s": 73.94,
+      "e": 74.42,
+      "alignment": "source_word"
+    },
+    {
+      "w": "in",
+      "s": 74.42,
+      "e": 74.72,
+      "alignment": "source_word"
+    },
+    {
+      "w": "different",
+      "s": 74.72,
+      "e": 75.06,
+      "alignment": "source_word"
+    },
+    {
+      "w": "historical",
+      "s": 75.06,
+      "e": 75.56,
+      "alignment": "source_word"
+    },
+    {
+      "w": "symbols",
+      "s": 75.56,
+      "e": 76.04,
+      "alignment": "source_word"
+    },
+    {
+      "w": "across",
+      "s": 76.04,
+      "e": 76.54,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 76.54,
+      "e": 76.86,
+      "alignment": "source_word"
+    },
+    {
+      "w": "region.",
+      "s": 76.86,
+      "e": 77.16,
+      "alignment": "source_word"
+    },
+    {
+      "w": "So",
+      "s": 77.9,
+      "e": 78.14,
+      "alignment": "source_word"
+    },
+    {
+      "w": "when",
+      "s": 78.14,
+      "e": 78.3,
+      "alignment": "source_word"
+    },
+    {
+      "w": "you",
+      "s": 78.3,
+      "e": 78.46,
+      "alignment": "source_word"
+    },
+    {
+      "w": "look",
+      "s": 78.46,
+      "e": 78.62,
+      "alignment": "source_word"
+    },
+    {
+      "w": "at",
+      "s": 78.62,
+      "e": 78.8,
+      "alignment": "source_word"
+    },
+    {
+      "w": "those",
+      "s": 78.8,
+      "e": 79.1,
+      "alignment": "source_word"
+    },
+    {
+      "w": "red",
+      "s": 79.1,
+      "e": 79.4,
+      "alignment": "source_word"
+    },
+    {
+      "w": "and",
+      "s": 79.4,
+      "e": 79.6,
+      "alignment": "source_word"
+    },
+    {
+      "w": "yellow",
+      "s": 79.6,
+      "e": 79.86,
+      "alignment": "source_word"
+    },
+    {
+      "w": "stripes",
+      "s": 79.86,
+      "e": 80.26,
+      "alignment": "source_word"
+    },
+    {
+      "w": "on",
+      "s": 80.26,
+      "e": 80.48,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Barcelona's",
+      "s": 80.48,
+      "e": 81.26,
+      "alignment": "source_word"
+    },
+    {
+      "w": "crest,",
+      "s": 81.26,
+      "e": 81.44,
+      "alignment": "source_word"
+    },
+    {
+      "w": "you're",
+      "s": 82.06,
+      "e": 82.2,
+      "alignment": "source_word"
+    },
+    {
+      "w": "not",
+      "s": 82.2,
+      "e": 82.36,
+      "alignment": "source_word"
+    },
+    {
+      "w": "just",
+      "s": 82.36,
+      "e": 82.64,
+      "alignment": "source_word"
+    },
+    {
+      "w": "looking",
+      "s": 82.64,
+      "e": 82.92,
+      "alignment": "source_word"
+    },
+    {
+      "w": "at",
+      "s": 82.92,
+      "e": 83.18,
+      "alignment": "source_word"
+    },
+    {
+      "w": "club",
+      "s": 83.18,
+      "e": 83.52,
+      "alignment": "source_word"
+    },
+    {
+      "w": "colors.",
+      "s": 83.52,
+      "e": 84.08,
+      "alignment": "source_word"
+    },
+    {
+      "w": "You're",
+      "s": 84.32,
+      "e": 84.68,
+      "alignment": "source_word"
+    },
+    {
+      "w": "looking",
+      "s": 84.68,
+      "e": 84.96,
+      "alignment": "source_word"
+    },
+    {
+      "w": "at",
+      "s": 84.96,
+      "e": 85.2,
+      "alignment": "source_word"
+    },
+    {
+      "w": "a",
+      "s": 85.2,
+      "e": 85.4,
+      "alignment": "source_word"
+    },
+    {
+      "w": "symbol",
+      "s": 85.4,
+      "e": 85.7,
+      "alignment": "source_word"
+    },
+    {
+      "w": "connected",
+      "s": 85.7,
+      "e": 86.08,
+      "alignment": "source_word"
+    },
+    {
+      "w": "to",
+      "s": 86.08,
+      "e": 86.46,
+      "alignment": "source_word"
+    },
+    {
+      "w": "centuries",
+      "s": 86.46,
+      "e": 86.82,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 86.82,
+      "e": 87.14,
+      "alignment": "source_word"
+    },
+    {
+      "w": "regional",
+      "s": 87.14,
+      "e": 87.5,
+      "alignment": "source_word"
+    },
+    {
+      "w": "history.",
+      "s": 87.5,
+      "e": 88.02,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Now",
+      "s": 88.02,
+      "e": 88.84,
+      "alignment": "source_word"
+    },
+    {
+      "w": "let's",
+      "s": 88.84,
+      "e": 89.18,
+      "alignment": "source_word"
+    },
+    {
+      "w": "look",
+      "s": 89.18,
+      "e": 89.32,
+      "alignment": "source_word"
+    },
+    {
+      "w": "at",
+      "s": 89.32,
+      "e": 89.48,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 89.48,
+      "e": 89.66,
+      "alignment": "source_word"
+    },
+    {
+      "w": "other",
+      "s": 89.66,
+      "e": 89.94,
+      "alignment": "source_word"
+    },
+    {
+      "w": "symbol",
+      "s": 89.94,
+      "e": 90.22,
+      "alignment": "source_word"
+    },
+    {
+      "w": "in",
+      "s": 90.22,
+      "e": 90.5,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 90.5,
+      "e": 90.6,
+      "alignment": "source_word"
+    },
+    {
+      "w": "upper",
+      "s": 90.6,
+      "e": 90.84,
+      "alignment": "source_word"
+    },
+    {
+      "w": "part",
+      "s": 90.84,
+      "e": 91.16,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 91.16,
+      "e": 91.32,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 91.32,
+      "e": 91.52,
+      "alignment": "source_word"
+    },
+    {
+      "w": "crest,",
+      "s": 91.52,
+      "e": 91.8,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 92.5,
+      "e": 92.52,
+      "alignment": "source_word"
+    },
+    {
+      "w": "red",
+      "s": 92.52,
+      "e": 92.76,
+      "alignment": "source_word"
+    },
+    {
+      "w": "cross",
+      "s": 92.76,
+      "e": 93.16,
+      "alignment": "source_word"
+    },
+    {
+      "w": "and",
+      "s": 93.16,
+      "e": 93.7,
+      "alignment": "source_word"
+    },
+    {
+      "w": "a",
+      "s": 93.7,
+      "e": 93.82,
+      "alignment": "source_word"
+    },
+    {
+      "w": "white",
+      "s": 93.82,
+      "e": 94.0,
+      "alignment": "source_word"
+    },
+    {
+      "w": "background.",
+      "s": 94.0,
+      "e": 94.48,
+      "alignment": "source_word"
+    },
+    {
+      "w": "is",
+      "s": 94.92,
+      "e": 95.08,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 95.08,
+      "e": 95.28,
+      "alignment": "source_word"
+    },
+    {
+      "w": "cross",
+      "s": 95.28,
+      "e": 95.52,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 95.52,
+      "e": 95.76,
+      "alignment": "source_word"
+    },
+    {
+      "w": "St.",
+      "s": 95.76,
+      "e": 95.96,
+      "alignment": "source_word"
+    },
+    {
+      "w": "George,",
+      "s": 96.18,
+      "e": 96.24,
+      "alignment": "source_word"
+    },
+    {
+      "w": "known",
+      "s": 96.68,
+      "e": 96.86,
+      "alignment": "source_word"
+    },
+    {
+      "w": "in",
+      "s": 96.86,
+      "e": 97.1,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Catalonia",
+      "s": 97.1,
+      "e": 97.54,
+      "alignment": "source_word"
+    },
+    {
+      "w": "as",
+      "s": 97.54,
+      "e": 97.94,
+      "alignment": "source_word"
+    },
+    {
+      "w": "St.",
+      "s": 97.94,
+      "e": 98.1,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Jordi.",
+      "s": 98.36,
+      "e": 98.62,
+      "alignment": "source_word"
+    },
+    {
+      "w": "St.",
+      "s": 99.54,
+      "e": 99.56,
+      "alignment": "source_word"
+    },
+    {
+      "w": "George",
+      "s": 99.76,
+      "e": 99.8,
+      "alignment": "source_word"
+    },
+    {
+      "w": "has",
+      "s": 99.8,
+      "e": 100.02,
+      "alignment": "source_word"
+    },
+    {
+      "w": "a",
+      "s": 100.02,
+      "e": 100.16,
+      "alignment": "source_word"
+    },
+    {
+      "w": "particularly",
+      "s": 100.16,
+      "e": 100.62,
+      "alignment": "source_word"
+    },
+    {
+      "w": "important",
+      "s": 100.62,
+      "e": 101.16,
+      "alignment": "source_word"
+    },
+    {
+      "w": "place",
+      "s": 101.16,
+      "e": 101.46,
+      "alignment": "source_word"
+    },
+    {
+      "w": "in",
+      "s": 101.46,
+      "e": 101.72,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Catalan",
+      "s": 101.72,
+      "e": 101.96,
+      "alignment": "source_word"
+    },
+    {
+      "w": "history",
+      "s": 101.96,
+      "e": 102.44,
+      "alignment": "source_word"
+    },
+    {
+      "w": "and",
+      "s": 102.44,
+      "e": 102.92,
+      "alignment": "source_word"
+    },
+    {
+      "w": "cultural",
+      "s": 102.92,
+      "e": 103.34,
+      "alignment": "source_word"
+    },
+    {
+      "w": "identity.",
+      "s": 103.34,
+      "e": 103.94,
+      "alignment": "source_word"
+    },
+    {
+      "w": "He",
+      "s": 104.66,
+      "e": 104.74,
+      "alignment": "source_word"
+    },
+    {
+      "w": "is",
+      "s": 104.74,
+      "e": 104.88,
+      "alignment": "source_word"
+    },
+    {
+      "w": "considered",
+      "s": 104.88,
+      "e": 105.2,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 105.2,
+      "e": 105.5,
+      "alignment": "source_word"
+    },
+    {
+      "w": "patron",
+      "s": 105.5,
+      "e": 105.92,
+      "alignment": "source_word"
+    },
+    {
+      "w": "saint",
+      "s": 105.92,
+      "e": 106.24,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 106.24,
+      "e": 106.44,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Catalonia",
+      "s": 106.44,
+      "e": 106.96,
+      "alignment": "source_word"
+    },
+    {
+      "w": "and",
+      "s": 106.96,
+      "e": 107.54,
+      "alignment": "source_word"
+    },
+    {
+      "w": "his",
+      "s": 107.54,
+      "e": 107.74,
+      "alignment": "source_word"
+    },
+    {
+      "w": "cross",
+      "s": 107.74,
+      "e": 108.1,
+      "alignment": "source_word"
+    },
+    {
+      "w": "is",
+      "s": 108.1,
+      "e": 108.3,
+      "alignment": "source_word"
+    },
+    {
+      "w": "also",
+      "s": 108.3,
+      "e": 108.64,
+      "alignment": "source_word"
+    },
+    {
+      "w": "featured",
+      "s": 108.64,
+      "e": 109.0,
+      "alignment": "source_word"
+    },
+    {
+      "w": "in",
+      "s": 109.0,
+      "e": 109.46,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 109.46,
+      "e": 109.56,
+      "alignment": "source_word"
+    },
+    {
+      "w": "coat",
+      "s": 109.56,
+      "e": 109.7,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 109.7,
+      "e": 109.88,
+      "alignment": "source_word"
+    },
+    {
+      "w": "arms",
+      "s": 109.88,
+      "e": 110.24,
+      "alignment": "source_word_spelling"
+    },
+    {
+      "w": "of",
+      "s": 110.24,
+      "e": 110.5,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 110.5,
+      "e": 110.66,
+      "alignment": "source_word"
+    },
+    {
+      "w": "city",
+      "s": 110.66,
+      "e": 110.92,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 110.92,
+      "e": 111.24,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Barcelona.",
+      "s": 111.24,
+      "e": 111.74,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Interestingly,",
+      "s": 112.7,
+      "e": 113.3,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 114.1,
+      "e": 114.12,
+      "alignment": "source_word"
+    },
+    {
+      "w": "same",
+      "s": 114.12,
+      "e": 114.48,
+      "alignment": "source_word"
+    },
+    {
+      "w": "red",
+      "s": 114.48,
+      "e": 114.76,
+      "alignment": "source_word"
+    },
+    {
+      "w": "cross",
+      "s": 114.76,
+      "e": 115.08,
+      "alignment": "source_word"
+    },
+    {
+      "w": "and",
+      "s": 115.08,
+      "e": 115.56,
+      "alignment": "source_word"
+    },
+    {
+      "w": "a",
+      "s": 115.56,
+      "e": 115.7,
+      "alignment": "source_word"
+    },
+    {
+      "w": "white",
+      "s": 115.7,
+      "e": 115.96,
+      "alignment": "source_word"
+    },
+    {
+      "w": "background",
+      "s": 115.96,
+      "e": 116.5,
+      "alignment": "source_word"
+    },
+    {
+      "w": "is",
+      "s": 116.5,
+      "e": 116.7,
+      "alignment": "source_word"
+    },
+    {
+      "w": "also",
+      "s": 116.7,
+      "e": 117.02,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 117.02,
+      "e": 117.22,
+      "alignment": "source_word"
+    },
+    {
+      "w": "national",
+      "s": 117.22,
+      "e": 117.7,
+      "alignment": "source_word"
+    },
+    {
+      "w": "flag",
+      "s": 117.7,
+      "e": 118.1,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 118.1,
+      "e": 118.28,
+      "alignment": "source_word"
+    },
+    {
+      "w": "England.",
+      "s": 118.28,
+      "e": 118.68,
+      "alignment": "source_word"
+    },
+    {
+      "w": "That's",
+      "s": 119.42,
+      "e": 119.7,
+      "alignment": "source_word"
+    },
+    {
+      "w": "why",
+      "s": 119.7,
+      "e": 119.88,
+      "alignment": "source_word"
+    },
+    {
+      "w": "you",
+      "s": 119.88,
+      "e": 120.02,
+      "alignment": "source_word"
+    },
+    {
+      "w": "might",
+      "s": 120.02,
+      "e": 120.22,
+      "alignment": "source_word"
+    },
+    {
+      "w": "notice",
+      "s": 120.22,
+      "e": 120.64,
+      "alignment": "source_word"
+    },
+    {
+      "w": "a",
+      "s": 120.64,
+      "e": 120.82,
+      "alignment": "source_word"
+    },
+    {
+      "w": "striking",
+      "s": 120.82,
+      "e": 121.16,
+      "alignment": "source_word"
+    },
+    {
+      "w": "resemblance",
+      "s": 121.16,
+      "e": 121.66,
+      "alignment": "source_word"
+    },
+    {
+      "w": "between",
+      "s": 121.66,
+      "e": 122.06,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 122.06,
+      "e": 122.26,
+      "alignment": "source_word"
+    },
+    {
+      "w": "two.",
+      "s": 122.26,
+      "e": 122.48,
+      "alignment": "source_word"
+    },
+    {
+      "w": "But",
+      "s": 122.9,
+      "e": 123.08,
+      "alignment": "source_word"
+    },
+    {
+      "w": "this",
+      "s": 123.08,
+      "e": 123.26,
+      "alignment": "source_word"
+    },
+    {
+      "w": "doesn't",
+      "s": 123.26,
+      "e": 123.62,
+      "alignment": "source_word"
+    },
+    {
+      "w": "mean",
+      "s": 123.62,
+      "e": 123.86,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Barcelona",
+      "s": 123.86,
+      "e": 124.2,
+      "alignment": "source_word"
+    },
+    {
+      "w": "borrowed",
+      "s": 124.2,
+      "e": 124.68,
+      "alignment": "source_word"
+    },
+    {
+      "w": "its",
+      "s": 124.68,
+      "e": 124.92,
+      "alignment": "source_word"
+    },
+    {
+      "w": "symbol",
+      "s": 124.92,
+      "e": 125.24,
+      "alignment": "source_word"
+    },
+    {
+      "w": "from",
+      "s": 125.24,
+      "e": 125.54,
+      "alignment": "source_word"
+    },
+    {
+      "w": "England.",
+      "s": 125.54,
+      "e": 125.96,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Both",
+      "s": 126.68,
+      "e": 126.84,
+      "alignment": "source_word"
+    },
+    {
+      "w": "traditions",
+      "s": 126.84,
+      "e": 127.4,
+      "alignment": "source_word"
+    },
+    {
+      "w": "are",
+      "s": 127.4,
+      "e": 128.34,
+      "alignment": "source_word"
+    },
+    {
+      "w": "connected",
+      "s": 128.34,
+      "e": 128.7,
+      "alignment": "source_word"
+    },
+    {
+      "w": "to",
+      "s": 128.7,
+      "e": 129.0,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 129.0,
+      "e": 129.14,
+      "alignment": "source_word"
+    },
+    {
+      "w": "much",
+      "s": 129.14,
+      "e": 129.38,
+      "alignment": "source_word"
+    },
+    {
+      "w": "older",
+      "s": 129.38,
+      "e": 129.7,
+      "alignment": "source_word"
+    },
+    {
+      "w": "European",
+      "s": 129.7,
+      "e": 130.16,
+      "alignment": "source_word"
+    },
+    {
+      "w": "veneration",
+      "s": 130.16,
+      "e": 130.74,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 130.74,
+      "e": 130.92,
+      "alignment": "source_word"
+    },
+    {
+      "w": "St.",
+      "s": 130.92,
+      "e": 131.16,
+      "alignment": "source_word"
+    },
+    {
+      "w": "George.",
+      "s": 131.44,
+      "e": 131.52,
+      "alignment": "source_word"
+    },
+    {
+      "w": "But",
+      "s": 131.94,
+      "e": 132.06,
+      "alignment": "source_word"
+    },
+    {
+      "w": "how",
+      "s": 132.06,
+      "e": 132.32,
+      "alignment": "source_word"
+    },
+    {
+      "w": "did",
+      "s": 132.32,
+      "e": 132.56,
+      "alignment": "source_word"
+    },
+    {
+      "w": "this",
+      "s": 132.56,
+      "e": 132.84,
+      "alignment": "source_word"
+    },
+    {
+      "w": "historical",
+      "s": 132.84,
+      "e": 133.3,
+      "alignment": "source_word"
+    },
+    {
+      "w": "symbol",
+      "s": 133.3,
+      "e": 133.8,
+      "alignment": "source_word"
+    },
+    {
+      "w": "become",
+      "s": 133.8,
+      "e": 134.04,
+      "alignment": "source_word"
+    },
+    {
+      "w": "part",
+      "s": 134.04,
+      "e": 134.3,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 134.3,
+      "e": 134.48,
+      "alignment": "source_word"
+    },
+    {
+      "w": "FC",
+      "s": 134.48,
+      "e": 134.68,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Barcelona?",
+      "s": 134.68,
+      "e": 135.12,
+      "alignment": "source_word"
+    },
+    {
+      "w": "When",
+      "s": 135.8,
+      "e": 136.06,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Joan",
+      "s": 136.06,
+      "e": 136.34,
+      "alignment": "source_word_spelling"
+    },
+    {
+      "w": "Gamper",
+      "s": 136.34,
+      "e": 136.84,
+      "alignment": "source_word_spelling"
+    },
+    {
+      "w": "founded",
+      "s": 136.84,
+      "e": 137.5,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 137.5,
+      "e": 137.74,
+      "alignment": "source_word"
+    },
+    {
+      "w": "club",
+      "s": 137.74,
+      "e": 137.94,
+      "alignment": "source_word"
+    },
+    {
+      "w": "in",
+      "s": 137.94,
+      "e": 138.16,
+      "alignment": "source_word"
+    },
+    {
+      "w": "1899,",
+      "s": 138.16,
+      "e": 139.18,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Barcelona",
+      "s": 139.18,
+      "e": 140.08,
+      "alignment": "source_word"
+    },
+    {
+      "w": "initially",
+      "s": 140.08,
+      "e": 140.6,
+      "alignment": "source_word"
+    },
+    {
+      "w": "used",
+      "s": 140.6,
+      "e": 141.06,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 141.06,
+      "e": 141.24,
+      "alignment": "source_word"
+    },
+    {
+      "w": "coat",
+      "s": 141.24,
+      "e": 141.44,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 141.44,
+      "e": 141.62,
+      "alignment": "source_word"
+    },
+    {
+      "w": "arms",
+      "s": 141.62,
+      "e": 141.88,
+      "alignment": "source_word_spelling"
+    },
+    {
+      "w": "of",
+      "s": 141.88,
+      "e": 142.06,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 142.06,
+      "e": 142.18,
+      "alignment": "source_word"
+    },
+    {
+      "w": "city",
+      "s": 142.18,
+      "e": 142.48,
+      "alignment": "source_word"
+    },
+    {
+      "w": "as",
+      "s": 142.48,
+      "e": 142.86,
+      "alignment": "source_word"
+    },
+    {
+      "w": "its",
+      "s": 142.86,
+      "e": 143.1,
+      "alignment": "source_word"
+    },
+    {
+      "w": "official",
+      "s": 143.1,
+      "e": 143.6,
+      "alignment": "source_word"
+    },
+    {
+      "w": "badge.",
+      "s": 143.6,
+      "e": 143.98,
+      "alignment": "source_word"
+    },
+    {
+      "w": "This",
+      "s": 144.3,
+      "e": 144.46,
+      "alignment": "source_word"
+    },
+    {
+      "w": "continued",
+      "s": 144.46,
+      "e": 144.92,
+      "alignment": "source_word"
+    },
+    {
+      "w": "until",
+      "s": 144.92,
+      "e": 145.44,
+      "alignment": "source_word"
+    },
+    {
+      "w": "1910.",
+      "s": 145.44,
+      "e": 146.12,
+      "alignment": "source_word"
+    },
+    {
+      "w": "As",
+      "s": 146.46,
+      "e": 146.64,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 146.64,
+      "e": 146.84,
+      "alignment": "source_word"
+    },
+    {
+      "w": "club",
+      "s": 146.84,
+      "e": 147.02,
+      "alignment": "source_word"
+    },
+    {
+      "w": "developed",
+      "s": 147.02,
+      "e": 147.44,
+      "alignment": "source_word"
+    },
+    {
+      "w": "its",
+      "s": 147.44,
+      "e": 147.76,
+      "alignment": "source_word"
+    },
+    {
+      "w": "own",
+      "s": 147.76,
+      "e": 148.02,
+      "alignment": "source_word"
+    },
+    {
+      "w": "identity,",
+      "s": 148.02,
+      "e": 148.66,
+      "alignment": "source_word"
+    },
+    {
+      "w": "its",
+      "s": 149.32,
+      "e": 149.5,
+      "alignment": "source_word"
+    },
+    {
+      "w": "board",
+      "s": 149.5,
+      "e": 149.8,
+      "alignment": "source_word"
+    },
+    {
+      "w": "decided",
+      "s": 149.8,
+      "e": 150.18,
+      "alignment": "source_word"
+    },
+    {
+      "w": "that",
+      "s": 150.18,
+      "e": 150.48,
+      "alignment": "source_word"
+    },
+    {
+      "w": "it",
+      "s": 150.48,
+      "e": 150.62,
+      "alignment": "source_word"
+    },
+    {
+      "w": "needed",
+      "s": 150.62,
+      "e": 150.9,
+      "alignment": "source_word"
+    },
+    {
+      "w": "a",
+      "s": 150.9,
+      "e": 151.1,
+      "alignment": "source_word"
+    },
+    {
+      "w": "distinctive",
+      "s": 151.1,
+      "e": 151.52,
+      "alignment": "source_word"
+    },
+    {
+      "w": "emblem.",
+      "s": 151.52,
+      "e": 152.0,
+      "alignment": "source_word"
+    },
+    {
+      "w": "The",
+      "s": 152.56,
+      "e": 152.72,
+      "alignment": "source_word"
+    },
+    {
+      "w": "competition",
+      "s": 152.72,
+      "e": 153.0,
+      "alignment": "source_word"
+    },
+    {
+      "w": "was",
+      "s": 153.0,
+      "e": 153.42,
+      "alignment": "source_word"
+    },
+    {
+      "w": "organized",
+      "s": 153.42,
+      "e": 153.88,
+      "alignment": "source_word"
+    },
+    {
+      "w": "to",
+      "s": 153.88,
+      "e": 154.14,
+      "alignment": "source_word"
+    },
+    {
+      "w": "find",
+      "s": 154.14,
+      "e": 154.34,
+      "alignment": "source_word"
+    },
+    {
+      "w": "a",
+      "s": 154.34,
+      "e": 154.5,
+      "alignment": "source_word"
+    },
+    {
+      "w": "new",
+      "s": 154.5,
+      "e": 154.64,
+      "alignment": "source_word"
+    },
+    {
+      "w": "design.",
+      "s": 154.64,
+      "e": 154.98,
+      "alignment": "source_word"
+    },
+    {
+      "w": "The",
+      "s": 155.24,
+      "e": 155.34,
+      "alignment": "source_word"
+    },
+    {
+      "w": "winning",
+      "s": 155.34,
+      "e": 155.58,
+      "alignment": "source_word"
+    },
+    {
+      "w": "design",
+      "s": 155.58,
+      "e": 156.02,
+      "alignment": "source_word"
+    },
+    {
+      "w": "established",
+      "s": 156.02,
+      "e": 156.52,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 156.52,
+      "e": 156.76,
+      "alignment": "source_word"
+    },
+    {
+      "w": "basic",
+      "s": 156.76,
+      "e": 157.1,
+      "alignment": "source_word"
+    },
+    {
+      "w": "structure",
+      "s": 157.1,
+      "e": 157.54,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 157.54,
+      "e": 157.86,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 157.86,
+      "e": 158.06,
+      "alignment": "source_word"
+    },
+    {
+      "w": "crest",
+      "s": 158.06,
+      "e": 158.32,
+      "alignment": "source_word"
+    },
+    {
+      "w": "we",
+      "s": 158.32,
+      "e": 158.64,
+      "alignment": "source_word"
+    },
+    {
+      "w": "recognize",
+      "s": 158.64,
+      "e": 159.0,
+      "alignment": "source_word"
+    },
+    {
+      "w": "today.",
+      "s": 159.0,
+      "e": 159.56,
+      "alignment": "source_word"
+    },
+    {
+      "w": "It",
+      "s": 159.94,
+      "e": 160.24,
+      "alignment": "source_word"
+    },
+    {
+      "w": "brought",
+      "s": 160.24,
+      "e": 160.52,
+      "alignment": "source_word"
+    },
+    {
+      "w": "together",
+      "s": 160.52,
+      "e": 160.94,
+      "alignment": "source_word"
+    },
+    {
+      "w": "several",
+      "s": 160.94,
+      "e": 161.32,
+      "alignment": "source_word"
+    },
+    {
+      "w": "different",
+      "s": 161.32,
+      "e": 161.72,
+      "alignment": "source_word"
+    },
+    {
+      "w": "elements.",
+      "s": 161.72,
+      "e": 162.1,
+      "alignment": "source_word"
+    },
+    {
+      "w": "The",
+      "s": 162.64,
+      "e": 162.8,
+      "alignment": "source_word"
+    },
+    {
+      "w": "cross",
+      "s": 162.8,
+      "e": 163.06,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 163.06,
+      "e": 163.26,
+      "alignment": "source_word"
+    },
+    {
+      "w": "St.",
+      "s": 163.26,
+      "e": 163.48,
+      "alignment": "source_word"
+    },
+    {
+      "w": "George,",
+      "s": 163.66,
+      "e": 163.76,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 164.24,
+      "e": 164.34,
+      "alignment": "source_word"
+    },
+    {
+      "w": "four",
+      "s": 164.34,
+      "e": 164.54,
+      "alignment": "source_word"
+    },
+    {
+      "w": "red",
+      "s": 164.54,
+      "e": 164.72,
+      "alignment": "source_word"
+    },
+    {
+      "w": "stripes",
+      "s": 164.72,
+      "e": 165.06,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 165.06,
+      "e": 165.32,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 165.32,
+      "e": 165.58,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Catalan",
+      "s": 165.58,
+      "e": 165.74,
+      "alignment": "source_word"
+    },
+    {
+      "w": "flag,",
+      "s": 165.74,
+      "e": 166.12,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 166.12,
+      "e": 166.74,
+      "alignment": "source_word"
+    },
+    {
+      "w": "club's",
+      "s": 166.74,
+      "e": 167.22,
+      "alignment": "source_word"
+    },
+    {
+      "w": "initials,",
+      "s": 167.22,
+      "e": 167.6,
+      "alignment": "source_word"
+    },
+    {
+      "w": "its",
+      "s": 168.14,
+      "e": 168.28,
+      "alignment": "source_word"
+    },
+    {
+      "w": "famous",
+      "s": 168.28,
+      "e": 168.6,
+      "alignment": "source_word"
+    },
+    {
+      "w": "blue",
+      "s": 168.6,
+      "e": 168.92,
+      "alignment": "source_word"
+    },
+    {
+      "w": "and",
+      "s": 168.92,
+      "e": 169.14,
+      "alignment": "source_word"
+    },
+    {
+      "w": "garnet",
+      "s": 169.14,
+      "e": 169.56,
+      "alignment": "source_word"
+    },
+    {
+      "w": "colors",
+      "s": 169.56,
+      "e": 169.92,
+      "alignment": "source_word"
+    },
+    {
+      "w": "and",
+      "s": 169.92,
+      "e": 170.46,
+      "alignment": "source_word"
+    },
+    {
+      "w": "a",
+      "s": 170.46,
+      "e": 170.56,
+      "alignment": "source_word"
+    },
+    {
+      "w": "football",
+      "s": 170.56,
+      "e": 170.9,
+      "alignment": "source_word"
+    },
+    {
+      "w": "at",
+      "s": 170.9,
+      "e": 171.2,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 171.2,
+      "e": 171.32,
+      "alignment": "source_word"
+    },
+    {
+      "w": "bottom.",
+      "s": 171.32,
+      "e": 171.56,
+      "alignment": "source_word"
+    },
+    {
+      "w": "It",
+      "s": 172.0,
+      "e": 172.08,
+      "alignment": "source_word"
+    },
+    {
+      "w": "was",
+      "s": 172.08,
+      "e": 172.36,
+      "alignment": "source_word"
+    },
+    {
+      "w": "a",
+      "s": 172.36,
+      "e": 172.56,
+      "alignment": "source_word"
+    },
+    {
+      "w": "clever",
+      "s": 172.56,
+      "e": 172.86,
+      "alignment": "source_word"
+    },
+    {
+      "w": "design",
+      "s": 172.86,
+      "e": 173.3,
+      "alignment": "source_word"
+    },
+    {
+      "w": "because",
+      "s": 173.3,
+      "e": 173.58,
+      "alignment": "source_word"
+    },
+    {
+      "w": "it",
+      "s": 173.58,
+      "e": 173.76,
+      "alignment": "source_word"
+    },
+    {
+      "w": "represented",
+      "s": 173.76,
+      "e": 174.28,
+      "alignment": "source_word"
+    },
+    {
+      "w": "two",
+      "s": 174.28,
+      "e": 174.76,
+      "alignment": "source_word"
+    },
+    {
+      "w": "sides",
+      "s": 174.76,
+      "e": 175.14,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 175.14,
+      "e": 175.3,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 175.3,
+      "e": 175.44,
+      "alignment": "source_word"
+    },
+    {
+      "w": "club",
+      "s": 175.44,
+      "e": 175.7,
+      "alignment": "source_word"
+    },
+    {
+      "w": "at",
+      "s": 175.7,
+      "e": 175.9,
+      "alignment": "source_word"
+    },
+    {
+      "w": "once.",
+      "s": 175.9,
+      "e": 176.3,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Its",
+      "s": 176.74,
+      "e": 176.88,
+      "alignment": "source_word"
+    },
+    {
+      "w": "connection",
+      "s": 176.88,
+      "e": 177.24,
+      "alignment": "source_word"
+    },
+    {
+      "w": "to",
+      "s": 177.24,
+      "e": 177.6,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Barcelona",
+      "s": 177.6,
+      "e": 178.0,
+      "alignment": "source_word"
+    },
+    {
+      "w": "and",
+      "s": 178.0,
+      "e": 178.28,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Catalonia",
+      "s": 178.28,
+      "e": 178.6,
+      "alignment": "source_word"
+    },
+    {
+      "w": "and",
+      "s": 178.6,
+      "e": 179.34,
+      "alignment": "source_word"
+    },
+    {
+      "w": "its",
+      "s": 179.34,
+      "e": 179.5,
+      "alignment": "source_word"
+    },
+    {
+      "w": "identity",
+      "s": 179.5,
+      "e": 180.04,
+      "alignment": "source_word"
+    },
+    {
+      "w": "as",
+      "s": 180.04,
+      "e": 180.34,
+      "alignment": "source_word"
+    },
+    {
+      "w": "a",
+      "s": 180.34,
+      "e": 180.44,
+      "alignment": "source_word"
+    },
+    {
+      "w": "football",
+      "s": 180.44,
+      "e": 180.8,
+      "alignment": "source_word"
+    },
+    {
+      "w": "institution.",
+      "s": 180.8,
+      "e": 181.44,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Since",
+      "s": 182.08,
+      "e": 182.22,
+      "alignment": "source_word"
+    },
+    {
+      "w": "then,",
+      "s": 182.22,
+      "e": 182.58,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 182.72,
+      "e": 182.82,
+      "alignment": "source_word"
+    },
+    {
+      "w": "badge",
+      "s": 182.82,
+      "e": 183.08,
+      "alignment": "source_word"
+    },
+    {
+      "w": "has",
+      "s": 183.08,
+      "e": 183.34,
+      "alignment": "source_word"
+    },
+    {
+      "w": "undergone",
+      "s": 183.34,
+      "e": 183.86,
+      "alignment": "source_word"
+    },
+    {
+      "w": "several",
+      "s": 183.86,
+      "e": 184.28,
+      "alignment": "source_word"
+    },
+    {
+      "w": "visual",
+      "s": 184.28,
+      "e": 184.68,
+      "alignment": "source_word"
+    },
+    {
+      "w": "modifications,",
+      "s": 184.68,
+      "e": 185.3,
+      "alignment": "source_word"
+    },
+    {
+      "w": "but",
+      "s": 185.66,
+      "e": 185.96,
+      "alignment": "source_word"
+    },
+    {
+      "w": "its",
+      "s": 185.96,
+      "e": 186.14,
+      "alignment": "source_word"
+    },
+    {
+      "w": "essential",
+      "s": 186.14,
+      "e": 186.72,
+      "alignment": "source_word"
+    },
+    {
+      "w": "historical",
+      "s": 186.72,
+      "e": 187.22,
+      "alignment": "source_word"
+    },
+    {
+      "w": "elements",
+      "s": 187.22,
+      "e": 187.74,
+      "alignment": "source_word"
+    },
+    {
+      "w": "have",
+      "s": 187.74,
+      "e": 188.02,
+      "alignment": "source_word"
+    },
+    {
+      "w": "remained.",
+      "s": 188.02,
+      "e": 188.36,
+      "alignment": "source_word"
+    },
+    {
+      "w": "And",
+      "s": 189.06,
+      "e": 189.22,
+      "alignment": "source_word"
+    },
+    {
+      "w": "perhaps",
+      "s": 189.22,
+      "e": 189.56,
+      "alignment": "source_word"
+    },
+    {
+      "w": "that's",
+      "s": 189.56,
+      "e": 190.3,
+      "alignment": "source_word"
+    },
+    {
+      "w": "what",
+      "s": 190.3,
+      "e": 190.52,
+      "alignment": "source_word"
+    },
+    {
+      "w": "makes",
+      "s": 190.52,
+      "e": 190.94,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Barcelona's",
+      "s": 190.94,
+      "e": 191.84,
+      "alignment": "source_word"
+    },
+    {
+      "w": "crest",
+      "s": 191.84,
+      "e": 191.94,
+      "alignment": "source_word"
+    },
+    {
+      "w": "so",
+      "s": 191.94,
+      "e": 192.44,
+      "alignment": "source_word"
+    },
+    {
+      "w": "interesting.",
+      "s": 192.44,
+      "e": 193.0,
+      "alignment": "source_word"
+    },
+    {
+      "w": "It",
+      "s": 193.0,
+      "e": 193.52,
+      "alignment": "source_word"
+    },
+    {
+      "w": "isn't",
+      "s": 193.52,
+      "e": 193.86,
+      "alignment": "source_word"
+    },
+    {
+      "w": "just",
+      "s": 193.86,
+      "e": 194.08,
+      "alignment": "source_word"
+    },
+    {
+      "w": "a",
+      "s": 194.08,
+      "e": 194.28,
+      "alignment": "source_word"
+    },
+    {
+      "w": "logo",
+      "s": 194.28,
+      "e": 194.48,
+      "alignment": "source_word"
+    },
+    {
+      "w": "designed",
+      "s": 194.48,
+      "e": 194.88,
+      "alignment": "source_word"
+    },
+    {
+      "w": "to",
+      "s": 194.88,
+      "e": 195.12,
+      "alignment": "source_word"
+    },
+    {
+      "w": "identify",
+      "s": 195.12,
+      "e": 195.7,
+      "alignment": "source_word"
+    },
+    {
+      "w": "a",
+      "s": 195.7,
+      "e": 196.08,
+      "alignment": "source_word"
+    },
+    {
+      "w": "football",
+      "s": 196.08,
+      "e": 196.32,
+      "alignment": "source_word"
+    },
+    {
+      "w": "team.",
+      "s": 196.32,
+      "e": 196.7,
+      "alignment": "source_word"
+    },
+    {
+      "w": "It's",
+      "s": 197.18,
+      "e": 197.34,
+      "alignment": "source_word"
+    },
+    {
+      "w": "a",
+      "s": 197.34,
+      "e": 197.44,
+      "alignment": "source_word"
+    },
+    {
+      "w": "combination",
+      "s": 197.44,
+      "e": 197.72,
+      "alignment": "source_word"
+    },
+    {
+      "w": "of",
+      "s": 197.72,
+      "e": 198.44,
+      "alignment": "source_word"
+    },
+    {
+      "w": "history,",
+      "s": 198.44,
+      "e": 198.94,
+      "alignment": "source_word"
+    },
+    {
+      "w": "culture,",
+      "s": 199.42,
+      "e": 199.8,
+      "alignment": "source_word"
+    },
+    {
+      "w": "original",
+      "s": 200.48,
+      "e": 200.68,
+      "alignment": "source_word"
+    },
+    {
+      "w": "identity",
+      "s": 200.68,
+      "e": 201.3,
+      "alignment": "source_word"
+    },
+    {
+      "w": "and",
+      "s": 201.3,
+      "e": 201.78,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 201.78,
+      "e": 201.9,
+      "alignment": "source_word"
+    },
+    {
+      "w": "sporting",
+      "s": 201.9,
+      "e": 202.3,
+      "alignment": "source_word"
+    },
+    {
+      "w": "tradition.",
+      "s": 202.3,
+      "e": 202.82,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Every",
+      "s": 203.5,
+      "e": 203.72,
+      "alignment": "source_word"
+    },
+    {
+      "w": "time",
+      "s": 203.72,
+      "e": 203.96,
+      "alignment": "source_word"
+    },
+    {
+      "w": "a",
+      "s": 203.96,
+      "e": 204.3,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Barcelona",
+      "s": 204.3,
+      "e": 204.48,
+      "alignment": "source_word"
+    },
+    {
+      "w": "player",
+      "s": 204.48,
+      "e": 204.98,
+      "alignment": "source_word"
+    },
+    {
+      "w": "wears",
+      "s": 204.98,
+      "e": 205.38,
+      "alignment": "source_word"
+    },
+    {
+      "w": "that",
+      "s": 205.38,
+      "e": 205.68,
+      "alignment": "source_word"
+    },
+    {
+      "w": "badge,",
+      "s": 205.68,
+      "e": 206.06,
+      "alignment": "source_word"
+    },
+    {
+      "w": "they're",
+      "s": 206.54,
+      "e": 206.64,
+      "alignment": "source_word"
+    },
+    {
+      "w": "carrying",
+      "s": 206.64,
+      "e": 207.0,
+      "alignment": "source_word"
+    },
+    {
+      "w": "symbols",
+      "s": 207.0,
+      "e": 207.5,
+      "alignment": "source_word"
+    },
+    {
+      "w": "that",
+      "s": 207.5,
+      "e": 207.74,
+      "alignment": "source_word"
+    },
+    {
+      "w": "existed",
+      "s": 207.74,
+      "e": 208.32,
+      "alignment": "source_word"
+    },
+    {
+      "w": "long",
+      "s": 208.32,
+      "e": 208.82,
+      "alignment": "source_word"
+    },
+    {
+      "w": "before",
+      "s": 208.82,
+      "e": 209.28,
+      "alignment": "source_word"
+    },
+    {
+      "w": "the",
+      "s": 209.28,
+      "e": 209.56,
+      "alignment": "source_word"
+    },
+    {
+      "w": "club",
+      "s": 209.56,
+      "e": 209.86,
+      "alignment": "source_word"
+    },
+    {
+      "w": "was",
+      "s": 209.86,
+      "e": 210.32,
+      "alignment": "source_word"
+    },
+    {
+      "w": "founded.",
+      "s": 210.32,
+      "e": 210.8,
+      "alignment": "source_word"
+    },
+    {
+      "w": "And",
+      "s": 211.14,
+      "e": 211.24,
+      "alignment": "source_word"
+    },
+    {
+      "w": "that's",
+      "s": 211.24,
+      "e": 211.62,
+      "alignment": "source_word"
+    },
+    {
+      "w": "one",
+      "s": 211.62,
+      "e": 211.88,
+      "alignment": "source_word"
+    },
+    {
+      "w": "reason",
+      "s": 211.88,
+      "e": 212.18,
+      "alignment": "source_word"
+    },
+    {
+      "w": "why",
+      "s": 212.18,
+      "e": 212.7,
+      "alignment": "source_word"
+    },
+    {
+      "w": "for",
+      "s": 212.7,
+      "e": 213.14,
+      "alignment": "source_word"
+    },
+    {
+      "w": "so",
+      "s": 213.14,
+      "e": 213.42,
+      "alignment": "source_word"
+    },
+    {
+      "w": "many",
+      "s": 213.42,
+      "e": 213.66,
+      "alignment": "source_word"
+    },
+    {
+      "w": "supporters,",
+      "s": 213.66,
+      "e": 214.24,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Barca",
+      "s": 214.56,
+      "e": 214.78,
+      "alignment": "source_word"
+    },
+    {
+      "w": "has",
+      "s": 214.78,
+      "e": 214.96,
+      "alignment": "source_word"
+    },
+    {
+      "w": "always",
+      "s": 214.96,
+      "e": 215.24,
+      "alignment": "source_word"
+    },
+    {
+      "w": "represented",
+      "s": 215.24,
+      "e": 215.86,
+      "alignment": "source_word"
+    },
+    {
+      "w": "something",
+      "s": 215.86,
+      "e": 216.52,
+      "alignment": "source_word"
+    },
+    {
+      "w": "bigger",
+      "s": 216.52,
+      "e": 216.88,
+      "alignment": "source_word"
+    },
+    {
+      "w": "than",
+      "s": 216.88,
+      "e": 217.18,
+      "alignment": "source_word"
+    },
+    {
+      "w": "football.",
+      "s": 217.18,
+      "e": 217.62,
+      "alignment": "source_word"
+    },
+    {
+      "w": "Més",
+      "s": 218.48,
+      "e": 218.78,
+      "alignment": "script_based_phrase"
+    },
+    {
+      "w": "que",
+      "s": 218.78,
+      "e": 219.0,
+      "alignment": "script_based_phrase"
+    },
+    {
+      "w": "un club.",
+      "s": 219.0,
+      "e": 219.3,
+      "alignment": "script_based_phrase"
+    }
+  ]
+}
