@@ -99,7 +99,7 @@ const Podium: React.FC<{ x: number; w: number; h: number; rank: string; name: st
       <div style={{
         position: 'absolute', left: x, width: w, top: base - h * s, height: h * s, borderRadius: '18px 18px 0 0', overflow: 'hidden',
         background: hero ? 'linear-gradient(90deg, #0c3a8f 0%, #0c3a8f 50%, #6b0b30 50%, #6b0b30 100%)' : 'linear-gradient(180deg, #3a4560, #1c2236)',
-        border: `5px solid ${hero ? C.gold : 'rgba(255,255,255,0.35)'}`, borderBottom: 'none', boxShadow: '0 20px 60px rgba(0,0,0,0.6)',
+        border: `5px solid ${hero ? C.gold : 'rgba(255,255,255,0.35)'}`, borderBottom: 'none', boxShadow: '0 20px 60px rgba(0,0,0,0.6)', opacity: Math.min(1, s * 3),
       }}>
         <div style={{ textAlign: 'center', marginTop: 26, fontFamily: DISPLAY, fontSize: 130, color: hero ? C.gold : '#fff', lineHeight: 1 }}>{rank}</div>
         <div style={{ textAlign: 'center', marginTop: 10, fontFamily: DISPLAY, fontSize: 58, letterSpacing: 3, color: '#fff' }}>{name}</div>
