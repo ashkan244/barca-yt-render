@@ -1,0 +1,74 @@
+{
+  "id": "flick",
+  "title": "Hansi Flick's 100 Barça Wins in 131 Games",
+  "model": "kokoro",
+  "voices": [
+    {
+      "name": "Michael",
+      "id": "am_michael"
+    }
+  ],
+  "voice": {
+    "speed": 1.0,
+    "dtype": "fp32",
+    "trim": true,
+    "note": "say = what Kokoro reads (names respelt so they come out right); text = the caption"
+  },
+  "music": "music/km/volatile-reaction.mp3",
+  "sources": [
+    "FC Barcelona, 'Hansi Flick: Record-breaking 100 wins', 31 October 2026: 100th win v Alavés; 100 wins in 131 games, second fastest in club history; only Luis Enrique faster (126 games); 76.33% win rate, highest of any Barça manager. https://www.fcbarcelona.com/en/football/first-team/news/4601449/hansi-flick-record-breaking-100-wins",
+    "FC Barcelona, 'FC Barcelona 6-1 Alavés: That's more like it!', 31 October 2026: after defeats to PSG and Real Madrid; goals Raphinha 8' (15 passes, 9 players; Pedri outside-of-the-boot pass, Fermín squared from the left), Fermín 23', Raphinha 41', Lamine Yamal 45+', Lamine Yamal 65' (VAR confirmed), Gordon 81' (chip), Mariano 84' for Alavés; four before the break, two after; Raphinha 15 league goals in 11 games, equalling César Rodríguez and Leo Messi; Fermín a goal and two assists; 53,523 at Spotify Camp Nou. https://www.fcbarcelona.com/en/football/first-team/news/4602177/fc-barcelona-6-1-alaves-thats-more-like-it"
+  ],
+  "scenes": [
+    {
+      "visual": "f-hook",
+      "text": "Only one coach in Barça history hit a hundred wins faster than Hansi Flick.",
+      "say": "Only one coach in Barsa history hit a hundred wins faster than Hansi Flick."
+    },
+    {
+      "visual": "f-race",
+      "text": "Luis Enrique took a hundred and twenty-six games. Flick, a hundred and thirty-one.",
+      "say": "Lewees Enreekay took a hundred and twenty-six games. Flick, a hundred and thirty-one."
+    },
+    {
+      "visual": "f-rate",
+      "text": "But no Barça coach has ever won more often: seventy-six percent.",
+      "say": "But no Barsa coach has ever won more often: seventy-six percent."
+    },
+    {
+      "visual": "f-slump",
+      "text": "Win one hundred came straight after defeats to PSG and Real Madrid.",
+      "say": "Win one hundred came straight after defeats to P-S-G and Ray-al Madrid."
+    },
+    {
+      "visual": "f-score",
+      "text": "Barça answered with a six-one win over Alavés.",
+      "say": "Barsa answered with a six-one win over Ahlah-vess."
+    },
+    {
+      "visual": "f-move",
+      "text": "The opener took fifteen passes and nine players.",
+      "say": "The opener took fifteen passes and nine players."
+    },
+    {
+      "visual": "f-goals",
+      "text": "Four goals by half-time. Two more after the break.",
+      "say": "Four goals by half-time. Two more after the break."
+    },
+    {
+      "visual": "f-raphinha",
+      "text": "Raphinha scored twice: fifteen league goals in eleven games, matching César Rodríguez and Messi.",
+      "say": "Raffeenya scored twice: fifteen league goals in eleven games, matching Sezar Rodreegez and Messi."
+    },
+    {
+      "visual": "f-duo",
+      "text": "Lamine Yamal scored twice too. Fermín López: a goal and two assists.",
+      "say": "Lameen Yamal scored twice too. Fairmeen Lopez: a goal and two assists."
+    },
+    {
+      "visual": "f-outro",
+      "text": "Where does Flick rank among Barça's coaches? Tell us below.",
+      "say": "Where does Flick rank among Barsa's coaches? Tell us below."
+    }
+  ]
+}

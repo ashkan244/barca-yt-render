@@ -132,7 +132,7 @@ export const Short: React.FC<ShortProps> = ({ data, music }) => {
           <Sequence key={`v${i}`} from={s.from - lead} durationInFrames={s.frames + lead} name={s.visual}>
             <FadeIn on={i > 0}>
               <Sequence from={lead} layout="none">
-                {V ? <V frames={s.frames} /> : <AbsoluteFill style={{ background: 'magenta' }} />}
+                {V ? <V frames={s.frames} cues={s.words.map((w) => ({ w: w.w, f: Math.round(w.start * FPS) - s.from }))} /> : <AbsoluteFill style={{ background: 'magenta' }} />}
               </Sequence>
             </FadeIn>
           </Sequence>

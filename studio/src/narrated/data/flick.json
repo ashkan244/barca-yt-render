@@ -1,0 +1,644 @@
+{
+ "id": "flick",
+ "key": "preview",
+ "engine": "preview",
+ "audio": null,
+ "duration": 45.01,
+ "scenes": [
+  {
+   "visual": "f-hook",
+   "text": "Only one coach in Barça history hit a hundred wins faster than Hansi Flick.",
+   "start": 0.3,
+   "end": 5.16,
+   "words": [
+    {
+     "w": "Only",
+     "start": 0.38,
+     "end": 0.741
+    },
+    {
+     "w": "one",
+     "start": 0.772,
+     "end": 1.133
+    },
+    {
+     "w": "coach",
+     "start": 1.165,
+     "end": 1.345
+    },
+    {
+     "w": "in",
+     "start": 1.361,
+     "end": 1.541
+    },
+    {
+     "w": "Barça",
+     "start": 1.557,
+     "end": 1.918
+    },
+    {
+     "w": "history",
+     "start": 1.949,
+     "end": 2.491
+    },
+    {
+     "w": "hit",
+     "start": 2.538,
+     "end": 2.719
+    },
+    {
+     "w": "a",
+     "start": 2.734,
+     "end": 2.915
+    },
+    {
+     "w": "hundred",
+     "start": 2.93,
+     "end": 3.291
+    },
+    {
+     "w": "wins",
+     "start": 3.323,
+     "end": 3.503
+    },
+    {
+     "w": "faster",
+     "start": 3.519,
+     "end": 3.88
+    },
+    {
+     "w": "than",
+     "start": 3.911,
+     "end": 4.092
+    },
+    {
+     "w": "Hansi",
+     "start": 4.108,
+     "end": 4.469
+    },
+    {
+     "w": "Flick.",
+     "start": 4.5,
+     "end": 4.842
+    }
+   ]
+  },
+  {
+   "visual": "f-race",
+   "text": "Luis Enrique took a hundred and twenty-six games. Flick, a hundred and thirty-one.",
+   "start": 5.48,
+   "end": 10.34,
+   "words": [
+    {
+     "w": "Luis",
+     "start": 5.56,
+     "end": 5.724
+    },
+    {
+     "w": "Enrique",
+     "start": 5.738,
+     "end": 6.23
+    },
+    {
+     "w": "took",
+     "start": 6.272,
+     "end": 6.436
+    },
+    {
+     "w": "a",
+     "start": 6.45,
+     "end": 6.614
+    },
+    {
+     "w": "hundred",
+     "start": 6.628,
+     "end": 6.956
+    },
+    {
+     "w": "and",
+     "start": 6.985,
+     "end": 7.148
+    },
+    {
+     "w": "twenty-six",
+     "start": 7.163,
+     "end": 7.654
+    },
+    {
+     "w": "games.",
+     "start": 7.697,
+     "end": 8.126
+    },
+    {
+     "w": "Flick,",
+     "start": 8.338,
+     "end": 8.553
+    },
+    {
+     "w": "a",
+     "start": 8.659,
+     "end": 8.822
+    },
+    {
+     "w": "hundred",
+     "start": 8.837,
+     "end": 9.164
+    },
+    {
+     "w": "and",
+     "start": 9.193,
+     "end": 9.357
+    },
+    {
+     "w": "thirty-one.",
+     "start": 9.371,
+     "end": 9.92
+    }
+   ]
+  },
+  {
+   "visual": "f-rate",
+   "text": "But no Barça coach has ever won more often: seventy-six percent.",
+   "start": 10.66,
+   "end": 14.905,
+   "words": [
+    {
+     "w": "But",
+     "start": 10.74,
+     "end": 10.906
+    },
+    {
+     "w": "no",
+     "start": 10.921,
+     "end": 11.087
+    },
+    {
+     "w": "Barça",
+     "start": 11.102,
+     "end": 11.434
+    },
+    {
+     "w": "coach",
+     "start": 11.463,
+     "end": 11.63
+    },
+    {
+     "w": "has",
+     "start": 11.644,
+     "end": 11.811
+    },
+    {
+     "w": "ever",
+     "start": 11.825,
+     "end": 12.158
+    },
+    {
+     "w": "won",
+     "start": 12.187,
+     "end": 12.353
+    },
+    {
+     "w": "more",
+     "start": 12.368,
+     "end": 12.7
+    },
+    {
+     "w": "often:",
+     "start": 12.729,
+     "end": 13.166
+    },
+    {
+     "w": "seventy-six",
+     "start": 13.38,
+     "end": 14.046
+    },
+    {
+     "w": "percent.",
+     "start": 14.104,
+     "end": 14.54
+    }
+   ]
+  },
+  {
+   "visual": "f-slump",
+   "text": "Win one hundred came straight after defeats to PSG and Real Madrid.",
+   "start": 15.225,
+   "end": 19.265,
+   "words": [
+    {
+     "w": "Win",
+     "start": 15.305,
+     "end": 15.484
+    },
+    {
+     "w": "one",
+     "start": 15.499,
+     "end": 15.857
+    },
+    {
+     "w": "hundred",
+     "start": 15.888,
+     "end": 16.246
+    },
+    {
+     "w": "came",
+     "start": 16.277,
+     "end": 16.635
+    },
+    {
+     "w": "straight",
+     "start": 16.666,
+     "end": 16.845
+    },
+    {
+     "w": "after",
+     "start": 16.86,
+     "end": 17.218
+    },
+    {
+     "w": "defeats",
+     "start": 17.249,
+     "end": 17.607
+    },
+    {
+     "w": "to",
+     "start": 17.638,
+     "end": 17.816
+    },
+    {
+     "w": "PSG",
+     "start": 17.832,
+     "end": 18.011
+    },
+    {
+     "w": "and",
+     "start": 18.026,
+     "end": 18.205
+    },
+    {
+     "w": "Real",
+     "start": 18.221,
+     "end": 18.4
+    },
+    {
+     "w": "Madrid.",
+     "start": 18.415,
+     "end": 18.884
+    }
+   ]
+  },
+  {
+   "visual": "f-score",
+   "text": "Barça answered with a six-one win over Alavés.",
+   "start": 19.585,
+   "end": 23.215,
+   "words": [
+    {
+     "w": "Barça",
+     "start": 19.665,
+     "end": 20.02
+    },
+    {
+     "w": "answered",
+     "start": 20.051,
+     "end": 20.585
+    },
+    {
+     "w": "with",
+     "start": 20.631,
+     "end": 20.809
+    },
+    {
+     "w": "a",
+     "start": 20.824,
+     "end": 21.002
+    },
+    {
+     "w": "six-one",
+     "start": 21.017,
+     "end": 21.55
+    },
+    {
+     "w": "win",
+     "start": 21.597,
+     "end": 21.775
+    },
+    {
+     "w": "over",
+     "start": 21.79,
+     "end": 22.145
+    },
+    {
+     "w": "Alavés.",
+     "start": 22.176,
+     "end": 22.772
+    }
+   ]
+  },
+  {
+   "visual": "f-move",
+   "text": "The opener took fifteen passes and nine players.",
+   "start": 23.535,
+   "end": 26.55,
+   "words": [
+    {
+     "w": "The",
+     "start": 23.615,
+     "end": 23.79
+    },
+    {
+     "w": "opener",
+     "start": 23.806,
+     "end": 24.332
+    },
+    {
+     "w": "took",
+     "start": 24.378,
+     "end": 24.554
+    },
+    {
+     "w": "fifteen",
+     "start": 24.569,
+     "end": 24.92
+    },
+    {
+     "w": "passes",
+     "start": 24.95,
+     "end": 25.301
+    },
+    {
+     "w": "and",
+     "start": 25.332,
+     "end": 25.507
+    },
+    {
+     "w": "nine",
+     "start": 25.523,
+     "end": 25.874
+    },
+    {
+     "w": "players.",
+     "start": 25.904,
+     "end": 26.236
+    }
+   ]
+  },
+  {
+   "visual": "f-goals",
+   "text": "Four goals by half-time. Two more after the break.",
+   "start": 26.87,
+   "end": 29.885,
+   "words": [
+    {
+     "w": "Four",
+     "start": 26.95,
+     "end": 27.108
+    },
+    {
+     "w": "goals",
+     "start": 27.122,
+     "end": 27.28
+    },
+    {
+     "w": "by",
+     "start": 27.294,
+     "end": 27.452
+    },
+    {
+     "w": "half-time.",
+     "start": 27.466,
+     "end": 27.996
+    },
+    {
+     "w": "Two",
+     "start": 28.257,
+     "end": 28.415
+    },
+    {
+     "w": "more",
+     "start": 28.428,
+     "end": 28.745
+    },
+    {
+     "w": "after",
+     "start": 28.772,
+     "end": 29.089
+    },
+    {
+     "w": "the",
+     "start": 29.116,
+     "end": 29.274
+    },
+    {
+     "w": "break.",
+     "start": 29.288,
+     "end": 29.587
+    }
+   ]
+  },
+  {
+   "visual": "f-raphinha",
+   "text": "Raphinha scored twice: fifteen league goals in eleven games, matching César Rodríguez and Messi.",
+   "start": 30.205,
+   "end": 36.295,
+   "words": [
+    {
+     "w": "Raphinha",
+     "start": 30.285,
+     "end": 30.79
+    },
+    {
+     "w": "scored",
+     "start": 30.834,
+     "end": 31.171
+    },
+    {
+     "w": "twice:",
+     "start": 31.201,
+     "end": 31.642
+    },
+    {
+     "w": "fifteen",
+     "start": 31.86,
+     "end": 32.197
+    },
+    {
+     "w": "league",
+     "start": 32.226,
+     "end": 32.563
+    },
+    {
+     "w": "goals",
+     "start": 32.592,
+     "end": 32.761
+    },
+    {
+     "w": "in",
+     "start": 32.776,
+     "end": 32.944
+    },
+    {
+     "w": "eleven",
+     "start": 32.959,
+     "end": 33.464
+    },
+    {
+     "w": "games,",
+     "start": 33.508,
+     "end": 33.852
+    },
+    {
+     "w": "matching",
+     "start": 34.021,
+     "end": 34.358
+    },
+    {
+     "w": "César",
+     "start": 34.387,
+     "end": 34.724
+    },
+    {
+     "w": "Rodríguez",
+     "start": 34.753,
+     "end": 35.259
+    },
+    {
+     "w": "and",
+     "start": 35.303,
+     "end": 35.471
+    },
+    {
+     "w": "Messi.",
+     "start": 35.486,
+     "end": 35.927
+    }
+   ]
+  },
+  {
+   "visual": "f-duo",
+   "text": "Lamine Yamal scored twice too. Fermín López: a goal and two assists.",
+   "start": 36.615,
+   "end": 41.065,
+   "words": [
+    {
+     "w": "Lamine",
+     "start": 36.695,
+     "end": 37.165
+    },
+    {
+     "w": "Yamal",
+     "start": 37.205,
+     "end": 37.519
+    },
+    {
+     "w": "scored",
+     "start": 37.546,
+     "end": 37.859
+    },
+    {
+     "w": "twice",
+     "start": 37.886,
+     "end": 38.199
+    },
+    {
+     "w": "too.",
+     "start": 38.226,
+     "end": 38.523
+    },
+    {
+     "w": "Fermín",
+     "start": 38.669,
+     "end": 38.982
+    },
+    {
+     "w": "López:",
+     "start": 39.009,
+     "end": 39.42
+    },
+    {
+     "w": "a",
+     "start": 39.622,
+     "end": 39.778
+    },
+    {
+     "w": "goal",
+     "start": 39.792,
+     "end": 39.948
+    },
+    {
+     "w": "and",
+     "start": 39.962,
+     "end": 40.119
+    },
+    {
+     "w": "two",
+     "start": 40.132,
+     "end": 40.289
+    },
+    {
+     "w": "assists.",
+     "start": 40.302,
+     "end": 40.713
+    }
+   ]
+  },
+  {
+   "visual": "f-outro",
+   "text": "Where does Flick rank among Barça's coaches? Tell us below.",
+   "start": 41.385,
+   "end": 44.81,
+   "words": [
+    {
+     "w": "Where",
+     "start": 41.465,
+     "end": 41.788
+    },
+    {
+     "w": "does",
+     "start": 41.816,
+     "end": 41.978
+    },
+    {
+     "w": "Flick",
+     "start": 41.992,
+     "end": 42.153
+    },
+    {
+     "w": "rank",
+     "start": 42.167,
+     "end": 42.329
+    },
+    {
+     "w": "among",
+     "start": 42.343,
+     "end": 42.666
+    },
+    {
+     "w": "Barça's",
+     "start": 42.694,
+     "end": 43.017
+    },
+    {
+     "w": "coaches?",
+     "start": 43.045,
+     "end": 43.468
+    },
+    {
+     "w": "Tell",
+     "start": 43.677,
+     "end": 43.838
+    },
+    {
+     "w": "us",
+     "start": 43.852,
+     "end": 44.014
+    },
+    {
+     "w": "below.",
+     "start": 44.028,
+     "end": 44.451
+    }
+   ]
+  }
+ ]
+}

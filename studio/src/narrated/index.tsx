@@ -3,6 +3,7 @@ import { CalculateMetadataFunction, Composition, staticFile } from 'remotion';
 import { FPS, H, W } from './theme';
 import { Short, ShortData, ShortProps, shortFrames } from './Short';
 import crestData from './data/crest.json';
+import flickData from './data/flick.json';
 import lamineData from './data/lamine.json';
 
 // Narrated Barça Radar Shorts (English). Voice, best first:
@@ -12,6 +13,7 @@ import lamineData from './data/lamine.json';
 const SHORTS = [
   { id: 'NR-CREST', data: crestData as ShortData, music: 'music/km/heroic-age.mp3', kokoro: 'NRC' },
   { id: 'NR-LAMINE', data: lamineData as ShortData, music: 'music/km/inspired.mp3', kokoro: 'NRL' },
+  { id: 'NR-FLICK-CENTURY', data: flickData as ShortData, music: 'music/km/volatile-reaction.mp3', kokoro: 'F100' },
 ];
 
 const GAP = 0.32; // breath between Kokoro lines
@@ -31,14 +33,17 @@ const fromKokoro = async (data: ShortData, code: string): Promise<ShortData | nu
     const id = `${code}-${String(i + 1).padStart(3, '0')}`;
     const d = dur[id];
     if (!d) throw new Error(`Kokoro line ${id} missing from durations.json`);
-    // Kokoro gives no word times: spread the caption's words over the line by length
+    // Kokoro gives no word times: spread the caption's words over the line by syllables,
+    // leaving room for the pause Kokoro makes after a comma or a full stop
     const toks = s.text.split(/\s+/).filter(Boolean);
-    const wts = toks.map((x) => Math.max(1, x.replace(/\W/g, '').length) + 1);
+    const syl = toks.map((x) => Math.max(1, (x.toLowerCase().replace(/[^a-zà-ÿ]/g, '').match(/[aeiouyà-ÿ]+/g) ?? []).length));
+    const pause = toks.map((x) => (/[.:;?!]$/.test(x) ? 1.6 : /,$/.test(x) ? 0.8 : 0));
+    const wts = syl.map((n, k) => n + pause[k]);
     const a = t + 0.08, b = t + d - 0.15, sum = wts.reduce((x, y) => x + y, 0);
     let c = a;
     const words = toks.map((w, k) => {
       const span = ((b - a) * wts[k]) / sum;
-      const o = { w, start: +c.toFixed(3), end: +(c + span * 0.92).toFixed(3) };
+      const o = { w, start: +c.toFixed(3), end: +(c + (span * syl[k]) / wts[k] * 0.92).toFixed(3) };
       c += span;
       return o;
     });
