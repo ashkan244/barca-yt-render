@@ -1,0 +1,92 @@
+{
+ "episode": "CREST-HISTORY-LONG",
+ "asr": "first pass from the original production; checked passages re-run with faster-whisper 1.2.1 small.en (beam 5)",
+ "script": "FC Barcelona- The History Behind Its Crest.docx (supplied by the channel)",
+ "policy": "A caption word is changed only where the presenter reads the supplied script and the heard word is a near-homophone or a second ASR pass agrees; timing stays from the heard span.",
+ "corrections": [
+  {
+   "at": 37.26,
+   "heard": "and",
+   "caption": "on",
+   "reason": "script \"four red stripes on a golden background\"; near-homophone"
+  },
+  {
+   "at": 67.98,
+   "heard": "and",
+   "caption": "and,",
+   "reason": "script \"Valencia and, at different periods, other Mediterranean lands\""
+  },
+  {
+   "at": 68.44,
+   "heard": "different",
+   "caption": "at different",
+   "reason": "second ASR pass (faster-whisper small.en) and script"
+  },
+  {
+   "at": 69.0,
+   "heard": "periods",
+   "caption": "periods,",
+   "reason": "script punctuation"
+  },
+  {
+   "at": 69.48,
+   "heard": "of",
+   "caption": "",
+   "reason": "not in script; second ASR pass hears \"periods other\""
+  },
+  {
+   "at": 69.8,
+   "heard": "the",
+   "caption": "other",
+   "reason": "second ASR pass \"other Mediterranean lands\"; script"
+  },
+  {
+   "at": 70.46,
+   "heard": "land.",
+   "caption": "lands.",
+   "reason": "second ASR pass; script"
+  },
+  {
+   "at": 72.58,
+   "heard": "-striped,",
+   "caption": "-stripe",
+   "reason": "script \"four-stripe heraldic design\""
+  },
+  {
+   "at": 93.16,
+   "heard": "and",
+   "caption": "on",
+   "reason": "second ASR pass \"the red cross on a white background\"; script"
+  },
+  {
+   "at": 94.92,
+   "heard": "is",
+   "caption": "This is",
+   "reason": "second ASR pass \"This is the cross\"; script"
+  },
+  {
+   "at": 97.94,
+   "heard": "St.",
+   "caption": "Sant",
+   "reason": "script \"known in Catalonia as Sant Jordi\""
+  },
+  {
+   "at": 115.08,
+   "heard": "and",
+   "caption": "on",
+   "reason": "script \"the same red cross on a white background\"; near-homophone"
+  },
+  {
+   "at": 200.48,
+   "heard": "original",
+   "caption": "regional",
+   "reason": "second ASR pass with vocabulary hint; script \"regional identity\""
+  },
+  {
+   "at": 214.56,
+   "heard": "Barca",
+   "caption": "Barça",
+   "reason": "spelling"
+  }
+ ]
+}

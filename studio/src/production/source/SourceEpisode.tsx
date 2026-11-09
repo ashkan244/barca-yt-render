@@ -97,7 +97,7 @@ export const clipFrames = (spec: SourceSpec, name: string) => { const c = findCl
 const mix = (f: number, at: number, d = 14) => interpolate(f, [at, at + d], [0, 1], clamp);
 const sceneAt = (spec: SourceSpec, t: number) => spec.scenes.find((s) => t >= s.a && t < s.b) ?? spec.scenes[spec.scenes.length - 1];
 const punchAt = (spec: SourceSpec, t: number) => (spec.punch ?? []).some(([a, b]) => t >= a && t < b) ? 1.035 : 1;
-const media = (spec: SourceSpec, file: string) => staticFile(`${spec.media}/${file}`);
+export const media = (spec: SourceSpec, file: string) => staticFile(`${spec.media}/${file}`);
 
 const sceneBoard = (spec: SourceSpec, scene: SourceScene, f: number, readable = false, height?: number) => {
   const at = (k: 'moveAt' | 'arrowAt' | 'spaceAt') => (scene.cues?.[k] ?? scene.a + .8) * FPS;
@@ -154,7 +154,7 @@ const BeatSfx: React.FC<{spec: SourceSpec; offset?: number}> = ({spec}) => <>
   {(spec.beats ?? []).map((b, i) => b.sfx ? <Sequence key={i} from={Math.max(0, Math.round(b.a * FPS) - 3)} durationInFrames={30}><Audio src={staticFile(`sfx/${b.sfx}.wav`)} volume={.1} /></Sequence> : null)}
 </>;
 
-const Presenter: React.FC<{spec: SourceSpec; t: number; style: React.CSSProperties}> = ({spec, t, style}) =>
+export const Presenter: React.FC<{spec: SourceSpec; t: number; style: React.CSSProperties}> = ({spec, t, style}) =>
   <div style={{position: 'absolute', overflow: 'hidden', background: '#152133', border: '2px solid #ffffff28', boxShadow: '0 22px 65px #0007', ...style}}>
     <OffthreadVideo src={media(spec, 'presenter.mp4')} muted style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 36%', transform: `scale(${punchAt(spec, t)})`, filter: 'contrast(1.025) saturate(0.98)'}} />
     <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(transparent 62%, #080e1b99 100%)', pointerEvents: 'none'}} />
@@ -201,7 +201,7 @@ const lerp = (a: Box, b: Box, k: number): Box => ({x: a.x + (b.x - a.x) * k, y: 
 
 const chapterIndex = (spec: SourceSpec, t: number) => { let i = 0; while (i + 1 < spec.chapters.length && spec.chapters[i + 1].at <= t) i++; return i; };
 
-const EndScreen: React.FC<{spec: SourceSpec; f: number}> = ({spec, f}) =>
+export const EndScreen: React.FC<{spec: SourceSpec; f: number}> = ({spec, f}) =>
   <AbsoluteFill>
     <RadarBg tint={GRANA} />
     <div style={{position: 'absolute', left: 0, right: 0, top: 70, textAlign: 'center', opacity: mix(f, 0)}}>

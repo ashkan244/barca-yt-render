@@ -22,7 +22,7 @@ import {HKShortPro, HK_RS3_FRAMES} from './radar/HKShortPro';
 import {ClasicoExplainer, CLASICO_FRAMES} from './explainer/Clasico';
 import {HORadar, HO_FRAMES, HOThumb} from './radar/HOTitle';
 import {NarratedShorts} from './narrated';
-import {CrestHistoryLong} from './production/source/CrestHistoryLong';
+import {CrestHistoryLong, CrestHistoryThumb} from './production/source/CrestHistoryLong';
 
 export const Root: React.FC = () => (
   <>
@@ -32,7 +32,7 @@ export const Root: React.FC = () => (
         <Composition id={`${d.spec.id}-SHORT`} component={SourceShort} durationInFrames={shortFrames(d.spec)} fps={30} width={1080} height={1920} defaultProps={d} />
         <Composition id={`${d.spec.id}-LONG`} component={d.spec.id === 'CREST-HISTORY-LONG' ? CrestHistoryLong : SourceLong} durationInFrames={longFrames(d.spec)} fps={30} width={1920} height={1080} defaultProps={d} />
         <Still id={`${d.spec.id}-COVER`} component={SourceCover} width={1080} height={1920} defaultProps={d} />
-        <Still id={`${d.spec.id}-THUMB`} component={SourceThumb} width={1280} height={720} defaultProps={d} />
+        <Still id={`${d.spec.id}-THUMB`} component={d.spec.id === 'CREST-HISTORY-LONG' ? CrestHistoryThumb : SourceThumb} width={1280} height={720} defaultProps={d} />
         {'archive' in d.spec && <Composition id={`${d.spec.id}-ARCHIVE`} component={ArchiveShort} durationInFrames={shortFrames(d.spec)} fps={30} width={1080} height={1920} defaultProps={d} />}
         {d.spec.clips?.map((c) => <Composition key={c.name} id={`${d.spec.id}-CLIP-${c.name}`} component={SourceClip} durationInFrames={clipFrames(d.spec, c.name)} fps={30} width={1080} height={1920} defaultProps={{...d, clip: c.name}} />)}
       </React.Fragment>

@@ -1,138 +1,136 @@
 {
-  "schemaVersion": 1,
-  "id": "CREST-HISTORY-LONG",
-  "duration": 225,
-  "fps": 30,
-  "source": {
-    "role": "long",
-    "sha256": "24bf046fd9d56011ff8d82c141043c4459fdc356424948f08170f57cab058f7a"
-  },
-  "media": {
-    "video": "host/CREST-HISTORY-LONG/presenter.mp4",
-    "voice": "host/CREST-HISTORY-LONG/voice.wav",
-    "score": "host/CREST-HISTORY-LONG/score.wav",
-    "cover": "host/CREST-HISTORY-LONG/cover.jpg"
-  },
-  "wordsFile": "studio/src/episodes-source/crest-history-long.words.json",
-  "captionsFile": "studio/src/episodes-source/crest-history-long.pages.json",
-  "srtFile": "docs/barca-radar/crest-history/CREST-HISTORY-LONG.srt",
-  "protectedPhrases": [
-    "Crown of Aragon",
-    "House of Barcelona",
-    "Western Mediterranean",
-    "Sant Jordi",
-    "St. George",
-    "Joan Gamper",
-    "FC Barcelona",
-    "Més que un club",
-    "Barcelona's crest",
-    "four red stripes"
-  ],
-  "review": {
-    "transcript": "pending",
-    "unresolved": [
-      "Ear review of ASR phrase “different periods of the Mediterranean land” (67.98–71.08)",
-      "Ear review of “original identity” vs scenario wording (197.18–202.82)",
-      "Confirm end phrase “Més que un club” (218.48–219.30)",
-      "Review all ASR-derived captions against source audio before release"
-    ]
-  },
-  "photoAssets": [],
-  "scenes": [
-    {
-      "a": 0,
-      "b": 26.22,
-      "title": "THE STORY BEHIND THE CREST",
-      "sub": "THREE SYMBOLS · ONE HISTORY",
-      "mode": "cards",
-      "cards": [
-        [
-          "THE FOUR BARS",
-          "CATALONIA"
-        ],
-        [
-          "THE CROSS",
-          "SANT JORDI"
-        ],
-        [
-          "THE SHIELD",
-          "BARÇA"
-        ]
-      ],
-      "layout": "presenter",
-      "cues": {}
-    },
-    {
-      "a": 26.22,
-      "b": 88.02,
-      "title": "THE FOUR BARS",
-      "sub": "SENYERA · CROWN OF ARAGON",
-      "mode": "cards",
-      "cards": [
-        [
-          "FIRST DOCUMENTED",
-          "1150"
-        ],
-        [
-          "A HISTORIC REALM",
-          "NOT A MODERN BORDER"
-        ]
-      ],
-      "layout": "presenter",
-      "cues": {}
-    },
-    {
-      "a": 88.02,
-      "b": 131.94,
-      "title": "A CROSS WITH A STORY",
-      "sub": "SANT JORDI · ST GEORGE",
-      "mode": "cards",
-      "cards": [
-        [
-          "BARCELONA",
-          "CATALAN TRADITION"
-        ],
-        [
-          "ENGLAND",
-          "A DISTINCT TRADITION"
-        ]
-      ],
-      "layout": "presenter",
-      "cues": {}
-    },
-    {
-      "a": 131.94,
-      "b": 189.06,
-      "title": "FROM CITY ARMS TO FCB",
-      "sub": "1899 → 1910",
-      "mode": "cards",
-      "cards": [
-        [
-          "1899",
-          "CITY ARMS"
-        ],
-        [
-          "1910",
-          "A DISTINCTIVE CREST"
-        ]
-      ],
-      "layout": "presenter",
-      "cues": {}
-    },
-    {
-      "a": 189.06,
-      "b": 225,
-      "title": "MORE THAN A CREST",
-      "sub": "HISTORY · CULTURE · SPORT",
-      "mode": "cards",
-      "cards": [
-        [
-          "MÉS QUE UN CLUB",
-          "MORE THAN A CLUB"
-        ]
-      ],
-      "layout": "presenter",
-      "cues": {}
-    }
+ "schemaVersion": 1,
+ "id": "CREST-HISTORY-LONG",
+ "duration": 225,
+ "fps": 30,
+ "source": {
+  "role": "long",
+  "sha256": "24bf046fd9d56011ff8d82c141043c4459fdc356424948f08170f57cab058f7a"
+ },
+ "media": {
+  "video": "host/CREST-HISTORY-LONG/presenter.mp4",
+  "voice": "host/CREST-HISTORY-LONG/voice.wav",
+  "score": "host/CREST-HISTORY-LONG/score.wav",
+  "cover": "host/CREST-HISTORY-LONG/cover.jpg"
+ },
+ "wordsFile": "studio/src/episodes-source/crest-history-long.words.json",
+ "captionsFile": "studio/src/episodes-source/crest-history-long.pages.json",
+ "srtFile": "docs/barca-radar/crest-history/CREST-HISTORY-LONG.srt",
+ "protectedPhrases": [
+  "Crown of Aragon",
+  "House of Barcelona",
+  "Western Mediterranean",
+  "Sant Jordi",
+  "St. George",
+  "Joan Gamper",
+  "FC Barcelona",
+  "Més que un club",
+  "Barcelona's crest",
+  "four red stripes"
+ ],
+ "review": {
+  "transcript": "pending",
+  "unresolved": [
+   "Presenter ear check of the 14 script-based caption corrections (docs/barca-radar/crest-history/caption-corrections.json)",
+   "Review all ASR-derived captions against source audio before release"
   ]
+ },
+ "photoAssets": [],
+ "scenes": [
+  {
+   "a": 0,
+   "b": 26.22,
+   "title": "THE STORY BEHIND THE CREST",
+   "sub": "THREE SYMBOLS · ONE HISTORY",
+   "mode": "cards",
+   "cards": [
+    [
+     "THE FOUR BARS",
+     "CATALONIA"
+    ],
+    [
+     "THE CROSS",
+     "SANT JORDI"
+    ],
+    [
+     "THE SHIELD",
+     "BARÇA"
+    ]
+   ],
+   "layout": "presenter",
+   "cues": {}
+  },
+  {
+   "a": 26.22,
+   "b": 88.02,
+   "title": "THE FOUR BARS",
+   "sub": "SENYERA · CROWN OF ARAGON",
+   "mode": "cards",
+   "cards": [
+    [
+     "FIRST DOCUMENTED",
+     "1150"
+    ],
+    [
+     "A HISTORIC REALM",
+     "NOT A MODERN BORDER"
+    ]
+   ],
+   "layout": "presenter",
+   "cues": {}
+  },
+  {
+   "a": 88.02,
+   "b": 131.94,
+   "title": "A CROSS WITH A STORY",
+   "sub": "SANT JORDI · ST GEORGE",
+   "mode": "cards",
+   "cards": [
+    [
+     "BARCELONA",
+     "CATALAN TRADITION"
+    ],
+    [
+     "ENGLAND",
+     "A DISTINCT TRADITION"
+    ]
+   ],
+   "layout": "presenter",
+   "cues": {}
+  },
+  {
+   "a": 131.94,
+   "b": 189.06,
+   "title": "FROM CITY ARMS TO FCB",
+   "sub": "1899 → 1910",
+   "mode": "cards",
+   "cards": [
+    [
+     "1899",
+     "CITY ARMS"
+    ],
+    [
+     "1910",
+     "A DISTINCTIVE CREST"
+    ]
+   ],
+   "layout": "presenter",
+   "cues": {}
+  },
+  {
+   "a": 189.06,
+   "b": 225,
+   "title": "MORE THAN A CREST",
+   "sub": "HISTORY · CULTURE · SPORT",
+   "mode": "cards",
+   "cards": [
+    [
+     "MÉS QUE UN CLUB",
+     "MORE THAN A CLUB"
+    ]
+   ],
+   "layout": "presenter",
+   "cues": {}
+  }
+ ]
 }

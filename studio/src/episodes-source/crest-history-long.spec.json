@@ -5,7 +5,7 @@
   "manifest": "studio/src/episodes-source/crest-history-long.manifest.json",
   "duration": 225,
   "label": "BARÇA HISTORY · THE CREST",
-  "presenter": "BARÇA RADAR",
+  "presenter": "MORTI",
   "opponent": "",
   "strap": "THE STORY BEHIND THE CREST",
   "thumbStrap": "BARÇA · HISTORY · IDENTITY",
@@ -181,8 +181,8 @@
     ]
   },
   "long": {
-    "endSeconds": 8,
-    "endKicker": "MÉS QUE UN CLUB"
+    "endSeconds": 20,
+    "endKicker": "MORE BARÇA HISTORY · WATCH NEXT"
   },
   "captions": {
     "emphasis": [
@@ -190,8 +190,11 @@
       "Sant Jordi",
       "Aragon",
       "Barcelona",
+      "1899",
       "1910",
-      "Més"
+      "Més",
+      "Catalonia",
+      "England"
     ]
   }
 }

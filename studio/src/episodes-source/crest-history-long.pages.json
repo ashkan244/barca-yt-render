@@ -748,7 +748,7 @@
     {
       "s": 36.42,
       "e": 38.08,
-      "text": "four red stripes and a",
+      "text": "four red stripes on a",
       "tokens": [
         {
           "w": "four",
@@ -769,10 +769,10 @@
           "alignment": "source_word"
         },
         {
-          "w": "and",
+          "w": "on",
           "s": 37.26,
           "e": 37.96,
-          "alignment": "source_word"
+          "alignment": "script_corrected"
         },
         {
           "w": "a",
@@ -1399,44 +1399,38 @@
     {
       "s": 67.98,
       "e": 69.92,
-      "text": "and different periods of the",
+      "text": "and, at different periods, other",
       "tokens": [
         {
-          "w": "and",
+          "w": "and,",
           "s": 67.98,
           "e": 68.44,
-          "alignment": "source_word"
+          "alignment": "script_corrected"
         },
         {
-          "w": "different",
+          "w": "at different",
           "s": 68.44,
           "e": 69.0,
-          "alignment": "source_word"
+          "alignment": "script_corrected"
         },
         {
-          "w": "periods",
+          "w": "periods,",
           "s": 69.0,
           "e": 69.48,
-          "alignment": "source_word"
+          "alignment": "script_corrected"
         },
         {
-          "w": "of",
-          "s": 69.48,
-          "e": 69.8,
-          "alignment": "source_word"
-        },
-        {
-          "w": "the",
+          "w": "other",
           "s": 69.8,
           "e": 69.92,
-          "alignment": "source_word"
+          "alignment": "script_corrected"
         }
       ]
     },
     {
       "s": 69.92,
       "e": 71.08,
-      "text": "Mediterranean land.",
+      "text": "Mediterranean lands.",
       "tokens": [
         {
           "w": "Mediterranean",
@@ -1445,10 +1439,10 @@
           "alignment": "source_word"
         },
         {
-          "w": "land.",
+          "w": "lands.",
           "s": 70.46,
           "e": 71.08,
-          "alignment": "source_word"
+          "alignment": "script_corrected"
         }
       ]
     },
@@ -1492,17 +1486,11 @@
     {
       "s": 72.32,
       "e": 74.42,
-      "text": "four -striped, heraldic design appears",
+      "text": "four-stripe heraldic design appears",
       "tokens": [
         {
-          "w": "four",
+          "w": "four-stripe",
           "s": 72.32,
-          "e": 72.58,
-          "alignment": "source_word"
-        },
-        {
-          "w": "-striped,",
-          "s": 72.58,
           "e": 73.18,
           "alignment": "source_word"
         },
@@ -1932,7 +1920,7 @@
     {
       "s": 92.5,
       "e": 93.82,
-      "text": "the red cross and a",
+      "text": "the red cross on a",
       "tokens": [
         {
           "w": "the",
@@ -1953,10 +1941,10 @@
           "alignment": "source_word"
         },
         {
-          "w": "and",
+          "w": "on",
           "s": 93.16,
           "e": 93.7,
-          "alignment": "source_word"
+          "alignment": "script_corrected"
         },
         {
           "w": "a",
@@ -1988,13 +1976,13 @@
     {
       "s": 94.92,
       "e": 95.76,
-      "text": "is the cross of",
+      "text": "This is the cross of",
       "tokens": [
         {
-          "w": "is",
+          "w": "This is",
           "s": 94.92,
           "e": 95.08,
-          "alignment": "source_word"
+          "alignment": "script_corrected"
         },
         {
           "w": "the",
@@ -2037,8 +2025,8 @@
     },
     {
       "s": 96.68,
-      "e": 98.1,
-      "text": "known in Catalonia as St.",
+      "e": 97.94,
+      "text": "known in Catalonia as",
       "tokens": [
         {
           "w": "known",
@@ -2063,20 +2051,20 @@
           "s": 97.54,
           "e": 97.94,
           "alignment": "source_word"
-        },
-        {
-          "w": "St.",
-          "s": 97.94,
-          "e": 98.1,
-          "alignment": "source_word"
         }
       ]
     },
     {
-      "s": 98.36,
+      "s": 97.94,
       "e": 98.62,
-      "text": "Jordi.",
+      "text": "Sant Jordi.",
       "tokens": [
+        {
+          "w": "Sant",
+          "s": 97.94,
+          "e": 98.1,
+          "alignment": "script_corrected"
+        },
         {
           "w": "Jordi.",
           "s": 98.36,
@@ -2379,7 +2367,7 @@
     {
       "s": 114.1,
       "e": 115.56,
-      "text": "the same red cross and",
+      "text": "the same red cross on",
       "tokens": [
         {
           "w": "the",
@@ -2406,10 +2394,10 @@
           "alignment": "source_word"
         },
         {
-          "w": "and",
+          "w": "on",
           "s": 115.08,
           "e": 115.56,
-          "alignment": "source_word"
+          "alignment": "script_corrected"
         }
       ]
     },
@@ -4132,13 +4120,13 @@
     {
       "s": 200.48,
       "e": 202.3,
-      "text": "original identity and the sporting",
+      "text": "regional identity and the sporting",
       "tokens": [
         {
-          "w": "original",
+          "w": "regional",
           "s": 200.48,
           "e": 200.68,
-          "alignment": "source_word"
+          "alignment": "script_corrected"
         },
         {
           "w": "identity",
@@ -4368,7 +4356,7 @@
     {
       "s": 212.7,
       "e": 214.78,
-      "text": "for so many supporters, Barca",
+      "text": "for so many supporters, Barça",
       "tokens": [
         {
           "w": "for",
@@ -4395,10 +4383,10 @@
           "alignment": "source_word"
         },
         {
-          "w": "Barca",
+          "w": "Barça",
           "s": 214.56,
           "e": 214.78,
-          "alignment": "source_word"
+          "alignment": "script_corrected"
         }
       ]
     },
