@@ -30,7 +30,7 @@ hand-drawn illustrations (no club or competition artwork); the Equatorial Guinea
 Used while the ElevenLabs path is blocked (`NR-FLICK-CENTURY`). The script's `say` field is what Kokoro reads (names
 respelt, e.g. "Barsa", "Raffeenya"), `text` is the caption. `studio/src/episodes/narration/<code>.json` holds the
 lines; the object form `{ "dtype": "fp32", "lines": [...] }` runs the full-precision model (clearer than the default
-q8). Render with `code=<code>`: the workflow voices the lines, `index.tsx` lays them out with a 0.32 s breath and
+q8), and `"trim": true` cuts the ~1 s of silence Kokoro leaves around each line. Render with `code=<code>`: the workflow voices the lines, `index.tsx` lays them out with a 0.32 s breath and
 spreads each line's words by syllables (Kokoro gives no word times). Scenes receive those word cues (`cueAt` in
 `kit.tsx`), so a graphic can land on the word that names it.
 

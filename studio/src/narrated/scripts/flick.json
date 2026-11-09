@@ -11,6 +11,7 @@
   "voice": {
     "speed": 1.0,
     "dtype": "fp32",
+    "trim": true,
     "note": "say = what Kokoro reads (names respelt so they come out right); text = the caption"
   },
   "music": "music/km/volatile-reaction.mp3",

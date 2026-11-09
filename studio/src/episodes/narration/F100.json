@@ -1,5 +1,6 @@
 {
   "dtype": "fp32",
+  "trim": true,
   "lines": [
     {
       "id": "F100-001",
