@@ -1,6 +1,6 @@
 # Hansi Flick's 100 Barça wins
 
-**Composition:** `NR-FLICK-CENTURY` · vertical narrated Short · Kokoro `am_michael` (fp32, speed 1.0, line silences trimmed), code `F100` · about 47 s
+**Composition:** `NR-FLICK-CENTURY` · vertical narrated Short · Kokoro `am_michael` (fp32, speed 1.0, line silences trimmed), code `F100` · 50.3 s
 
 Rebuild (10 Nov 2026) of the first GPT/Codex version, which ran 59.5 s on near-black text cards with labels too small
 for a phone, reveals that ignored the voice, and garnet (the defeat colour) on Barça's own goals. Script and facts:
@@ -35,6 +35,10 @@ for a phone, reveals that ignored the voice, and garnet (the defeat colour) on B
 
 Actions → **Render video** on `feat/flick-century-short`: composition `NR-FLICK-CENTURY`, code `F100`, chunks `1`,
 CRF `16`, prep empty. If GitHub skips the concat job, re-run the workflow; QC: -14 LUFS, 48 kHz, frames at each scene.
+
+Rendered in run 42706918579 (commit fef8602, 1506 frames); the concat output is 96 kHz at -14.8 LUFS, so it was
+mastered locally to 48 kHz, -14.0 LUFS (loudnorm two-pass, video stream copied). Speech recognition on the master hears
+PSG and Real Madrid correctly; Alavés and Lamine Yamal still need an ear check.
 
 ## Posting copy
 
