@@ -1,62 +1,54 @@
-# One Hundred Wins in 131 Games
+# Hansi Flick's 100 Barça wins
 
-**Composition:** `NR-FLICK-CENTURY` · **Format:** vertical narrated Short · **Runtime target:** 40–50 seconds  
-**Visual family:** match dossier — editorial numbers, event timeline, and hand-drawn graphics; no match footage or player photography.
+**Composition:** `NR-FLICK-CENTURY` · vertical narrated Short · Kokoro `am_michael` (fp32, speed 1.0), code `F100` · about 47 s
 
-## Story and visual direction
+Rebuild (10 Nov 2026) of the first GPT/Codex version, which ran 59.5 s on near-black text cards with labels too small
+for a phone, reveals that ignored the voice, and garnet (the defeat colour) on Barça's own goals. Script and facts:
+`studio/src/narrated/scripts/flick.json`; scenes: `studio/src/narrated/FlickScenes.tsx`.
 
-The story moves from the milestone to the match that delivered it, then closes on the club record. Large numbers carry the opening and payoff; a compact match timeline makes the scoreline readable; one restrained statistic card explains the 15-pass opener without inventing player positions or a route. All scenes use the existing licensed fonts and Barça Radar palette, with an original vector treatment.
+## Beats
 
-| Beat | Narration | Picture |
+| Scene | Narration | Picture (each reveal lands on the word in bold) |
 |---|---|---|
-| 1 | 100 wins, reached in 131 games | Gold count-up and a fine circular milestone ring |
-| 2 | Only Luis Enrique was faster (126) | Two-number comparison card |
-| 3 | The Alavés match, 6–1 | Large scorecard and date |
-| 4 | Response after PSG and Madrid defeats | Two restrained result rows, then a gold reset line |
-| 5 | Four first-half goals, two after the break | Six-count timeline split at half-time |
-| 6 | Opener: 15 passes, nine players | Abstract pulse rail and a nine-player count; no plotted positions |
-| 7 | Fermín: one goal, two assists | Minimal contribution card |
-| 8 | Brian Fariñas debut amid absences | Name, position and availability counts; no portrait |
-| 9 | 76.33% win rate, club record | Oversized decimal with a short proof label |
-| 10 | What comes next? | Return to 100 as the closing motif |
-
-### Style frames
-
-- **Opening:** near-black field, low gold halo, small Barça Radar kicker, a thin broken ring and the count-up “100 / WINS”. Keep the score and subtitles out of the headline’s negative space.
-- **Core:** navy match dossier, white numerals, gold for Barça counts and garnet for opposition/defeat cues. Use one change per narration beat, with no decorative footage cuts.
-- **Close:** isolated “76.33%” on a warm dark field, then resolve to the same ring and “100”; the repeated motif makes the story feel complete.
+| `f-hook` | Only one coach in Barça history hit a hundred wins **faster** than **Hansi** Flick. | Crest, gold 100 WINS on blaugrana rays, pill "only one coach got there faster", HANSI FLICK |
+| `f-race` | **Luis** Enrique took 126 games. **Flick**, 131. | Podium: 1st Luis Enrique 126, 2nd Hansi Flick 131 (counters roll up) |
+| `f-rate` | But no Barça coach has **ever** won more often: **seventy-six** percent. | Gold ring gauge to 76.33 %, "highest of any Barça manager" |
+| `f-slump` | Win one hundred came straight after defeats to **PSG** and **Real** Madrid. | Two L tiles, then a pulsing dashed W "win Nº 100?" |
+| `f-score` | Barça answered with a **six-one** win over Alavés. | Scoreboard (crest v a plain blue/white roundel), 6 and 1 slam in, 31 Oct 2026 · 53,523 fans |
+| `f-move` | The opener took fifteen **passes** and nine **players**. | Pass and player counters; schematic pitch plotting only the final ball the club describes (Pedri → Fermín down the left → Raphinha) |
+| `f-goals` | **Four** goals by **half-time**. **Two** more after the **break**. | Goal ledger 8' 23' 41' 45+' / half-time / 65' 81', Mariano 84' in grey |
+| `f-raphinha` | Raphinha scored **twice**: **fifteen** league goals in **eleven** games, matching **César** Rodríguez and **Messi**. | Two balls, 15 counter, 11 game tiles, "= César Rodríguez", "= Messi" |
+| `f-duo` | **Lamine** Yamal scored **twice** too. **Fermín** López: a **goal** and two **assists**. | Two player cards: Lamine 2 goals (45+', 65'), Fermín 1 goal + 2 assists |
+| `f-outro` | Where does Flick rank among Barça's coaches? **Tell** us below. | Crest, pills 100 WINS · 131 GAMES · 76.33 %, question, "comment below" |
 
 ## Editorial checks
 
-- All match facts below come from the club's 31 October 2026 reports. The 100th win, 76.33% rate, fastest-to-100 comparison, match score, scoring halves, opening-goal pass count, Fermín contribution and Brian Fariñas debut/defensive context are stated there.
-- The 15-pass graphic is an abstract count, not an event map. The bar shapes do not encode who passed to whom.
-- “Assisted twice” is a plain-language rendering of the official “two assists.”
-- Narration is English and uses Kokoro voice `am_michael` through the existing `F100` Actions input. No human presenter source was supplied.
-- Visuals are original code-drawn graphics. No game broadcast, club crest artwork, or player images are included.
-- Music: Kevin MacLeod (incompetech.com), Creative Commons Attribution 4.0; preserve this credit in the post description.
-
-## Posting copy
-
-**Title:** Hansi Flick's 100 Barça Wins — in Just 131 Games
-
-**Description:** Hansi Flick's 100th win as FC Barcelona manager came against Alavés on 31 October 2026. He reached the mark in 131 games, with a 76.33% win rate — the highest in club history.
-
-Sources:  
-- FC Barcelona, [Hansi Flick: Record-breaking 100 wins](https://www.fcbarcelona.com/en/football/first-team/news/4601449/hansi-flick-record-breaking-100-wins)  
-- FC Barcelona, [FC Barcelona 6–1 Alavés: That's more like it!](https://www.fcbarcelona.com/en/football/first-team/news/4602177/fc-barcelona-6-1-alaves-thats-more-like-it)
-
-Music: Kevin MacLeod (incompetech.com), licensed under CC BY 4.0.
-
-**Hashtags:** #FCBarcelona #HansiFlick #BarcaRadar
+- Sources: FC Barcelona, *Hansi Flick: Record-breaking 100 wins* and *FC Barcelona 6-1 Alavés: That's more like it!*
+  (both 31 Oct 2026), re-read on 10 Nov 2026. Goal minutes, scorers, assists and the 53,523 crowd are from the match report.
+- 76.33 % is said as "seventy-six percent" and shown exactly.
+- The pass graphic is a count; the pitch plots only the final three touches named in the report, as a schematic.
+- Crest: `studio/src/production/source/CrestArt.tsx` (the accurate crest drawn for CREST-HISTORY-LONG). No Alavés
+  crest, player photos or match footage.
+- Music: Kevin MacLeod (incompetech.com), CC BY 4.0, "Volatile Reaction"; credit it in the description.
 
 ## Render
 
-Use GitHub Actions → **Render video** on the episode branch:
+Actions → **Render video** on `feat/flick-century-short`: composition `NR-FLICK-CENTURY`, code `F100`, chunks `1`,
+CRF `16`, prep empty. If GitHub skips the concat job, re-run the workflow; QC: -14 LUFS, 48 kHz, frames at each scene.
 
-- composition: `NR-FLICK-CENTURY`
-- code: `F100`
-- chunks: `1` (keeps the audio stream continuous)
-- CRF: `16`
-- prep: empty
+## Posting copy
 
-The workflow synthesizes the ten narration lines, renders the vertical MP4 and measures final output audio. Rendering does not publish to a social channel.
+**Title:** Hansi Flick's 100 Barça Wins — Only One Coach Was Faster #shorts
+
+**Description:**
+Hansi Flick reached 100 wins as FC Barcelona manager in 131 games — only Luis Enrique (126) got there faster — and
+his 76.33% win rate is the best in club history. Win number 100: a 6–1 against Alavés, with doubles for Raphinha and
+Lamine Yamal.
+
+Where does Flick rank among Barça's coaches? 👇
+
+Sources: FC Barcelona — "Hansi Flick: Record-breaking 100 wins" and "FC Barcelona 6-1 Alavés: That's more like it!"
+(31 Oct 2026).
+Music: "Volatile Reaction" Kevin MacLeod (incompetech.com), licensed under CC BY 4.0.
+
+#FCBarcelona #HansiFlick #Barça #Raphinha #LamineYamal #BarçaRadar

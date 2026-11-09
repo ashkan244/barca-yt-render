@@ -2,7 +2,16 @@ import React from 'react';
 import { AbsoluteFill, Easing, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
 import { BODY, C, DISPLAY } from './theme';
 
-export type SceneProps = { frames: number };
+// cues: each narrated word of the scene with the frame it starts on, counted from the scene's first frame
+export type Cue = { w: string; f: number };
+export type SceneProps = { frames: number; cues?: Cue[] };
+
+// frame of the nth word matching `word` (case and punctuation ignored); `or` when the scene has no such word
+export const cueAt = (cues: Cue[] | undefined, word: string | RegExp, or: number, nth = 0) => {
+  const re = typeof word === 'string' ? new RegExp(`^${word}$`, 'i') : word;
+  const hits = (cues ?? []).filter((c) => re.test(c.w.replace(/[^\p{L}\p{N}'-]/gu, '')));
+  return hits[nth]?.f ?? or;
+};
 
 export const clamp = { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' } as const;
 

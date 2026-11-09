@@ -1,6 +1,6 @@
 {
   "id": "flick",
-  "title": "One Hundred Wins in 131 Games",
+  "title": "Hansi Flick's 100 Barça Wins in 131 Games",
   "model": "kokoro",
   "voices": [
     {
@@ -8,51 +8,66 @@
       "id": "am_michael"
     }
   ],
+  "voice": {
+    "speed": 1.0,
+    "dtype": "fp32",
+    "note": "say = what Kokoro reads (names respelt so they come out right); text = the caption"
+  },
   "music": "music/km/volatile-reaction.mp3",
   "sources": [
-    "FC Barcelona, 'Hansi Flick: Record-breaking 100 wins', 31 October 2026: https://www.fcbarcelona.com/en/football/first-team/news/4601449/hansi-flick-record-breaking-100-wins",
-    "FC Barcelona, 'FC Barcelona 6-1 Alavés: That's more like it!', 31 October 2026: https://www.fcbarcelona.com/en/football/first-team/news/4602177/fc-barcelona-6-1-alaves-thats-more-like-it"
+    "FC Barcelona, 'Hansi Flick: Record-breaking 100 wins', 31 October 2026: 100th win v Alavés; 100 wins in 131 games, second fastest in club history; only Luis Enrique faster (126 games); 76.33% win rate, highest of any Barça manager. https://www.fcbarcelona.com/en/football/first-team/news/4601449/hansi-flick-record-breaking-100-wins",
+    "FC Barcelona, 'FC Barcelona 6-1 Alavés: That's more like it!', 31 October 2026: after defeats to PSG and Real Madrid; goals Raphinha 8' (15 passes, 9 players; Pedri outside-of-the-boot pass, Fermín squared from the left), Fermín 23', Raphinha 41', Lamine Yamal 45+', Lamine Yamal 65' (VAR confirmed), Gordon 81' (chip), Mariano 84' for Alavés; four before the break, two after; Raphinha 15 league goals in 11 games, equalling César Rodríguez and Leo Messi; Fermín a goal and two assists; 53,523 at Spotify Camp Nou. https://www.fcbarcelona.com/en/football/first-team/news/4602177/fc-barcelona-6-1-alaves-thats-more-like-it"
   ],
   "scenes": [
     {
-      "visual": "f-century",
-      "text": "One hundred wins for Barça. Hansi Flick reached the mark in just one hundred and thirty-one games."
+      "visual": "f-hook",
+      "text": "Only one coach in Barça history hit a hundred wins faster than Hansi Flick.",
+      "say": "Only one coach in Barsa history hit a hundred wins faster than Hansi Flick."
     },
     {
-      "visual": "f-pace",
-      "text": "Only Luis Enrique got there faster: one hundred and twenty-six."
-    },
-    {
-      "visual": "f-score",
-      "text": "Flick's century arrived Saturday, in a six-one win over Alavés."
-    },
-    {
-      "visual": "f-response",
-      "text": "It followed back-to-back defeats to Paris Saint-Germain and Real Madrid."
-    },
-    {
-      "visual": "f-goals",
-      "text": "Barcelona scored four before half-time, then added two more after the break."
-    },
-    {
-      "visual": "f-move",
-      "text": "The opener was a team move: fifteen passes, involving nine players."
-    },
-    {
-      "visual": "f-fermin",
-      "text": "Fermín López scored once and assisted twice."
-    },
-    {
-      "visual": "f-debut",
-      "text": "With six players unavailable, including four defenders, Brian Fariñas debuted at right-back."
+      "visual": "f-race",
+      "text": "Luis Enrique took a hundred and twenty-six games. Flick, a hundred and thirty-one.",
+      "say": "Lewees Enreekay took a hundred and twenty-six games. Flick, a hundred and thirty-one."
     },
     {
       "visual": "f-rate",
-      "text": "His win rate: seventy-six point three three percent, the highest in club history."
+      "text": "But no Barça coach has ever won more often: seventy-six percent.",
+      "say": "But no Barsa coach has ever won more often: seventy-six percent."
+    },
+    {
+      "visual": "f-slump",
+      "text": "Win one hundred came straight after defeats to PSG and Real Madrid.",
+      "say": "Win one hundred came straight after defeats to P. S. G. and Real Madrid."
+    },
+    {
+      "visual": "f-score",
+      "text": "Barça answered with a six-one win over Alavés.",
+      "say": "Barsa answered with a six-one win over Alavess."
+    },
+    {
+      "visual": "f-move",
+      "text": "The opener took fifteen passes and nine players.",
+      "say": "The opener took fifteen passes and nine players."
+    },
+    {
+      "visual": "f-goals",
+      "text": "Four goals by half-time. Two more after the break.",
+      "say": "Four goals by half-time. Two more after the break."
+    },
+    {
+      "visual": "f-raphinha",
+      "text": "Raphinha scored twice: fifteen league goals in eleven games, matching César Rodríguez and Messi.",
+      "say": "Raffeenya scored twice: fifteen league goals in eleven games, matching Sezar Rodreegez and Messi."
+    },
+    {
+      "visual": "f-duo",
+      "text": "Lamine Yamal scored twice too. Fermín López: a goal and two assists.",
+      "say": "Lamine Yamal scored twice too. Fairmeen Lopez: a goal and two assists."
     },
     {
       "visual": "f-outro",
-      "text": "A hundred wins in one hundred and thirty-one games. What comes next?"
+      "text": "Where does Flick rank among Barça's coaches? Tell us below.",
+      "say": "Where does Flick rank among Barsa's coaches? Tell us below."
     }
   ]
 }
