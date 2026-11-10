@@ -1,7 +1,7 @@
 # Short cut-down (9:16) — CREST-HISTORY-SHORT
 
 Composition `CREST-HISTORY-SHORT` (`studio/src/production/source/CrestHistoryShort.tsx`): 1080×1920, 30 fps, 58.2 s
-(1746 frames) — nine moments of Morti's own take (IMG_8911) as jump cuts, plus a 1.6 s "Més que un club" end card.
+(1745 frames) — nine moments of Morti's own take (IMG_8911) as jump cuts, plus a 1.6 s "Més que un club" end card.
 Crest graphics sit above the presenter (square source, full width below) and are timed to the source words like
 the long version; captions are the reviewed caption pages. Music bed: Kevin MacLeod "Heroic Age" (CC BY 4.0).
 
