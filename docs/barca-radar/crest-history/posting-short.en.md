@@ -8,6 +8,9 @@ the long version; captions are the reviewed caption pages. Music bed: Kevin MacL
 Render: Actions → **Render source-aligned episode** on `crest-history-long`, episode `CREST-HISTORY-LONG`,
 outputs `cutdown`, mode `preview`, chunks `1` (the prepared media cache for this branch supplies the source).
 
+Rendered in run 42854439256 (commit 9277a63): QC passed (1745 frames, 48 kHz) at -18.8 LUFS; mastered locally
+with +4.29 dB and a limiter (ceiling 0.84) to -13.9 LUFS, peak -1.4 dBFS, video stream copied.
+
 ## Cuts (source seconds)
 
 | # | Source | Line | Graphic |
