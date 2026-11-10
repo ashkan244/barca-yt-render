@@ -23,6 +23,7 @@ import {ClasicoExplainer, CLASICO_FRAMES} from './explainer/Clasico';
 import {HORadar, HO_FRAMES, HOThumb} from './radar/HOTitle';
 import {NarratedShorts} from './narrated';
 import {CrestHistoryLong, CrestHistoryThumb} from './production/source/CrestHistoryLong';
+import {CrestHistoryShort, crestShortFrames} from './production/source/CrestHistoryShort';
 
 export const Root: React.FC = () => (
   <>
@@ -37,6 +38,7 @@ export const Root: React.FC = () => (
         {d.spec.clips?.map((c) => <Composition key={c.name} id={`${d.spec.id}-CLIP-${c.name}`} component={SourceClip} durationInFrames={clipFrames(d.spec, c.name)} fps={30} width={1080} height={1920} defaultProps={{...d, clip: c.name}} />)}
       </React.Fragment>
     ))}
+    {SOURCE_EPISODES.filter((d) => d.spec.id === 'CREST-HISTORY-LONG').map((d) => <Composition key="crest-short" id="CREST-HISTORY-SHORT" component={CrestHistoryShort} durationInFrames={crestShortFrames} fps={30} width={1080} height={1920} defaultProps={d} />)}
     <Composition id="CLASICO-SOURCE-ADAPTIVE" component={AdaptiveSource} durationInFrames={CLASICO_SOURCE_FRAMES} fps={30} width={1080} height={1920}/>
     <Composition id="PHOTO-MODELS-DEMO" component={VisualModelsDemo} durationInFrames={VISUAL_DEMO_FRAMES} fps={30} width={1920} height={1080}/>
     <Composition id="PHOTO-MODELS-DEMO-VERTICAL" component={VisualModelsDemo} durationInFrames={VISUAL_DEMO_FRAMES} fps={30} width={1080} height={1920}/>

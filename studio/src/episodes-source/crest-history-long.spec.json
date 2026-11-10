@@ -3,6 +3,13 @@
   "media": "host/CREST-HISTORY-LONG",
   "docs": "docs/barca-radar/crest-history",
   "manifest": "studio/src/episodes-source/crest-history-long.manifest.json",
+  "extraOutputs": {
+    "cutdown": {
+      "comp": "CREST-HISTORY-SHORT",
+      "profile": "vertical",
+      "frames": 1746
+    }
+  },
   "duration": 225,
   "label": "BARÇA HISTORY · THE CREST",
   "presenter": "MORTI",

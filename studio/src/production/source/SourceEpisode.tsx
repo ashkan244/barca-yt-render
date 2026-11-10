@@ -26,7 +26,7 @@ export type SourceScene = {a: number; b: number; title: string; sub: string; boa
   /** Optional photo per card row (shot id from archive.shots; must show the person the card names). */
   cardShots?: (string | null)[]};
 export type SourceSpec = {
-  id: string; media: string; docs?: string; manifest?: string; extraOutputs?: Record<string, {comp: string; profile: string}>; duration: number; label: string; presenter: string; opponent: string;
+  id: string; media: string; docs?: string; manifest?: string; extraOutputs?: Record<string, {comp: string; profile: string; frames?: number}>; duration: number; label: string; presenter: string; opponent: string;
   source: {sha256: string; bytes?: number; note?: string};
   punch?: [number, number][]; boards: Record<string, BoardDef>; scenes: SourceScene[];
   chapters: {at: number; title: string}[];

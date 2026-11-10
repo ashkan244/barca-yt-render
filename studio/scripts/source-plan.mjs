@@ -12,8 +12,8 @@ const outputs = {
   short: {comp: `${id}-SHORT`, frames: Math.round(spec.duration * FPS), profile: 'vertical'},
   long: {comp: `${id}-LONG`, frames: Math.round((spec.duration + end) * FPS), profile: 'landscape'},
   archive: {comp: `${id}-ARCHIVE`, frames: Math.round(spec.duration * FPS), profile: 'vertical'},
-  // Episode-specific compositions on the same source timeline (e.g. adaptive layout).
-  ...Object.fromEntries(Object.entries(spec.extraOutputs ?? {}).map(([k, o]) => [k, {comp: o.comp, frames: Math.round(spec.duration * FPS), profile: o.profile}])),
+  // Episode-specific compositions on the same source timeline (e.g. adaptive layout); `frames` for a cut-down.
+  ...Object.fromEntries(Object.entries(spec.extraOutputs ?? {}).map(([k, o]) => [k, {comp: o.comp, frames: o.frames ?? Math.round(spec.duration * FPS), profile: o.profile}])),
 };
 const clips = (spec.clips ?? []).map((c) => ({comp: `${id}-CLIP-${c.name}`, frames: Math.round((c.b - c.a) * FPS), profile: 'vertical'}));
 const selected = outputsArg.split(',').map((s) => s.trim()).filter(Boolean).flatMap((k) => {

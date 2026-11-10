@@ -49,7 +49,7 @@ const At: React.FC<{x: number; y: number; children: React.ReactNode; style?: Rea
   <div style={{position: 'absolute', left: x, top: y, ...style}}>{children}</div>;
 
 /** Crest centred on a point of the stage, optionally zooming into one quadrant. */
-const CrestAt: React.FC<{id: string; cx: number; cy: number; width: number; zoom?: number; focus?: [number, number]; clip?: Box} & Omit<React.ComponentProps<typeof Crest>, 'width' | 'id'>> =
+export const CrestAt: React.FC<{id: string; cx: number; cy: number; width: number; zoom?: number; focus?: [number, number]; clip?: Box} & Omit<React.ComponentProps<typeof Crest>, 'width' | 'id'>> =
   ({id, cx, cy, width, zoom = 0, focus = [500, 505], clip, ...rest}) => {
     const w = lerp(width, width * 2.35, zoom); const k = w / 1000;
     // at zoom 0 the crest's centre sits on (cx, cy); at zoom 1 the focus point does
@@ -59,10 +59,10 @@ const CrestAt: React.FC<{id: string; cx: number; cy: number; width: number; zoom
       <div style={{position: 'absolute', left: -clip.x, top: -clip.y}}>{art}</div></div> : art;
   };
 
-const allDim = (except: CrestPart[], v: number): Partial<Record<CrestPart, number>> =>
+export const allDim = (except: CrestPart[], v: number): Partial<Record<CrestPart, number>> =>
   Object.fromEntries((['cross', 'senyera', 'initials', 'colours', 'ball'] as CrestPart[]).filter((p) => !except.includes(p)).map((p) => [p, v]));
 
-const Arrow: React.FC<{x1: number; y1: number; x2: number; y2: number; p: number; color?: string}> = ({x1, y1, x2, y2, p, color = GOLD}) => {
+export const Arrow: React.FC<{x1: number; y1: number; x2: number; y2: number; p: number; color?: string}> = ({x1, y1, x2, y2, p, color = GOLD}) => {
   const a = Math.atan2(y2 - y1, x2 - x1); const xe = lerp(x1, x2, p); const ye = lerp(y1, y2, p);
   return <svg style={{position: 'absolute', left: 0, top: 0, overflow: 'visible'}} width={1} height={1}>
     <line x1={x1} y1={y1} x2={xe} y2={ye} stroke={color} strokeWidth={6} strokeLinecap="round" />
