@@ -10,9 +10,9 @@
   "strap": "THE DEFENDER WHO SCORED LIKE A STRIKER",
   "thumbStrap": "BARÇA · LEGENDS · WEMBLEY 1992",
   "source": {
-    "sha256": "e6493b6d0fad6e884454a8392e0b0635caa84de7696c2a64799069eecda225fb",
-    "bytes": 195345531,
-    "note": "276.9 s HEVC 720x720 presenter recording (VID_20261119_141032_243.mp4.mov), original untouched; runtime input only (shared Drive file, never committed)."
+    "sha256": "2a98d12fa5cc52c56fa07ec5de7724fead577b8fd02d44d47eccaf0a56f0006a",
+    "bytes": 25417977,
+    "note": "276.9 s compact copy of the presenter recording VID_20261119_141032_243.mp4.mov: video re-encoded to H.264 720x720 30 fps (x264 CRF 22), original AAC audio stream copied untouched (bit-identical); the 195 MB HEVC original (sha256 e6493b6d0fad6e884454a8392e0b0635caa84de7696c2a64799069eecda225fb) is preserved locally. Runtime input only (shared Drive file, never committed)."
   },
   "punch": [
     [
