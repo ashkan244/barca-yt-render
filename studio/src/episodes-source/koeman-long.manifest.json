@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "id": "KOEMAN-LONG",
+  "duration": 276.9,
+  "fps": 30,
+  "source": {
+    "role": "long",
+    "sha256": "e6493b6d0fad6e884454a8392e0b0635caa84de7696c2a64799069eecda225fb"
+  },
+  "media": {
+    "video": "host/KOEMAN-LONG/presenter.mp4",
+    "voice": "host/KOEMAN-LONG/voice.wav",
+    "score": "host/KOEMAN-LONG/score.wav",
+    "cover": "host/KOEMAN-LONG/cover.jpg"
+  },
+  "wordsFile": "studio/src/episodes-source/koeman-long.words.json",
+  "captionsFile": "studio/src/episodes-source/koeman-long.pages.json",
+  "srtFile": "docs/barca-radar/koeman/KOEMAN-LONG.srt",
+  "protectedPhrases": [
+    "Ronald Koeman",
+    "European Cup",
+    "La Liga",
+    "Johan Cruyff",
+    "Marco van Basten",
+    "Ruud Gullit",
+    "Frank Rijkaard",
+    "Rinus Michels",
+    "Michael Laudrup",
+    "Hristo Stoichkov",
+    "PSV Eindhoven",
+    "Copa del Rey",
+    "Wembley Stadium",
+    "West Germany",
+    "Dutch league",
+    "Dutch Cup",
+    "extra time",
+    "free kick"
+  ],
+  "review": {
+    "transcript": "pending",
+    "unresolved": [
+      "Presenter ear check of the 33 script-based caption corrections (docs/barca-radar/koeman/caption-corrections.json)",
+      "Ear check at 135.1 s: ASR heard \"50 years earlier\"; the script says \"fifteen\" and the caption follows the script",
+      "Ear check at 202.2-202.9 s: ASR heard \"when the stadium\"; the script says \"Wembley Stadium\"",
+      "The take ends at 'right foot.' (276.6 s): the script's closing paragraphs and call to action were not recorded; the end screen carries the comment prompt"
+    ]
+  },
+  "photoAssets": [],
+  "scenes": [
+    {
+      "a": 0,
+      "b": 27.44,
+      "title": "THE GOALS HE SCORED",
+      "sub": "A DEFENDER WHO SCORED LIKE A STRIKER",
+      "mode": "cards",
+      "cards": [
+        [
+          "RONALD KOEMAN",
+          "DEFENDER · MIDFIELDER · STRIKER"
+        ],
+        [
+          "ONE GOAL",
+          "CHANGED BARÇA'S HISTORY"
+        ]
+      ],
+      "layout": "presenter",
+      "cues": {}
+    },
+    {
+      "a": 27.44,
+      "b": 64.84,
+      "title": "A FOOTBALLING FAMILY",
+      "sub": "GRONINGEN · AJAX · 1983",
+      "mode": "cards",
+      "cards": [
+        [
+          "1983",
+          "CALLED UP WITH HIS BROTHER"
+        ],
+        [
+          "AJAX",
+          "DUTCH LEAGUE IN SEASON TWO"
+        ]
+      ],
+      "layout": "presenter",
+      "cues": {}
+    },
+    {
+      "a": 64.84,
+      "b": 112.94,
+      "title": "THE PSV SUPERSTAR",
+      "sub": "PSV EINDHOVEN · 1988",
+      "mode": "cards",
+      "cards": [
+        [
+          "1988",
+          "THE TREBLE"
+        ],
+        [
+          "EUROPEAN CUP",
+          "PENALTIES V BENFICA"
+        ]
+      ],
+      "layout": "presenter",
+      "cues": {}
+    },
+    {
+      "a": 112.94,
+      "b": 142.94,
+      "title": "EURO 88 AND THE ORANGE GENERATION",
+      "sub": "WEST GERMANY · 1988",
+      "mode": "cards",
+      "cards": [
+        [
+          "GULLIT · VAN BASTEN · RIJKAARD",
+          "AND KOEMAN"
+        ],
+        [
+          "RINUS MICHELS",
+          "THE COACH"
+        ]
+      ],
+      "layout": "presenter",
+      "cues": {}
+    },
+    {
+      "a": 142.94,
+      "b": 198.4,
+      "title": "CRUYFF'S PERFECT DEFENDER",
+      "sub": "BARCELONA · 1989",
+      "mode": "cards",
+      "cards": [
+        [
+          "BUILT FROM THE BACK",
+          "CRUYFF'S IDEA"
+        ],
+        [
+          "FOUR LA LIGA TITLES",
+          "IN A ROW"
+        ]
+      ],
+      "layout": "presenter",
+      "cues": {}
+    },
+    {
+      "a": 198.4,
+      "b": 248.92,
+      "title": "WEMBLEY 1992",
+      "sub": "THE EUROPEAN CUP FINAL",
+      "mode": "cards",
+      "cards": [
+        [
+          "BARCELONA V SAMPDORIA",
+          "EXTRA TIME · FREE KICK"
+        ],
+        [
+          "THE FIRST EUROPEAN CUP",
+          "1961 · 1986 · 1992"
+        ]
+      ],
+      "layout": "presenter",
+      "cues": {}
+    },
+    {
+      "a": 248.92,
+      "b": 276.9,
+      "title": "A LEGACY THAT LIVES ON",
+      "sub": "COPA DEL REY · 2021",
+      "mode": "cards",
+      "cards": [
+        [
+          "COPA DEL REY",
+          "2021 · AS MANAGER"
+        ],
+        [
+          "ONE IMAGE",
+          "A FREE KICK AT WEMBLEY"
+        ]
+      ],
+      "layout": "presenter",
+      "cues": {}
+    }
+  ]
+}

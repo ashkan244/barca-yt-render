@@ -1,0 +1,248 @@
+{
+  "id": "KOEMAN-LONG",
+  "media": "host/KOEMAN-LONG",
+  "docs": "docs/barca-radar/koeman",
+  "manifest": "studio/src/episodes-source/koeman-long.manifest.json",
+  "duration": 276.9,
+  "label": "BARÇA LEGENDS · RONALD KOEMAN",
+  "presenter": "MORTI",
+  "opponent": "",
+  "strap": "THE DEFENDER WHO SCORED LIKE A STRIKER",
+  "thumbStrap": "BARÇA · LEGENDS · WEMBLEY 1992",
+  "source": {
+    "sha256": "e6493b6d0fad6e884454a8392e0b0635caa84de7696c2a64799069eecda225fb",
+    "bytes": 195345531,
+    "note": "276.9 s HEVC 720x720 presenter recording (VID_20261119_141032_243.mp4.mov), original untouched; runtime input only (shared Drive file, never committed)."
+  },
+  "punch": [
+    [
+      3.6,
+      11.4
+    ],
+    [
+      87.2,
+      96.9
+    ],
+    [
+      205.9,
+      226.9
+    ],
+    [
+      239.9,
+      248.4
+    ]
+  ],
+  "boards": {},
+  "scenes": [
+    {
+      "a": 0,
+      "b": 27.44,
+      "title": "THE GOALS HE SCORED",
+      "sub": "A DEFENDER WHO SCORED LIKE A STRIKER",
+      "cards": [
+        [
+          "RONALD KOEMAN",
+          "DEFENDER · MIDFIELDER · STRIKER"
+        ],
+        [
+          "ONE GOAL",
+          "CHANGED BARÇA'S HISTORY"
+        ]
+      ],
+      "cardDelays": [
+        0,
+        10
+      ]
+    },
+    {
+      "a": 27.44,
+      "b": 64.84,
+      "title": "A FOOTBALLING FAMILY",
+      "sub": "GRONINGEN · AJAX · 1983",
+      "cards": [
+        [
+          "1983",
+          "CALLED UP WITH HIS BROTHER"
+        ],
+        [
+          "AJAX",
+          "DUTCH LEAGUE IN SEASON TWO"
+        ]
+      ],
+      "cardDelays": [
+        0,
+        10
+      ]
+    },
+    {
+      "a": 64.84,
+      "b": 112.94,
+      "title": "THE PSV SUPERSTAR",
+      "sub": "PSV EINDHOVEN · 1988",
+      "cards": [
+        [
+          "1988",
+          "THE TREBLE"
+        ],
+        [
+          "EUROPEAN CUP",
+          "PENALTIES V BENFICA"
+        ]
+      ],
+      "cardDelays": [
+        0,
+        10
+      ]
+    },
+    {
+      "a": 112.94,
+      "b": 142.94,
+      "title": "EURO 88 AND THE ORANGE GENERATION",
+      "sub": "WEST GERMANY · 1988",
+      "cards": [
+        [
+          "GULLIT · VAN BASTEN · RIJKAARD",
+          "AND KOEMAN"
+        ],
+        [
+          "RINUS MICHELS",
+          "THE COACH"
+        ]
+      ],
+      "cardDelays": [
+        0,
+        10
+      ]
+    },
+    {
+      "a": 142.94,
+      "b": 198.4,
+      "title": "CRUYFF'S PERFECT DEFENDER",
+      "sub": "BARCELONA · 1989",
+      "cards": [
+        [
+          "BUILT FROM THE BACK",
+          "CRUYFF'S IDEA"
+        ],
+        [
+          "FOUR LA LIGA TITLES",
+          "IN A ROW"
+        ]
+      ],
+      "cardDelays": [
+        0,
+        10
+      ]
+    },
+    {
+      "a": 198.4,
+      "b": 248.92,
+      "title": "WEMBLEY 1992",
+      "sub": "THE EUROPEAN CUP FINAL",
+      "cards": [
+        [
+          "BARCELONA V SAMPDORIA",
+          "EXTRA TIME · FREE KICK"
+        ],
+        [
+          "THE FIRST EUROPEAN CUP",
+          "1961 · 1986 · 1992"
+        ]
+      ],
+      "cardDelays": [
+        0,
+        10
+      ]
+    },
+    {
+      "a": 248.92,
+      "b": 276.9,
+      "title": "A LEGACY THAT LIVES ON",
+      "sub": "COPA DEL REY · 2021",
+      "cards": [
+        [
+          "COPA DEL REY",
+          "2021 · AS MANAGER"
+        ],
+        [
+          "ONE IMAGE",
+          "A FREE KICK AT WEMBLEY"
+        ]
+      ],
+      "cardDelays": [
+        0,
+        10
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "at": 0,
+      "title": "A defender who scored like a striker"
+    },
+    {
+      "at": 27.44,
+      "title": "A footballing family: Groningen and Ajax"
+    },
+    {
+      "at": 64.84,
+      "title": "PSV: the superstar and the treble"
+    },
+    {
+      "at": 112.94,
+      "title": "Euro 88 and the Dutch generation"
+    },
+    {
+      "at": 142.94,
+      "title": "Cruyff's perfect defender"
+    },
+    {
+      "at": 198.4,
+      "title": "Wembley 1992: the goal"
+    },
+    {
+      "at": 248.92,
+      "title": "A legacy that lives on"
+    }
+  ],
+  "cover": {
+    "kicker": "BARÇA LEGENDS",
+    "lines": [
+      "THE DEFENDER",
+      "WHO SCORED",
+      "LIKE A STRIKER"
+    ]
+  },
+  "long": {
+    "endSeconds": 20,
+    "endKicker": "WHAT'S YOUR FAVOURITE KOEMAN MEMORY? · COMMENT BELOW"
+  },
+  "captions": {
+    "emphasis": [
+      "Koeman",
+      "PSV",
+      "Ajax",
+      "Groningen",
+      "Benfica",
+      "Wembley",
+      "Cruyff",
+      "Barcelona",
+      "Gullit",
+      "Rijkaard",
+      "Michels",
+      "Laudrup",
+      "Stoichkov",
+      "Sampdoria",
+      "1983",
+      "1988",
+      "1989",
+      "1992",
+      "1961",
+      "1986",
+      "2021",
+      "Copa",
+      "treble",
+      "Netherlands"
+    ]
+  }
+}

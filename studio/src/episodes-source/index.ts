@@ -10,9 +10,13 @@ import dream88Pages from './dream88-source.pages.json';
 import crestHistorySpec from './crest-history-long.spec.json';
 import crestHistoryWords from './crest-history-long.words.json';
 import crestHistoryPages from './crest-history-long.pages.json';
+import koemanSpec from './koeman-long.spec.json';
+import koemanWords from './koeman-long.words.json';
+import koemanPages from './koeman-long.pages.json';
 
 export const SOURCE_EPISODES: SourceEpisodeProps[] = [
   {spec: clasicoSpec as unknown as SourceSpec, words: clasicoWords.words, pages: clasicoPages.pages},
   {spec: dream88Spec as unknown as SourceSpec, words: dream88Words.words, pages: dream88Pages.pages},
   {spec: crestHistorySpec as unknown as SourceSpec, words: crestHistoryWords.words, pages: crestHistoryPages.pages},
+  {spec: koemanSpec as unknown as SourceSpec, words: koemanWords.words, pages: koemanPages.pages},
 ].map(validateSourceEpisode).map((d) => { validateArchive(d.spec); return d; });

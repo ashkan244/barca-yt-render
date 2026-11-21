@@ -1,0 +1,206 @@
+{
+ "episode": "KOEMAN-LONG",
+ "asr": "faster-whisper small.en, beam 5, int8",
+ "script": "Ronald Koeman- The Defender Who Scored Like a Striker.docx (supplied by the channel)",
+ "policy": "A caption word is changed only where the presenter reads the supplied script and the heard word is a near-homophone; timing stays from the heard span.",
+ "corrections": [
+  {
+   "at": 4.08,
+   "heard": "Coleman",
+   "caption": "Koeman",
+   "reason": "script spells Koeman; ASR heard Coleman"
+  },
+  {
+   "at": 21.52,
+   "heard": "football -lowing",
+   "caption": "football-loving",
+   "reason": "script \"football-loving family\""
+  },
+  {
+   "at": 27.02,
+   "heard": "Coleman.",
+   "caption": "Koeman.",
+   "reason": "script spells Koeman; ASR heard Coleman"
+  },
+  {
+   "at": 29.6,
+   "heard": "Conan's",
+   "caption": "Koeman's",
+   "reason": "script: \"in Koeman's blood\""
+  },
+  {
+   "at": 68.7,
+   "heard": "Coleman",
+   "caption": "Koeman",
+   "reason": "script spells Koeman; ASR heard Coleman"
+  },
+  {
+   "at": 83.2,
+   "heard": "Coleman",
+   "caption": "Koeman",
+   "reason": "script spells Koeman; ASR heard Coleman"
+  },
+  {
+   "at": 98.5,
+   "heard": "Memfica,",
+   "caption": "Benfica,",
+   "reason": "script; ASR heard Memfica"
+  },
+  {
+   "at": 100.74,
+   "heard": "Plautis.",
+   "caption": "penalties.",
+   "reason": "script \"all the way to penalties\"; near-homophone"
+  },
+  {
+   "at": 102.88,
+   "heard": "Coleman",
+   "caption": "Koeman",
+   "reason": "script spells Koeman; ASR heard Coleman"
+  },
+  {
+   "at": 109.2,
+   "heard": "Coleman",
+   "caption": "Koeman",
+   "reason": "script spells Koeman; ASR heard Coleman"
+  },
+  {
+   "at": 114.88,
+   "heard": "Coleman",
+   "caption": "Koeman",
+   "reason": "script spells Koeman; ASR heard Coleman"
+  },
+  {
+   "at": 123.48,
+   "heard": "Ruth Gullid,",
+   "caption": "Ruud Gullit,",
+   "reason": "script: Ruud Gullit"
+  },
+  {
+   "at": 125.82,
+   "heard": "Reichardt,",
+   "caption": "Rijkaard,",
+   "reason": "script: Frank Rijkaard"
+  },
+  {
+   "at": 131.06,
+   "heard": "Reinos Michel,",
+   "caption": "Rinus Michels,",
+   "reason": "script: Rinus Michels"
+  },
+  {
+   "at": 135.08,
+   "heard": "50",
+   "caption": "fifteen",
+   "reason": "script \"fifteen years earlier\" (Cruyff joined Barcelona in 1973); span too short for \"fifty\": EAR CHECK"
+  },
+  {
+   "at": 141.08,
+   "heard": "Coleman's",
+   "caption": "Koeman's",
+   "reason": "script spells Koeman; ASR heard Coleman"
+  },
+  {
+   "at": 149.9,
+   "heard": "Coleman",
+   "caption": "Koeman",
+   "reason": "script spells Koeman; ASR heard Coleman"
+  },
+  {
+   "at": 157.28,
+   "heard": "center backs",
+   "caption": "centre-backs",
+   "reason": "script: centre-back(s)"
+  },
+  {
+   "at": 165.58,
+   "heard": "Coleman",
+   "caption": "Koeman",
+   "reason": "script spells Koeman; ASR heard Coleman"
+  },
+  {
+   "at": 170.86,
+   "heard": "center back.",
+   "caption": "centre-back.",
+   "reason": "script: centre-back(s)"
+  },
+  {
+   "at": 178.88,
+   "heard": "40 -meter",
+   "caption": "40-metre",
+   "reason": "script \"forty-metre pass\""
+  },
+  {
+   "at": 182.02,
+   "heard": "Hristus Deutschkopf.",
+   "caption": "Hristo Stoichkov.",
+   "reason": "script: Hristo Stoichkov"
+  },
+  {
+   "at": 190.34,
+   "heard": "Coleman",
+   "caption": "Koeman",
+   "reason": "script spells Koeman; ASR heard Coleman"
+  },
+  {
+   "at": 202.2,
+   "heard": "when the stadium",
+   "caption": "Wembley Stadium.",
+   "reason": "script \"Wembley Stadium.\"; EAR CHECK"
+  },
+  {
+   "at": 203.84,
+   "heard": "Santeria,",
+   "caption": "Sampdoria,",
+   "reason": "script: Sampdoria"
+  },
+  {
+   "at": 214.58,
+   "heard": "Coleman",
+   "caption": "Koeman",
+   "reason": "script spells Koeman; ASR heard Coleman"
+  },
+  {
+   "at": 241.92,
+   "heard": "Coleman",
+   "caption": "Koeman",
+   "reason": "script spells Koeman; ASR heard Coleman"
+  },
+  {
+   "at": 248.92,
+   "heard": "Here's the letter,",
+   "caption": "Years later,",
+   "reason": "script \"Years later,\""
+  },
+  {
+   "at": 250.12,
+   "heard": "Coleman",
+   "caption": "Koeman",
+   "reason": "script spells Koeman; ASR heard Coleman"
+  },
+  {
+   "at": 261.42,
+   "heard": "cupidary",
+   "caption": "Copa del Rey",
+   "reason": "script: Copa del Rey title"
+  },
+  {
+   "at": 264.64,
+   "heard": "Barca and fans",
+   "caption": "Barcelona fans",
+   "reason": "script \"Barcelona fans\""
+  },
+  {
+   "at": 266.0,
+   "heard": "Coleman,",
+   "caption": "Koeman,",
+   "reason": "script spells Koeman; ASR heard Coleman"
+  },
+  {
+   "at": 269.72,
+   "heard": "dot",
+   "caption": "Dutch",
+   "reason": "script \"powerful Dutch defender\""
+  }
+ ]
+}

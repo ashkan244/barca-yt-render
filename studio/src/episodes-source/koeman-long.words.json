@@ -1,0 +1,4435 @@
+{
+ "episode": "KOEMAN-LONG",
+ "basis": "Small.en ASR (faster-whisper, beam 5) on the supplied presenter recording. Timings kept from the heard words; spellings follow the supplied script where the heard word is a near-homophone. Uncertain spots are in the manifest for ear review.",
+ "human_ear_certified": false,
+ "words": [
+  {
+   "w": "Most",
+   "s": 0.0,
+   "e": 0.18,
+   "alignment": "source_word"
+  },
+  {
+   "w": "defenders",
+   "s": 0.18,
+   "e": 0.52,
+   "alignment": "source_word"
+  },
+  {
+   "w": "become",
+   "s": 0.52,
+   "e": 0.98,
+   "alignment": "source_word"
+  },
+  {
+   "w": "legends",
+   "s": 0.98,
+   "e": 1.4,
+   "alignment": "source_word"
+  },
+  {
+   "w": "because",
+   "s": 1.4,
+   "e": 1.88,
+   "alignment": "source_word"
+  },
+  {
+   "w": "of",
+   "s": 1.88,
+   "e": 2.06,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 2.06,
+   "e": 2.22,
+   "alignment": "source_word"
+  },
+  {
+   "w": "goals",
+   "s": 2.22,
+   "e": 2.54,
+   "alignment": "source_word"
+  },
+  {
+   "w": "they",
+   "s": 2.54,
+   "e": 2.8,
+   "alignment": "source_word"
+  },
+  {
+   "w": "prevent.",
+   "s": 2.8,
+   "e": 3.26,
+   "alignment": "source_word"
+  },
+  {
+   "w": "But",
+   "s": 3.62,
+   "e": 3.76,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Ronald",
+   "s": 3.76,
+   "e": 4.08,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Koeman",
+   "s": 4.08,
+   "e": 4.4,
+   "alignment": "source_word"
+  },
+  {
+   "w": "became",
+   "s": 4.4,
+   "e": 5.08,
+   "alignment": "source_word"
+  },
+  {
+   "w": "a",
+   "s": 5.08,
+   "e": 5.44,
+   "alignment": "source_word"
+  },
+  {
+   "w": "legend",
+   "s": 5.44,
+   "e": 5.76,
+   "alignment": "source_word"
+  },
+  {
+   "w": "because",
+   "s": 5.76,
+   "e": 6.2,
+   "alignment": "source_word"
+  },
+  {
+   "w": "of",
+   "s": 6.2,
+   "e": 6.42,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 6.42,
+   "e": 6.52,
+   "alignment": "source_word"
+  },
+  {
+   "w": "goals",
+   "s": 6.52,
+   "e": 6.84,
+   "alignment": "source_word"
+  },
+  {
+   "w": "he",
+   "s": 6.84,
+   "e": 7.06,
+   "alignment": "source_word"
+  },
+  {
+   "w": "scored.",
+   "s": 7.06,
+   "e": 7.46,
+   "alignment": "source_word"
+  },
+  {
+   "w": "And",
+   "s": 8.24,
+   "e": 8.36,
+   "alignment": "source_word"
+  },
+  {
+   "w": "one",
+   "s": 8.36,
+   "e": 8.54,
+   "alignment": "source_word"
+  },
+  {
+   "w": "of",
+   "s": 8.54,
+   "e": 8.76,
+   "alignment": "source_word"
+  },
+  {
+   "w": "those",
+   "s": 8.76,
+   "e": 8.9,
+   "alignment": "source_word"
+  },
+  {
+   "w": "goals",
+   "s": 8.9,
+   "e": 9.3,
+   "alignment": "source_word"
+  },
+  {
+   "w": "changed",
+   "s": 9.3,
+   "e": 9.96,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Barcelona's",
+   "s": 9.96,
+   "e": 10.8,
+   "alignment": "source_word"
+  },
+  {
+   "w": "history",
+   "s": 10.8,
+   "e": 11.2,
+   "alignment": "source_word"
+  },
+  {
+   "w": "forever.",
+   "s": 11.2,
+   "e": 12.16,
+   "alignment": "source_word"
+  },
+  {
+   "w": "This",
+   "s": 12.36,
+   "e": 12.46,
+   "alignment": "source_word"
+  },
+  {
+   "w": "is",
+   "s": 12.46,
+   "e": 12.66,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 12.66,
+   "e": 12.84,
+   "alignment": "source_word"
+  },
+  {
+   "w": "story",
+   "s": 12.84,
+   "e": 13.08,
+   "alignment": "source_word"
+  },
+  {
+   "w": "of",
+   "s": 13.08,
+   "e": 13.3,
+   "alignment": "source_word"
+  },
+  {
+   "w": "a",
+   "s": 13.3,
+   "e": 13.44,
+   "alignment": "source_word"
+  },
+  {
+   "w": "defender",
+   "s": 13.44,
+   "e": 13.74,
+   "alignment": "source_word"
+  },
+  {
+   "w": "who",
+   "s": 13.74,
+   "e": 14.06,
+   "alignment": "source_word"
+  },
+  {
+   "w": "played",
+   "s": 14.06,
+   "e": 14.32,
+   "alignment": "source_word"
+  },
+  {
+   "w": "like",
+   "s": 14.32,
+   "e": 14.56,
+   "alignment": "source_word"
+  },
+  {
+   "w": "a",
+   "s": 14.56,
+   "e": 14.72,
+   "alignment": "source_word"
+  },
+  {
+   "w": "midfielder,",
+   "s": 14.72,
+   "e": 15.08,
+   "alignment": "source_word"
+  },
+  {
+   "w": "shot",
+   "s": 15.3,
+   "e": 15.74,
+   "alignment": "source_word"
+  },
+  {
+   "w": "like",
+   "s": 15.74,
+   "e": 16.06,
+   "alignment": "source_word"
+  },
+  {
+   "w": "a",
+   "s": 16.06,
+   "e": 16.22,
+   "alignment": "source_word"
+  },
+  {
+   "w": "striker",
+   "s": 16.22,
+   "e": 16.6,
+   "alignment": "source_word"
+  },
+  {
+   "w": "and",
+   "s": 16.6,
+   "e": 17.08,
+   "alignment": "source_word"
+  },
+  {
+   "w": "delivered",
+   "s": 17.08,
+   "e": 17.48,
+   "alignment": "source_word"
+  },
+  {
+   "w": "one",
+   "s": 17.48,
+   "e": 17.8,
+   "alignment": "source_word"
+  },
+  {
+   "w": "of",
+   "s": 17.8,
+   "e": 17.94,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 17.94,
+   "e": 18.06,
+   "alignment": "source_word"
+  },
+  {
+   "w": "most",
+   "s": 18.06,
+   "e": 18.36,
+   "alignment": "source_word"
+  },
+  {
+   "w": "unforgettable",
+   "s": 18.36,
+   "e": 19.06,
+   "alignment": "source_word"
+  },
+  {
+   "w": "moments",
+   "s": 19.06,
+   "e": 19.54,
+   "alignment": "source_word"
+  },
+  {
+   "w": "in",
+   "s": 19.54,
+   "e": 19.82,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Barcelona's",
+   "s": 19.82,
+   "e": 20.22,
+   "alignment": "source_word"
+  },
+  {
+   "w": "history.",
+   "s": 20.22,
+   "e": 20.58,
+   "alignment": "source_word"
+  },
+  {
+   "w": "From",
+   "s": 21.0,
+   "e": 21.3,
+   "alignment": "source_word"
+  },
+  {
+   "w": "a",
+   "s": 21.3,
+   "e": 21.52,
+   "alignment": "source_word"
+  },
+  {
+   "w": "football-loving",
+   "s": 21.52,
+   "e": 22.16,
+   "alignment": "source_word"
+  },
+  {
+   "w": "family",
+   "s": 22.16,
+   "e": 22.5,
+   "alignment": "source_word"
+  },
+  {
+   "w": "in",
+   "s": 22.5,
+   "e": 22.74,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 22.74,
+   "e": 22.84,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Netherlands",
+   "s": 22.84,
+   "e": 23.24,
+   "alignment": "source_word"
+  },
+  {
+   "w": "to",
+   "s": 23.24,
+   "e": 23.8,
+   "alignment": "source_word"
+  },
+  {
+   "w": "a",
+   "s": 23.8,
+   "e": 23.92,
+   "alignment": "source_word"
+  },
+  {
+   "w": "legendary",
+   "s": 23.92,
+   "e": 24.26,
+   "alignment": "source_word"
+  },
+  {
+   "w": "night",
+   "s": 24.26,
+   "e": 24.72,
+   "alignment": "source_word"
+  },
+  {
+   "w": "at",
+   "s": 24.72,
+   "e": 24.98,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Wembley.",
+   "s": 24.98,
+   "e": 25.28,
+   "alignment": "source_word"
+  },
+  {
+   "w": "This",
+   "s": 25.78,
+   "e": 25.84,
+   "alignment": "source_word"
+  },
+  {
+   "w": "is",
+   "s": 25.84,
+   "e": 26.06,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 26.06,
+   "e": 26.26,
+   "alignment": "source_word"
+  },
+  {
+   "w": "story",
+   "s": 26.26,
+   "e": 26.48,
+   "alignment": "source_word"
+  },
+  {
+   "w": "of",
+   "s": 26.48,
+   "e": 26.7,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Ronald",
+   "s": 26.7,
+   "e": 27.02,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Koeman.",
+   "s": 27.02,
+   "e": 27.44,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Football",
+   "s": 27.44,
+   "e": 28.04,
+   "alignment": "source_word"
+  },
+  {
+   "w": "was",
+   "s": 28.04,
+   "e": 28.46,
+   "alignment": "source_word"
+  },
+  {
+   "w": "practically",
+   "s": 28.46,
+   "e": 29.06,
+   "alignment": "source_word"
+  },
+  {
+   "w": "in",
+   "s": 29.06,
+   "e": 29.6,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Koeman's",
+   "s": 29.6,
+   "e": 30.04,
+   "alignment": "source_word"
+  },
+  {
+   "w": "blood.",
+   "s": 30.04,
+   "e": 30.18,
+   "alignment": "source_word"
+  },
+  {
+   "w": "His",
+   "s": 30.62,
+   "e": 30.76,
+   "alignment": "source_word"
+  },
+  {
+   "w": "father",
+   "s": 30.76,
+   "e": 31.04,
+   "alignment": "source_word"
+  },
+  {
+   "w": "had",
+   "s": 31.04,
+   "e": 31.36,
+   "alignment": "source_word"
+  },
+  {
+   "w": "played",
+   "s": 31.36,
+   "e": 31.62,
+   "alignment": "source_word"
+  },
+  {
+   "w": "for",
+   "s": 31.62,
+   "e": 31.84,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 31.84,
+   "e": 32.0,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Dutch",
+   "s": 32.0,
+   "e": 32.26,
+   "alignment": "source_word"
+  },
+  {
+   "w": "national",
+   "s": 32.26,
+   "e": 32.64,
+   "alignment": "source_word"
+  },
+  {
+   "w": "team.",
+   "s": 32.64,
+   "e": 33.0,
+   "alignment": "source_word"
+  },
+  {
+   "w": "And",
+   "s": 33.36,
+   "e": 33.46,
+   "alignment": "source_word"
+  },
+  {
+   "w": "his",
+   "s": 33.46,
+   "e": 33.58,
+   "alignment": "source_word"
+  },
+  {
+   "w": "older",
+   "s": 33.58,
+   "e": 33.98,
+   "alignment": "source_word"
+  },
+  {
+   "w": "brother",
+   "s": 33.98,
+   "e": 34.4,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Erwin",
+   "s": 34.4,
+   "e": 34.98,
+   "alignment": "source_word"
+  },
+  {
+   "w": "was",
+   "s": 34.98,
+   "e": 35.34,
+   "alignment": "source_word"
+  },
+  {
+   "w": "a",
+   "s": 35.34,
+   "e": 35.54,
+   "alignment": "source_word"
+  },
+  {
+   "w": "professional",
+   "s": 35.54,
+   "e": 36.02,
+   "alignment": "source_word"
+  },
+  {
+   "w": "footballer",
+   "s": 36.02,
+   "e": 36.56,
+   "alignment": "source_word"
+  },
+  {
+   "w": "too.",
+   "s": 36.56,
+   "e": 36.96,
+   "alignment": "source_word"
+  },
+  {
+   "w": "In",
+   "s": 37.46,
+   "e": 37.56,
+   "alignment": "source_word"
+  },
+  {
+   "w": "1983,",
+   "s": 37.56,
+   "e": 38.34,
+   "alignment": "source_word"
+  },
+  {
+   "w": "both",
+   "s": 38.9,
+   "e": 39.02,
+   "alignment": "source_word"
+  },
+  {
+   "w": "brothers",
+   "s": 39.02,
+   "e": 39.38,
+   "alignment": "source_word"
+  },
+  {
+   "w": "were",
+   "s": 39.38,
+   "e": 39.66,
+   "alignment": "source_word"
+  },
+  {
+   "w": "called",
+   "s": 39.66,
+   "e": 39.86,
+   "alignment": "source_word"
+  },
+  {
+   "w": "up",
+   "s": 39.86,
+   "e": 40.1,
+   "alignment": "source_word"
+  },
+  {
+   "w": "to",
+   "s": 40.1,
+   "e": 40.24,
+   "alignment": "source_word"
+  },
+  {
+   "w": "represent",
+   "s": 40.24,
+   "e": 40.58,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 40.58,
+   "e": 40.84,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Netherlands.",
+   "s": 40.84,
+   "e": 41.22,
+   "alignment": "source_word"
+  },
+  {
+   "w": "That",
+   "s": 41.96,
+   "e": 42.16,
+   "alignment": "source_word"
+  },
+  {
+   "w": "same",
+   "s": 42.16,
+   "e": 42.4,
+   "alignment": "source_word"
+  },
+  {
+   "w": "year,",
+   "s": 42.4,
+   "e": 42.7,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Ronald",
+   "s": 43.12,
+   "e": 43.2,
+   "alignment": "source_word"
+  },
+  {
+   "w": "left",
+   "s": 43.2,
+   "e": 43.62,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Groningen",
+   "s": 43.62,
+   "e": 44.12,
+   "alignment": "source_word"
+  },
+  {
+   "w": "and",
+   "s": 44.12,
+   "e": 44.76,
+   "alignment": "source_word"
+  },
+  {
+   "w": "joined",
+   "s": 44.76,
+   "e": 45.06,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Ajax,",
+   "s": 45.06,
+   "e": 45.54,
+   "alignment": "source_word"
+  },
+  {
+   "w": "where",
+   "s": 46.02,
+   "e": 46.26,
+   "alignment": "source_word"
+  },
+  {
+   "w": "he",
+   "s": 46.26,
+   "e": 46.46,
+   "alignment": "source_word"
+  },
+  {
+   "w": "won",
+   "s": 46.46,
+   "e": 46.68,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 46.68,
+   "e": 46.88,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Dutch",
+   "s": 46.88,
+   "e": 47.12,
+   "alignment": "source_word"
+  },
+  {
+   "w": "league",
+   "s": 47.12,
+   "e": 47.38,
+   "alignment": "source_word"
+  },
+  {
+   "w": "in",
+   "s": 47.38,
+   "e": 47.62,
+   "alignment": "source_word"
+  },
+  {
+   "w": "his",
+   "s": 47.62,
+   "e": 47.82,
+   "alignment": "source_word"
+  },
+  {
+   "w": "second",
+   "s": 47.82,
+   "e": 48.04,
+   "alignment": "source_word"
+  },
+  {
+   "w": "season.",
+   "s": 48.04,
+   "e": 48.46,
+   "alignment": "source_word"
+  },
+  {
+   "w": "But",
+   "s": 48.84,
+   "e": 48.96,
+   "alignment": "source_word"
+  },
+  {
+   "w": "even",
+   "s": 48.96,
+   "e": 49.2,
+   "alignment": "source_word"
+  },
+  {
+   "w": "back",
+   "s": 49.2,
+   "e": 49.42,
+   "alignment": "source_word"
+  },
+  {
+   "w": "then,",
+   "s": 49.42,
+   "e": 49.74,
+   "alignment": "source_word"
+  },
+  {
+   "w": "there",
+   "s": 49.96,
+   "e": 50.16,
+   "alignment": "source_word"
+  },
+  {
+   "w": "was",
+   "s": 50.16,
+   "e": 50.3,
+   "alignment": "source_word"
+  },
+  {
+   "w": "something",
+   "s": 50.3,
+   "e": 50.62,
+   "alignment": "source_word"
+  },
+  {
+   "w": "different",
+   "s": 50.62,
+   "e": 51.08,
+   "alignment": "source_word"
+  },
+  {
+   "w": "about",
+   "s": 51.08,
+   "e": 51.5,
+   "alignment": "source_word"
+  },
+  {
+   "w": "him.",
+   "s": 51.5,
+   "e": 51.76,
+   "alignment": "source_word"
+  },
+  {
+   "w": "He",
+   "s": 52.0,
+   "e": 52.18,
+   "alignment": "source_word"
+  },
+  {
+   "w": "wasn't",
+   "s": 52.18,
+   "e": 52.54,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 52.54,
+   "e": 52.74,
+   "alignment": "source_word"
+  },
+  {
+   "w": "kind",
+   "s": 52.74,
+   "e": 52.98,
+   "alignment": "source_word"
+  },
+  {
+   "w": "of",
+   "s": 52.98,
+   "e": 53.18,
+   "alignment": "source_word"
+  },
+  {
+   "w": "defender",
+   "s": 53.18,
+   "e": 53.52,
+   "alignment": "source_word"
+  },
+  {
+   "w": "who",
+   "s": 53.52,
+   "e": 53.84,
+   "alignment": "source_word"
+  },
+  {
+   "w": "simply",
+   "s": 53.84,
+   "e": 54.12,
+   "alignment": "source_word"
+  },
+  {
+   "w": "won",
+   "s": 54.12,
+   "e": 54.58,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 54.58,
+   "e": 54.74,
+   "alignment": "source_word"
+  },
+  {
+   "w": "ball",
+   "s": 54.74,
+   "e": 55.0,
+   "alignment": "source_word"
+  },
+  {
+   "w": "and",
+   "s": 55.0,
+   "e": 55.38,
+   "alignment": "source_word"
+  },
+  {
+   "w": "cleared",
+   "s": 55.38,
+   "e": 55.66,
+   "alignment": "source_word"
+  },
+  {
+   "w": "it",
+   "s": 55.66,
+   "e": 55.92,
+   "alignment": "source_word"
+  },
+  {
+   "w": "away.",
+   "s": 55.92,
+   "e": 56.24,
+   "alignment": "source_word"
+  },
+  {
+   "w": "He",
+   "s": 56.24,
+   "e": 56.88,
+   "alignment": "source_word"
+  },
+  {
+   "w": "wanted",
+   "s": 56.88,
+   "e": 57.24,
+   "alignment": "source_word"
+  },
+  {
+   "w": "possession,",
+   "s": 57.24,
+   "e": 57.76,
+   "alignment": "source_word"
+  },
+  {
+   "w": "he",
+   "s": 58.16,
+   "e": 58.18,
+   "alignment": "source_word"
+  },
+  {
+   "w": "wanted",
+   "s": 58.18,
+   "e": 58.62,
+   "alignment": "source_word"
+  },
+  {
+   "w": "to",
+   "s": 58.62,
+   "e": 59.08,
+   "alignment": "source_word"
+  },
+  {
+   "w": "build",
+   "s": 59.08,
+   "e": 59.36,
+   "alignment": "source_word"
+  },
+  {
+   "w": "attacks.",
+   "s": 59.36,
+   "e": 59.88,
+   "alignment": "source_word"
+  },
+  {
+   "w": "And",
+   "s": 60.72,
+   "e": 60.9,
+   "alignment": "source_word"
+  },
+  {
+   "w": "whenever",
+   "s": 60.9,
+   "e": 61.22,
+   "alignment": "source_word"
+  },
+  {
+   "w": "his",
+   "s": 61.22,
+   "e": 61.48,
+   "alignment": "source_word"
+  },
+  {
+   "w": "team",
+   "s": 61.48,
+   "e": 61.68,
+   "alignment": "source_word"
+  },
+  {
+   "w": "won",
+   "s": 61.68,
+   "e": 61.94,
+   "alignment": "source_word"
+  },
+  {
+   "w": "a",
+   "s": 61.94,
+   "e": 62.16,
+   "alignment": "source_word"
+  },
+  {
+   "w": "free",
+   "s": 62.16,
+   "e": 62.28,
+   "alignment": "source_word"
+  },
+  {
+   "w": "kick,",
+   "s": 62.28,
+   "e": 62.5,
+   "alignment": "source_word"
+  },
+  {
+   "w": "he",
+   "s": 62.74,
+   "e": 62.84,
+   "alignment": "source_word"
+  },
+  {
+   "w": "wanted",
+   "s": 62.84,
+   "e": 63.1,
+   "alignment": "source_word"
+  },
+  {
+   "w": "to",
+   "s": 63.1,
+   "e": 63.3,
+   "alignment": "source_word"
+  },
+  {
+   "w": "be",
+   "s": 63.3,
+   "e": 63.46,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 63.46,
+   "e": 63.62,
+   "alignment": "source_word"
+  },
+  {
+   "w": "one",
+   "s": 63.62,
+   "e": 63.94,
+   "alignment": "source_word"
+  },
+  {
+   "w": "taking",
+   "s": 63.94,
+   "e": 64.26,
+   "alignment": "source_word"
+  },
+  {
+   "w": "it.",
+   "s": 64.26,
+   "e": 64.52,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Then",
+   "s": 64.84,
+   "e": 65.16,
+   "alignment": "source_word"
+  },
+  {
+   "w": "came",
+   "s": 65.16,
+   "e": 65.5,
+   "alignment": "source_word"
+  },
+  {
+   "w": "his",
+   "s": 65.5,
+   "e": 65.72,
+   "alignment": "source_word"
+  },
+  {
+   "w": "move",
+   "s": 65.72,
+   "e": 66.02,
+   "alignment": "source_word"
+  },
+  {
+   "w": "to",
+   "s": 66.02,
+   "e": 66.24,
+   "alignment": "source_word"
+  },
+  {
+   "w": "PSV",
+   "s": 66.24,
+   "e": 66.7,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Eindhoven.",
+   "s": 66.7,
+   "e": 67.24,
+   "alignment": "source_word"
+  },
+  {
+   "w": "And",
+   "s": 67.7,
+   "e": 67.88,
+   "alignment": "source_word"
+  },
+  {
+   "w": "that's",
+   "s": 67.88,
+   "e": 68.38,
+   "alignment": "source_word"
+  },
+  {
+   "w": "where",
+   "s": 68.38,
+   "e": 68.7,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Koeman",
+   "s": 68.7,
+   "e": 69.04,
+   "alignment": "source_word"
+  },
+  {
+   "w": "truly",
+   "s": 69.04,
+   "e": 69.72,
+   "alignment": "source_word"
+  },
+  {
+   "w": "became",
+   "s": 69.72,
+   "e": 70.08,
+   "alignment": "source_word"
+  },
+  {
+   "w": "superstar.",
+   "s": 70.08,
+   "e": 70.72,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Imagine",
+   "s": 71.04,
+   "e": 71.34,
+   "alignment": "source_word"
+  },
+  {
+   "w": "a",
+   "s": 71.34,
+   "e": 71.68,
+   "alignment": "source_word"
+  },
+  {
+   "w": "centre-back",
+   "s": 71.68,
+   "e": 72.16,
+   "alignment": "source_word"
+  },
+  {
+   "w": "who",
+   "s": 72.16,
+   "e": 72.36,
+   "alignment": "source_word"
+  },
+  {
+   "w": "could",
+   "s": 72.36,
+   "e": 72.54,
+   "alignment": "source_word"
+  },
+  {
+   "w": "distribute",
+   "s": 72.54,
+   "e": 73.12,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 73.12,
+   "e": 73.38,
+   "alignment": "source_word"
+  },
+  {
+   "w": "ball",
+   "s": 73.38,
+   "e": 73.6,
+   "alignment": "source_word"
+  },
+  {
+   "w": "like",
+   "s": 73.6,
+   "e": 73.84,
+   "alignment": "source_word"
+  },
+  {
+   "w": "a",
+   "s": 73.84,
+   "e": 73.98,
+   "alignment": "source_word"
+  },
+  {
+   "w": "world-class",
+   "s": 73.98,
+   "e": 74.48,
+   "alignment": "source_word"
+  },
+  {
+   "w": "midfielder",
+   "s": 74.48,
+   "e": 74.9,
+   "alignment": "source_word"
+  },
+  {
+   "w": "and",
+   "s": 74.9,
+   "e": 75.54,
+   "alignment": "source_word"
+  },
+  {
+   "w": "strike",
+   "s": 75.54,
+   "e": 75.94,
+   "alignment": "source_word"
+  },
+  {
+   "w": "it",
+   "s": 75.94,
+   "e": 76.18,
+   "alignment": "source_word"
+  },
+  {
+   "w": "with",
+   "s": 76.18,
+   "e": 76.32,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 76.32,
+   "e": 76.46,
+   "alignment": "source_word"
+  },
+  {
+   "w": "power",
+   "s": 76.46,
+   "e": 76.72,
+   "alignment": "source_word"
+  },
+  {
+   "w": "of",
+   "s": 76.72,
+   "e": 76.92,
+   "alignment": "source_word"
+  },
+  {
+   "w": "a",
+   "s": 76.92,
+   "e": 77.06,
+   "alignment": "source_word"
+  },
+  {
+   "w": "top",
+   "s": 77.06,
+   "e": 77.2,
+   "alignment": "source_word"
+  },
+  {
+   "w": "striker.",
+   "s": 77.2,
+   "e": 77.62,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Free",
+   "s": 78.4,
+   "e": 78.68,
+   "alignment": "source_word"
+  },
+  {
+   "w": "kicks,",
+   "s": 78.68,
+   "e": 78.92,
+   "alignment": "source_word"
+  },
+  {
+   "w": "penalties,",
+   "s": 79.28,
+   "e": 79.62,
+   "alignment": "source_word"
+  },
+  {
+   "w": "long-range",
+   "s": 80.18,
+   "e": 80.54,
+   "alignment": "source_word"
+  },
+  {
+   "w": "shots.",
+   "s": 80.54,
+   "e": 81.0,
+   "alignment": "source_word"
+  },
+  {
+   "w": "It",
+   "s": 81.54,
+   "e": 81.76,
+   "alignment": "source_word"
+  },
+  {
+   "w": "didn't",
+   "s": 81.76,
+   "e": 82.06,
+   "alignment": "source_word"
+  },
+  {
+   "w": "really",
+   "s": 82.06,
+   "e": 82.3,
+   "alignment": "source_word"
+  },
+  {
+   "w": "matter.",
+   "s": 82.3,
+   "e": 82.66,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Give",
+   "s": 82.66,
+   "e": 83.2,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Koeman",
+   "s": 83.2,
+   "e": 83.52,
+   "alignment": "source_word"
+  },
+  {
+   "w": "a",
+   "s": 83.52,
+   "e": 83.9,
+   "alignment": "source_word"
+  },
+  {
+   "w": "chance",
+   "s": 83.9,
+   "e": 84.12,
+   "alignment": "source_word"
+  },
+  {
+   "w": "to",
+   "s": 84.12,
+   "e": 84.46,
+   "alignment": "source_word"
+  },
+  {
+   "w": "shoot",
+   "s": 84.46,
+   "e": 84.86,
+   "alignment": "source_word"
+  },
+  {
+   "w": "and",
+   "s": 84.86,
+   "e": 85.34,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 85.34,
+   "e": 85.5,
+   "alignment": "source_word"
+  },
+  {
+   "w": "goalkeeper",
+   "s": 85.5,
+   "e": 85.84,
+   "alignment": "source_word"
+  },
+  {
+   "w": "was",
+   "s": 85.84,
+   "e": 86.2,
+   "alignment": "source_word"
+  },
+  {
+   "w": "in",
+   "s": 86.2,
+   "e": 86.38,
+   "alignment": "source_word"
+  },
+  {
+   "w": "trouble.",
+   "s": 86.38,
+   "e": 86.78,
+   "alignment": "source_word"
+  },
+  {
+   "w": "In",
+   "s": 87.2,
+   "e": 87.3,
+   "alignment": "source_word"
+  },
+  {
+   "w": "1988,",
+   "s": 87.2,
+   "e": 88.06,
+   "alignment": "source_word"
+  },
+  {
+   "w": "PSV",
+   "s": 88.56,
+   "e": 88.78,
+   "alignment": "source_word"
+  },
+  {
+   "w": "achieved",
+   "s": 88.78,
+   "e": 89.2,
+   "alignment": "source_word"
+  },
+  {
+   "w": "something",
+   "s": 89.2,
+   "e": 89.64,
+   "alignment": "source_word"
+  },
+  {
+   "w": "extraordinary.",
+   "s": 89.64,
+   "e": 90.52,
+   "alignment": "source_word"
+  },
+  {
+   "w": "They",
+   "s": 90.92,
+   "e": 91.08,
+   "alignment": "source_word"
+  },
+  {
+   "w": "won",
+   "s": 91.08,
+   "e": 91.34,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 91.34,
+   "e": 91.52,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Dutch",
+   "s": 91.52,
+   "e": 91.74,
+   "alignment": "source_word"
+  },
+  {
+   "w": "league,",
+   "s": 91.74,
+   "e": 92.0,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 92.46,
+   "e": 92.5,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Dutch",
+   "s": 92.5,
+   "e": 92.74,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Cup,",
+   "s": 92.74,
+   "e": 92.96,
+   "alignment": "source_word"
+  },
+  {
+   "w": "and",
+   "s": 93.32,
+   "e": 93.5,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 93.5,
+   "e": 93.64,
+   "alignment": "source_word"
+  },
+  {
+   "w": "European",
+   "s": 93.64,
+   "e": 94.04,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Cup,",
+   "s": 94.04,
+   "e": 94.34,
+   "alignment": "source_word"
+  },
+  {
+   "w": "completing",
+   "s": 94.54,
+   "e": 94.98,
+   "alignment": "source_word"
+  },
+  {
+   "w": "a",
+   "s": 94.98,
+   "e": 95.56,
+   "alignment": "source_word"
+  },
+  {
+   "w": "historic",
+   "s": 95.56,
+   "e": 96.0,
+   "alignment": "source_word"
+  },
+  {
+   "w": "treble.",
+   "s": 96.0,
+   "e": 96.54,
+   "alignment": "source_word"
+  },
+  {
+   "w": "In",
+   "s": 96.94,
+   "e": 97.12,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 97.12,
+   "e": 97.24,
+   "alignment": "source_word"
+  },
+  {
+   "w": "European",
+   "s": 97.24,
+   "e": 97.58,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Cup",
+   "s": 97.58,
+   "e": 97.82,
+   "alignment": "source_word"
+  },
+  {
+   "w": "final",
+   "s": 97.82,
+   "e": 98.12,
+   "alignment": "source_word"
+  },
+  {
+   "w": "against",
+   "s": 98.12,
+   "e": 98.5,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Benfica,",
+   "s": 98.5,
+   "e": 98.94,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 99.3,
+   "e": 99.42,
+   "alignment": "source_word"
+  },
+  {
+   "w": "match",
+   "s": 99.42,
+   "e": 99.62,
+   "alignment": "source_word"
+  },
+  {
+   "w": "went",
+   "s": 99.62,
+   "e": 99.88,
+   "alignment": "source_word"
+  },
+  {
+   "w": "all",
+   "s": 99.88,
+   "e": 100.2,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 100.2,
+   "e": 100.38,
+   "alignment": "source_word"
+  },
+  {
+   "w": "way",
+   "s": 100.38,
+   "e": 100.56,
+   "alignment": "source_word"
+  },
+  {
+   "w": "to",
+   "s": 100.56,
+   "e": 100.74,
+   "alignment": "source_word"
+  },
+  {
+   "w": "penalties.",
+   "s": 100.74,
+   "e": 101.22,
+   "alignment": "source_word"
+  },
+  {
+   "w": "And",
+   "s": 102.04,
+   "e": 102.18,
+   "alignment": "source_word"
+  },
+  {
+   "w": "of",
+   "s": 102.18,
+   "e": 102.32,
+   "alignment": "source_word"
+  },
+  {
+   "w": "course,",
+   "s": 102.32,
+   "e": 102.58,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Koeman",
+   "s": 102.88,
+   "e": 102.94,
+   "alignment": "source_word"
+  },
+  {
+   "w": "stepped",
+   "s": 102.94,
+   "e": 103.32,
+   "alignment": "source_word"
+  },
+  {
+   "w": "up",
+   "s": 103.32,
+   "e": 103.72,
+   "alignment": "source_word"
+  },
+  {
+   "w": "and",
+   "s": 103.72,
+   "e": 104.12,
+   "alignment": "source_word"
+  },
+  {
+   "w": "scored",
+   "s": 104.12,
+   "e": 104.5,
+   "alignment": "source_word"
+  },
+  {
+   "w": "his.",
+   "s": 104.5,
+   "e": 104.82,
+   "alignment": "source_word"
+  },
+  {
+   "w": "PSV",
+   "s": 105.06,
+   "e": 105.56,
+   "alignment": "source_word"
+  },
+  {
+   "w": "lifted",
+   "s": 105.56,
+   "e": 105.96,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 105.96,
+   "e": 106.22,
+   "alignment": "source_word"
+  },
+  {
+   "w": "European",
+   "s": 106.22,
+   "e": 106.54,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Cup",
+   "s": 106.54,
+   "e": 106.8,
+   "alignment": "source_word"
+  },
+  {
+   "w": "for",
+   "s": 106.8,
+   "e": 106.98,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 106.98,
+   "e": 107.12,
+   "alignment": "source_word"
+  },
+  {
+   "w": "first",
+   "s": 107.12,
+   "e": 107.3,
+   "alignment": "source_word"
+  },
+  {
+   "w": "time",
+   "s": 107.3,
+   "e": 107.56,
+   "alignment": "source_word"
+  },
+  {
+   "w": "in",
+   "s": 107.56,
+   "e": 107.7,
+   "alignment": "source_word"
+  },
+  {
+   "w": "their",
+   "s": 107.7,
+   "e": 107.82,
+   "alignment": "source_word"
+  },
+  {
+   "w": "history",
+   "s": 107.82,
+   "e": 108.24,
+   "alignment": "source_word"
+  },
+  {
+   "w": "and",
+   "s": 108.24,
+   "e": 108.46,
+   "alignment": "source_word"
+  },
+  {
+   "w": "suddenly,",
+   "s": 108.46,
+   "e": 108.88,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Koeman",
+   "s": 109.2,
+   "e": 109.28,
+   "alignment": "source_word"
+  },
+  {
+   "w": "was",
+   "s": 109.28,
+   "e": 109.86,
+   "alignment": "source_word"
+  },
+  {
+   "w": "one",
+   "s": 109.86,
+   "e": 110.04,
+   "alignment": "source_word"
+  },
+  {
+   "w": "of",
+   "s": 110.04,
+   "e": 110.18,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 110.18,
+   "e": 110.36,
+   "alignment": "source_word"
+  },
+  {
+   "w": "most",
+   "s": 110.36,
+   "e": 110.62,
+   "alignment": "source_word"
+  },
+  {
+   "w": "sought-after",
+   "s": 110.62,
+   "e": 111.26,
+   "alignment": "source_word"
+  },
+  {
+   "w": "defenders",
+   "s": 111.26,
+   "e": 111.7,
+   "alignment": "source_word"
+  },
+  {
+   "w": "in",
+   "s": 111.7,
+   "e": 112.04,
+   "alignment": "source_word"
+  },
+  {
+   "w": "European",
+   "s": 112.04,
+   "e": 112.34,
+   "alignment": "source_word"
+  },
+  {
+   "w": "football.",
+   "s": 112.34,
+   "e": 112.78,
+   "alignment": "source_word"
+  },
+  {
+   "w": "But",
+   "s": 112.94,
+   "e": 113.06,
+   "alignment": "source_word"
+  },
+  {
+   "w": "1988",
+   "s": 113.06,
+   "e": 113.7,
+   "alignment": "source_word"
+  },
+  {
+   "w": "wasn't",
+   "s": 113.7,
+   "e": 114.26,
+   "alignment": "source_word"
+  },
+  {
+   "w": "finished",
+   "s": 114.26,
+   "e": 114.58,
+   "alignment": "source_word"
+  },
+  {
+   "w": "with",
+   "s": 114.58,
+   "e": 114.88,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Koeman",
+   "s": 114.88,
+   "e": 115.24,
+   "alignment": "source_word"
+  },
+  {
+   "w": "just",
+   "s": 115.24,
+   "e": 115.62,
+   "alignment": "source_word"
+  },
+  {
+   "w": "yet.",
+   "s": 115.62,
+   "e": 116.02,
+   "alignment": "source_word"
+  },
+  {
+   "w": "That",
+   "s": 116.4,
+   "e": 116.64,
+   "alignment": "source_word"
+  },
+  {
+   "w": "summer,",
+   "s": 116.64,
+   "e": 116.94,
+   "alignment": "source_word"
+  },
+  {
+   "w": "he",
+   "s": 117.18,
+   "e": 117.32,
+   "alignment": "source_word"
+  },
+  {
+   "w": "helped",
+   "s": 117.32,
+   "e": 117.58,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 117.58,
+   "e": 117.78,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Netherlands",
+   "s": 117.78,
+   "e": 118.16,
+   "alignment": "source_word"
+  },
+  {
+   "w": "win",
+   "s": 118.16,
+   "e": 118.48,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 118.48,
+   "e": 118.64,
+   "alignment": "source_word"
+  },
+  {
+   "w": "European",
+   "s": 118.64,
+   "e": 119.06,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Championship",
+   "s": 119.06,
+   "e": 119.48,
+   "alignment": "source_word"
+  },
+  {
+   "w": "in",
+   "s": 119.48,
+   "e": 120.0,
+   "alignment": "source_word"
+  },
+  {
+   "w": "West",
+   "s": 120.0,
+   "e": 120.22,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Germany.",
+   "s": 120.22,
+   "e": 120.66,
+   "alignment": "source_word"
+  },
+  {
+   "w": "And",
+   "s": 120.94,
+   "e": 121.08,
+   "alignment": "source_word"
+  },
+  {
+   "w": "just",
+   "s": 121.08,
+   "e": 121.28,
+   "alignment": "source_word"
+  },
+  {
+   "w": "look",
+   "s": 121.28,
+   "e": 121.54,
+   "alignment": "source_word"
+  },
+  {
+   "w": "at",
+   "s": 121.54,
+   "e": 121.68,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 121.68,
+   "e": 121.84,
+   "alignment": "source_word"
+  },
+  {
+   "w": "players",
+   "s": 121.84,
+   "e": 122.2,
+   "alignment": "source_word"
+  },
+  {
+   "w": "around",
+   "s": 122.2,
+   "e": 122.66,
+   "alignment": "source_word"
+  },
+  {
+   "w": "him.",
+   "s": 122.66,
+   "e": 123.0,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Ruud",
+   "s": 123.48,
+   "e": 123.56,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Gullit,",
+   "s": 123.56,
+   "e": 124.02,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Marco",
+   "s": 124.36,
+   "e": 124.6,
+   "alignment": "source_word"
+  },
+  {
+   "w": "van",
+   "s": 124.6,
+   "e": 124.8,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Basten,",
+   "s": 124.8,
+   "e": 125.28,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Frank",
+   "s": 125.7,
+   "e": 125.82,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Rijkaard,",
+   "s": 125.82,
+   "e": 126.76,
+   "alignment": "source_word"
+  },
+  {
+   "w": "an",
+   "s": 126.76,
+   "e": 126.98,
+   "alignment": "source_word"
+  },
+  {
+   "w": "incredible",
+   "s": 126.98,
+   "e": 127.52,
+   "alignment": "source_word"
+  },
+  {
+   "w": "generation",
+   "s": 127.52,
+   "e": 128.14,
+   "alignment": "source_word"
+  },
+  {
+   "w": "of",
+   "s": 128.14,
+   "e": 128.4,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Dutch",
+   "s": 128.4,
+   "e": 128.64,
+   "alignment": "source_word"
+  },
+  {
+   "w": "footballers.",
+   "s": 128.64,
+   "e": 129.3,
+   "alignment": "source_word"
+  },
+  {
+   "w": "And",
+   "s": 129.52,
+   "e": 129.68,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 129.68,
+   "e": 129.82,
+   "alignment": "source_word"
+  },
+  {
+   "w": "man",
+   "s": 129.82,
+   "e": 130.04,
+   "alignment": "source_word"
+  },
+  {
+   "w": "leading",
+   "s": 130.04,
+   "e": 130.32,
+   "alignment": "source_word"
+  },
+  {
+   "w": "them,",
+   "s": 130.32,
+   "e": 130.72,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Rinus",
+   "s": 131.06,
+   "e": 131.22,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Michels,",
+   "s": 131.22,
+   "e": 131.52,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 132.1,
+   "e": 132.18,
+   "alignment": "source_word"
+  },
+  {
+   "w": "legendary",
+   "s": 132.18,
+   "e": 132.56,
+   "alignment": "source_word"
+  },
+  {
+   "w": "coach",
+   "s": 132.56,
+   "e": 132.94,
+   "alignment": "source_word"
+  },
+  {
+   "w": "who",
+   "s": 132.94,
+   "e": 133.22,
+   "alignment": "source_word"
+  },
+  {
+   "w": "had",
+   "s": 133.22,
+   "e": 133.4,
+   "alignment": "source_word"
+  },
+  {
+   "w": "brought",
+   "s": 133.4,
+   "e": 133.66,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Johan",
+   "s": 133.66,
+   "e": 134.08,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Cruyff",
+   "s": 134.08,
+   "e": 134.46,
+   "alignment": "source_word"
+  },
+  {
+   "w": "to",
+   "s": 134.46,
+   "e": 134.62,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Barcelona",
+   "s": 134.62,
+   "e": 135.08,
+   "alignment": "source_word"
+  },
+  {
+   "w": "fifteen",
+   "s": 135.08,
+   "e": 135.72,
+   "alignment": "source_word"
+  },
+  {
+   "w": "years",
+   "s": 135.72,
+   "e": 136.12,
+   "alignment": "source_word"
+  },
+  {
+   "w": "earlier.",
+   "s": 136.12,
+   "e": 136.68,
+   "alignment": "source_word"
+  },
+  {
+   "w": "As",
+   "s": 136.68,
+   "e": 137.18,
+   "alignment": "source_word"
+  },
+  {
+   "w": "it",
+   "s": 137.18,
+   "e": 137.36,
+   "alignment": "source_word"
+  },
+  {
+   "w": "turned",
+   "s": 137.36,
+   "e": 137.6,
+   "alignment": "source_word"
+  },
+  {
+   "w": "out,",
+   "s": 137.6,
+   "e": 138.06,
+   "alignment": "source_word"
+  },
+  {
+   "w": "that",
+   "s": 138.44,
+   "e": 138.56,
+   "alignment": "source_word"
+  },
+  {
+   "w": "connection",
+   "s": 138.56,
+   "e": 138.94,
+   "alignment": "source_word"
+  },
+  {
+   "w": "would",
+   "s": 138.94,
+   "e": 139.32,
+   "alignment": "source_word"
+  },
+  {
+   "w": "become",
+   "s": 139.32,
+   "e": 139.64,
+   "alignment": "source_word"
+  },
+  {
+   "w": "an",
+   "s": 139.64,
+   "e": 139.78,
+   "alignment": "source_word"
+  },
+  {
+   "w": "important",
+   "s": 139.78,
+   "e": 140.2,
+   "alignment": "source_word"
+  },
+  {
+   "w": "part",
+   "s": 140.2,
+   "e": 140.58,
+   "alignment": "source_word"
+  },
+  {
+   "w": "of",
+   "s": 140.58,
+   "e": 141.08,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Koeman's",
+   "s": 141.08,
+   "e": 141.28,
+   "alignment": "source_word"
+  },
+  {
+   "w": "own",
+   "s": 141.28,
+   "e": 141.44,
+   "alignment": "source_word"
+  },
+  {
+   "w": "history.",
+   "s": 141.44,
+   "e": 141.84,
+   "alignment": "source_word"
+  },
+  {
+   "w": "In",
+   "s": 142.94,
+   "e": 143.14,
+   "alignment": "source_word"
+  },
+  {
+   "w": "1989,",
+   "s": 143.14,
+   "e": 144.0,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Barcelona",
+   "s": 144.44,
+   "e": 144.68,
+   "alignment": "source_word"
+  },
+  {
+   "w": "came",
+   "s": 144.68,
+   "e": 145.14,
+   "alignment": "source_word"
+  },
+  {
+   "w": "calling.",
+   "s": 145.14,
+   "e": 145.52,
+   "alignment": "source_word"
+  },
+  {
+   "w": "But",
+   "s": 145.88,
+   "e": 146.0,
+   "alignment": "source_word"
+  },
+  {
+   "w": "this",
+   "s": 146.0,
+   "e": 146.38,
+   "alignment": "source_word"
+  },
+  {
+   "w": "wasn't",
+   "s": 146.38,
+   "e": 146.7,
+   "alignment": "source_word"
+  },
+  {
+   "w": "just",
+   "s": 146.7,
+   "e": 146.96,
+   "alignment": "source_word"
+  },
+  {
+   "w": "any",
+   "s": 146.96,
+   "e": 147.3,
+   "alignment": "source_word"
+  },
+  {
+   "w": "transfer.",
+   "s": 147.3,
+   "e": 147.76,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Johan",
+   "s": 148.32,
+   "e": 148.6,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Cruyff",
+   "s": 148.6,
+   "e": 148.98,
+   "alignment": "source_word"
+  },
+  {
+   "w": "himself",
+   "s": 148.98,
+   "e": 149.36,
+   "alignment": "source_word"
+  },
+  {
+   "w": "wanted",
+   "s": 149.36,
+   "e": 149.9,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Koeman",
+   "s": 149.9,
+   "e": 150.16,
+   "alignment": "source_word"
+  },
+  {
+   "w": "at",
+   "s": 150.16,
+   "e": 150.36,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 150.36,
+   "e": 150.48,
+   "alignment": "source_word"
+  },
+  {
+   "w": "club.",
+   "s": 150.48,
+   "e": 150.7,
+   "alignment": "source_word"
+  },
+  {
+   "w": "And",
+   "s": 151.22,
+   "e": 151.42,
+   "alignment": "source_word"
+  },
+  {
+   "w": "there",
+   "s": 151.42,
+   "e": 151.64,
+   "alignment": "source_word"
+  },
+  {
+   "w": "was",
+   "s": 151.64,
+   "e": 151.82,
+   "alignment": "source_word"
+  },
+  {
+   "w": "a",
+   "s": 151.82,
+   "e": 152.0,
+   "alignment": "source_word"
+  },
+  {
+   "w": "very",
+   "s": 152.0,
+   "e": 152.24,
+   "alignment": "source_word"
+  },
+  {
+   "w": "good",
+   "s": 152.24,
+   "e": 152.46,
+   "alignment": "source_word"
+  },
+  {
+   "w": "reason",
+   "s": 152.46,
+   "e": 152.76,
+   "alignment": "source_word"
+  },
+  {
+   "w": "for",
+   "s": 152.76,
+   "e": 152.98,
+   "alignment": "source_word"
+  },
+  {
+   "w": "that.",
+   "s": 152.98,
+   "e": 153.28,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Cruyff",
+   "s": 153.88,
+   "e": 154.14,
+   "alignment": "source_word"
+  },
+  {
+   "w": "believed",
+   "s": 154.14,
+   "e": 154.38,
+   "alignment": "source_word"
+  },
+  {
+   "w": "football",
+   "s": 154.38,
+   "e": 154.82,
+   "alignment": "source_word"
+  },
+  {
+   "w": "should",
+   "s": 154.82,
+   "e": 155.12,
+   "alignment": "source_word"
+  },
+  {
+   "w": "be",
+   "s": 155.12,
+   "e": 155.28,
+   "alignment": "source_word"
+  },
+  {
+   "w": "built",
+   "s": 155.28,
+   "e": 155.52,
+   "alignment": "source_word"
+  },
+  {
+   "w": "from",
+   "s": 155.52,
+   "e": 155.82,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 155.82,
+   "e": 156.0,
+   "alignment": "source_word"
+  },
+  {
+   "w": "back.",
+   "s": 156.0,
+   "e": 156.22,
+   "alignment": "source_word"
+  },
+  {
+   "w": "He",
+   "s": 156.6,
+   "e": 156.72,
+   "alignment": "source_word"
+  },
+  {
+   "w": "didn't",
+   "s": 156.72,
+   "e": 157.0,
+   "alignment": "source_word"
+  },
+  {
+   "w": "want",
+   "s": 157.0,
+   "e": 157.28,
+   "alignment": "source_word"
+  },
+  {
+   "w": "centre-backs",
+   "s": 157.28,
+   "e": 157.9,
+   "alignment": "source_word"
+  },
+  {
+   "w": "who",
+   "s": 157.9,
+   "e": 158.14,
+   "alignment": "source_word"
+  },
+  {
+   "w": "simply",
+   "s": 158.14,
+   "e": 158.5,
+   "alignment": "source_word"
+  },
+  {
+   "w": "defended.",
+   "s": 158.5,
+   "e": 158.9,
+   "alignment": "source_word"
+  },
+  {
+   "w": "He",
+   "s": 159.52,
+   "e": 159.74,
+   "alignment": "source_word"
+  },
+  {
+   "w": "wanted",
+   "s": 159.74,
+   "e": 160.06,
+   "alignment": "source_word"
+  },
+  {
+   "w": "defenders",
+   "s": 160.06,
+   "e": 160.54,
+   "alignment": "source_word"
+  },
+  {
+   "w": "who",
+   "s": 160.54,
+   "e": 161.22,
+   "alignment": "source_word"
+  },
+  {
+   "w": "could",
+   "s": 161.22,
+   "e": 161.44,
+   "alignment": "source_word"
+  },
+  {
+   "w": "control",
+   "s": 161.44,
+   "e": 161.84,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 161.84,
+   "e": 162.08,
+   "alignment": "source_word"
+  },
+  {
+   "w": "game,",
+   "s": 162.08,
+   "e": 162.36,
+   "alignment": "source_word"
+  },
+  {
+   "w": "create",
+   "s": 162.72,
+   "e": 162.98,
+   "alignment": "source_word"
+  },
+  {
+   "w": "space,",
+   "s": 162.98,
+   "e": 163.5,
+   "alignment": "source_word"
+  },
+  {
+   "w": "and",
+   "s": 163.86,
+   "e": 163.94,
+   "alignment": "source_word"
+  },
+  {
+   "w": "launch",
+   "s": 163.94,
+   "e": 164.34,
+   "alignment": "source_word"
+  },
+  {
+   "w": "attacks.",
+   "s": 164.34,
+   "e": 164.84,
+   "alignment": "source_word"
+  },
+  {
+   "w": "And",
+   "s": 164.84,
+   "e": 165.58,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Koeman",
+   "s": 165.58,
+   "e": 165.82,
+   "alignment": "source_word"
+  },
+  {
+   "w": "was",
+   "s": 165.82,
+   "e": 166.32,
+   "alignment": "source_word"
+  },
+  {
+   "w": "exactly",
+   "s": 166.32,
+   "e": 166.74,
+   "alignment": "source_word"
+  },
+  {
+   "w": "that",
+   "s": 166.74,
+   "e": 167.22,
+   "alignment": "source_word"
+  },
+  {
+   "w": "kind",
+   "s": 167.22,
+   "e": 167.48,
+   "alignment": "source_word"
+  },
+  {
+   "w": "of",
+   "s": 167.48,
+   "e": 167.68,
+   "alignment": "source_word"
+  },
+  {
+   "w": "player.",
+   "s": 167.68,
+   "e": 167.96,
+   "alignment": "source_word"
+  },
+  {
+   "w": "In",
+   "s": 168.36,
+   "e": 168.42,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Cruyff's",
+   "s": 168.42,
+   "e": 168.82,
+   "alignment": "source_word"
+  },
+  {
+   "w": "system,",
+   "s": 168.82,
+   "e": 169.2,
+   "alignment": "source_word"
+  },
+  {
+   "w": "he",
+   "s": 169.4,
+   "e": 169.62,
+   "alignment": "source_word"
+  },
+  {
+   "w": "became",
+   "s": 169.62,
+   "e": 169.92,
+   "alignment": "source_word"
+  },
+  {
+   "w": "much",
+   "s": 169.92,
+   "e": 170.22,
+   "alignment": "source_word"
+  },
+  {
+   "w": "more",
+   "s": 170.22,
+   "e": 170.52,
+   "alignment": "source_word"
+  },
+  {
+   "w": "than",
+   "s": 170.52,
+   "e": 170.76,
+   "alignment": "source_word"
+  },
+  {
+   "w": "a",
+   "s": 170.76,
+   "e": 170.86,
+   "alignment": "source_word"
+  },
+  {
+   "w": "centre-back.",
+   "s": 170.86,
+   "e": 171.28,
+   "alignment": "source_word"
+  },
+  {
+   "w": "He",
+   "s": 171.5,
+   "e": 171.66,
+   "alignment": "source_word"
+  },
+  {
+   "w": "was",
+   "s": 171.66,
+   "e": 171.86,
+   "alignment": "source_word"
+  },
+  {
+   "w": "practically",
+   "s": 171.86,
+   "e": 172.34,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 172.34,
+   "e": 172.7,
+   "alignment": "source_word"
+  },
+  {
+   "w": "team's",
+   "s": 172.7,
+   "e": 173.08,
+   "alignment": "source_word"
+  },
+  {
+   "w": "first",
+   "s": 173.08,
+   "e": 173.34,
+   "alignment": "source_word"
+  },
+  {
+   "w": "playmaker.",
+   "s": 173.34,
+   "e": 173.76,
+   "alignment": "source_word"
+  },
+  {
+   "w": "He",
+   "s": 174.28,
+   "e": 174.4,
+   "alignment": "source_word"
+  },
+  {
+   "w": "could",
+   "s": 174.4,
+   "e": 174.56,
+   "alignment": "source_word"
+  },
+  {
+   "w": "pick",
+   "s": 174.56,
+   "e": 174.78,
+   "alignment": "source_word"
+  },
+  {
+   "w": "up",
+   "s": 174.78,
+   "e": 174.94,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 174.94,
+   "e": 175.12,
+   "alignment": "source_word"
+  },
+  {
+   "w": "ball",
+   "s": 175.12,
+   "e": 175.32,
+   "alignment": "source_word"
+  },
+  {
+   "w": "deep",
+   "s": 175.32,
+   "e": 175.64,
+   "alignment": "source_word"
+  },
+  {
+   "w": "in",
+   "s": 175.64,
+   "e": 175.92,
+   "alignment": "source_word"
+  },
+  {
+   "w": "his",
+   "s": 175.92,
+   "e": 176.12,
+   "alignment": "source_word"
+  },
+  {
+   "w": "own",
+   "s": 176.12,
+   "e": 176.48,
+   "alignment": "source_word"
+  },
+  {
+   "w": "half,",
+   "s": 176.48,
+   "e": 176.88,
+   "alignment": "source_word"
+  },
+  {
+   "w": "look",
+   "s": 177.4,
+   "e": 177.62,
+   "alignment": "source_word"
+  },
+  {
+   "w": "up,",
+   "s": 177.62,
+   "e": 177.88,
+   "alignment": "source_word"
+  },
+  {
+   "w": "and",
+   "s": 178.16,
+   "e": 178.26,
+   "alignment": "source_word"
+  },
+  {
+   "w": "deliver",
+   "s": 178.26,
+   "e": 178.64,
+   "alignment": "source_word"
+  },
+  {
+   "w": "a",
+   "s": 178.64,
+   "e": 178.88,
+   "alignment": "source_word"
+  },
+  {
+   "w": "40-metre",
+   "s": 178.88,
+   "e": 179.26,
+   "alignment": "source_word"
+  },
+  {
+   "w": "pass",
+   "s": 179.26,
+   "e": 179.52,
+   "alignment": "source_word"
+  },
+  {
+   "w": "straight",
+   "s": 179.52,
+   "e": 179.94,
+   "alignment": "source_word"
+  },
+  {
+   "w": "to",
+   "s": 179.94,
+   "e": 180.14,
+   "alignment": "source_word"
+  },
+  {
+   "w": "players",
+   "s": 180.14,
+   "e": 180.44,
+   "alignment": "source_word"
+  },
+  {
+   "w": "like",
+   "s": 180.44,
+   "e": 180.74,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Michael",
+   "s": 180.74,
+   "e": 181.14,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Laudrup",
+   "s": 181.14,
+   "e": 181.6,
+   "alignment": "source_word"
+  },
+  {
+   "w": "or",
+   "s": 181.6,
+   "e": 182.02,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Hristo",
+   "s": 182.02,
+   "e": 182.58,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Stoichkov.",
+   "s": 182.58,
+   "e": 183.34,
+   "alignment": "source_word"
+  },
+  {
+   "w": "And",
+   "s": 183.6,
+   "e": 183.86,
+   "alignment": "source_word"
+  },
+  {
+   "w": "whenever",
+   "s": 183.86,
+   "e": 184.22,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Barcelona",
+   "s": 184.22,
+   "e": 184.58,
+   "alignment": "source_word"
+  },
+  {
+   "w": "won",
+   "s": 184.58,
+   "e": 184.98,
+   "alignment": "source_word"
+  },
+  {
+   "w": "a",
+   "s": 184.98,
+   "e": 185.14,
+   "alignment": "source_word"
+  },
+  {
+   "w": "free",
+   "s": 185.14,
+   "e": 185.32,
+   "alignment": "source_word"
+  },
+  {
+   "w": "kick",
+   "s": 185.32,
+   "e": 185.5,
+   "alignment": "source_word"
+  },
+  {
+   "w": "near",
+   "s": 185.5,
+   "e": 185.74,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 185.74,
+   "e": 186.26,
+   "alignment": "source_word"
+  },
+  {
+   "w": "penalty",
+   "s": 186.26,
+   "e": 186.36,
+   "alignment": "source_word"
+  },
+  {
+   "w": "area,",
+   "s": 186.26,
+   "e": 186.9,
+   "alignment": "source_word"
+  },
+  {
+   "w": "well,",
+   "s": 187.1,
+   "e": 187.34,
+   "alignment": "source_word"
+  },
+  {
+   "w": "everyone",
+   "s": 187.46,
+   "e": 187.78,
+   "alignment": "source_word"
+  },
+  {
+   "w": "already",
+   "s": 187.78,
+   "e": 188.24,
+   "alignment": "source_word"
+  },
+  {
+   "w": "knew",
+   "s": 188.24,
+   "e": 188.6,
+   "alignment": "source_word"
+  },
+  {
+   "w": "who",
+   "s": 188.6,
+   "e": 188.9,
+   "alignment": "source_word"
+  },
+  {
+   "w": "was",
+   "s": 188.9,
+   "e": 189.08,
+   "alignment": "source_word"
+  },
+  {
+   "w": "taking",
+   "s": 189.08,
+   "e": 189.38,
+   "alignment": "source_word"
+  },
+  {
+   "w": "it.",
+   "s": 189.38,
+   "e": 189.8,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Koeman",
+   "s": 190.34,
+   "e": 190.68,
+   "alignment": "source_word"
+  },
+  {
+   "w": "became",
+   "s": 190.68,
+   "e": 191.42,
+   "alignment": "source_word"
+  },
+  {
+   "w": "one",
+   "s": 191.42,
+   "e": 191.76,
+   "alignment": "source_word"
+  },
+  {
+   "w": "of",
+   "s": 191.76,
+   "e": 191.9,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 191.9,
+   "e": 192.06,
+   "alignment": "source_word"
+  },
+  {
+   "w": "foundations",
+   "s": 192.06,
+   "e": 192.58,
+   "alignment": "source_word"
+  },
+  {
+   "w": "of",
+   "s": 192.58,
+   "e": 192.94,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Cruyff's",
+   "s": 192.94,
+   "e": 193.46,
+   "alignment": "source_word"
+  },
+  {
+   "w": "legendary",
+   "s": 193.46,
+   "e": 193.82,
+   "alignment": "source_word"
+  },
+  {
+   "w": "team.",
+   "s": 193.82,
+   "e": 194.2,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Together,",
+   "s": 194.88,
+   "e": 195.46,
+   "alignment": "source_word"
+  },
+  {
+   "w": "they",
+   "s": 195.9,
+   "e": 196.02,
+   "alignment": "source_word"
+  },
+  {
+   "w": "won",
+   "s": 196.02,
+   "e": 196.24,
+   "alignment": "source_word"
+  },
+  {
+   "w": "four",
+   "s": 196.24,
+   "e": 196.6,
+   "alignment": "source_word"
+  },
+  {
+   "w": "consecutive",
+   "s": 196.6,
+   "e": 197.2,
+   "alignment": "source_word"
+  },
+  {
+   "w": "La",
+   "s": 197.2,
+   "e": 197.42,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Liga",
+   "s": 197.42,
+   "e": 197.58,
+   "alignment": "source_word"
+  },
+  {
+   "w": "titles.",
+   "s": 197.58,
+   "e": 198.06,
+   "alignment": "source_word"
+  },
+  {
+   "w": "But",
+   "s": 198.52,
+   "e": 198.54,
+   "alignment": "source_word"
+  },
+  {
+   "w": "his",
+   "s": 198.54,
+   "e": 198.74,
+   "alignment": "source_word"
+  },
+  {
+   "w": "greatest",
+   "s": 198.74,
+   "e": 199.14,
+   "alignment": "source_word"
+  },
+  {
+   "w": "moment",
+   "s": 199.14,
+   "e": 199.6,
+   "alignment": "source_word"
+  },
+  {
+   "w": "in",
+   "s": 199.6,
+   "e": 199.88,
+   "alignment": "source_word"
+  },
+  {
+   "w": "a",
+   "s": 199.88,
+   "e": 200.06,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Barcelona",
+   "s": 200.06,
+   "e": 200.26,
+   "alignment": "source_word"
+  },
+  {
+   "w": "shirt",
+   "s": 200.26,
+   "e": 200.6,
+   "alignment": "source_word"
+  },
+  {
+   "w": "came",
+   "s": 200.6,
+   "e": 200.88,
+   "alignment": "source_word"
+  },
+  {
+   "w": "in",
+   "s": 200.88,
+   "e": 201.12,
+   "alignment": "source_word"
+  },
+  {
+   "w": "1992,",
+   "s": 201.12,
+   "e": 201.88,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Wembley",
+   "s": 202.2,
+   "e": 202.24,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Stadium.",
+   "s": 202.4,
+   "e": 202.82,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Barcelona",
+   "s": 202.82,
+   "e": 203.4,
+   "alignment": "source_word"
+  },
+  {
+   "w": "against",
+   "s": 203.4,
+   "e": 203.84,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Sampdoria,",
+   "s": 203.84,
+   "e": 204.52,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 204.68,
+   "e": 204.76,
+   "alignment": "source_word"
+  },
+  {
+   "w": "European",
+   "s": 204.76,
+   "e": 205.18,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Cup",
+   "s": 205.18,
+   "e": 205.5,
+   "alignment": "source_word"
+  },
+  {
+   "w": "final.",
+   "s": 205.5,
+   "e": 205.86,
+   "alignment": "source_word"
+  },
+  {
+   "w": "The",
+   "s": 206.32,
+   "e": 206.5,
+   "alignment": "source_word"
+  },
+  {
+   "w": "match",
+   "s": 206.5,
+   "e": 206.78,
+   "alignment": "source_word"
+  },
+  {
+   "w": "was",
+   "s": 206.78,
+   "e": 207.2,
+   "alignment": "source_word"
+  },
+  {
+   "w": "still",
+   "s": 207.2,
+   "e": 207.56,
+   "alignment": "source_word"
+  },
+  {
+   "w": "goalless",
+   "s": 207.56,
+   "e": 208.08,
+   "alignment": "source_word"
+  },
+  {
+   "w": "as",
+   "s": 208.08,
+   "e": 208.36,
+   "alignment": "source_word"
+  },
+  {
+   "w": "it",
+   "s": 208.36,
+   "e": 208.52,
+   "alignment": "source_word"
+  },
+  {
+   "w": "went",
+   "s": 208.52,
+   "e": 208.72,
+   "alignment": "source_word"
+  },
+  {
+   "w": "into",
+   "s": 208.72,
+   "e": 209.0,
+   "alignment": "source_word"
+  },
+  {
+   "w": "extra",
+   "s": 209.0,
+   "e": 209.26,
+   "alignment": "source_word"
+  },
+  {
+   "w": "time.",
+   "s": 209.26,
+   "e": 209.64,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Then",
+   "s": 210.24,
+   "e": 210.44,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Barcelona",
+   "s": 210.44,
+   "e": 210.94,
+   "alignment": "source_word"
+  },
+  {
+   "w": "won",
+   "s": 210.94,
+   "e": 211.46,
+   "alignment": "source_word"
+  },
+  {
+   "w": "a",
+   "s": 211.46,
+   "e": 211.6,
+   "alignment": "source_word"
+  },
+  {
+   "w": "free",
+   "s": 211.6,
+   "e": 211.78,
+   "alignment": "source_word"
+  },
+  {
+   "w": "kick",
+   "s": 211.78,
+   "e": 212.0,
+   "alignment": "source_word"
+  },
+  {
+   "w": "just",
+   "s": 212.0,
+   "e": 212.42,
+   "alignment": "source_word"
+  },
+  {
+   "w": "outside",
+   "s": 212.42,
+   "e": 213.0,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 213.0,
+   "e": 213.2,
+   "alignment": "source_word"
+  },
+  {
+   "w": "penalty",
+   "s": 213.2,
+   "e": 213.46,
+   "alignment": "source_word"
+  },
+  {
+   "w": "area.",
+   "s": 213.46,
+   "e": 214.04,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Koeman",
+   "s": 214.58,
+   "e": 214.7,
+   "alignment": "source_word"
+  },
+  {
+   "w": "stepped",
+   "s": 214.7,
+   "e": 215.36,
+   "alignment": "source_word"
+  },
+  {
+   "w": "forward.",
+   "s": 215.36,
+   "e": 215.86,
+   "alignment": "source_word"
+  },
+  {
+   "w": "He",
+   "s": 216.24,
+   "e": 216.4,
+   "alignment": "source_word"
+  },
+  {
+   "w": "took",
+   "s": 216.4,
+   "e": 216.64,
+   "alignment": "source_word"
+  },
+  {
+   "w": "his",
+   "s": 216.64,
+   "e": 217.06,
+   "alignment": "source_word"
+  },
+  {
+   "w": "position",
+   "s": 217.06,
+   "e": 217.5,
+   "alignment": "source_word"
+  },
+  {
+   "w": "and",
+   "s": 217.5,
+   "e": 218.04,
+   "alignment": "source_word"
+  },
+  {
+   "w": "with",
+   "s": 218.04,
+   "e": 218.24,
+   "alignment": "source_word"
+  },
+  {
+   "w": "one",
+   "s": 218.24,
+   "e": 218.54,
+   "alignment": "source_word"
+  },
+  {
+   "w": "devastating",
+   "s": 218.54,
+   "e": 219.22,
+   "alignment": "source_word"
+  },
+  {
+   "w": "strike",
+   "s": 219.22,
+   "e": 219.9,
+   "alignment": "source_word"
+  },
+  {
+   "w": "off",
+   "s": 219.9,
+   "e": 220.08,
+   "alignment": "source_word"
+  },
+  {
+   "w": "his",
+   "s": 220.08,
+   "e": 220.24,
+   "alignment": "source_word"
+  },
+  {
+   "w": "right",
+   "s": 220.24,
+   "e": 220.52,
+   "alignment": "source_word"
+  },
+  {
+   "w": "foot,",
+   "s": 220.52,
+   "e": 220.88,
+   "alignment": "source_word"
+  },
+  {
+   "w": "he",
+   "s": 221.28,
+   "e": 221.38,
+   "alignment": "source_word"
+  },
+  {
+   "w": "sent",
+   "s": 221.38,
+   "e": 221.64,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 221.64,
+   "e": 221.82,
+   "alignment": "source_word"
+  },
+  {
+   "w": "ball",
+   "s": 221.82,
+   "e": 222.04,
+   "alignment": "source_word"
+  },
+  {
+   "w": "into",
+   "s": 222.04,
+   "e": 222.3,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 222.3,
+   "e": 222.54,
+   "alignment": "source_word"
+  },
+  {
+   "w": "net.",
+   "s": 222.54,
+   "e": 222.74,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Barcelona",
+   "s": 222.74,
+   "e": 223.62,
+   "alignment": "source_word"
+  },
+  {
+   "w": "were",
+   "s": 223.62,
+   "e": 224.28,
+   "alignment": "source_word"
+  },
+  {
+   "w": "European",
+   "s": 224.28,
+   "e": 224.76,
+   "alignment": "source_word"
+  },
+  {
+   "w": "champions",
+   "s": 224.76,
+   "e": 225.14,
+   "alignment": "source_word"
+  },
+  {
+   "w": "for",
+   "s": 225.14,
+   "e": 225.72,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 225.72,
+   "e": 225.84,
+   "alignment": "source_word"
+  },
+  {
+   "w": "very",
+   "s": 225.84,
+   "e": 226.04,
+   "alignment": "source_word"
+  },
+  {
+   "w": "first",
+   "s": 226.04,
+   "e": 226.28,
+   "alignment": "source_word"
+  },
+  {
+   "w": "time.",
+   "s": 226.28,
+   "e": 226.76,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Think",
+   "s": 227.14,
+   "e": 227.2,
+   "alignment": "source_word"
+  },
+  {
+   "w": "about",
+   "s": 227.2,
+   "e": 227.46,
+   "alignment": "source_word"
+  },
+  {
+   "w": "what",
+   "s": 227.46,
+   "e": 227.7,
+   "alignment": "source_word"
+  },
+  {
+   "w": "that",
+   "s": 227.7,
+   "e": 227.9,
+   "alignment": "source_word"
+  },
+  {
+   "w": "meant.",
+   "s": 227.9,
+   "e": 228.18,
+   "alignment": "source_word"
+  },
+  {
+   "w": "The",
+   "s": 228.76,
+   "e": 228.88,
+   "alignment": "source_word"
+  },
+  {
+   "w": "club",
+   "s": 228.88,
+   "e": 229.12,
+   "alignment": "source_word"
+  },
+  {
+   "w": "had",
+   "s": 229.12,
+   "e": 229.34,
+   "alignment": "source_word"
+  },
+  {
+   "w": "already",
+   "s": 229.34,
+   "e": 229.66,
+   "alignment": "source_word"
+  },
+  {
+   "w": "suffered",
+   "s": 229.66,
+   "e": 230.0,
+   "alignment": "source_word"
+  },
+  {
+   "w": "heartbreak",
+   "s": 230.0,
+   "e": 230.64,
+   "alignment": "source_word"
+  },
+  {
+   "w": "in",
+   "s": 230.64,
+   "e": 231.0,
+   "alignment": "source_word"
+  },
+  {
+   "w": "two",
+   "s": 231.0,
+   "e": 231.24,
+   "alignment": "source_word"
+  },
+  {
+   "w": "European",
+   "s": 231.24,
+   "e": 231.62,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Cup",
+   "s": 231.62,
+   "e": 231.86,
+   "alignment": "source_word"
+  },
+  {
+   "w": "finals,",
+   "s": 231.86,
+   "e": 232.24,
+   "alignment": "source_word"
+  },
+  {
+   "w": "in",
+   "s": 232.84,
+   "e": 233.0,
+   "alignment": "source_word"
+  },
+  {
+   "w": "1961",
+   "s": 233.0,
+   "e": 233.86,
+   "alignment": "source_word"
+  },
+  {
+   "w": "and",
+   "s": 233.86,
+   "e": 234.3,
+   "alignment": "source_word"
+  },
+  {
+   "w": "1986.",
+   "s": 234.3,
+   "e": 235.2,
+   "alignment": "source_word"
+  },
+  {
+   "w": "For",
+   "s": 235.68,
+   "e": 236.16,
+   "alignment": "source_word"
+  },
+  {
+   "w": "decades,",
+   "s": 236.16,
+   "e": 236.56,
+   "alignment": "source_word"
+  },
+  {
+   "w": "that",
+   "s": 237.04,
+   "e": 237.26,
+   "alignment": "source_word"
+  },
+  {
+   "w": "trophy",
+   "s": 237.26,
+   "e": 237.7,
+   "alignment": "source_word"
+  },
+  {
+   "w": "had",
+   "s": 237.7,
+   "e": 238.34,
+   "alignment": "source_word"
+  },
+  {
+   "w": "remained",
+   "s": 238.34,
+   "e": 238.72,
+   "alignment": "source_word"
+  },
+  {
+   "w": "out",
+   "s": 238.72,
+   "e": 239.04,
+   "alignment": "source_word"
+  },
+  {
+   "w": "of",
+   "s": 239.04,
+   "e": 239.16,
+   "alignment": "source_word"
+  },
+  {
+   "w": "reach.",
+   "s": 239.16,
+   "e": 239.42,
+   "alignment": "source_word"
+  },
+  {
+   "w": "But",
+   "s": 239.9,
+   "e": 240.08,
+   "alignment": "source_word"
+  },
+  {
+   "w": "with",
+   "s": 240.08,
+   "e": 240.26,
+   "alignment": "source_word"
+  },
+  {
+   "w": "one",
+   "s": 240.26,
+   "e": 240.58,
+   "alignment": "source_word"
+  },
+  {
+   "w": "powerful",
+   "s": 240.58,
+   "e": 241.0,
+   "alignment": "source_word"
+  },
+  {
+   "w": "shot,",
+   "s": 241.0,
+   "e": 241.4,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Ronald",
+   "s": 241.74,
+   "e": 241.92,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Koeman",
+   "s": 241.92,
+   "e": 242.2,
+   "alignment": "source_word"
+  },
+  {
+   "w": "changed",
+   "s": 242.2,
+   "e": 242.76,
+   "alignment": "source_word"
+  },
+  {
+   "w": "everything.",
+   "s": 242.76,
+   "e": 243.3,
+   "alignment": "source_word"
+  },
+  {
+   "w": "It",
+   "s": 243.8,
+   "e": 243.92,
+   "alignment": "source_word"
+  },
+  {
+   "w": "wasn't",
+   "s": 243.92,
+   "e": 244.2,
+   "alignment": "source_word"
+  },
+  {
+   "w": "just",
+   "s": 244.2,
+   "e": 244.4,
+   "alignment": "source_word"
+  },
+  {
+   "w": "a",
+   "s": 244.4,
+   "e": 244.6,
+   "alignment": "source_word"
+  },
+  {
+   "w": "goal,",
+   "s": 244.6,
+   "e": 244.76,
+   "alignment": "source_word"
+  },
+  {
+   "w": "it",
+   "s": 245.02,
+   "e": 245.2,
+   "alignment": "source_word"
+  },
+  {
+   "w": "was",
+   "s": 245.2,
+   "e": 245.4,
+   "alignment": "source_word"
+  },
+  {
+   "w": "a",
+   "s": 245.4,
+   "e": 245.6,
+   "alignment": "source_word"
+  },
+  {
+   "w": "moment",
+   "s": 245.6,
+   "e": 245.82,
+   "alignment": "source_word"
+  },
+  {
+   "w": "that",
+   "s": 245.82,
+   "e": 246.5,
+   "alignment": "source_word"
+  },
+  {
+   "w": "transformed",
+   "s": 246.5,
+   "e": 247.18,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Barcelona's",
+   "s": 247.18,
+   "e": 248.02,
+   "alignment": "source_word"
+  },
+  {
+   "w": "history.",
+   "s": 248.02,
+   "e": 248.38,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Years",
+   "s": 248.92,
+   "e": 249.22,
+   "alignment": "source_word"
+  },
+  {
+   "w": "later,",
+   "s": 249.22,
+   "e": 249.5,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Koeman",
+   "s": 250.12,
+   "e": 250.3,
+   "alignment": "source_word"
+  },
+  {
+   "w": "returned",
+   "s": 250.3,
+   "e": 250.9,
+   "alignment": "source_word"
+  },
+  {
+   "w": "to",
+   "s": 250.9,
+   "e": 251.16,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Barcelona.",
+   "s": 251.16,
+   "e": 251.62,
+   "alignment": "source_word"
+  },
+  {
+   "w": "This",
+   "s": 251.62,
+   "e": 252.12,
+   "alignment": "source_word"
+  },
+  {
+   "w": "time",
+   "s": 252.12,
+   "e": 252.48,
+   "alignment": "source_word"
+  },
+  {
+   "w": "as",
+   "s": 252.48,
+   "e": 252.88,
+   "alignment": "source_word"
+  },
+  {
+   "w": "manager.",
+   "s": 252.88,
+   "e": 253.32,
+   "alignment": "source_word"
+  },
+  {
+   "w": "He",
+   "s": 253.82,
+   "e": 253.9,
+   "alignment": "source_word"
+  },
+  {
+   "w": "took",
+   "s": 253.9,
+   "e": 254.12,
+   "alignment": "source_word"
+  },
+  {
+   "w": "charge",
+   "s": 254.12,
+   "e": 254.44,
+   "alignment": "source_word"
+  },
+  {
+   "w": "during",
+   "s": 254.44,
+   "e": 254.74,
+   "alignment": "source_word"
+  },
+  {
+   "w": "one",
+   "s": 254.74,
+   "e": 254.98,
+   "alignment": "source_word"
+  },
+  {
+   "w": "of",
+   "s": 254.98,
+   "e": 255.1,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 255.1,
+   "e": 255.2,
+   "alignment": "source_word"
+  },
+  {
+   "w": "most",
+   "s": 255.2,
+   "e": 255.54,
+   "alignment": "source_word"
+  },
+  {
+   "w": "difficult",
+   "s": 255.54,
+   "e": 255.9,
+   "alignment": "source_word"
+  },
+  {
+   "w": "periods",
+   "s": 255.9,
+   "e": 256.26,
+   "alignment": "source_word"
+  },
+  {
+   "w": "in",
+   "s": 256.26,
+   "e": 256.52,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 256.52,
+   "e": 256.68,
+   "alignment": "source_word"
+  },
+  {
+   "w": "club's",
+   "s": 256.68,
+   "e": 257.0,
+   "alignment": "source_word"
+  },
+  {
+   "w": "modern",
+   "s": 257.0,
+   "e": 257.18,
+   "alignment": "source_word"
+  },
+  {
+   "w": "history.",
+   "s": 257.18,
+   "e": 257.64,
+   "alignment": "source_word"
+  },
+  {
+   "w": "And",
+   "s": 258.02,
+   "e": 258.06,
+   "alignment": "source_word"
+  },
+  {
+   "w": "despite",
+   "s": 258.06,
+   "e": 258.38,
+   "alignment": "source_word"
+  },
+  {
+   "w": "all",
+   "s": 258.38,
+   "e": 258.74,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 258.74,
+   "e": 258.92,
+   "alignment": "source_word"
+  },
+  {
+   "w": "challenges,",
+   "s": 258.92,
+   "e": 259.32,
+   "alignment": "source_word"
+  },
+  {
+   "w": "he",
+   "s": 259.7,
+   "e": 259.76,
+   "alignment": "source_word"
+  },
+  {
+   "w": "still",
+   "s": 259.76,
+   "e": 260.1,
+   "alignment": "source_word"
+  },
+  {
+   "w": "managed",
+   "s": 260.1,
+   "e": 260.38,
+   "alignment": "source_word"
+  },
+  {
+   "w": "to",
+   "s": 260.38,
+   "e": 260.6,
+   "alignment": "source_word"
+  },
+  {
+   "w": "lead",
+   "s": 260.6,
+   "e": 260.78,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Barça",
+   "s": 260.78,
+   "e": 261.1,
+   "alignment": "source_word"
+  },
+  {
+   "w": "to",
+   "s": 261.1,
+   "e": 261.3,
+   "alignment": "source_word"
+  },
+  {
+   "w": "the",
+   "s": 261.3,
+   "e": 261.42,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Copa",
+   "s": 261.42,
+   "e": 261.57,
+   "alignment": "source_word"
+  },
+  {
+   "w": "del",
+   "s": 261.57,
+   "e": 261.73,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Rey",
+   "s": 261.73,
+   "e": 261.88,
+   "alignment": "source_word"
+  },
+  {
+   "w": "title",
+   "s": 261.88,
+   "e": 262.26,
+   "alignment": "source_word"
+  },
+  {
+   "w": "in",
+   "s": 262.26,
+   "e": 262.64,
+   "alignment": "source_word"
+  },
+  {
+   "w": "2021.",
+   "s": 262.64,
+   "e": 263.44,
+   "alignment": "source_word"
+  },
+  {
+   "w": "But",
+   "s": 264.3,
+   "e": 264.46,
+   "alignment": "source_word"
+  },
+  {
+   "w": "when",
+   "s": 264.46,
+   "e": 264.64,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Barcelona",
+   "s": 264.64,
+   "e": 265.12,
+   "alignment": "source_word"
+  },
+  {
+   "w": "fans",
+   "s": 265.12,
+   "e": 265.32,
+   "alignment": "source_word"
+  },
+  {
+   "w": "think",
+   "s": 265.32,
+   "e": 265.58,
+   "alignment": "source_word"
+  },
+  {
+   "w": "of",
+   "s": 265.58,
+   "e": 265.74,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Ronald",
+   "s": 265.74,
+   "e": 266.0,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Koeman,",
+   "s": 266.0,
+   "e": 266.32,
+   "alignment": "source_word"
+  },
+  {
+   "w": "there's",
+   "s": 266.78,
+   "e": 267.04,
+   "alignment": "source_word"
+  },
+  {
+   "w": "one",
+   "s": 267.04,
+   "e": 267.24,
+   "alignment": "source_word"
+  },
+  {
+   "w": "image",
+   "s": 267.24,
+   "e": 267.52,
+   "alignment": "source_word"
+  },
+  {
+   "w": "that",
+   "s": 267.52,
+   "e": 267.72,
+   "alignment": "source_word"
+  },
+  {
+   "w": "will",
+   "s": 267.72,
+   "e": 267.94,
+   "alignment": "source_word"
+  },
+  {
+   "w": "always",
+   "s": 267.94,
+   "e": 268.28,
+   "alignment": "source_word"
+  },
+  {
+   "w": "come",
+   "s": 268.28,
+   "e": 268.52,
+   "alignment": "source_word"
+  },
+  {
+   "w": "to",
+   "s": 268.52,
+   "e": 268.68,
+   "alignment": "source_word"
+  },
+  {
+   "w": "mind.",
+   "s": 268.68,
+   "e": 268.9,
+   "alignment": "source_word"
+  },
+  {
+   "w": "That",
+   "s": 269.3,
+   "e": 269.32,
+   "alignment": "source_word"
+  },
+  {
+   "w": "powerful",
+   "s": 269.32,
+   "e": 269.72,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Dutch",
+   "s": 269.72,
+   "e": 270.06,
+   "alignment": "source_word"
+  },
+  {
+   "w": "defender,",
+   "s": 270.06,
+   "e": 270.52,
+   "alignment": "source_word"
+  },
+  {
+   "w": "standing",
+   "s": 271.02,
+   "e": 271.38,
+   "alignment": "source_word"
+  },
+  {
+   "w": "over",
+   "s": 271.38,
+   "e": 271.74,
+   "alignment": "source_word"
+  },
+  {
+   "w": "a",
+   "s": 271.74,
+   "e": 271.92,
+   "alignment": "source_word"
+  },
+  {
+   "w": "free",
+   "s": 271.92,
+   "e": 272.04,
+   "alignment": "source_word"
+  },
+  {
+   "w": "kick",
+   "s": 272.04,
+   "e": 272.32,
+   "alignment": "source_word"
+  },
+  {
+   "w": "at",
+   "s": 272.32,
+   "e": 272.52,
+   "alignment": "source_word"
+  },
+  {
+   "w": "Wembley,",
+   "s": 272.52,
+   "e": 272.9,
+   "alignment": "source_word"
+  },
+  {
+   "w": "getting",
+   "s": 273.42,
+   "e": 273.66,
+   "alignment": "source_word"
+  },
+  {
+   "w": "ready",
+   "s": 273.66,
+   "e": 274.08,
+   "alignment": "source_word"
+  },
+  {
+   "w": "to",
+   "s": 274.08,
+   "e": 274.52,
+   "alignment": "source_word"
+  },
+  {
+   "w": "unleash",
+   "s": 274.52,
+   "e": 274.92,
+   "alignment": "source_word"
+  },
+  {
+   "w": "that",
+   "s": 274.92,
+   "e": 275.26,
+   "alignment": "source_word"
+  },
+  {
+   "w": "incredible",
+   "s": 275.26,
+   "e": 275.84,
+   "alignment": "source_word"
+  },
+  {
+   "w": "right",
+   "s": 275.84,
+   "e": 276.28,
+   "alignment": "source_word"
+  },
+  {
+   "w": "foot.",
+   "s": 276.28,
+   "e": 276.56,
+   "alignment": "source_word"
+  }
+ ]
+}
