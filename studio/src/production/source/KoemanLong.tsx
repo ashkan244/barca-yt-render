@@ -673,9 +673,9 @@ const BEATS: Beat[] = [
   </>},
   {a: 253.82, layout: 'split', draw: (f) => <>
     <Head f={f} at={253.82} layout="split" kicker="HE TOOK CHARGE" title="A DIFFICULT PERIOD" />
-    <Big f={f} at={254.74} box={{x: S.x, y: S.y + 40, w: S.w, h: 0}} size={96} color={INK}>ONE OF THE MOST DIFFICULT</Big>
-    <Big f={f} at={255.9} box={{x: S.x, y: S.y + 160, w: S.w, h: 0}} size={96} color={GOLD}>PERIODS IN THE CLUB'S</Big>
-    <Big f={f} at={257.0} box={{x: S.x, y: S.y + 280, w: S.w, h: 0}} size={96} color={INK}>MODERN HISTORY</Big>
+    <Big f={f} at={254.74} box={{x: S.x, y: S.y + 40, w: S.w, h: 0}} size={80} color={INK}>ONE OF THE MOST DIFFICULT</Big>
+    <Big f={f} at={255.9} box={{x: S.x, y: S.y + 160, w: S.w, h: 0}} size={80} color={GOLD}>PERIODS IN THE CLUB'S</Big>
+    <Big f={f} at={257.0} box={{x: S.x, y: S.y + 280, w: S.w, h: 0}} size={80} color={INK}>MODERN HISTORY</Big>
   </>},
   {a: 258.02, layout: 'split', sfx: 'pop', draw: (f) => <>
     <Head f={f} at={258.02} layout="split" kicker="DESPITE ALL THE CHALLENGES" title="COPA DEL REY CHAMPIONS" />
